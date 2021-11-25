@@ -1,0 +1,73 @@
+﻿<!-- A panel used on the inbox backroom advice panel to show a summary of backroom advice on a particular topic -->
+<panel navigation_container="true" width="465" height="240" should_force_refresh="true">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<container class="inner_subtle_box">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+		<container id="cNtn" height="240">
+			<layout class="arrange_vertical_attachment" layout="20,-1,30" offset="0" gap="10" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<container>
+
+				<attachment_group class="horizontal_arrange" horizontal_layout="16,-1,16" horizontal_gap="8" />
+
+				<container />
+
+				<widget class="text" id="aWIG" size="large" font="title" alignment="centre" colour="text" />
+
+				<!-- Settings button -->
+				<widget class="icon_button" show_button_appearance="false" id="setb" file="icons/16px/settings">
+					<event id="click_event" event_id="setb" file="news_item_panels/backroom advice news topic settings popup panel" />
+				</widget>
+			</container>
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+
+				<widget class="table" id="rWIG" layout="70,20,-1,20,-1" auto_size_rows="false" fixed_size_rows="true" row_height="24" auto_size="none" hidden="true">
+						<list id="column_widget_properties">
+							<record indx="0" alignment="right,centre_y" colour="text" size="normal" font="title" />
+							<record indx="2" alignment="left,centre_y" colour="fg positive" size="normal" />
+							<record indx="4" alignment="left,centre_y" colour="fg negative" size="normal" />
+						</list>
+
+						<list id="column_table_properties">
+							<record indx="0">
+								<integer id="right" value="12" />
+							</record>
+						</list>
+					</widget>
+
+				<widget class="table" id="tWIG" layout="16,-1" auto_size_rows="true" fixed_size_rows="false" auto_size="none"  hidden="true">
+						<list id="column_widget_properties">
+							<record indx="0" image_alignment="top, centre_x" />
+							<record indx="1" colour="disabled" size="normal" />
+						</list>
+
+						<list id="column_table_properties">
+							<record indx="0">
+								<integer id="top" value="5" />
+							</record>
+						</list>
+					</widget>
+				
+				</container>
+
+			<container>
+				<attachment_group class="horizontal_arrange" horizontal_alignment="middle">
+					<global id="horizontal_gap" name="ui.button_row_gap" />
+				</attachment_group>
+				<widget class="icon_button" appearance="buttons/primary/normal/button" colour="white" id="doch" icon="icons/16px/tick"  auto_size="all">
+					<translation id="text" translation_id="515093" type="use" value="Do it[COMMENT: AREA: Pre-match tactical advice; SUB-AREA: sub section showing adviced team selection changes; FR: 30872; TONE: Formal; CHARLIMIT: None;]" />
+				</widget>
+				<widget class="icon_button" icon="icons/16px/maximise" auto_size="all" id="vWch" click_event="seDI" hidden="true">
+					<translation id="text" translation_id="515094" type="use" value="View Changes[COMMENT: AREA: Pre-match tactical advice; SUB-AREA: sub section showing adviced team selection changes; FR: 30872; TONE: Formal; CHARLIMIT: None;]" />
+				</widget>
+			</container>
+		</container>
+
+	</container>
+</panel>

@@ -1,0 +1,21 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<container id="staf" height="40">
+		<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_gap="0" vertical_offset="0"/>
+
+		<!-- Person name -->
+		<widget class="person_button" alignment="left, centre_y" style="semi_bold" info_popup_enabled="true" info_popup_alignment="left,centre_y" icon_enabled="true" person_is_player="true" auto_size="vertical" colour="black" navigation_focus_target="true">
+			<record id="object_property">
+				<list id="get_properties">
+					<record get_property="objt" set_property="valu"/>
+				</list>
+			</record>
+		</widget>
+
+		<!-- text label -->
+		<widget class="playing_time_label" alignment="left, top" size="small" colour="faded text" auto_size="vertical">
+			<record id="object_property" get_property="Pcpt"/>
+		</widget>
+	</container>
+</panel>

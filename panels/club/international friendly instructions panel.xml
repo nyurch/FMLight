@@ -1,0 +1,72 @@
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+	<container class="main_box">
+		<translation id="title" translation_id="319478" type="use" value="International Instructions[COMMENT: international friendly instructions panel; title text for panel]" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+		<container embed_in_frame="true">
+			<attachment_group class="title_embedded_panel_right" />
+
+			<!-- Set to button for setting all player instructions -->
+			<widget class="embedded_popup_button" id="saib" sele="safi" fixed="true" auto_size="all" embed_in_frame="true">
+				<translation id="text" translation_id="251319" type="use" value="Set All To[COMMENT: player friendly instructions: set to preset popup menu label]" />
+				<list id="items">
+					<record id="none">
+						<translation id="text" translation_id="291487" type="use" value="None[COMMENT: player friendly match instructions: no instruction menu item]" />
+					</record>
+					<record id="ffmi">
+						<translation id="text" translation_id="251320" type="use" value="45 Mins Per Game[COMMENT: player friendly match instructions: 45 mins per game instruction menu item]" />
+					</record>
+					<record id="wdfs">
+						<translation id="text" translation_id="251321" type="use" value="Withdraw From Squad[COMMENT: player friendly match instructions: withdraw player from game instruction menu item]" />
+					</record>
+				</list>
+				<!-- setting all player instructions -->
+			</widget>
+		</container>
+
+		<!-- container for when records are present-->
+		<container id="recp">
+			<layout class="arrange_vertical_attachment" alignment="bottom,extend" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<widget class="client_object_list_table" id="pers" database_table_type="1">
+
+				<list id="default_sort_column">
+					<integer value="Pnms" />
+					<integer value="Pntm" />
+				</list>
+
+				<record id="viewed_property_ids">
+					<record id="Pnms" />
+					<record id="Pntn" />
+					<record id="Pntm" />
+					<record id="Pins" auto_size="none" />
+				</record>
+
+			</widget>
+
+			<!--buttons-->
+			<container class="inner_box_no_margin">
+				<attachment_group class="button_arrangement_right" />
+
+				<widget class="primary_icon_tick_button" id="fini" colour="white" click_event="fini">
+					<translation id="text" translation_id="229918" type="use" value="Confirm" />
+				</widget>
+				<widget class="button" id="ifcn" click_event="ifcn" auto_size="all">
+					<translation id="text" translation_id="229828" type="use" value="Cancel" />
+				</widget>
+			</container>
+		</container>
+
+		<!-- panel for empty state-->
+		<container class="empty_state" id="nore" header_widget="BShe" >
+			<widget class="text" id="BShe">
+				<translation id="text" translation_id="316581" type="use" value="No players currently selected for international friendlies.[COMMENT: text shown when a human club has no playes that are currently selected for international friendlies]" />
+			</widget>
+		</container>
+	</container>
+
+</panel>

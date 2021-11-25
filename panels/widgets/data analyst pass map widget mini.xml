@@ -1,0 +1,8 @@
+﻿<panel vertical="true" force_left_to_right_events="true" >
+	<record id="icon_properties">
+		<boolean id="use_mini_visualisation" value="true"/>
+		<string id="icon" value="tactics/tactics icon basic recruitment meeting" />
+	</record>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="8,8"/>
+	<widget class="chalkboard_pitch" vertical="true" force_left_to_right_events="true"  id="Cpit" select_event="slic" hide_linked_events="true" pitch_draw_arrows="true" pitch_keep_selected_icons="false" pitch_draw_grass="true" pitch_player_icon_text_font="match pitch players" wants_mouse_events="true" pitch_draw_dugout="false" enable_popup="false" line_width="1" pitch_line_colour="text" pitch_touchline_width_percentage="40"/>
+</panel>

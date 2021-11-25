@@ -1,0 +1,24 @@
+﻿<panel width="350">
+    <attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_inset="0" vertical_gap="8"/>
+
+    <container class="main_transparent_box">
+        <attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_inset="0" vertical_gap="8"/>
+
+        <widget class="text" id="desc" auto_size="vertical" multiline="true"/>
+
+        <widget class="text" id="chse" font="title" auto_size="all"/>
+        <widget class="popup_button" id="itlp" select_event="rsse" auto_tick_exclusive="true" fixed="false" auto_size="all" hidden="true"/>
+        <widget class="cash_selection_list" id="calp" select_event="cShS" cash_min_value="0" cash_max_value="300000000" height="35" hidden="true">
+			<record id="default_properties" alignment="right,centre_y" colour="black"/>
+		</widget>
+
+        <container>
+            <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right"/>
+
+            <widget class="button" id="conf" click_event="conf" auto_size="all">
+                <translation id="text" translation_id="229918" type="use" value="Confirm"/>
+            </widget>
+        </container>
+    </container>
+
+</panel>

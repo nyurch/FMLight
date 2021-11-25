@@ -1,0 +1,47 @@
+<panel>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+
+	<container class="inner_subtle_box" red_replacement="black">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+		<widget class="label" auto_size="vertical" spec="text" size="large" colour="text" alignment="centre">
+			<translation id="text" translation_id="247710" type="use" value="Transfer Details"/>
+		</widget>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="fill" horizontal_offset="0" vertical_offset="0" />
+
+				<record id="default_properties" font="value" auto_size="vertical" alignment="centre" />
+				
+				<widget class="text" id="feew" />
+				<widget class="text" id="wagw" />
+				<widget class="text" id="cond" />
+
+			</container>
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre"  horizontal_alignment="fill" horizontal_offset="0" vertical_offset="0" />
+
+				<record id="default_properties" font="label" auto_size="vertical" alignment="centre"/>
+				
+				<widget class="text">
+					<translation id="text" translation_id="348449" type="use" value="Transfer Fee[COMMENT: club confidence panel]"/>
+				</widget>
+				<widget class="text">
+					<translation id="text" translation_id="227799" type="use" value="Wage"/>
+				</widget>
+				<widget class="text">
+					<translation id="text" translation_id="230113" type="use" value="Duration" />
+				</widget>
+			</container>
+
+		</container>
+	</container>
+
+</panel>

@@ -1,0 +1,125 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+
+	<container class="scrolling_box">
+		<container>
+			<layout class="fit_children_attachment" alignment="vertical" />
+			<layout class="arrange_horizontal_attachment" layout="300, -1" gap="10" />
+			<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" />
+
+			<container class="bordered_box_no_margin">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<!-- portrait -->
+				<container height="150">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+					<widget class="picture" file="" scale_picture="true" keep_aspect_ratio="true" height="150" image_alignment="centre">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+					</widget>
+
+					<widget class="object_portrait_picture" scale_picture="true" keep_aspect_ratio="true" height="120" image_alignment="centre">
+						<layout class="stick_to_sides_attachment" alignment="bottom" inset="0" />
+						<record id="object_property">
+							<integer id="get_property" value="objt" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</widget>
+				</container>
+
+				<container>
+					<layout class="arrange_horizontal_attachment" layout="50, -1" offset="8" />
+					<layout class="fit_children_attachment" alignment="vertical" />
+					<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" />
+
+					<!-- icon -->
+					<widget class="picture" file="" scale_picture="true" keep_aspect_ratio="true" height="50" image_alignment="centre" />
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<!-- name -->
+						<widget class="person_button" id="pnam" auto_size="all" spec="text" style="bold" alignment="left,centre_y" person_is_player="true" colour="black">
+							<record id="object_property">
+								<integer id="get_property" value="objt" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</widget>
+
+						<!-- description -->
+						<widget class="game_formatted_label" alignment="left,centre_y" auto_size="vertical" colour="faded text">
+							<layout class="centre_in_parent_attachment" alignment="horizontal" />
+							<record id="format">
+								<translation id="text" translation_id="388547" type="use" value="[%number#1] year-old [%player_description#2][COMMENT: transfer window opening news, rumoured player moving, graphical display]" />
+								<integer id="var2" value="vf_player_description" />
+							</record>
+
+							<record id="object_property">
+								<list id="get_properties">
+									<record get_property="Page" set_property="var1" dont_set_object="true" />
+									<record get_property="Pdes" set_property="var2" dont_set_object="true" />
+								</list>
+							</record>
+						</widget>
+					</container>
+				</container>
+
+				<container>
+					<layout class="arrange_horizontal_attachment" layout="-1, -1" offset="8" />
+					<layout class="fit_children_attachment" alignment="vertical" />
+					<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" />
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<widget class="nation_button" auto_size="horizontal" height="24" colour="faded text" alignment="left,centre_y" size="10">
+							<layout class="centre_in_parent_attachment" alignment="horizontal" />
+							<record id="object_property">
+								<integer id="get_property" value="Pnat" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</widget>
+						<widget class="label" font="title" alignment="left,centre_y" auto_size="all">
+							<translation id="text" translation_id="227841" type="use" value="Nationality" />
+						</widget>
+					</container>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<widget class="international_appearances_label" auto_size="all" colour="text" alignment="left,centre_y" ialf="8">
+							<record id="object_property">
+								<integer id="get_property" value="Pist" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</widget>
+						<widget class="label" font="title" alignment="left,centre_y" auto_size="all">
+							<translation id="text" translation_id="447587" type="use" value="International Record[COMMENT: label showing a player's international caps and goals when they're reconsidering retirement]" />
+						</widget>
+					</container>
+				</container>
+
+				<container height="10" />
+
+				<widget class="horizontal_divider">
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+				</widget>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+					<widget class="playing_history_summary_panel" file="player/playing history summary tiny" late_loading="true">
+						<record id="object_property">
+							<integer id="get_property" value="objt" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</widget>
+				</container>
+			</container>
+
+			<widget class="inbox_body_text" id="bdtx" />
+
+		</container>
+	</container>
+
+</panel>

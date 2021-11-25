@@ -1,0 +1,121 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="2" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<!--person details-->
+	<container class="main_box" appearance="boxes/main/contrast/top/paper" height="80" red_replacement="bg lighter">
+		<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+		<!--mugshot-->
+		<widget class="object_portrait_picture" id="trpf" image_alignment="centre" scale_picture="true" width="60">
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="valu" />
+					</record>
+				</list>
+			</record>
+		</widget>
+
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="middle" gap="0" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<!--name-->
+			<widget class="person_button" id="psbf" auto_size="vertical" alignment="left,centre_y" style="semi_bold" info_popup_enabled="true" person_is_player="true" colour="black">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="objt" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+
+			<!--description-->
+			<widget class="player_description_text" id="pdes" auto_size="vertical" alignment="left,centre_y">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="Pdes" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+		</container>
+	</container>
+
+	<!--from club-->
+	<container class="main_box" appearance="boxes/main/contrast/middle horizontal/paper" height="30" red_replacement="bg">
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_ofset="0" vertical_offset="0" />
+
+		<!--selling team logo-->
+		<widget class="object_portrait_picture" id="self" image_alignment="centre" scale_picture="true" width="60" height="22"/>
+
+		<!--selling team-->
+		<widget class="team_button" id="frtm" alignment="left,centre_y" icon_enabled="false" auto_size="vertical" navigation_focus_target="true">
+			<translation id="format" translation_id="466475" type="use" value="From [%team#1-short][COMMENT: text to show where a person is transferring from]" />
+		</widget>
+	</container>
+
+	<!--container for the buying club-->
+
+	<container class="client_object_viewer_xml_panel" id="trcf" height="75">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+		<container class="main_box" appearance="boxes/main/contrast/bottom/paper">
+			<layout class="arrange_horizontal_attachment" layout="62,-1" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+			
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="oPCn" />
+						<integer id="set_property" value="red_replacement" />
+					</record>
+				</list>
+			</record>
+
+
+
+			<!--buying team logo-->
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="8" apply_to_children="true" />
+				<widget class="object_portrait_picture" id="buyf" image_alignment="centre" scale_picture="true" />
+			</container>
+
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="middle" gap="0" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+				<!--team text-->
+				<widget class="text" id="traf" auto_size="vertical" alignment="left,centre_y" navigation_focus_target="false">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="oSCn" />
+								<integer id="set_property" value="colour" />
+							</record>
+						</list>
+					</record>
+				</widget>
+
+				<!--amount-->
+				<widget class="text" id="trvf" auto_size="vertical" alignment="left,centre_y" size="large" style="bold">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="oSCn" />
+								<integer id="set_property" value="colour" />
+							</record>
+						</list>
+					</record>
+				</widget>
+			</container>
+		</container>
+	</container>
+
+</panel>

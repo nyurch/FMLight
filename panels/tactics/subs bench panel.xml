@@ -1,0 +1,23 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+  <container>
+    <layout class="arrange_vertical_attachment" alignment="top,extend" offset="4" gap="2" />
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="10" />
+
+    <container>
+      <attachment_group class="vertical_arrange_autosize" vertical_gap="0" vertical_alignment="top" vertical_offset="2"/>
+
+      <widget class="text" alignment="centre" auto_size="vertical" font="label" colour="white" size="large">
+        <translation id="text" type="use" translation_id="230321" value="Subs:" />
+      </widget>
+      <widget class="text" id="maxs" colour="white" alignment="centre" height="20" auto_size="vertical"/>
+			
+			<widget class="text" id="maxA" alignment="centre" height="20" auto_size="vertical" hidden="true"/>
+
+    </container>
+
+    <widget class="subs_bench_icon_panel" id="subs" iche="80" ichx="80"/>
+
+  </container>
+</panel>

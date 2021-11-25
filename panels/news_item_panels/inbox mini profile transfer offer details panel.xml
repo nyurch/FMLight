@@ -1,0 +1,60 @@
+﻿<panel>
+
+	<string id="skin_style" value="subtle box" />
+
+	<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0" />
+
+	<container class="inner_subtle_box" red_replacement="black">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="16" horizontal_alignment="horizontal" horizontal_inset="10" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<widget class="label" auto_size="vertical" spec="text" font="title" colour="faded text" alignment="left">
+				<translation id="text" translation_id="386804" type="use" value="Offer from:[COMMENT: FR #10312; transfer offer panel; label for popup to switch between offers for a player]" />
+			</widget>
+
+			<container>
+				<layout class="arrange_horizontal_attachment" alignment="left" offset="0" gap="6" />
+				<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+				<widget class="team_button" id="team" auto_size="all" icon_enabled="true" alignment="left,centre_y" style="semi_bold" image_alignment="left,centre_y" size="large" />
+
+				<widget class="label" id="leag" auto_size="all" spec="text" colour="faded text" alignment="left" />
+			</container>
+		</container>
+		<container>
+
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+			<layout class="arrange_horizontal_attachment" layout="200,-1" offset="0" gap="8" />
+			<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+			<!--Offer label-->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="2" horizontal_inset="0" />
+
+				<widget class="label" auto_size="vertical" spec="text" font="title" colour="faded text" alignment="left">
+					<translation id="text" translation_id="242861" type="use" value="Offer" />
+				</widget>
+
+				<widget class="label" id="feew" auto_size="vertical" spec="text" style="semi_bold" size="16" colour="text" alignment="left" />
+			</container>
+
+			<!--Potential fee labels-->
+			<container id="cOvF">
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="2" horizontal_inset="0" />
+
+				<widget class="label" auto_size="vertical" spec="text" font="title" colour="faded text" alignment="left" size="">
+					<translation id="text" translation_id="433747" type="use" value="Potential Fee[Comment: Transfer Offer inbox item - Max potential fee including clauses]" />
+				</widget>
+
+				<widget class="label" id="feOv" auto_size="vertical" spec="text" style="semi_bold" size="16" colour="text" alignment="left" />
+			</container>
+
+		</container>
+
+	</container>
+
+</panel>

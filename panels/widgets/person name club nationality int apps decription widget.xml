@@ -1,0 +1,140 @@
+﻿<panel height="110" width="300">
+	<list id="draw_order">
+		<record entity_layout_id="at00" />
+		<record entity_layout_id="at01" />
+		<record entity_layout_id="at03" />
+		<record entity_layout_id="at08" />
+		<record entity_layout_id="at02" />
+		<record entity_layout_id="at04" />
+		<record entity_layout_id="at07" />
+		<record entity_layout_id="at05" />
+		<record entity_layout_id="at06" />
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+	</widget>
+	<widget class="picture" entity_layout_id="at00" id="at00" scale_picture="true" width="80">
+		<string id="image_alignment" value="centre_x" />
+		<record id="object_property">
+			<list id="get_properties">
+				<record>
+					<string id="get_property" value="fcgn" />
+				</record>
+				<record>
+					<string id="get_property" value="Pfke" />
+				</record>
+				<record>
+					<string id="get_property" value="prpc" />
+					<string id="set_property" value="valu" />
+				</record>
+			</list>
+		</record>
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+	</widget>
+	<container entity_layout_id="at01" id="at01">
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" get_side="right" set_side="left" target="at00" />
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<widget class="person_button" colour="black" entity_layout_id="at02" id="pnmp" auto_size="vertical" needs_height="true">
+			<string id="style" value="bold" />
+			<string id="size" value="large" />
+			<record id="object_property">
+				<string id="get_property" value="PnmP" />
+				<string id="set_property" value="valu" />
+			</record>
+			<layout class="stick_to_object_attachment" id="align_top" offset="6" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		</widget>
+		<widget class="game_formatted_label" entity_layout_id="at03" alignment="centre_y,left" id="gmf1" auto_size="vertical" needs_height="true">
+			<string id="size" value="medium" />
+			<string id="colour" value="faded text" />
+			<string id="multiline" value="false" />
+			<record id="format">
+				<translation id="text" translation_id="388547" type="use" value="[%number#1] year-old [%player_description#2][COMMENT: transfer window opening news, rumoured player moving, graphical display]" />
+				<string id="var2" value="vf_player_description" />
+			</record>
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<string id="get_property" value="Page" />
+						<string id="set_property" value="var1" />
+						<string id="dont_set_object" value="true" />
+					</record>
+					<record>
+						<string id="get_property" value="Pdes" />
+						<string id="set_property" value="var2" />
+						<string id="dont_set_object" value="true" />
+					</record>
+				</list>
+			</record>
+			<layout class="stick_to_object_attachment" id="align_top" offset="6" get_side="bottom" set_side="top" move_side="true" target="at02" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		</widget>
+		<widget class="international_appearances_label" entity_layout_id="at08" id="at08" auto_size="vertical" needs_height="true" name="int_apperances">
+			<string id="size" value="medium" />
+			<string id="colour" value="faded text" />
+			<integer id="int_apps_label_format" value="8" />
+			<record id="object_property" dont_set_hint="true" get_property="Pist" />
+			<layout class="stick_to_object_attachment" id="align_top" offset="6" get_side="bottom" set_side="top" move_side="true" target="at03" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		</widget>
+		<widget class="horizontal_divider" entity_layout_id="at04" id="at04" needs_height="true">
+			<layout class="stick_to_object_attachment" id="align_top" offset="6" get_side="bottom" set_side="top" move_side="true" target="at08" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		</widget>
+		<container entity_layout_id="at07" id="at07">
+			<layout class="stick_to_object_attachment" id="align_top" offset="6" get_side="bottom" set_side="top" target="at04" />
+			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<widget class="person_nationality_button" entity_layout_id="at05" auto_size="horizontal" id="at05" width="0">
+				<record id="object_property">
+					<string id="get_property" value="objt" />
+					<string id="set_property" value="objt" />
+				</record>
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+				<layout class="stick_to_object_attachment" id="align_bottom" offset="-1" get_side="bottom" set_side="bottom" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+			</widget>
+			<widget class="club_button" entity_layout_id="at06" id="at06" navigation_focus_target="false">
+				<string id="colour" value="faded text" />
+				<record id="object_property">
+					<string id="get_property" value="Pclb" />
+					<string id="set_property" value="valu" />
+				</record>
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="at05" />
+				<layout class="stick_to_object_attachment" id="align_left" offset="0" get_side="right" set_side="left" target="main" />
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			</widget>
+		</container>
+	</container>
+</panel>

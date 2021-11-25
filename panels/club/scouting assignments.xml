@@ -1,0 +1,56 @@
+<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<widget class="scouting_top_panel" id="stop">
+		<record id="object_property">
+			<integer id="get_property" value="objt" />
+			<integer id="set_property" value="objt" />
+		</record>
+		<list id="visible_items">
+			<flags value="scrc" />
+			<flags value="scfc" />
+			<flags value="rtec" />
+			<flags value="scbc" />
+			<flags value="trbc" />
+			<flags value="assc" />
+		</list>
+	</widget>
+
+	<container id="main">
+		<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+
+		<container id="cntt">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<container class="main_box" id="sctb" navigation_container="true">
+				<translation id="title" translation_id="259890" type="use" value="Scout Assignments[COMMENT; scout assignments section in person screen]" />
+
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="8"/>
+
+				<container class="inner_subtle_box">
+
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_gap="12" />
+
+
+					<widget class="primary_icon_button" id="nass" click_event="nack" colour="white" icon="icons/16px/plus" alignment="centre" auto_size="all">
+
+						<translation id="text" translation_id="363618" type="use" value="Create new assignment[COMMENT: heading; scouting assignments; button to create a new scouting assignment - FR 8138]" />
+					</widget>
+
+					<widget class="text" id="scop" spec="text" colour="faded text" auto_size="vertical" multiline="true" alignment="left"/>
+
+
+				</container>
+
+				<widget class="assignment_list_widget" id="aslw" />
+			</container>
+
+		</container>
+
+		<widget class="text" id="lnop" alignment="centre" hidden="false">
+			<translation id="text" translation_id="447500" type="use" value="There are currently no recruitment staff employed by the club. Therefore, reports cannot be provided.[COMMENT: club scouting assignments; explanatory text for situations where a club has no scouts]" />
+		</widget>
+
+	</container>
+
+</panel>

@@ -1,0 +1,62 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="should_colour" set_property="shown" target="plc1"/>
+		<record get_property="should_colour" set_property="hidden" target="plc2"/>		
+		<record get_property="should_colour" set_property="shown" target="plr1"/>
+		<record get_property="should_colour" set_property="hidden" target="plr2"/>
+	</list>
+	<attachment_group class="horizontal_arrange_autosize_all" horizontal_offset="0" vertical_inset="0" />
+	<container>
+	<attachment_group class="horizontal_arrange_autosize_all" horizontal_offset="0" vertical_inset="0" />
+		<widget class="training_rating_label_formatted" id="plr1" appearance="buttons/subtle/normal" colour="white" auto_size="all" format="[%fraction#1-2.2]" font="value">
+			<boolean id="dont_format_numeric_grouping" value="true" />
+			<string id="hint_if_no_value" value="-" />
+			<record id="object_property">
+				<integer id="get_property" value="Ptrt" />
+				<integer id="set_property" value="valu" />
+			</record>
+		</widget>	
+		<widget class="formatted_label" id="plr2" appearance="buttons/subtle/normal" auto_size="all" colour="white" size="small" format="[%fraction#1-2.2]" font="value">
+			<boolean id="dont_format_numeric_grouping" value="true" />
+			<string id="hint_if_no_value" value="-" />
+			<record id="object_property">
+				<integer id="get_property" value="Ptrt" />
+				<integer id="set_property" value="valu" />
+			</record>
+		</widget>
+	</container>
+	<container width="16">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+		<widget class="value_based_picture" id="plc1" image_alignment="centre" width="16" >
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="PcwC" />
+						<integer id="set_property" value="valu" />
+					</record>
+				</list>
+			</record>
+			<list id="value_list">
+				<record value="0" file="icons/16px/minus"  red_replacement="training rating six to seven" colour="white"/>
+				<record value="1" file="icons/16px/up" red_replacement="training rating eight to nine" colour="gold"/>
+				<record value="2" file="icons/16px/down" red_replacement="training rating zero to five" colour="red"/>
+			</list>
+		</widget>
+		<widget class="value_based_picture" id="plc2" image_alignment="centre"   >
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="PcwC" />
+						<integer id="set_property" value="valu" />
+					</record>
+				</list>
+			</record>
+			<list id="value_list">
+				<record value="0" file="icons/16px/minus" red_replacement="text" colour="white"/>
+				<record value="1" file="icons/16px/up" red_replacement="text" colour="white"/>
+				<record value="2" file="icons/16px/down" red_replacement="text" colour="white"/>
+			</list>
+		</widget>
+	</container>
+</panel>

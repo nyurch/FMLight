@@ -1,0 +1,20 @@
+﻿<panel>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<container id="vali" class="inner_subtle_box" red_replacement="green">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="8" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<container height="60">
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="2" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal"  inset="0" apply_to_children="true"/>
+			<widget class="text" auto_size="vertical" alignment="left" font="label">
+				<translation id="text" translation_id="230113" type="use" value="Duration" />
+			</widget>
+			<widget class="text" id="tdur" auto_size="vertical" size="18" alignment="left" font="value" />
+		</container>
+	</container>
+	<container id="inva" class="inner_subtle_box" red_replacement="red" hidden="true" height="40" />
+</panel>

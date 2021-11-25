@@ -1,0 +1,11 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" />
+
+	<widget id="topt" class="table"  layout="-1" auto_size="vertical" auto_size_rows="true" fixed_size_rows="false" row_spacing="8" >
+		<list id="column_widget_properties">
+			<record id="0" alignment="left,centre_y" multiline="true" colour="faded text"/>
+		</list>
+	</widget>
+	
+	
+</panel>

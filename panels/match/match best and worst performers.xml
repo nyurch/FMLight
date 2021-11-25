@@ -1,0 +1,226 @@
+﻿<panel navigation_container="true">
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<container class="inner_box">
+
+		<attachment_group class="vertical_arrange" vertical_layout="20,-1,10,20,-1" />
+
+		<widget class="link_button_title" id="bpln" section="mapl" auto_size="horizontal" alignment="centre" font="title" colour="positive" red_replacement="positive" blue_replacement="positive">
+			<translation id="text" translation_id="441061" type="use" value="Best Performers[COMMENT: match analysis screen title]" />
+		</widget>
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill"/>
+
+			<!--best home player-->
+			<container class="inner_subtle_box_no_margin" id="bpHb">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend"/>
+
+				<container class="inner_box_no_margin" id="bPhc" height="5"/>
+
+				<container class="client_object_viewer_xml_panel" id="bPho">
+					<attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="50,-1" horizontal_offset="6" horizontal_gap="8"/>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="object_portrait_picture" height="40" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+							<record id="object_property" get_property="objt" set_property="objt" />
+						</widget>
+
+						<container class="bordered_box_no_margin" id="bphR" height="22">
+							<!-- Rating Text -->
+							<widget class="dashed_number_label" id="bpTx" alignment="centre" style="semi_bold" format="[%fraction#1-4.1]">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+							</widget>
+						</container>
+					</container>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle"/>
+
+						<widget class="person_button" id="Per4" alignment="left,centre_y" colour="black" style="semi_bold" auto_size="vertical">
+							<record id="object_property" get_property="Pnam"/>
+						</widget>
+
+						<widget class="position_label" id="Pps4" alignment="left,centre_y" size="small" colour="faded text" auto_size="vertical">
+							<record id="object_property" get_property="Pmjp"/>
+						</widget>
+
+						<widget class="adaptive_match_player_summary" id="PpS4" alignment="left,centre_y" height="20">
+							<record id="object_property" get_property="PpSP"/>
+						</widget>
+
+					</container>
+
+				</container>
+
+				<widget class="text" id="bPhN" alignment="centre" auto_size="vertical">
+					<string id="text" value="-"/>
+				</widget>
+			</container>
+
+			<!--best away player-->
+			<container class="inner_subtle_box_no_margin" id="bpAb">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend"/>
+
+				<container class="inner_box_no_margin" id="bPac" height="5"/>
+
+				<container class="client_object_viewer_xml_panel" id="bPao">
+					<attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="50,-1" horizontal_offset="6" horizontal_gap="8"/>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="object_portrait_picture" height="40" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+							<record id="object_property" get_property="objt" set_property="objt" />
+						</widget>
+
+						<container class="bordered_box_no_margin" id="bphR"  height="22" >
+
+							<!-- Rating Text -->
+							<widget class="dashed_number_label" id="bpTx" alignment="centre" style="semi_bold" format="[%fraction#1-4.1]">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+							</widget>
+						</container>
+					</container>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle"/>
+
+						<widget class="person_button" id="Per1" alignment="left,centre_y" colour="black" style="semi_bold" auto_size="vertical">
+							<record id="object_property" get_property="Pnam"/>
+						</widget>
+
+						<widget class="position_label" id="Pps1" alignment="left,centre_y" colour="faded text" size="small" auto_size="vertical">
+							<record id="object_property" get_property="Pmjp"/>
+						</widget>
+
+						<widget class="adaptive_match_player_summary" id="PpS1" alignment="left,centre_y" height="20">
+							<record id="object_property" get_property="PpSP"/>
+						</widget>
+
+					</container>
+
+				</container>
+
+				<widget class="text" id="bPaN" alignment="centre" auto_size="vertical">
+					<string id="text" value="-"/>
+				</widget>
+			</container>
+		</container>
+
+		<container/>
+
+		<widget class="link_button_title" id="wpln" section="mapl" auto_size="horizontal" alignment="centre" font="title" colour="negative" red_replacement="negative" blue_replacement="negative">
+			<translation id="text" translation_id="441062" type="use" value="Struggled to Perform[COMMENT: match analysis screen title, please try to avoid outright negatives like 'Worst Performers']" />
+		</widget>
+
+		<!--info boxes-->
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill"/>
+
+			<!--worst home player-->
+			<container class="inner_subtle_box_no_margin" id="wpHb">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend"/>
+
+				<container class="inner_box_no_margin" id="wPhc" height="5"/>
+
+				<container class="client_object_viewer_xml_panel" id="wPho">
+					<attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="50,-1" horizontal_offset="6" horizontal_gap="8"/>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="object_portrait_picture" height="40" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+							<record id="object_property" get_property="objt" set_property="objt" />
+						</widget>
+
+						<container class="bordered_box_no_margin" id="bphR" height="22">
+
+							<!-- Rating Text -->
+							<widget class="dashed_number_label" id="bpTx" alignment="centre" style="semi_bold" format="[%fraction#1-4.1]">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+							</widget>
+						</container>
+					</container>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle"/>
+
+						<widget class="person_button" id="Per2" alignment="left,centre_y" colour="black" style="semi_bold" auto_size="vertical">
+							<record id="object_property" get_property="Pnam"/>
+						</widget>
+
+						<widget class="position_label" id="Pps2" alignment="left,centre_y" size="small" colour="faded text" auto_size="vertical">
+							<record id="object_property" get_property="Pmjp"/>
+						</widget>
+
+						<widget class="adaptive_match_player_summary" id="PpS2" alignment="left,centre_y" height="20">
+							<record id="object_property" get_property="PpSN"/>
+						</widget>
+					</container>
+
+				
+				</container>
+
+				<widget class="text" id="wPhN" alignment="centre" auto_size="vertical">
+					<string id="text" value="-"/>
+				</widget>
+			</container>
+
+			<!--worst away player-->
+			<container class="inner_subtle_box_no_margin" id="wpAb">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend"/>
+
+
+				<container class="inner_box_no_margin" id="wPac" height="5"/>
+
+				<container class="client_object_viewer_xml_panel" id="wPao">
+					<attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="50,-1" horizontal_offset="6" horizontal_gap="8"/>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="4" vertical_gap="0"/>
+
+						<widget class="object_portrait_picture" height="40" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+							<record id="object_property" get_property="objt" set_property="objt" />
+						</widget>
+
+						<container class="bordered_box_no_margin" id="bphR" height="22">
+
+							<!-- Rating Text -->
+							<widget class="dashed_number_label" id="bpTx" alignment="centre" style="semi_bold" format="[%fraction#1-4.1]">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+							</widget>
+						</container>
+					</container>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle"/>
+
+
+						<widget class="person_button" id="Per3" alignment="left,centre_y" colour="black" style="semi_bold" auto_size="vertical">
+							<record id="object_property" get_property="Pnam"/>
+						</widget>
+
+						<widget class="position_label" id="Pps3" alignment="left,centre_y" size="small" colour="faded text" auto_size="vertical">
+							<record id="object_property" get_property="Pmjp"/>
+						</widget>
+
+						<widget class="adaptive_match_player_summary" id="PpS3" alignment="left,centre_y" height="20">
+							<record id="object_property" get_property="PpSN"/>
+						</widget>
+					</container>
+
+				</container>
+
+				<widget class="text" id="wPaN" alignment="centre" auto_size="vertical">
+					<string id="text" value="-"/>
+				</widget>
+			</container>
+		</container>
+	</container>
+
+</panel>
+

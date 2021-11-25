@@ -1,0 +1,22 @@
+﻿<!-- panel to be used during the welcome to the club briefing -->
+<panel>
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<container class="inner_contrast_box_no_margin" red_replacement="bg darker">
+
+	<attachment_group class="horizontal_arrange" horizontal_layout="-1,26" horizontal_offset="8" horizontal_gap="8"/>
+
+		<container>
+		<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_gap="0"/>
+
+		<widget class="text" id="pnam" auto_size="vertical" font="label" alignment="right, centre_y"/>
+		<widget class="person_button" id="pplr" height="20" style="bold" alignment="right, centre_y" person_is_player="true" links_enabled_in_popup="false" info_popup_instead_of_link="true" navigation_focus_target="false" colour="text"/>
+		<widget class="club_squad_character_label" id="CscV" auto_size="vertical" style="bold" alignment="right, centre_y"/>
+
+	</container>
+
+	<widget class="picture" id="ppic" width="26" height="26" scale_picture="true" image_alignment="centre"/>
+
+</container>
+</panel>

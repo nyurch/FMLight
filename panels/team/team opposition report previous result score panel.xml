@@ -1,0 +1,56 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<container class="inner_subtle_box">
+		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="4"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle,fill" horizontal_offset="0" horizontal_gap="0" vertical_offset="0" />
+
+			<widget class="team_button" auto_size="vertical" style="semi_bold" mode="1" alignment="left,centre_y">
+				<record id="object_property">
+					<integer id="get_property" value="home" />
+				</record>
+			</widget>
+
+			<widget class="fixture_full_result_text" auto_size="all" format="[%scoreline#1-home_away]" style="bold" size="12" alignment="centre" reverse_teams="false">
+				<record id="object_property">
+					<integer id="get_property" value="FxFR" />
+				</record>
+			</widget>
+
+			<widget class="team_button" auto_size="vertical" style="semi_bold" mode="1" alignment="right,centre_y" icon_alignment="left" id="zzzz">
+				<record id="object_property">
+					<integer id="get_property" value="away" />
+				</record>
+			</widget>
+
+		</container>
+
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="-1, 5, -1" offset="0" gap="8" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+			<container class="scrolling_box">
+				<widget class="fixture_goalscorers_text" team_index="0" auto_size="vertical" alignment="right,top" separate_lines="true" show_none_if_nothing_happened="false" colour="text" size="small">
+					<record id="object_property">
+						<integer id="get_property" value="FxCG" />
+					</record>
+				</widget>
+			</container>
+
+			<widget class="vertical_divider" auto_size="none"/>
+
+			<container class="scrolling_box">
+				<widget class="fixture_goalscorers_text" team_index="1" auto_size="vertical" alignment="left,top" separate_lines="true" show_none_if_nothing_happened="false" colour="text" size="small">
+					<record id="object_property">
+						<integer id="get_property" value="FxCG" />
+					</record>
+				</widget>
+			</container>
+
+		</container>
+
+	</container>
+</panel>

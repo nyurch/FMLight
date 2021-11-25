@@ -1,0 +1,5 @@
+<class class="player_picker_button" parent="player_selection_button" >
+<flags id="default_text_colour" value="text" />
+<record id="secondary_icon_properties" red_replacement="text"/>
+
+</class>

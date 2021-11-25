@@ -1,0 +1,38 @@
+﻿<panel>
+	<real id ="label_width_offset" value="0.0" />
+	<!-- Scale the polygon to fit the widget and draw it in code -->
+	<boolean id="scale_picture" value="true" />
+	<boolean id="fill_polygon" value="true" />
+	<integer id="layer_id_to_draw" value="1" />
+	<!-- First layer colour-->
+	<record id="line_style">
+		<colour id="colour" name="fg accent" />
+		<integer id="alpha" value="50" />
+		<real id="width" value="2.0" />
+	</record>
+	<!-- Second layer colour-->
+	<record id="second_colour">
+		<colour id="colour" name="fg tertiary" />
+		<string id="size" value="large" />
+		<integer id="alpha" value="120" />
+		<string id="style" value="semi_bold" />
+		<real id="width" value="2.0" />
+	</record>
+
+	<record id="highlight_settings">
+		<record id="line_style">
+			<colour id="colour" name="fg alpha" />
+			<real id="width" value="3.0" />
+		</record>
+		<real id="radius" value="10.0" />
+	</record>
+
+	<!-- Colours (and number) of the concentric polygon rings -->
+	<list id="ring_colours">
+		<colour red="100" green="100" blue="120" alpha="100"/>
+		<colour red="100" green="100" blue="120" alpha="85"/>
+		<colour red="100" green="100" blue="120" alpha="70"/>
+		<colour red="100" green="100" blue="120" alpha="55"/>
+		<colour red="100" green="100" blue="120" alpha="40"/>
+	</list>
+</panel>

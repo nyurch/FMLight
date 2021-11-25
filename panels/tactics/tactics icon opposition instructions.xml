@@ -1,0 +1,105 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="bottom,extend" vertical_offset="0" vertical_gap="-8" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<boolean id="should_force_refresh" value="true" />
+
+	<animation class="fade_on_hide_animation" />
+
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+
+		<widget class="tactics_kit_picture" id="kitp">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+
+		<!--containers for the indicators-->
+		<!--injury/red/yellow card -->
+		<container class="inner_box_no_margin" id="inji" width="20" height="20" icon_alignment="left,top">
+			<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="top" inset="9" />
+		</container>
+
+		<!--captain icon-->
+		<widget class="picture" id="capi" scale_picture="true" file="icons/16px/captain" width="14" height="14">
+			<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="top" inset="9" />
+		</widget>
+	</container>
+
+	<!--name-->
+	<container class="main_contrast_box_no_margin" red_replacement="green 900">
+
+		<attachment class="test_screen_size_attachment" skip_if_false="true">
+			<list id="properties">
+				<!-- Each entry uses the previous entry as it's default/starting value so we only need to set some properties once -->
+				<record>
+					<flags id="alignment" value="vertical" />
+					<integer id="min_value" value="0" />
+					<integer id="max_value" value="720" />
+					<symbol id="set_property" value="height" />
+					<integer id="true_value" value="25" />
+					<integer id="false_value" value="25" />
+				</record>
+				<record min_value="720" max_value="10000" true_value="48" />
+			</list>
+		</attachment>
+
+		<attachment_group class="vertical_arrange" vertical_offset="2" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="2" />
+
+		<!-- Name and toggle thing-->
+		<container height="20">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_offset="0" horizontal_gap="1" vertical_alignment="vertical" vertical_inset="0" />
+
+			<widget class="opposition_instruction_player_toggle" id="OPiT" get_property="OPiT" width="36">
+				<string id="remove_if" value="ui.is_fmt_controller_skin" />
+				<!-- PROP_OPPOSITION_PLAYER_TACTICS_TOGGLE, DB_PERSON -->
+				<attachment class="set_client_object_meta_data_attachment" get_property="OPiT" database_table_type="1" />
+			</widget>
+			<widget class="text" id="name" colour="text" size="xsmall" multiline="false">
+				<attachment class="test_screen_size_attachment" skip_if_false="true">
+					<list id="properties">
+						<!-- Each entry uses the previous entry as it's default/starting value so we only need to set some properties once -->
+						<record>
+							<flags id="alignment" value="vertical" />
+							<integer id="min_value" value="0" />
+							<integer id="max_value" value="720" />
+							<symbol id="set_property" value="alignment" />
+							<integer id="true_value" value="centre" />
+							<integer id="false_value" value="centre" />
+						</record>
+						<record min_value="720" max_value="10000" true_value="left,centre_y,can_scale" />
+					</list>
+				</attachment>
+			</widget>
+		</container>
+
+		<!-- Instruction popup widgets -->
+		<!-- These are actually set up by the instruction panel itself because CLIENT_TACTIC -->
+		<container height="24">
+			<string id="remove_if" value="ui.is_fmt_controller_skin" />
+			<attachment_group class="horizontal_arrange" horizontal_alignment="middle" horizontal_offset="0" horizontal_gap="4" vertical_alignment="vertical" vertical_inset="0" />
+
+			<widget class="player_instruction_popup" id="ipop" secondary_icon_enabled="false" show_button_appearance="false" get_property="OPtm" enabled="true" width="18">
+				<translation id="hint" translation_id="255054" type="use" value="Tight Marking[COMMENT: tactics: opposition player specific instructions; title]" />
+				<!-- PROP_OPPOSITION_PLAYER_TACTICS_TIGHT_MARKING, DB_PERSON -->
+				<attachment class="set_client_object_meta_data_attachment" get_property="OPtm" database_table_type="1" />
+			</widget>
+			<widget class="player_instruction_popup" secondary_icon_enabled="false" show_button_appearance="false" get_property="OPcd" enabled="true" width="18">
+				<translation id="hint" translation_id="534818" type="use" value="Trigger Press[COMMENT: AREA: Tactics; SUB-AREA: Team Instruction descriptions; FR-BN: 34854; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: renaming Pressing Intensity]" />
+				<!-- PROP_OPPOSITION_PLAYER_TACTICS_PRESSING_TRIGGER, DB_PERSON -->
+				<attachment class="set_client_object_meta_data_attachment" get_property="OPcd" database_table_type="1" />
+			</widget>
+			<widget class="player_instruction_popup" secondary_icon_enabled="false" show_button_appearance="false" get_property="OPtk" enabled="true" width="18">
+				<translation id="hint" translation_id="255061" type="use" value="Tackling[COMMENT: tactics: opposition player specific instructions; title]" />
+				<!-- PROP_OPPOSITION_PLAYER_TACTICS_TACKLING, DB_PERSON -->
+				<attachment class="set_client_object_meta_data_attachment" get_property="OPtk" database_table_type="1" />
+			</widget>
+			<widget class="player_instruction_popup" secondary_icon_enabled="false" show_button_appearance="false" get_property="OPsf" enabled="true" width="18">
+				<translation id="hint" translation_id="255449" type="use" value="Show Onto Foot[COMMENT: tactics: opposition player specific instructions; title; player instruction to force opposition player on to a particular foot]" />
+				<!-- PROP_OPPOSITION_PLAYER_TACTICS_SHOW_ONTO_FOOT, DB_PERSON -->
+				<attachment class="set_client_object_meta_data_attachment" get_property="OPsf" database_table_type="1" />
+			</widget>
+		</container>
+	</container>
+
+</panel>

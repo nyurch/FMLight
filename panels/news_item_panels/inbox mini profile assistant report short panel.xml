@@ -1,0 +1,25 @@
+<panel>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0"/>
+
+	<container class="inner_subtle_box" red_replacement="black">
+		<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<widget class="label" id="rptl" auto_size="vertical" style="bold" colour="text" size="10" alignment="centre">
+			<translation id="text" translation_id="361067" type="use" value="Assistant Report[COMMENT: FR 6571; panel title for assistant's rating of newly signed player]"/>
+		</widget>
+
+		<widget class="scout_stars_label" id="cast" auto_size="vertical" alignment="centre"/>
+
+		<widget class="player_scout_recommendation_widget" id="RCic" width="50" height="50" alignment="centre"/>
+
+		<widget class="label" id="noss" auto_size="vertical" colour="text" alignment="centre" hidden="true">
+			<translation id="text" translation_id="249426" type="use" value="N/A[COMMENT: Not Applicable, abbreviation]"/>
+		</widget>
+
+	</container>
+
+</panel>

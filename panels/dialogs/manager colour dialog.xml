@@ -1,0 +1,209 @@
+﻿<panel>
+<string id="skin_style" value="edit_box" />
+  <attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="4" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+  <record id="widget_info">
+    <flags id="alignment" value="centre_x" />
+    <symbol id="class" value="inner_box" />
+    <flags id="width" value="300" />
+  </record>
+
+  <list id="default_colour_list">
+    <record colour="red 100" />
+    <record colour="pink 100" />
+    <record colour="purple 100" />
+    <record colour="teal 100" />
+    <record colour="green 100" />
+    <record colour="lime 100" />
+    <record colour="blue 100" />
+    <record colour="cyan 100" />
+    <record colour="yellow 100" />
+    <record colour="orange 100" />
+    <record colour="deep orange 100" />
+    <record colour="brown 100" />
+    <record colour="white" />
+
+    <record colour="red 300" />
+    <record colour="pink 300" />
+    <record colour="purple 300" />
+    <record colour="teal 300" />
+    <record colour="green 300" />
+    <record colour="lime 300" />
+    <record colour="blue 300" />
+    <record colour="cyan 300" />
+    <record colour="yellow 100" />
+    <record colour="orange 300" />
+    <record colour="deep orange 300" />
+    <record colour="brown 300" />
+    <record colour="grey 400" />
+
+    <record colour="red 500" />
+    <record colour="pink 500" />
+    <record colour="purple 500" />
+    <record colour="teal 500" />
+    <record colour="green 500" />
+    <record colour="lime 500" />
+    <record colour="blue 500" />
+    <record colour="cyan 500" />
+    <record colour="yellow 500" />
+    <record colour="orange 500" />
+    <record colour="deep orange 500" />
+    <record colour="brown 500" />
+    <record colour="grey 700" />
+
+    <record colour="red 700" />
+    <record colour="pink 700" />
+    <record colour="purple 700" />
+    <record colour="teal 700" />
+    <record colour="green 700" />
+    <record colour="lime 700" />
+    <record colour="blue 700" />
+    <record colour="cyan 700" />
+    <record colour="yellow 700" />
+    <record colour="orange 700" />
+    <record colour="deep orange 700" />
+    <record colour="brown 700" />
+    <record colour="black" />
+
+  </list>
+
+  
+  <container navigation_container="true">
+    <attachment_group class="vertical_arrange_autosize"/>
+
+    <widget class="check_box" height="20" id="cBbu" click_event="acCl">
+      <translation id="text" translation_id="491895" type="use" value="Use club colour[COMMENT: AREA: Manager profile panel; SUB-AREA: Colour picker for manager appearance; FR-BN: 25843; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE; To use club primary colour for manager man's attire]" />
+    </widget>
+  </container>
+
+  <container id="coCo">
+    <attachment_group class="vertical_arrange_autosize" vertical_offset="10" vertical_gap="5" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+    <container height="200">
+      <global id="hidden" name="ui.is_fmt_controller_skin"/>
+
+      <widget class="hsl_selector" id="hsls" colour_event="hslc">
+        <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+      </widget>
+
+      <widget class="colour_button" id="crcl" width="22" height="22" appearance="buttons/custom/colour picker/button">
+        <layout class="stick_to_sides_attachment" alignment="right,bottom" inset="0,0,0,5" />
+      </widget>
+    </container>
+
+
+    <container height="50">
+      <global id="hidden" name="ui.is_fmt_controller_skin"/>
+
+      <layout class="arrange_horizontal_attachment" alignment="middle" offset="0" />
+      <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+      <container height="40" width="60">
+        <layout class="arrange_vertical_attachment" alignment="fill" offset="0" />
+
+        <widget class="edit_box" auto_size="vertical" id="redc" edit_event="redc" alignment="centre" width="45">
+          <layout class="centre_in_parent_attachment" alignment="horizontal" />
+
+          <layout class="is_number_attachment" max_value="255" />
+        </widget>
+
+        <widget class="text" alignment="centre" colour="disabled">
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+
+          <translation id="text" translation_id="356918" type="use" value="R[COMMENT: abbreviation of the colour Red]" />
+        </widget>
+
+      </container>
+
+      <container height="40" width="60">
+        <layout class="arrange_vertical_attachment" alignment="fill" offset="0" />
+
+        <widget class="edit_box" auto_size="vertical" id="grec" edit_event="grec" alignment="centre" width="45">
+          <layout class="centre_in_parent_attachment" alignment="horizontal" />
+
+          <layout class="is_number_attachment" max_value="255" />
+        </widget>
+
+        <widget class="text" alignment="centre" colour="disabled">
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+
+          <translation id="text" translation_id="356847" type="use" value="G[COMMENT: abbreviation of the colour Green]" />
+        </widget>
+
+      </container>
+
+      <container height="40" width="60">
+        <layout class="arrange_vertical_attachment" alignment="fill" offset="0" />
+
+        <widget class="edit_box" auto_size="vertical" id="bluc" edit_event="bluc" alignment="centre" width="45">
+          <layout class="centre_in_parent_attachment" alignment="horizontal" />
+
+          <layout class="is_number_attachment" max_value="255" />
+        </widget>
+
+        <widget class="text" alignment="centre" colour="disabled">
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+
+          <translation id="text" translation_id="356818" type="use" value="B[COMMENT: abbreviation of the colour Blue]" />
+        </widget>
+
+      </container>
+    </container>
+
+
+    <widget class="horizontal_divider" />
+
+
+    <container height="100" width="100">
+      <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="4" />
+      <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="5" />
+
+
+      <widget class="text" auto_size="vertical" font="title">
+        <translation id="text" translation_id="441160" type="use" value="Default Colours[COMMENT: Default colours in colour dialog.]" />
+      </widget>
+
+      <widget class="table" id="tabl" layout="20,20,20,20,20,20,20,20,20,20,20,20,20" column_spacing="0" row_spacing="0" mode="" fixed_size_rows="true" row_height="20" auto_size="all" navigation_container="true" default_focus="true" sort_disabled="true" />
+
+    </container>
+
+    <widget class="horizontal_divider" />
+
+    <container height="50">
+      <global id="hidden" name="ui.is_fmt_controller_skin"/>
+
+      <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="4" />
+      <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="5" />
+
+      <widget class="text" auto_size="vertical" font="title">
+        <translation id="text" translation_id="441161" type="use" value="Recent Colours[COMMENT: Recent colours in colour dialog.]" />
+      </widget>
+      <widget class="table" id="rece" layout="20,20,20,20,20,20,20,20,20,20,20,20,20" column_spacing="0" row_spacing="0" mode="" fixed_size_rows="true" row_height="20" auto_size="all"/>
+    </container>
+
+
+  </container>
+
+  <container>
+    <flags id="okap" value="buttons/primary/normal/button" />
+    <flags id="tici" value="icons/16px/tick" />
+
+    <attachment_group class="button_arrangement_right" />
+
+    <widget class="icon_button" id="ok" hidn="true" event_id="ok" auto_size="all" icon="icons/16px/tick" controller_button="y_button">
+      <translation id="text" translation_id="229829" type="use" value="Ok" />
+    </widget>
+
+    <widget class="icon_button" id="yes" hidn="true" event_id="yes" auto_size="all">
+      <translation id="text" translation_id="242044" type="use" value="Yes" />
+    </widget>
+
+    <widget class="button" id="no" hidn="true" event_id="no" auto_size="all">
+      <translation id="text" translation_id="231460" type="use" value="No" />
+    </widget>
+
+    <widget class="icon_button" id="canc" hidn="true" event_id="canc" auto_size="all" controller_button="b_button">
+      <translation id="text" translation_id="229828" type="use" value="Cancel" />
+    </widget>
+  </container>
+</panel>

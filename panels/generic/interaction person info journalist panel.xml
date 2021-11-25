@@ -1,0 +1,53 @@
+﻿<panel>
+    <attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="0" vertical_inset="0"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+
+    <container class="bordered_box_no_margin" appearance="boxes/custom/interaction/person/paper">
+        <attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" vertical_gap="0" vertical_inset="0"/>
+
+        <container>
+            <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="30, -1" horizontal_gap="8" vertical_offset="0"/>
+
+            <container>
+                <attachment_group class="horizontal_arrange_vertical_autosize" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
+
+                <!-- portrait -->
+                <widget class="object_portrait_picture" id="PPor" width="30" height="30" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+                    <record id="object_property">
+                        <integer id="get_property" value="Pers"/>
+                        <boolean id="dont_set_object" value="true"/>
+                        <boolean id="dont_set_hint" value="true"/>
+                    </record>
+                    <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+                </widget>
+
+                <!-- currently speaking icon? -->
+                <widget class="picture" id="talk" file="icons/custom/quick chat/quick_chat_speaking_mask_square_small" scale_picture="true" keep_aspect_ratio="true" width="30" height="30" image_alignment="centre" red_replacement="fg red" hidden="true">
+                    <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+                </widget>
+            </container>
+
+            <container>
+                <attachment_group class="vertical_arrange_autosize" vertical_alignment="bottom" vertical_inset="0" vertical_offset="0" vertical_gap="0" horizontal_inset="0" horizontal_offset="0"/>
+
+                <container height="16">
+                    <attachment_group class="horizontal_arrange" horizontal_alignment="left" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
+                    
+                    <widget class="icon_button" id="jrni" icon="icons/custom/object preview/button" show_button_appearance="false" width="16" height="16" alignment="centre"/>
+
+                    <!-- name -->
+                    <widget class="person_button" colour="black" id="perb" size="medium" style="bold" alignment="left, centre_y" auto_size="horizontal" auto_size_maximum_width="115" height="14" info_popup_enabled="false"/>
+                </container>
+
+                <!-- Publication -->
+                <widget class="client_object_label" id="publ" size="small" alignment="left" auto_size="none" height="20" colour="faded text">
+                    <record id="object_property" get_property="Jmsr" set_property="valu" />
+                </widget>
+            </container>
+        </container>
+
+        <!-- player morale/reactions -->
+        <widget class="interaction_reaction_label" id="bdlg" show_button_appearance="true" wants_mouse_events="false" appearance="boxes/custom/reactions/neutral/paper" style="bold" height="25" hidden="true"/>
+    </container>
+</panel>

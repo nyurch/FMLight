@@ -1,0 +1,65 @@
+﻿<panel>
+
+
+	<list id="properties_to_forward">
+		<record get_property="titl" set_property="valu" target="titl"/>
+		<record get_property="Pers" set_property="objt" target="awPC"/>
+		<record get_property="Pers" set_property="valu" target="awNM"/>
+		<record get_property="Pers" set_property="objt" target="awAD"/>
+		<record get_property="subt" set_property="valu" target="awST"/>
+		<record get_property="prRT" set_property="valu" target="awRT"/>
+		<record get_property="colr" set_property="colour" target="awST"/>
+		<record get_property="colr" set_property="colour" target="awRT"/>
+	</list>
+
+	<attachment_group class="vertical_arrange_autosize" />
+
+	<container class="main_subtle_box_no_margin">
+
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="5" horizontal_inset="5" />
+
+		<widget class="text" id="titl" auto_size="all" auto_size_maximum_width="130" alignment="left, centre_y" size="medium" font="title" colour="disabled" value="Player of the season"/>
+
+		<container height="70">
+			<attachment_group class="horizontal_arrange_vertical_autosize" alignment="centre_y" horizontal_layout="40,-1,90"/>
+
+			<!-- Profile picture -->
+			<container height="45">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+				<!-- Player Picture -->
+				<widget class="object_portrait_picture" id="awPC" scale_picture="true" keep_aspect_ratio="true" image_alignment="top" />
+			</container>
+
+			<!-- Personal Details -->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="2"/>
+
+				<!-- Name -->
+				<widget class="person_button" id="awNM" auto_size="vertical" alignment="left, centre_y" style="bold" size="medium" multiline="false" colour="text"/>
+				
+				<widget class="player_age_and_description_widget" id="awAD" auto_size="vertical" alignment="left, centre_y" size="small" multiline="true" file="none" colour="faded text">
+					<attachment_group class="vertical_arrange_autosize"/>
+
+					<widget class="text" id="mtxt" auto_size="vertical" alignment="left, centre_y">
+						<translation id="text" translation_id="347559" type="use" value="[%number#1] year-old [%player_description#1][COMMENT: inbox person information panel; person description]" />
+					</widget>
+
+				</widget>
+
+			</container>
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="3"/>
+
+				<!-- Award -->
+				<widget class="text" id="awST" auto_size="vertical" multiline="true" height="20" alignment="centre" font="label" size="xsmall" colour="faded text" />
+				<widget class="text" id="awRT" auto_size="vertical" multiline="true" alignment="centre" size="medium" style="bold"/>
+
+			</container>
+		</container>
+
+	</container>
+
+
+</panel>

@@ -1,0 +1,24 @@
+<panel navigation_container="true">
+	<attachment_group class="button_arrangement_right" />
+
+	<widget class="primary_icon_tick_button" id="set " controller_button="y_button" colour="white">
+		<translation id="text" translation_id="229918" type="use" value="Confirm" />
+		<record id="click_event">
+			<flags id="event_id" value="set " />
+		</record>
+	</widget>
+
+	<widget class="button" id="undo" auto_size="all" click_event="UNDO" controller_button="x_button">
+		<translation id="text" translation_id="230251" type="use" value="Undo" />
+	</widget>
+	<widget class="button" id="redo" auto_size="all" click_event="REDO">
+		<translation id="text" translation_id="329043" type="use" value="Redo" />
+	</widget>
+	<widget class="button" id="disc" auto_size="all" >
+		<translation id="text" translation_id="344717" type="use" value="Revert" />
+		<record id="click_event">
+			<flags id="event_id" value="disc" />
+		</record>
+	</widget>
+
+</panel>

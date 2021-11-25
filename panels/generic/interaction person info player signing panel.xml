@@ -1,0 +1,44 @@
+﻿<panel>
+    <attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="2" vertical_inset="0"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+
+    <container class="bordered_box_no_margin" appearance="boxes/popup/standard/paper">
+        <attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" vertical_gap="0" vertical_inset="0"/>
+
+        <container height="30">
+            <attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="30, -1" horizontal_gap="8" vertical_offset="0"/>
+
+            <!-- portrait -->
+            <widget class="object_portrait_picture" width="30" height="30" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+                <record id="object_property">
+                    <integer id="get_property" value="Pers"/>
+                    <boolean id="dont_set_object" value="true"/>
+                    <boolean id="dont_set_hint" value="true"/>
+                </record>
+            </widget>
+
+            <container>
+                <attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="0"/>
+
+                <container height="15">
+                    <attachment_group class="horizontal_arrange" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
+                    
+                    <!-- name -->
+                    <widget class="person_button" colour="black" id="perb" size="small" style="bold" alignment="left, centre_y" auto_size="horizontal" height="16" info_popup_enabled="true" person_is_player="true"/>
+
+                    <widget class="icon_button" id="ShPl" click_event="ShPl" icon="icons/16px/increase" show_button_appearance="false" width="16" height="15" alignment="top, centre_x"/>
+                </container>
+
+                <!-- hierarchy -->
+                <widget class="client_object_property_panel" id="THic" property="THic" auto_size="none" height="16">
+                    <record id="object_property" get_property="objt" set_property="objt"/>
+                    <record id="widget_properties" colour="faded text" alignment="left, centre_y" show_category_colour="false" size="xsmall"/>
+                </widget>
+            </container>
+        </container>
+
+        <!-- player morale/reactions -->
+        <widget class="interaction_reaction_label" id="bdlg" show_button_appearance="true" wants_mouse_events="false" appearance="boxes/custom/reactions/neutral/paper" style="bold" height="25" hidden="true"/>
+    </container>
+</panel>

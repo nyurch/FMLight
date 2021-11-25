@@ -1,0 +1,155 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	<container class="vertical_adaptive_container"  offset="0" gap="4" inset="6" >
+		<container default_height="170"  priority="1">
+
+			<layout class="arrange_vertical_attachment" layout="40,-1" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="8" />
+				<widget class="text" size="7" auto_size="vertical" alignment="left,bottom" style="semi_bold" font="label">
+					<translation id="text" translation_id="339927" type="use" value="This week[Comment: Training panel; label for the current week in the calendar]" />
+				</widget>
+				<widget class="text" size="10" id="schT" colour="text" style="bold" font="title" />
+			</container>
+
+			<container class="training_schedule_week_widget" id="pwTw" file="widgets/training schedule week widget">
+				<string id="draggable" value="true" />
+				<string id="session_description_column" value="false" />
+				<string id="schedule_session_widget_file" value="widgets/training schedule small session widget" />
+				<string id="schedule_header_file" value="widgets/training schedule month header" />
+			</container>
+		</container>
+
+		<container default_height="-1" minimum_height="120" priority="10000">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<container id="nomP">
+				<layout class="arrange_vertical_attachment" layout="-1,-1" offset="0" gap="4" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+				<!--best training performance-->
+				<container class="inner_subtle_box" id="best" red_replacement="green">
+					<attachment_group class="horizontal_arrange" horizontal_layout="-3, -2" />
+					<translation id="title" translation_id="466444" type="use" value="Best Training Performance (last 7 days)[COMMENT: Training Manager home best performance in last week]" />
+					<container class="player_hierarchy_widget" id="bPwi" file="none">
+						<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="all" inset="0" />
+						<container class="horizontal_adaptive_container" inset="0" offset="0">
+							<!--picture-->
+							<container class="vertical_adaptive_container" default_width="50" minimum_width="40" priority="1000">
+								<container minimum_height="60" priority="1000">
+									<layout class="centre_in_parent_attachment" alignment="all" apply_to_children="true" />
+									<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+
+									<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x" height="36" width="36">
+										<record id="object_property">
+											<list id="get_properties">
+												<!--Facegen data request-->
+												<record get_property="fcgn" />
+												<!--Fake name request-->
+												<record get_property="Pfke" />
+												<record get_property="prpc" set_property="valu" />
+											</list>
+										</record>
+									</widget>
+								</container>
+							</container>
+
+
+							<!--Name and age/player type-->
+							<container class="vertical_adaptive_container" alignment="middle" gap="0" offset="0" default_width="-3" minimum_width="120" priority="1">
+								<widget class="person_button" id="perp" priority="2" default_height="22" alignment="left,centre_y" info_popup_enabled="true" Pipl="true" navigation_focus_target="false" colour="accent"/>
+
+								<widget class="player_age_and_description_widget" id="pltx" colour="faded text" spec="text" size="xsmall" default_height="18" alignment="left,centre_y" priority="2" file="none">
+									<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+									<widget class="text" id="mtxt" auto_size="none">
+										<translation id="text" translation_id="347559" type="use" value="[%number#1] year-old [%player_description#1][COMMENT: inbox person information panel; person description]" />
+									</widget>
+
+								</widget>
+
+							</container>
+						</container>
+					</container>
+					<container>
+						<attachment_group class="vertical_arrange" vertical_alignment="middle" gap="1" />
+						<widget class="text" alignment="left, centre_y" auto_size="vertical" multiline="false" font="label">
+							<translation id="text" translation_id="466504" type="use" value="Training Rating[COMMENT: a rating of how well the player is getting on in training]" />
+						</widget>
+						<widget class="property_list_viewer_xml_panel" file="widgets/training rating with change icon" should_colour="true" id="blrt"  auto_size="vertical" navigation_focus_target="false" />
+					</container>
+				</container>
+
+				<!--worst training performance-->
+				<container class="inner_subtle_box" id="wrst" red_replacement="red">
+					<translation id="title" translation_id="466445" type="use" value="Worst Training Performance (last 7 days)[COMMENT: Training Manager home Worst performance in last week]" />
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+					
+					<container id="wrsC">
+						<attachment_group class="horizontal_arrange" horizontal_layout=" -3, -2" />
+						<container class="player_hierarchy_widget" id="wPwi" file="none">
+							<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="all" inset="0" />
+							<container class="horizontal_adaptive_container" inset="0" offset="0">
+								<!--picture-->
+								<container class="vertical_adaptive_container" default_width="50" minimum_width="40" priority="1000">
+									<container minimum_height="60" priority="1000">
+										<layout class="centre_in_parent_attachment" alignment="all" apply_to_children="true" />
+										<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+
+										<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x" height="36" width="36">
+											<record id="object_property">
+												<list id="get_properties">
+													<!--Facegen data request-->
+													<record get_property="fcgn" />
+													<!--Fake name request-->
+													<record get_property="Pfke" />
+													<record get_property="prpc" set_property="valu" />
+												</list>
+											</record>
+										</widget>
+									</container>
+								</container>
+
+
+								<!--Name and age/player type-->
+								<container class="vertical_adaptive_container" alignment="middle" gap="0" offset="0" default_width="-3" minimum_width="120" priority="1">
+									<widget class="person_button" id="perp" priority="2" default_height="22" alignment="left,centre_y" info_popup_enabled="true" Pipl="true" navigation_focus_target="false" colour="accent"/>
+
+									<widget class="player_age_and_description_widget" id="pltx" colour="faded text" spec="text" size="xsmall" default_height="18" alignment="left,centre_y" priority="2" file="none">
+										<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+										<widget class="text" id="mtxt" auto_size="none">
+											<translation id="text" translation_id="347559" type="use" value="[%number#1] year-old [%player_description#1][COMMENT: inbox person information panel; person description]" />
+										</widget>
+
+									</widget>
+
+								</container>
+							</container>
+						</container>
+						<container>
+							<attachment_group class="vertical_arrange" vertical_alignment="middle" gap="1" />
+							<widget class="text" alignment="left, centre_y" auto_size="vertical" multiline="false" font="label">
+								<translation id="text" translation_id="466504" type="use" value="Training Rating[COMMENT: a rating of how well the player is getting on in training]" />
+							</widget>
+							<widget class="property_list_viewer_xml_panel" file="widgets/training rating with change icon" should_colour="true" id="wlrt"  auto_size="vertical" navigation_focus_target="false" />
+						</container>
+					</container>
+					
+					<widget class="text" id="noBD" alignment="centre" hidden="true">
+						<translation id="text" translation_id="469534" type="use" value="There have been no bad performances worth noting in training this week[Comment: Training fix for bug 188141 - situation where there are no bad training performers to display]" />
+					</widget>
+				</container>
+			</container>
+
+			<container class="main_box" id="SUBP" hidden="true">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+				<widget class="text" id="noTi" alignment="centre">
+					<translation id="text" translation_id="241285" type="use" value="Squad end of season break[COMMENT: END_OF_SEASON_HOLIDAY_NEWS; players begin post-season holiday; headline]" />
+				</widget>
+			</container>
+		</container>
+	</container>
+</panel>

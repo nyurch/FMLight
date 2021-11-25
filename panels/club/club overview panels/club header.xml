@@ -1,0 +1,90 @@
+<panel>
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+    <container>
+        <attachment class="horizontal_arrange" horizontal_layout="140,-1" horizontal_gap="10"/>
+        <widget class="picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+            <layout class="stick_to_sides_attachment" alignment="vertical" inset="10"/>
+            <record id="object_property" get_property="mnpc" set_property="file"/>
+        </widget>
+        <container>
+            <attachment class="horizontal_arrange" horizontal_layout="250,-1" alignment="centre_y"/>
+            <container>
+                <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+                <layout class="arrange_vertical_attachment" alignment="middle" gap="0"/>
+                <record id="default_properties" size="9" colour="text"/>
+                <widget class="label" id="Csnm" height="30" font="value" size="17" wants_mouse_events="false">
+                    <record id="object_property" get_property="Csnm"/>
+                </widget>
+                <widget class="label" height="16" alignment="left,top" font="title" colour="title">
+                    <translation id="text" translation_id="257214" type="use" value="Year Founded"/>
+                </widget>
+                <widget class="label" height="20" font="lcsb" colour="red 900" alignment="left,bottom">
+                    <record id="object_property" get_property="Cyfn"/>
+                </widget>
+				<widget class="professional_status_label" height="18" font="lcsb" colour="text" alignment="left,bottom">
+                    <record id="object_property" get_property="Cprs"/>
+                </widget>
+                <widget class="club_finances_description_text" height="18" font="lcsb" colour="text" alignment="left,bottom" short_name="true">
+                    <record id="object_property" get_property="CfiD"/>
+                </widget>
+                <widget height="20" class="nation_button" font="lcsb" colour="text" icon_alignment="right,centre_y">
+                    <record id="object_property" get_property="Dnat"/>
+                </widget>
+                <widget height="18" class="comp_button" font="lcsb" colour="text" icon_enabled="false" alignment="left,bottom">
+                    <record id="object_property" get_property="Cdiv"/>
+                </widget>
+            </container>
+            <container class="horizontal_adaptive_container" alignment="right" gap="25" offset="20" inset="0">
+                <container default_width="450" priority="2">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+					<widget class="club_overview_kits_panel" file="none">
+					<attachment class="horizontal_arrange" horizontal_layout="-5,-3" horizontal_gap="10"/>
+					<record id="object_property" get_property="objt" set_property="objt"/>
+						<container>
+						<attachment class="horizontal_arrange" horizontal_layout="-1,-1,-1" horizontal_gap="10"/>
+								<container id="T_hk" class="main_subtle_box_no_margin" priority="4">
+								<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true">
+								<record id="object_property">
+									<integer id="get_property" value="Tidx"/>
+									<integer id="set_property" value="indx"/>
+								</record>
+								</record>
+								<widget class="kit_picture" kit_id="0">
+									<layout class="stick_to_sides_attachment" alignment="all" inset="5,0,5,0"/>
+								</widget>
+								</container>
+								
+								<container id="T_ak" class="main_subtle_box_no_margin" priority="5">
+								<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true">
+								<record id="object_property"><integer id="get_property" value="Tidx"/>
+									<integer id="set_property" value="indx"/>
+								</record>
+								</record>
+								<widget class="kit_picture" kit_id="1">
+									<layout class="stick_to_sides_attachment" alignment="all" inset="5,0,5,0"/>
+								</widget>
+								</container>
+				
+								<container id="T_tk" class="main_subtle_box_no_margin" priority="8">
+								<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true">
+								<record id="object_property">
+									<integer id="get_property" value="Tidx"/>
+									<integer id="set_property" value="indx"/>
+								</record>
+								</record>
+								<widget class="kit_picture" kit_id="2"><layout class="stick_to_sides_attachment" alignment="all" inset="5,0,5,0"/>
+								</widget>
+								</container>
+						</container>
+					</widget>
+                </container>
+                <container default_width="740" priority="1">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+						<widget class="team_container_honours_panel" honour_subpanel_filename="club/club overview panels/trophy info" file="club/club overview panels/trophies" default_width="-2" priority="4">
+							<record id="object_property" get_property="objt" set_property="objt" /> 
+						</widget>
+                </container>
+            </container>
+        </container>
+    </container>
+</panel>

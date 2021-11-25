@@ -1,0 +1,69 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="main_box" navigation_container="true">
+		<translation id="title" translation_id="374024" type="use" value="Current Suspensions[COMMENT: FR 3717; comp suspensions panel; panel title]" />
+
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+		<widget class="table" id="curb" layout="-1,-1, 120,120,80,-2,-2" mode="fill_rows, stripe_rows" auto_size_rows="true" fixed_size_rows="false" default_sort_column="stad" save_session_state="true">
+			<list id="column_table_properties">
+				<record id="play">
+					<record id="widget_info" class="person_button" colour="text" />
+					<record id="column_heading">
+						<translation id="text" translation_id="229689" type="use" value="Name" />
+					</record>
+				</record>
+				<record id="club">
+					<record id="widget_info" class="team_button" />
+					<record id="column_heading">
+						<translation id="text" translation_id="284342" type="use" value="Team[COMMENT: team information panel; stats section; column heading]" />
+					</record>
+				</record>
+				<record id="stad">
+					<record id="widget_info" class="date_cell" />
+					<record id="column_heading">
+						<translation id="text" translation_id="251905" type="use" value="Start Date[COMMENT: scout assignments table; column header for nation/region/etc]" />
+					</record>
+				</record>
+				<record id="endd">
+					<record id="widget_info" class="date_cell" />
+					<record id="column_heading">
+						<translation id="text" translation_id="374051" type="use" value="End Date[COMMENT: FR 3717; comp suspensions panel; column heading; end date of ban]" />
+					</record>
+				</record>
+				<record id="gams">
+					<record id="widget_info" class="label" />
+					<record id="column_heading">
+						<translation id="text" translation_id="336492" type="use" value="Matches[COMMENT: title of fixtures section of competition overview]" />
+						<translation id="hint" translation_id="374140" type="use" value="Matches Already Missed / Total Matches Banned[COMMENT: FR 3717; comp suspensions panel; column heading; matches already missed due to ban and total matches that will be misses]" />
+					</record>
+				</record>
+				<record id="scop">
+					<record id="widget_info" class="label" />
+					<record id="column_heading">
+						<translation id="text" translation_id="433554" type="use" value="Scope[COMMENT: competition suspensions panel, indicates the competition scope the ban is for, was ID 308447 but some languages require a specific version]" />
+					</record>
+				</record>
+				<record id="reas">
+					<record id="widget_info" class="label" />
+					<record id="column_heading">
+						<translation id="text" translation_id="281372" type="use" value="Reason[COMMENT: table heading; reason for press conference]" />
+					</record>
+				</record>
+			</list>
+			<list id="column_widget_properties">
+				<record index="1" alignment="left,centre_y" navigation_focus_target="true"/>
+				<record index="2" alignment="left,centre_y" navigation_focus_target="false"/>
+				<record index="3" alignment="left,centre_y" navigation_focus_target="false"/>
+			</list>
+		</widget>
+	</container>
+
+	<!-- panel for no data available-->
+	<container class="empty_state" id="nodt" header_widget="BShe" hidden="true">
+		<widget class="text" id="BShe">
+			<translation id="text" translation_id="374287" type="use" value="There are no players serving suspensions in this competition at this time.[COMMENT: FR 3717; comp suspensions panel; string displayed when there is no data]" />
+		</widget>
+	</container>
+</panel>

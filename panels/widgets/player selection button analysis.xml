@@ -1,0 +1,7 @@
+﻿<panel>
+
+  <widget class="person_button" colour="black" id="pbtn" alignment="centre" info_popup_enabled="false" wants_mouse_events="false" >
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+  </widget>
+
+</panel>

@@ -1,0 +1,16 @@
+<panel>
+  <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" />
+  <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+  <widget class="table" id="forP" layout="-4, -1" row_spacing="2" mode="none" auto_size="vertical" fixed_size_rows="false" auto_size_rows="true">
+    <!-- Recent form -->
+    <widget class="team_recent_form_widget" id="form" row="0" col="1" colour="text" auto_size="vertical" icon_alignment="centre" navigation_focus_target="false"/>
+    <!-- Past positions -->
+    <widget class="label" auto_size="vertical" size="small" row="0" col="0">
+      <translation id="text" translation_id="232109" type="use" value="League Positions" />
+    </widget>
+    <container class="league_positions_panel" id="lpos" file="team/team competitions overview past positions panel" row="1" col="0" column_span="2" height="40" />
+  </widget>
+
+  <widget class="opponents_league_table" id="olta"/>
+</panel>

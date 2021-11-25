@@ -1,0 +1,149 @@
+﻿<panel>
+	<flags id="cham" value="tables/custom/league/champions/row" />
+
+	<attachment_group class="vertical_arrange" vertical_alignment="bottom, extend"/>
+
+	<container id="main">
+		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<widget class="link_button_title" auto_size="all" section="Pccr" >
+			<translation id="text" translation_id="316844" type="use" value="Coach Report[COMMENT; coach reports section of player profile]" />
+		</widget>
+
+		<container class="bordered_box_no_margin" id="trif" height="55">
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="20" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="5" apply_to_children="true" />
+
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="top" offset="2" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+				<widget class="label" alignment="left" auto_size="vertical" spec="text" size="10" colour="disabled">
+					<translation id="text" translation_id="335037" type="use" value="Estimated Cost[COMMENT: scout report panel label]" />
+				</widget>
+
+				<widget class="label" id="esco" style="semi_bold" size="12" alignment="left" auto_size="vertical">
+
+				</widget>
+
+			</container>
+
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="top" offset="2" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+				<widget class="label" alignment="left" auto_size="vertical" spec="text" size="10" colour="disabled">
+					<translation id="text" translation_id="335516" type="use" value="Wage Demands[COMMENT: scout report panel label]" />
+				</widget>
+
+				<widget class="label" id="wade" style="semi_bold" size="12" alignment="left" auto_size="vertical">
+				</widget>
+
+			</container>
+
+		</container>
+		
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<container class="bordered_box">
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="10" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+
+				<container class="bordered_box" height="45" appearance="boxes/custom/solid/rounded/paper" red_replacement="positive dark">
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="6" />
+
+					<widget class="label" font="text" size="14" colour="white" alignment="left,centre_y">
+						<translation id="text" translation_id="361260" type="use" value="Pros[COMMENT: FR 8316 ]" />
+					</widget>
+				</container>
+
+				<widget class="table" id="tpro" layout="-1" inset="0" fixed_size_rows="false" auto_size_rows="true" default_sort_column="0">
+
+				</widget>
+
+			</container>
+
+			<container class="bordered_box">
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="10" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+				<container class="bordered_box" height="45" appearance="boxes/custom/solid/rounded/paper" red_replacement="negative dark">
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="6" />
+
+					<widget class="label" font="text" size="14" colour="white" alignment="left,centre_y">
+						<translation id="text" translation_id="361094" type="use" value="Cons[COMMENT: FR 8316 ]" />
+					</widget>
+				</container>
+
+				<widget class="table" id="tcon" layout="-1" inset="0" fixed_size_rows="false" auto_size_rows="true" default_sort_column="0">
+
+				</widget>
+
+			</container>
+
+		</container>
+
+	</container>
+
+	<container class="bordered_box" appearance="boxes/bordered/transparent/paper" id="SMbx">
+		<attachment_group class="vertical_arrange_autosize"/>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize"/>
+
+			<widget class="text" auto_size="all" id="suml" font="title" colour="gold">
+				<translation id="text" translation_id="378663" type="use" value="Coach Summary[COMMENT: bug 102206, report screen label, Coach Report summary section]" />
+			</widget>
+		</container>
+
+
+
+		<widget class="text" id="SMtx" alignment="left,centre_y" spec="text" auto_size="vertical" colour="white" multiline="true">
+		</widget>
+
+		<container class="inner_subtle_box_no_margin" height="35">
+			<layout class="arrange_horizontal_attachment" layout="-1,1,-1" offset="4" gap="6" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-1,75" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<widget class="text" colour="gold" style="bold" alignment="left,centre_y">
+					<translation id="text" translation_id="251893" type="use" value="Current Ability[COMMENT: scout report panel box heading]" />
+				</widget>
+
+				<widget class="scout_stars_label" id="CAic" alignment="right,centre_y" navigation_focus_target="false" mode="1">
+
+				</widget>
+
+			</container>
+
+
+			<widget class="vertical_divider"/>
+
+
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-1,75" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<widget class="text" colour="gold" style="bold" alignment="left,centre_y">
+					<translation id="text" translation_id="251894" type="use" value="Potential Ability[COMMENT: scout report panel box heading]" />
+				</widget>
+
+				<widget class="scout_stars_label" id="PAic" alignment="right,centre_y" navigation_focus_target="false" mode="2">
+
+				</widget>
+
+			</container>
+
+		</container>
+
+		
+	</container>
+
+</panel>

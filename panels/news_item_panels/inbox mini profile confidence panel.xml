@@ -1,0 +1,23 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<string id="skin_style" value="subtle box" />
+
+	<container class="inner_subtle_box" red_replacement="black" id="cbox">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<widget class="text" id="ctxt" auto_size="vertical" spec="text" colour="text" font="fonts/inbox_body" size="11" />
+
+		<container>
+			<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" apply_to_children="true" />
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+			<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="15" />
+
+			<widget class="label" auto_size="all" spec="text" colour="text" font="fonts/inbox_body" size="11" alignment="left,centre_y">
+				<translation id="text" translation_id="491844" type="use" value="Performance[COMMENT: AREA: Boardroom; SUB-AREA: Appraisal of Performance; FR-BN: n/a; TONE: Formal; CHARLIMIT: Short, one word; REF-ID: n/a; NOTE: this is replacing Confidence as the singular term relating to the Boardroom and the evaluation of managerial performance]" />
+			</widget>
+
+			<widget class="horizontal_percentage_bar" id="cbar" height="22" />
+		</container>
+	</container>
+</panel>

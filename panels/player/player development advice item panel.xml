@@ -1,0 +1,84 @@
+<panel>
+  <attachment_group class="horizontal_arrange" horizontal_layout="-1,200" horizontal_offset="0" vertical_alignment="vertical" vertical_inset="0" />
+
+  <boolean id="save_immediate_state" value="true"/>
+
+  <container>
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+    <!-- No advice container-->
+    <container id="Navc" hidden="true" >
+      <widget class="picture" file="boxes/custom/speech bubble/right/paper" colour="human speech bubble" scale_picture="true" keep_aspect_ratio="false">
+        <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+      </widget>
+      <!-- Advice text -->
+      <widget class="text" id="Nadv" alignment="left,top" size="10" colour="faded white">
+        <layout class="stick_to_sides_attachment" alignment="all" inset="20"/>
+      </widget>
+    </container>
+
+    <container>
+      <attachment_group class="vertical_arrange" vertical_alignment="bottom,extend" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+      <!-- A wipe container setup to create a new widget when it receievs PROP_TEXT and to forward that data onto an embedded widget ('Atxt') -->
+      <container class="animated_wipe_down_container" id="advc" wipe_data_trigger_id="text" wipe_data_target_id="Atxt"
+             remove_widget_after_wipe="true" draw_embedded_in_reverse_order="true" duration="0.7">
+        <!-- We don't want a wipe in -->
+        <record id="wipe_in_animation"/>
+        <!-- This widget will be created everytime we recieve PROP_TEXT -->
+        <record id="widget_properties"  class="inner_box_no_margin" file="player/player development advice item text panel" />
+      </container>
+
+      <!-- Advice buttons -->
+      <container id="butc">
+        <attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend">
+          <global id="horizontal_gap" name="ui.button_row_gap"/>
+        </attachment_group>
+
+        <widget class="button" id="actb" auto_size="all" click_event="evCf" />
+      </container>
+    </container>
+  </container>
+
+  <container>
+    <attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+    <container class="client_object_viewer_xml_panel" id="staf">
+
+      <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="50,-1" horizontal_offset="0" vertical_alignment="vertical" vertical_inset="0"/>
+
+      <!-- Portrait -->
+      <widget class="object_portrait_picture" scale_picture="true" image_alignment="centre" height="50">
+        <record id="object_property" get_property="objt" set_property="objt" />
+      </widget>
+      <container>
+        <attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+        <!-- Person name -->
+        <widget class="person_button" alignment="left,bottom" style="semi_bold" size="large" info_popup_enabled="true" info_popup_alignment="left,bottom" icon_enabled="true" auto_size="vertical" colour="black">
+          <record id="object_property" get_property="objt" set_property="valu" />
+        </widget>
+        <!-- Job -->
+        <widget class="job_label" alignment="left,top" size="small" colour="faded text" multiline="true" auto_size="vertical">
+          <record id="object_property" get_property="PcJj" set_property="valu" />
+        </widget>
+      </container>
+    </container>
+    <container>
+      <attachment_group class="vertical_arrange" vertical_alignment="bottom" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+      <!-- Advice count -->
+      <widget class="label" id="advC" auto_size="vertical" alignment="centre"/>
+      <container>
+        <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_offset="0" vertical_alignment="vertical" vertical_inset="0"/>
+
+        <widget class="button" id="preA" auto_size="vertical" click_event="preA">
+          <translation id="text" translation_id="255267" type="use" value="Previous[COMMENT: wizard dialog: default previous button text]" />
+        </widget>
+        <widget class="button" id="nxtA" auto_size="vertical" click_event="nxtA">
+          <translation id="text" translation_id="255268" type="use" value="Next[COMMENT: wizard dialog: default next button text]" />
+        </widget>
+      </container>
+    </container>
+  </container>
+</panel>

@@ -1,0 +1,61 @@
+<panel>
+
+	<layout class="arrange_vertical_attachment" layout="-1,40,1" gap="5" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+	<!-- Personal Details -->
+
+	<container>
+		<layout class="arrange_horizontal_attachment" layout="-1,-2" gap="5" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+		<widget class="picture" id="Tpic" image_alignment="bottom" scale_picture="true" keep_aspect_ratio="true"/>
+
+		<container class="inner_box_no_margin">
+			<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+			<widget class="person_button" id="tNAM" auto_size="none" alignment="left,centre_y" style="semi_bold" colour="black"/>
+
+			<!-- Nationality -->
+			<widget class="nation_button" id="intc" icon_enabled="false" auto_size="vertical" size="small" colour="faded text">
+				<record id="object_property" dont_set_hint="true" get_property="PNat"/>
+			</widget>
+
+			<!-- Age & DoB-->
+			<container>
+				<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0"/>
+				<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="3" />
+				<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+				<!-- Age -->
+				<widget class="formatted_label" id="age " alignment="left,centre_y" auto_size="all" size="small" colour="faded text">
+					<translation id="format" translation_id="242551" type="use" value="[%number#1] years old" />
+					<record id="object_property" get_property="Page"/>
+				</widget>
+			</container>
+
+
+			<widget class="position_label" display_format="0" auto_size="vertical" size="small" colour="faded text" alignment="left,centre_y">
+				<record id="object_property" dont_set_hint="true" get_property="Ppos"/>
+			</widget>
+
+			<!-- personality_label -->
+			<widget class="personality_label"  auto_size="vertical" size="small" colour="faded text">
+				<record id="object_property" dont_set_hint="true" get_property="PPst"/>
+			</widget>
+		</container>
+	</container>
+
+	<container>
+		<layout class="arrange_horizontal_attachment" layout="-1,-2" gap="5" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+		<widget class="spacer" />
+
+		<widget class="button" id="tuBT" auto_size="all" />
+	</container>
+
+	<widget class="horizontal_divider" />
+
+
+</panel>

@@ -1,0 +1,49 @@
+﻿<panel>
+	<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="10" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+	<!-- Comp name, stadium details and weather-->
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="8" />
+		<container>
+			<attachment_group class="horizontal_arrange_wrapped" horizontal_alignment="left,as_needed" horizontal_gap="0"/>
+
+			<widget class="stadium_button" id="stad" auto_size="all" auto_size_restricted_to_parent_width="true"/>
+			<widget class="text" id="stdD" alignment="left,centre_y" auto_size="all" colour="faded text"/>
+		</container>
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend" horizontal_offset="0" vertical_offset="0" />
+
+			<widget class="text" id="comp" multiline="true" auto_size="vertical" auto_size_maximum_height="64"/>
+			
+			<container class="weather_indicator_panel_horizontal" id="weat" file="match/weather indicator horizontal auto sized">
+				<boolean id="show_weather_label" value="false" />
+				<boolean id="show_weather_icon" value="true" />
+				<boolean id="show_temperature_on_icon" value="true" />
+				<boolean id="weather_icon_size" value="10" />
+			</container>
+		</container>
+	</container>
+
+
+	<container>
+
+		<attachment_group class="vertical_arrange" vertical_alignment="middle"/>
+
+
+		<container class="client_object_viewer_xml_panel" file="team/team upcoming fixture badges" id="tmbp" height="180" />
+
+		<!-- Team names. Need lots of vertical space here as for cup matches there could be 2 teams on the right-->
+		<container height="30">
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_gap="45"/>
+
+
+			<widget class="text" id="homt" alignment="centre_x,top" style="bold" auto_size="vertical"/>
+			<widget class="text" id="awyt" alignment="centre_x,top" style="bold" auto_size="vertical"/>
+		</container>
+
+	</container>
+
+
+</panel>

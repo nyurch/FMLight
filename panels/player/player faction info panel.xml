@@ -1,0 +1,43 @@
+<panel>
+  <layout class="arrange_horizontal_attachment" layout="80, -1" offset="0" gap="0"/>
+  <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+  <!--mugshot-->
+  <widget class="object_portrait_picture" id="tmbd" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+    <record id="object_property">
+      <list id="get_properties">
+        <record>
+          <integer id="get_property" value="objt"/>
+          <integer id="set_property" value="objt"/>
+        </record>
+      </list>
+    </record>
+  </widget>
+
+  <!--info-->
+  <container>
+    <layout class="arrange_vertical_attachment" alignment="top" offset="10" gap="2"/>
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+    <!--name-->
+    <widget class="person_button" id="namV" icon_enabled="false" auto_size="vertical" style="semi_bold" colour="black">
+      <record id="object_property">
+        <integer id="get_property" value="Pnms"/>
+      </record>
+    </widget>
+
+    <!-- Agreed playing time -->
+    <widget class="playing_time_label" id="PccV" auto_size="vertical" colour="faded text">
+      <record id="object_property">
+        <integer id="get_property" value="Pcpt"/>
+      </record>
+    </widget>
+
+    <!--morale-->
+    <widget class="morale_label" id="PmoV" auto_size="vertical" colour="faded text">
+      <record id="object_property">
+        <integer id="get_property" value="Pmor"/>
+      </record>
+    </widget>
+  </container>
+</panel>

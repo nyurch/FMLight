@@ -1,0 +1,46 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<container>
+		<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+		<container id="daCt" height="40" background_colour="">
+			<attachment_group class="horizontal_arrange" horizontal_layout="30,-1" horizontal_offset="10" horizontal_gap="15" vertical_inset="0" />
+
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="3" vertical_gap="-4" horizontal_inset="0" />
+
+				<widget class="text" id="datN" style="bold" size="large" auto_size="vertical" alignment="centre" colour="processing_date"/>
+				<widget class="text" id="datD" font="title" alignment="centre_x,top" colour="processing_month"/>
+			</container>
+
+			<widget class="date_cell" id="tdAt" format="[%date#1-month_year]" size="small" colour="processing_date" style="semi_bold" alignment="left,centre_y" />
+		</container>
+
+		<widget class="horizontal_divider" red_replacement="grey 500"/>
+
+		<!-- Training calender-->
+		<widget class="table" id="TraT" layout="-1"  mode="fill_rows" height="86" row_spacing="2" hidden="true">
+			<boolean id="auto_size_rows" value="true"/>
+			<string id="fixed_size_rows" value="false"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="2"/>
+			<!-- Filled in code -->
+		</widget>
+
+		<widget class="horizontal_divider"/>
+
+		<container>		
+			<!-- JT 9/12/20: If you have come here top fix an assert like 'extend_height > 0 failed' don't change this layout as that will break it. See issue 43005 -->
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+			<container id="entR" >
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+				<!-- This is where the popup detailed day events get created. -->
+			</container>
+
+			<!-- Filled in code -->
+			<container class="animated_vertical_stack_container" id="vidi" alignment="top" duration="0.5" tween="ease_out" maximum_items="15" inset="0" stick_embedded="horizontal" />
+		</container>
+	</container>
+</panel>

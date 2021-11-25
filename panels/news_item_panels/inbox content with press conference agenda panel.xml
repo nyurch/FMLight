@@ -1,0 +1,334 @@
+﻿<!-- recoloured table at bottom and comp colours from grey 400 -->
+<panel height="430" width="1024">
+	<list id="draw_order">
+		<record entity_layout_id="at00" />
+		<record entity_layout_id="at01" />
+		<record entity_layout_id="at02" />
+		<record entity_layout_id="at03" />
+		<record entity_layout_id="at06" />
+		<record entity_layout_id="at04" />
+		<record entity_layout_id="at05" />
+		<record entity_layout_id="at07" />
+		<record entity_layout_id="at0&lt;" />
+		<record entity_layout_id="at0=" />
+		<record entity_layout_id="at0&gt;" />
+		<record entity_layout_id="at0J" />
+		<record entity_layout_id="at0L" />
+		<record entity_layout_id="at0K" />
+		<record entity_layout_id="at0F" />
+		<record entity_layout_id="at0H" />
+		<record entity_layout_id="at0G" />
+		<record entity_layout_id="at0I" />
+		<record entity_layout_id="at0B" />
+		<record entity_layout_id="at0@" />
+		<record entity_layout_id="at0A" />
+		<record entity_layout_id="at0C" />
+		<record entity_layout_id="at0D" />
+		<record entity_layout_id="at0E" />
+		<record entity_layout_id="at0M" />
+		<record entity_layout_id="at08" />
+		<record entity_layout_id="at09" />
+		<record entity_layout_id="at0:" />
+		<record entity_layout_id="at0;" />
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+	</widget>
+	<container entity_layout_id="at00" id="at00" height="440">
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<container class="inner_subtle_box" entity_layout_id="at01" id="at01" width="240">
+			<layout class="stick_to_object_attachment" id="align_top" offset="0" get_side="top" set_side="top" target="main" />
+			<layout class="stick_to_object_attachment" id="align_bottom" offset="0" get_side="bottom" set_side="bottom" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="0" get_side="left" set_side="left" move_side="true" target="main" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<container entity_layout_id="at07" id="at07" width="220" height="130" name="image box">
+				<layout class="stick_to_object_attachment" id="align_top" offset="2" get_side="top" set_side="top" move_side="true" target="main" />
+				<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<widget class="picture" entity_layout_id="at08" id="at08" file="photos/dynamic/press conference/press bg" scale_picture="true">
+					<string id="image_alignment" value="centre" />
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				</widget>
+				<container class="object_portrait_picture" entity_layout_id="at09" id="ObPc" width="45" height="45">
+					<string id="image_alignment" value="centre" />
+					<string id="scale_picture" value="true" />
+					<string id="keep_aspect_ratio" value="true" />
+					<string id="no_object_picture" value="pictures/comp/none/logo/league" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="top" set_side="top" move_side="true" target="main" />
+					<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+				</container>
+				<widget class="text" entity_layout_id="at0:" id="ObTp" alignment="centre_x,centre_y" auto_size="vertical" needs_height="true">
+					<integer id="size" value="12" />
+					<string id="font" value="title" />
+					<string id="colour" value="text" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at09" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				</widget>
+				<widget class="text" entity_layout_id="at0;" alignment="centre_x,centre_y" id="at0;" auto_size="vertical" width="200" needs_width="true" needs_height="true">
+					<integer id="size" value="12" />
+					<string id="font" value="title" />
+					<string id="colour" value="text" />
+					<translation id="text" translation_id="276325" type="use" value="Press Conference[COMMENT: player happiness panel]" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="2" get_side="bottom" set_side="top" move_side="true" target="at0:" />
+					<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+				</widget>
+			</container>
+			<container entity_layout_id="at0&lt;" id="vsbx" height="55" name="head to head box">
+				<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at07" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<widget class="text" entity_layout_id="at0B" alignment="centre_x,centre_y" id="at0B" auto_size="vertical" width="20" needs_height="true">
+					<integer id="size" value="8" />
+					<string id="font" value="title" />
+					<string id="value" value="vs" />
+					<string id="colour" value="darkened text" />
+					<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+					<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="5" />
+				</widget>
+				<container class="object_portrait_picture" entity_layout_id="at0@" id="homP" width="20" height="20">
+					<string id="image_alignment" value="centre" />
+					<string id="scale_picture" value="true" />
+					<string id="keep_aspect_ratio" value="true" />
+					<string id="no_object_picture" value="pictures/logos/normal/clubs/cro/dinamo zagreb" />
+					<layout class="stick_to_object_attachment" id="align_right" offset="-5" get_side="left" set_side="right" move_side="true" target="at0B" />
+					<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="5" />
+				</container>
+				<container class="object_portrait_picture" entity_layout_id="at0A" id="awaP" width="20" height="20">
+					<string id="image_alignment" value="centre" />
+					<string id="scale_picture" value="true" />
+					<string id="keep_aspect_ratio" value="true" />
+					<string id="no_object_picture" value="pictures/logos/normal/clubs/cro/dinamo zagreb" />
+					<layout class="stick_to_object_attachment" id="align_left" offset="5" get_side="right" set_side="left" move_side="true" target="at0B" />
+					<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="5" />
+				</container>
+				<widget class="team_button" entity_layout_id="at0C" id="homB" alignment="centre_y,right" height="25">
+					<string id="display_format" value="[%team#1-six_letter]" />
+					<string id="icon_enabled" value="false" />
+					<string id="style" value="bold" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" offset="-4" get_side="left" set_side="right" target="at0@" />
+					<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="5" />
+				</widget>
+				<widget class="team_button" entity_layout_id="at0D" alignment="centre_y,left" id="awaB" height="25">
+					<string id="display_format" value="[%team#1-six_letter]" />
+					<string id="icon_enabled" value="false" />
+					<string id="style" value="bold" />
+					<layout class="stick_to_object_attachment" id="align_left" offset="4" get_side="right" set_side="left" target="at0A" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+					<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="5" />
+				</widget>
+				<widget class="horizontal_divider" entity_layout_id="at0E" id="at0E" height="2">
+					<string id="image_alignment" value="centre_y" />
+					<layout class="stick_to_object_attachment" id="align_bottom" offset="-2" get_side="bottom" set_side="bottom" move_side="true" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				</widget>
+				<widget class="comp_button" entity_layout_id="at0M" id="CmpB" alignment="centre_x,centre_y" auto_size="all" needs_width="true" needs_height="true">
+					<string id="icon_enabled" value="false" />
+					<integer id="size" value="8" />
+					<string id="font" value="title" />
+					<string id="colour" value="title" />	<!-- changed colour from grey 400 -->
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+					<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+				</widget>
+			</container>
+			<container entity_layout_id="at0=" id="at0=" width="224" height="80" name="location box">
+				<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" move_side="true" target="at0&lt;" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<widget class="text" entity_layout_id="at0F" alignment="centre_y,left" id="at0F" auto_size="vertical" needs_height="true">
+					<integer id="size" value="9" />
+					<string id="font" value="title" />
+					<translation id="text" translation_id="466483" type="use" value="Press Conference Location[COMMENT: table heading; where press conference was held]" />
+					<string id="colour" value="title" />	<!-- changed colour from grey 400 -->
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				</widget>
+				<widget class="picture" entity_layout_id="at0H" file="icons/custom/stadium/stadium" id="at0H" auto_size="all" needs_width="true" needs_height="true">
+					<string id="image_alignment" value="centre" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="3" get_side="bottom" set_side="top" move_side="true" target="at0F" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+				</widget>
+				<widget class="inbox_body_text" entity_layout_id="at0G" id="Lolb" auto_size="vertical" needs_height="true">
+					<string id="value" value="location name" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0F" />
+					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" target="at0H" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				</widget>
+				<widget class="horizontal_divider" entity_layout_id="at0I" id="at0I" height="2">
+					<string id="image_alignment" value="centre_y" />
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				</widget>
+			</container>
+			<container entity_layout_id="at0&gt;" id="at0&gt;" width="224">
+				<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" target="at0=" />
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<widget class="text" entity_layout_id="at0J" alignment="centre_y,left" id="at0J" auto_size="vertical" width="224" needs_height="true">
+					<integer id="size" value="9" />
+					<string id="font" value="title" />
+					<translation id="text" translation_id="466484" type="use" value="Journalists Expected[COMMENT: FR 22941; press conference invite news; title for box containing number of journalists expected to attend]" />
+					<string id="colour" value="text" />
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+				</widget>
+				<widget class="inbox_body_text" entity_layout_id="at0L" id="NCla" width="140" needs_height="true">
+					<string id="style" value="bold" />
+					<string id="value" value="num Journalists" />
+					<string id="colour" value="positive" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="8" get_side="bottom" set_side="top" move_side="true" target="at0J" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+				</widget>
+				<widget class="text" entity_layout_id="at0K" id="Jdes">
+					<string id="colour" value="positive" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="bottom" set_side="top" target="at0L" />
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				</widget>
+			</container>
+		</container>
+		<container class="inner_box" entity_layout_id="at02" id="at02" height="209" name="people box">
+			<string id="title" value="" />
+			<translation id="text" translation_id="466485" type="use" value="Notable Journalists In Attendance[COMMENT: FR 22941; press conference invite news; title for box containing list of notable journalists]" />
+			<string id="colour" value="text" />
+			<layout class="stick_to_object_attachment" id="align_top" offset="0" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="15" get_side="right" set_side="left" target="at01" />
+			<layout class="stick_to_object_attachment" id="align_right" offset="0" get_side="right" set_side="right" target="main" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<container class="table" entity_layout_id="at04" id="NMtb" layout="230,170,-1" mode="fill_rows" height="165" row_spacing="4">
+				<list id="column_table_properties">
+					<record auto_hide_priority="1">
+						<boolean id="sort_disabled" value="true" />
+						<record id="column_heading" alignment="centre_y,left">
+							<translation id="text" translation_id="348966" type="use" value="Journalists[COMMENT: media profile; list of journalists attached to media source]" />
+						</record>
+					</record>
+					<record auto_hide_priority="1">
+						<boolean id="sort_disabled" value="true" />
+						<record id="column_heading" alignment="centre_y,left">
+							<translation id="text" translation_id="515046" type="use" value="Influence[COMMENT: AREA: Inbox; SUB-AREA: Press Conference Invite News Item; FR: 32643; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: column header for a journalists global influence]" />
+						</record>
+					</record>
+					<record auto_hide_priority="2" minimum_width="160">
+						<boolean id="sort_disabled" value="true" />
+						<record id="column_heading" alignment="centre_y,left">
+							<translation id="text" translation_id="308637" type="use" value="Relationship[COMMENT: Relationship towards the human player]" />
+						</record>
+					</record>
+				</list>
+				<string id="auto_size_rows" value="true" />
+				<string id="fixed_size_rows" value="false" />
+				<layout class="stick_to_object_attachment" id="align_top" offset="0" get_side="top" set_side="top" move_side="true" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			</container>
+			<widget class="horizontal_divider" entity_layout_id="at05" id="at05" height="2">
+				<string id="image_alignment" value="centre_y" />
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			</widget>
+		</container>
+		<container class="inner_box" entity_layout_id="at03" id="at03" name="talking points box">
+			<translation id="text" translation_id="466486" type="use" value="Likely Talking Points[COMMENT: FR 22941; press conference invite news; title for box containing number of journalists expected to attend]" />
+			<string id="colour" value="text" />
+			<layout class="stick_to_object_attachment" id="align_top" get_side="bottom" set_side="top" target="at02" />
+			<layout class="stick_to_object_attachment" id="align_bottom" offset="-5" get_side="bottom" set_side="bottom" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="15" get_side="right" set_side="left" target="at01" />
+			<layout class="stick_to_object_attachment" id="align_right" offset="-5" get_side="right" set_side="right" target="main" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<container class="table" entity_layout_id="at06" id="Tapt" layout="20,-1" mode="fill_rows" height="180">
+				<integer id="row_spacing" value="2" />
+				<string id="auto_size_rows" value="true" />
+				<string id="fixed_size_rows" value="false" />
+				<!-- added colour details to recolour from white -->
+				<list id="column_widget_properties">
+				<record>
+				<integer id="index" value="0" />
+				<string id="colour" value="text" />
+				<string id="red_replacement" value="text" />
+				<string id="secondary_icon_colour" value="text" />
+				</record>
+				</list>
+
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			</container>
+		</container>
+	</container>
+</panel>

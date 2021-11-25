@@ -1,0 +1,89 @@
+﻿<panel>
+	<layout class="arrange_horizontal_attachment" alignment="right, extend" offset="0" gap="4"/>
+	<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+	<boolean id="should_force_refresh" value="true"/>
+
+	<container class="main_box" id="TopP" navigation_container="true">
+		<translation id="title" translation_id="450834" type="use" value="Current Injuries[COMMENT: FR20159; team current injuries panel; panel title for team's current injury list]"/>
+
+		<layout class="arrange_vertical_attachment" alignment="top, extend"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+
+		<string id="skin_style" value="subtle box"/>
+
+		<container>
+			<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+			<layout class="stick_to_sides_attachment" alignment="right, top" inset="0" apply_to_children="true"/>
+
+			<widget class="embedded_filter_button" id="plsf" target="TopP" auto_size="horizontal"/>
+		</container>
+
+		<widget class="table" id="InjP" layout="80, -1, 120, -1, 90, -2, 100, 100" mode="fill_rows, stripe_rows" default_sort_column="2" all_content_same_height="false" auto_size_rows="true" fixed_size_rows="false" row_spacing="1" navigation_container="true" default_focus="">
+			<list id="headings">
+				<record index="0">
+					<translation id="text" translation_id="230120" type="use" value="Date"/>
+				</record>
+				<record index="1">
+					<translation id="text" translation_id="229689" type="use" value="Name"/>
+				</record>
+				<record index="2">
+					<translation id="text" translation_id="492002" type="use" value="Agreed Playing Time[COMMENT: AREA: Player Happiness; SUB-AREA: Contract Promises; FR-BN: 14013; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: contract promise type]"/>
+				</record>
+				<record index="3">
+					<translation id="text" translation_id="247523" type="use" value="Injury[COMMENT: Player Injury name, table header]"/>
+				</record>
+				<record index="4">
+					<translation id="text" translation_id="450786" type="use" value="Physical Status[COMMENT: FR20159; player injuries panel; panel title for displaying location of injury]"/>
+				</record>
+				<record index="5">
+					<translation id="text" translation_id="229526" type="use" value="Details"/>
+				</record>
+				<record index="6">
+					<translation id="text" translation_id="447652" type="use" value="Treatment[COMMENT: FR 20159; player injury table; treatment type player is receiving column header]"/>
+				</record>
+				<record index="7">
+					<translation id="text" translation_id="247182" type="use" value="Expected Return"/>
+				</record>
+			</list>
+
+			<list id="column_table_properties">
+				<record index="0" auto_hide_priority="1" minimum_width="80">
+					<boolean id="sort_ascending" value="false"/>
+				</record>
+				<record index="1" auto_hide_priority="1" minimum_width="150">
+					<boolean id="sort_ascending" value="true"/>
+				</record>
+				<record index="2" auto_hide_priority="30" colour="accent">
+					<boolean id="sort_ascending" value="false"/>
+				</record>
+				<record index="3" auto_hide_priority="1" minimum_width="150">
+					<boolean id="sort_ascending" value="false"/>
+				</record>
+				<record index="4" auto_hide_priority="1" minimum_width="100" top="4" bottom="4">
+					<boolean id="sort_ascending" value="false"/>
+				</record>
+				<record index="5" auto_hide_priority="10" minimum_width="300">
+					<boolean id="sort_ascending" value="false"/>
+				</record>
+				<record index="6" auto_hide_priority="20">
+					<boolean id="sort_ascending" value="false"/>
+				</record>
+				<record index="7" auto_hide_priority="1" minimum_width="100">
+					<boolean id="sort_ascending" value="false"/>
+				</record>
+			</list>
+
+			<record id="default_properties" alignment="left, centre_y" colour="black"/>
+
+			<list id="sort">
+				<integer value="0"/>
+			</list>
+		</widget>
+
+		<widget class="label" id="NoIN" alignment="centre" auto_size="none">
+			<translation id="text" translation_id="450803" type="use" value="There are currently no injured players[COMMENT: FR 20159; team injuries overview panel; label to explain team has no inujured players]" />
+		</widget>
+	</container>
+
+</panel>

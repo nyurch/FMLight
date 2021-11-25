@@ -1,0 +1,60 @@
+<!-- A panel that show a manager's portrait, name, job and the odds of something (like their odds of getting fired) -->
+<!-- Data comes from a property list and this should be used with PROPERTY_LIST_VIEWER_XML_PANEL -->
+<panel>
+	<layout class="arrange_horizontal_attachment" layout="70, 50, -1" offset="5" gap="8"/>
+
+	<!-- Odds -->
+	<container id="ODDS" class="main_box" appearance="labels/standard/label" red_replacement="positive dark">
+		<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="1" />
+		<layout class="centre_in_parent_attachment" alignment="vertical" />
+		<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<widget class="odds_label" id="odds" spec="text" size="large" style="bold" alignment="centre" auto_size="vertical" colour="white">
+			<record id="object_property">
+				<integer id="get_property" value="valu" />
+			</record>
+		</widget>
+	</container>
+
+	<!-- Portrait -->
+	<widget class="object_portrait_picture" id="Nprt" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+
+		<record id="object_property">
+			<integer id="get_property" value="Pers" />
+			<integer id="set_property" value="valu" />
+		</record>
+	</widget>
+
+	<!-- Manager name and team -->
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="middle" gap="0" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+
+		<widget class="person_button" id="perB" style="bold" auto_size="vertical" colour="text">
+			<record id="object_property">
+				<integer id="get_property" value="Pers" />
+			</record>
+		</widget>
+
+		<widget class="client_object_viewer_xml_panel" id="covx">
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0" />
+
+			<record id="object_property">
+				<integer id="get_property" value="Pers" />
+				<integer id="set_property" value="objt" />
+			</record>
+
+			<widget class="team_button" id="temA" alignment="left,top" icon_enabled="false" size="small" colour="faded text" auto_size="vertical">
+				<translation id="no_object_text" translation_id="351074" type="use" value="Unemployed[COMMENT: person doesn't have a job; translation already exists with a different case on the first character, use top 10 matches]" />
+				<record id="object_property">
+					<integer id="get_property" value="PcMt" />
+					<boolean id="dont_set_object" value="true" />
+				</record>
+			</widget>
+		</widget>
+	</container>
+</panel>

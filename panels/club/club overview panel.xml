@@ -1,0 +1,12 @@
+<panel>
+    <attachment class="vertical_arrange" vertical_layout="200,500,200" vertical_gap="10"/>
+    <widget class="club_overview_panel" file="club/club overview panels/club header">
+        <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+    <widget class="club_overview_panel" file="club/club overview panels/club main">
+        <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+    <widget class="club_overview_panel" file="club/club overview panels/club footer">
+        <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+</panel>

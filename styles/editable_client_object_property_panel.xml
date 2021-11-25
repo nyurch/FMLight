@@ -1,0 +1,18 @@
+<properties version="1.0">
+<!-- used to recolour IGE editable stuff from white to alt text -->
+<!-- list all the widgets to override along with their properties and override values -->        
+<list id="skin_style">
+
+	
+    <record>
+		<string id="class_name" value="editable_client_object_property_panel" />
+		<colour id="colour" name="alt text" />
+    <boolean id="enforce_style" value="true" />
+    </record>
+	
+
+</list>
+
+    
+
+</properties>

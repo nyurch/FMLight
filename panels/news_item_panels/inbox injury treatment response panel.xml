@@ -1,0 +1,26 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<container class="main_contrast_box" id="psdt" red_replacement="negative bg">
+		<layout class="arrange_vertical_attachment" alignment="middle,extend"/>
+
+		<!-- injury description -->
+		<widget class="text" id="inti" auto_size="vertical" size="large" style="bold" colour="gold" alignment="centre_x,top" multiline="true">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+		</widget>
+
+		<!-- injury duration -->
+		<widget class="text" id="intx" colour="white" alignment="centre_x,top" multiline="true">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+		</widget>
+
+		<!-- injury duration -->
+		<widget class="button" id="inac" colour="white" style="bold" red_replacement="white" click_event="InjR" auto_size="all">
+			<layout class="centre_in_parent_attachment" alignment="horizontal"/>
+			<layout class="stick_to_sides_attachment" alignment="bottom" inset="4"/>
+		</widget>
+	</container>
+
+</panel>

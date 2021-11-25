@@ -1,0 +1,30 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+	<container class="scrolling_box" navigation_container="true">
+		<container id="buiD" class="conversation_appearance_box">
+			<attachment_group class="vertical_arrange_autosize" horizontal_inset="16" vertical_offset="6"/>
+
+
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="cprs" />
+						<integer id="set_property" value="cprs" />
+					</record>
+				</list>
+			</record>
+
+			<widget class="text" alignment="left,centre_y" auto_size="vertical" size="normal" multiline="true" colour="fg info" style="bold">
+
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="text" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+		</container>
+	</container>
+</panel>

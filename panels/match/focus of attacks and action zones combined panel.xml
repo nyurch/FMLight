@@ -1,0 +1,125 @@
+﻿<panel>
+
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="vertical_adaptive_container" gap="0">
+
+	<container height="15" priority="4"/>
+
+	<widget class="text" font="title" colour="fg alpha" auto_size="vertical" priority="3" alignment="centre">
+ 		<translation id="text" translation_id="420657" type="use" value="Focus of Attacks[COMMENT: match action zones label, indicates the main focuses of team attacking moves]" />
+ 	</widget>
+ 
+  
+	<container priority="1" >
+
+			<attachment class="test_screen_size_attachment" skip_if_false="true">
+				<list id="properties">
+					<record>
+						<flags id="alignment" value="vertical" />
+						<integer id="min_value" value="0" />
+						<integer id="max_value" value="720" />
+						<symbol id="set_property" value="height" />
+						<integer id="true_value" value="147" />
+						<integer id="false_value" value="147" />
+					</record>
+					<record>
+						<flags id="alignment" value="vertical" />
+						<integer id="min_value" value="720" />
+						<integer id="max_value" value="10000" />
+						<symbol id="set_property" value="height" />
+						<integer id="true_value" value="170" />
+						<integer id="false_value" value="170" />
+					</record>
+				</list>
+			</attachment>
+ 
+		<attachment_group class="horizontal_arrange" horizontal_layout="22,-1,22" horizontal_gap="6"/>
+ 
+		<!--logo-->
+		<widget class="match_team_logo_picture" id="hmLo" team_index="0" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+ 
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="objt" />
+			</record>
+		</widget>
+ 
+		<widget class="focus_of_attacks_pitch" id="fcat"  vertical="false" fixed="true"  auto_tick_exclusive="true" font_colour="black" alignment="centre" pitch_draw_grass="true" line_width="1" pitch_line_colour="text" pitch_touchline_width_percentage="5"/>
+ 
+  		<!--logo-->
+		<widget class="match_team_logo_picture" id="amLo" team_index="1" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+ 
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="objt" />
+			</record>
+		</widget>
+ 
+ 	</container>
+
+ 	<container height="5" priority="4"/>
+ 
+ 	<container priority="2" height="60">
+ 
+		<attachment_group class="horizontal_arrange" horizontal_alignment="middle,extend" horizontal_gap="6"/>
+ 
+		<container>
+			<attachment class="test_screen_size_attachment" skip_if_false="true">
+				<list id="properties">
+					<record>
+						<flags id="alignment" value="vertical" />
+						<integer id="min_value" value="0" />
+						<integer id="max_value" value="720" />
+						<symbol id="set_property" value="width" />
+						<integer id="true_value" value="55" />
+						<integer id="false_value" value="55" />
+					</record>
+					<record>
+						<flags id="alignment" value="vertical" />
+						<integer id="min_value" value="720" />
+						<integer id="max_value" value="10000" />
+						<symbol id="set_property" value="width" />
+						<integer id="true_value" value="35" />
+						<integer id="false_value" value="35" />
+					</record>
+				</list>
+			</attachment>
+		</container>
+ 
+		<widget class="pitch_action_zones" dont_fit_bars_to_pitch="true" id="azpt" pitch_alignment="centre" fixed="true" vertical="false" auto_tick_exclusive="true" size="8" font_colour="black" alignment="centre" pitch_draw_grass="false" pitch_draw_lines="false" >
+		</widget>
+ 
+		<container>
+			<attachment class="test_screen_size_attachment" skip_if_false="true">
+				<list id="properties">
+					<record>
+						<flags id="alignment" value="vertical" />
+						<integer id="min_value" value="0" />
+						<integer id="max_value" value="720" />
+						<symbol id="set_property" value="width" />
+						<integer id="true_value" value="55" />
+						<integer id="false_value" value="55" />
+					</record>
+					<record>
+						<flags id="alignment" value="vertical" />
+						<integer id="min_value" value="720" />
+						<integer id="max_value" value="10000" />
+						<symbol id="set_property" value="width" />
+						<integer id="true_value" value="35" />
+						<integer id="false_value" value="35" />
+					</record>
+				</list>
+			</attachment>
+		</container>
+ 
+	</container>
+
+	<container height="4" priority="5"/>
+
+	<widget class="text" font="title" colour="fg alpha" auto_size="vertical" priority="3" alignment="centre">
+ 		<translation id="text" translation_id="247327" type="use" value="Action Zones" />
+ 	</widget>
+
+	</container>
+</panel>

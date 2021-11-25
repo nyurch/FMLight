@@ -1,0 +1,54 @@
+﻿<!-- A panel used on the inbox backroom advice panel to show a summary of backroom advice on a particular topic --><panel navigation_container="true" width="465" height="240">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<container class="inner_subtle_box">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+		<container id="cNtn">
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" horizontal_gap="0" />
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="16,-1,16" horizontal_gap="8" />
+
+				<container />
+
+				<widget class="text" id="aWIG" size="large" font="title" alignment="centre" colour="text" multiline="true" auto_size="vertical"/>
+
+				<!-- Settings button -->
+				<widget class="icon_button" show_button_appearance="false" id="setb" file="icons/16px/settings" height="16">
+					<event id="click_event" event_id="setb" file="news_item_panels/backroom advice news topic settings popup panel" />
+				</widget>
+			</container>
+
+			<container>
+
+				<attachment_group class="vertical_arrange" vertical_alignment="bottom,extend"/>
+
+
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" horizontal_alignment="horizontal" vertical_gap="12" />
+
+					<!-- Icon(s) -->
+					<container id="icon" height="26">
+						<attachment_group class="horizontal_arrange" vertical_alignment="vertical" horizontal_alignment="middle" horizontal_gap="0" />
+					</container>
+
+					<container class="scrolling_box">
+					<widget class="text" id="rWIG" alignment="centre" colour="faded text" auto_size="vertical" />
+				</container>
+				</container>
+
+				<container height="30">
+					<attachment_group class="horizontal_arrange" horizontal_alignment="middle">
+						<global id="horizontal_gap" name="ui.button_row_gap" />
+					</attachment_group>
+					<widget class="icon_button" appearance="buttons/primary/normal/button" icon="icons/16px/tick" id="Appl" colour="white" auto_size="all">
+						<translation id="text" translation_id="515093" type="use" value="Do it[COMMENT: AREA: Pre-match tactical advice; SUB-AREA: sub section showing adviced team selection changes; FR: 30872; TONE: Formal; CHARLIMIT: None;]" />
+					</widget>
+				</container>
+
+			</container>
+		</container>
+
+	</container>
+</panel>

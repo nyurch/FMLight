@@ -1,0 +1,58 @@
+﻿<panel>
+    <attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="0" vertical_inset="0"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+
+    <container class="bordered_box_no_margin" appearance="boxes/custom/interaction/person/paper" height="60">
+        <attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="0" vertical_inset="0"/>
+
+        <container height="35">
+            <attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="30, -1" horizontal_gap="8" vertical_offset="0"/>
+
+            <container>
+                <attachment_group class="horizontal_arrange_vertical_autosize" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
+
+                <!-- portrait -->
+                <widget class="object_portrait_picture" id="PPor" width="30" height="30" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+                    <record id="object_property">
+                        <integer id="get_property" value="Pers"/>
+                        <boolean id="dont_set_object" value="true"/>
+                        <boolean id="dont_set_hint" value="true"/>
+                    </record>
+                    <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+                </widget>
+
+                <!-- currently speaking mask -->
+                <widget class="picture" id="talk" file="icons/custom/quick chat/quick_chat_speaking_mask_square_small" scale_picture="true" keep_aspect_ratio="true" width="30" height="30" image_alignment="centre" red_replacement="red" hidden="true">
+                    <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+                </widget>
+
+                <!-- captain/vice captain icon -->
+                <widget class="picture" id="capt" file="icons/custom/player stats/captain" scale_picture="true" keep_aspect_ratio="true" width="12" height="12" image_alignment="centre" red_replacement="red" hidden="true">
+                    <layout class="stick_to_sides_attachment" alignment="top, left" inset="0"/>
+                </widget>
+            </container>
+
+            <container height="35">
+                <attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_offset="2" vertical_gap="0" horizontal_alignment="horizontal"/>
+
+                <!-- name -->
+                <widget class="person_button" colour="black" id="perb" size="medium" style="bold" alignment="left, centre_y" height="15" info_popup_enabled="true" person_is_player="true"/>
+
+                <!-- description -->
+                <widget class="player_description_text" id="Pdes" size="small" colour="faded text" alignment="left, centre_y" auto_size="none" height="18">
+                    <record id="object_property" get_property="Pdes"/>
+                </widget>
+
+                <!-- hierarchy -->
+                <widget class="client_object_property_panel" id="THic" property="THic" alignment="left, centre_y" auto_size="none" height="18">
+                    <record id="object_property" get_property="objt" set_property="objt"/>
+                    <record id="widget_properties" colour="faded text" alignment="left, centre_y" show_category_colour="false" size="xsmall" hiwd="139" hiat="none"  />
+                </widget>
+            </container>
+        </container>
+
+        <!-- player morale/reactions -->
+        <widget class="interaction_reaction_label" id="bdlg" height="25" hidden="true"/>
+    </container>
+</panel>

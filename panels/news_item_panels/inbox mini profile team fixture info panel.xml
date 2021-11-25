@@ -1,0 +1,15 @@
+<panel>
+
+	<string id="skin_style" value="subtle box" />
+
+	<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="0" apply_to_children="true" />
+
+	<container class="inner_subtle_box" red_replacement="black" id="cont">
+		<translation id="title" translation_id="395516" type="use" value="Upcoming Fixtures[COMMENT: FR 9550 - inbox; title for section showing upcoming fixtures for the competition]" />
+
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	</container>
+
+</panel>

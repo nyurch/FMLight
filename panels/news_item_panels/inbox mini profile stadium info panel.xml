@@ -1,0 +1,71 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0"/>
+	
+	<string id="skin_style" value="subtle box"/>
+
+	<container class="inner_subtle_box" red_replacement="black">
+		<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+		<layout class="arrange_horizontal_attachment" layout="75, -1" gap="10"/>
+		<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
+
+		<!-- stadium image-->
+		<widget class="picture" file="icons/48px/stadium" height="75" scale_picture="false" keep_aspect_ratio="true" image_alignment="centre_x, top" red_replacement="grey2" blue_replacement="normal_icon" green_replacement="black"/>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0"/>
+			<record id="default_properties" alignment="left, centre_y" auto_size="vertical"/>
+
+			<!-- stadium name -->
+			<widget class="client_object_label" id="snam" size="11" style="bold" multiline="true">
+				<record id="object_property">
+					<integer id="get_property" value="stad"/>
+					<integer id="set_property" value="valu"/>
+				</record>
+			</widget>
+
+			<!--capacity-->
+			<widget class="text" multiline="true" font="label" colour="faded text">
+				<translation id="text" translation_id="252902" type="use" value="Capacity[COMMENT: team stadium capacity, short title]"/>
+			</widget>
+			<widget class="dashed_number_label" id="ScpV" size="11">
+				<record id="object_property">
+					<integer id="get_property" value="Scpy"/>
+					<integer id="set_property" value="valu"/>
+				</record>
+			</widget>
+
+			<!--surface-->
+			<widget class="text" multiline="true" font="label" colour="faded text">
+				<translation id="text" translation_id="284339" type="use" value="Surface[COMMENT: heading; team_information_panel; pitch surface type]"/>
+			</widget>
+			<widget class="pitch_surface_type_label" id="surV" size="11">
+				<record id="object_property">
+					<integer id="get_property" value="SsfT"/>
+					<integer id="set_property" value="valu"/>
+				</record>
+			</widget>
+
+			<!--stadium condition-->
+			<widget class="text" multiline="true" font="label" colour="faded text">
+				<translation id="text" translation_id="284336" type="use" value="Stadium Condition[COMMENT: heading; team_information_panel; stadium condition]"/>
+			</widget>
+			<widget class="stadium_condition_label" id="SdcV" size="11" multiline="true">
+				<record id="object_property">
+					<integer id="get_property" value="Sdcy"/>
+					<integer id="set_property" value="valu"/>
+				</record>
+			</widget>
+
+			<!--condition label-->
+			<widget class="text" multiline="true" font="label" colour="faded text">
+				<translation id="text" translation_id="282080" type="use" value="Pitch Condition[COMMENT: heading; team_information_panel; max pitch dimensions]"/>
+			</widget>
+			<widget class="pitch_condition_label" id="SptV" size="11" multiline="true">
+				<record id="object_property">
+					<integer id="get_property" value="Sptc"/>
+					<integer id="set_property" value="valu"/>
+				</record>
+			</widget>
+		</container>
+	</container>
+</panel>

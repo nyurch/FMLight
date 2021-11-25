@@ -1,0 +1,25 @@
+﻿<panel height="35">
+    <attachment_group class="horizontal_arrange_autosize_vertical_centre" horizontal_layout="30, -1" horizontal_gap="8" vertical_offset="0"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+
+    <!-- portrait -->
+    <container width="30" height="30">
+        <attachment_group class="horizontal_arrange" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
+        
+        <widget class="object_portrait_picture" width="30" height="30" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+            <record id="object_property">
+                <integer id="get_property" value="Pers"/>
+                <boolean id="dont_set_object" value="true"/>
+                <boolean id="dont_set_hint" value="true"/>
+            </record>
+            <layout class="stick_to_sides_attachment" alignment="vertical" inset="0"/>
+        </widget>
+
+        <widget class="picture" file="icons/custom/quick chat/quick_chat_speaking_mask_square" scale_picture="true" keep_aspect_ratio="true" width="30" height="30" image_alignment="centre" red_replacement="red">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+        </widget>
+    </container>
+
+    <widget class="person_button" colour="black" id="perb" size="xsmall" style="bold" alignment="left, centre_y" auto_size="horizontal" height="15" info_popup_enabled="true" person_is_non_player="true"/>
+</panel>

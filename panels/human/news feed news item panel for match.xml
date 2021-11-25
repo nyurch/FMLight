@@ -1,0 +1,43 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="hIti" set_property="hidn" target="imgc" />
+	</list>
+	
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<flags id="should_force_refresh" value="true"/>
+
+	<container id="NCnt">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="2" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<!--Media Source-->
+		<widget class="object_portrait_picture_with_label_and_background" id="medi" file="widgets/object portrait picture media source"/>
+
+		<!-- headline -->
+		<widget class="button" id="sttx" appearance="none" colour="text" auto_size="vertical" font="bold" multiline="true" size="11.5" alignment="left,centre_y" click_event="shnp" navigation_focus_target="false"/>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="left" horizontal_inset="0" />
+
+			<container id="imgc" height="120" width="200">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+				<!-- comp news image -->
+				<widget class="competition_news_image_panel" id="impl"/>
+			</container>
+
+		</container>
+
+		<container>
+
+			<attachment_group class="horizontal_arrange_vertical_autosize" />
+
+		<widget class="button" appearance="none" auto_size="horizontal" font_colour="blue 400" size="large" bold="true" height="22" click_event="shnp" alignment="left,centre_y" default_focus="true">
+			<translation id="text" translation_id="412454" type="use" value="Read more...[COMMENT: FR 16824; news feed panel; link text to display news item popup]"/>
+		</widget>
+
+		</container>
+		<widget class="horizontal_divider" height="4"/>
+
+	</container>
+</panel>

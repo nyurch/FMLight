@@ -1,0 +1,101 @@
+<panel>
+	<boolean id="save_session_state" value="true"/>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<container class="main_box">
+		<translation id="title" translation_id="351492" type="use" value="Salary Commitments[COMMENT: finances section of tree view; salary projection for finances]" />
+		<attachment_group class="vertical_arrange" vertical_alignment="bottom,extend" vertical_offset="0" vertical_gap="10" horizontal_inset="0" horizontal_alignment="horizontal" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="5" horizontal_inset="0" horizontal_alignment="horizontal" />
+
+			<widget class="text" id="fpps" auto_size="vertical" colour="faded text">
+
+			</widget>
+
+			<widget class="table" id="plat" mode="fill_rows, stripe_rows,select_rows,select_multiple,show_bullets" layout="34,-1,45,85,110,110,110,110,75" select_event="ptrs" auto_size="vertical" auto_size_restricted_to_parent_height="true" save_session_state="true">
+
+				<record id="default_properties" alignment="right,centre_y" colour="black"/>
+
+				<list id="column_table_properties">
+					<record>
+						<flags id="id" value="info" />
+						<record id="column_heading"  alignment="left,centre_y" >
+							<translation id="text" translation_id="227763" type="use" value="Inf[comment - Player Status Info]" />
+						</record>
+					</record>
+					<record>
+						<flags id="id" value="name" />
+						<record id="column_heading"  alignment="left,centre_y" >
+							<translation id="text" translation_id="227765" type="use" value="Name[comment - Person Name]" />
+						</record>
+					</record>
+					<record>
+						<flags id="id" value="age " />
+						<record id="column_heading"  alignment="left,centre_y" >
+							<translation id="text" translation_id="227770" type="use" value="Age[comment - person age]" />
+						</record>
+					</record>
+					<record>
+						<flags id="id" value="expd" />
+						<record id="column_heading"  alignment="centre" >
+							<translation id="text" translation_id="227784" type="use" value="Expires" />
+						</record>
+					</record>
+					<record>
+						<flags id="id" value="wag1" />
+						<record id="column_heading"  alignment="centre" >
+							<flags id="id" value="hwt1" />
+						</record>
+					</record>
+					<record>
+						<flags id="id" value="wag2" />
+						<record id="column_heading"  alignment="centre" >
+							<flags id="id" value="hwt2" />
+						</record>
+					</record>
+					<record>
+						<flags id="id" value="wag3" />
+						<record id="column_heading"  alignment="centre" >
+							<flags id="id" value="hwt3" />
+						</record>
+					</record>
+					<record>
+						<flags id="id" value="wag4" />
+						<record id="column_heading"  alignment="centre" >
+							<flags id="id" value="hwt4" />
+						</record>
+					</record>
+					<record>
+						<flags id="id" value="valu" />
+						<record id="column_heading"  alignment="centre" >
+							<translation id="text" translation_id="227806" type="use" value="Value" />
+						</record>
+					</record>
+				</list>
+
+				<list id="column_widget_properties" >
+					<record indx="0" alignment="centre"/>
+          <record indx="1" alignment="left,centre_y"/>
+          <record indx="2" alignment="left,centre_y"/>
+          <record indx="3" navigation_focus_target="false"/>
+				</list>
+
+			</widget>
+
+
+		</container>
+		
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right" horizontal_offset="0" vertical_inset="0"/>
+
+			<widget class="button" id="sfrb" auto_size="all" disabled="true" click_event="spfr">
+				<translation id="text" translation_id="334040" type="use" value="Set For Release[COMMENT: sets the player to be released at the end of his contract]" />
+			</widget>
+
+		</container>
+
+	
+	</container>
+</panel>

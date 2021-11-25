@@ -1,0 +1,18 @@
+<panel height="15">
+	<layout class="fit_children_attachment" alignment="horizontal" offset="0" gap="0"/>
+
+	<boolean id="show_background" value="false"/>
+	<boolean id="show_label_instead_of_portrait" value="true"/>
+	<boolean id="use_object_colours" value="false"/>
+
+	<!-- label -->
+	<widget class="client_object_label" id="oblw" font="capitals" colour="green 400" bold="true" multiline="false" size="8" alignment="left,centre_y" auto_size="horizontal" auto_size_maximum_width="120" height="15">
+		<layout class="stick_to_sides_attachment" alignment="left,top" inset="0"/>
+	</widget>
+
+	<!-- portrait -->
+	<widget class="picture" id="MEEP" scale_picture="true" alignment="centre" width="120" height="15">
+		<!-- "object_property" set in code -->
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+	</widget>
+</panel>

@@ -1,0 +1,58 @@
+﻿<panel>
+	<record id="object_property">
+		<list id="get_properties">
+			<record>
+				<integer id="get_property" value="fpfc" />
+				<integer id="set_property" value="bkcl" />
+			</record>
+		</list>
+	</record>
+
+	<attachment_group class="horizontal_arrange_vertical_autosize_centre" alignment="left,extend" horizontal_offset="5" horizontal_gap="8" vertical_offset="0" />
+
+	<container height="26" width="26">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+		<widget class="picture" height="26" width="26" image_alignment="centre" file="icons/26px/circle">
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="fpfc" />
+						<integer id="set_property" value="rrep" />
+					</record>
+				</list>
+			</record>
+		</widget>
+
+		<widget class="picture" id="fpfi" height="26" width="26" image_alignment="centre">
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="fpfi" />
+						<integer id="set_property" value="file" />
+					</record>
+					<record>
+						<integer id="get_property" value="fpfc" />
+						<integer id="set_property" value="rrep" />
+					</record>
+
+				</list>
+			</record>
+		</widget>
+
+	</container>
+
+	<!--comp title-->
+	<widget class="label" id="comp" size="large" colour="white" style="bold" auto_size="horizontal" height="40" alignment="centre">
+
+		<record id="object_property">
+			<list id="get_properties">
+				<record>
+					<integer id="get_property" value="Fcti" />
+					<integer id="set_property" value="valu" />
+				</record>
+			</list>
+		</record>
+	</widget>
+
+</panel>

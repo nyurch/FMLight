@@ -1,0 +1,46 @@
+﻿<panel width="60" show_trophy_name_in_hint="true">	
+
+	<attachment class="test_screen_size_attachment" skip_if_false="true">
+		<list id="properties">
+			<record>
+				<flags id="alignment" value="vertical" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="601" />
+				<!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+				<symbol id="set_property" value="height" />
+				<integer id="true_value" value="45" />
+				<integer id="false_value" value="45" />
+			</record>
+			<record min_value="601" max_value="720" true_value="55" />
+			<record min_value="720" max_value="10000" true_value="60" />
+
+		</list>
+	</attachment>
+
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+
+	<!-- Trophy picture -->
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+		<widget class="picture" id="" file="pictures/trophies/default/shadow" image_alignment="centre_x,bottom" scale_picture="true" keep_aspect_ratio="true"/>
+
+		<widget class="object_portrait_picture" id="trop" scale_picture="true" navigation_focus_target="true">
+			<integer id="property" value="trop"/>
+			<boolean id="keep_aspect_ratio" value="true"/>
+			<boolean id="comp_use_trophy_icon" value="true"/>
+			<flags id="image_alignment" value="centre_x,bottom"/>
+		</widget>
+
+		<container>
+			<attachment_group class="vertical_arrange" vertical_alignment="bottom" horizontal_alignment="right"/>
+			
+			<container class="inner_contrast_box_no_margin" width="22" height="22" red_replacement="bg accent">
+
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+				<widget class="text" id="wcnt" alignment="centre" size="8" font="title" colour="white"/>
+			</container>
+		</container>
+	</container>
+</panel>

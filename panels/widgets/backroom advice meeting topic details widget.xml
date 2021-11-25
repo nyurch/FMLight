@@ -1,0 +1,103 @@
+﻿<panel>
+
+	<attachment_group class="vertical_arrange_autosize"/>
+
+	<list id="properties_to_forward">
+		<record get_property="text" target="topi" set_property="text" />
+		<record get_property="SuRe" target="rmtx" set_property="text" />
+		<record get_property="hidn" target="tbox" set_property="hidn" />
+		<record get_property="hPlC" target="plds" set_property="hidn" />
+		<record get_property="hStC" target="stds" set_property="hidn" />
+		<record get_property="hClC" target="clds" set_property="hidn" />
+		<record get_property="dref" target="todt" set_property="objt" />
+		<record get_property="dref" target="prtb" set_property="objt" />
+		<record get_property="properties" target="prtb" set_property="vpid" />
+	</list>
+
+	<widget class ="text" auto_size="vertical" colour="faded text" id="rmtx"/>
+	<widget class ="text" auto_size="vertical" id="topi"/>
+
+	<container class="inner_subtle_box" id="tbox">
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left, extend" horizontal_gap="10"/>
+
+		<container  class="client_object_viewer_xml_panel" id="todt"  height="50" >
+			<attachment_group class="horizontal_arrange_autosize_vertical_centre" />
+
+			<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x" width="50" height="50" >
+				<record id="object_property">
+					<list id="get_properties">
+						<!--Facegen data request-->
+						<record get_property="fcgn" />
+						<!--Fake name request-->
+						<record get_property="Pfke" />
+						<record get_property="prpc" set_property="valu" />
+					</list>
+				</record>
+			</widget>
+
+			<!--for players-->
+			<container id="plds">
+				<attachment_group class="vertical_arrange_autosize_all" />
+
+				<widget class="person_button" info_popup_enabled="true" style="bold" auto_size="all">
+					<record id="object_property" get_property="PnmP" set_property="valu" />
+				</widget>
+
+				<widget class="game_formatted_label" alignment="left,centre_y" size="small" colour="faded text" auto_size="all" multiline="false" >
+					<record id="format">
+						<translation id="text" translation_id="388547" type="use" value="[%number#1] year-old [%player_description#2][COMMENT: transfer window opening news, rumoured player moving, graphical display]"/>
+						<integer id="var2" value="vf_player_description"/>
+					</record>
+
+					<record id="object_property">
+						<list id="get_properties">
+							<!-- age -->
+							<record get_property="Page" set_property="var1" dont_set_object="true"/>
+							<!-- description -->
+							<record get_property="Pdes" set_property="var2" dont_set_object="true"/>
+						</list>
+					</record>
+				</widget>
+			</container>
+
+			<!--for staff-->
+			<container id="stds">
+				<attachment_group class="vertical_arrange_autosize_all" />
+
+				<widget class="person_button" info_popup_enabled="true" style="bold" auto_size="all">
+					<record id="object_property" get_property="PnmP" set_property="valu" />
+				</widget>
+
+				<widget class="job_label" alignment="left,centre_y" size="small" colour="faded text" auto_size="all" multiline="false">
+					<record id="object_property" get_property="PcJj" set_property="valu" />
+				</widget>
+			</container>
+
+			<!--for clubs-->
+			<container id="clds">
+				<attachment_group class="vertical_arrange_autosize_all" />
+
+				<widget class="club_button" style="bold" icon_enabled="false" auto_size="all">
+					<record id="object_property" get_property="objt" set_property="valu" />
+				</widget>
+
+				<widget class="comp_button" icon_enabled="false" colour="faded text" auto_size="all">
+					<record id="object_property" get_property="Cdiv" set_property="valu" />
+				</widget>
+			</container>
+			
+		</container>
+
+		<widget class="client_object_list_table" column_spacing="10" id="prtb" auto_size="vertical" mode="fill_rows" auto_size_rows="true" fixed_row_height="20" sort_disabled="true" spec="text">
+
+			<flags id="heading_class" value="column_heading_title" />
+			
+
+
+
+
+		</widget>
+
+	</container>
+
+</panel>

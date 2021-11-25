@@ -1,0 +1,106 @@
+<panel>
+    <attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" vertical_gap="10"/>
+
+    <!-- top info panel - done deals/total spent -->
+    <container class="main_subtle_box" background_colour="faded white" height="70">
+        <attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="250, 1, -1, 1, -1" horizontal_gap="10"/>
+
+        <container>
+            <attachment_group class="vertical_arrange_autosize_horizontal_centre" vertical_offset="0" horizontal_inset="0"/>
+            <!-- mode set in code depending on whether this is window is currently open or window has just closed news item -->
+            <widget class="transfer_deadline_day_logo_widget" id="Logo"/>
+        </container>
+
+        <widget class="vertical_divider" width="1" height="30"/>
+
+        <!-- done deals -->
+        <container class="icon_box" file="icon box vertical centre" icon="icons/custom/transfer deadline day/totals/done deals" icon_red_replacement="bg" icon_blue_replacement="accent">
+            <attachment_group class="vertical_arrange_autosize_all" vertical_alignment="middle" vertical_gap="0"/>
+
+            <widget class="number_label" id="DoDl" auto_size="all" alignment="left, centre_y" font="value" navigation_focus_target="false"/>
+            <widget class="text" font="label" auto_size="all" alignment="left, centre_y" colour="faded text">
+                <translation id="text" translation_id="538886" type="use" value="Done Deals[COMMENT: AREA: UI; SUB-AREA: Transfer Deadline Day Round Up News; FR: 34774; TONE: Formal; CHARLIMIT: None; REF-ID: ; NOTE: Title for number of transfer deals done]"/>
+            </widget>
+        </container>
+
+        <widget class="vertical_divider" width="1" height="30"/>
+
+        <!-- total spent -->
+        <container class="icon_box" file="icon box vertical centre" icon="icons/custom/transfer deadline day/totals/spent" icon_red_replacement="bg" icon_blue_replacement="accent">
+            <attachment_group class="vertical_arrange_autosize_all" vertical_alignment="middle" vertical_gap="0"/>
+
+            <widget class="value_label" id="ToSp" auto_size="all" alignment="left, centre_y" font="value" navigation_focus_target="false"/>
+            <widget class="text" font="label" auto_size="all" alignment="left, centre_y" colour="faded text">
+                <translation id="text" translation_id="538887" type="use" value="Total Spent[COMMENT: AREA: UI; SUB-AREA: Transfer Deadline Day Round Up News; FR: 34774; TONE: Formal; CHARLIMIT: None; REF-ID: ; NOTE: Title for total value of all transfer deals done]"/>
+            </widget>
+        </container>
+    </container>
+
+    <!-- bottom section -->
+    <container>
+        <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1, -1" horizontal_gap="10"/>
+
+        <container class="main_subtle_box" background_colour="faded white">
+            <attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" horizontal_inset="10" vertical_offset="8" vertical_gap="10"/>
+
+            <!-- biggest spenders -->
+            <widget class="text" font="title" size="large" colour="text" auto_size="all" alignment="left, centre_y">
+                <translation id="text" translation_id="412440" type="use" value="Biggest Spenders[COMMENT: FR 15125]"/>
+            </widget>
+            <widget class="team_button" id="SpTm" auto_size="all" navigation_focus_target="true"/>
+            <widget class="value_label" id="SpVa" font="value" auto_size="all" alignment="left, centre_y" navigation_focus_target="false"/>
+
+            <widget class="horizontal_divider" height="1"/>
+
+            <!-- most players bought -->
+            <widget class="text" font="title" size="large" colour="text" auto_size="all" alignment="left, centre_y">
+                <translation id="text" translation_id="539010" type="use" value="Most Players In[COMMENT: AREA: UI; SUB-AREA: Transfer Deadline Day Round Up News; FR: 34774; TONE: Formal; CHARLIMIT: None; REF-ID: ; NOTE: Section name for area describing team that bought the most players]"/>
+            </widget>
+            <widget class="team_button" id="MBtm" auto_size="all" navigation_focus_target="true"/>
+            <widget class="text" id="MBVa" size="large" style="bold" auto_size="all" alignment="left, centre_y" navigation_focus_target="false"/>
+
+            <widget class="horizontal_divider" height="1"/>
+
+            <!-- most players sold -->
+            <widget class="text" font="title" size="large" colour="text" auto_size="all" alignment="left, centre_y">
+                <translation id="text" translation_id="539011" type="use" value="Most Players Out[COMMENT: AREA: UI; SUB-AREA: Transfer Deadline Day Round Up News; FR: 34774; TONE: Formal; CHARLIMIT: None; REF-ID: ; NOTE: Section name for area describing team that sold the most players]"/>
+            </widget>
+            <widget class="team_button" id="MStm" auto_size="all" navigation_focus_target="true"/>
+            <widget class="text" id="MSva" size="large" style="bold" auto_size="all" alignment="left, centre_y" navigation_focus_target="false"/>
+        </container>
+
+        <!-- top deals -->
+        <container>
+            <attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal"/>
+
+            <container class="main_subtle_box" background_colour="faded white" id="DlBx">
+                <attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" horizontal_inset="10" vertical_offset="10" vertical_gap="12"/>
+
+                <!-- top window deal -->
+                <container id="WiDb">
+                    <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="22, -1"/>
+
+                    <widget class="picture" file="icons/custom/transfer deadline day/transfer status/done deal" scale_picture="true" image_alignment="centre" height="18" width="16" red_replacement="title"/>
+                    <widget class="text" id="WiDt" font="title" size="large" colour="title" alignment="left, centre_y" auto_size="all"/>
+                </container>
+
+                <widget class="player_deadline_day_transfer_details_panel" id="WiD1" use_short_fee_string="true"/>
+                <widget class="player_deadline_day_transfer_details_panel" id="WiD2" use_short_fee_string="true"/>
+
+                <widget class="horizontal_divider" height="1"/>
+
+                <!-- top deadline day deal -->
+                <container id="DDdt">
+                    <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="22, -1"/>
+
+                    <widget class="picture" file="icons/custom/transfer deadline day/transfer status/done deal" scale_picture="true" image_alignment="centre" height="18" width="16" red_replacement="player transfer status rumour"/>
+                    <widget class="text" font="title" size="large" colour="player transfer status rumour" alignment="left, centre_y" auto_size="all">
+                        <translation id="text" translation_id="539012" type="use" value="Top Deadline Day Deal[COMMENT: AREA: UI; SUB-AREA: Transfer Deadline Day Round Up News; FR: 34774; TONE: Formal; CHARLIMIT: None; REF-ID: ; NOTE: Section name for area describing the top deadline day transfer]"/>
+                    </widget>
+                </container>
+
+                <widget class="player_deadline_day_transfer_details_panel" id="DDdl" use_short_fee_string="true"/>
+            </container>
+        </container>
+    </container>
+</panel>

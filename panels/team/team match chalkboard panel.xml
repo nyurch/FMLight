@@ -1,0 +1,436 @@
+<panel save_session_state="true" always_load_match="true">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	<boolean id="vertical" value="true" />
+	<boolean id="force_left_to_right_events" value="true" />
+	<container class="main_box">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<container id="maCn">
+				<translation id="title" translation_id="450807" type="use" value="Individual Match Analysis[COMMENT: Match Analysis Tab Title - Single Match analysis]" />
+				<layout class="arrange_horizontal_attachment" layout="-1,-2" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<container class="inner_box" id="iMib" navigation_container="true">
+					<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<container class="inner_box_no_margin" id="cEfP" file="filter_panels/chalkboard event filter panel outside match" />
+				</container>
+
+				<container id="iMcB" class="main_contrast_box" red_replacement="green 600">
+					<layout class="arrange_vertical_attachment" layout="-1,210" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+				<container navigation_container="true">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+						<container class="icon_box" icon="icons/custom/analysis/analysis">
+							<layout class="arrange_vertical_attachment" layout="30,-1" offset="4" gap="0" />
+							<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+							<container height="30">
+								<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="4" gap="0" />
+								<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+								<widget class="text" auto_size="horizontal" alignment="left" font="title" colour="white">
+									<layout class="stick_to_sides_attachment" alignment="left,top" inset="0" />
+									<translation id="text" translation_id="296334" type="use" value="Analysis[COMMENT: match screen; analysis panel]" />
+								</widget>
+							</container>
+
+							<container>
+								<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="0" />
+								<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+								<container id="Pcnt">
+									<layout class="arrange_horizontal_attachment" alignment="fill" offset="0" gap="0" />
+									<layout class="stick_to_sides_attachment" alignment="vertical" />
+
+									<container>
+										<layout class="arrange_vertical_attachment" layout="62,-1" offset="0" gap="10" />
+										<layout class="stick_to_sides_attachment" alignment="vertical" />
+										<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+										<container>
+											<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="2" />
+											<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+											<widget class="popup_button" id="mSpu" colour="white" red_replacement="white" auto_size="vertical">
+												<translation id="text" translation_id="320524" type="use" value="Choose Match...[COMMENT: team report match analysis; drop-down menu text allowing the user to change the match being analysed]" />
+												<animation class="size_animation" end_mode="stop" />
+											</widget>
+
+											<container id="fRCn" hidden="true" height="30">
+												<layout class="arrange_horizontal_attachment" layout="-1,-1,-1" offset="0">
+												<global id="gap" name="ui.split_button_row_gap"/>
+											</layout>
+												<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+												<widget class="radio_toggle_switch_left" colour="white" id="teaO" alignment="centre">
+													<record id="click_event">
+														<integer id="event_id" value="slCt" />
+														<integer id="index" value="0" />
+													</record>
+												</widget>
+												<widget class="radio_toggle_switch_middle" colour="white" id="teaT" alignment="centre">
+													<record id="click_event">
+														<integer id="event_id" value="slCt" />
+														<integer id="index" value="1" />
+													</record>
+												</widget>
+												<widget class="radio_toggle_switch_right" id="teaB" colour="white" selected="true" alignment="centre">
+													<translation id="text" translation_id="420662" type="use" value="Both[COMMENT: match chalkboard panel tickbox to show both teams]" />
+													<record id="click_event">
+														<integer id="event_id" value="slCt" />
+														<integer id="index" value="2" />
+													</record>
+												</widget>
+											</container>
+										</container>
+
+										<container>
+											<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+											<widget class="chalkboard_pitch" id="Cpit" select_event="slic" animate_size_and_position="true" pitch_draw_arrows="true" pitch_keep_selected_icons="false" pitch_draw_grass="false" pitch_player_icon_text_font="match pitch players" wants_mouse_events="true" pitch_draw_dugout="false" pitch_draw_markings="false" pitch_touchline_width_percentage="45" vertical="true" enable_ticker="true" force_left_to_right_events="true" />
+
+											<container id="lkPC" hidden="true">
+												<animation class="fade_animation" trigger_id="hidden" trigger_value="false" start_value="0.0" end_value="1.0" duration="1.0" end_mode="hold_end" />
+												<animation class="fade_animation" trigger_id="hidden" trigger_value="true" start_value="1.0" end_value="0.0" duration="1.0" end_mode="hold_end" />
+
+												<container class="bordered_box_no_margin" red_replacement="pitch_box_background">
+													<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+												</container>
+
+											<widget class="chalkboard_pitch" id="lnkP" animate_size_and_position="true" pitch_draw_arrows="true" pitch_keep_selected_icons="false" pitch_draw_grass="false" pitch_player_icon_text_font="match pitch players" wants_mouse_events="true" pitch_draw_dugout="false" pitch_draw_markings="false" pitch_draw_lines="true" pitch_touchline_width_percentage="45" vertical="true" force_left_to_right_events="true">
+													<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+												</widget>
+
+												<widget class="icon_button" auto_size="all" icon="icons/16px/cross">
+													<event id="click_event" event_id="cLeP" event_target="lnkP" />
+													<layout class="stick_to_sides_attachment" alignment="top" inset="4" />
+													<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+												</widget>
+											</container>
+										</container>
+									</container>
+
+									<container id="sPcn" hidden="true">
+										<layout class="arrange_vertical_attachment" layout="62,-1" offset="0" gap="10" />
+										<layout class="stick_to_sides_attachment" alignment="vertical" />
+										<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+										<animation class="slide_in_right_animation" />
+
+										<container>
+											<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="2" />
+											<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+											<widget class="popup_button" id="mScP" colour="white" red_replacement="white" auto_size="vertical">
+												<translation id="text" translation_id="320524" type="use" value="Choose Match...[COMMENT: team report match analysis; drop-down menu text allowing the user to change the match being analysed]" />
+												<animation class="size_animation" end_mode="stop" />
+											</widget>
+
+											<container id="SeRb" height="30" hidden="true">
+												<layout class="arrange_horizontal_attachment" layout="-1,-1,-1" offset="0" gap="-9" />
+												<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+												<widget class="radio_toggle_switch_left" colour="white" id="teSO">
+													<record id="click_event">
+														<integer id="event_id" value="slCS" />
+														<integer id="index" value="0" />
+													</record>
+												</widget>
+												<widget class="radio_toggle_switch_middle" colour="white" id="teST">
+													<record id="click_event">
+														<integer id="event_id" value="slCS" />
+														<integer id="index" value="1" />
+													</record>
+												</widget>
+												<widget class="radio_toggle_switch_right" id="teSB" colour="white" selected="true">
+													<translation id="text" translation_id="420662" type="use" value="Both[COMMENT: match chalkboard panel tickbox to show both teams]" />
+													<record id="click_event">
+														<integer id="event_id" value="slCS" />
+														<integer id="index" value="2" />
+													</record>
+												</widget>
+											</container>
+										</container>
+
+										<container>
+											<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+										<widget class="chalkboard_pitch" id="CSit" select_event="slic" animate_size_and_position="true" pitch_draw_arrows="true" pitch_keep_selected_icons="false" pitch_draw_grass="false" pitch_player_icon_text_font="match pitch players" wants_mouse_events="true" pitch_draw_dugout="false" pitch_draw_markings="false" pitch_touchline_width_percentage="45" vertical="true" force_left_to_right_events="true" />
+
+											<container id="lkPS" hidden="true">
+												<animation class="fade_animation" trigger_id="hidden" trigger_value="false" start_value="0.0" end_value="1.0" duration="1.0" end_mode="hold_end" />
+												<animation class="fade_animation" trigger_id="hidden" trigger_value="true" start_value="1.0" end_value="0.0" duration="1.0" end_mode="hold_end" />
+
+												<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+												<container class="bordered_box_no_margin" red_replacement="pitch_box_background">
+													<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+												</container>
+
+											<widget class="chalkboard_pitch" id="lnkS" animate_size_and_position="true" pitch_draw_arrows="true" pitch_keep_selected_icons="false" pitch_draw_grass="false" pitch_player_icon_text_font="match pitch players" wants_mouse_events="false" pitch_draw_dugout="false" pitch_draw_markings="false" pitch_touchline_width_percentage="45" pitch_draw_lines="false" vertical="true" force_left_to_right_events="true">
+													<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+												</widget>
+
+												<widget class="icon_button" auto_size="all" icon="icons/16px/cross">
+													<event id="click_event" event_id="cLeP" event_target="lnkS" />
+													<layout class="stick_to_sides_attachment" alignment="top" inset="4" />
+													<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+												</widget>
+											</container>
+										</container>
+									</container>
+								</container>
+
+								<widget class="check_box" auto_size="all" colour="white" red_replacement="white" click_event="enSp" id="ScPt" disabled="true">
+									<layout class="stick_to_sides_attachment" alignment="top" inset="10" />
+									<translation id="text" translation_id="420719" type="use" value="Compare Match[COMMENT: match chalkboard panel option to compare one match of football to another]" />
+								</widget>
+
+							</container>
+						</container>
+					</container>
+
+				<container navigation_container="true">
+						<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="5" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+						<container class="main_contrast_box" height="180" red_replacement="bg">
+							<layout class="arrange_vertical_attachment" layout="70, 120" offset="0" gap="0" />
+							<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+						<container class="icon_box" icon="icons/custom/analysis/time" navigation_container="true">
+								<layout class="arrange_vertical_attachment" alignment="top,extend" offset="4" gap="0" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+								<widget class="text" auto_size="vertical" alignment="left" font="title" colour="faded text">
+									<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+									<translation id="text" translation_id="293649" type="use" value="Time" />
+								</widget>
+
+								<widget class="slider_horizontal" id="tflr" height="30" width="150" min_value="0" interval="1" page_interval="1" final_changed_event="sCet" appearance="sliders/large horizontal/slider">
+									<boolean id="dual_slider_mode" value="true" />
+									<boolean id="show_value_on_thumb" value="true" />
+									<boolean id="show_notch_text" value="false" />
+								</widget>
+
+								<container class="inner_box_no_margin">
+									<layout class="arrange_horizontal_attachment" layout="17, -3, 17, -3, 17, -2, 17" offset="0" gap="0" />
+									<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+									<record id="default_properties" alignment="centre_x" font="title" colour="text" />
+
+									<widget class="text" text="0" />
+
+									<widget class="button" appearance="" click_event="fsth">
+										<translation id="text" translation_id="232840" type="use" value="First Half" />
+									</widget>
+
+									<widget class="text" text="45" />
+
+									<widget class="button" appearance="" click_event="sndh">
+										<translation id="text" translation_id="232841" type="use" value="Second Half" />
+									</widget>
+
+									<widget class="text" text="90" />
+
+									<widget class="button" appearance="" id="exte" click_event="etrt" hidden="true">
+										<translation id="text" translation_id="232842" type="use" value="Extra Time" />
+									</widget>
+
+									<widget class="text" id="extn" text="120" hidden="true" />
+								</container>
+							</container>
+
+						<container class="icon_box" icon="icons/custom/analysis/pitch" navigation_container="true">
+
+								<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="4" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+								<container>
+
+									<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+									<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+									<widget class="text" auto_size="all" alignment="left" font="title" colour="text">
+										<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+										<translation id="text" translation_id="395290" type="use" value="Pitch Area[COMMENT: match screen; analysis panel]" />
+									</widget>
+
+									<container>
+
+										<layout class="arrange_horizontal_attachment" alignment="left" offset="0" gap="15" />
+										<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+										<record id="default_properties" icon_alignment="left" width="53" />
+
+										<widget class="check_box_button" value="0" icon="icons/custom/analysis/pitch filter/defensive half" id="dfHf">
+											<translation id="hint" translation_id="469772" type="use" value="Defensive Half[COMMENT: bug #189660 - match analysis filter to view events in the defensive half of the pitch]" />
+											<record id="click_event">
+												<flags id="event_id" value="SPar" />
+												<flags id="type" value="DFTR" />
+											</record>
+										</widget>
+										<widget class="check_box_button" value="0" icon="icons/custom/analysis/pitch filter/attacking half" id="atkH">
+											<translation id="hint" translation_id="469773" type="use" value="Attacking Half[COMMENT: bug #189660 - match analysis filter to view events in the attacking half of the pitch]" />
+											<record id="click_event">
+												<flags id="event_id" value="SPar" />
+												<flags id="type" value="ATTH" />
+											</record>
+										</widget>
+										<widget class="check_box_button" value="0" icon="icons/custom/analysis/pitch filter/midfield" id="MidF">
+											<translation id="hint" translation_id="469774" type="use" value="Midfield[COMMENT: bug #189660 - match analysis filter to view events in the middle of the pitch]" />
+											<record id="click_event">
+												<flags id="event_id" value="SPar" />
+												<flags id="type" value="MIDP" />
+											</record>
+										</widget>
+										<widget class="check_box_button" value="0" icon="icons/custom/analysis/pitch filter/right side" id="rgSd">
+											<translation id="hint" translation_id="469775" type="use" value="Right Side[COMMENT: bug #189660 - match analysis filter to view events on the right side of the pitch]" />
+											<record id="click_event">
+												<flags id="event_id" value="SPar" />
+												<flags id="type" value="LWPT" />
+											</record>
+										</widget>
+										<widget class="check_box_button" value="0" icon="icons/custom/analysis/pitch filter/middle" id="midP">
+											<translation id="hint" translation_id="469776" type="use" value="Middle[COMMENT: bug #189660 - match analysis filter to view events in the middle third of the pitch]" />
+											<record id="click_event">
+												<flags id="event_id" value="SPar" />
+												<flags id="type" value="MWPT" />
+											</record>
+										</widget>
+										<widget class="check_box_button" value="0" icon="icons/custom/analysis/pitch filter/left side" id="ltSd">
+											<translation id="hint" translation_id="469777" type="use" value="Left Side[COMMENT: bug #189660 - match analysis filter to view events on the left side of the pitch]" />
+											<record id="click_event">
+												<flags id="event_id" value="SPar" />
+												<flags id="type" value="RWPT" />
+											</record>
+										</widget>
+										<widget class="check_box_button" value="1" icon="icons/custom/analysis/pitch filter/all" id="Alsd">
+                      <translation id="hint" type="use" translation_id="382818" value="All[COMMENT: bug 112567; on button to select to view all items in store]" />
+											<record id="click_event">
+												<flags id="event_id" value="SPar" />
+												<flags id="type" value="TARP" />
+											</record>
+										</widget>
+
+									</container>
+								</container>
+
+								<container>
+									<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="15" />
+									<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+									<container>
+										<layout class="fit_children_attachment" alignment="horizontal" offset="0" gap="15" />
+										<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+										<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+										<!-- Direction -->
+										<widget class="text" auto_size="all" font="title" colour="text">
+											<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+											<translation id="text" translation_id="450751" type="use" value="Direction[COMMENT: match screen; analysis panel - means direction of pass, shot, etc (not specific to just one stat)]" />
+										</widget>
+
+										<container>
+											<layout class="fit_children_attachment" alignment="horizontal,fill" offset="0" gap="15" />
+											<layout class="arrange_horizontal_attachment" alignment="left" offset="0" gap="15" />
+											<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+											<!-- Forward direction -->
+											<widget class="check_box_button" id="dir1" value="1" icon="icons/custom/analysis/pitch filter/forwards" icon_alignment="left" width="53">
+												<translation id="hint" translation_id="469778" type="use" value="Forwards[COMMENT: bug #189660 - match analysis filter to view events where the ball moves forwards]" />
+												<record id="click_event">
+													<flags id="event_id" value="ePrF" />
+													<flags id="type" value="FWDe" />
+												</record>
+											</widget>
+											<!-- Sideways direction -->
+											<widget class="check_box_button" id="dir2" value="1" icon="icons/custom/analysis/pitch filter/sideways" icon_alignment="left" width="53">
+												<translation id="hint" translation_id="469779" type="use" value="Sideways[COMMENT: bug #189660 - match analysis filter to view events where the ball moves sideways]" />
+												<record id="click_event">
+													<flags id="event_id" value="ePrF" />
+													<flags id="type" value="SIDe" />
+												</record>
+											</widget>
+											<!-- Backwards direction -->
+											<widget class="check_box_button" id="dir3" value="1" icon="icons/custom/analysis/pitch filter/backwards" icon_alignment="left" width="53">
+												<translation id="hint" translation_id="469780" type="use" value="Backwards[COMMENT: bug #189660 - match analysis filter to view events where the ball moves backwards]" />
+												<record id="click_event">
+													<flags id="event_id" value="ePrF" />
+													<flags id="type" value="BAKe" />
+												</record>
+											</widget>
+
+										</container>
+									</container>
+
+									<container>
+										<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+										<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+										<!-- Length -->
+										<widget class="text" auto_size="all" font="title" colour="text">
+											<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+											<translation id="text" translation_id="450752" type="use" value="Length[COMMENT: match screen; analysis panel - means direction of pass, shot, etc (not specific to just one stat)]" />
+										</widget>
+
+										<container>
+											<layout class="arrange_horizontal_attachment" alignment="left" offset="0" gap="15" />
+											<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+											<!-- Long direction -->
+											<widget class="check_box_button" id="len1" value="1" icon="icons/custom/analysis/pitch filter/long" icon_alignment="left" width="53">
+												<translation id="hint" translation_id="469781" type="use" value="Long[COMMENT: bug #189660 - match analysis filter to view events where the ball moves a long distance]" />
+												<record id="click_event">
+													<flags id="event_id" value="ePlF" />
+													<flags id="type" value="LONe" />
+												</record>
+											</widget>
+											<!-- Medium length -->
+											<widget class="check_box_button" id="len2" value="1" icon="icons/custom/analysis/pitch filter/medium" icon_alignment="left" width="53">
+												<translation id="hint" translation_id="469782" type="use" value="Medium[COMMENT: bug #189660 - match analysis filter to view events where the ball moves a medium distance]" />
+												<record id="click_event">
+													<flags id="event_id" value="ePlF" />
+													<flags id="type" value="MEDe" />
+												</record>
+											</widget>
+											<!-- Short length -->
+											<widget class="check_box_button" id="len3" value="1" icon="icons/custom/analysis/pitch filter/short" icon_alignment="left" width="53">
+												<translation id="hint" translation_id="469783" type="use" value="Short[COMMENT: bug #189660 - match analysis filter to view events where the ball moves a short distance]" />
+												<record id="click_event">
+													<flags id="event_id" value="ePlF" />
+													<flags id="type" value="SHTe" />
+												</record>
+											</widget>
+
+										</container>
+									</container>
+
+								</container>
+							</container>
+
+						</container>
+					</container>
+
+
+				</container>
+		</container>
+
+				<widget class="text" id="nFtD" hidden="true">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="10" />
+					<translation id="text" translation_id="420720" type="use" value="No Matches Available for Analysis[COMMENT: match chalkboard panel text for when there are no available matches to analyse]" />
+				</widget>
+
+		<container embed_in_frame="true" width="90" height="40">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="top" inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+			<!-- TODO:: Matt W 26/09/2019 - Bug 13328 removed prozone branding, revisit when known what replacement is-->
+			<widget class="picture" image_alignment="right,centre_y" file="" scale_picture="true" keep_aspect_ratio="true" />
+		</container>
+	</container>
+</panel>

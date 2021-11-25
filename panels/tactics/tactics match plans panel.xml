@@ -1,0 +1,163 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container id="nvab">
+		<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+		<layout class="centre_in_parent_attachment" alignment="horizontal" apply_to_children="true" />
+
+		<widget class="spacer" height="10" />
+
+		<!--explanatory text-->
+		<widget class="text" alignment="centre" size="12" style="shadowed" font="semi_bold" colour="faded text" auto_size="all">
+			<translation id="text" translation_id="356895" type="use" value="Match Plans cannot be viewed without control of the team.[COMMENT: explanatory text when you can't see AI team's match plans]" />
+		</widget>
+
+	</container>
+
+	<container id="vabl">
+		<layout class="arrange_horizontal_attachment" layout="350,-1"  gap="5" offset="0"/>
+		<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+		<container class="bordered_box_no_margin" red_replacement="dark_box_background">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="10,5,0,5" />
+
+
+			<container class="inner_box">
+
+				<translation id="title" translation_id="333920" type="use" value="Match Plans[COMMENT:title for the match plans list; match plans can be created by the user for default behaviour in a range of circumstances and then applied in their absence]" />
+
+				<!--add/edit scenarios buttons-->
+
+				<container embed_in_frame="true" navigation_container="true">
+					<attachment_group class="title_embedded_panel_right">
+            <global id="horizontal_gap" name="ui.split_button_row_gap"/>
+          </attachment_group>
+
+
+					<widget class="icon_button" id="Crne" click_event="CreM" auto_size="horizontal" height="30" icon="icons/16px/plus" appearance="buttons/standard/split/left/button" embed_in_frame="true">
+						<translation id="text" translation_id="319519" type="use" value="Create New[COMMENT: button text for creating a new custom touchline instruction]" />
+					</widget>
+
+					<widget class="popup_button" fixed_icon="true" fixed="true" id="dobm" sele="sdbm" auto_size="horizontal" height="30" appearance="buttons/standard/split/right/button" embed_in_frame="true">
+						<list id="items" >
+							<record id="1" event_id="lMPl" icon="icons/16px/import" red_replacement="text">
+								<translation id="text" translation_id="255262" type="use" value="Import[COMMENT: filter list dialog: button used to import an item]" />
+							</record>
+							<record id="1" event_id="sMPl" icon="icons/16px/export" red_replacement="text">
+								<translation id="text" translation_id="255263" type="use" value="Export[COMMENT: filter list dialog: button used to export the selected item]" />
+							</record>
+						</list>
+					</widget>
+
+				</container>
+
+				<layout class="arrange_vertical_attachment" alignment="bottom,extend" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+				<!--table of current preset shouts-->
+				<widget class="table" id="touc" layout="-1,40,40" mode="stripe_rows, select_rows, show_bullets,dont_allow_empty_selection" select_event="selt" navigation_container="true">
+					<boolean id="fixed_size_rows" value="true" />
+					<integer id="row_height" value="35" />
+
+					<record id="default_properties">
+						<flags id="spec" value="text" />
+					</record>
+
+					<list id="column_table_properties">
+						<record indx="0" left="4" >
+							<boolean id="sort_disabled" value="true" />
+							<record id="column_widget_properties">
+								<flags id="alignment" value="left,centre_y" />
+							</record>
+						</record>
+						<record indx="1" sort_disabled="true" top="2" bottom="2" />
+						<record indx="2" sort_disabled="true" top="2" bottom="2" />
+					</list>
+
+				</widget>
+
+				<widget class="horizontal_divider" />
+
+
+				<container height="55" navigation_container="true">
+					<layout class="arrange_horizontal_attachment" alignment="middle" offset="0" gap="0"/>
+					<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+
+					<widget class="primary_icon_button" id="uMpB" click_event="aMtP" auto_size="vertical" width="200" alignment="centre" icon="icons/16px/formation" />
+
+				</container>
+
+			</container>
+
+		</container>
+
+		<!--the match plan-->
+		<container class="bordered_box_no_margin" navigation_container="true">
+			<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="7" />
+
+			<container id="touB">
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="10" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="7" />
+
+
+				<!--scenarios list-->
+				<container class="inner_box">
+					<translation id="title" translation_id="334030" type="use" value="Scenarios[COMMENT: title for a box containing a list of all scenarios attached to a match plan]" />
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="5" />
+
+					<!--add/edit scenarios buttons-->
+
+					<container embed_in_frame="true">
+						<attachment_group class="title_embedded_panel_right" />
+
+						<widget class="primary_icon_button" id="adds" click_event="adds" icon="icons/16px/plus" embed_in_frame="true">
+							<translation id="text" translation_id="333659" type="use" value="Add Scenario[COMMENT: button text to add a new scenario to a match plan]" />
+						</widget>
+
+					</container>
+
+					<!--scenarios table-->
+					<!-- Fix for tactic cut off --> 
+					<widget class="table" id="scen" layout="-1,240,90,30,30" mode="stripe_rows">
+
+
+						<boolean id="fixed_size_rows" value="true" />
+						<integer id="row_height" value="29" />
+
+						<record id="default_properties">
+							<flags id="spec" value="text" />
+						</record>
+
+						<list id="column_table_properties">
+							<record indx="0">
+								<boolean id="sort_disabled" value="true" />
+								<record id="column_widget_properties">
+									<flags id="alignment" value="left,centre_y" />
+								</record>
+							</record>
+							<record indx="1">
+								<boolean id="sort_disabled" value="true" />
+								<record id="column_widget_properties">
+									<flags id="alignment" value="left,centre_y" />
+								</record>
+							</record>
+							<record indx="2">
+								<boolean id="sort_disabled" value="true" />
+								<record id="column_widget_properties">
+									<flags id="alignment" value="left,centre_y" />
+								</record>
+							</record>
+							<record indx="3" sort_disabled="true" top="2" bottom="2" />
+							<record indx="4" sort_disabled="true" top="2" bottom="2" />
+						</list>
+
+					</widget>
+
+				</container>
+
+			</container>
+		</container>
+	</container>
+
+</panel>

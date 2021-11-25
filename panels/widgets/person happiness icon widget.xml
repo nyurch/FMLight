@@ -1,0 +1,49 @@
+﻿<panel>
+  <string id="superbly_happy_icon_file" value="icons/custom/emoji/superbly happy"  />
+  <string id="happy_icon_file" value="icons/custom/emoji/happy"  />
+  <string id="content_icon_file" value="icons/custom/emoji/content"  />
+  <string id="concerned_icon_file" value="icons/custom/emoji/concerned" />
+  <string id="complaining_icon_file" value="icons/custom/emoji/complaining" />
+  <string id="complaining_publicly_icon_file" value="icons/custom/emoji/complaining publicly"  />
+  <string id="unresolvable_icon_file" value="icons/custom/emoji/unresolvable"  />
+  
+  <string id="supporting_manager_icon_file" value="icons/custom/emoji/supports manager"   />
+  <string id="supporting_teammate_icon_file" value="icons/custom/emoji/supports teammate"  />
+  
+  
+  <layout class="stick_to_sides_attachment" apply_to_children="true" alignment="all" inset="0"/>
+  <container class="main_box" id="bgrb" appearance="tables/custom/dynamics/happiness cell/row">
+    <container id="icoC">
+      <layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0" />
+      <layout class="stick_to_sides_attachment" apply_to_children="true" alignment="horizontal" inset="0"/>
+      <layout class="stick_to_sides_attachment"  alignment="all" inset="0"/>
+      <container height="26" id="Pcnt">
+        <layout class="stick_to_sides_attachment" apply_to_children="true" alignment="all" inset="0"/>
+        <widget class="picture" id="psPI" file="icons/26px/tick" width="26" image_alignment="centre" keep_aspect_ratio="true" scale_picture="false"/>
+        <widget class="link_button" id="lnkB" appearance="" section="Prel" />
+      </container>
+
+      <widget class="link_text" colour="text" section="Prel" id="hplb" spec="text" size="xsmall" style="semi_bold" auto_size="vertical" multiline="false" alignment="centre" priority="1"/>
+
+    </container>
+
+    <widget class="morale_label"  id="mrli"  spec="text" size="small" auto_size="vertical" style="semi_bold" hidden="true" alignment="centre" icon_alignment="top" show_hint="false">
+      <layout class="stick_to_sides_attachment"  alignment="horizontal" inset="0"/>
+      <layout class="centre_in_parent_attachment" alignment="vertical" />
+    </widget>
+
+    <container width="16" height="16">
+      <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+      <layout class="stick_to_sides_attachment" alignment="left,top" inset="2" />
+      <!--icon indicating change in Hierarchy status-->
+      <!--change up-->
+      <widget class="picture" id="indu" hidden="true" image_alignment="right,centre_y" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false" file="icons/16px/change up"/>
+      <!--change down-->
+      <widget class="picture" id="indd" hidden="true" image_alignment="right,centre_y" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false" file="icons/16px/change down"/>
+    </container>
+
+  </container>
+  <widget class="text" id="noHp" colour="faded text" alignment="centre" hidden="true">
+      <translation id="text" translation_id="233089" type="use" value="-" />
+    </widget>
+</panel>

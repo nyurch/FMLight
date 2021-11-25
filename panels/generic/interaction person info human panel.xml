@@ -1,0 +1,45 @@
+﻿<panel>
+    <attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="0" vertical_inset="0" vertical_offset="4"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+
+    <container class="main_contrast_box_no_margin" red_replacement="bg lighter">
+        <attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" vertical_gap="0" vertical_inset="0" horizontal_inset="4"/>
+
+        <container height="50">
+            <attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="30, -1" horizontal_gap="8" vertical_offset="0"/>
+
+            <!-- portrait -->
+            <container>
+                <attachment_group class="horizontal_arrange_vertical_autosize" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
+
+                <!-- portrait -->
+                <widget class="object_portrait_picture" width="30" height="30" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+                    <record id="object_property">
+                        <integer id="get_property" value="Pers"/>
+                        <boolean id="dont_set_object" value="true"/>
+                        <boolean id="dont_set_hint" value="true"/>
+                    </record>
+                    <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+                </widget>
+
+                <!-- currently speaking icon? -->
+                <widget class="picture" id="talk" file="icons/custom/quick chat/quick_chat_speaking_mask_square_small" scale_picture="true" keep_aspect_ratio="true" width="30" height="30" image_alignment="centre" red_replacement="purple" hidden="true">
+                    <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+                </widget>
+            </container>
+
+            <container height="30">
+                <attachment_group class="vertical_arrange_autosize" vertical_layout="-1, -1" vertical_inset="0" vertical_offset="0" vertical_gap="0" horizontal_inset="0" horizontal_offset="0"/>
+
+                <!-- name -->
+                <widget class="person_button" colour="black" id="perb" size="medium" style="bold" alignment="left, centre_y" auto_size="horizontal" height="16" info_popup_enabled="true" person_is_human="true" person_is_player="false"/>
+
+                <!-- job -->
+                <widget class="job_label" alignment="left, centre_y" size="small" colour="faded text" auto_size="vertical" height="16" multiline="false">
+                    <record id="object_property" get_property="PcJj" set_property="valu"/>
+                </widget>
+            </container>
+        </container>
+    </container>
+</panel>

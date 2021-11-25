@@ -1,0 +1,82 @@
+<panel>
+
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+    <!--stadium picture-->
+  <widget class="stadium_picture" id="STAp" image_alignment="top, centre_x" scale_picture="true" keep_aspect_ratio="true">
+    <record id="object_property">
+      <integer id="get_property" value="objt" />
+      <integer id="set_property" value="objt" />
+    </record>
+  </widget>	
+  
+  <!--container for the team badges-->
+  <container id="tbdg">
+    <layout class="arrange_horizontal_attachment" layout="150,-1,150" />
+    <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+	
+    <container>
+      <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+      <!--home team-->
+      <widget class="object_portrait_picture" id="htpi" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" inset="25">
+        <record id="object_property">
+          <list id="get_properties">
+            <record>
+              <integer id="get_property" value="Hhme" />
+              <integer id="set_property" value="Shwn" />
+            </record>
+            <record>
+              <integer id="get_property" value="home" />
+              <integer id="set_property" value="objt" />
+            </record>
+          </list>
+        </record>
+      </widget>
+
+      <widget class="label" size="30" alignment="centre">
+        <translation id="text" translation_id="364192" type="use" value="?[COMMENT:upcoming fixture info panel; placeholder used for when match opposition isn't known yet, keep to single character where possible]" />
+        <record id="object_property">
+          <integer id="get_property" value="Hhme" />
+          <integer id="set_property" value="hidn" />
+        </record>
+      </widget>
+
+    </container>
+
+    <widget class="label" alignment="centre" colour="gold" style="semi_bold" size="35" id="vlbl">
+      <translation id="text" translation_id="242324" type="use" value="v[versus]" />
+    </widget>
+
+    <container>
+      <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+      <!--away team-->
+      <widget class="object_portrait_picture" id="atpi" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" inset="25">
+        <record id="object_property">
+          <list id="get_properties">
+            <record>
+              <integer id="get_property" value="Hawy" />
+              <integer id="set_property" value="Shwn" />
+            </record>
+            <record>
+              <integer id="get_property" value="away" />
+              <integer id="set_property" value="objt" />
+            </record>
+          </list>
+        </record>
+      </widget>
+
+      <widget class="label" size="30" alignment="centre">
+        <translation id="text" translation_id="364192" type="use" value="?[COMMENT:upcoming fixture info panel; placeholder used for when match opposition isn't known yet, keep to single character where possible]" />
+        <record id="object_property">
+          <integer id="get_property" value="Hawy" />
+          <integer id="set_property" value="hidn" />
+        </record>
+      </widget>
+
+    </container>
+
+  </container>
+
+</panel>

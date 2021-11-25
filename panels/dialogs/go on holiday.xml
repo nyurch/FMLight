@@ -1,0 +1,189 @@
+<panel id="gonh">
+<string id="skin_style" value="edit_box" />
+
+	<translation id="title" translation_id="247264" type="use" value="Holiday Options"/>
+	<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" />
+
+	<boolean id="dcld" value="true"/>
+
+	<widget class="table" layout="32, -1, -1" mode="fill_columns" auto_size="vertical" auto_size_rows="true" row_spacing="4">
+		<flags id="heading_class" value="column_heading_alternative"/>
+		<list id="headings">
+			<record column_span="3" alignment="left,centre_y">
+				<translation id="text" translation_id="230331" type="use" value="Jobs"/>
+			</record>
+		</list>
+
+		<list id="column_table_properties">
+			<record indx="0" sort_disabled="true"/>
+		</list>
+
+		<!-- Job options -->
+		<widget class="check_box" id="apjb" click_event="apjs" column="0" row="0" column_span="2" alignment="left,centre_y">
+			<translation id="text" translation_id="282054" type="use" value="Apply for managerial positions at:"/>
+		</widget>
+		<widget class="primary_popup_button" id="apjm" fixed="true" select_event="chjo" column="2" row="0" auto_size="vertical">
+			<translation id="text" translation_id="282055" type="use" value="Choose option"/>
+			<!-- These values correspond to APPLY_FOR_JOB_TYPE -->
+			<list id="items">
+				<!-- APPLY_FOR_JOB_TYPE::HIGHER_REP -->
+				<record value="6">
+					<translation id="name" translation_id="289093" type="use" value="Higher Reputation Clubs"/>
+				</record>
+				<!-- APPLY_FOR_JOB_TYPE::ANY -->
+				<record value="1">
+					<translation id="name" translation_id="282057" type="use" value="Any Clubs"/>
+				</record>
+				<!-- APPLY_FOR_JOB_TYPE::TOP_DIV -->
+				<record value="2">
+					<translation id="name" translation_id="282058" type="use" value="Top Division Clubs"/>
+				</record>
+				<!-- APPLY_FOR_JOB_TYPE::HIGHER_DIV -->
+				<record value="3">
+					<translation id="name" translation_id="291317" type="use" value="Higher Division Clubs"/>
+				</record>
+				<!-- APPLY_FOR_JOB_TYPE::LOWER_DIV -->
+				<record value="4">
+					<translation id="name" translation_id="282059" type="use" value="Lower Division Clubs"/>
+				</record>
+				<!-- APPLY_FOR_JOB_TYPE::BOTTOM_DIV -->
+				<record value="5">
+					<translation id="name" translation_id="282060" type="use" value="Bottom Division Clubs"/>
+				</record>
+				<!-- APPLY_FOR_JOB_TYPE::NATIONAL -->
+				<record id="apnj" value ="7">
+					<translation id="name" translation_id="317111" type="use" value="National Teams[COMMENT: go on holiday dialog; indicating what types of jobs manager will accept on holiday]"/>
+				</record>
+			</list>
+		</widget>
+	</widget>
+
+	<!-- Transfer options - Sales -->
+	<widget class="table" layout="32, -1, -1" mode="fill_columns" auto_size="vertical" auto_size_rows="true" row_spacing="4">
+		<flags id="heading_class" value="column_heading_alternative"/>
+		<list id="headings">
+			<record column_span="3" alignment="left,centre_y">
+				<translation id="text" translation_id="308151" type="use" value="Transfer Offers[COMMENT: News item category (type) in 'Inbox']"/>
+			</record>
+		</list>
+
+		<list id="column_table_properties">
+			<record indx="0" sort_disabled="true"/>
+		</list>
+
+		<widget class="radio_button" id="acao" click_event="gohc" column="0" row="0" column_span="3">
+			<translation id="text" translation_id="247268" type="use" value="Accept all offers for players"/>
+		</widget>
+		<widget class="radio_button" id="rjas" click_event="gohc" column="0" row="1" column_span="3">
+			<translation id="text" translation_id="247269" type="use" value="Only accept offers matching asking price"/>
+		</widget>
+		<widget class="radio_button" id="rjal" click_event="gohc" column="0" row="2" column_span="3">
+			<translation id="text" translation_id="227484" type="use" value="Reject all offers"/>
+		</widget>
+		<widget class="check_box" id="rjli" click_event="gohc" column="0" row="3" column_span="3" alignment="left,centre_y" colour="text">	<!-- added colour to stop it changing -->
+			<translation id="text" translation_id="247270" type="use" value="Only sell transfer listed players"/>
+		</widget>
+	</widget>
+
+	<!-- Match options -->
+	<widget class="table" layout="32, -1, -1" mode="fill_columns" auto_size="vertical" auto_size_rows="true" row_spacing="4">
+		<flags id="heading_class" value="column_heading_alternative"/>
+		<list id="headings">
+			<record column_span="3" alignment="left,centre_y">
+				<translation id="text" translation_id="344972" type="use" value="Tactics and Team Selection[COMMENT: go on holiday panel; section header for instructions for tactics and team selection]"/>
+			</record>
+		</list>
+
+		<list id="column_table_properties">
+			<record indx="0" sort_disabled="true"/>
+		</list>
+
+		<widget class="check_box" id="ustc" click_event="gohc" column="0" row="0" column_span="3" alignment="left,centre_y">
+			<translation id="text" translation_id="243298" type="use" value="Use current match tactics"/>
+		</widget>
+		<widget class="check_box" id="usts" click_event="gohc" column="0" row="1" column_span="3" alignment="left,centre_y">
+			<translation id="text" translation_id="247275" type="use" value="Use current team selection when possible"/>
+		</widget>
+	</widget>
+
+	<widget class="table" layout="32, -1, -1" mode="fill_columns" auto_size="vertical" auto_size_rows="true" row_spacing="4">
+		<flags id="heading_class" value="column_heading_alternative"/>
+		<list id="headings">
+			<record column_span="3" alignment="left,centre_y">
+				<translation id="text" translation_id="247276" type="use" value="Return Date"/>
+			</record>
+		</list>
+
+		<list id="column_table_properties">
+			<record index="0" sort_disabled="true"/>
+		</list>
+
+		<list id="column_widget_properties">
+			<record index="0" alignment="left,centre_y"/>
+			<record index="1" alignment="left,centre_y"/>
+		</list>
+
+		<widget class="radio_button" column="0" row="0" column_span="2" group="2" value="1" id="rtad" click_event="gohc">
+			<translation id="text" translation_id="247277" type="use" value="Return from holiday after:"/>
+		</widget>
+		<container column="2" row="0">
+			<layout class="arrange_horizontal_attachment" alignment="left" offset="2"/>
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="bottom" apply_to_children="true" inset="0"/>
+
+			<widget class="edit_box" width="64" id="edho" changed_event="gohc">
+				<translation id="hint" translation_id="247279" type="use" value="Specify amount of days to go on holiday"/>
+				<string id="text" value="1"/> <!-- is this placeholder text? -->
+				<attachment class="max_length_attachment" lgth="3"/>
+				<attachment class="is_number_attachment" allf="false" minv="1" maxv="999" vsoe="true"/>
+				<!-- make sure the text they enter is a number -->
+			</widget>
+			<widget class="label" auto_size="all">
+				<translation id="text" translation_id="247280" type="use" value="day(s)"/>
+			</widget>
+		</container>
+
+
+		<widget class="radio_button" group="2" value="1" id="rtdt" click_event="gohc" column="0" row="1" column_span="2">
+			<translation id="text" translation_id="247281" type="use" value="Return from holiday on date:"/>
+		</widget>
+		<widget class="popup_button" alignment="left,centre_y" auto_size="vertical" id="rtdm" fixed="true" select_event="chdt" column="2" row="1" column_span="3">
+			<translation id="text" translation_id="247282" type="use" value="Choose date"/>
+			<list id="items">
+				<record id="rtnw">
+					<translation id="name" translation_id="247283" type="use" value="Next week"/>
+				</record>
+				<record id="rtnm">
+					<translation id="name" translation_id="247284" type="use" value="Next month"/>
+				</record>
+				<record id="rtna">
+					<translation id="name" translation_id="247285" type="use" value="Next match"/>
+				</record>
+				<record id="rtps">
+					<translation id="name" translation_id="257236" type="use" value="Next squad selection[COMMENT: go on holiday dialog; indicating when the manager will return from holiday]"/>
+				</record>
+				<record id="----"/>
+				<record id="chdt">
+					<translation id="name" translation_id="242438" type="use" value="Choose..."/>
+				</record>
+			</list>
+		</widget>
+
+		<widget class="radio_button" group="2" value="1" id="goin" click_event="gohc" column="0" row="2" column_span="3">
+			<translation id="text" translation_id="247286" type="use" value="Go on holiday indefinitely"/>
+		</widget>
+
+	</widget>
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_offset="0" />
+
+		<widget class="check_box" id="dsnc" click_event="gohc" auto_size="all" alignment="left,centre_y">
+			<translation id="text" translation_id="301199" type="use" value="Disconnect manager from network game[COMMENT: go_on_holiday_dialog; option to disconnect manager from network game to allow someone else to take over team if required]"/>
+		</widget>
+
+		<container id="btns" file="human/holiday buttons"/>
+
+	</container>
+
+</panel>

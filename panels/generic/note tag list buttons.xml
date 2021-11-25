@@ -1,0 +1,11 @@
+<panel>
+	<attachment_group class="button_arrangement_right" />
+	<widget class="primary_icon_tick_button" id="ok" colour="white">
+		<translation id="text" translation_id="229829" type="use" value="Ok" />
+	</widget>
+
+	<widget class="button" id="canc" auto_size="all">
+		<translation id="text" translation_id="229828" type="use" value="Cancel" />
+	</widget>
+
+</panel>

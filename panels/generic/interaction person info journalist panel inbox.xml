@@ -1,0 +1,39 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="0" vertical_inset="0"/>
+	<boolean id="should_force_refresh" value="true"/>
+
+	<container height="40">
+		<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="0"/>
+
+		<container height="40">
+			<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="left, extend" horizontal_gap="8" vertical_offset="0"/>
+
+            <!-- portrait -->
+            <widget class="object_portrait_picture" id="PPor" width="40" height="40" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+                <record id="object_property">
+                    <integer id="get_property" value="Pers"/>
+                    <boolean id="dont_set_object" value="true"/>
+                    <boolean id="dont_set_hint" value="true"/>
+                </record>
+            </widget>
+
+			<container height="40">
+				<attachment_group class="vertical_arrange_autosize" vertical_layout="1, -1" vertical_inset="0" vertical_offset="0" vertical_gap="0" horizontal_inset="0" horizontal_offset="0"/>
+
+				<container height="18">
+					<attachment_group class="horizontal_arrange" horizontal_alignment="left" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
+
+					<widget class="icon_button" id="jrni" icon="icons/custom/object preview/button" show_button_appearance="false" width="16" height="16" alignment="centre"/>
+
+					<!-- name -->
+					<widget class="person_button" colour="black" id="perb" size="10" style="bold" alignment="left, centre_y" auto_size="all" info_popup_enabled="false" height="20" navigation_focus_target="false"/>
+				</container>
+
+				<!-- Publication -->
+				<widget class="client_object_label" id="publ" size="10" colour="faded text" alignment="left" auto_size="none" height="20" >
+					<record id="object_property" get_property="Jmsr" set_property="valu"/>
+				</widget>
+			</container>
+		</container>
+	</container>
+</panel>

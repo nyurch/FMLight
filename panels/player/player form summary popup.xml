@@ -1,0 +1,150 @@
+<!-- A Posh tooltip used on the player overview recent form panel to show details about a particular match. Should be used with a PROPERTY_LIST_VIEWER_XML_PANEL --><panel width="400">
+	<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0" />
+
+	<container class="standard_popup_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="2" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="8" />
+
+		<!-- Get Stuff from from fixture object -->
+		<container class="client_object_viewer_xml_panel" id="fxPi">
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+			<layout class="arrange_horizontal_attachment" layout="-2,-1" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+
+			<record id="object_property" get_property="fixi" set_property="objt" />
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<!-- Teams -->
+				<widget class="game_formatted_label" font="title" auto_size="vertical" colour="accent">
+					<translation id="format" translation_id="402416" type="use" value="[%team#1] v [%team#2][COMMENT: FR 14386; player form popup; home team vs away team]" />
+					<record id="object_property">
+						<list id="get_properties">
+							<record get_property="home" set_property="var1" />
+							<record get_property="away" set_property="var2" />
+						</list>
+					</record>
+				</widget>
+
+				<!-- Scoreline-->
+				<container>
+					<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0" />
+
+					<widget class="fixture_full_result_text" size="large" auto_size="vertical" style="bold">
+						<string id="format" value="[%scoreline#1-home_away]" />
+						<record id="object_property" get_property="FxRs" />
+					</widget>
+				</container>
+			</container>
+			<!-- Date and venue -->
+			<widget class="game_formatted_label" auto_size="vertical" alignment="right" size="xsmall" colour="faded text">
+				<translation id="format" translation_id="402417" type="use" value="[%date#1] at [%stadium#2][COMMENT: FR 14386; player form popup; date and venue (stadium)]" />
+				<record id="object_property">
+					<list id="get_properties">
+						<record get_property="fxdt" set_property="var1" />
+						<record get_property="stad" set_property="var2" />
+					</list>
+				</record>
+			</widget>
+		</container>
+		<!-- Info header -->
+		<container>
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+			<layout class="arrange_horizontal_attachment" layout="60, -1, 80, 40, 40, 40" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+
+			<record id="default_properties" auto_size="vertical" font="label" />
+
+
+			<widget class="label">
+				<translation id="text" translation_id="227763" type="use" value="Inf[comment - Player Status Info]" />
+			</widget>
+			<widget class="label">
+				<translation id="text" translation_id="227765" type="use" value="Name[comment - Person Name]" />
+			</widget>
+			<widget class="label">
+				<translation id="text" translation_id="252135" type="use" value="Pos[COMMENT - person list view column heading; scouting section; abbreviation for Position]" />
+			</widget>
+			<widget class="label">
+				<translation id="text" translation_id="227856" type="use" value="Gls" />
+				<record id="object_property" get_property="Pigo" set_property="hidn" />
+			</widget>
+			<widget class="label">
+				<translation id="text" translation_id="248745" type="use" value="Ast" />
+				<record id="object_property" get_property="Pigo" set_property="hidn" />
+			</widget>
+
+			<widget class="label">
+				<translation id="text" translation_id="257312" type="use" value="Conc" />
+				<record id="object_property" get_property="Pigo" set_property="Shwn" />
+			</widget>
+			<widget class="label">
+				<translation id="text" translation_id="316588" type="use" value="Saves[COMMENT: match analysis panel; event type]" />
+				<record id="object_property" get_property="Pigo" set_property="Shwn" />
+			</widget>
+			<widget class="label">
+				<translation id="text" translation_id="247501" type="use" value="Rat[COMMENT - rating]" />
+			</widget>
+		</container>
+		<!-- Info data -->
+		<container>
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+			<layout class="arrange_horizontal_attachment" layout="60, -1, 80, 40, 40, 40" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+			<record id="default_properties" auto_size="vertical" size="small" />
+
+			<widget class="label">
+				<record id="object_property" get_property="info" set_property="text" />
+			</widget>
+			<widget class="person_button" navigation_focus_target="false" colour="black">
+				<record id="object_property" get_property="Pers" set_property="valu" />
+			</widget>
+			<widget class="position_label" alignment="left">
+				<record id="object_property" get_property="Ppos" set_property="valu" />
+			</widget>
+			<widget class="label">
+				<record id="object_property">
+					<list id="get_properties">
+						<record get_property="Pgls" set_property="text" />
+						<record get_property="Pigo" set_property="hidn" />
+					</list>
+				</record>
+			</widget>
+			<widget class="label">
+				<record id="object_property">
+					<list id="get_properties">
+						<record get_property="Past" set_property="text" />
+						<record get_property="Pigo" set_property="hidn" />
+					</list>
+				</record>
+			</widget>
+
+			<widget class="label">
+				<record id="object_property">
+					<list id="get_properties">
+						<record get_property="Pcos" set_property="text" />
+						<record get_property="Pigo" set_property="Shwn" />
+					</list>
+				</record>
+
+			</widget>
+			<widget class="label">
+				<record id="object_property">
+					<list id="get_properties">
+						<record get_property="SSVD" set_property="text" />
+						<record get_property="Pigo" set_property="Shwn" />
+					</list>
+				</record>
+
+			</widget>
+
+			<widget class="number_label">
+				<string id="format" value="[%fraction#1-3.1]" />
+				<record id="object_property" get_property="Prat" set_property="valu" />
+			</widget>
+		</container>
+	</container>
+</panel>

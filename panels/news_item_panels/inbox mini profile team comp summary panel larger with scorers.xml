@@ -1,0 +1,107 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="top" horizontal_alignment="horizontal" />
+	<string id="comp_win_background_appearance" value="boxes/custom/comp win/trophy/paper"/>
+	<string id="other_background_appearance" value="boxes/custom/comp loss/trophy/paper"/>
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<container height="165" >
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+			<widget class="picture" id="sunn" file="photos/dynamic/ticker stadium/sunny" image_alignment="centre" scale_picture="true" keep_aspect_ratio="false"/>
+			<widget class="picture" id="tick" file="photos/dynamic/promotion/ticker" image_alignment="centre" scale_picture="true" keep_aspect_ratio="false"/>
+
+			<container class="main_box" >
+				<layout class="arrange_horizontal_attachment" layout="-1" gap="0" offset="0"/>
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" />
+				<widget class="object_portrait_picture" id="trph" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" comp_use_trophy_icon="true">
+					<integer id="property" value="trop"/>
+				</widget>
+			</container>
+		</container>
+	</container>
+
+	<container id="DtBx" class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+		<container id="PvMt" height="100">
+			<layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="0" offset="10" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+			<!--pivotal match-->
+			<widget class="label" font="title" colour="gold" alignment="centre" auto_size="vertical" id="titl">
+				<translation id="text" translation_id="437033" type="use" value="Pivotal Match[COMMENT: FR 13665; comp win news item; section title for important match]"/>
+			</widget>
+
+			<!--pivotal match score-->
+			<container height="65">
+				<layout class="arrange_horizontal_attachment" layout="-2, -1, -2" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+				<container height="35">
+					<layout class="arrange_vertical_attachment" layout="25, -1," gap="7"/>
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+					<widget class="object_portrait_picture" id="hmbg" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true"/>
+					
+				</container>
+
+				<widget class="fixture_button" id="scrl" colour="gold" size="16" style="bold" alignment="centre_x,auto_fit"/>
+
+				<container height="35">
+					<layout class="arrange_vertical_attachment" layout="25, -1," gap="7"/>
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+					<widget class="object_portrait_picture" id="awbg" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true"/>
+					
+				</container>
+			</container>
+		</container>
+
+		<!--scorers-->
+		<container id="SCOR" height="100">
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="5" apply_to_children="true"/>
+
+			<!--home scorers-->
+			<container class="scrolling_box">
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+					<widget class="fixture_goalscorers_text" id="HMsc" team_index="0"  auto_size="vertical"  separate_lines="true" show_none_if_nothing_happened="false" size="small" colour="bg"/>
+				</container>
+			</container>
+			
+			<!--away scorers-->
+			<container class="scrolling_box">
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+					<widget class="fixture_goalscorers_text" id="AWsc" team_index="1"  auto_size="vertical"  separate_lines="true" show_none_if_nothing_happened="false" size="small" colour="bg"/>
+				</container>
+			</container>
+		</container>
+
+		<container id="kypC" height="70">
+			<layout class="arrange_vertical_attachment" layout="30, 25" gap="0" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+			<!--key player-->
+			<widget class="label" auto_size="none" font="title" colour="gold" alignment="left,centre_y">
+				<translation id="text" translation_id="227396" type="use" value="Key Player"/>
+			</widget>
+
+			<container height="25">
+				<layout class="arrange_horizontal_attachment" layout="-1,5,85" gap="0" offset="0" />
+				<layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true"/>
+
+				<widget class="person_button" id="kypl" person_is_player="true" auto_size="all" alignment="left,centre_y" style="bold" colour="bg">
+					<translation id="text" translation_id="227396" type="use" value="Key Player"/>
+				</widget>
+				<widget class="horizontal_divider" />
+				<!--key player's average rating-->
+				<widget class="label" id="avrt" auto_size="none" colour="bg" alignment="centre"/>
+
+			</container>
+
+
+		</container>
+	</container>
+
+</panel>

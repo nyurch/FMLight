@@ -1,0 +1,26 @@
+﻿<panel height="40">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<colour id="objective_icon_red_replacement_colour" name="icon bg"/>
+	<colour id="objective_icon_blue_replacement_colour" name="icon fg"/>
+
+	<widget class="table" id="cttb" layout="-1, 120, 120, 130, 16, 16, 4" row_height="40" drop_disabled="true" fixed_size_rows="true">
+		<container row="0" col="0">
+			<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="left, extend" horizontal_gap="6" horizontal_offset="8" vertical_offset="0" vertical_inset="0"/>
+
+			<!-- drag icon -->
+			<widget class="picture" id="drgi" file="icons/16px/draggable" scale_picture="false" keep_aspect_ratio="true" image_alignment="centre" auto_size="horizontal" height="16" red_replacement="fg"/>
+
+			<!-- objective icon / linked object -->
+			<container width="20" height="20">
+				<attachment_group class="vertical_arrange" vertical_offset="0" vertical_inset="0" vertical_gap="0" horizontal_offset="0" horizontal_inset="0"/>
+
+				<widget class="picture" id="obji" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="20" height="20" hidden="true"/>
+				<widget class="object_portrait_picture" id="objp" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="20" height="20" hidden="true"/>
+			</container>
+
+			<!-- objective name -->
+			<widget class="club_vision_objective_name_widget" id="desc" file="club/club vision maintain objective name widget"/>
+		</container>
+	</widget>
+</panel>

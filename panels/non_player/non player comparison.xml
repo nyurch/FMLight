@@ -1,0 +1,272 @@
+<panel>
+
+	<translation id="title" type="new" value="Player Profile Panel" />
+	<!-- PANEL PROPERTIES -->
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<boolean id="save_session_state" value="true" />
+
+	<container class="inner_box_no_margin" force_title_borders="true" id="root">
+
+		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0"  />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+		<!-- Top section displaying personal details side-by side -->
+		<!-- The fixed height is a bug-fix to avoid using fit_children (too slow) -->
+		<container id="namh" height="132">
+			<!-- Vertical stack, both names then combined portrait & details table below -->
+			<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="2" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+			<container id="nspl">
+				<!-- Horizontal split, player details on either side -->
+				<layout class="arrange_horizontal_attachment" layout="-1, -1" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<!-- Person 1 -->
+				<container id="p1tp" class="main_box" red_replacement="comp person 1">
+					<!--Horizontal stack, table expanded to fill space-->
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+					<layout class="arrange_horizontal_attachment" layout="105, -4, -3" gap="0" offset="0" />
+
+					<!--Person 1 portrait-->
+					<widget class="object_portrait_picture" id="pic1" width="105" scale_picture="true" keep_aspect_ratio="true" />
+
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+						<!-- Person 1 details -->
+						<widget class="label" id="nam1" alignment="left" auto_size="vertical" font="title" colour="black" size="11" />
+
+						<widget class="table" id="dts1"  layout="-1" auto_size="vertical" row_height="22" row_spacing="0">
+							<list id="column_table_properties">
+								<record indx="0" colour="fg" sort_disabled="true" alignment="left,centre_y" />
+							</list>
+							<list id="column_widget_properties">
+								<record indx="0" colour="fg" alignment="left,centre_y" />
+							</list>
+						</widget>
+					</container>
+
+					<!--Person 1 additional info box-->
+					<container>
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+						<container class="main_box" appearance="boxes/custom/pitch selection/paper" red_replacement="black" height="100">
+							<layout class="arrange_vertical_attachment" alignment="middle" />
+							<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
+
+							<!--Job-->
+							<widget class="text" id="job1" auto_size="vertical" alignment="centre_x" size="large" multiline="true" colour="white"/>
+
+							<!--Wage / Expiry date-->
+							<widget class="link_text" id="wgex" section="Pcnr" auto_size="vertical" alignment="centre_x" colour="white"/>
+						</container>
+					</container>
+				</container>
+
+				<!-- Person 2 -->
+				<container id="p2dt" class="main_box" red_replacement="comp person 2">
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+					<container id="p2tp">
+						<!-- Horizontal stack, table expanded to fill space -->
+						<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+						<layout class="arrange_horizontal_attachment" layout="-3, -4, 105" gap="0" offset="0" />
+
+						<!--Person 2 additional info box-->
+						<container id="p2id">
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+							<container class="main_box" appearance="boxes/custom/pitch selection/paper" red_replacement="black" height="100">
+								<layout class="arrange_vertical_attachment" alignment="middle"  />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
+
+								<!--Job-->
+								<widget class="text" id="job2" auto_size="vertical" alignment="centre_x" size="large" multiline="true" colour="white"/>
+
+								<!--Wage / Expiry date-->
+								<widget class="link_text" id="wgx2" section="Pcnr" auto_size="vertical" alignment="centre_x" colour="white"/>
+							</container>
+						</container>
+
+						<container>
+							<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+
+							<widget class="popup_button" id="pccw" alignment="right,centre_y" auto_size="vertical" sele="pccw" fixed="true" font="title" colour="black" size="11" appearance="" auto_tick_exclusive="true" save_default_state="true">
+								<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+								<translation id="text" translation_id="329857" type="use" value="Compared With: No Person Selected[COMMENT: Button text on compare person screen]" />
+							</widget>
+
+							<!-- Person 2 details -->
+							<widget class="table" id="dts2" layout="-1" auto_size="vertical" row_height="22" row_spacing="0" hidden="true">
+								<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+								<list id="column_table_properties">
+									<record indx="0" colour="fg" sort_disabled="true" alignment="right,centre_y" />
+								</list>
+								<list id="column_widget_properties">
+									<record indx="0" colour="fg" alignment="right,centre_y" />
+								</list>
+							</widget>
+						</container>
+						<!-- Person 2 portrait -->
+						<widget class="object_portrait_picture" id="pic2" hidden="true" width="105" scale_picture="true" keep_aspect_ratio="true" />
+					</container>
+				</container>
+			</container>
+		</container>
+		<!-- End of personal details -->
+
+		<!-- In-depth comparison panels -->
+		<container class="bordered_box_no_margin">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container class="tabbed_container" id="mcbc" default_item="attR" changed_event="dese" save_session_state="true">
+				<!--Attributes and Roles"-->
+				<container id="attR">
+					<translation id="title" translation_id="420711" type="use" value="Attributes &amp; Roles[COMMENT: Non-Player comparison type header, feel free to use an alternative to an ampersand if it's not your convention but please use appropriate character references as done here]" />
+					<layout class="arrange_vertical_attachment" layout="30,320,30,-1" offset="0" gap="2" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="8" apply_to_children="true" />
+
+					<!-- "highlight role" dropdown -->
+					<container>
+						<layout class="arrange_horizontal_attachment" alignment="right" offset="0" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+						<widget class="non_player_roles_popup_button" id="skfd" show_clear_item="true" fixed="true" alignment="right,centre_y" spec="text" size="small" height="30" show_selected_role="true" auto_size="horizontal">
+							<translation id="text" translation_id="330016" type="use" value="Highlight key attributes for role[COMMENT: option allowing for viewing the key attributes needed to play in a certain role]" />
+						</widget>
+					</container>
+
+					<!-- Staff Attributes-->
+					<container>
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<widget class="non_player_attributes_comparison_panel" id="satr" layout="-1, -1, -1, -1" />
+					</container>
+
+
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0"  />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+						<widget class="horizontal_divider" />
+
+						<container>
+							<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="6" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+							<!--Personality comparison-->
+							<container>
+								<layout class="arrange_horizontal_attachment" layout="-1, -1" offset="10" gap="2" />
+								<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+								<!--Personality-->
+								<widget class="label" id="pper" alignment="left, centre_y" auto_size="horizontal">
+									<translation id="text" translation_id="247713" type="use" value="Personality" />
+								</widget>
+
+								<!--Personality comparison-->
+								<container>
+									<layout class="arrange_horizontal_attachment" layout="-1, 8, -1, 15" offset="0" gap="2" />
+									<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+									<widget class="personality_label" id="PPr1" colour="comp person bar 1" spec="text" alignment="right, centre_y" multiline="false">
+										<record id="object_property" get_property="PPst" />
+									</widget>
+									<widget class="label" alignment="centre">
+										<translation id="text" translation_id="233089" type="use" value="-" />
+									</widget>
+
+									<widget class="personality_label" id="PPr2" colour="comp person bar 2" spec="text" alignment="left, centre_y" multiline="false"/>
+									<widget class="spacer" />
+								</container>
+							</container>
+
+							<!--Specialist Training area comparison-->
+							<container>
+								<layout class="arrange_horizontal_attachment" layout="-1, -1" offset="10" gap="2" />
+								<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+								<!--Specialist Training area-->
+								<widget class="label" id="PscT" alignment="left, centre_y">
+									<translation id="text" translation_id="344876" type="use" value="Specialist Training Area[COMMENT: backroom advice; training feedback, headline]" />
+								</widget>
+
+
+
+								<!--Specialist Training area comparison-->
+								<container>
+									<layout class="arrange_horizontal_attachment" layout="-1, 8, -1, 15" offset="0" gap="2" />
+									<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+									<widget class="label" id="cBTC" colour="comp person bar 1" alignment="right, centre_y"/>
+									<widget class="label" alignment="centre" >
+										<translation id="text" translation_id="233089" type="use" value="-" />
+									</widget>
+									<widget class="label" id="cTC2" colour="comp person bar 2" alignment="left, centre_y"/>
+									<widget class="spacer" />
+								</container>
+
+							</container>
+						</container>
+
+					</container>
+
+					<!-- Roles comparison table -->
+					<widget class="table" id="rtab" mode="fill_rows, stripe_rows" layout="-1, 300, 10, 200, 10, 300, -1" row_spacing="0" row_height="22" hidden="true">
+						<list id="headings">
+							<record alignment="left,centre_y" column_span="6">
+								<translation id="text" translation_id="251862" type="use" value="Staff Roles[COMMENT: non player profile panel; title of panel showing job roles]" />
+							</record>
+						</list>
+
+						<list id="column_table_properties">
+							<record indx="0" sort_disabled="true" alignment="right,centre_y" />
+							<record indx="1" top="3" bottom="3" sort_disabled="true" alignment="right,centre_y" />
+							<record indx="2" sort_disabled="true" alignment="centre" />
+							<record indx="3" sort_disabled="true" alignment="centre" />
+							<record indx="4" sort_disabled="true" alignment="centre" />
+							<record indx="5" top="3" bottom="3" sort_disabled="true" alignment="left,centre_y" />
+							<record indx="6" sort_disabled="true" alignment="left,centre_y" />
+						</list>
+						<!-- Comparison items will be created dynamically and added here -->
+					</widget>
+				</container>
+
+				<!-- Tactics comparison table -->
+				<container id="tctC">
+					<translation id="title" translation_id="230056" type="use" value="Tactics" />
+					<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+					<widget class="non_player_tactics_comparison_panel" id="stac" layout="-1, -1, -1, -1" />
+				</container>
+
+				<!-- Scouting knowledge comparison table -->
+				<container id="sctC">
+					<translation id="title" translation_id="298746" type="use" value="Scouting Knowledge" />
+					<layout class="arrange_vertical_attachment" layout="-2,-2" offset="6" gap="20" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+					<!--Scouting knowledge maps-->
+					<container>
+						<layout class="arrange_horizontal_attachment" layout="-1, 100, -1" offset="0" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+						<!--left hand map-->
+						<container class="team_scouting_knowledge_map" id="regP">
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+						</container>
+						<widget class="spacer" />
+						<!--right hand map-->
+						<container class="team_scouting_knowledge_map" id="rgP2">
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+						</container>
+
+					</container>
+					<widget class="table" id="scta" mode="fill_rows, stripe_rows" layout="-1, 300, 18, 100, 12, 300, -1" row_spacing="2" row_height="22" hidden="true" />
+				</container>
+			</container>
+			<!-- No second player label -->
+			<widget class="text" id="nopt" hidden="true" auto_size="none" alignment="centre"/>
+		</container>
+	</container>
+</panel>

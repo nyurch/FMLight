@@ -1,0 +1,127 @@
+<panel height="50">
+
+  <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+  <container class="inner_box" appearance="tables/custom/inbox/normal/row">
+    <layout class="arrange_horizontal_attachment" alignment="left,extend" offset="2" gap="4" />
+    <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+    
+    <widget class="object_portrait_picture" id="pict" width="30" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true">
+      <layout class="centre_in_parent_attachment" alignment="vertical"  offset="0"/>
+      <record id="object_property">
+        <list id="get_properties">
+          <record>
+            <integer id="get_property" value="Cclu" />
+            <integer id="set_property" value="objt" />
+          </record>
+        </list>
+      </record>
+    </widget>
+
+    <container>
+      
+      <layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="0" />
+      <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="4"/>
+
+      <container>
+        <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+        <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+
+        <widget class="person_button" id="plyw" colour="black" style="bold" auto_size="vertical" info_popup_enabled="true" Pipl="true">
+          <record id="object_property">
+            <list id="get_properties">
+              <record>
+                <integer id="get_property" value="Pers" />
+                <integer id="set_property" value="valu" />
+              </record>
+              <record>
+                <integer id="get_property" value="hidP" />
+                <integer id="set_property" value="hidn" />
+              </record>
+            </list>
+          </record>
+        </widget>
+
+        <widget class="label" id="claw" size="small" alignment="left,bottom" colour="faded text">
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="10"/>
+          <record id="object_property">
+            <list id="get_properties">
+              <record>
+                <integer id="get_property" value="text" />
+                <integer id="set_property" value="text" />
+              </record>
+              <record>
+                <integer id="get_property" value="hidP" />
+                <integer id="set_property" value="hidn" />
+              </record>
+            </list>
+          </record>
+        </widget>
+
+        <widget class="label" id="sclw" style="bold" size="large">
+          <record id="object_property">
+            <list id="get_properties">
+              <record>
+                <integer id="get_property" value="text" />
+                <integer id="set_property" value="text" />
+              </record>
+              <record>
+                <integer id="get_property" value="hidS" />
+                <integer id="set_property" value="hidn" />
+              </record>
+            </list>
+          </record>
+        </widget>
+
+      </container>
+
+
+      <container width="60">
+        <layout class="arrange_horizontal_attachment" alignment="right" offset="0" gap="0" />
+        <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+
+        <widget class="picture" width="30">
+          <flags id="image_alignment" value="centre" />
+          <boolean id="keep_aspect_ratio" value="true" />
+          <record id="object_property">
+            <list id="get_properties">
+              <record>
+                <integer id="get_property" value="icon" />
+                <integer id="set_property" value="file" />
+              </record>
+            </list>
+          </record>
+        </widget>
+
+        <container width="30">
+          <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+          
+          <widget class="text" id="cbos" style="bold" size="large" height="15" alignment="centre" colour="attention">
+            <record id="object_property">
+              <list id="get_properties">
+                <record>
+                  <integer id="get_property" value="curr" />
+                  <integer id="set_property" value="text" />
+                </record>
+              </list>
+            </record>
+          </widget>
+        </container>
+
+      
+       
+       
+
+      </container>
+      
+    </container>
+
+  
+
+    
+
+  </container>
+
+</panel>

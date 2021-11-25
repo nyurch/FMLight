@@ -1,0 +1,222 @@
+﻿<panel save_session_state="true" save_default_state="true" width="880">
+
+	<layout class="fit_children_attachment" alignment="vertical" offset="6" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="12,0,0,0" />
+
+	<flags id="cham" value="tables/custom/league/champions/row" />
+
+	<container class="standard_popup_box">
+		<layout class="arrange_vertical_attachment" alignment="top" offset="4" gap="2" />
+		<layout class="fit_children_attachment" alignment="vertical,fill" offset="4" gap="2" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="4" apply_to_children="true" />
+
+		<widget class="text" id="popt" font="title"  auto_size="horizontal" height="25" alignment="left,centre_y" />
+
+		<container class="inner_box" id="kbox" height="50">
+			<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="2" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<widget class="label" id="ktxt" auto_size="all" colour="faded text" font="title">
+			</widget>
+
+			<container class="main_box" appearance="boxes/custom/scouting knowledge/paper" height="12" width="55" id="hbar">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+				<widget class="horizontal_percentage_bar" id="kbar" height="4" bar_value_colour="knowledge level" show_label_on_bar="false" label_width="0" appearance="charts/bar/custom/knowledge">
+				</widget>
+			</container>
+
+
+
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,-1" horizontal_offset="0" vertical_offset="0" />
+
+			<container class="inner_subtle_box">
+				<attachment_group class="vertical_arrange_autosize"/>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="8" />
+
+					<widget class="text" font="title" height="25" colour="text">
+						<translation id="text" translation_id="420686" type="use" value="Squad Comparison[COMMENT: Squad Comparison tab on team report title]" />
+					</widget>
+					<!-- Ability list table -->
+					<widget class="table" id="calL" mode="fill_rows,stripe_rows,no_scrolling" auto_size="vertical" layout="26,-5,-3,-3">
+
+
+						<list id="column_widget_properties">
+							<record indx="0" alignment="left,centre_y" colour="faded text" />
+							<record indx="1" alignment="left,centre_y" colour="text" />
+							<record indx="2" alignment="left,centre_y" />
+							<record indx="3" alignment="left,centre_y" />
+						</list>
+
+						<list id="column_table_properties">
+							<record indx="0" sort_disabled="true" left="5" />
+							<record indx="1" sort_disabled="true" />
+							<record indx="2" sort_disabled="true" />
+							<record indx="3" sort_disabled="true" />
+						</list>
+					</widget>
+
+				</container>
+
+			</container>
+
+
+
+			<container class="inner_subtle_box">
+				<attachment_group class="vertical_arrange_autosize"/>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" />
+
+					<widget class="text" id="rsTL" font="title" auto_size="vertical" colour="text">
+						<translation id="text" translation_id="396452" type="use" value="Role Suitability[COMMENT: scout report panel label for showing how good a player in a given role, quite similar to string ID 394571 but shorter so refer to that string for translation context]" />
+					</widget>
+
+					<widget class="player_positions_indicator_panel" id="ppos" height="250"  file="player/player positions indicator report overview">
+						<record id="object_property" get_property="objt" set_property="objt" />
+					</widget>
+
+				</container>
+			</container>
+
+
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,-1" horizontal_offset="8" horizontal_gap="12"/>
+
+
+			<container >
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1,-1" horizontal_gap="2"/>
+
+
+				<widget class="label" alignment="left" spec="text" size="10" auto_size="vertical"  multiline="true">
+                    <translation id="text" translation_id="538841" type="use" value="Transfer Value[COMMENT: AREA: Transfers; SUB-AREA: Transfer Value; FR-BN: 34410; TONE: Formal; CHARLIMIT: Shortish, column header; REF-ID: 227806; NOTE: displays the player's estimated transfer value in a range]"/>
+				</widget>
+
+				<widget class="label" id="esco" style="semi_bold" alignment="left,centre_y" auto_size="vertical" auto_size_minimum_height="35" multiline="true">
+
+				</widget>
+
+			</container>
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1,-1" horizontal_gap="2"/>
+
+				<widget class="label" alignment="left,centre_y" spec="text" size="10" auto_size="vertical" multiline="true">
+					<translation id="text" translation_id="335516" type="use" value="Wage Demands[COMMENT: scout report panel label]" />
+				</widget>
+
+				<widget class="label" id="wade" size="10" style="semi_bold" alignment="left, centre_y" auto_size="vertical" auto_size_minimum_height="35" multiline="true">
+				</widget>
+			</container>
+		</container>
+
+		<container height="35">
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" gap="12" offset="8" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-1,-1" gap="2" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<widget class="label" alignment="left,centre_y" spec="text" auto_size="horizontal" >
+					<translation id="text" translation_id="293291" type="use" value="Current Ability" />
+
+				</widget>
+
+				<widget class="scout_stars_label" id="CAIC" alignment="left, centre_y" auto_size="horizontal" mode="1">
+
+				</widget>
+			</container>
+
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-1,-1" gap="2" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<widget class="label" alignment="left,centre_y" spec="text" >
+					<translation id="text" translation_id="293292" type="use" value="Potential Ability" />
+
+				</widget>
+
+				<widget class="scout_stars_label" id="PAic" alignment="left, centre_y" mode="2">
+
+				</widget>
+			</container>
+		</container>
+
+		<container height="35">
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" gap="12" offset="8" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-1,-1" gap="0" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<widget class="text" alignment="left, centre_y">
+					<translation id="text" translation_id="515104" type="use" value="Scout Rating[COMMENT: AREA: Player report panel; SUB-AREA: a tooltip for player report showing scout's rating for that player; FR: 22984; TONE: Formal; CHARLIMIT: None;]" />
+				</widget>
+
+				<container>
+					<attachment_group class="horizontal_arrange" />
+
+					<widget class="player_scout_recommendation_widget" recommendation_mode="0" show_knowledge_bar="false" show_hover_popup="false" alignment="left, centre_y"  width="40">
+						<record id="object_property" get_property="Psrk" set_property="objt" />
+					</widget>
+
+				</container>
+
+
+			</container>
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-1,-1" gap="0" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<widget class="text" alignment="left, centre_y">
+					<translation id="text" translation_id="515105" type="use" value="Analyst Rating[COMMENT: AREA: Player report panel; SUB-AREA: a tooltip for player report showing analyst's rating for that player; FR: 22984; TONE: Formal; CHARLIMIT: None;]" />
+				</widget>
+
+				
+				<container>
+					<attachment_group class="horizontal_arrange" />
+
+					<widget class="player_scout_recommendation_widget" recommendation_mode="1" show_knowledge_bar="false" show_hover_popup="false" width="40">
+						<record id="object_property" get_property="Psrk" set_property="objt" />
+					</widget>
+
+				</container>
+
+			</container>
+		</container>
+
+
+		<container height="60">
+			<layout class="arrange_horizontal_attachment" layout="-1" gap="2" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="4" apply_to_children="true" />
+
+			<container class="main_contrast_box" id="SMbx">
+				<layout class="arrange_horizontal_attachment" layout="50,-1" gap="2" offset="4" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<widget class="player_scout_recommendation_widget" id="srec" show_knowledge_bar="false" show_hover_popup="false">
+
+				</widget>
+
+				<widget class="text" id="SMtx" multiline="true" style="bold" alignment="left,centre_y" colour="background">
+
+				</widget>
+
+			</container>
+
+		</container>
+
+	</container>
+
+
+
+</panel>

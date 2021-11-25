@@ -1,0 +1,33 @@
+﻿<panel height="35">
+    <attachment_group class="horizontal_arrange_autosize_vertical_centre" horizontal_layout="-1, 30" horizontal_gap="10" vertical_offset="0"/>
+    <layout class="stick_to_sides_attachment" alignment="right"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+    <boolean id="disable_link" value="true"/>
+
+    
+    <widget class="person_button" colour="black" id="perb" size="xsmall" style="bold" alignment="left, centre_y" auto_size="horizontal" height="20" info_popup_enabled="true" links_enabled_in_popup="false" person_is_human="true" person_is_player="false"/>
+
+    <!-- portrait -->
+    <container width="30" height="30">
+        <attachment_group class="horizontal_arrange" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
+        
+        <widget class="picture" id="PoBk" file="icons/custom/quick chat/pitch" scale_picture="true" keep_aspect_ratio="true" width="30" height="30" image_alignment="centre">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+        </widget>
+        
+        <widget class="object_portrait_picture" id="PPor" width="30" height="30" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+            <record id="object_property">
+                <integer id="get_property" value="Pers"/>
+                <boolean id="dont_set_object" value="true"/>
+                <boolean id="dont_set_hint" value="true"/>
+            </record>
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+        </widget>
+
+        <widget class="picture" id="talk" file="icons/custom/quick chat/quick_chat_speaking_mask_square_small" scale_picture="true" keep_aspect_ratio="true" width="30" height="30" image_alignment="centre">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+        </widget>
+    </container>
+
+</panel>

@@ -1,0 +1,123 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+	<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0" />
+
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+		<record id="default_properties" scale_picture="true" keep_aspect_ratio="false" hidden="true" />
+
+		<widget class="value_based_picture" id="preP" click_event="sel+">
+			<list id="value_list">
+				<record value="0" file="svg/match flow pre-match" default_value="true" />
+				<record value="1" file="svg/match flow pre-match hotseat" />
+			</list>
+		</widget>
+		<widget class="value_based_picture" id="notP" click_event="sel+">
+			<list id="value_list">
+				<record value="0" file="svg/match flow pre-match no tunnel" default_value="true" />
+				<record value="1" file="svg/match flow pre-match no tunnel hotseat" />
+			</list>
+		</widget>
+		<widget class="value_based_picture" id="halP" click_event="sel+">
+			<list id="value_list">
+				<record value="0" file="svg/match flow half-time" default_value="true" />
+				<record value="1" file="svg/match flow half-time hotseat" />
+			</list>
+		</widget>
+		<widget class="value_based_picture" id="posP" click_event="sel+">
+			<list id="value_list">
+				<record value="0" file="svg/match flow full-time" default_value="true" />
+				<record value="1" file="svg/match flow full-time hotseat" />
+			</list>
+		</widget>
+	</container>
+
+	<container height="26">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+		<record id="default_properties" hidden="true">
+			<record id="default_properties" auto_size="vertical" alignment="centre_x,top" size="8.5" />
+		</record>
+
+
+		<container id="preL">
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="arrange_horizontal_attachment" layout="-34,-16,-46,-10,-41,-19,-32" offset="0" gap="0" />
+
+
+
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="258582" type="use" value="Match Preview[COMMENT - continue button text when match preview is next screen to appear]" />
+			</widget>
+			<widget class="spacer" />
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447549" type="use" value="Dressing Room[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+			<widget class="spacer" />
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447550" type="use" value="Tunnel[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+			<widget class="spacer" />
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447551" type="use" value="Kick Off[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+		</container>
+		<container id="notL">
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="arrange_horizontal_attachment" layout="-1,-4,-1" offset="0" gap="0" />
+			
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="258582" type="use" value="Match Preview[COMMENT - continue button text when match preview is next screen to appear]" />
+			</widget>
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447549" type="use" value="Dressing Room[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447551" type="use" value="Kick Off[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+		</container>
+		<container id="halL">
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="arrange_horizontal_attachment" layout="-2,-6,-2" offset="0" gap="0" />
+
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447552" type="use" value="First Half Review[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447549" type="use" value="Dressing Room[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447551" type="use" value="Kick Off[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+		</container>
+		<container id="extL">
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="arrange_horizontal_attachment" layout="-2,-6,-2" offset="0" gap="0" />
+
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447553" type="use" value="Full Time Review[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447549" type="use" value="Dressing Room[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447551" type="use" value="Kick Off[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+		</container>
+		<container id="posL">
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="arrange_horizontal_attachment" layout="-2,-6,-2" offset="0" gap="0" />
+
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447553" type="use" value="Full Time Review[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="447549" type="use" value="Dressing Room[COMMENT: FR 21304 - match flow section]" />
+			</widget>
+			<widget class="label" colour="white">
+				<translation id="text" translation_id="281358" type="use" value="Leave Match[COMMENT: match screen; when user is viewing a match; button to leave the match]" />
+			</widget>
+		</container>
+	</container>
+</panel>

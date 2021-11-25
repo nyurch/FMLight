@@ -1,0 +1,198 @@
+﻿<panel height="100" width="500">
+	<list id="draw_order">
+		<record entity_layout_id="at0^"/>
+		<record entity_layout_id="at0a"/>
+		<record entity_layout_id="at0b"/>
+		<record entity_layout_id="at0i"/>
+		<record entity_layout_id="at0d"/>
+		<record entity_layout_id="at0j"/>
+		<record entity_layout_id="at0c"/>
+		<record entity_layout_id="at0e"/>
+		<record entity_layout_id="at05"/>
+		<record entity_layout_id="at03"/>
+		<record entity_layout_id="at0h"/>
+		<record entity_layout_id="at01"/>
+		<record entity_layout_id="at04"/>
+		<record entity_layout_id="at06"/>
+		<record entity_layout_id="at0`"/>
+		<record entity_layout_id="at00"/>
+		<record entity_layout_id="at0_"/>
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true"/>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true"/>
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+	</widget>
+	<container entity_layout_id="at0^" id="at0^" width="470" height="93">
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true"/>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true"/>
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+		</widget>
+		<container entity_layout_id="at0a" id="at0a" width="50" height="55">
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" move_side="true" target="main"/>
+		</container>
+		<container class="plain_box" entity_layout_id="at0b" id="TeaC" appearance="boxes/custom/match/tv captions/si tv/caption/header/paper" width="75" height="55">
+			<animation class="translate_animation" start_value="0.2, -1" end_value="0, 0" duration="0.2" delay="0.8" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" no_clipping="true"/>
+			<animation class="fade_animation" start_value="0" end_value="1" duration="0.2" delay="0.8" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true"/>
+			<string id="red_replacement" value="background"/>
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+			</widget>
+			<container class="object_portrait_picture" entity_layout_id="at0_" id="TeaB">
+				<animation class="fade_animation" start_value="0" end_value="1" duration="0.2" delay="0.6" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_value="false"/>
+				<string id="scale_picture" value="true"/>
+				<string id="image_alignment" value="centre"/>
+				<boolean id="keep_aspect_ratio" value="true"/>
+				<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="top" set_side="top" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" offset="-5" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+			</container>
+		</container>
+		<container class="plain_box" entity_layout_id="at0i" id="at0i" appearance="boxes/custom/match/tv captions/si tv/caption/header/paper" height="55">
+			<animation class="translate_animation" start_value="-1, 0" end_value="0, 0" duration="0.6" delay="0" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" no_clipping="true"/>
+			<animation class="fade_animation" start_value="0" end_value="1" duration="0.5" delay="0.1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true"/>
+			<string id="red_replacement" value="white"/>
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="-17" get_side="right" set_side="left" target="at0b"/>
+			<layout class="stick_to_object_attachment" id="align_right" offset="17" get_side="left" set_side="right" target="at0a"/>
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+			</widget>
+			<widget class="picture" entity_layout_id="at06" file="icons/26px/sub on" id="sbON" scale_picture="true" width="26">
+				<animation class="fade_animation" start_value="0" end_value="1" duration="0.1" delay="0.5" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_value="false"/>
+				<string id="image_alignment" value="centre"/>
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+			</widget>
+			<widget class="text" entity_layout_id="at0`" id="PlTn" alignment="centre_y,left" auto_size="horizontal" needs_width="true">
+				<animation class="fade_animation" start_value="0" end_value="1" duration="0.2" delay="0.5" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_value="false"/>
+				<string id="value" value="99 - "/>
+				<string id="size" value="xlarge"/>
+				<string id="font" value="title"/>
+				<string id="colour" value="black"/>
+				<string id="multiline" value="true"/>
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" offset="6" get_side="right" set_side="left" move_side="true" target="at06"/>
+			</widget>
+			<widget class="text" entity_layout_id="at00" alignment="centre_y,left" id="PlTx">
+				<animation class="fade_animation" start_value="0" end_value="1" duration="0.2" delay="0.5" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_value="false"/>
+				<string id="value" value="|b|TROY DEENEY|/b|"/>
+				<string id="size" value="xlarge"/>
+				<string id="colour" value="black"/>
+				<string id="font" value="title"/>
+				<string id="multiline" value="true"/>
+				<string id="maximum_width" value="260"/>
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="right" set_side="left" target="at0`"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+			</widget>
+		</container>
+		<container entity_layout_id="at0d" id="at0d" width="46" height="0">
+			<layout class="stick_to_object_attachment" id="align_top" offset="55" get_side="top" set_side="top" move_side="true" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+		</container>
+		<container class="plain_box" entity_layout_id="at0j" id="AcCo" background_colour="red 900" height="38">
+			<animation class="translate_animation" start_value="2, 0" end_value="0, 0" duration="0.6" delay="0" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" no_clipping="true"/>
+			<animation class="fade_animation" start_value="0" end_value="1" duration="1.5" delay="0.1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true"/>
+			<string id="red_replacement" value="background"/>
+			<layout class="stick_to_object_attachment" id="align_top" get_side="bottom" set_side="top" move_side="true" target="at0i"/>
+			<layout class="stick_to_object_attachment" id="align_left" get_side="right" set_side="left" target="at0d"/>
+			<layout class="stick_to_object_attachment" id="align_right" get_side="left" set_side="right" target="at0a"/>
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+			</widget>
+			<container entity_layout_id="at05" id="at05" width="2">
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+			</container>
+			<widget class="picture" entity_layout_id="at03" file="icons/26px/sub off" id="sbOF" scale_picture="true" width="26">
+				<animation class="fade_animation" start_value="0" end_value="1" duration="0.2" delay="0.5" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_value="false"/>
+				<string id="image_alignment" value="centre"/>
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="right" set_side="left" move_side="true" target="at05"/>
+			</widget>
+			<widget class="text" entity_layout_id="at0h" alignment="centre_y,left" id="AcTx" auto_size="horizontal" needs_width="true">
+				<animation class="fade_animation" start_value="0" end_value="1" duration="0.2" delay="0.5" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_value="false"/>
+				<string id="value" value="|b|Yellow Card|/b| - "/>
+				<string id="size" value="9"/>
+				<string id="font" value="title"/>
+				<string id="multiline" value="false"/>
+				<string id="colour" value="white"/>
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" offset="-2" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" offset="6" get_side="right" set_side="left" move_side="true" target="at03"/>
+			</widget>
+			<widget class="text" entity_layout_id="at01" alignment="centre_y,left" id="AcTs">
+				<animation class="fade_animation" start_value="0" end_value="1" duration="0.2" delay="0.5" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_value="false"/>
+				<string id="value" value="4th goal of the season"/>
+				<string id="size" value="8"/>
+				<string id="colour" value="white"/>
+				<string id="multiline" value="true"/>
+				<string id="maximum_width" value="250"/>
+				<layout class="stick_to_object_attachment" id="align_top" offset="0" get_side="top" set_side="top" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" offset="4" get_side="right" set_side="left" target="at0h"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+			</widget>
+		</container>
+		<!--competition logo-->
+		<container class="plain_box" entity_layout_id="at0c" id="comC" appearance="boxes/custom/match/tv captions/si tv/caption/footer/paper" width="50" height="38">
+			<animation class="translate_animation" start_value="-0.2, 1" end_value="0, 0" duration="0.2" delay="0.8" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" no_clipping="true"/>
+			<animation class="fade_animation" start_value="0" end_value="1" duration="0.2" delay="0.8" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true"/>
+			<string id="red_replacement" value="primary"/>
+			<layout class="stick_to_object_attachment" id="align_top" get_side="bottom" set_side="top" move_side="true" target="at0a"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="-12" get_side="right" set_side="left" move_side="true" target="at0j"/>
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+			</widget>
+			<container class="object_portrait_picture" entity_layout_id="at0e" id="comP">
+				<animation class="fade_animation" start_value="0" end_value="1" duration="0.2" delay="0.6" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_value="false"/>
+				<string id="scale_picture" value="true"/>
+				<string id="image_alignment" value="centre"/>
+				<string id="keep_aspect_ratio" value="true"/>
+				<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="top" set_side="top" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" offset="-5" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+			</container>
+		</container>
+	</container>
+</panel>

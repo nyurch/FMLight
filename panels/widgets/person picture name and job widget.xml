@@ -1,0 +1,73 @@
+﻿<panel height="50" width="300">
+	<list id="draw_order">
+		<record entity_layout_id="at00"/>
+		<record entity_layout_id="at01"/>
+		<record entity_layout_id="at03"/>
+		<record entity_layout_id="at02"/>
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true"/>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true"/>
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+	</widget>
+	<widget class="picture" entity_layout_id="at00" id="at00" scale_picture="true" width="50">
+		<string id="image_alignment" value="centre_x"/>
+		<record id="dbrp">
+			<list id="get_properties">
+				<record>
+					<string id="get_property" value="fcgn"/>
+				</record>
+				<record>
+					<string id="get_property" value="Pfke"/>
+				</record>
+				<record>
+					<string id="get_property" value="prpc"/>
+					<string id="set_property" value="valu"/>
+				</record>
+			</list>
+		</record>
+		<layout class="stick_to_object_attachment" id="alPt" get_side="top" set_side="top" target="main"/>
+		<layout class="stick_to_object_attachment" id="alPb" get_side="bottom" set_side="bottom" target="main"/>
+		<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" move_side="true" target="main"/>
+	</widget>
+	<container entity_layout_id="at01" id="at01" height="48">
+		<layout class="stick_to_object_attachment" id="alPl" offset="4" get_side="right" set_side="left" target="at00"/>
+		<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main"/>
+		<layout class="centre_in_parent_attachment" id="alCv" alignment="vertical" offset="0"/>
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true"/>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true"/>
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+		</widget>
+		<widget class="job_label" entity_layout_id="at03" id="at03" auto_size="vertical" height="20" >
+			<string id="size" value="small"/>
+			<string id="font" value="title"/>
+			<string id="colour" value="faded text"/>
+			<record id="dbrp">
+				<string id="get_property" value="PcJj"/>
+				<string id="set_property" value="valu"/>
+			</record>
+			<layout class="stick_to_object_attachment" id="alPt" offset="4" get_side="top" set_side="top" move_side="true" target="main"/>
+			<layout class="stick_to_object_attachment" id="alPl" offset="4" get_side="left" set_side="left" target="main"/>
+			<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main"/>
+		</widget>
+		<widget class="person_button" colour="black" entity_layout_id="at02" id="pnmp" auto_size="vertical" needs_height="true">
+			<string id="size" value="large"/>
+			<string id="font" value="bold"/>
+			<record id="dbrp">
+				<string id="get_property" value="PnmP"/>
+				<string id="set_property" value="valu"/>
+			</record>
+			<string id="colour" value="faded text"/>
+			<layout class="stick_to_object_attachment" id="alPt" offset="4" get_side="bottom" set_side="top" move_side="true" target="at03"/>
+			<layout class="stick_to_object_attachment" id="alPl" offset="4" get_side="left" set_side="left" target="main"/>
+			<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main"/>
+		</widget>
+	</container>
+</panel>

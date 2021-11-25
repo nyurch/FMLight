@@ -1,0 +1,19 @@
+﻿<panel>
+
+    <attachment_group class="vertical_arrange_autosize" vertical_gap="0"/>
+
+    <string id="gesture_button_appearance" value="switches/toggle/normal/button"/>
+
+    <container id="Gest">
+        <!-- attachment_group doesn't support wrap -->
+        <layout class="fit_children_attachment" alignment="vertical, extend" gap="0" offset="0"/>
+        <layout class="arrange_horizontal_attachment" alignment="middle" offset="0" gap="4" wrap="true"/>
+
+        <record id="default_properties" auto_size="horizontal" height="35" green_replacement="bg tertiary">
+		
+		</record>
+		
+		
+        <!-- gesture widgets added here -->
+    </container>
+</panel>

@@ -1,0 +1,10 @@
+<panel>
+  <layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true" offset="0"/>
+  <layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+  <layout class="arrange_horizontal_attachment" layout="20,-1" offset="0"/>
+
+  <!-- Icon -->
+  <widget class="picture" id="rpic" file="icons/16px/unread" scale_picture="false" image_alignment="centre" auto_size="vertical" navigation_focus_target="false"/>
+  <!-- Subject line -->
+  <widget class="text_button" spec="text" size="large" id="nwhd" auto_size="vertical" colour="text" alignment="left,centre_y" navigation_focus_target="false"/>
+</panel>

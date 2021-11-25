@@ -1,0 +1,78 @@
+<panel appearance="">
+
+  <layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+  <layout class="arrange_horizontal_attachment" alignment="left,extend" offset="10" gap="10"/>
+  <layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0"/>
+
+  <!-- profile picture -->
+  <widget class="picture" id="prop" width="80" height="65">
+    <boolean id="scale_picture" value="true"/>
+    <boolean id="keep_aspect_ratio" value="true"/>
+    <flags id="image_alignment" value="centre"/>
+
+    <attachment class="test_setting_attachment" get_setting="show_portraits" default_value="true" set_property="hidn">
+      <list id="value">
+        <boolean value="false"/>
+      </list>
+    </attachment>
+
+    <record id="object_property">
+      <list id="get_properties">
+        <record>
+          <integer id="get_property" value="fcgn"/>
+          <!--Facegen data request-->
+        </record>
+        <record>
+          <integer id="get_property" value="Pfke"/>
+          <!--Fake name request-->
+        </record>
+        <record>
+          <integer id="get_property" value="prpc"/>
+          <integer id="set_property" value="valu"/>
+        </record>
+      </list>
+    </record>
+  </widget>
+
+  <widget class="table" layout="-1" fixed_size_rows="true" row_spacing="0" row_height="18" mode="fill_rows" id="layt" auto_size="vertical">
+
+    <!--name-->
+    <widget class="person_button" id="name" auto_size="vertical" row="0" col="0" style="semi_bold" size="large" colour="black">
+      <record id="object_property">
+        <integer id="get_property" value="Pers" />
+        <boolean id="dont_set_object" value="true" />
+      </record>
+    </widget>
+
+    <!-- Nationality -->
+    <widget class="nation_button" id="natp" row="1" col="0" format="[%nation#1-nationality]" colour="faded text">
+      <record id="object_property">
+        <integer id="get_property" value="Pnat"/>
+      </record>
+    </widget>
+
+    <!-- Position label-->
+    <widget class="position_label" id="inst" row="2" col="0" alignment="left,centre_y" colour="faded text">
+      <integer id="display_format" value="1"/>
+      <record id="object_property">
+        <integer id="get_property" value="PpsC"/>
+      </record>
+    </widget>
+
+    <!-- Age in years -->
+    <widget class="dob_label" id="ages" row="3" col="0" display_format="2" colour="faded text">
+      <record id="object_property">
+        <integer id="get_property" value="Pdob"/>
+      </record>
+    </widget>
+
+    <!-- Date of birth -->
+    <widget class="transfer_value_label" id="ageb" row="4" col="0" colour="faded text">
+      <record id="object_property">
+        <integer id="get_property" value="Pdva"/>
+      </record>
+    </widget>
+
+  </widget>
+
+</panel>

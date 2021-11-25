@@ -1,0 +1,120 @@
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="top,extend" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
+
+
+	<!--scenario instructions-->
+	<container class="inner_subtle_box" navigation_container="true">
+		<translation id="title" translation_id="334029" type="use" value="Scenario Instructions[COMMENT: title for scenario instructions in a match plan]" />
+		<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+		<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="2" gap="6" />
+		<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+
+		<!--score-->
+		<widget class="popup_button" id="scor" select_event="scor" auto_size="vertical"/>
+
+		<!--period-->
+		<widget class="popup_button" id="peri" select_event="peri" auto_size="vertical"/>
+
+	</container>
+
+	<container>
+		<layout class="arrange_horizontal_attachment" layout="-1,-1" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" />
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+
+
+			<!--tactics and strategy-->
+			<container class="inner_subtle_box" navigation_container="true">
+				<translation id="title" translation_id="334062" type="use" value="Tactics and Strategy[COMMENT: title for a box containing the basic tactics and strategy attached to a match plan]" />
+				<layout class="arrange_vertical_attachment" layout="150,-1" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
+
+				<widget class="table" layout="-1" mode="fill_rows" row_spacing="2" column_spacing="4" >
+					<boolean id="fixed_size_rows" value="true" />
+					<integer id="row_height" value="30" />
+					<flags id="auto_size_rows" value="true" />
+
+					<record id="default_properties" column="0">
+						<flags id="spec" value="text" />
+						<flags id="colour" value="text" />
+					</record>
+
+					<list id="column_table_properties">
+						<record indx="0" right="2" />
+					</list>
+
+					<!--tactic-->
+					<widget class="label" row="0" alignment="left,centre_y">
+						<translation id="text" translation_id="316746" type="use" value="Tactic[COMMENT:team report, tactic name]" />
+					</widget>
+					<widget class="popup_button" id="tact" select_event="tact" row="1" auto_size="vertical"/>
+
+					<!--strategy-->
+					<widget class="label" row="2" alignment="left,centre_y">
+						<translation id="text" translation_id="348204" type="use" value="Mentality[Comment: prefix used before mentality type text on quick tactical instruction button during match]" />
+					</widget>
+					<widget class="popup_button" id="stra" select_event="stra" row="3" auto_size="vertical" />
+
+				</widget>
+
+				<!--touchline instructions-->
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+
+					<container>
+						<layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true" />
+						<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+						<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="0"/>
+
+						<widget class="label" alignment="left,centre_y" auto_size="all">
+							<translation id="text" translation_id="318296" type="use" value="Touchline Instructions[COMMENT: title for touchline instructions area]" />
+						</widget>
+
+						<!--popup to choose a new instruction to add-->
+						<widget class="popup_button" id="mtti" select_event="isel" fixed="true" auto_size="all" icon="icons/16px/plus">
+							<translation id="text" translation_id="333658" type="use" value="Add Instruction[COMMENT: match plan scenario; text for button used add touch-line instructions to a scenario plan]" />
+						</widget>
+
+					</container>
+
+
+					<!--table of current instructions-->
+					<widget class="table" id="touc" layout="-1,80" mode="fill_rows, stripe_rows" select_event="selt" row_spacing="4" >
+						<flags id="auto_size" value="none" />
+						<boolean id="fixed_size_rows" value="true" />
+						<flags id="auto_size_rows" value="true" />
+
+						<record id="default_properties">
+							<flags id="spec" value="text" />
+						</record>
+
+						<list id="column_table_properties">
+							<record indx="0">
+								<boolean id="sort_disabled" value="true" />
+								<record id="column_widget_properties">
+									<flags id="alignment" value="left,centre_y" />
+								</record>
+							</record>
+							<record indx="1" sort_disabled="true" />
+						</list>
+
+					</widget>
+
+				</container>
+			</container>
+
+
+		</container>
+
+
+	</container>
+
+
+</panel>

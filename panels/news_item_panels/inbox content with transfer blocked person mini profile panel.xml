@@ -1,0 +1,82 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_gap="0"/>
+
+	<flags id="tric" value="icons/26px/transfer"/>
+
+	<widget class="inbox_body_text" id="bdtx"/>
+
+	<!--Details-->
+	<container id="conA">
+		<attachment_group class="vertical_arrange_autosize" vertical_gap="4" horizontal_inset="8"/>
+
+		<!--Name age position-->
+		<container height="100">
+			<attachment_group class="horizontal_arrange" horizontal_layout="112, -1, 200" horizontal_offset="0" vertical_inset="0"/>
+
+			<widget class="object_portrait_picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="10"/>
+				<record id="object_property" get_property="objt"/>
+			</widget>
+
+			<container class="inbox_mini_profile_player_details_panel" id="pdts" file="">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+				<string id="skin_style" value="subtle box"/>
+
+				<container  id="psbt">
+					<layout class="arrange_vertical_attachment" alignment="top" offset="8" gap="2"/>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+					<!-- person name -->
+					<widget class="person_button" id="pnam" info_popup_enabled="true" colour="black" person_is_player="true" auto_size="vertical" spec="text" style="bold" alignment="left, centre_y" size="14">
+						<layout class="centre_in_parent_attachment" alignment="horizontal"/>
+					</widget>
+
+					<!-- person description -->
+					<widget class="text" id="ppos" auto_size="vertical" colour="faded text" alignment="left" size="10" multiline="true">
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+					</widget>
+					
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="4" vertical_gap="4"/>
+
+						<widget class="horizontal_divider"/>
+
+						<container height="25">
+							<attachment_group class="horizontal_arrange"/>
+
+							<widget class="nation_button" auto_size="all" display_format="3">
+								<record id="object_property" get_property="PNat"/>
+							</widget>
+							<widget class="team_button" id="Pcte" auto_size="all">
+								<record id="object_property" get_property="Pcte"/>
+							</widget>
+						</container>
+					</container>
+				</container>
+			</container>
+
+			<string id="skin_style" value="subtle box"/>
+
+			<!--transfer status icon-->
+			<container>
+				<container class="inner_box" id="tsic" appearance="labels/standard/label" red_replacement="red" hidden="true">
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+					<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+					<layout class="arrange_horizontal_attachment" alignment="middle"  offset="0" gap="0"/>
+
+					<layout class="centre_in_parent_attachment" alignment="all"/>
+					<layout class="fit_children_attachment" alignment="horizontal, fill" offset="0" gap="0"/>
+
+					<widget class="picture" id="tsci" file="icons/26px/transfer" height="26" width="26" image_alignment="centre" keep_aspect_ratio="true" scale_picture="false"/>
+					<widget class="label" id="tslb" alignment="left, centre_y" size="large" auto_size="all"/>
+				</container>
+			</container>
+		</container>
+
+		<widget class="horizontal_divider"/>
+
+		<container id="infc">
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="8" vertical_offset="10"/>
+		</container>
+	</container>
+</panel>

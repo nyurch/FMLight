@@ -1,0 +1,82 @@
+<properties version="1.0">
+<!-- Generic styles file contains most styles that need editing, moved text and editable ones to one files as may override settings we don't want changed all the time -->
+
+<!-- list all the widgets to override along with their properties and override values -->        
+<list id="skin_style">
+
+	<!-- use this to recolour the edit box class text from white, just need to set a style for each panel it is needed on but allows to recolor hard coded stuff -->
+    
+	<!-- used where can enter number such as asking price on set transfer status page -->
+		<record>
+		<string id="class_name" value="cash_selection_list" />
+		<colour id="colour" name="text" />
+		<!-- record stuff needed to recolour text -->
+				<record id="alternative_main_kind" class="edit_box">
+				<record id="properties">
+				<flags id="colour" value="text" />	
+				<boolean id="show_clear_text_icon" value="false"/>
+				</record>
+				</record>
+		<boolean id="enforce_style" value="true" />
+    </record>	
+	
+	<!-- <record>
+		<string id="class_name" value="editable_client_object_property_panel" />
+		<colour id="colour" name="selection" />
+    <boolean id="enforce_style" value="true" />
+    </record> -->
+	
+	<record>
+		<string id="class_name" value="edit_box" />
+		<colour id="colour" name="text" />
+    <boolean id="enforce_style" value="true" />
+    </record>
+	
+	<record>
+		<string id="class_name" value="filter_edit_box" />
+		<colour id="colour" name="text" />
+    <boolean id="enforce_style" value="true" />
+    </record>
+	
+	<record>
+		<string id="class_name" value="link_text" />
+		<colour id="colour" name="text" />
+    <boolean id="enforce_style" value="true" />
+    </record>
+	
+	<record>
+		<string id="class_name" value="negotiation_cash_widget" />
+		<colour id="colour" name="text" />
+    <boolean id="enforce_style" value="true" />
+    </record>
+	
+	<!-- IGE -->
+	<record>
+		<string id="class_name" value="cash_edit_box" />
+		<colour id="colour" name="alt text" />
+    <boolean id="enforce_style" value="true" />
+    </record>
+	
+	<!-- IGE -->
+	<record>
+		<string id="class_name" value="number_edit_box" />
+		<colour id="colour" name="alt text" />
+    <boolean id="enforce_style" value="true" />
+    </record>
+
+	
+	<!-- <record>
+		<string id="class_name" value="text" />
+		<colour id="colour" name="text" />
+    <boolean id="enforce_style" value="true" />
+    </record> -->
+	
+	
+	
+	
+	
+</list>
+
+    
+
+</properties>

@@ -1,0 +1,157 @@
+<panel>
+
+
+	<!--appearances for status buttons and labels-->
+	<flags id="stfa" value="buttons/custom/dof status/failed/button" />
+	<!--Failed label-->
+	<flags id="snsa" value="buttons/custom/dof status/not started/button" />
+	<!--Not Started label-->
+	<flags id="spha" value="buttons/standard/normal/button" />
+	<!--Put on Hold button-->
+	<flags id="soha" value="buttons/custom/dof status/not started/button" />
+	<!--On Hold label-->
+	<flags id="ssna" value="buttons/primary/normal/button" />
+	<!--Start Negotiations button-->
+	<flags id="sipa" value="buttons/custom/dof status/in progress/button" />
+	<!--In Progress label-->
+
+
+	<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+
+	<container>
+		<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+		<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="4" />
+		<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+		<widget class="label" id="dadd" alignment="left,centre_y" colour="faded text" auto_size="horizontal" height="30" />
+
+		<container id="stac" height="30">
+			<layout class="arrange_horizontal_attachment" alignment="right,as_needed" offset="0" gap="4" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<widget class="button" id="stal" auto_size="horizontal" />
+
+			<widget class="button" id="stab" auto_size="horizontal" />
+
+		</container>
+
+	</container>
+
+	<container>
+		<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0" />
+		<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="8" />
+		<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<widget class="label" height="22" font="label">
+				<translation id="text" translation_id="316794" type="use" value="Type[COMMENT: default properties.xml; list header to describe the type of game object shown - a game object is anything the user can interact with]" />
+			</widget>
+
+			<widget class="popup_button" id="typp" height="30">
+			</widget>
+
+			<container id="mofa">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<widget class="label" height="22" font="label">
+					<translation id="text" translation_id="342366" type="use" value="Max. Offer Amount[COMMENT: transfers target list; column header, use top 10 matches, minor change, Max. is abbreviation of Maximum]" />
+				</widget>
+
+				<widget class="cash_selection_list" id="mocs" auto_size="vertical">
+					<record id="default_properties" alignment="right,centre_y" colour="black"/>
+				</widget>
+			</container>
+
+			<container id="dula" hidden="true">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<widget class="label" height="22" font="label">
+					<translation id="text" translation_id="230113" type="use" value="Duration" />
+				</widget>
+
+				<widget class="popup_button" id="dura" auto_size="vertical" />
+
+			</container>
+
+			<container id="mfec" hidden="true">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<widget class="label" font="label">
+					<translation id="text" translation_id="509196" type="use" value="Max. Total Monthly Fee[COMMENT: AREA: Transfer Target Panel; SUB-AREA: Sub Heading; FR-BN: 20261; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: max - maximum]" />
+				</widget>
+
+				<widget class="cash_selection_list" id="mfew" auto_size="vertical">
+					<record id="default_properties" alignment="right,centre_y" colour="black"/>
+				</widget>
+			</container>
+
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+      <widget class="label" height="22" font="label">
+				<translation id="text" translation_id="492002" type="use" value="Agreed Playing Time[COMMENT: AREA: Player Happiness; SUB-AREA: Contract Promises; FR-BN: 14013; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: contract promise type]" />
+			</widget>
+
+			<widget class="popup_button" id="sstp" auto_size="vertical" />
+
+			<widget class="label" id="mwtw" height="22" font="label">
+				<translation id="text" translation_id="348991" type="use" value="Max. Wage Amount[COMMENT: transfers target list; column header]" />
+			</widget>
+
+			<widget class="cash_selection_list" id="mwcs" auto_size="vertical">
+					<record id="default_properties" alignment="right,centre_y" colour="black"/>
+			</widget>
+
+		</container>
+	</container>
+
+
+
+	<container>
+		<layout class="fit_children_attachment" alignment="vertical" gap="8" offset="0" />
+		<layout class="arrange_horizontal_attachment" layout="-1,-1,-1" offset="0" gap="8" />
+		<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<widget class="label" height="22" font="label">
+				<translation id="text" translation_id="395259" type="use" value="Last Offer[COMMENT: FR 10593, label text on the Director of Football target list screen indicating the value of the last submitted offer]" />
+			</widget>
+
+			<widget class="label" id="laol" height="30" />
+
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<widget class="label" height="22" font="label">
+				<translation id="text" translation_id="335044" type="use" value="Expiry Date" />
+			</widget>
+
+			<widget class="date_select_panel" id="expd" auto_size="horizontal" height="30" />
+
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<widget class="label" height="22" font="label">
+				<translation id="text" translation_id="336017" type="use" value="Priority[COMMENT: transfers lists; column header, prioritise the importance of a particular deal]" />
+			</widget>
+
+			<widget class="popup_button" id="prip" height="30" />
+
+			<widget class="text" id="pril" height="30" />
+
+		</container>
+
+	</container>
+
+</panel>

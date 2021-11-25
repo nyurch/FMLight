@@ -1,0 +1,28 @@
+﻿<panel height="64">
+	<attachment_group class="horizontal_arrange" horizontal_layout="60, -1" horizontal_offset="0" horizontal_gap="10" vertical_alignment="vertical" vertical_inset="0"/>
+
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+		<widget class="picture" id="trdi" scale_picture="false" keep_aspect_ratio="true" image_alignment="top, left">
+			<layout class="centre_in_parent_attachment" alignment="vertical"/>
+		</widget>
+		
+		<widget class="object_portrait_picture" id="plpc" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_y, bottom" clickable="false"/>
+	</container>
+
+	<container>
+		<attachment_group class="vertical_arrange" vertical_gap="2"/>
+
+		<widget class="person_button" id="plnm" height="20" style="bold" alignment="left, centre_x" person_is_player="true" links_enabled_in_popup="false" info_popup_instead_of_link="true" navigation_focus_target="false" colour="black"/>
+		<widget class="text" id="trtw" auto_size="vertical" multiline="false" alignment="left, centre_y" colour="faded text"/>
+
+		<container height="20">
+			<attachment_group class="horizontal_arrange" horizontal_offset="0" horizontal_gap="4" vertical_alignment="vertical" vertical_inset="0"/>
+
+			<widget class="object_portrait_picture" id="trcb" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" clickable="false" width="20"/>
+			<widget class="text" id="trct" auto_size="horizontal" multiline="false" alignment="left, centre_y" colour="faded text"/>
+		</container>
+	</container>
+
+</panel>

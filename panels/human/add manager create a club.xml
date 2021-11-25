@@ -1,0 +1,448 @@
+<panel>
+<string id="skin_style" value="edit_box" />
+	<layout class="arrange_horizontal_attachment" alignment="middle" gap="0" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+	<container width="950">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+		<container class="client_object_viewer_xml_panel" id="fCFI">
+			<layout class="arrange_vertical_attachment" layout="60,-1" gap="5" offset="10" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+				<container class="main_contrast_box" id="errM" red_replacement="bg negative" >
+					<animation class="fade_on_hide_animation" duration="0.3" />
+					<layout class="arrange_horizontal_attachment" layout="26,-1" offset="0" gap="10" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+					<widget class="picture" file="icons/26px/urgent" width="26" colour="fg negative" image_alignment="centre" />
+					<widget class="label" alignment="left,centre_y" colour="fg negative">
+						<translation id="text" translation_id="395983" type="use" value="Choose a name, city and stadium for the club. The name cannot match that of a real life club.[COMMENT:create a club, message to tell the user they need to choose a club name and city before continuing]" />
+					</widget>
+
+				</container>
+
+			</container>
+
+			<container draw_vertical_dividers="true">
+				<layout class="arrange_horizontal_attachment" layout="-2,-3" offset="0">
+					<global id="gap" name="ui.main_box_gap" />
+				</layout>
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<container class="main_box" navigation_container="true" default_focus="true">
+					<layout class="arrange_vertical_attachment" alignment="top,extend" gap="10" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+					<widget id="pPbu" class="popup_button" appearance="buttons/subtle/normal/button" />
+
+					<container height="115">
+						<layout class="arrange_horizontal_attachment" layout="-2,-3" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+						<container class="inner_subtle_box_no_margin">
+							<layout class="arrange_vertical_attachment" layout="-1,30" gap="6" offset="4" />
+							<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="4" />
+
+							<container>
+								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="4" />
+
+								<widget class="picture" id="clOL" scale_picture="true" image_alignment="centre" />
+							</container>
+
+							<!-- container showing left, number, right widgets -->
+							<container id="iccn">
+								<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+								<layout class="fit_children_attachment" alignment="vertical" />
+								<layout class="arrange_horizontal_attachment" alignment="middle,extend" offset="0" />
+								<widget class="icon_button" id="lfic" appearance="buttons/subtle/normal/button" width="30" height="30" click_event="lflg" icon="icons/16px/left" icon_alignment="centre">
+									<record id="primary_icon_properties" red_replacement="text" />
+								</widget>
+								<widget class="label" id="cric" alignment="centre" colour="faded text" />
+								<widget class="icon_button" id="rgic" appearance="buttons/subtle/normal/button" width="30" height="30" click_event="rglg" icon="icons/16px/right" icon_alignment="centre">
+									<record id="primary_icon_properties" red_replacement="text" />
+								</widget>
+							</container>
+						</container>
+
+						<container>
+							<layout class="arrange_vertical_attachment" layout="-1,-1,20,30" gap="2" offset="0" />
+							<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+							<widget class="radio_button" id="alL2" auto_size="vertical" secondary_icon="icons/16px/squad">
+								<global id="hidden" name="platform_is_stadia" />
+								<translation id="text" translation_id="395050" type="use" value="Use game-generated logo[COMMENT: create a club, option to use a default unlicenced logo for the team]" />
+								<record id="click_event">
+									<integer id="event_id" value="loRo" />
+									<integer id="index" value="1" />
+								</record>
+							</widget>
+							<widget class="radio_button" id="alL3" auto_size="vertical">
+								<global id="hidden" name="platform_is_stadia" />
+								<translation id="text" translation_id="395023" type="use" value="Import your own logo[COMMENT: create a club, option to use an already imported custom logo]" />
+								<record id="click_event">
+									<integer id="event_id" value="loRo" />
+									<integer id="index" value="2" />
+								</record>
+							</widget>
+							<widget class="spacer" />
+							<widget class="icon_button" icon="icons/16px/import" click_event="imLG" auto_size="vertical">
+								<global id="hidden" name="platform_is_stadia" />
+								<translation id="text" translation_id="496365" type="use" value="Import a logo...[COMMENT: AREA: Create a Club; SUB-AREA: Club Creation Details; FR-BN: XXXXXX; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; button text for importing a logo for create a club team]" />
+							</widget>
+
+						</container>
+					</container>
+
+					<container height="160">
+						<layout class="arrange_vertical_attachment" layout="40,40, 40, 40" gap="0" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+						<!--Name-->
+						<container>
+							<layout class="arrange_horizontal_attachment" layout="-3,10,-4" gap="0" offset="0" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="5" />
+
+							<widget class="label" colour="accent">
+								<translation id="text" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+							</widget>
+
+							<widget class="label" font="title" alignment="left,centre_y" colour="accent">
+								<translation id="hint" translation_id="300786" type="use" value="All items with a * must be filled in[COMMENT:indicator to the user that the coloured asterisk indicates that the user must fill in this field]" />
+								<translation id="text" translation_id="248129" type="use" value="*" />
+							</widget>
+
+							<container>
+								<layout class="arrange_horizontal_attachment" alignment="right,extend" gap="0" offset="0" />
+								<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+								<widget class="edit_box" id="nEDB" edit_event="nEDB" changed_event="nEDB">
+									<colour id="red_replacement" name="edit_box_background" />
+									<colour id="green_replacement" name="edit_box_shadow" />
+									<colour id="blue_replacement" name="edit_box_border" />
+									<list id="attachments">
+										<record class="max_length_attachment">
+											<integer id="length" value="18" />
+										</record>
+									</list>
+								</widget>
+
+							</container>
+
+						</container>
+
+						<!--Nickname-->
+						<container>
+							<layout class="arrange_horizontal_attachment" layout="-3,10,-4" gap="0" offset="0" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="5" />
+
+							<widget class="label" colour="accent">
+								<translation id="text" translation_id="319435" type="use" value="Nickname[COMMENT: heading; team information panel; club nickname]" />
+							</widget>
+							<widget class="spacer" />
+							<widget class="edit_box" id="nicB" edit_event="nicB">
+								<list id="attachments">
+									<record class="max_length_attachment">
+										<integer id="length" value="15" />
+									</record>
+								</list>
+							</widget>
+						</container>
+
+
+						<!--Stadium Name-->
+						<container>
+							<layout class="arrange_horizontal_attachment" layout="-3,10,-4" gap="0" offset="0" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="5" />
+
+							<widget class="label" colour="accent">
+								<translation id="text" translation_id="349091" type="use" value="Stadium Name[COMMENT: team stadium name]" />
+							</widget>
+
+							<widget class="label" font="title" alignment="left,centre_y" colour="accent">
+								<translation id="hint" translation_id="300786" type="use" value="All items with a * must be filled in[COMMENT:indicator to the user that the coloured asterisk indicates that the user must fill in this field]" />
+								<translation id="text" translation_id="248129" type="use" value="*" />
+							</widget>
+
+							<container>
+								<layout class="arrange_horizontal_attachment" alignment="right,extend" gap="0" offset="0" />
+								<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+								<widget class="edit_box" id="SEDB" edit_event="SEDB" changed_event="SEDB">
+									<list id="attachments">
+										<record class="max_length_attachment">
+											<integer id="length" value="18" />
+										</record>
+									</list>
+								</widget>
+							</container>
+
+						</container>
+
+
+						<!--City-->
+						<container>
+							<layout class="arrange_horizontal_attachment" layout="-3,10,-4" gap="0" offset="0" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="5" />
+
+
+							<widget class="label" colour="accent">
+								<translation id="text" translation_id="292986" type="use" value="City" />
+							</widget>
+
+							<widget class="label" font="title" alignment="left,centre_y" colour="accent">
+								<translation id="hint" translation_id="300786" type="use" value="All items with a * must be filled in[COMMENT:indicator to the user that the coloured asterisk indicates that the user must fill in this field]" />
+								<translation id="text" translation_id="248129" type="use" value="*" />
+							</widget>
+
+							<widget class="city_picker_popup_button" id="city" colour="text" >
+								<flags id="appearance" value="buttons/subtle/normal/button"/>
+								<flags id="select_on_focus" value="true" />
+								<boolean id="validate_string" value="true" />
+							</widget>
+						</container>
+
+					</container>
+
+					<widget class="horizontal_divider" />
+
+					<!--reputation-->
+					<widget class="client_object_label_value_table" id="rpLD">
+
+						<record id="table_properties">
+							<flags id="mode" value="stripe_rows, printable" />
+							<boolean id="auto_size_rows" value="true" />
+							<boolean id="fixed_size_rows" value="false" />
+							<flags id="auto_size" value="none" />
+
+							<string id="layout" value="-3,-4" />
+							<integer id="row_spacing" value="0" />
+							<list id="column_widget_properties">
+								<record indx="0" alignment="left,centre_y" colour="faded text" />
+								<record indx="1" alignment="left,centre_y" auto_size="vertical" spec="text" />
+							</list>
+
+							<list id="column_table_properties">
+								<record indx="0">
+									<integer id="left" value="0" />
+								</record>
+								<record indx="1">
+									<flags id="alignment" value="left,centre_y" />
+									<integer id="top" value="2" />
+									<integer id="bottom" value="2" />
+								</record>
+							</list>
+						</record>
+
+						<record id="object_property">
+							<integer id="get_property" value="objt" />
+							<integer id="set_property" value="objt" />
+						</record>
+
+						<list id="viewed_property_ids">
+							<integer value="Crsc" />
+							<integer value="TfcD" />
+							<integer value="TytD" />
+						</list>
+
+					</widget>
+
+				</container>
+
+				<container draw_horizontal_dividers="true">
+					<layout class="arrange_vertical_attachment" layout="-7, -3, -6" offset="0">
+						<global id="gap" name="ui.main_box_gap" />
+					</layout>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+					<!--Kits information-->
+					<container class="main_box" navigation_container="true">
+						<translation id="title" translation_id="319448" type="use" value="Kits[COMMENT: title for the club kits the club overview panel]" />
+
+						<layout class="arrange_vertical_attachment" layout="-1,30" gap="8" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+						<!--Kits pictures-->
+						<widget class="club_overview_kits_panel" id="gsts" />
+
+						<container>
+							<layout class="stick_to_sides_attachment" alignment="right" apply_to_children="true" inset="0" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+							<widget class="icon_button" icon="icons/16px/kit" auto_size="all">
+								<translation id="text" translation_id="395020" type="use" value="Edit Kit and Colours[COMMENT:button text inside Fantasy Club panel; giving the ability to the user to change the kit details of the selected club]" />
+								<record id="click_event">
+									<string id="event_id" value="edKD" />
+								</record>
+							</widget>
+						</container>
+						<!--Edit Kit and Colours button-->
+
+
+					</container>
+
+					<!--Budget infromation-->
+					<container class="main_box">
+						<translation id="title" translation_id="229821" type="use" value="Finances" />
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+						<container>
+							<layout class="arrange_horizontal_attachment" layout="-1,-1,-1" gap="0" offset="0" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+							<!--Bank Balance-->
+							<container>
+								<layout class="arrange_vertical_attachment" layout="-1,-1" gap="0" offset="0" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+								<widget class="text" id="fsda" alignment="centre_x,bottom" font="label" colour="faded text">
+									<translation id="text" translation_id="255029" type="use" value="Bank Balance[COMMENT: finances list panel; bank balance view option]" />
+								</widget>
+
+								<widget class="cash_cell" id="fin1" font="value" colour="text" alignment="centre_x,top">
+									<record id="object_property">
+										<list id="get_properties">
+											<record>
+												<integer id="get_property" value="ftBB" />
+												<integer id="set_property" value="valu" />
+											</record>
+										</list>
+									</record>
+								</widget>
+
+							</container>
+
+							<!--Transfer Budget-->
+							<container>
+								<layout class="arrange_vertical_attachment" layout="-1,-1" gap="0" offset="0" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+								<widget class="text" id="fit2" alignment="centre_x,bottom" font="label" colour="faded text">
+									<translation id="text" translation_id="388930" type="use" value="Squad Budget[COMMENT: FR 8517, the total budget for the team which is a combination of the current value of the player plus his contract fees]" />
+								</widget>
+
+								<widget class="cash_cell" id="fin2" font="value" colour="text" alignment="centre_x,top">
+									<record id="object_property">
+										<list id="get_properties">
+											<record>
+												<integer id="get_property" value="sqBD" />
+												<integer id="set_property" value="valu" />
+											</record>
+										</list>
+									</record>
+								</widget>
+
+							</container>
+
+							<!--Wage Budget-->
+							<container>
+								<layout class="arrange_vertical_attachment" layout="-1,-1" gap="0" offset="0" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+								<widget class="text" id="fit3" alignment="centre_x,bottom" font="label" colour="faded text">
+									<translation id="text" translation_id="310128" type="use" value="Wage Budget[COMMENT: contract offer screen - comments table]" />
+								</widget>
+
+								<widget class="wage_label" id="fin3" font="value" alignment="centre_x,top" disabled="true" disabled_colour="text">
+									<record id="object_property">
+										<list id="get_properties">
+											<record>
+												<integer id="get_property" value="ftWB" />
+												<integer id="set_property" value="valu" />
+											</record>
+										</list>
+									</record>
+								</widget>
+
+							</container>
+						</container>
+
+					</container>
+
+
+					<container draw_vertical_dividers="true">
+						<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0">
+							<global id="gap" name="ui.main_box_gap" />
+						</layout>
+						<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+						<container class="main_box" navigation_container="true">
+							<translation id="title" translation_id="251862" type="use" value="Staff Roles[COMMENT: non player profile panel; title of panel showing job roles]" />
+							<layout class="arrange_vertical_attachment" layout="40,40,35" gap="6" offset="0" />
+							<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+							<!--ditcetor of football-->
+							<container>
+								<layout class="arrange_vertical_attachment" layout="-1,-1" gap="0" offset="0" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+								<widget class="person_button" id="doFT" font="value" alignment="centre_x,bottom">
+									<record id="object_property">
+										<list id="get_properties">
+											<record>
+												<integer id="get_property" value="CDOF" />
+												<integer id="set_property" value="valu" />
+											</record>
+										</list>
+									</record>
+								</widget>
+
+								<widget class="text" alignment="centre_x,top" font="label" colour="faded text">
+									<translation id="text" translation_id="329892" type="use" value="Director of football[COMMENT: job type]" />
+								</widget>
+							</container>
+
+							<!--assistant manager-->
+							<container>
+								<layout class="arrange_vertical_attachment" layout="-1,-1" gap="0" offset="0" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+								<widget class="person_button" id="ftMB" font="value" alignment="centre_x,bottom">
+									<record id="object_property">
+										<list id="get_properties">
+											<record>
+												<integer id="get_property" value="CMTA" />
+												<integer id="set_property" value="valu" />
+											</record>
+										</list>
+									</record>
+								</widget>
+
+								<widget class="text" alignment="centre_x,top" font="label" colour="faded text">
+									<translation id="text" translation_id="227983" type="use" value="Assistant Manager" />
+								</widget>
+							</container>
+
+							<!--Edit Staff Detials Button-->
+							<widget class="check_box" id="rtsf" click_event="edCD" selected="true" auto_size="vertical" multiline="true">
+								<translation id="text" translation_id="395038" type="use" value="Retain Current Backroom Staff[COMMENT:Button text inside fantasy club panel; to edit the roles of staff from teh selected club]" />
+							</widget>
+
+						</container>
+
+						<container class="main_box" navigation_container="true">
+							<translation id="title" translation_id="242350" type="use" value="Other" />
+							<layout class="arrange_vertical_attachment" alignment="top" gap="5" offset="0" />
+							<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+							<widget class="icon_button" icon="icons/16px/squad" click_event="edRE" alignment="left,centre_y" auto_size="vertical">
+								<translation id="text" translation_id="395021" type="use" value="Edit Relationships[COMMENT:Button text inside fantasy club panel; to edit club relationship]" />
+							</widget>
+							<widget class="icon_button" icon="icons/16px/affiliate" click_event="edAF" alignment="left,centre_y" auto_size="vertical">
+								<translation id="text" translation_id="395019" type="use" value="Edit Affiliations[COMMENT:Button text inside fantasy club panel; to edit affiliated clubs]" />
+							</widget>
+							<widget class="icon_button" icon="icons/16px/club" click_event="edMS" alignment="left,centre_y" auto_size="vertical">
+								<translation id="text" translation_id="395029" type="use" value="Miscellaneous[COMMENT:Button text inside fantasy club panel; to edit other relevant club details]" />
+							</widget>
+							<widget class="check_box" id="kpHi" click_event="kpHi" alignment="left,centre_y" auto_size="vertical" selected="false">
+								<translation id="text" translation_id="395025" type="use" value="Keep Club History[COMMENT:Button text inside fantasy club panel; should the club history be retained]" />
+							</widget>
+
+						</container>
+
+					</container>
+
+				</container>
+
+			</container>
+
+		</container>
+	</container>
+
+</panel>

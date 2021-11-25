@@ -1,0 +1,4 @@
+﻿<!-- changed from white -->
+<class class="column_heading_title" parent="column_heading">
+    <flags id="colour" value="text"/>
+</class>

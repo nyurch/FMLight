@@ -1,0 +1,25 @@
+﻿<panel>
+	<record id="goal_icon_props" class="container" icon="icons/custom/player stats/top goalscorer" file="widgets/centred icon with label" image_alignment="centre" red_replacement="white"
+			scale_picture="true" keep_aspect_ratio="true" height="10" width="10" size="xsmall" style="bold"  highlighted_text_colour="black" />
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+	<container class="main_subtle_box">
+		<record id="object_property">
+			<list id="get_properties">
+				<record get_property="FixG" set_property="FixG"  dont_set_object="true" />
+				<record get_property="LxGS" set_property="LxGS"  dont_set_object="true" />
+				<record get_property="objt" set_property="objt"   />
+			</list>
+		</record>
+		
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+		<widget class="graph" id="grph">
+			<list id="graph_series">
+				<record id="bar1" type="bar" inset="1"  show_instant_hint="false"  />
+				<record id="segs" type="line" colour="transparent" show_instant_hint="false" />
+			</list>
+			<record id="x_axis" consistent_label_width="false" only_labelled_marks="true"/>
+			<record id="y_axis" show_labels="false" inset="2" hidden="true"/>
+		</widget>
+	</container>
+</panel>

@@ -1,0 +1,10 @@
+<!-- an action button that will be used in the news response panels -->
+<!-- changed colour from white -->
+
+<!-- setting the 'icon' property on this should change the root folder for the appearance used to indicate checked states. icon="checkbox" would be the default -->
+<class class="role_duty_popup_button_mini" parent="position_role_duty_popup_button_mini" gap="3">
+  <flags id="appearance" value="buttons/custom/tactics/role picker mini/button"/>
+  <flags id="size" value="8.5"/>
+  <flags id="auto_size" value="vertical" />
+  <flags id="default_text_colour" value="text" />
+</class>
