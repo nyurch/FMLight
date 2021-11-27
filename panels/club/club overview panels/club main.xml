@@ -15,7 +15,7 @@
 				</record>
 			</widget>
 		</container>
-		<container class="plain_box" id="tstf" height="340" priority="1">
+		<container class="plain_box" id="tstf" height="400" priority="1">
 			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 			<widget class="background" file="backgrounds" id="bgnd">
 				<layout class="stick_to_sides_attachment" alignment="top" inset="0" />

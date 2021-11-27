@@ -1,0 +1,172 @@
+<record>
+	<list id="column_table_properties">
+
+		<!-- Bonus Value -->
+		<record>
+			<integer id="id" value="Ccbv" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293754" type="use" value="Cash" />
+			<record id="widget_info">
+				<symbol id="class" value="value_label" />
+				<string id="colour" value="alt text" />	<!-- added to recolour for IGE -->
+			</record>
+
+			<integer id="default_value" value="500000" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="cash_edit_box" />
+				<integer id="display_format" value="3" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293754" type="use" value="Cash" />
+			</record>
+		</record>
+
+		<!-- Wage Value -->
+		<record>
+			<integer id="id" value="Ccwv" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="227799" type="use" value="Wage" />
+			<record id="widget_info">
+				<symbol id="class" value="wage_label" />
+			</record>
+
+			<integer id="default_value" value="30000" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="cash_edit_box" />
+				<integer id="display_format" value="0" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="227799" type="use" value="Wage" />
+			</record>
+		</record>
+
+		<!-- Games Value -->
+		<record>
+			<integer id="id" value="Ccgv" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="229757" type="use" value="Apps" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<integer id="default_value" value="30" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="30" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229757" type="use" value="Apps" />
+			</record>
+		</record>
+
+		<!-- International Caps Value -->
+		<record>
+			<integer id="id" value="Cciv" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="227821" type="use" value="International Apps" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<integer id="default_value" value="10" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="10" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="227821" type="use" value="International Apps" />
+			</record>
+		</record>
+
+		<!-- Goals Value -->
+		<record>
+			<integer id="id" value="Ccgl" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="227857" type="use" value="Goals" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<integer id="default_value" value="30" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="30" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="227857" type="use" value="Goals" />
+			</record>
+		</record>
+
+		<!-- Assists Value -->
+		<record>
+			<integer id="id" value="Ccas" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="227847" type="use" value="Assists" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<integer id="default_value" value="30" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="30" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="227847" type="use" value="Assists" />
+			</record>
+		</record>
+
+		<!-- Goals + Assists Value -->
+		<record>
+			<integer id="id" value="Ccga" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="509214" type="use" value="Goals + Assists[COMMENT: AREA: Contracts; SUB-AREA: Clauses; FR-BN: 29949; TONE: Formal/Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: number of combined goals and assists to achieve a bonus]" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<integer id="default_value" value="30" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="30" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="509214" type="use" value="Goals + Assists[COMMENT: AREA: Contracts; SUB-AREA: Clauses; FR-BN: 29949; TONE: Formal/Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: number of combined goals and assists to achieve a bonus]" />
+			</record>
+		</record>
+
+	</list>
+</record>

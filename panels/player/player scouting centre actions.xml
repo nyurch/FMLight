@@ -1,0 +1,101 @@
+﻿<panel>
+	<boolean id="save_immediate_state" value="true" />
+	<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="4" />
+	<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="4" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+	<container class="horizontal_arrange_container" alignment="middle" offset="0" gap="12" inset="0" wrap="false" auto_size="vertical">
+
+		<record id="default_properties">
+			<flags id="alignment" value="left,centre_y" />
+			<flags id="auto_size" value="all" />
+			<record id="primary_icon_properties">
+				<flags id="red_replacement" value="card fg" />
+				<flags id="blue_replacement" value="card bg lighter" />
+				<flags id="green_replacement" value="button_icon" />
+			</record>
+		</record>
+
+		<widget class="check_box" id="shtl" colour="black">
+			<!--!Add/remove to/from shortlist-->
+		</widget>
+
+		<widget class="check_box" id="addt" colour="black">
+			<translation id="text" translation_id="336159" type="use" value="Add as Transfer Target[COMMENT: right click menu item for players, Transfer Target is a new style of shortlist, multiple shortlists encouraged to be used]" />
+		</widget>
+
+		<widget class="check_box" id="topt" colour="black">
+			<translation id="text" translation_id="447614" type="use" value="Declare as Top Target[COMMENT: Scouting centre action]" />
+		</widget>
+
+		<widget class="check_box" id="pool" colour="black">
+			<!--!Add/remove to/from national pool-->
+		</widget>
+
+	</container>
+
+
+	<container class="horizontal_arrange_container" id="actC" alignment="middle" offset="0" gap="-4" inset="0" wrap="false" auto_size="vertical">
+
+		<record id="default_properties">
+			<flags id="alignment" value="centre" />
+			<flags id="auto_size" value="all" />
+			<flags id="auto_size_minimum_height" value="30" />
+			<flags id="icon_alignment" value="left,centre_y" />
+			<flags id="appearance" value="buttons/primary/normal/button" />
+			<flags id="colour" value="black" />
+			<flags id="font" value="button" />
+			<flags id="icon_colour" value="black" />
+		</record>
+
+		<widget class="icon_button" id="disc" icon="icons/16px/cross" controller_button="x_button" red_replacement="red 800" blue_replacement="red 800" disabled_colour="faded text">
+      <attachment class="test_screen_size_attachment" alignment="horizontal" min_value="0" max_value="1700" set_property="ldis" true_value="true" false_value="false" id="smh1" disabled="true" />
+      <attachment class="test_global_attachment" mode="equal" get_property="section" value="tssc" set_property="disabled" skip_if_false="false">
+        <event id="action_event" event_id="set_attachment_property_event" attachment_id="smh1" />
+      </attachment>
+		</widget>
+
+		<widget class="primary_icon_button" icon="icons/16px/tick" controller_button="y_button" id="ackn" red_replacement="blue 700" blue_replacement="blue 700" disabled_colour="faded text">
+			<attachment class="test_screen_size_attachment" alignment="horizontal" min_value="0" max_value="1500" set_property="ldis" true_value="true" false_value="false" id="smh1" disabled="true" />
+      		<attachment class="test_global_attachment" mode="equal" get_property="section" value="tssc" set_property="disabled" skip_if_false="false">
+        <event id="action_event" event_id="set_attachment_property_event" attachment_id="smh1" />
+     		 </attachment>
+		</widget>
+
+		<widget class="icon_button" id="ksco" icon="icons/16px/search" red_replacement="teal 700" blue_replacement="teal 700" disabled_colour="faded text">
+			<translation id="text" translation_id="447616" type="use" value="Keep Scouting[COMMENT: Scouting centre action to continue scouting a recommended player]" />
+      		<attachment class="test_screen_size_attachment" alignment="horizontal" min_value="0" max_value="1200" set_property="ldis" true_value="true" false_value="false" id="smh1" disabled="true" />
+      		<attachment class="test_global_attachment" mode="equal" get_property="section" value="tssc" set_property="disabled" skip_if_false="false">
+				<event id="action_event" event_id="set_attachment_property_event" attachment_id="smh1" />
+      		</attachment>
+		</widget>
+
+
+		<widget class="icon_button" id="mkof" red_replacement="green 700" blue_replacement="green 700" disabled_colour="faded text">
+			<translation id="text" translation_id="242212" type="use" value="Make Offer" />
+		</widget>
+
+
+		<widget class="icon_button" id="otri" red_replacement="green 700" blue_replacement="green 800" disabled_colour="faded text">
+			<translation id="text" translation_id="243344" type="use" value="Offer Trial" />
+		</widget>
+		
+
+		<widget class="client_action_icon_button" id="AskA" red_replacement="green 700" blue_replacement="green 800" disabled_colour="faded text">
+			<translation id="text" translation_id="513325" type="use" value="Agent Availability[COMMENT: AREA: Scouting; SUB-AREA: scouting centre; FR: 32767; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: scouting centre action button]" />
+			<string id="action_id" value="aPdA" />
+			<string id="remove_if" value="is_fmt"/>
+		</widget>
+
+		<widget class="icon_tick_button" id="call" red_replacement="solid_button" blue_replacement="solid_button">
+			<!--call up to national squad-->
+		</widget>
+
+		<widget class="icon_tick_button" id="RmSq" red_replacement="solid_button" blue_replacement="solid_button">
+			<!--remove from national squad-->
+		</widget>
+
+
+	</container>
+
+</panel>

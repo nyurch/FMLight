@@ -1,0 +1,1004 @@
+﻿<!-- added colour to picked colour -->
+<record>
+	<list id="column_table_properties">
+
+		<!-- shirt position -->
+		<record>
+			<integer id="id" value="Pshp" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="321134" type="use" value="Position Selected[COMMENT: person properties; column heading hint text, currently selected position in team]" />
+			<integer id="auto_hide_priority" value="1" />
+			<integer id="minimum_width" value="48" />
+			<boolean id="row_drag_drop_handler" value="true" />
+			<boolean id="row_drag_draw_handler" value="true" />
+			<flags id="customisation_context" value="play" />
+			<translation id="category" translation_id="229527" type="use" value="Squad" />
+			<record id="widget_info">
+				<symbol id="class" value="tactic_button" />
+				<string id="appearance" value="buttons/custom/picking/table/sub/button" />
+				<boolean id="should_recolour" value="false" />
+				<boolean id="navigation_focus_target" value="false" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+				<flags id="colour" value="text" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="321134" type="use" value="Position Selected[COMMENT: person properties; column heading hint text, currently selected position in team]" />
+				<translation id="alternate_text" translation_id="227761" type="use" value="Pkd[comment - Player Picked Status]" />
+				<translation id="hint" translation_id="321134" type="use" value="Position Selected[COMMENT: person properties; column heading hint text, currently selected position in team]" />
+			</record>
+		</record>
+
+		<!-- @NOTE a player name for some specific purposes - not used may places and should probably be phased out -->
+		<record>
+			<integer id="id" value="Pnam" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="227765" type="use" value="Name[comment - Person Name]" />
+			<flags id="customisation_context" value="none" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="100" />
+			<boolean id="locked" value="true" />
+			<integer id="auto_hide_priority" value="10" />
+			<!-- a very high chance of not being hidden for this property (lower value = higher priority) -->
+			<record id="widget_info">
+				<symbol id="class" value="text" />	<!--this is just a reasonable default that will show the value; in FM there is a more complicated widget, person_button, which is used-->
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="227765" type="use" value="Name[comment - Person Name]" />
+				<translation id="hint" translation_id="247479" type="use" value="Person Name" />
+			</record>
+
+		</record>
+
+		<!-- Incident minutes -->
+		<record>
+			<integer id="id" value="PinD" />
+			<integer id="width" value="50" />
+			<flags id="customisation_context" value="none" />
+			<record id="widget_info" class="player_substitute_picture" icon_enabled="false" />
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="293649" type="use" value="Time" />
+				<translation id="hint" translation_id="330118" type="use" value="Incident Time[COMMENT: The minutes that a player was subbed on, off, sent off, or injured]" />
+			</record>
+		</record>
+
+		<!-- Match Body Language Comment -->
+		<record>
+			<integer id="id" value="Pmtc" />
+			<flags id="mode" value="invalid_for_fmc" />
+			<integer id="width" value="-1" />
+			<integer id="minimum_width" value="150" />
+			<translation id="name" translation_id="331837" type="use" value="Body Language[COMMENT - what kind of mood the player appears to be in, formerly titled 'motivation']" />
+			<flags id="customisation_context" value="none" />
+			<record id="widget_info">
+				<symbol id="class" value="body_language_widget" />
+				<flags id="appearance" value="" />
+
+				<boolean id="scale_picture" value="false" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="331837" type="use" value="Body Language[COMMENT - what kind of mood the player appears to be in, formerly titled 'motivation']" />
+				<translation id="hint" translation_id="331837" type="use" value="Body Language[COMMENT - what kind of mood the player appears to be in, formerly titled 'motivation']" />
+			</record>
+		</record>
+
+		<!-- Match Performance Comment -->
+		<record>
+			<integer id="id" value="Ppfc" />
+			<integer id="width" value="-1" />
+			<integer id="minimum_width" value="100" />
+			<translation id="name" translation_id="284283" type="use" value="Performance" />
+			<flags id="customisation_context" value="none" />
+			<integer id="minimum_width" value="100" />
+			<record id="widget_info">
+				<symbol id="class" value="propertied_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="284283" type="use" value="Performance" />
+				<translation id="hint" translation_id="331936" type="use" value="Performance Notes[COMMENT; match team stats table, columm header for performance notes, hint for the abbreviated text]" />
+			</record>
+		</record>
+
+
+
+		<!-- PLAYER MATCH STATS -->
+		<!-- Pass attempts -->
+		<record>
+			<integer id="id" value="MPpa" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="249443" type="use" value="Pass attempts" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="248736" type="use" value="Pas" />
+				<translation id="hint" translation_id="249443" type="use" value="Pass attempts" />
+			</record>
+		</record>
+
+		<!-- Passes completed -->
+		<record>
+			<integer id="id" value="MPpc" />
+			<integer id="width" value="30" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="249444" type="use" value="Passes completed" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="248737" type="use" value="Cmp" />
+				<translation id="hint" translation_id="249444" type="use" value="Passes completed" />
+			</record>
+		</record>
+
+		<!-- Crosses attempted -->
+		<record>
+			<integer id="id" value="MPcr" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="297348" type="use" value="Cross Attempts[COMMENT - match stats; cross attempts]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="297346" type="use" value="Crs[COMMENT: match stats; three-letter abbreviation for crosses]" />
+				<translation id="hint" translation_id="297348" type="use" value="Cross Attempts[COMMENT - match stats; cross attempts]" />
+			</record>
+		</record>
+
+		<!-- Crosses completed -->
+		<record>
+			<integer id="id" value="MPcc" />
+			<integer id="width" value="30" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="297349" type="use" value="Crosses Completed[COMMENT - match stats; crosses completed]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="297347" type="use" value="Cmp[COMMENT: match stats; three-letter abbreviation for crosses completed]" />
+				<translation id="hint" translation_id="297349" type="use" value="Crosses Completed[COMMENT - match stats; crosses completed]" />
+			</record>
+		</record>
+
+		<!-- Key passes in match-->
+		<record>
+			<integer id="id" value="MPkp" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="248756" type="use" value="Key Passes" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="super_heading" translation_id="227881" type="use" value="Passing" />
+				<translation id="text" translation_id="248738" type="use" value="Key[COMMENT - key passes]" />
+				<translation id="hint" translation_id="248756" type="use" value="Key Passes" />
+			</record>
+		</record>
+
+		<!--chances created in match-->
+		<record>
+			<integer id="id" value="MPCc" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="513427" type="use" value="Clear Cut Chances Created[COMMENT: AREA: Competition Stats; SUB-AREA: Team Overview; FR-BN: 32057; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="super_heading" translation_id="227881" type="use" value="Passing" />
+				<translation id="text" translation_id="394346" type="use" value="CCC[COMMENT: three letter abbreviation for 284438 Clear Cut Chances]" />
+				<translation id="hint" translation_id="513427" type="use" value="Clear Cut Chances Created[COMMENT: AREA: Competition Stats; SUB-AREA: Team Overview; FR-BN: 32057; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
+			</record>
+		</record>
+
+		<!-- Tackle attempts -->
+		<record>
+			<integer id="id" value="MPta" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="249445" type="use" value="Tackle attempts" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="248739" type="use" value="Tck" />
+				<translation id="hint" translation_id="249445" type="use" value="Tackle attempts" />
+			</record>
+		</record>
+
+		<!-- Key tackles -->
+		<record>
+			<integer id="id" value="MPkt" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="248758" type="use" value="Key Tackles" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="super_heading" translation_id="227902" type="use" value="Tackling" />
+				<translation id="text" translation_id="248741" type="use" value="Key[COMMENT - key tackles]" />
+				<translation id="hint" translation_id="248758" type="use" value="Key Tackles" />
+			</record>
+		</record>
+
+		<!-- Tackles won -->
+		<record>
+			<integer id="id" value="MPtw" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="247389" type="use" value="Tackles Won" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="392821" type="use" value="Twn[COMMENT - tackles won; TP - changed from Won, id 248740]" />
+				<translation id="hint" translation_id="247389" type="use" value="Tackles Won" />
+			</record>
+		</record>
+
+		<!-- Header attempts -->
+		<record>
+			<integer id="id" value="MPha" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="394436" type="use" value="Header attempts[COMMENT: team stat title; Total number of headers contested, needs to be in sentence case like this to fit with the formatting on this particular screen]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="392709" type="use" value="Hdr[COMMENT - Headers attempted; TP - just changed from Aer, old id 376384]" />
+				<translation id="hint" translation_id="394437" type="use" value="Header attempts[COMMENT: team stat title; Total number of headers contested]" />
+			</record>
+		</record>
+
+		<!-- Headers won -->
+		<record>
+			<integer id="id" value="MPhw" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="388158" type="use" value="Headers Won[COMMENT - match analysis screen, event type on chalkboard; TP - changed from Aerial Challenges Won, id 376391]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="392711" type="use" value="Hwn[COMMENT - headers won; TP - changed from Won, id 248743]" />
+				<translation id="hint" translation_id="388158" type="use" value="Headers Won[COMMENT - match analysis screen, event type on chalkboard; TP - changed from Aerial Challenges Won, id 376391]" />
+			</record>
+		</record>
+
+		<!-- Key headers -->
+		<record>
+			<integer id="id" value="MPky" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="388191" type="use" value="Key Headers[COMMENT: game comp stats; player stat type; TP - changed from Key Aerial Challenges, id 376509]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="super_heading" translation_id="227818" type="use" value="Heading" />
+				<translation id="text" translation_id="248744" type="use" value="Key[COMMENT - key headers]" />
+				<translation id="hint" translation_id="388191" type="use" value="Key Headers[COMMENT: game comp stats; player stat type; TP - changed from Key Aerial Challenges, id 376509]" />
+			</record>
+		</record>
+
+		<!-- Interceptions -->
+		<record>
+			<integer id="id" value="MPic" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="248763" type="use" value="Interceptions Made" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="super_heading" translation_id="227902" type="use" value="Tackling" />
+				<translation id="text" translation_id="348962" type="use" value="Itc[COMMENT: Interceptions 3 letter abbreviation, changing from Int because it clashed with International]" />
+				<translation id="hint" translation_id="248763" type="use" value="Interceptions Made" />
+			</record>
+		</record>
+
+		<!-- cross percentage -->
+		<record>
+			<integer id="id" value="MCR%" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="447690" type="use" value="Cross Completion Percentage[COMMENT: Bug 162023, match stat title]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_record_percentage_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="447691" type="use" value="CC%[COMMENT: Bug 162023, match stat title, abbreviation for Cross Completion Percentage]" />
+				<translation id="hint" translation_id="447690" type="use" value="Cross Completion Percentage[COMMENT: Bug 162023, match stat title]" />
+			</record>
+		</record>
+
+		<!-- heading percentage -->
+		<record>
+			<integer id="id" value="MHE%" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="447692" type="use" value="Headers Won Percentage[COMMENT: Bug 162023, match stat title]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_record_percentage_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="447693" type="use" value="HW%[COMMENT: Bug 162023, match stat title, abbreviation for Headers Won Percentage]" />
+				<translation id="hint" translation_id="447692" type="use" value="Headers Won Percentage[COMMENT: Bug 162023, match stat title]" />
+			</record>
+		</record>
+
+		<!-- tackles percentage -->
+		<record>
+			<integer id="id" value="MTA%" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="447694" type="use" value="Tackles Won Percentage[COMMENT: Bug 162023, match stat title]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_record_percentage_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="447695" type="use" value="TW%[COMMENT: Bug 162023, match stat title, abbreviation for Tackles Won Percentage]" />
+				<translation id="hint" translation_id="447694" type="use" value="Tackles Won Percentage[COMMENT: Bug 162023, match stat title]" />
+			</record>
+		</record>
+
+		<!-- shots on target percentage -->
+		<record>
+			<integer id="id" value="MST%" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="447696" type="use" value="Shots On Target Percentage[COMMENT: Bug 162023, match stat title]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_record_percentage_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="447697" type="use" value="ST%[COMMENT: Bug 162023, match stat title, abbreviation for Shots On Target Percentage]" />
+				<translation id="hint" translation_id="447696" type="use" value="Shots On Target Percentage[COMMENT: Bug 162023, match stat title]" />
+			</record>
+		</record>
+
+		<!-- Run with ball -->
+		<record>
+			<integer id="id" value="MPrw" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="249449" type="use" value="Dribbles made" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="227854" type="use" value="Drb[COMMENT dribbles made per game]" />
+				<translation id="hint" translation_id="249449" type="use" value="Dribbles made" />
+			</record>
+		</record>
+
+		<!-- Offsides -->
+		<record>
+			<integer id="id" value="MOff" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="230053" type="use" value="Offside" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="248750" type="use" value="Off[COMMENT - offsides]" />
+				<translation id="hint" translation_id="230053" type="use" value="Offside" />
+			</record>
+		</record>
+
+		<!-- Fouls made -->
+		<record>
+			<integer id="id" value="MPfm" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="227873" type="use" value="Fouls made" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="super_heading" translation_id="227902" type="use" value="Tackling" />
+				<translation id="text" translation_id="248751" type="use" value="Fou" />
+				<translation id="hint" translation_id="227873" type="use" value="Fouls made" />
+			</record>
+		</record>
+
+		<!-- Fouled -->
+		<record>
+			<integer id="id" value="MPfd" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="227875" type="use" value="Fouls against" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="super_heading" translation_id="338005" type="use" value="Misc[COMMENT: club screen - title for a miscellaneous activities submenu]" />
+				<translation id="text" translation_id="248752" type="use" value="Fld" />
+				<translation id="hint" translation_id="227875" type="use" value="Fouls against" />
+			</record>
+		</record>
+
+		<!-- Assists -->
+		<record>
+			<integer id="id" value="MPas" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="227847" type="use" value="Assists" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="248745" type="use" value="Ast" />
+				<translation id="hint" translation_id="227847" type="use" value="Assists" />
+			</record>
+		</record>
+
+		<!-- Shots -->
+		<record>
+			<integer id="id" value="MPst" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="247381" type="use" value="Shots" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284431" type="use" value="Sho[COMMENT: match stats; abbreviation for shots]" />
+				<translation id="hint" translation_id="247381" type="use" value="Shots" />
+			</record>
+		</record>
+
+		<!-- Shots on target -->
+		<record>
+			<integer id="id" value="MPso" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="249450" type="use" value="Shots on target" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284432" type="use" value="Sot[COMMENT: match stats; abbreviation for shots on target]" />
+				<translation id="hint" translation_id="249450" type="use" value="Shots on target" />
+			</record>
+		</record>
+
+		<!-- Conceded -->
+		<record>
+			<integer id="id" value="MPcn" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="247734" type="use" value="Conceded" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="339628" type="use" value="Cnc[COMMENT: match stats; three-letter abbreviation for goals conceded. Must be different from 'condition' abbreviation]" />
+				<translation id="hint" translation_id="247734" type="use" value="Conceded" />
+			</record>
+		</record>
+
+		<!-- Shots Faced -->
+		<record>
+			<integer id="id" value="MPSF" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="382623" type="use" value="Shots Faced[COMMENT: goalkeeper stats; total amount of shots that the goalkeeper faced during a competition]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="447698" type="use" value="SFa[COMMENT: FR15747 match stats; three-letter abbreviation for shots faced]" />
+				<translation id="hint" translation_id="382623" type="use" value="Shots Faced[COMMENT: goalkeeper stats; total amount of shots that the goalkeeper faced during a competition]" />
+			</record>
+		</record>
+
+		<!-- Saves held -->
+		<record>
+			<integer id="id" value="MPsh" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="322136" type="use" value="Saves Held[COMMENT: match stats; saves held]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="super_heading" translation_id="316588" type="use" value="Saves[COMMENT: match analysis panel; event type]" />
+				<translation id="text" translation_id="322132" type="use" value="Svh[COMMENT: match stats; abbreviation for saves held]" />
+				<translation id="hint" translation_id="322136" type="use" value="Saves Held[COMMENT: match stats; saves held]" />
+			</record>
+		</record>
+
+		<!-- Saves parried -->
+		<record>
+			<integer id="id" value="MPsp" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="322137" type="use" value="Saves Parried[COMMENT: match stats; saves parried]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="super_heading" translation_id="316588" type="use" value="Saves[COMMENT: match analysis panel; event type]" />
+				<translation id="text" translation_id="322133" type="use" value="Svp[COMMENT: match stats; abbreviation for saves parried]" />
+				<translation id="hint" translation_id="322137" type="use" value="Saves Parried[COMMENT: match stats; saves parried]" />
+			</record>
+		</record>
+
+		<!-- Saves tipped -->
+		<record>
+			<integer id="id" value="MPsd" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="322138" type="use" value="Saves Tipped[COMMENT: match stats; saves tipped]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="super_heading" translation_id="316588" type="use" value="Saves[COMMENT: match analysis panel; event type]" />
+				<translation id="text" translation_id="322134" type="use" value="Svt[COMMENT: match stats; abbreviation for saves tipped]" />
+				<translation id="hint" translation_id="322138" type="use" value="Saves Tipped[COMMENT: match stats; saves tipped]" />
+			</record>
+		</record>
+
+		<!-- Match Rating -->
+		<record>
+			<integer id="id" value="MPrt" />
+			<integer id="width" value="50" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="242661" type="use" value="Rating[COMMENT - player form section; label for y-axis of average rating graph]" />
+			<record id="widget_info">
+				<symbol id="class" value="match_rating_label_formatted" />
+				<string id="format" value="[%fraction#1-2.1]" />
+				<boolean id="dont_format_numeric_grouping" value="true" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="247501" type="use" value="Rat[COMMENT - rating]" />
+				<translation id="hint" translation_id="242661" type="use" value="Rating[COMMENT - player form section; label for y-axis of average rating graph]" />
+			</record>
+		</record>
+
+		<!-- xG -->
+		<record>
+			<integer id="id" value="MPxg" />
+			<integer id="width" value="35" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="514224" type="use" value="xG[COMMENT: AREA: Team Stat; SUB-AREA: Expected goals stats FR: 32708; TONE: Formal; CHARLIMIT: None NOTE: expected goals short string]" />
+			<record id="widget_info">
+				<symbol id="class" value="formatted_label" />
+				<string id="format" value="[%fraction#1-2.1]" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="514224" type="use" value="xG[COMMENT: AREA: Team Stat; SUB-AREA: Expected goals stats FR: 32708; TONE: Formal; CHARLIMIT: None NOTE: expected goals short string]" />
+				<translation id="hint" translation_id="515112" type="use" value="Expected Goals[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: ; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
+			</record>
+		</record>
+		
+		<!-- Goals -->
+		<record>
+			<integer id="id" value="MPgl" />
+			<integer id="width" value="35" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="227857" type="use" value="Goals" />
+			<record id="widget_info">
+				<symbol id="class" value="goal_icon" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="227856" type="use" value="Gls" />
+				<translation id="hint" translation_id="227857" type="use" value="Goals" />
+			</record>
+		</record>
+
+		<!-- Shots blocked -->
+		<record>
+			<integer id="id" value="MPsb" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="394581" type="use" value="Shots blocked defending[COMMENT: team stat title; Total number of shots blocked]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="super_heading" translation_id="338005" type="use" value="Misc[COMMENT: club screen - title for a miscellaneous activities submenu]" />
+				<translation id="text" translation_id="322135" type="use" value="Shb[COMMENT: match stats; abbreviation for shots blocked by the player when defending]" />
+				<translation id="hint" translation_id="394581" type="use" value="Shots blocked defending[COMMENT: team stat title; Total number of shots blocked]" />
+			</record>
+		</record>
+
+		<!-- Shots hit woodwork -->
+		<record>
+			<integer id="id" value="HwdW" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="394582" type="use" value="Shots hit woodwork[COMMENT: player statistic type]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="394441" type="use" value="HiW[COMMENT: three letter abbreviation for Hit Woodwork, shots hitting the post or crossbar]" />
+				<translation id="hint" translation_id="394582" type="use" value="Shots hit woodwork[COMMENT: player statistic type]" />
+			</record>
+		</record>
+
+		<!-- Shots Blocked -->
+		<record>
+			<integer id="id" value="MPsB" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="322139" type="use" value="Shots Blocked[COMMENT - match stats; opposition shots blocked by the player when defending]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="394577" type="use" value="ShB[COMMENT: three letter abbreviation for 322139 Shots Blocked, anything the defenders get in the way of]" />
+				<translation id="hint" translation_id="322139" type="use" value="Shots Blocked[COMMENT - match stats; opposition shots blocked by the player when defending]" />
+			</record>
+		</record>
+
+		<!-- Shots Saved -->
+		<record>
+			<integer id="id" value="MPsv" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="394584" type="use" value="Shots saved by goalkeeper[COMMENT: player statistic type]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="394579" type="use" value="ShS[COMMENT: three letter abbreviation for Shots Saved, anything the goalkeeper prevents]" />
+				<translation id="hint" translation_id="394584" type="use" value="Shots saved by goalkeeper[COMMENT: player statistic type]" />
+			</record>
+		</record>
+
+		<!-- Dribbles -->
+		<record>
+			<integer id="id" value="DrbL" />
+			<integer id="width" value="40" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="249422" type="use" value="Dribbles[COMMENT: player stat: dribbles (per game) table label]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="super_heading" translation_id="338005" type="use" value="Misc[COMMENT: club screen - title for a miscellaneous activities submenu]" />
+				<translation id="text" translation_id="227854" type="use" value="Drb[COMMENT dribbles made per game]" />
+				<translation id="hint" translation_id="249422" type="use" value="Dribbles[COMMENT: player stat: dribbles (per game) table label]" />
+			</record>
+		</record>
+
+		<!-- Throw ins -->
+		<record>
+			<integer id="id" value="MPti" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="247690" type="use" value="Throw Ins" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="392818" type="use" value="Thr[COMMENT: match stats; three-letter abbreviation for Throw-ins taken]" />
+				<translation id="hint" translation_id="247690" type="use" value="Throw Ins" />
+			</record>
+		</record>
+
+		<!-- Corners -->
+		<record>
+			<integer id="id" value="MPce" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="227896" type="use" value="Corners" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="392663" type="use" value="Cor[COMMENT: match stats; three-letter abbreviation for Corners taken]" />
+				<translation id="hint" translation_id="227896" type="use" value="Corners" />
+			</record>
+		</record>
+
+		<!-- Defending freekicks -->
+		<record>
+			<integer id="id" value="MPdf" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="233183" type="use" value="Defending Free Kicks" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="392674" type="use" value="Dfk[COMMENT: match stats; three-letter abbreviation for Defensive free-kicks taken]" />
+				<translation id="hint" translation_id="233183" type="use" value="Defending Free Kicks" />
+			</record>
+		</record>
+
+		<!-- Attacking freekicks -->
+		<record>
+			<integer id="id" value="MPaf" />
+			<integer id="width" value="26" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="233185" type="use" value="Attacking Free Kicks" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="392625" type="use" value="Afk[COMMENT: match stats; three-letter abbreviation for Attacking free-kicks taken]" />
+				<translation id="hint" translation_id="233185" type="use" value="Attacking Free Kicks" />
+			</record>
+		</record>
+		
+	</list>
+	
+</record>

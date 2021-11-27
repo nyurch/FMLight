@@ -123,7 +123,7 @@
 					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
 
 					<!--name-->
-					<widget class="player_picker_button" entity_layout_id="it02" id="plPB" file="widgets/player selection button tactics" editor_group_id="it10" navigation_focus_target="true">
+					<widget class="player_picker_button" entity_layout_id="it02" id="plPB" colour="white" file="widgets/player selection button tactics" editor_group_id="it10" navigation_focus_target="true">
 						<string id="draggable" value="false"/>
 					</widget>
 

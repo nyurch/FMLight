@@ -1,0 +1,242 @@
+<!-- added colours for IGE -->
+<record>
+	<list id="column_table_properties">
+
+		<!-- Relationship level -->
+		<record>
+			<integer id="id" value="leve" />
+			<integer id="width" value="50" />
+			<boolean id="sort_ascending" value="false" />
+			<translation id="name" translation_id="293049" type="use" value="Level" />
+			<record id="widget_info">
+				<symbol id="class" value="number_label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="max_edit_box" />
+				<string id="colour" value="alt text" />	<!-- added to recolour for IGE -->
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="100" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293049" type="use" value="Level" />
+			</record>
+		</record>
+
+		<!-- Relationship person -->
+		<record>
+			<integer id="id" value="pers" />
+			<integer id="width" value="120" />
+			<translation id="name" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="person_button" />
+				<boolean id="disable_link" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_person_button" />
+				<string id="colour" value="alt text" />	<!-- added to recolour for IGE -->
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+			</record>
+		</record>
+
+		<!-- Relationship club -->
+		<record>
+			<integer id="id" value="club" />
+			<integer id="width" value="120" />
+			<translation id="name" translation_id="292794" type="use" value="Name[comment - Club name]" />
+			<record id="widget_info">
+				<symbol id="class" value="club_button" />
+				<boolean id="disable_link" value="true" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_club_button" />
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="292794" type="use" value="Name[comment - Club name]" />
+				<translation id="hint" translation_id="292795" type="use" value="Club Name" />
+			</record>
+		</record>
+
+		<!-- Relationship nation -->
+		<record>
+			<integer id="id" value="nati" />
+			<integer id="width" value="120" />
+			<translation id="name" translation_id="292794" type="use" value="Name[comment - Club name]" />
+			<record id="widget_info">
+				<symbol id="class" value="nation_button" />
+				<boolean id="disable_link" value="true" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_nation_button" />
+				<string id="colour" value="alt text" />	<!-- added to recolour for IGE -->
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+				<boolean id="edit_mode" value="true" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="292801" type="use" value="Name[comment - Nation name]" />
+				<translation id="hint" translation_id="292802" type="use" value="Nation Name" />
+			</record>
+		</record>
+
+		<!-- Relationship perm -->
+		<record>
+			<integer id="id" value="perm" />
+			<integer id="width" value="40" />
+			<translation id="name" translation_id="293456" type="use" value="Permanent" />
+
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<flags id="alignment" value="left,centre_y" />
+				<boolean id="disabled" value="true" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<flags id="alignment" value="left,centre_y" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293456" type="use" value="Permanent" />
+			</record>
+		</record>
+
+		<!-- Clubs don't transfer players-->
+		<record>
+			<integer id="id" value="rcdt" />
+			<integer id="width" value="40" />
+			<translation id="name" translation_id="376436" type="use" value="Clubs Don't Transfer Players[COMMENT: editor; rival clubs will not engage in transfers]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<flags id="alignment" value="left,centre_y" />
+				<boolean id="disabled" value="true" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<flags id="alignment" value="left,centre_y" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+		</record>
+
+		<!-- Name stadium after person -->
+		<record>
+			<integer id="id" value="rnsp" />
+			<integer id="width" value="40" />
+			<translation id="name" translation_id="376430" type="use" value="Can Name Stadium After Person[COMMENT: editor; can a stadium be named after this favoured person]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<flags id="alignment" value="left,centre_y" />
+				<boolean id="disabled" value="true" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<flags id="alignment" value="left,centre_y" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+		</record>
+
+		<!-- Relationship reason -->
+		<record>
+			<integer id="id" value="rrea" />
+			<integer id="width" value="130" />
+			<integer id="minimum_width" value="60" />
+			<translation id="name" translation_id="330386" type="use" value="Reason[COMMENT: the reason why a relationship exists]" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="relationship_reason_popup_button" />
+				<record id="popup_updated_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<!-- This allows it to know the context of which reasons to show -->
+			<list id="dependent_properties">
+				<symbol value="viewed_property_ids" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="330386" type="use" value="Reason[COMMENT: the reason why a relationship exists]" />
+			</record>
+		</record>
+
+		<!-- Home grown type -->
+		<record>
+			<integer id="id" value="hgty" />
+			<integer id="width" value="130" />
+			<integer id="minimum_width" value="60" />
+			<translation id="name" translation_id="229400" type="use" value="Type" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<record id="popup_updated_event" event_id="CDBd" event_flags="2" />
+				<list id="items">
+					<record id="1">
+						<translation id="text" translation_id="312897" type="use" value="3 Years Between 15 and 21[COMMENT: editor; player home grown type]" />
+					</record>
+					<record id="2">
+						<translation id="text" translation_id="312898" type="use" value="3 Years Before 21[COMMENT: editor; player home grown type]" />
+					</record>
+          <record id="3">
+            <translation id="text" translation_id="469746" type="use" value="3 Years Between 0 and 23[COMMENT: editor; player home grown type]" />
+          </record>
+          <record id="4">
+            <translation id="text" translation_id="457696" type="use" value="3 Years Before 17[COMMENT: editor; player home grown type]" />
+          </record>
+          <record id="5">
+            <translation id="text" translation_id="457694" type="use" value="3 Years Between 15 and 21 Ignoring Loans[COMMENT: editor; player home grown type]" />
+          </record>
+        </list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229400" type="use" value="Type" />
+			</record>
+		</record>
+
+	</list>
+	<!-- column display properties -->
+
+</record>

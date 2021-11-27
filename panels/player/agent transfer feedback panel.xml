@@ -3,17 +3,17 @@
 
 	<boolean id="should_force_refresh" value="true" />
 
-	<container class="main_contrast_box" red_replacement="grey 100">
+	<container class="main_contrast_box" red_replacement="grey 300">
 		<attachment_group class="vertical_arrange_autosize" vertical_offset="0"/>
 
-		<widget class="label" spec="title" auto_size="all" alignment="left, centre_y" colour="white">
+		<widget class="label" spec="title" auto_size="all" alignment="left, centre_y" colour="black">
 			<translation id="text" translation_id="466494" type="use" value="Agent Feedback:[COMMENT: FR 22718; transfer offer panel; button label to initiate conversation to persuade player to leave club]" />
 		</widget>
 
 		<container>
 			<attachment_group class="vertical_arrange_autosize"/>
 
-			<widget class="text" id="FbTx" spec="text" auto_size="vertical" colour="white" alignment="left, centre_y"/>
+			<widget class="text" id="FbTx" spec="text" auto_size="vertical" colour="black" alignment="left, centre_y"/>
 
 			<container>
 				<attachment_group class="vertical_arrange_autosize_all"/>

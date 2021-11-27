@@ -87,7 +87,7 @@
 					<boolean id="exclude_from_find" value="true" />
 					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 				</widget>
-				<widget class="text" entity_layout_id="at08" id="liSt" alignment="centre_y,left" colour="text">
+				<widget class="text" entity_layout_id="at08" id="liSt" alignment="centre_y,left" colour="white">
 					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
 					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
 					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />

@@ -1,0 +1,24 @@
+﻿<!-- image properties -->
+<properties>
+
+	<!-- image borders -->
+	<!-- these determine how many pixels any content is inset from each side of the image -->
+	<!-- (for example, in the case of a button, the content would be the text label) -->
+	<record id="image_borders" left="12" right="12" top="3" bottom="3"/>
+
+	<!-- image slices determine the points at which the image will be sliced to enable scaling -->
+	<!-- the image will only slice in the directions slicing values are provided for-->
+	<record id="image_slices" left="8" right="8" top="8" bottom="8"/>
+	
+	<record id="font_spec">
+		<flags id="font" value="fonts/primary_button"/> 
+	</record>
+	
+	<colour id="red_replacement" name="primary_button"/>
+	<colour id="green_replacement" name="primary_button"/>
+	<colour id="blue_replacement" name="primary_button"/>
+
+	<record id="primary_icon_properties" red_replacement="button_icon" green_replacement="bg"/>
+	<record id="secondary_icon_properties" red_replacement="button_icon" green_replacement="bg"/>
+	
+</properties>

@@ -1,0 +1,125 @@
+<!-- added selection colour to editable widgets for IGE -->
+<record>
+	<list id="column_table_properties">
+
+		<!-- Proficiency-->
+		<record>
+			<integer id="id" value="prof" />
+			<integer id="width" value="90" />
+			<boolean id="sort_ascending" value="false" />
+			<translation id="name" translation_id="293419" type="use" value="Proficiency" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<string id="colour" value="alt text" />	<!-- added to recolour for IGE -->
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="10" />
+			</record>
+
+			<list id="use_field_if">
+				<!-- Cannot speak language -->
+				<record id="csln" equals="false" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293419" type="use" value="Proficiency" />
+			</record>
+		</record>
+
+    <!-- Proficiency enum -->
+    <record>
+      <integer id="id" value="proe" />
+      <integer id="width" value="90" />
+      <translation id="name" translation_id="374200" type="use" value="Proficiency Description[COMMENT: editor, Language proficiency description title text]" />
+      <record id="widget_info">
+        <symbol id="class" value="formatted_label" />
+        <list id="format">
+          <record value="2">
+            <translation id="format" translation_id="374065" type="use" value="Fluent[COMMENT: editor, Language proficiency description]" />
+          </record>
+          <record value="3">
+            <translation id="format" translation_id="374080" type="use" value="Good[COMMENT: editor, Language proficiency description]" />
+          </record>
+          <record value="4">
+            <translation id="format" translation_id="374005" type="use" value="Basic[COMMENT: editor, Language proficiency description]" />
+          </record>
+          <record value="5">
+            <translation id="format" translation_id="249830" type="use" value="Is Not[COMMENT - filter rule type]" />
+          </record>
+        </list>
+      </record>
+
+      <list id="use_field_if">
+        <!-- Cannot speak language -->
+        <record id="csln" equals="false" />
+      </list>
+
+      <record id="column_heading">
+        <flags id="alignment" value="left,centre_y" />
+        <translation id="name" translation_id="374200" type="use" value="Proficiency Description[COMMENT: editor, Language proficiency description title text]" />
+      </record>
+    </record>
+
+		<!-- Language -->
+		<record>
+			<integer id="id" value="lang" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="227843" type="use" value="Language" />
+			<integer id="auto_hide_priority" value="20" />
+			<record id="widget_info">
+				<symbol id="class" value="language_button" />
+				<boolean id="disable_link" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_language_button" />
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+			</record>
+		</record>
+
+		<!-- Cannot speak language -->
+		<record>
+			<integer id="id" value="csln" />
+			<integer id="width" value="100" />
+			<integer id="minimum_width" value="90" />
+			<translation id="name" translation_id="293420" type="use" value="Cannot Speak Language" />
+			<integer id="auto_hide_priority" value="20" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<flags id="alignment" value="left,centre_y" />
+				<boolean id="disabled" value="true" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<flags id="alignment" value="left,centre_y" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="376431" type="use" value="Cannot Speak[COMMENT: in game editor; short for cannot speak Language]" />
+			</record>
+		</record>
+    
+	</list>
+	<!-- column display properties -->
+</record>

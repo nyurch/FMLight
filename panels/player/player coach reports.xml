@@ -201,11 +201,11 @@
 					<container class="main_contrast_box" height="60" red_replacement="scouting no grade">
 						<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="40,-1" vertical_offset="0" vertical_gap="0" />
 
-						<widget class="text" alignment="centre" id="norp" multiline="true" colour="text" font="bold" height="32">
+						<widget class="text" alignment="centre" id="norp" multiline="true" colour="white" font="bold" height="32">
 							<string id="text" value="-" />
 						</widget>
 						
-						<widget class="text" id="chRC" alignment="left,centre_y" multiline="true" style="bold" colour="text" auto_size="vertical"/>
+						<widget class="text" id="chRC" alignment="left,centre_y" multiline="true" style="bold" colour="white" auto_size="vertical"/>
 					</container>
 					
 					<container>

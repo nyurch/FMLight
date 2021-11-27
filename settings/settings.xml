@@ -214,10 +214,10 @@
 <colour name="hint_border" red="0" green="128" blue="128"/>
 
 <!-- Club Vision -->
-<colour name="required objective"                     value="rgb(60,14,67)" />
-<colour name="desired objective"                      value="rgb(48,9,71)" />
-<colour name="preferred objective"                    value="rgb(37,7,65)" />
-<colour name="favoured objective"                     value="rgb(32,13,68)" />
+<colour name="required objective"                     value="rgb(130,255,150)" />
+<colour name="desired objective"                      value="rgb(90,255,150)" />
+<colour name="preferred objective"                    value="rgb(50,255,150)" />
+<colour name="favoured objective"                     value="rgb(10,255,150)" />
 
 <!-- Use for profile icons - icon in circle, want dark circle light icon -->
 <colour name="icon bg" 							value="red"/>
@@ -226,7 +226,7 @@
 <!-- Tutorial -->
 <colour name="tutorial highlight" 						value="fg blue" />
 <colour name="tutorial icon" 							value="fg blue darker" />
-<colour name="tutorial fg" 							value="fg blue darker" />
+<colour name="tutorial fg" 								value="fg blue darker" />
 <colour name="tutorial bg" 								value="bg blue lighter" />
 <colour name="tutorial header" 							value="bg blue" />
 <colour name="tutorial darkness" 						value="rgba(0,0,0,0.8)" />
@@ -484,13 +484,13 @@
 <colour name="deadline day fg" 							value="rgb(247,212,0)"/>
 <colour name="deadline day bg" 							value="rgb(0,0,0)"/>
 <colour name="deadline day bg lighter" 					value="rgb(253,253,253)"/>
-<colour name="deadline day bg colour" 					value="orange"/>
+<colour name="deadline day bg colour" 					value="rgb(250,160,30)"/>
 <colour name="deadline day bg darker" 					value="rgb(2,2,2)"/>
 <colour name="deadline day bg alpha" 					value="rgb(55,55,55)"/>
 <colour name="deadline day bg tertiary" 				value="rgb(39,39,39)"/>
-<colour name="deadline day bg accent" 					value="rgb(219,186,0)"/>
-<colour name="deadline day fg lighter" 					value="fg lighter"/>
-<colour name="deadline day fg colour" 					value="fg"/>
+<colour name="deadline day bg accent" 					value="rgb(250,160,30)"/>
+<colour name="deadline day fg lighter" 					value="rgb(247,212,0)"/>
+<colour name="deadline day fg colour" 					value="rgb(250,160,30)"/>
 <colour name="deadline day fg darker" 					value="rgb(205,205,205)"/>
 <colour name="deadline day fg alpha" 					value="rgb(179,179,179)"/>
 <colour name="deadline day fg accent" 					value="rgb(247,212,0)"/>
@@ -499,7 +499,7 @@
 <colour name="deadline day body text" 					value="rgb(2,2,2)"/>
 
 <!-- transfer deadline day transfer offer status -->
-<colour name="player transfer status rumour" 			value="orange"/>
+<colour name="player transfer status rumour" 			value="rgb(250,160,30)"/>
 <colour name="player transfer status enquiry" 			value="rgb(255,226,44)"/>
 <colour name="player transfer status offer made" 		value="rgb(255,214,0)"/>
 <colour name="player transfer status offer rejected"	value="fg negative"/>

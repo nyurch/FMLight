@@ -1,0 +1,96 @@
+﻿<!-- changed white colour to title -->
+<panel width="300">
+	<boolean id="draw_title" value="false" />
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="standard_popup_box" navigation_container="true" default_focus="true">
+		<layout class="arrange_vertical_attachment" alignment="middle,extend" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="10" />
+
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+			<container class="scrolling_box">
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" />
+					<container id="catC">
+						<attachment_group class="vertical_arrange_autosize" />
+						<widget class="text" auto_size="all" font="title" colour="title" size="large">
+							<translation id="text" translation_id="257257" type="use" value="Categories[COMMENT: Title text for the note categories/tags popup menu]" />
+						</widget>
+
+						<widget class="check_box" id="csta" auto_size="all">
+							<translation id="text" translation_id="492029" type="use" value="Staff Responsibilities[COMMENT: AREA: Responsibilities; SUB-AREA: Responsibility Panel; FR: 28191; TONE: Formal; CHARLIMIT: None]" />
+							<record id="click_event">
+								<flags id="event_id" value="fCBc" />
+								<flags id="selection" value="osta" />
+							</record>
+						</widget>
+
+						<widget class="check_box" id="csco" auto_size="all">
+							<translation id="text" translation_id="458521" type="use" value="Scouting Responsibility[COMMENT: Added for the inductions to go in the SCOUTING INDUCTION FR 24280]" />
+							<record id="select_event">
+								<flags id="event_id" value="fCBc" />
+								<flags id="selection" value="osco" />
+							</record>
+						</widget>
+
+						<widget class="check_box" id="ctrc" auto_size="all">
+							<translation id="text" translation_id="492031" type="use" value="Transfer and Contract Responsibilities[COMMENT: AREA: Responsibilities; SUB-AREA: Responsibility Panel; FR: 28191; TONE: Formal; CHARLIMIT: None]" />
+							<record id="select_event">
+								<flags id="event_id" value="fCBc" />
+								<flags id="selection" value="otrc" />
+							</record>
+						</widget>
+
+						<widget class="check_box" id="cmed" auto_size="all">
+							<translation id="text" translation_id="482707" type="use" value="Media[COMMENT:AREA: Responsibilities; SUB - AREA: Responsibility Panel; FR : 28191; TONE: Formal; CHARLIMIT: None]" />
+							<record id="select_event">
+								<flags id="event_id" value="fCBc" />
+								<flags id="selection" value="omed" />
+							</record>
+						</widget>
+
+						<widget class="check_box" id="ctra" auto_size="all">
+							<translation id="text" translation_id="466626" type="use" value="Training Responsibility[COMMENT: title for a panel showing who is in charge of training]" />
+							<record id="select_event">
+								<flags id="event_id" value="fCBc" />
+								<flags id="selection" value="otra" />
+							</record>
+						</widget>
+
+						<widget class="check_box" id="ctac" auto_size="all">
+							<translation id="text" translation_id="482709" type="use" value="Tactics[COMMENT:AREA: Responsibilities; SUB - AREA: Responsibility Panel; FR : 28191; TONE: Formal; CHARLIMIT: None]" />
+							<record id="select_event">
+								<flags id="event_id" value="fCBc" />
+								<flags id="selection" value="otac" />
+							</record>
+						</widget>
+
+						<widget class="check_box" id="cmat" auto_size="all">
+							<translation id="text" translation_id="482710" type="use" value="Match Day[COMMENT:AREA: Responsibilities; SUB - AREA: Responsibility Panel; FR : 28191; TONE: Formal; CHARLIMIT: None]" />
+							<record id="select_event">
+								<flags id="event_id" value="fCBc" />
+								<flags id="selection" value="omat" />
+							</record>
+						</widget>
+
+					</container>
+
+					<container id="staC">
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+						<widget class="text" auto_size="all" font="title" colour="title" size="large">
+							<translation id="text" translation_id="538909" type="use" value="Assigned To[COMMENT: AREA: Responsibilities; SUB-AREA: Responsibility Panel; FR: 28191; TONE: Formal; CHARLIMIT: None; NOTE: Title text for staff responsibilities popup, who is this responsibility assigned to?]" />
+						</widget>
+
+					</container>
+				</container>
+
+			</container>
+		</container>
+
+	</container>
+
+</panel>

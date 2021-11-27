@@ -12,7 +12,7 @@
 		<list id="column_table_properties">
 			<!-- Attribute name -->
 			<record index="0" id="name" left="5" >
-				<record id="widget_info" class="text" alignment="left,centre_y" multiline="false" size="small" colour="black"/>
+				<record id="widget_info" class="text" alignment="left,centre_y" multiline="false" size="small" colour="white"/>
 			</record>
 			<!-- Attribute value -->
 			<record index="1" id="val " sort_disabled="true" column_alignment="centre" right="4">

@@ -3,7 +3,7 @@
 
 	<boolean id="should_force_refresh" value="true" />
 
-	<container class="main_contrast_box" red_replacement="grey 100">
+	<container class="main_contrast_box" red_replacement="grey 300">
 		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend" horizontal_offset="0" vertical_offset="0" />
 
 		<container class="vertical_arrange_container" auto_size="vertical" alignment="horizontal" inset="4" gap="0">

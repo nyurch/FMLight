@@ -33,7 +33,7 @@
 					<record index="1">
 						<flags id="alignment" value="right,centre_y"/>
 						<integer id="comp_display_type" value="2"/>
-						<flags id="colour" value="selection"/>
+						<flags id="colour" value="alt text"/>
 					</record>
 				</list>
 			</record>

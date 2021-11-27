@@ -17,7 +17,7 @@
             </attachment_group>
 
             <!-- messages from selling clubs -->
-            <container id="clmc" class="contrast_box">
+            <container id="clmc" class="main_subtle_box" red_replacement="black">
                 <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="30,-1" />
 
                 <container height="30">
@@ -31,8 +31,7 @@
                 <container id="cltc" >
                     <attachment_group class="vertical_arrange_autosize" vertical_offset="6"/>
 
-                    <widget class="text" id="clmt" auto_size="vertical" font_colour="white"/>
-
+                    <widget class="text" id="clmt" auto_size="vertical" colour="text"/>
                 </container>
             </container>
 
