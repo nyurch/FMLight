@@ -96,7 +96,7 @@
 			</container>
 		</container>
 	</container>
-		<container class="main_transparent_box" entity_layout_id="at01" id="at01" colour="title" navigation_container="true" red_replacement="grey 100">
+		<container class="main_transparent_box" entity_layout_id="at01" id="at01" colour="title" navigation_container="true" red_replacement="bg grey blue">
 		<string id="force_title_borders" value="true" />
 		<translation id="title" translation_id="491864" type="use" value="Player Fine List for the season[COMMENT: AREA: Inbox; SUB - AREA: Code of conduct; FR: 9605; TONE: Formal; CHARLIMIT: None; NOTE: Header for player fine list]" />
 		<layout class="stick_to_object_attachment" id="align_top" offset="0" get_side="bottom" set_side="top" target="at00" />

@@ -11,7 +11,7 @@
 		</widget>
 
 		<!-- Advice text -->
-		<widget class="text" id="Atxt" alignment="left,top" size="10" auto_size="none" colour="text">
+		<widget class="text" id="Atxt" alignment="left,top" size="10" auto_size="none" colour="white">
 			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="20"/>
 			<layout class="stick_to_sides_attachment" alignment="vertical" inset="20"/>
 		</widget>
@@ -29,8 +29,8 @@
 			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
 
 
-			<widget class="picture" image_alignment="centre_x,top" file="icons/48px/tick" auto_size="vertical" red_replacement="normal_icon" />
-			<widget class="label" alignment="centre_x,top" size="large" auto_size="vertical">
+			<widget class="picture" image_alignment="centre_x,top" file="icons/48px/tick" auto_size="vertical" red_replacement="white" />
+			<widget class="label" alignment="centre_x,top" size="large" colour="white" auto_size="vertical">
 				<translation id="text" translation_id="416311" type="use" value="Done[COMMENT: FR 16955; backroom advice; string displayed when advice has already been followed/actioned]" />
 			</widget>
 		</container>

@@ -28,7 +28,7 @@
 							<record id="column_widget_properties"/>
 						</record>
 						<record width="-3" minimum_width="100" column_heading="Name">
-							<record id="column_widget_properties" alignment="left,centre_y" colour="white"  size="normal">
+							<record id="column_widget_properties" alignment="left,centre_y" colour="black"  size="normal">
 								<record id="secondary_text_properties" alignment="left,top"  size="normal"/>
 							</record>
 						</record>
@@ -41,8 +41,8 @@
 							<record id="column_widget_properties"/>
 						</record>
 						<record width="-3" minimum_width="100" column_heading="Name">
-							<record id="column_widget_properties" alignment="left,centre_y" colour="faded white" font="title" size="small" gap="0" >
-								<record id="secondary_text_properties" alignment="left,top" size="normal" colour="white"/>
+							<record id="column_widget_properties" alignment="left,centre_y" colour="faded black" font="title" size="small" gap="0" >
+								<record id="secondary_text_properties" alignment="left,top" size="normal" colour="black"/>
 							</record>
 						</record>
 					</list>
@@ -61,7 +61,7 @@
 							<record id="column_widget_properties"/>
 						</record>
 						<record width="-3" minimum_width="100" column_heading="Name">
-							<record id="column_widget_properties" alignment="left,centre_y" colour="white"  size="normal"/>
+							<record id="column_widget_properties" alignment="left,centre_y" colour="black"  size="normal"/>
 						</record>
 					</list>
 				</widget>
@@ -72,8 +72,8 @@
 							<record id="column_widget_properties"/>
 						</record>
 						<record width="-3" minimum_width="100" column_heading="Name">
-							<record id="column_widget_properties" alignment="left,centre_y" colour="faded white" font="title" size="small" gap="0" >
-								<record id="secondary_text_properties" alignment="left,top" size="normal" colour="white"/>
+							<record id="column_widget_properties" alignment="left,centre_y" colour="faded black" font="title" size="small" gap="0" >
+								<record id="secondary_text_properties" alignment="left,top" size="normal" colour="black"/>
 							</record>
 						</record>
 					</list>
@@ -92,7 +92,7 @@
 						<record id="column_widget_properties"/>
 					</record>
 					<record width="-3" minimum_width="100" column_heading="Name">
-						<record id="column_widget_properties" alignment="left,centre_y" colour="white"  size="normal"/>
+						<record id="column_widget_properties" alignment="left,centre_y" colour="black"  size="normal"/>
 					</record>
 				</list>
 			</widget>
@@ -103,8 +103,8 @@
 						<record id="column_widget_properties"/>
 					</record>
 					<record width="-3" minimum_width="100" column_heading="Name">
-						<record id="column_widget_properties" alignment="left,centre_y" colour="faded white" font="title" size="small" gap="0" >
-							<record id="secondary_text_properties" alignment="left,top" size="normal" colour="white"/>
+						<record id="column_widget_properties" alignment="left,centre_y" colour="faded black" font="title" size="small" gap="0" >
+							<record id="secondary_text_properties" alignment="left,top" size="normal" colour="black"/>
 						</record>
 					</record>
 				</list>
@@ -120,7 +120,7 @@
 			<layout class="fit_children_attachment" alignment="vertical,fill" offset="5"/>
 
 			<widget class="feed_button" id="ChBt" width="45" height="40" event_id="addF" secondary_icon="icons/26px/speech bubble" secondary_icon_alignment="centre" appearance="" alignment="left,top">
-				<record id="secondary_icon_properties" red_replacement="white"/>
+				<record id="secondary_icon_properties" red_replacement="black"/>
 				<record id="modal_popup_properties" >
 					<boolean id="darkened" value="false" />
 					<boolean id="attempt_to_reposition" value="true" />
