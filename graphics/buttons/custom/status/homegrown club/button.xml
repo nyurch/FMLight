@@ -13,6 +13,6 @@
 	<!-- text colour -->
 	<colour id="colour" red="255" green="255" blue="255"/>
 
-	<colour id="red_replacement" name="status_homegrown_nation"/>
+	<colour id="red_replacement" name="status_homegrown_club"/>
 	
 </properties>
