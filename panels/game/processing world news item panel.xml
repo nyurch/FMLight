@@ -1,7 +1,7 @@
 <panel height="90">
   <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
 
-  <container class="main_box" height="90" appearance="boxes/custom/processing/item/paper" red_replacement="world_news_background">
+  <container class="main_box" height="90" appearance="boxes/custom/processing/item/paper" red_replacement="teal 900">
 
     <layout class="arrange_vertical_attachment" layout="20,-1" gap="5" offset="5"/>
     <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>

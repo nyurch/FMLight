@@ -409,7 +409,7 @@
 <!--invert alpha_box_background? -->
 <colour name="background" 																			value="bg"/>
 <colour name="box_background" 																		value="grey 300"/>
-<colour name="light_box_background" 																value="blue 100"/>
+<colour name="light_box_background" 																value="grey 100"/>
 <colour name="dark_box_background" 																	value="grey 400"/>
 <colour name="edit_box_background" 																	value="grey 100"/>
 <colour name="contrast_box_background" 																value="dark red"/>
