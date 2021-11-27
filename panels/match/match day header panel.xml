@@ -149,7 +149,7 @@
                     secondary_icon_enabled="true"
                     secondary_icon_alignment="centre_right, centre_y"
                     font="title"
-                    colour="accent button text">
+                    colour="white">
                     <record id="click_event" event_id="CONT" event_target="glob"/>
                     <attachment class="test_global_attachment" get_property="cont" set_property="hidden" mode="not_equal">
                         <list id="value">

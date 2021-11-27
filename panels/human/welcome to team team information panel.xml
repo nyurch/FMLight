@@ -50,7 +50,7 @@
 				<container>
 					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="26, -1" horizontal_offset="0" vertical_alignment="vertical" vertical_inset="0" horizontal_gap="10" />
 
-					<widget class="picture" file="icons/custom/icon box/report" height="26" scale_picture="true" image_alignment="centre" red_replacement="white" blue_replacement="primary" />
+					<widget class="picture" file="icons/custom/icon box/report" height="26" scale_picture="true" image_alignment="centre" red_replacement="white" blue_replacement="red" />
 
 					<container>
 						<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />

@@ -5,40 +5,36 @@
 <!-- The following colours define the base colours scheme for the skin. The colours are references by other colour names in fm colours.xml -->
 
 <!-- Foreground colours - used for text, icon etc -->
-<colour name="fg lighter" 																	value="rgb(94,70,121)"/>
-<colour name="fg" 																			value="rgb(56,36,78)"/>
-<colour name="fg darker" 																	value="rgb(37,19,55)"/>
-<colour name="fg alpha" 																	value="rgba(0, 0, 0, 0.5)"/>
-<colour name="fg accent" 																	value="rgb(20,141,154)"/>
-<colour name="fg tertiary" 																	value="rgb(20,141,154)"/>
-<!-- 21 -->
-<colour name="fg info" 																		value="rgb(255,255,255)"/>
-
-<colour name="fg range1" 																		value="rgb(183,0,5)" />
-<colour name="fg range2" 																		value="rgb(195,24,0)" />
-<colour name="fg range3" 																		value="rgb(195,30,0)" />
-<colour name="fg range4" 																		value="rgb(203,39,0)" />
-<colour name="fg range5" 																		value="rgb(204,51,0)" />
-<colour name="fg range6" 																		value="rgb(204,70,0)" />
-<colour name="fg range7" 																		value="rgb(196,90,0)" />
-<colour name="fg range8" 																		value="rgb(201,115,0)" />
-<colour name="fg range9" 																		value="rgb(201,141,0)" />
-<colour name="fg range10" 																	value="rgb(208,160,0)" />
-<colour name="fg range11" 																	value="rgb(195,169,0)" />
-<colour name="fg range12" 																	value="rgb(185,174,0)" />
-<colour name="fg range13" 																	value="rgb(171,175,0)" />
-<colour name="fg range14" 																	value="rgb(162,186,0)" />
-<colour name="fg range15" 																	value="rgb(125,174,0)" />
-<colour name="fg range16" 																	value="rgb(87,169,0)" />
-<colour name="fg range17" 																	value="rgb(48,179,0)" />
-<colour name="fg range18" 																	value="rgb(35,184,0)" />
-<colour name="fg range19" 																	value="rgb(0,184,20)" />
-<colour name="fg range20" 																	value="rgb(0,168,63)" />
-<!-- 21 -->
-<colour name="fg positive" 																	value="fg range20"/>
-<colour name="fg alert" 																	value="fg range1"/>
-<colour name="fg negative" 																	value="fg range1"/>
-
+<colour name="fg lighter" 																value="rgb(94,70,121)"/>
+<colour name="fg" 																		value="rgb(56,36,78)"/>
+<colour name="fg darker" 																value="rgb(37,19,55)"/>
+<colour name="fg alpha" 																value="rgba(0, 0, 0, 0.5)"/>
+<colour name="fg accent" 																value="rgb(20,141,154)"/>
+<colour name="fg tertiary" 																value="rgb(20,141,154)"/>
+<colour name="fg info" 																	value="rgb(255,255,255)"/>
+<colour name="fg range1" 																value="rgb(183,0,5)" />
+<colour name="fg range2" 																value="rgb(195,24,0)" />
+<colour name="fg range3" 																value="rgb(195,30,0)" />
+<colour name="fg range4" 																value="rgb(203,39,0)" />
+<colour name="fg range5" 																value="rgb(204,51,0)" />
+<colour name="fg range6" 																value="rgb(204,70,0)" />
+<colour name="fg range7" 																value="rgb(196,90,0)" />
+<colour name="fg range8" 																value="rgb(201,115,0)" />
+<colour name="fg range9" 																value="rgb(201,141,0)" />
+<colour name="fg range10" 																value="rgb(208,160,0)" />
+<colour name="fg range11" 																value="rgb(195,169,0)" />
+<colour name="fg range12" 																value="rgb(185,174,0)" />
+<colour name="fg range13" 																value="rgb(171,175,0)" />
+<colour name="fg range14" 																value="rgb(162,186,0)" />
+<colour name="fg range15" 																value="rgb(125,174,0)" />
+<colour name="fg range16" 																value="rgb(87,169,0)" />
+<colour name="fg range17" 																value="rgb(48,179,0)" />
+<colour name="fg range18" 																value="rgb(35,184,0)" />
+<colour name="fg range19" 																value="rgb(0,184,20)" />
+<colour name="fg range20" 																value="rgb(0,168,63)" />
+<colour name="fg positive" 																value="fg range20"/>
+<colour name="fg alert" 																value="fg range1"/>
+<colour name="fg negative" 																value="fg range1"/>
 <colour name="fg red lighter" 														    value="red 600" />
 <colour name="fg red" 																	value="red 700" />
 <colour name="fg red darker" 															value="red 800" />
@@ -78,7 +74,6 @@
 <colour name="bg" 																		value="rgb(240,240,240)"/>
 <colour name="bg darker" 																value="rgb(220,220,220)"/>
 <colour name="bg alpha" 																value="rgba(255,255,255,0.8)"/>
-<!-- 21 -->
 <colour name="bg info" 																	value="rgb(39,103,192)"/>
 <colour name="bg positive" 																value="rgb(16,165,68)"/>
 <colour name="bg alert" 																value="rgb(223,126,0)"/>
@@ -86,27 +81,26 @@
 <colour name="bg tertiary" 																value="rgb(255,255,255)"/>
 <colour name="bg tertiary darker" 														value="rgb(183,170,194)"/>
 <colour name="bg negative" 																value="rgb(182,40,40)"/>
-
-<colour name="bg range1" 																		value="rgb(255,84,84)" />
-<colour name="bg range2" 																		value="rgb(255,92,78)" />
-<colour name="bg range3" 																		value="rgb(251,96,72)" />
-<colour name="bg range4" 																		value="rgb(255,108,73)" />
-<colour name="bg range5" 																		value="rgb(255,122,77)" />
-<colour name="bg range6" 																		value="rgb(255,135,71)" />
-<colour name="bg range7" 																		value="rgb(255,159,78)" />
-<colour name="bg range8" 																		value="rgb(255,178,74)" />
-<colour name="bg range9" 																		value="rgb(255,202,76)" />
-<colour name="bg range10" 																	value="rgb(255,214,79)" />
-<colour name="bg range11" 																	value="rgb(247,223,68)" />
-<colour name="bg range12" 																	value="rgb(248,238,76)" />
-<colour name="bg range13" 																	value="rgb(239,243,59)" />
-<colour name="bg range14" 																	value="rgb(196,222,22)" />
-<colour name="bg range15" 																	value="rgb(168,222,29)" />
-<colour name="bg range16" 																	value="rgb(147,221,32)" />
-<colour name="bg range17" 																	value="rgb(86,221,36)" />
-<colour name="bg range18" 																	value="rgb(73,230,35)" />
-<colour name="bg range19" 																	value="rgb(38,242,60)" />
-<colour name="bg range20" 																	value="rgb(10,255,111)" />
+<colour name="bg range1" 																value="rgb(255,84,84)" />
+<colour name="bg range2" 																value="rgb(255,92,78)" />
+<colour name="bg range3" 																value="rgb(251,96,72)" />
+<colour name="bg range4" 																value="rgb(255,108,73)" />
+<colour name="bg range5" 																value="rgb(255,122,77)" />
+<colour name="bg range6" 																value="rgb(255,135,71)" />
+<colour name="bg range7" 																value="rgb(255,159,78)" />
+<colour name="bg range8" 																value="rgb(255,178,74)" />
+<colour name="bg range9" 																value="rgb(255,202,76)" />
+<colour name="bg range10" 																value="rgb(255,214,79)" />
+<colour name="bg range11" 																value="rgb(247,223,68)" />
+<colour name="bg range12" 																value="rgb(248,238,76)" />
+<colour name="bg range13" 																value="rgb(239,243,59)" />
+<colour name="bg range14" 																value="rgb(196,222,22)" />
+<colour name="bg range15" 																value="rgb(168,222,29)" />
+<colour name="bg range16" 																value="rgb(147,221,32)" />
+<colour name="bg range17" 																value="rgb(86,221,36)" />
+<colour name="bg range18" 																value="rgb(73,230,35)" />
+<colour name="bg range19" 																value="rgb(38,242,60)" />
+<colour name="bg range20" 																value="rgb(10,255,111)" />
 
 <colour name="bg red lighter" 															value="red 200" />
 <colour name="bg red" 																	value="red 300" />
@@ -146,29 +140,29 @@
 <!-- These colours are used to recolour the appearance graphics used throughout the game, by replacing the red, green and blues of the graphics. -->
 <!-- This allows fast creation of different colour schemes without having to modify and re-export the graphic assets -->
 <!-- Special colours -->
-<colour name="match yellow card" 						value="yellow 900"/>
+<colour name="match yellow card" 														value="yellow 900"/>
 
 <!-- Match feed colours -->
-<colour name="match_feed_disallowed" 					value="red 300"/>
-<colour name="match_feed_goal" 							value="blue grey 900"/>
-<colour name="match_feed_foul" 							value="blue grey 900"/>
-<colour name="match_feed_yellow_card" 					value="yellow 500"/>
-<colour name="match_feed_red_card" 						value="red 700"/>
-<colour name="match_feed_important_score" 				value="blue 600"/>
-<colour name="match_feed_event" 						value="green 400"/>
-<colour name="match_feed_serious_injury" 				value="red 500"/>
-<colour name="match_feed_slight_injury" 				value="amber 800"/>
+<colour name="match_feed_disallowed" 													value="red 300"/>
+<colour name="match_feed_goal" 															value="blue grey 900"/>
+<colour name="match_feed_foul" 															value="blue grey 900"/>
+<colour name="match_feed_yellow_card" 													value="yellow 500"/>
+<colour name="match_feed_red_card" 														value="red 700"/>
+<colour name="match_feed_important_score" 												value="blue 600"/>
+<colour name="match_feed_event" 														value="green 400"/>
+<colour name="match_feed_serious_injury" 												value="red 500"/>
+<colour name="match_feed_slight_injury" 												value="amber 800"/>
 
 <!-- Match feed secondary colours -->
-<colour name="match_feed_disallowed_secondary" 			value="red 700"/>
-<colour name="match_feed_goal_secondary" 				value="blue 400"/>
-<colour name="match_feed_foul_secondary" 				value="yellow 300"/>
-<colour name="match_feed_yellow_card_secondary" 		value="yellow 800"/>
-<colour name="match_feed_red_card_secondary" 			value="red 300"/>
-<colour name="match_feed_important_score_secondary" 	value="blue 200"/>
-<colour name="match_feed_event_secondary" 				value="green 300"/>
-<colour name="match_feed_serious_injury_secondary" 		value="red 900"/>
-<colour name="match_feed_slight_injury_secondary" 		value="amber 400"/>
+<colour name="match_feed_disallowed_secondary" 											value="red 700"/>
+<colour name="match_feed_goal_secondary" 												value="blue 400"/>
+<colour name="match_feed_foul_secondary" 												value="yellow 300"/>
+<colour name="match_feed_yellow_card_secondary" 										value="yellow 800"/>
+<colour name="match_feed_red_card_secondary" 											value="red 300"/>
+<colour name="match_feed_important_score_secondary" 									value="blue 200"/>
+<colour name="match_feed_event_secondary" 												value="green 300"/>
+<colour name="match_feed_serious_injury_secondary" 										value="red 900"/>
+<colour name="match_feed_slight_injury_secondary" 										value="amber 400"/>
 
 <!-- Lines -->
 <colour name="goalkeeper_line" red="150" green="0" blue="0" />
@@ -187,27 +181,27 @@
 <colour name="star rating unknown" red="28" green="28" blue="29" />
 
 <!--scout report pro con colour-->
-<colour name="pro low" 									value="lime 800" />
-<colour name="pro mid" 									value="green 600" />
-<colour name="pro high" 								value="green a700" />
-<colour name="con low" 									value="orange 800" />
-<colour name="con mid" 									value="deep orange 800" />
-<colour name="con high" 								value="red 800" />
+<colour name="pro low" 																	value="lime 800" />
+<colour name="pro mid" 																	value="green 600" />
+<colour name="pro high" 																value="green 900" />
+<colour name="con low" 																	value="orange 800" />
+<colour name="con mid" 																	value="red 600" />
+<colour name="con high" 																value="red 900" />
 
 <!-- Attribute colours -->
-<colour name="low attribute" 							value="orange"/>
-<colour name="normal attribute" 						value="orange"/>
-<colour name="good attribute" 							value="fg range14" />
-<colour name="excellent attribute" 						value="fg range20" />
-<colour name="unknown attribute background" 			value="bg darker"/>
-<colour name="low attribute background" 				value="bg darker"/>
-<colour name="normal attribute background" 				value="bg lighter"/>
-<colour name="good attribute background" 				value="bg blue darker" />
-<colour name="excellent attribute background" 			value="bg range20" />
-<colour name="special attribute" 						value="fg blue" />
-<colour name="attribute label" 							value="fg" />
-<colour name="special attribute label" 					value="fg" />
-<colour name="profile extra text" 						value="fg" />
+<colour name="low attribute" 															value="orange"/>
+<colour name="normal attribute" 														value="green 300"/>
+<colour name="good attribute" 															value="green 600" />
+<colour name="excellent attribute" 														value="green 900" />
+<colour name="unknown attribute background" 											value="bg darker"/>
+<colour name="low attribute background" 												value="bg darker"/>
+<colour name="normal attribute background" 												value="bg lighter"/>
+<colour name="good attribute background" 												value="bg blue darker" />
+<colour name="excellent attribute background" 											value="bg range20" />
+<colour name="special attribute" 														value="fg blue" />
+<colour name="attribute label" 															value="fg" />
+<colour name="special attribute label" 													value="fg" />
+<colour name="profile extra text" 														value="fg" />
 
 <!-- Hint Box -->
 <colour name="hint_background" red="0" green="128" blue="128"/>

@@ -53,7 +53,7 @@
     </widget>
 
 <!-- For Background support adjust transparency value. 0.0 is transparent, 1 is solid, 0.5 is 50% etc... This covers the main content area but not sidebar -->
-    <widget class="inner_contrast_box" appearance="boxes/custom/interface/content/paper" transparency="0.9">	<!-- content -->
+    <widget class="inner_contrast_box" appearance="boxes/custom/interface/content/paper" transparency="0.95">	<!-- content -->
         <layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="mai1"/>
         <layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="mai1"/>
         <layout class="stick_to_object_attachment" id="align_right" get_side="right" use_recursive_search="true" set_side="left" target="side"/>

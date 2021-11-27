@@ -80,7 +80,7 @@
                 <attachment class="vertical_arrange" vertical_layout="218,350" vertical_gap="10"/>
                 <container class="vertical_arrange_container" gap="10">
                     <container height="67" class="player_transfer_information_small_panel" file="none">
-                        <attachment class="horizontal_arrange" horizontal_layout="204,-1,-1,-1" horizontal_gap="10"/>
+                        <attachment class="horizontal_arrange" horizontal_layout="190,30,-1,-1,-1,-1,-1" horizontal_gap="10"/>
                         <record id="object_property" get_property="objt" set_property="objt"/>
                         <container class="player_transfer_information_small_panel" file="none">
                             <attachment class="horizontal_arrange" horizontal_layout="-1,30" horizontal_gap="10"/>
@@ -124,7 +124,35 @@
                                 </container>
                             </container>
                         </container>
-<container default_width="110" priority="6">
+
+				<container priority="1">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+                    <widget class="age_label" size="13" font="lcsb" colour="text" alignment="middle,bottom" multiline="false">
+                        <record id="object_property" get_property="PSag" />
+                    </widget>
+                    <widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+                        <translation id="text" translation_id="227770" type="use" value="Age[comment - person age]" />
+                    </widget>
+                </container>
+                <container priority="2">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0" multiline="false"/>
+                    <widget class="wage_label" format="2" size="13" font="lcsb" colour="text" alignment="middle,bottom">
+                        <record id="object_property" get_property="Pcwg" />
+                    </widget>
+                    <widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+                        <translation id="text" translation_id="227799" type="use" value="Wage" />
+                    </widget>
+                </container>
+                <container priority="4">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+                    <widget class="contract_expiry_button" size="13" font="lcsb" colour="text" alignment="middle,bottom" multiline="false">
+                        <record id="object_property" get_property="Pcex" />
+                    </widget>
+                    <widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+                        <translation id="text" translation_id="383287" type="use" value="Contract End" />
+                    </widget>
+                </container>
+                <container priority="6">
                     <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
                     <widget class="global_reputation_stars_label" alignment="centre_x,centre_y">
                         <layout class="stick_to_sides_attachment" alignment="bottom" inset="31"/>
@@ -134,7 +162,7 @@
                         <translation id="text" translation_id="227963" type="use" value="Reputation" />
                     </widget>
                 </container>
-                <container default_width="120" priority="3">
+                <container priority="3">
                     <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
                     <widget class="scout_stars_label" size="13" font="lcsb" colour="text" alignment="centre_x,centre_y" hint_if_no_value="-" multiline="false">
                         <layout class="stick_to_sides_attachment" alignment="bottom" inset="31"/>
@@ -144,7 +172,7 @@
                         <translation id="text" translation_id="310135" type="use" value="Current Ability[COMMENT: contract offer screen - comments table]" />
                     </widget>
                 </container>
-                <container default_width="120" priority="4">
+                <container priority="4">
                     <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
                     <widget class="scout_stars_label" size="13" font="lcsb" colour="text" alignment="centre_x,centre_y" hint_if_no_value="-" multiline="false">
                         <layout class="stick_to_sides_attachment" alignment="bottom" inset="31"/>
@@ -154,13 +182,67 @@
                         <translation id="text" translation_id="310136" type="use" value="Potential Ability[COMMENT: contract offer screen - comments table]" />
                     </widget>
                 </container>
+
                     </container>
                     <widget height="141" class="player_scout_reports_panel" file="none">
                         <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
                         <record id="object_property" get_property="objt" set_property="objt"/>
                         <container id="main">
-                            <attachment class="horizontal_arrange" horizontal_layout="-1" horizontal_gap="10"/>
+                            <attachment class="horizontal_arrange" horizontal_layout="210,-1" horizontal_gap="10"/>
+                            <container class="main_box_no_margin" id="SMbx" appearance="boxes/custom/contrast/paper" red_replacement="red 900">
+                                <attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="15" horizontal_inset="15"/>
 
+                                <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+                                <!-- Playing time panel-->
+                                <container id="plaC">
+                                   <attachment_group class="vertical_arrange_autosize" vertical_alignment="top" />
+
+                                   <container>
+                                   <attachment_group class="horizontal_arrange_vertical_autosize_centre" />
+                                   <!-- Linked header -->
+                                   <widget class="text" alignment="left,centre_y" auto_size="all" size="large" style="bold" colour="white">
+                                   <translation id="text" translation_id="491902" type="use" value="Playing Time Pathway[COMMENT: AREA: Splash Screen; SUB-AREA: What's New; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: splash screen indicating what's new in this version of the game]" />
+                                   </widget>
+                                   </container>
+                                   <!-- Current Playing Time -->
+                                   <container>
+                                   <attachment_group class="horizontal_arrange_vertical_autosize_centre" />
+
+                                      <widget class="text" alignment="left,centre_y" auto_size="all" size="large" style="bold" colour="yellow">
+                                      <translation id="text" translation_id="492006" type="use" value="Actual:[COMMENT: AREA: Playing Time for Players; SUB-AREA: Contract Negotiations; FR-BN: 25975; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: concerns how much playing time a player is being promised; shorter version of Actual Playing Time]" />
+                                      </widget>
+
+                                      <widget class="client_object_property_panel" property="Pctp" auto_size="all">
+                                      <record id="object_property">
+                                      <integer id="get_property" value="objt" />
+                                      <integer id="set_property" value="objt" />
+                                      </record>
+                                      <record id="widget_properties" alignment="left,centre_y" auto_size="all" size="large" style="bold" spec="text" colour="yellow" />
+                                      </widget>
+
+                                    </container>
+
+                                    <!-- Agreed Playing Time -->
+                                    <container>
+                                    <attachment_group class="horizontal_arrange_vertical_autosize_centre" />
+
+                                      <widget class="text" auto_size="all" alignment="left,centre_y" colour="white" size="small">
+                                      <translation id="text" translation_id="492007" type="use" value="Agreed:[COMMENT: AREA: Player Happiness; SUB-AREA: Contract Promises; FR-BN: 14013; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: contract promise type; shorter version of Agreed Playing Time]" />
+                                      </widget>
+
+                                      <widget class="client_object_property_panel" property="Pcpt" auto_size="all">
+                                      <record id="object_property">
+                                      <integer id="get_property" value="objt" />
+                                      <integer id="set_property" value="objt" />
+                                      </record>
+                                      <record id="widget_properties" alignment="left,centre_y" auto_size="all" colour="white" size="small" />
+                                      </widget>
+
+                                    </container>
+
+                                </container>
+
+                            </container>
                             <container>
                                 <attachment class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_gap="10" />
                                 <container class="main_subtle_box_no_margin">

@@ -15,15 +15,11 @@
     <widget file="player/player attribute analyser panel" id="paAn" class="client_object_viewer_xml_panel" late_loading="true">
         <translation id="title" translation_id="334971" type="use" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" />
     </widget>
-    <widget class="client_object_viewer_xml_panel" id="pccp" file="player/player overview panels/player card">
-        <translation id="title" translation_id="323669" type="use" value="Player Information" />
-        <record id="object_property" get_property="objt" set_property="objt"/>
-    </widget>
     <widget class="person_information_panel" id="pelp" file="player/player overview panels/player eligibility small" late_loading="true">
         <translation id="title" translation_id="260816" type="use" value="Eligibility" />
         <record id="object_property" get_property="objt" set_property="objt"/>
     </widget>
-    <widget class="player_history_injury_panel" id="phis" file="player/player overview panels/player history injury small" late_loading="true">
+    <widget class="player_history_injury_panel" id="phis" file="player/player history injury" late_loading="true">
         <translation id="title" translation_id="450787" type="use" value="Injury History" />
         <record id="object_property" get_property="objt" set_property="objt"/>
     </widget>
