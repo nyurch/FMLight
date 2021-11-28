@@ -269,6 +269,15 @@
 <colour name="agent journo relationship hatred"         value="red 900"/>
 <colour name="agent journo relationship none"           value="black"/>
 
+<!--dynamics relationships-->
+<colour name="very close relationship" 					value="green 900"/>
+<colour name="close relationship" 						value="green 900" />
+<colour name="aquaintance relationship" 				value="green 700" />
+<colour name="contact relationship" 					value="text" />
+<colour name="rival relationship" 						value="orange 500" />
+<colour name="adversary relationship" 					value="red 500" />
+<colour name="distant relationship" 					value="red 900" />
+
 <!-- Duty colours -->
 <colour name="duty attack"      						value="white"/>
 <colour name="duty support"     						value="white"/>
