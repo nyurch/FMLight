@@ -10,19 +10,19 @@
     <container id="cPlb">
 
       <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_gap="0" />
-        <widget class="text" auto_size="all" alignment="centre" colour="faded white">
+        <widget class="text" auto_size="all" alignment="centre" colour="white">
           <translation id="text" translation_id="466506" type="use" value="Currently Partnered[COMMENT: FR 18610, get_partnership_string, string reflecting the partnership existing between two players]" />
         </widget>
     </container>
 
 
-	<widget class="text" id="poDS" auto_size="vertical" hidden="true" colour="text">
+	<widget class="text" id="poDS" auto_size="vertical" hidden="true" colour="white">
 		  
 	</widget>
     <container>
         <layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
       <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
-      <widget class="text" id="dsCO" colour="faded text" auto_size="vertical" />
+      <widget class="text" id="dsCO" colour="faded white" auto_size="vertical" />
       <container id="ovLB" auto_size="vertical" />
     </container>
 

@@ -1,6 +1,4 @@
 <record>
-	<!-- resource manager options -->
-
-	<!-- preload the stuff in this folder -->
+	<boolean id="store_resource_list" value="true"/>
 	<boolean id="preload" value="true"/>
 </record>
