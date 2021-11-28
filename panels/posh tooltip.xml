@@ -1,5 +1,5 @@
+<!-- changed colour from white -->
 <panel>
-<!-- changed text from white to hint -->
 
 	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
 	<layout class="fit_children_attachment" alignment="all" offset="0"/>
@@ -10,7 +10,7 @@
 		<layout class="centre_in_parent_attachment" alignment="horizontal" apply_to_children="true" />
 		<layout class="fit_children_attachment" alignment="horizontal" offset="0"/>
 
-		<widget class="text" id="titl" colour="hint" auto_size="all" auto_size_maximum_width="400" font="semibold" alignment="centre"/>
-		<widget class="text" id="body" colour="hint" auto_size="all" auto_size_maximum_width="400" alignment="centre"/>
+		<widget class="text" id="titl" colour="text" auto_size="all" auto_size_maximum_width="400" font="semibold" alignment="centre"/>
+		<widget class="text" id="body" colour="text" auto_size="all" auto_size_maximum_width="400" alignment="centre"/>
 	</container>
 </panel>
