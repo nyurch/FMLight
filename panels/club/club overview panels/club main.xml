@@ -36,8 +36,15 @@
 			</widget>
 		</container>
 		</container>
-		<!--Selector-->
-		<container class="client_object_viewer_selector_panel" id="cos2" save_session_state="true" default_item="rafp" file="club/club overview panels/info selector" default_width="-1" minimum_width="440" priority="1"/>
+		<!--Matches-->
+		<container class="vertical_adaptive_container" default_width="600" priority="4" inset="0" offset="0" gap="1" mode="distribute_equally">
+            <container class="club_overview_team_results_panel" file="club/club overview panels/club overview team calendar results">
+                <record id="object_property" get_property="objt" set_property="objt"/>
+            </container>
+            <container class="club_overview_team_results_panel" file="club/club overview panels/club overview team calendar fixtures">
+                <record id="object_property" get_property="objt" set_property="objt"/>
+            </container>
+        </container>
 		<!--Stadium-->
         <container class="vertical_adaptive_container" default_width="600" priority="4" inset="0" offset="0" gap="1" mode="distribute_equally">
 			<layout class="stick_to_sides_attachment" apply_to_children="true"/>

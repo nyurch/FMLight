@@ -7,7 +7,7 @@
             <record id="object_property" get_property="mnpc" set_property="file"/>
         </widget>
         <container>
-            <attachment class="horizontal_arrange" horizontal_layout="250,-1" alignment="centre_y"/>
+            <attachment class="horizontal_arrange" horizontal_layout="140,-1" alignment="all"/>
             <container>
                 <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
                 <layout class="arrange_vertical_attachment" alignment="middle" gap="0"/>
@@ -34,7 +34,7 @@
                     <record id="object_property" get_property="Cdiv"/>
                 </widget>
             </container>
-            <container class="horizontal_adaptive_container" alignment="right" gap="25" offset="20" inset="0">
+            <container class="horizontal_adaptive_container" alignment="left">
                 <container default_width="450" priority="2">
                     <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
 					<widget class="club_overview_kits_panel" file="none">
@@ -78,7 +78,7 @@
 						</container>
 					</widget>
                 </container>
-                <container default_width="740" priority="1">
+                <container default_width="1050" priority="1">
                     <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
 						<widget class="team_container_honours_panel" honour_subpanel_filename="club/club overview panels/trophy info" file="club/club overview panels/trophies" default_width="-2" priority="4">
 							<record id="object_property" get_property="objt" set_property="objt" /> 
