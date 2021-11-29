@@ -6,35 +6,83 @@
             <layout class="stick_to_sides_attachment" alignment="vertical" inset="10"/>
             <record id="object_property" get_property="mnpc" set_property="file"/>
         </widget>
-        <container>
-            <attachment class="horizontal_arrange" horizontal_layout="140,-1" alignment="all"/>
-            <container>
+        <container >
+            <attachment class="horizontal_arrange" horizontal_layout="250,-1"/>
+            <container class="horizontal_adaptive_container" vertical_alignment="centre">
                 <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
-                <layout class="arrange_vertical_attachment" alignment="middle" gap="0"/>
-                <record id="default_properties" size="9" colour="text"/>
-                <widget class="label" id="Csnm" height="30" font="value" size="17" wants_mouse_events="false">
-                    <record id="object_property" get_property="Csnm"/>
-                </widget>
-                <widget class="label" height="16" alignment="left,top" font="title" colour="title">
-                    <translation id="text" translation_id="257214" type="use" value="Year Founded"/>
-                </widget>
-                <widget class="label" height="20" font="lcsb" colour="red 900" alignment="left,bottom">
-                    <record id="object_property" get_property="Cyfn"/>
-                </widget>
-				<widget class="professional_status_label" height="18" font="lcsb" colour="text" alignment="left,bottom">
-                    <record id="object_property" get_property="Cprs"/>
-                </widget>
-                <widget class="club_finances_description_text" height="18" font="lcsb" colour="text" alignment="left,bottom" short_name="true">
-                    <record id="object_property" get_property="CfiD"/>
-                </widget>
-                <widget height="20" class="nation_button" font="lcsb" colour="text" icon_alignment="right,centre_y">
-                    <record id="object_property" get_property="Dnat"/>
-                </widget>
-                <widget height="18" class="comp_button" font="lcsb" colour="text" icon_enabled="false" alignment="left,bottom">
-                    <record id="object_property" get_property="Cdiv"/>
-                </widget>
+
+
+                    <widget class="table" layout="130,-3" mode="fill_rows,stripe_rows" fixed_size_rows="true" row_height="32">
+
+                        <record id="default_properties" alignment="left,centre_y"/>
+
+                        <list id="column_table_properties">
+                            <record index="0" left="8"/>
+                            <record index="1" right="8"/>
+                        </list>
+
+                        <list id="column_widget_properties">
+                            <record index="0" colour="faded text"/>
+                        </list>
+
+                        <!-- Year Founded -->
+                        <widget class="label" row="0" col="0">
+                            <record id="object_property" get_property="Cyfn" name="true"/>
+                        </widget>
+
+                        <widget class="dashed_number_label" row="0" col="1" NumF="0">
+                            <record id="object_property" get_property="Cyfn"/>
+                        </widget>
+
+                        <!-- Professional Status -->
+                        <widget class="label" colour="faded text" row="1" col="0">
+                            <translation id="text" translation_id="242853" type="use" value="Status" />
+                        </widget>
+
+                        <widget class="professional_status_label" row="1" col="1" alignment="left,centre_y">
+                            <record id="object_property" get_property="Cprs"/>
+                        </widget>
+
+                        <!-- Reputation -->
+                        <widget class="label" colour="faded text" row="2" col="0">
+                            <record id="object_property" get_property="Csta" name="true"/>
+                        </widget>
+
+                        <widget class="club_reputation_stars_label" row="2" col="1" alignment="left,centre_y">
+                            <record id="object_property" get_property="Csta"/>
+                        </widget>
+
+                        <!-- Finances -->
+                        <widget class="label" colour="faded text" row="3" col="0">
+                            <record id="object_property" get_property="Csfs" name="true"/>
+                        </widget>
+
+                        <widget class="financial_status_label" row="3" col="1" alignment="left,centre_y">
+                            <record id="object_property" get_property="Csfs"/>
+                        </widget>
+
+                        <!-- Media Prediction -->
+                        <widget class="label" row="4" col="0">
+                            <record id="object_property" get_property="CmeD" name="true"/>
+                        </widget>
+
+                        <widget class="media_expectation_text" row="4" col="1">
+                            <record id="object_property" get_property="CmeD"/>
+                        </widget>
+
+                        <!-- Media Prediction -->
+                        <widget class="label" row="5" col="0">
+                            <record id="object_property" get_property="Cyos" name="true"/>
+                        </widget>
+
+                        <widget class="youth_coaching_status_label" row="5" col="1">
+                            <record id="object_property" get_property="Cyos"/>
+                        </widget>
+
+                    </widget>
+
             </container>
-            <container class="horizontal_adaptive_container" alignment="left">
+            <container class="horizontal_adaptive_container" alignment="left" gap="25" offset="20" inset="0">
                 <container default_width="450" priority="2">
                     <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
 					<widget class="club_overview_kits_panel" file="none">
@@ -78,7 +126,7 @@
 						</container>
 					</widget>
                 </container>
-                <container default_width="1050" priority="1">
+                <container default_width="900" priority="1">
                     <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
 						<widget class="team_container_honours_panel" honour_subpanel_filename="club/club overview panels/trophy info" file="club/club overview panels/trophies" default_width="-2" priority="4">
 							<record id="object_property" get_property="objt" set_property="objt" /> 
