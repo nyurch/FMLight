@@ -1,19 +1,11 @@
+<!-- added skin style to recolour from white -->
 <panel>
+<string id="skin_style" value="edit_box" />	<!-- added to recolour text -->
   <!--edit box-->
-  <widget id="find" class="edit_box" appearance="edit boxes/custom/interface/search/box" spec="text" size="xlarge" event_delay="100" style="semi_bold" escape_event="cloe" allow_context_menu="false" clear_text_event="DELE" show_clear_text_icon="true" colour="black">
+  <widget id="find" class="edit_box" appearance="edit boxes/custom/interface/search/box" spec="text" size="xlarge" event_delay="100" style="semi_bold" escape_event="cloe" allow_context_menu="false" clear_text_event="DELE" show_clear_text_icon="true">
     <attachment class="max_length_attachment" length="130"/>
 		<boolean id="disable_profanity_check" value="true" />
     <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
-
-    <!-- set text colour to titlebar text colour -->
-    <!--<record id="object_property">
-      <list id="get_properties">
-        <record>
-          <integer id="get_property" value="ttcl" />
-          <integer id="set_property" value="colr" />
-        </record>
-      </list>
-    </record>-->
 
     <!-- sent the return/enter key event to the screen: it causes a quick search to be performed -->
     <event id="return_event">
