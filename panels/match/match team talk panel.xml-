@@ -9,7 +9,7 @@
             <global id="horizontal_inset" name="ui.main_box_gap"/>
         </attachment_group>
         <animation class="fade_animation" start_value="0" end_value="1" duration="0.5" delay="0" end_mode="hold_end" trigger_id="hidden" trigger_start="false" trigger_end="true"/>
-
+   
         <!-- top row of players - numbers 8-11 -->
         <container id="topP">
             <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_gap="3" vertical_inset="0"/>
@@ -139,9 +139,9 @@
         <container>
             <attachment_group class="horizontal_arrange" horizontal_alignment="middle,extend"/>
 
-            <container width="70">
-                <layout class="show_medium_horizontal" min_value="1920"/>
-            </container>
+           <container width="70">
+              <layout class="show_medium_horizontal" min_value="1920"/>
+           </container>
 
             <!-- left hand side column of players - numbers 1-7 -->
             <container>
@@ -209,7 +209,7 @@
                                 <integer id="true_value" value="675"/>
                                 <integer id="false_value" value="675"/>
                             </record>
-                            <record>
+                             <record>
                                 <flags id="alignment" value="horizontal"/>
                                 <integer id="min_value" value="1466"/>
                                 <integer id="max_value" value="1600"/>
@@ -236,10 +236,10 @@
                     <container>
                         <attachment_group class="vertical_arrange" vertical_alignment="middle" horizontal_alignment="horizontal" horizontal_inset="20"/>
 
-                        <container class="inner_subtle_box" appearance="boxes/custom/speech bubble/bottom/paper" id="prev" hidden="true" red_replacement="bg accent">
+                        <container class="inner_subtle_box" appearance="boxes/custom/speech bubble/bottom/paper" id="prev" hidden="true" red_replacement="grey 200">
                             <attachment_group class="vertical_arrange_autosize"/>
 
-                            <widget class="text" id="cnvr" alignment="centre" auto_size="vertical" colour="white"/>
+                            <widget class="text" id="cnvr" alignment="centre" auto_size="vertical" colour="accent"/>
                         </container>
                     </container>
 
@@ -274,7 +274,7 @@
                                     <integer id="true_value" value="675"/>
                                     <integer id="false_value" value="675"/>
                                 </record>
-                                <record>
+                                 <record>
                                     <flags id="alignment" value="vertical"/>
                                     <integer id="min_value" value="1080"/>
                                     <integer id="max_value" value="1200"/>
@@ -307,7 +307,7 @@
 
                             <widget class="spacer" width="25"/>
 
-                            <widget class="radio_button" show_button_appearance="true" icon="none" id="ttRm" auto_size="all" click_event="ttRm" appearance="switches/toggle/left/button">
+                            <widget class="radio_button" show_button_appearance="true" icon="none" id="ttRm" auto_size="all" click_event="ttRm" appearance="switches/toggle/left/button" red_replacement="accent">
                                 <translation id="text" translation_id="515087" type="use" value="Room[COMMENT: AREA: Team talk; SUB-AREA: Team talk; FR-BN: 30896; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: Button label to select which group of players to talk to]"/>
                             </widget>
 
@@ -429,20 +429,20 @@
     </container>
 
     <container background_colour="bg" height="70" navigation_container="true">
-        <attachment_group class="horizontal_arrange" horizontal_alignment="middle, fill" horizontal_offset="4"/>
-        <animation class="translate_animation" start_value="0, 1" end_value="0, 0" duration="0.3" delay="0" end_mode="hold_end" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" no_clipping="true"/>
+       <attachment_group class="horizontal_arrange" horizontal_alignment="middle, fill" horizontal_offset="4"/>
+       <animation class="translate_animation" start_value="0, 1" end_value="0, 0" duration="0.3" delay="0" end_mode="hold_end" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" no_clipping="true"/>
 
         <container>
             <attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="left" vertical_alignment="vertical" horizontal_gap="6"/>
-            
+
             <!-- back to 1st half/full time review -->
             <widget class="icon_button" id="HaRv" auto_size="all" click_event="HaRv" appearance="buttons/subtle/normal/button" icon="icons/26px/back" hidden="true"/>
-                
+
             <!-- tactics link -->
             <widget class="icon_button" id="TcLk" auto_size="all" click_event="ShTD" appearance="buttons/subtle/normal/button" icon="icons/16px/tactics" secondary_icon_enabled="true" secondary_icon="icons/16px/maximise">
                 <translation id="text" translation_id="230056" type="use" value="Tactics"/>
             </widget>
-
+            
             <!-- team talk staff responsibility widget -->
             <widget class="widget_popup_button" id="ttRs" auto_size="horizontal" appearance="buttons/subtle/normal/button" icon="icons/16px/staff">
                 <translation id="text" translation_id="515090" type="use" value="Responsibility[COMMENT: AREA: Team talk; SUB-AREA: Team talk; FR-BN: 30896; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: text showing who has the responsibility for delivering team talks]"/>
@@ -465,13 +465,13 @@
         </widget>
 
         <container>
-            <attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="right" vertical_alignment="vertical" horizontal_gap="8"/>
+             <attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="right" vertical_alignment="vertical" horizontal_gap="8"/>
 
             <!-- handover widget -->
             <widget class="match_hand_over_widget" id="hdOa" height="50" select_event="TmTl">
                 <record id="object_property" get_property="objt" set_property="objt"/>
             </widget>
         </container>
-    </container>
+     </container>
 
 </panel>

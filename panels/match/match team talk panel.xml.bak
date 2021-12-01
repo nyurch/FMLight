@@ -345,12 +345,12 @@
                                 <flags id="row_appearance" value="buttons/subtle/flex/button"/>
                                 <list id="column_widget_properties">
                                     <record index="0" alignment="left, centre_y" auto_size="vertical"/>
-                                    <record index="1" alignment="centre" colour="text"/>
+                                    <record index="1" alignment="centre"/>
                                 </list>
                                 <list id="column_table_properties">
                                     <record index="0" left="10" top="8" bottom="8" right="0"/>
                                     <record index="1" left="8" top="8" bottom="8" right="0">
-                                        <record id="widget_info" class="button" font="title" colour="white" size="small" auto_size="all" red_replacement="bg accent" appearance="labels/standard/label"/>
+                                        <record id="widget_info" class="button" font="title" colour="accent button text" size="small" auto_size="all" red_replacement="bg accent" appearance="labels/standard/label"/>
                                     </record>
                                 </list>
                             </widget>

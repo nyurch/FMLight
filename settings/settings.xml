@@ -371,16 +371,6 @@
 <!--Interaction Bubble-->
 <colour name="recruitment meeting bubble colour"	value="rgb(240,240,240)" />
 
-<!-- Button colours -->
-<colour name="primary_button_text" 				value="bg"/> 	<!-- set to bg when done -->
-<colour name="primary_button" 					value="fg accent"/> 	<!-- not custom but moved here so can change more easily if needed -->
-
-<!-- Base icon colours -->
-<colour name="normal_icon" 																			value="fg"/>
-<colour name="button_icon" 																			value="fg"/>
-<colour name="match_icon" 																			value="fg"/>
-<colour name="ui_header_icons" 																		value="fg"/>
-
 <!-- Base colours -->
 <!--
 <colour name="sidebar text" 																		value="black"/>
@@ -389,12 +379,21 @@
 <colour name="sidebar" 									value="white"/>
 <colour name="continue text" 																		value="white" />
 <colour name="continue text match" 																	value="white" />
-<colour name="standard_button_text" 																value="fg"/>
+<colour name="standard_button_text" 																value="black"/>
+<colour name="standard_button"																		value="black"/>
 <colour name="title" 																				value="fg tertiary" />
 <colour name="text" 																				value="black"/>
 <colour name="faded text" 																			value="fg alpha"/>
 <colour name="faded alt text" 																		value="bg alpha"/>
 <colour name="alt text" 																			value="fg"/>
+<!-- Button colours -->
+<colour name="primary_button_text" 				value="bg"/> 	<!-- set to bg when done -->
+<colour name="primary_button" 					value="fg accent"/> 	<!-- not custom but moved here so can change more easily if needed -->
+<!-- Base icon colours -->
+<colour name="normal_icon" 																			value="black"/>
+<colour name="button_icon" 																			value="black"/>
+<colour name="match_icon" 																			value="black"/>
+<colour name="ui_header_icons" 																		value="black"/>
 
 <!-- Card colours - used for places where the colours are inverted in the default skin. Inbox, Report cards, etc -->
 <colour name="card fg lighter" 														value="rgb(250,250,250)"/>
@@ -432,7 +431,7 @@
 <colour name="match_background" 																	value="bg"/>
 <colour name="subtle_box_background" 																value="white"/>
 <colour name="calendar_cell_border" 																value="fg"/>
-<colour name="pitch_box_background" 																value="green 800"/>
+<colour name="pitch_box_background" 																value="green 700"/>
 <colour name="style_background" 																	value="teal 900"/>
 <colour name="alpha_box_background" 																value="rgb(41,43,50)"/>
 

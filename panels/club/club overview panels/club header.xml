@@ -7,12 +7,12 @@
             <record id="object_property" get_property="mnpc" set_property="file"/>
         </widget>
         <container >
-            <attachment class="horizontal_arrange" horizontal_layout="250,-1"/>
+            <attachment class="horizontal_arrange" horizontal_layout="310,-1"/>
             <container class="horizontal_adaptive_container" vertical_alignment="centre">
                 <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
 
 
-                    <widget class="table" layout="130,-3" mode="fill_rows,stripe_rows" fixed_size_rows="true" row_height="32">
+                    <widget class="table" layout="220,-3" mode="fill_rows,stripe_rows" fixed_size_rows="true" row_height="32">
 
                         <record id="default_properties" alignment="left,centre_y"/>
 
@@ -70,13 +70,13 @@
                             <record id="object_property" get_property="CmeD"/>
                         </widget>
 
-                        <!-- Media Prediction -->
+                        <!-- Youth Facilities -->
                         <widget class="label" row="5" col="0">
-                            <record id="object_property" get_property="Cyos" name="true"/>
+                            <record id="object_property" get_property="Cfc*" name="true"/>
                         </widget>
 
-                        <widget class="youth_coaching_status_label" row="5" col="1">
-                            <record id="object_property" get_property="Cyos"/>
+                        <widget class="youth_facilities_stars_label" row="5" col="1">
+                            <record id="object_property" get_property="Cfc*"/>
                         </widget>
 
                     </widget>
@@ -126,7 +126,7 @@
 						</container>
 					</widget>
                 </container>
-                <container default_width="900" priority="1">
+                <container default_width="840" priority="1">
                     <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
 						<widget class="team_container_honours_panel" honour_subpanel_filename="club/club overview panels/trophy info" file="club/club overview panels/trophies" default_width="-2" priority="4">
 							<record id="object_property" get_property="objt" set_property="objt" /> 

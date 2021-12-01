@@ -13,14 +13,14 @@
 	<record id="font_spec">
 		<flags id="alignment" value="centre"/>
 		<flags id="font" value="fonts/button"/> 
-		<flags id="colour" value="white"/> 
+		<flags id="colour" value="yellow"/> 
 	</record>
 
-	<colour id="red_replacement" name="toggle_button"/>
-	<colour id="green_replacement" name="standard_button_shadow"/>
-	<colour id="blue_replacement" name="toggle_button_border"/>
+	<colour id="red_replacement" name="yellow"/>
+	<colour id="green_replacement" name="yellow"/>
+	<colour id="blue_replacement" name="yellow"/>
 
-	<record id="primary_icon_properties" red_replacement="button_icon" />
-	<record id="secondary_icon_properties" red_replacement="button_icon"/>
+	<record id="primary_icon_properties" red_replacement="yellow" />
+	<record id="secondary_icon_properties" red_replacement="yellow"/>
 	
 </properties>

@@ -15,8 +15,8 @@
 		<flags id="font" value="fonts/button"/> 
 	</record>
 
-	<colour id="red_replacement" name="standard_button"/>
-	<colour id="green_replacement" name="accent"/>
-	<colour id="blue_replacement" name="standard_button_border"/>
+	<colour id="red_replacement" name="yellow"/>
+	<colour id="green_replacement" name="yellow"/>
+	<colour id="blue_replacement" name="yellow"/>
 	
 </properties>
