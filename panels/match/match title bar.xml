@@ -58,6 +58,17 @@
 			<animation class="translate_animation" start_value="1, 0" end_value="0, 0" duration="0.5" delay="0.8" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_target" />
 			<attachment_group class="horizontal_arrange_autosize" horizontal_gap="-8" horizontal_offset="0" vertical_inset="0" />
 
+			<container class="match_playback_control_container" id="TopR" file="">
+				<layout class="horizontal_arrange_autosize"/>
+
+				<record id="object_property" get_property="maCo" set_property="maCo" />
+
+				<widget class="icon_button" id="inst" appearance="buttons/custom/match/simulate/button" icon="icons/26px/transfer" label_disabled="true" alignment="centre" icon_alignment="centre" click_event="inst" auto_size="horizontal" icon_colour="white" red_replacement="bg negative">
+					<translation id="hint" translation_id="383109" type="use" value="Simulate Match[COMMENT: button text to go through the next match leaving the result to the staff, using the full match engine to simulate the match result]" />
+				</widget>
+
+			</container>
+
 			<widget class="widget_popup_button" id="Sett" auto_size="horizontal" red_replacement="bg darker" icon="icons/16px/settings" widget_type="match_settings_panel" mpmF="generic/modal popup panel match" secondary_icon_enabled="false" appearance="buttons/custom/match/play/button" controller_button="select_button"  gamepad_icon_alignment="centre_right" icon_alignment="centre_left" icon_always_spaced="true">
 				<record id="modal_popup_properties">
 					<boolean id="darkened" value="false" />

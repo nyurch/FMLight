@@ -2,6 +2,6 @@
 <properties>
 	
 	<colour id="red_replacement" name="bg accent"/>
-	<colour id="blue_replacement" name="accent button text"/>
+	<colour id="blue_replacement" name="white"/>
 	
 </properties>

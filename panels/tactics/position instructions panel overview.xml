@@ -22,7 +22,7 @@
 		<container embed_in_frame="true">
 	      <attachment_group class="title_embedded_panel_right" horizontal_offset="0"/>
 	      <!-- buttons area -->
-	      <widget class="icon_button" icon="icons/16px/cross" height="28" width="28" icon_alignment="centre" red_replacement="white" icon_colour="text" appearance="buttons/standard/flex/button" id="clos" embed_in_frame="true">
+	      <widget class="icon_button" icon="icons/16px/cross" height="28" width="28" icon_alignment="centre" red_replacement="white" icon_colour="black" appearance="buttons/standard/flex/button" id="clos" embed_in_frame="true">
 	        <record id="click_event">
 	          <flags id="event_id" value="Clos" />
 	        </record>
@@ -119,7 +119,6 @@
 
 					<!--role/duty popups-->
 					<widget class="role_duty_popup_button" id="prdp"/>
-
 
 					<widget class="player_instructions_selector_panel" id="plIN" file="item selection panel pitch"/>
 

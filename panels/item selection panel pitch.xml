@@ -30,7 +30,7 @@
 			<layout class="stick_to_sides_attachment" alignment="right,top" embed_in_frame="true" inset="0" />
 			<layout class="fit_children_attachment" alignment="horizontal,fill" embed_in_frame="true" gap="0" offset="0" />
 
-			<widget class="icon_button" id="addb" embed_in_frame="true" auto_size="horizontal" click_event="mana" height="30" appearance="buttons/subtle/normal/button" icon="" secondary_icon_enabled="true" secondary_icon_alignment="right,centre_y" secondary_icon="icons/16px/maximise" colour="text" secondary_icon_colour="text">
+			<widget class="icon_button" id="addb" embed_in_frame="true" auto_size="horizontal" click_event="mana" height="30" appearance="buttons/subtle/normal/button" icon="" secondary_icon_enabled="true" secondary_icon_alignment="right,centre_y" secondary_icon="icons/16px/maximise" colour="white" secondary_icon_colour="white">
 				<translation id="text" translation_id="343621" type="use" value="Edit...[COMMENT: item selection panel; button text to edit a match plan]" />
 			</widget>
 		</container>

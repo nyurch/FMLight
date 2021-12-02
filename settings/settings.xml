@@ -269,6 +269,15 @@
 <colour name="agent journo relationship hatred"         value="red 900"/>
 <colour name="agent journo relationship none"           value="black"/>
 
+<!-- manager relationship types -->
+<colour name="manager relationship positive high"     	value="fg range20"/>
+<colour name="manager relationship positive med"      	value="fg range18"/>
+<colour name="manager relationship positive low"      	value="fg range15"/>
+<colour name="manager relationship negative high"     	value="fg range1"/>
+<colour name="manager relationship negative med"      	value="fg range5"/>
+<colour name="manager relationship negative low"      	value="fg range10"/>
+<colour name="manager relationship none"              	value="text"/>
+
 <!--dynamics relationships-->
 <colour name="very close relationship" 					value="green 900"/>
 <colour name="close relationship" 						value="green 900" />
@@ -390,10 +399,10 @@
 <colour name="primary_button_text" 				value="bg"/> 	<!-- set to bg when done -->
 <colour name="primary_button" 					value="fg accent"/> 	<!-- not custom but moved here so can change more easily if needed -->
 <!-- Base icon colours -->
-<colour name="normal_icon" 																			value="black"/>
-<colour name="button_icon" 																			value="black"/>
-<colour name="match_icon" 																			value="black"/>
-<colour name="ui_header_icons" 																		value="black"/>
+<colour name="normal_icon" 																			value="fg"/>
+<colour name="button_icon" 																			value="fg"/>
+<colour name="match_icon" 																			value="fg"/>
+<colour name="ui_header_icons" 																		value="fg"/>
 
 <!-- Card colours - used for places where the colours are inverted in the default skin. Inbox, Report cards, etc -->
 <colour name="card fg lighter" 														value="rgb(250,250,250)"/>
@@ -477,7 +486,7 @@
 <colour name="chemistry_happiness_bad_colour" 			value="bg negative" />
 
 <!--dynamics-->
-<colour name="dynamics team leader" 					value="white"/>
+<colour name="dynamics team leader" 					value="fg green"/>
 <colour name="dynamics leading player" 					value="fg yellow" />
 <colour name="dynamics influential player" 				value="fg orange" />
 <colour name="dynamics squad player" 					value="fg blue" />
