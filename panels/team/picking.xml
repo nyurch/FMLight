@@ -1,4 +1,3 @@
-<!-- changed picked colour from white button colours set in settings -->
 <panel>
 
 	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
@@ -8,7 +7,7 @@
 		<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
 		<layout class="arrange_horizontal_attachment" alignment="left" wrap_widgets="true" offset="0" gap="2" />
 
-		<record id="default_properties" spec="text" size="small" alignment="centre" picked_normal_colour="text" unavailable_colour="negative" />
+		<record id="default_properties" spec="text" size="small" style="bold" alignment="centre" picked_normal_colour="white" unavailable_colour="red 100" />
 
 		<!-- first eleven -->
 		<widget class="position_picked_button" id="0" width="40" />

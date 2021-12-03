@@ -77,7 +77,7 @@
 			<boolean id="exclude_from_find" value="true"/>
 			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
 		</widget>
-    	<container class="main_contrast_box_no_margin" red_replacement="green 800" entity_layout_id="at01" id="at01" sub_group_id="NULL_ID" name="top bar" height="38">
+    	<container class="main_contrast_box_no_margin" red_replacement="teal 900" entity_layout_id="at01" id="at01" sub_group_id="NULL_ID" name="top bar" height="38">
 			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
 			<layout class="stick_to_object_attachment" id="align_left" offset="0" get_side="left" set_side="left" target="main"/>
 			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>

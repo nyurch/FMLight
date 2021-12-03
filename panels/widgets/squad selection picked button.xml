@@ -1,0 +1,28 @@
+﻿<panel>
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<container class="plain_box" id="pita" appearance="">
+
+		<layout class="arrange_horizontal_attachment" alignment="middle" offset="0" gap="0"/>
+		<layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true" />
+
+
+		<widget class="radio_button" width="30" height="16" id="peWI" icon="" show_button_appearance="true" appearance="switches/toggle/left/button" secondary_icon_enabled="true" secondary_icon="icons/16px/tick" secondary_icon_colour="bg" secondary_icon_alignment="centre">
+			<event id="click_event">
+				<flags id="event_id" value="sePL" />
+				<boolean id="mode" value="true" />
+			</event>
+		</widget>
+
+		<widget class="radio_button" width="30" height="16" id="deWI" icon="" show_button_appearance="true" appearance="switches/toggle/right/button" secondary_icon_enabled="true" secondary_icon="icons/16px/cross" secondary_icon_colour="bg" secondary_icon_alignment="centre">
+			<event id="click_event">
+				<flags id="event_id" value="sePL" />
+				<boolean id="mode" value="false" />
+			</event>
+		</widget>
+
+	</container>
+
+
+</panel>
