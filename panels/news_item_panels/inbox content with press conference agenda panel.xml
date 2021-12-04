@@ -1,5 +1,4 @@
-﻿<!-- recoloured table at bottom and comp colours from grey 400 -->
-<panel height="430" width="1024">
+﻿<panel height="430" width="1024">
 	<list id="draw_order">
 		<record entity_layout_id="at00" />
 		<record entity_layout_id="at01" />
@@ -168,7 +167,7 @@
 					<string id="icon_enabled" value="false" />
 					<integer id="size" value="8" />
 					<string id="font" value="title" />
-					<string id="colour" value="title" />	<!-- changed colour from grey 400 -->
+					<string id="colour" value="title" />
 					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
 					<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
 				</widget>
@@ -188,7 +187,7 @@
 					<integer id="size" value="9" />
 					<string id="font" value="title" />
 					<translation id="text" translation_id="466483" type="use" value="Press Conference Location[COMMENT: table heading; where press conference was held]" />
-					<string id="colour" value="title" />	<!-- changed colour from grey 400 -->
+					<string id="colour" value="title" />
 					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
 					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
 					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
@@ -315,7 +314,7 @@
 				<integer id="row_spacing" value="2" />
 				<string id="auto_size_rows" value="true" />
 				<string id="fixed_size_rows" value="false" />
-				<!-- added colour details to recolour from white -->
+				
 				<list id="column_widget_properties">
 				<record>
 				<integer id="index" value="0" />

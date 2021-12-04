@@ -128,7 +128,7 @@
 				</container>
 			</container>
 			<!-- player reactions -->
-			<container class="inner_box" id="ReBx" appearance="boxes/inner/titled small/paper">
+			<container class="inner_subtle_box" id="ReBx" >
 				<layout class="arrange_vertical_attachment" alignment="top, extend"/>
 				<layout class="fit_children_attachment" alignment="vertical, fill"/>
 				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>

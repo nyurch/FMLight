@@ -201,8 +201,8 @@
 	<colour name="primary_button" 							value="fg accent"/>
 	<colour name="primary_button_text" 						value="bg"/>
 	<colour name="view_button" 								value="fg"/>
-	<colour name="link_button" 								value="rgb(173,178,255)"/>
-	<colour name="link_button_inbox" 						value="blue 700"/>
+	<colour name="link_button" 								value="rgb(30,178,255)"/>
+	<colour name="link_button_inbox" 						value="blue 900"/>
 	<colour name="conversation_statement_button" 			value="fg"/>
 	<colour name="conversation_statement_selected_button" 	value="fg cyan"/>
 	<colour name="standard_label" 							value="bg info"/>
@@ -215,11 +215,11 @@
 	<colour name="popup_box_background" 					value="bg"/>
 	<colour name="light_box_background" 					value="bg lighter"/>
 	<colour name="box_background" 							value="bg"/>
-	<colour name="alpha_box_background" 					value="rgb(41,43,50)"/>
+	<colour name="alpha_box_background" 					value="rgb(241,243,250)"/>
 	<colour name="dark_box_background" 						value="bg darker"/>
-	<colour name="contrast_box_background" 					value="dark accent"/> <!-- or dark red?-->
-	<colour name="alt_dark_box_background" 					value="rgb(26,34,38)"/> <!-- or light?-->
-	<colour name="alt_box_background" 						value="rgb(20,21,26)"/> <!-- or light?-->
+	<colour name="contrast_box_background" 					value="white"/> <!-- or dark red?-->
+	<colour name="alt_dark_box_background" 					value="rgb(226,234,238)"/> <!-- or light?-->
+	<colour name="alt_box_background" 						value="rgb(220,221,226)"/> <!-- or light?-->
 	<colour name="match_box_background" 					value="bg"/>
 	<colour name="match_background" 						value="bg"/>
 	<colour name="subtle_box_background" 					value="rgb(0,0,0)"/> <!-- or light?-->
@@ -501,7 +501,7 @@
 	<colour name="co own out" 								value="fg lime"/>
 	<colour name="trial in" 								value="green lighter"/>
 	<colour name="trial out" 								value="green"/>
-	<colour name="shortlisted" 								value="orange"/>
+	<colour name="shortlisted" 								value="dark orange"/>
 	<colour name="golden generation" 						value="gold"/>
 	<colour name="human controlled" 						value="fg cyan" />
 	<colour name="feeder club" 								value="fg purple"/>
