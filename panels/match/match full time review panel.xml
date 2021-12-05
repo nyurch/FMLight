@@ -2,6 +2,11 @@
 	<attachment class="test_screen_size_attachment" test_on_layout="false" alignment="horizontal" min_value="1366" max_value="100000" set_property="hdPR" />
 
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0,0,15,0" apply_to_children="true" />
+    
+    <widget class="picture" file="backgrounds/statistics" id="bgnd">
+    <boolean id="scale_picture" value="true" />
+    <boolean id="keep_aspect_ratio" value="false" />
+    </widget> 
 
 	<!--this is the container with the pitch and bench that gets reused for both home and away teams-->
 	<set_var name="pitch_container">
