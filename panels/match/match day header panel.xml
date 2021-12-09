@@ -24,7 +24,7 @@
         <container height="50">
             <attachment_group class="vertical_arrange_horizontal_autosize" vertical_alignment="middle" vertical_gap="0"/>
             <!-- title area -->
-            <widget class="text" id="sect" font="title" alignment="left,centre_y" size="large" multiline="false" auto_size="all" colour="white"/>
+            <widget class="text" id="sect" font="title" alignment="left,centre_y" size="large" multiline="false" auto_size="all" colour="black"/>
             <!-- subtitle area -->
             <container>
                 <attachment class="get_global_attachment" get_property="hide_pre_match_details" set_property="hidn"/>

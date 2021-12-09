@@ -33,10 +33,16 @@
 				</widget>
 
 					<!-- Position-->
-				<widget class="tactic_button" id="Pshp" alignment="bottom,centre_x" height="16" appearance="" disabled="true" size="xsmall" wants_mouse_events="false">
-					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
-				</widget>
-
+					<widget class="client_object_property_panel" property="Pshp" alignment="bottom,centre_x" height="16">
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+						<record id="object_property" get_property="objt" set_property="objt" />
+						<record id="widget_properties">
+							<string id="appearance" value=""/>
+							<boolean id="disabled" value="true"/>
+							<string id="size" value="xsmall"/>
+							<boolean id="wants_mouse_events" value="false"/>
+						</record>
+					</widget>
 
 
 				<!--injury/sub icon if needed-->
