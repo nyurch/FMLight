@@ -1,0 +1,117 @@
+<panel>
+
+	<string id="skin_style" value="subtle box" />
+
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<widget class="inbox_body_text" id="bdtx" colour="news_item_text" />
+
+	<container height="886">
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+		<layout class="arrange_horizontal_attachment" alignment="fill" offset="0" />
+
+		<!--teams-->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<widget class="match_team_stats_panel" id="hfMs" file="match/match team stats overview news item" team_index="0">
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</widget>
+			<widget class="match_team_stats_panel" id="afMs" file="match/match team stats overview news item" team_index="1">
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</widget>
+
+			<!--legend-->
+			<container height="26">
+				<layout class="arrange_horizontal_attachment" alignment="right" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<widget class="icon_button" auto_size="horizontal" colour="loan in" multiline="false" alignment="right,centre_y" show_button_appearance="false">
+					<record id="primary_icon_properties" red_replacement="loan in" />
+					<translation id="text" translation_id="301156" type="use" value="On Loan[COMMENT:column header for a column displaying the names of clubs where a player is loaned from or to. Column contents will say 'from Real Madrid' or 'at Getafe' for example.]" />
+				</widget>
+
+				<widget class="icon_button" auto_size="horizontal" colour="hilight_first_teamers" multiline="false" alignment="right,centre_y" show_button_appearance="false">
+					<record id="primary_icon_properties" red_replacement="hilight_first_teamers" />
+					<translation id="text" translation_id="424584" type="use" value="Senior squad member[COMMENT: FR10300 - text to show what highlighted players mean]" />
+				</widget>
+			</container>
+		</container>
+
+		<!--man of the match and league table/results-->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<!-- man of the match -->
+			<container height="120">
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="2" gap="1" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+				<!--title-->
+				<widget class="text" auto_size="vertical" font="title" multiline="false" alignment="left,centre_y">
+					<translation id="text" translation_id="420696" type="use" value="Player of the Match[COMMENT: Player of the Match award]" />
+				</widget>
+
+				<container>
+					<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" />
+
+					<!--mugshot-->
+					<widget class="object_portrait_picture" id="momP" width="80" scale_picture="true" image_alignment="centre" />
+
+					<!--name, rating, club-->
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
+
+						<!--name-->
+						<widget class="person_button" id="momN" auto_size="vertical" multiline="false" style="bold">
+							<record id="object_property" get_property="objt" set_property="valu" />
+						</widget>
+
+						<!--rating-->
+						<widget class="text" id="momr" auto_size="vertical" colour="text" multiline="false" alignment="left,centre_y">
+							<translation id="text" translation_id="420697" type="use" value="Match Rating[COMMENT: match report news panel]" />
+						</widget>
+
+						<!--team-->
+						<widget class="team_button" id="momt" height="22" scale_picture="true" image_alignment="left,centre_y" icon_enabled="true" />
+
+					</container>
+				</container>
+
+
+			</container>
+
+			<!--league table/results-->
+			<container height="622">
+				<layout class="arrange_vertical_attachment" alignment="top" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+				<!--title-->
+				<container height="18">
+					<layout class="arrange_vertical_attachment" alignment="top" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="left" inset="0" apply_to_children="true" />
+
+					<widget class="link_button" id="cmlk" auto_size="all" font="title" multiline="false" alignment="left,centre_y" />
+				</container>
+
+				<!--league table-->
+				<widget class="opponents_league_table" id="tltp" height="300" />
+
+				<!---results-->
+				<widget class="competition_fixtures_panel" id="resp" height="300" file="competition/competition fixtures match preview" />
+			</container>
+		</container>
+
+	</container>
+
+</panel>

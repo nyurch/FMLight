@@ -404,15 +404,15 @@
 	<colour name="filtered text" 							value="fg alert" />
 
 	<!-- Player motivation feedback colours / Body language-->
-	<colour name="very poor feedback" 						value="red"/>
+	<colour name="very poor feedback" 						value="red 900"/>
 	<colour name="very poor feedback bg" 					value="red"/>
-	<colour name="poor feedback" 							value="orange"/>
+	<colour name="poor feedback" 							value="orange 900"/>
 	<colour name="poor feedback bg" 						value="orange"/>
 	<colour name="ok feedback" 								value="green 700"/>
-	<colour name="ok feedback bg" 							value="green 700"/>
-	<colour name="good feedback" 							value="green"/>
+	<colour name="ok feedback bg" 							value="green"/>
+	<colour name="good feedback" 							value="green 900"/>
 	<colour name="good feedback bg" 						value="green"/>
-	<colour name="very good feedback" 						value="teal"/>
+	<colour name="very good feedback" 						value="teal 900"/>
 	<colour name="very good feedback bg" 					value="teal"/>
 
 	<!-- used for pitch condition -->
@@ -1839,19 +1839,19 @@
 	<colour name="deadline day body text" 					value="rgb(2,2,2)"/>
 
 	<!-- transfer deadline day transfer offer status -->
-	<colour name="player transfer status rumour" 			value="rgb(250,160,30)"/>
-	<colour name="player transfer status enquiry" 			value="rgb(255,226,44)"/>
-	<colour name="player transfer status offer made" 		value="rgb(255,214,0)"/>
+	<colour name="player transfer status rumour" 			value="rgb(160,0,0)"/>
+	<colour name="player transfer status enquiry" 			value="rgb(70,0,170)"/>
+	<colour name="player transfer status offer made" 		value="rgb(0,0,0)"/>
 	<colour name="player transfer status offer rejected"	value="fg negative"/>
-	<colour name="player transfer status offer withdrawn" 	value="rgb(228,98,129)"/>
-	<colour name="player transfer status offer collapsed" 	value="rgb(202,111,173)"/>
-	<colour name="player transfer status offer negotiated"	value="rgb(175,125,218)"/>
-	<colour name="player transfer status offer accepted" 	value="rgb(129,199,132)"/>
-	<colour name="player transfer status contract offer"	value="rgb(138,194,255)"/>
-	<colour name="player transfer status agreed terms"		value="rgb(128,222,234)"/>
-	<colour name="player transfer status work permit"		value="rgb(128,203,196)"/>
-	<colour name="player transfer status done deal"			value="fg"/>
-	<colour name="player transfer status future deal"		value="fg"/>
+	<colour name="player transfer status offer withdrawn" 	value="rgb(255,28,129)"/>
+	<colour name="player transfer status offer collapsed" 	value="rgb(201,44,160)"/>
+	<colour name="player transfer status offer negotiated"	value="rgb(97,18,143)"/>
+	<colour name="player transfer status offer accepted" 	value="rgb(50,199,60)"/>
+	<colour name="player transfer status contract offer"	value="rgb(40,140,255)"/>
+	<colour name="player transfer status agreed terms"		value="rgb(0,200,225)"/>
+	<colour name="player transfer status work permit"		value="rgb(0,180,180)"/>
+	<colour name="player transfer status done deal"			value="rgb(3,133,3)"/>
+	<colour name="player transfer status future deal"		value="rgb(0,97,0)"/>
 	<colour name="player transfer status released"			value="negative"/>
 	<colour name="player transfer status contract renewed"	value="positive"/>
 
