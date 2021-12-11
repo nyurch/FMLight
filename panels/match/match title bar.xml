@@ -56,7 +56,7 @@
 		<container navigation_container="true">
 
 			<animation class="translate_animation" start_value="1, 0" end_value="0, 0" duration="0.5" delay="0.8" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_target" />
-			<attachment_group class="horizontal_arrange_autosize" horizontal_gap="-8" horizontal_offset="0" vertical_inset="0" />
+			<attachment_group class="horizontal_arrange_autosize" horizontal_gap="-4" horizontal_offset="0" vertical_inset="0" />
 
 			<container class="match_playback_control_container" id="TopR" file="">
 				<layout class="horizontal_arrange_autosize"/>

@@ -55,7 +55,7 @@
         </container>
 
             <!-- actions -->
-            <container class="titled_box" colour="title" id="ActB" appearance="boxes/main/transparent/paper" red_replacement="fg">
+            <container class="titled_box" colour="title" id="ActB" appearance="boxes/main/transparent/paper" red_replacement="bg">
                 <translation id="text" translation_id="316647" type="use" value="Actions[COMMENT: popup information panel actions button title]"/>
                 <attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" vertical_gap="0"/>
 

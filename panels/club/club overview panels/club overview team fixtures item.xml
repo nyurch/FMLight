@@ -1,6 +1,6 @@
 <panel>
     <layout class="stick_to_sides_attachment" apply_to_children="true"/>
-    <container class="main_subtle_box_no_margin">
+    <container>
         <attachment class="vertical_arrange" vertical_layout="-2,-5,-2" vertical_gap="5" vertical_offset="10"/>
         <container>
             <attachment class="vertical_arrange" vertical_layout="-1,-1" vertical_gap="0"/>

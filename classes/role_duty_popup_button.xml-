@@ -6,9 +6,9 @@
   <integer id="position_strength_indicator_width" value="0"/>
   <flags id="size" value="small"/>
   <flags id="style" value="bold"/>
-  <flags id="default_text_colour" value="text" />
-  <flags id="default_secondary_text_colour" value="faded text"/>
-  <record id="secondary_icon_properties" red_replacement="text"/>	<!-- added to recolour dropdown arrow -->
+  <flags id="default_text_colour" value="white" />
+  <flags id="default_secondary_text_colour" value="faded white"/>
+  <record id="secondary_icon_properties" red_replacement="white"/>	<!-- added to recolour dropdown arrow -->
   <record id="secondary_text_properties">
     <integer id="size" value="xsmall" />
   </record>
@@ -17,6 +17,6 @@
   <integer id="position_button_width" value="34"/>
   <record id="position_button_text_properties">
     <integer id="size" value="xsmall" />
-    <flags id="colour" value="text" />
+    <flags id="colour" value="white" />
   </record>
 </class>
