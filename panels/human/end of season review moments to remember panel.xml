@@ -105,7 +105,7 @@
 				<boolean id="exclude_from_find" value="true"/>
 				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
 			</widget>
-			<container class="main_subtle_box" appearance="boxes/custom/interaction/person/paper_disabled" entity_layout_id="at06" id="box1" name="box1" navigation_container="true" default_focus="true">
+			<container class="main_subtle_box" entity_layout_id="at06" id="box1" name="box1" navigation_container="true" default_focus="true">
 				<attachment class="test_screen_size_attachment" skip_if_false="true">
 					<list id="properties">
 						<record>
@@ -169,7 +169,7 @@
 					<layout class="stick_to_object_attachment" id="align_right" offset="0" get_side="right" set_side="right" target="main"/>
 				</container>
 			</container>
-			<container class="main_subtle_box" appearance="boxes/custom/interaction/person/paper_disabled" entity_layout_id="at0&gt;" id="at0&gt;" name="box2" navigation_container="true">
+			<container class="main_subtle_box" entity_layout_id="at0&gt;" id="at0&gt;" name="box2" navigation_container="true">
 				<attachment class="test_screen_size_attachment" skip_if_false="true">
 					<list id="properties">
 						<record>
@@ -233,7 +233,7 @@
 					<layout class="stick_to_object_attachment" id="align_right" offset="0" get_side="right" set_side="right" target="main"/>
 				</container>
 			</container>
-			<container class="main_subtle_box" appearance="boxes/custom/interaction/person/paper_disabled" entity_layout_id="at0F" id="at0F" name="box3" navigation_container="true">
+			<container class="main_subtle_box" entity_layout_id="at0F" id="at0F" name="box3" navigation_container="true">
 				<attachment class="test_screen_size_attachment" skip_if_false="true">
 					<list id="properties">
 						<record>

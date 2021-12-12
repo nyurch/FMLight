@@ -34,7 +34,7 @@
 		<container>
 			<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="middle" horizontal_gap="10"/>
 
-			<container id="lefB" class="main_subtle_box" appearance="boxes/custom/interaction/person/paper_disabled">
+			<container id="lefB" class="main_subtle_box">
 				<attachment class="test_screen_size_attachment" skip_if_false="true">
 					<list id="properties">
 						<record>
@@ -61,7 +61,7 @@
 				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_gap="10" vertical_offset="20"/>
 			</container>
 
-			<container class="main_subtle_box" appearance="boxes/custom/interaction/person/paper_disabled">
+			<container class="main_subtle_box">
 				<attachment class="test_screen_size_attachment" skip_if_false="true">
 					<list id="properties">
 						<record>
@@ -123,7 +123,7 @@
 				<container />
 			</container>
 
-			<container id="rigB" class="main_subtle_box" appearance="boxes/custom/interaction/person/paper_disabled">
+			<container id="rigB" class="main_subtle_box">
 				<attachment class="test_screen_size_attachment" skip_if_false="true">
 					<list id="properties">
 						<record>

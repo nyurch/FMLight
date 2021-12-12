@@ -21,8 +21,8 @@
 				<string id="background_colour" value="text"/>
 				<attachment_group class="vertical_arrange_autosize_all" />
 
-				<container class="main_box_no_margin" id="at03" height="20" appearance="boxes/custom/match/tv captions/si tv/caption/footer/paper" red_replacement="grey">
-					<string id="background_colour" value="grey"/>
+				<container class="main_box_no_margin" id="at03" height="20" appearance="boxes/custom/match/tv captions/si tv/caption/footer/paper" red_replacement="bg">
+					<string id="background_colour" value="bg"/>
 					<attachment_group class="horizontal_arrange_autosize" horizontal_offset="-10"/>
 
 					<widget class="text" id="at04" alignment="centre" width="130">
@@ -108,7 +108,7 @@
 				<attachment_group class="vertical_arrange" vertical_alignment="bottom" />
 
 			<container class="main_box_no_margin" id="at05" >
-				<string id="background_colour" value="fm purple"/>
+				<string id="background_colour" value="white"/>
 				<attachment_group class="vertical_arrange_autosize"/>
 
 				<widget class="text" id="hmtT" alignment="centre" width="20" height="39">

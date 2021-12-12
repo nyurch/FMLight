@@ -1,5 +1,4 @@
-﻿<!-- I've modified this panel to list the default skin colours for the selected skin - it should work on any skin, though if a skin is using acustom colour names then they wont be shown -->
-<panel>
+﻿<panel>
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 
 	<container class="inner_box" >
@@ -22,7 +21,6 @@
 				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="4" horizontal_alignment="horizontal" horizontal_inset="0" />
 
 				<widget class="table" id="plpd" mode="fill_rows, stripe_rows, keyboard" layout="-1, -1" auto_size="vertical">
-
 
 					<flags id="heading_class" value="column_heading_alternative" />
 
@@ -84,16 +82,8 @@
 						<flags id="text" value="http://www.sega.co.uk" />
 					</widget>
 				</widget>
-					
-					<!-- * named colours are unique to my Mint Skins, remove/rename for general release -->
-					<!-- fg -->
-					
-					<!-- button example -->
-					<!-- <widget class="button" col="3" row="4">
-						<flags id="file" value="buttons/standard/normal/button" />
-						<flags id="red_replacement" value="fg" />
-					</widget> -->
-	<!-- THEME COLOURS TABLE -->
+
+<!-- THEME COLOURS TABLE -->
 			<widget class="table" id="plpd" mode="fill_rows, stripe_rows, keyboard" layout="125, 125, 125, -1, 125, 125, 125,-1" auto_size="vertical">
 				<list id="headings">
 				<record index="0" alignment="left,centre_y" column_span="8" hide_sorting="true" disabled="true" font="label" colour="title">
@@ -133,12 +123,8 @@
 							<boolean id="srtd" value="true" />
 						</record>
 					</list>
-	
-	
-	
-					
-<!-- columns 0-2 left side fg values -->
 
+<!-- columns 0-2 left side fg values -->
 					<!-- fg -->
 					<widget class="label" spec="text" col="0" row="0">
 						<string id="text" value="fg" />
@@ -153,11 +139,7 @@
 						<string id="text" value="Football Manager" />
 						<flags id="colour"	value="fg" />
 					</widget>
-					<!-- comment -->
-					<!-- <widget class="label" spec="text" col="3" row="0">
-						<string id="text" value="Text" />
-					</widget> -->
-					
+
 					<!-- fg alpha -->
 					<widget class="label" spec="text" col="0" row="1">
 						<string id="text" value="fg alpha" />
@@ -171,7 +153,7 @@
 						<string id="text" value="Football Manager" />
 						<flags id="colour"	value="fg alpha" />
 					</widget>
-					
+
 					<!-- fg lighter -->
 					<widget class="label" spec="text" col="0" row="2">
 						<string id="text" value="fg lighter" />
@@ -214,7 +196,7 @@
 						<string id="text" value="Football Manager" />
 						<flags id="colour"	value="fg info" />
 					</widget>
-					
+
 					<!-- fg accent -->
 					<widget class="label" spec="text" col="0" row="5">
 						<string id="text" value="fg accent" />
@@ -255,7 +237,7 @@
 						<string id="text" value="Football Manager" />
 						<flags id="colour"	value="card fg lighter" />
 					</widget>
-					
+
 					<!-- card fg -->
 					<widget class="label" spec="text" col="0" row="9">
 						<string id="text" value="card fg" />
@@ -269,7 +251,7 @@
 						<string id="text" value="Football Manager" />
 						<flags id="colour"	value="card fg" />
 					</widget>
-					
+
 					<!-- card fg darker -->
 					<widget class="label" spec="text" col="0" row="10">
 						<string id="text" value="card fg darker" />
@@ -283,10 +265,8 @@
 						<string id="text" value="Football Manager" />
 						<flags id="colour"	value="card fg darker" />
 					</widget>
-	
-	<!-- column 3 blank -->
-	<!-- columns 4-6 right side bg values -->		
-					
+
+<!-- columns 4-6 right side bg values -->
 					<!-- bg -->
 					<widget class="label" spec="text" col="4" row="0">
 						<string id="text" value="bg" />
@@ -301,7 +281,7 @@
 						<string id="text" value="Football Manager" />
 						<flags id="colour"	value="bg" />
 					</widget>
-					
+
 					<!-- bg alpha -->
 					<widget class="label" spec="text" col="4" row="1">
 						<string id="text" value="bg alpha" />
@@ -358,7 +338,7 @@
 						<string id="text" value="Football Manager" />
 						<flags id="colour"	value="bg info" />
 					</widget>
-					
+
 					<!-- bg accent -->
 					<widget class="label" spec="text" col="4" row="5">
 						<string id="text" value="bg accent" />
@@ -400,7 +380,7 @@
 						<string id="text" value="Football Manager" />
 						<flags id="colour"	value="bg tertiary darker" />
 					</widget>
-					
+
 					<!-- card bg lighter -->
 					<widget class="label" spec="text" col="4" row="8">
 						<string id="text" value="card bg lighter" />
@@ -413,7 +393,7 @@
 						<string id="text" value="Football Manager" />
 						<flags id="colour"	value="card bg lighter" />
 					</widget>
-					
+
 					<!-- card bg -->
 					<widget class="label" spec="text" col="4" row="9">
 						<string id="text" value="card bg" />
@@ -441,944 +421,9 @@
 						<string id="text" value="Football Manager" />
 						<flags id="colour"	value="card bg darker" />
 					</widget>
-					
-					
-				
-				</widget>
+			</widget>
 <!-- END THEME COLOURS TABLE -->	
 
-
-<!-- SPECIAL COLOURS TABLE -->
-			<widget class="table" id="plpd" mode="fill_rows, stripe_rows, keyboard" layout="125, 125, 125, -1, 125, 125, 125,-1" auto_size="vertical">
-				<list id="headings">
-				<record index="0" alignment="left,centre_y" column_span="8" hide_sorting="true" disabled="true" font="label" colour="title">
-					<string id="text" type="use" value="Special Colours"/>
-				</record>
-
-				</list>
-
-					<flags id="heading_class" value="column_heading_alternative" />
-
-					<!-- auto size the rows -->
-					<!-- <boolean id="auto_size_rows" value="true" /> -->
-					<integer id="row_height" value="30" />
-	
-					<!-- row spacing -->
-					<integer id="row_spacing" value="0" />
-
-					<!-- default item properties -->
-					<record id="defp">
-						<!-- all items autosize vertically -->
-						<flags id="auto_size" value="vertical" />
-					</record>
-
-					<record id="defp">
-						<flags id="spec" value="text" />
-						<flags id="algn" value="left,centre_y" />
-					</record>
-
-					<!-- small inset from sides of table -->
-					<list id="column_table_properties">
-						<record indx="0">
-							<integer id="left" value="4" />
-							<boolean id="srtd" value="true" />
-						</record>
-						<record indx="1">
-							<integer id="rght" value="7" />
-							<boolean id="srtd" value="true" />
-						</record>
-						<record indx="3">
-						<flags id="algn" value="left,centre_y" />
-						</record>
-					</list>
-	
-	
-	
-					
-<!-- columns 0-2 left side fg values -->
-
-					<!-- star rating senior -->
-					<widget class="label" spec="text" col="0" row="0">
-						<string id="text" value="star rating senior" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="0">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="star rating senior" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="0">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="star rating senior" />
-					</widget>
-					<!-- comment -->
-					<widget class="picture" col="3" row="0">
-						<flags id="file" value="icons/custom/star rating/scouting/ten" />
-						<flags id="red_replacement" value="star rating senior" />
-						<flags id="alignment" value="left, centre_y" />
-					</widget>
-					
-					<!-- star rating youth -->
-					<widget class="label" spec="text" col="0" row="1">
-						<string id="text" value="star rating youth" />
-					</widget>
-					<widget class="picture" col="1" row="1">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="star rating youth" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="1">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="star rating youth" />
-					</widget>
-					<widget class="picture" col="3" row="1">
-						<flags id="file" value="icons/custom/star rating/scouting/ten" />
-						<flags id="red_replacement" value="star rating youth" />
-					</widget>
-
-					<!-- star rating empty -->
-					<widget class="label" spec="text" col="0" row="2">
-						<string id="text" value="star rating empty" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="2">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="star rating empty" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="2">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="star rating empty" />
-					</widget>
-					<widget class="picture" spec="text" col="3" row="2">
-						<flags id="file" value="icons/custom/star rating/scouting/ten" />
-						<flags id="red_replacement" value="star rating empty" />
-					</widget>
-
-					<!-- star rating unknown -->
-					<widget class="label" spec="text" col="0" row="3">
-						<string id="text" value="star rating unknown" />
-					</widget>
-					<widget class="picture" col="1" row="3">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="star rating unknown" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="3">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="star rating unknown" />
-					</widget>
-					<widget class="picture" alignment="left, centre_y" col="3" row="3">
-					<flags id="file" value="icons/custom/star rating/scouting/ten" />
-						<flags id="red_replacement" value="star rating unknown" />
-					</widget>
-
-					<!-- low attribute -->
-					<widget class="label" spec="text" col="0" row="4">
-						<string id="text" value="low attribute" />
-					</widget>
-					<widget class="picture" col="1" row="4">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="low attribute" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="4">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="low attribute" />
-					</widget>
-					
-					<!-- normal attribute -->
-					<widget class="label" spec="text" col="0" row="5">
-						<string id="text" value="normal attribute" />
-					</widget>
-					<widget class="picture" col="1" row="5">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="normal attribute" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="5">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="normal attribute" />
-					</widget>
-
-					<!-- good attribute -->
-					<widget class="label" spec="text" col="0" row="6">
-						<string id="text" value="good attribute" />
-					</widget>
-					<widget class="picture" col="1" row="6">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="good attribute" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="6">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="good attribute" />
-					</widget>
-
-					<!-- excellent attribute -->
-					<widget class="label" spec="text" col="0" row="7">
-						<string id="text" value="excellent attribute" />
-					</widget>
-					<widget class="picture" col="1" row="7">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="excellent attribute" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="7">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="excellent attribute" />
-					</widget>
-					
-					<!-- special attribute -->
-					<widget class="label" spec="text" col="0" row="8">
-						<string id="text" value="special attribute" />
-					</widget>
-					<widget class="picture" col="1" row="8">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="special attribute" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="8">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="special attribute" />
-					</widget>
-					
-	
-	<!-- column 3 blank -->
-	<!-- columns 4-6 right side bg values -->		
-					
-					<!-- goalkeeper_line -->
-					<widget class="label" spec="text" col="4" row="0">
-						<string id="text" value="goalkeeper_line" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="5" row="0">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="goalkeeper_line" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="6" row="0">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="goalkeeper_line" />
-					</widget>
-					
-					<!-- defender_line -->
-					<widget class="label" spec="text" col="4" row="1">
-						<string id="text" value="defender_line" />
-					</widget>
-					<widget class="picture" col="5" row="1">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="defender_line" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="6" row="1">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="defender_line" />
-					</widget>
-
-					<!-- defensive_midfielder_line -->
-					<widget class="label" spec="text" col="4" row="2">
-						<string id="text" value="defensive_midfielder_line" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="5" row="2">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="defensive_midfielder_line" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="6" row="2">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="defensive_midfielder_line" />
-					</widget>
-
-					<!-- midfielder_line -->
-					<widget class="label" spec="text" col="4" row="3">
-						<string id="text" value="midfielder_line" />
-					</widget>
-					<widget class="picture" col="5" row="3">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="midfielder_line" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="6" row="3">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="midfielder_line" />
-					</widget>
-
-					<!-- attacking_midfielder_line -->
-					<widget class="label" spec="text" col="4" row="4">
-						<string id="text" value="attacking_midfielder_line" />
-					</widget>
-					<widget class="picture" col="5" row="4">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="attacking_midfielder_line" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="6" row="4">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="attacking_midfielder_line" />
-					</widget>
-					
-					<!-- attacker_line -->
-					<widget class="label" spec="text" col="4" row="5">
-						<string id="text" value="attacker_line" />
-					</widget>
-					<widget class="picture" col="5" row="5">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="attacker_line" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="6" row="5">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="attacker_line" />
-					</widget>
-
-					<!-- substitutes_line -->
-					<widget class="label" spec="text" col="4" row="6">
-						<string id="text" value="substitutes_line" />
-					</widget>
-					<widget class="picture" col="5" row="6">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="substitutes_line" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="6" row="6">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="substitutes_line" />
-					</widget>
-
-					<!-- league_champion -->
-					<widget class="label" spec="text" col="4" row="7">
-						<string id="text" value="league_champion" />
-					</widget>
-					<widget class="picture" col="5" row="7">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="league_champion" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="6" row="7">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="league_champion" />
-					</widget>
-					
-					<!-- human controlled -->
-					<widget class="label" spec="text" col="4" row="8">
-						<string id="text" value="human controlled" />
-					</widget>
-					<widget class="picture" col="5" row="8">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="human controlled" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="6" row="8">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="human controlled" />
-					</widget>
-					
-					<!-- sidebar text -->
-					<widget class="label" spec="text" col="0" row="9">
-						<string id="text" value="sidebar text" />
-					</widget>
-					<widget class="picture" col="1" row="9">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="sidebar text" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="9">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="sidebar text" />
-					</widget>
-										
-					<!-- sidebar -->
-					<widget class="label" spec="text" col="4" row="9">
-						<string id="text" value="sidebar" />
-					</widget>
-					<widget class="picture" col="5" row="9">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="sidebar" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="6" row="9">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="sidebar" />
-					</widget>
-					
-					<!-- match caption border -->
-					<widget class="label" spec="text" col="0" row="10">
-						<string id="text" value="match caption border" />
-					</widget>
-					<widget class="picture" col="1" row="10">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="match caption border" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="10">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="match caption border" />
-					</widget>
-					
-					<!-- match caption background -->
-					<widget class="label" spec="text" col="4" row="10">
-						<string id="text" value="match caption background" />
-					</widget>
-					<widget class="picture" col="5" row="10">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="match caption background" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="6" row="10">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="match caption background" />
-					</widget>
-
-				</widget>
-<!-- END SPECIAL COLOURS TABLE -->				
-
-
-<!-- START CUSTOM COLOURS TABLE -->
-					<widget class="table" id="plpd" mode="fill_rows, stripe_rows, keyboard" layout="125, -1, 125, 125, -1, 125, 125, -1, -2" auto_size="vertical">
-				<list id="headings">
-				<record index="0" alignment="left,centre_y" column_span="9" hide_sorting="true" disabled="true" font="label" colour="title">
-					<string id="text" type="use" value="Custom Colours"/>
-				</record>
-
-				</list>
-
-					<flags id="heading_class" value="column_heading_alternative" />
-
-					<!-- auto size the rows -->
-					<!-- <boolean id="auto_size_rows" value="true" /> -->
-					<integer id="row_height" value="30" />
-	
-					<!-- row spacing -->
-					<integer id="row_spacing" value="0" />
-
-					<!-- default item properties -->
-					<record id="defp">
-						<!-- all items autosize vertically -->
-						<flags id="auto_size" value="vertical" />
-					</record>
-
-					<record id="defp">
-						<flags id="spec" value="text" />
-						<flags id="algn" value="left,centre_y" />
-					</record>
-
-					<!-- small inset from sides of table -->
-					<list id="column_table_properties">
-						<record indx="0">
-							<integer id="left" value="4" />
-							<boolean id="srtd" value="true" />
-						</record>
-						<record indx="1">
-							<integer id="rght" value="0" />
-							<boolean id="srtd" value="true" />
-						</record>
-						<record indx="3">
-						<flags id="spec" value="text" />
-						<flags id="algn" value="right,centre_y" />
-						</record>
-						<record indx="6">
-						<flags id="spec" value="text" />
-						<flags id="algn" value="right,centre_y" />
-						</record>
-					</list>		
-					
-		<!-- col 0-2 Left side, col 3-5 middle side, 6-8 right side -->
-
-					<!-- tactics green bg -->
-					<widget class="label" spec="text" col="0" row="0">
-						<string id="text" value="tactics green bg" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="0">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="tactics green bg" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="0">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="tactics green bg" />
-					</widget>
-										
-					<!-- tactics green fg -->
-					<widget class="label" spec="text" col="3" row="0">
-						<string id="text" value="tactics green fg" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="0">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="tactics green fg" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="0">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="tactics green fg" />
-					</widget>
-					
-					<!-- tactics green line -->
-					<widget class="label" spec="text" col="6" row="0">
-						<string id="text" value="tactics green line" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="0">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="tactics green line" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="0">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="tactics green line" />
-					</widget>
-										
-					<!-- tactics bg -->
-					<widget class="label" spec="text" col="0" row="1">
-						<string id="text" value="tactics bg" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="1">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="tactics bg" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="1">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="tactics bg" />
-					</widget>
-					
-					<!-- tactics fg -->
-					<widget class="label" spec="text" col="3" row="1">
-						<string id="text" value="tactics fg" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="1">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="tactics fg" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="1">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="tactics fg" />
-					</widget>
-										
-					<!-- tactics line -->
-					<widget class="label" spec="text" col="6" row="1">
-						<string id="text" value="tactics line" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="1">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="tactics line" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="1">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="tactics line" />
-					</widget>
-					
-		<!-- main_menu_text -->
-					<widget class="label" spec="text" col="0" row="2">
-						<string id="text" value="main_menu_text" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="2">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="main_menu_text" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="2">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="main_menu_text" />
-					</widget>
-					
-		<!-- main_menu_faded -->
-					<widget class="label" spec="text" col="3" row="2">
-						<string id="text" value="main_menu_faded" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="2">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="main_menu_faded" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="2">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="main_menu_faded" />
-					</widget>
-										
-		<!-- main_menu_logo -->
-					<widget class="label" spec="text" col="6" row="2">
-						<string id="text" value="main_menu_logo" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="2">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="main_menu_logo" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="2">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="main_menu_logo" />
-					</widget>
-					
-		<!-- primary_button_text -->
-					<widget class="label" spec="text" col="0" row="3">
-						<string id="text" value="primary_button_text" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="3">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="primary_button_text" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="3">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="primary_button_text" />
-					</widget>
-					
-		<!-- primary_button -->
-					<widget class="label" spec="text" col="3" row="3">
-						<string id="text" value="primary_button" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="3">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="primary_button" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="3">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="primary_button" />
-					</widget>
-										
-					<!-- test -->
-					<!-- <widget class="label" spec="text" col="6" row="3">
-						<string id="text" value="test" />
-					</widget>
-					<widget class="picture" col="7" row="3">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="test" />
-					</widget>
-					<widget class="label" spec="text" col="8" row="3">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="test" />
-					</widget>					-->
-		<!-- match_primary_text -->
-					<widget class="label" spec="text" col="0" row="4">
-						<string id="text" value="match_primary_text" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="4">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="match_primary_text" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="4">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="match_primary_text" />
-					</widget>
-					
-		<!-- match_primary_button -->
-					<widget class="label" spec="text" col="3" row="4">
-						<string id="text" value="match_primary_button" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="4">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="match_primary_button" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="4">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="match_primary_button" />
-					</widget>
-										
-					<!-- test -->
-				<!-- <widget class="label" spec="text" col="6" row="4">
-						<string id="text" value="test" />
-					</widget>
-					<widget class="picture" col="7" row="4">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="test" />
-					</widget>
-					<widget class="label" spec="text" col="8" row="4">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="test" />
-					</widget>					-->
-		<!-- match accent fg -->
-					<widget class="label" spec="text" col="0" row="5">
-						<string id="text" value="match accent fg" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="5">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="match accent fg" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="5">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="match accent fg" />
-					</widget>
-					
-		<!-- match accent bg -->
-					<widget class="label" spec="text" col="3" row="5">
-						<string id="text" value="match accent bg" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="5">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="match accent bg" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="5">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="match accent bg" />
-					</widget>
-										
-		<!-- match accent -->
-					<widget class="label" spec="text" col="6" row="5">
-						<string id="text" value="match accent" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="5">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="match accent" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="5">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="match accent" />
-					</widget>						
-		<!-- icon fg -->
-					<widget class="label" spec="text" col="0" row="6">
-						<string id="text" value="icon fg" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="6">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="icon fg" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="6">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="icon fg" />
-					</widget>
-					
-		<!-- icon bg -->
-					<widget class="label" spec="text" col="3" row="6">
-						<string id="text" value="icon bg" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="6">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="icon bg" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="6">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="icon bg" />
-					</widget>
-										
-		<!-- unread_news -->
-					<widget class="label" spec="text" col="6" row="6">
-						<string id="text" value="unread_news" />
-					</widget>
-		
-					<widget class="picture" col="7" row="6">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="unread_news" />
-					</widget>
-		
-					<widget class="label" spec="text" col="8" row="6">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="unread_news" />
-					</widget>							
-			<!-- comparison best -->
-					<widget class="label" spec="text" col="0" row="7">
-						<string id="text" value="comparison best" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="7">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="comparison best" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="7">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="comparison best" />
-					</widget>
-					
-			<!-- comparison worst -->
-					<widget class="label" spec="text" col="3" row="7">
-						<string id="text" value="comparison worst" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="7">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="comparison worst" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="7">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="comparison worst" />
-					</widget>
-										
-			<!-- comparison normal -->
-					<widget class="label" spec="text" col="6" row="7">
-						<string id="text" value="comparison normal" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="7">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="comparison normal" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="7">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="comparison normal" />
-					</widget>							
-			<!-- landmark_text -->
-					<widget class="label" spec="text" col="0" row="8">
-						<string id="text" value="landmark_text" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="8">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="landmark_text" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="8">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="landmark_text" />
-					</widget>
-					
-			<!-- landmark_icon_bg -->
-					<widget class="label" spec="text" col="3" row="8">
-						<string id="text" value="landmark_icon_bg" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="8">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="landmark_icon_bg" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="8">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="landmark_icon_bg" />
-					</widget>
-										
-			<!-- landmark_icon_fg -->
-					<widget class="label" spec="text" col="6" row="8">
-						<string id="text" value="landmark_icon_fg" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="8">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="landmark_icon_fg" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="8">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="landmark_icon_fg" />
-					</widget>							
-
-			<!-- selection advice -->
-					<widget class="label" spec="text" col="0" row="9">
-						<string id="text" value="selection advice" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="9">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="selection advice" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="9">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="selection advice" />
-					</widget>
-					
-			<!-- player_tactics_box -->
-					<widget class="label" spec="text" col="3" row="9">
-						<string id="text" value="player_tactics_box" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="9">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="player_tactics_box" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="9">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="player_tactics_box" />
-					</widget>
-										
-					<!-- test -->
-					<widget class="label" spec="text" col="6" row="9">
-						<string id="text" value="test" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="9">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="test" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="9">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="test" />
-					</widget>							
-<!-- test -->
-					<!-- <widget class="label" spec="text" col="0" row="10">
-						<string id="text" value="test" />
-					</widget>
-					<widget class="picture" col="1" row="10">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="test" />
-					</widget>
-					<widget class="label" spec="text" col="2" row="10">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="test" />
-					</widget> -->
-					
-					<!-- test -->
-					<widget class="label" spec="text" col="3" row="10">
-						<string id="text" value="test" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="10">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="test" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="10">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="test" />
-					</widget>
-										
-					<!-- test -->
-					<widget class="label" spec="text" col="6" row="10">
-						<string id="text" value="test" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="10">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="test" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="10">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="test" />
-					</widget>							
-					
-					
-					
-					
-					
-					
-					
-					
-				</widget>
-<!-- END OTHER COLOURS TABLE -->
-					
 <!-- COLOUR RANGE TABLE -->
 			<widget class="table" id="plpd" mode="fill_rows, stripe_rows, keyboard" layout="125, 125, 125, -1, 125, 125, 125,-1" auto_size="vertical">
 				<list id="headings">
@@ -2063,7 +1108,6 @@
 						<flags id="colour"	value="bg range20" />
 					</widget>	
 					
-					
 					<!-- bg positive -->
 					<widget class="label" spec="text" col="4" row="21">
 						<string id="text" value="bg positive" />
@@ -2108,17 +1152,12 @@
 					
 		</widget>	
 <!-- END RANGE TABLE -->
-					
-	
 
-
-	
-					
-<!-- PALETTE TABLE -->
-					<widget class="table" id="plpd" mode="fill_rows, stripe_rows, keyboard" layout="125, -1, 125, 125, -1, 125, 125, -1, -2" auto_size="vertical">
+<!-- SPECIAL COLOURS TABLE -->
+			<widget class="table" id="plpd" mode="fill_rows, stripe_rows, keyboard" layout="125, 125, 125, 125, 125, 125, 125, 125, 125, 125" auto_size="vertical">
 				<list id="headings">
-				<record index="0" alignment="left,centre_y" column_span="9" hide_sorting="true" disabled="true" font="label" colour="title">
-					<string id="text" type="use" value="Palette Colours"/>
+				<record index="0" alignment="left,centre_y" column_span="8" hide_sorting="true" disabled="true" font="label" colour="title">
+					<string id="text" type="use" value="Special Colours"/>
 				</record>
 
 				</list>
@@ -2150,2627 +1189,364 @@
 							<boolean id="srtd" value="true" />
 						</record>
 						<record indx="1">
-							<integer id="rght" value="0" />
+							<integer id="rght" value="7" />
 							<boolean id="srtd" value="true" />
 						</record>
 						<record indx="3">
-						<flags id="spec" value="text" />
-						<flags id="algn" value="right,centre_y" />
+						<flags id="algn" value="left,centre_y" />
 						</record>
-						<record indx="6">
-						<flags id="spec" value="text" />
-						<flags id="algn" value="right,centre_y" />
-						</record>
-					</list>				
-					
-					<!-- fg grey lighter -->
+					</list>
+
+<!-- columns 0-2 left side fg values -->
+					<!-- star rating senior -->
 					<widget class="label" spec="text" col="0" row="0">
-						<string id="text" value="fg grey lighter" />
+						<string id="text" value="star rating senior" />
 					</widget>
 					<!-- box solid colour example -->
 					<widget class="picture" col="1" row="0">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg grey lighter" />
+						<flags id="red_replacement" value="star rating senior" />
 					</widget>
 					<!-- recoloured text example -->
 					<widget class="label" spec="text" col="2" row="0">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg grey lighter" />
-					</widget>						
-
-					<!-- fg grey -->
-					<widget class="label" spec="text" col="0" row="1">
-						<string id="text" value="fg grey" />
+						<flags id="colour"	value="star rating senior" />
 					</widget>
-					<!-- box solid colour example -->
+					<!-- comment -->
+					<widget class="picture" col="3" row="0">
+						<flags id="file" value="icons/custom/star rating/scouting/ten" />
+						<flags id="red_replacement" value="star rating senior" />
+						<flags id="alignment" value="left, centre_y" />
+					</widget>
+
+					<!-- star rating youth -->
+					<widget class="label" spec="text" col="0" row="1">
+						<string id="text" value="star rating youth" />
+					</widget>
 					<widget class="picture" col="1" row="1">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg grey" />
+						<flags id="red_replacement" value="star rating youth" />
 					</widget>
 					<!-- recoloured text example -->
 					<widget class="label" spec="text" col="2" row="1">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg grey" />
-					</widget>									
-					
-					<!-- fg grey darker -->
+						<flags id="colour"	value="star rating youth" />
+					</widget>
+					<widget class="picture" col="3" row="1">
+						<flags id="file" value="icons/custom/star rating/scouting/ten" />
+						<flags id="red_replacement" value="star rating youth" />
+					</widget>
+
+					<!-- star rating empty -->
 					<widget class="label" spec="text" col="0" row="2">
-						<string id="text" value="fg grey darker" />
+						<string id="text" value="star rating empty" />
 					</widget>
 					<!-- box solid colour example -->
 					<widget class="picture" col="1" row="2">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg grey darker" />
+						<flags id="red_replacement" value="star rating empty" />
 					</widget>
 					<!-- recoloured text example -->
 					<widget class="label" spec="text" col="2" row="2">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg grey darker" />
-					</widget>		
-					
-					<!-- fg blue grey lighter -->
-					<widget class="label" spec="text" col="0" row="3">
-						<string id="text" value="fg blue grey lighter" />
+						<flags id="colour"	value="star rating empty" />
 					</widget>
-					<!-- box solid colour example -->
+					<widget class="picture" spec="text" col="3" row="2">
+						<flags id="file" value="icons/custom/star rating/scouting/ten" />
+						<flags id="red_replacement" value="star rating empty" />
+					</widget>
+
+					<!-- star rating unknown -->
+					<widget class="label" spec="text" col="0" row="3">
+						<string id="text" value="star rating unknown" />
+					</widget>
 					<widget class="picture" col="1" row="3">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg blue grey lighter" />
+						<flags id="red_replacement" value="star rating unknown" />
 					</widget>
 					<!-- recoloured text example -->
 					<widget class="label" spec="text" col="2" row="3">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg blue grey lighter" />
-					</widget>	
-					
-					<!-- fg blue grey -->
-					<widget class="label" spec="text" col="0" row="4">
-						<string id="text" value="fg blue grey" />
+						<flags id="colour"	value="star rating unknown" />
 					</widget>
-					<!-- box solid colour example -->
+					<widget class="picture" alignment="left, centre_y" col="3" row="3">
+					<flags id="file" value="icons/custom/star rating/scouting/ten" />
+						<flags id="red_replacement" value="star rating unknown" />
+					</widget>
+
+					<!-- low attribute -->
+					<widget class="label" spec="text" col="0" row="4">
+						<string id="text" value="low attribute" />
+					</widget>
 					<widget class="picture" col="1" row="4">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg blue grey" />
+						<flags id="red_replacement" value="low attribute" />
 					</widget>
 					<!-- recoloured text example -->
 					<widget class="label" spec="text" col="2" row="4">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg blue grey" />
-					</widget>	
-					
-					<!-- fg blue grey darker darker-->
-					<widget class="label" spec="text" col="0" row="5">
-						<string id="text" value="fg blue grey darker" />
+						<flags id="colour"	value="low attribute" />
 					</widget>
-					<!-- box solid colour example -->
+
+					<!-- normal attribute -->
+					<widget class="label" spec="text" col="0" row="5">
+						<string id="text" value="normal attribute" />
+					</widget>
 					<widget class="picture" col="1" row="5">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg blue grey darker" />
+						<flags id="red_replacement" value="normal attribute" />
 					</widget>
 					<!-- recoloured text example -->
 					<widget class="label" spec="text" col="2" row="5">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg blue grey darker" />
-					</widget>	
-					
-					<!-- fg red lighter -->
-					<widget class="label" spec="text" col="0" row="6">
-						<string id="text" value="fg red lighter" />
+						<flags id="colour"	value="normal attribute" />
 					</widget>
-					<!-- box solid colour example -->
+
+					<!-- good attribute -->
+					<widget class="label" spec="text" col="0" row="6">
+						<string id="text" value="good attribute" />
+					</widget>
 					<widget class="picture" col="1" row="6">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg red lighter" />
+						<flags id="red_replacement" value="good attribute" />
 					</widget>
 					<!-- recoloured text example -->
 					<widget class="label" spec="text" col="2" row="6">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg red lighter" />
+						<flags id="colour"	value="good attribute" />
 					</widget>
-					
-					<!-- fg red -->
+
+					<!-- excellent attribute -->
 					<widget class="label" spec="text" col="0" row="7">
-						<string id="text" value="fg red" />
+						<string id="text" value="excellent attribute" />
 					</widget>
-					<!-- box solid colour example -->
 					<widget class="picture" col="1" row="7">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg red" />
+						<flags id="red_replacement" value="excellent attribute" />
 					</widget>
 					<!-- recoloured text example -->
 					<widget class="label" spec="text" col="2" row="7">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg red" />
+						<flags id="colour"	value="excellent attribute" />
 					</widget>
-					
-					<!-- fg red darker -->
+
+					<!-- special attribute -->
 					<widget class="label" spec="text" col="0" row="8">
-						<string id="text" value="fg red darker" />
+						<string id="text" value="special attribute" />
 					</widget>
-					<!-- box solid colour example -->
 					<widget class="picture" col="1" row="8">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg red darker" />
+						<flags id="red_replacement" value="special attribute" />
 					</widget>
 					<!-- recoloured text example -->
 					<widget class="label" spec="text" col="2" row="8">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg red darker" />
-					</widget>						
+						<flags id="colour"	value="special attribute" />
+					</widget>
 
-					<!-- fg pink lighter -->
-					<widget class="label" spec="text" col="0" row="9">
-						<string id="text" value="fg pink lighter" />
+<!-- columns 4-6 right side bg values -->		
+					<!-- goalkeeper_line -->
+					<widget class="label" spec="text" col="4" row="0">
+						<string id="text" value="goalkeeper_line" />
 					</widget>
 					<!-- box solid colour example -->
+					<widget class="picture" col="5" row="0">
+						<flags id="file" value="boxes/custom/solid/paper" />
+						<flags id="red_replacement" value="goalkeeper_line" />
+					</widget>
+					<!-- recoloured text example -->
+					<widget class="label" spec="text" col="6" row="0">
+						<string id="text" value="Football Manager" />
+						<flags id="colour"	value="goalkeeper_line" />
+					</widget>
+
+					<!-- defender_line -->
+					<widget class="label" spec="text" col="4" row="1">
+						<string id="text" value="defender_line" />
+					</widget>
+					<widget class="picture" col="5" row="1">
+						<flags id="file" value="boxes/custom/solid/paper" />
+						<flags id="red_replacement" value="defender_line" />
+					</widget>
+					<!-- recoloured text example -->
+					<widget class="label" spec="text" col="6" row="1">
+						<string id="text" value="Football Manager" />
+						<flags id="colour"	value="defender_line" />
+					</widget>
+
+					<!-- defensive_midfielder_line -->
+					<widget class="label" spec="text" col="4" row="2">
+						<string id="text" value="defensive_midfielder_line" />
+					</widget>
+					<!-- box solid colour example -->
+					<widget class="picture" col="5" row="2">
+						<flags id="file" value="boxes/custom/solid/paper" />
+						<flags id="red_replacement" value="defensive_midfielder_line" />
+					</widget>
+					<!-- recoloured text example -->
+					<widget class="label" spec="text" col="6" row="2">
+						<string id="text" value="Football Manager" />
+						<flags id="colour"	value="defensive_midfielder_line" />
+					</widget>
+
+					<!-- midfielder_line -->
+					<widget class="label" spec="text" col="4" row="3">
+						<string id="text" value="midfielder_line" />
+					</widget>
+					<widget class="picture" col="5" row="3">
+						<flags id="file" value="boxes/custom/solid/paper" />
+						<flags id="red_replacement" value="midfielder_line" />
+					</widget>
+					<!-- recoloured text example -->
+					<widget class="label" spec="text" col="6" row="3">
+						<string id="text" value="Football Manager" />
+						<flags id="colour"	value="midfielder_line" />
+					</widget>
+
+					<!-- attacking_midfielder_line -->
+					<widget class="label" spec="text" col="4" row="4">
+						<string id="text" value="attacking_midfielder_line" />
+					</widget>
+					<widget class="picture" col="5" row="4">
+						<flags id="file" value="boxes/custom/solid/paper" />
+						<flags id="red_replacement" value="attacking_midfielder_line" />
+					</widget>
+					<!-- recoloured text example -->
+					<widget class="label" spec="text" col="6" row="4">
+						<string id="text" value="Football Manager" />
+						<flags id="colour"	value="attacking_midfielder_line" />
+					</widget>
+
+					<!-- attacker_line -->
+					<widget class="label" spec="text" col="4" row="5">
+						<string id="text" value="attacker_line" />
+					</widget>
+					<widget class="picture" col="5" row="5">
+						<flags id="file" value="boxes/custom/solid/paper" />
+						<flags id="red_replacement" value="attacker_line" />
+					</widget>
+					<!-- recoloured text example -->
+					<widget class="label" spec="text" col="6" row="5">
+						<string id="text" value="Football Manager" />
+						<flags id="colour"	value="attacker_line" />
+					</widget>
+
+					<!-- substitutes_line -->
+					<widget class="label" spec="text" col="4" row="6">
+						<string id="text" value="substitutes_line" />
+					</widget>
+					<widget class="picture" col="5" row="6">
+						<flags id="file" value="boxes/custom/solid/paper" />
+						<flags id="red_replacement" value="substitutes_line" />
+					</widget>
+					<!-- recoloured text example -->
+					<widget class="label" spec="text" col="6" row="6">
+						<string id="text" value="Football Manager" />
+						<flags id="colour"	value="substitutes_line" />
+					</widget>
+
+					<!-- league_champion -->
+					<widget class="label" spec="text" col="4" row="7">
+						<string id="text" value="league_champion" />
+					</widget>
+					<widget class="picture" col="5" row="7">
+						<flags id="file" value="boxes/custom/solid/paper" />
+						<flags id="red_replacement" value="league_champion" />
+					</widget>
+					<!-- recoloured text example -->
+					<widget class="label" spec="text" col="6" row="7">
+						<string id="text" value="Football Manager" />
+						<flags id="colour"	value="league_champion" />
+					</widget>
+
+					<!-- human controlled -->
+					<widget class="label" spec="text" col="4" row="8">
+						<string id="text" value="human controlled" />
+					</widget>
+					<widget class="picture" col="5" row="8">
+						<flags id="file" value="boxes/custom/solid/paper" />
+						<flags id="red_replacement" value="human controlled" />
+					</widget>
+					<!-- recoloured text example -->
+					<widget class="label" spec="text" col="6" row="8">
+						<string id="text" value="Football Manager" />
+						<flags id="colour"	value="human controlled" />
+					</widget>
+
+					<!-- sidebar text -->
+					<widget class="label" spec="text" col="0" row="9">
+						<string id="text" value="sidebar text" />
+					</widget>
 					<widget class="picture" col="1" row="9">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg pink lighter" />
+						<flags id="red_replacement" value="sidebar text" />
 					</widget>
 					<!-- recoloured text example -->
 					<widget class="label" spec="text" col="2" row="9">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg pink lighter" />
-					</widget>						
-
-					<!-- fg pink -->
-					<widget class="label" spec="text" col="0" row="10">
-						<string id="text" value="fg pink" />
+						<flags id="colour"	value="sidebar text" />
 					</widget>
-					<!-- box solid colour example -->
+
+					<!-- sidebar -->
+					<widget class="label" spec="text" col="4" row="9">
+						<string id="text" value="sidebar" />
+					</widget>
+					<widget class="picture" col="5" row="9">
+						<flags id="file" value="boxes/custom/solid/paper" />
+						<flags id="red_replacement" value="sidebar" />
+					</widget>
+					<!-- recoloured text example -->
+					<widget class="label" spec="text" col="6" row="9">
+						<string id="text" value="Football Manager" />
+						<flags id="colour"	value="sidebar" />
+					</widget>
+
+					<!-- match caption border -->
+					<widget class="label" spec="text" col="0" row="10">
+						<string id="text" value="match caption border" />
+					</widget>
 					<widget class="picture" col="1" row="10">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg pink" />
+						<flags id="red_replacement" value="match caption border" />
 					</widget>
 					<!-- recoloured text example -->
 					<widget class="label" spec="text" col="2" row="10">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg pink" />
-					</widget>	
-					
-					<!-- fg pink darker -->
-					<widget class="label" spec="text" col="0" row="11">
-						<string id="text" value="fg pink darker" />
+						<flags id="colour"	value="match caption border" />
 					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="11">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg pink darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="11">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg pink darker" />
-					</widget>
-					
-					<!-- fg purple lighter -->
-					<widget class="label" spec="text" col="0" row="12">
-						<string id="text" value="fg purple lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="12">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg purple lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="12">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg purple lighter" />
-					</widget>						
 
-					<!-- fg purple -->
-					<widget class="label" spec="text" col="0" row="13">
-						<string id="text" value="fg purple" />
+					<!-- match caption background -->
+					<widget class="label" spec="text" col="4" row="10">
+						<string id="text" value="match caption background" />
 					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="13">
+					<widget class="picture" col="5" row="10">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg purple" />
+						<flags id="red_replacement" value="match caption background" />
 					</widget>
 					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="13">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg purple" />
-					</widget>	
-					
-					<!-- fg purple darker -->
-					<widget class="label" spec="text" col="0" row="14">
-						<string id="text" value="fg purple darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="14">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg purple darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="14">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg purple darker" />
-					</widget>	
-					
-					<!-- fg deep purple darker -->
-					<widget class="label" spec="text" col="0" row="15">
-						<string id="text" value="fg deep purple darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="15">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg deep purple darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="15">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg deep purple darker" />
-					</widget>	
-					
-					<!-- fg deep purple -->
-					<widget class="label" spec="text" col="0" row="16">
-						<string id="text" value="fg deep purple" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="16">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg deep purple" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="16">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg deep purple" />
-					</widget>	
-					
-					<!-- fg deep purple darker -->
-					<widget class="label" spec="text" col="0" row="17">
-						<string id="text" value="fg deep purple darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="17">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg deep purple darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="17">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg deep purple darker" />
-					</widget>
-					
-					<!-- fg indigo lighter -->
-					<widget class="label" spec="text" col="0" row="18">
-						<string id="text" value="fg indigo lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="18">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg indigo lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="18">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg indigo lighter" />
-					</widget>	
-					
-					<!-- fg indigo -->
-					<widget class="label" spec="text" col="0" row="19">
-						<string id="text" value="fg indigo" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="19">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg indigo" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="19">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg indigo" />
-					</widget>	
-					
-					<!-- fg indigo darker -->
-					<widget class="label" spec="text" col="0" row="20">
-						<string id="text" value="fg indigo darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="20">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg indigo darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="20">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg indigo darker" />
-					</widget>
-					
-					<!-- fg blue lighter -->
-					<widget class="label" spec="text" col="0" row="21">
-						<string id="text" value="fg blue lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="21">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg blue lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="21">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg blue lighter" />
-					</widget>
-					
-					<!-- fg blue -->
-					<widget class="label" spec="text" col="0" row="22">
-						<string id="text" value="fg blue" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="22">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg blue" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="22">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg blue" />
-					</widget>						
-
-					<!-- fg blue darker -->
-					<widget class="label" spec="text" col="0" row="23">
-						<string id="text" value="fg blue darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="23">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg blue darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="23">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg blue darker" />
-					</widget>	
-					
-					<!-- fg light blue lighter -->
-					<widget class="label" spec="text" col="0" row="24">
-						<string id="text" value="fg light blue lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="24">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg light blue lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="24">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg light blue lighter" />
-					</widget>	
-					
-					<!-- fg light blue -->
-					<widget class="label" spec="text" col="0" row="25">
-						<string id="text" value="fg light blue" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="25">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg light blue" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="25">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg light blue" />
-					</widget>	
-					
-					<!-- fg light blue darker -->
-					<widget class="label" spec="text" col="0" row="26">
-						<string id="text" value="fg light blue darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="26">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg light blue darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="26">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg light blue darker" />
-					</widget>
-					
-					<!-- fg cyan lighter -->
-					<widget class="label" spec="text" col="0" row="27">
-						<string id="text" value="fg cyan lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="27">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg cyan lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="27">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg cyan lighter" />
-					</widget>	
-					
-					<!-- fg cyan -->
-					<widget class="label" spec="text" col="0" row="28">
-						<string id="text" value="fg cyan" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="28">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg cyan" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="28">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg cyan" />
-					</widget>
-					
-					<!-- fg cyan darker -->
-					<widget class="label" spec="text" col="0" row="29">
-						<string id="text" value="fg cyan darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="29">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg cyan darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="29">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg cyan darker" />
-					</widget>						
-
-					<!-- fg teal lighter -->
-					<widget class="label" spec="text" col="0" row="30">
-						<string id="text" value="fg teal lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="30">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg teal lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="30">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg teal lighter" />
-					</widget>	
-					
-					<!-- fg teal -->
-					<widget class="label" spec="text" col="0" row="31">
-						<string id="text" value="fg teal" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="31">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg teal" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="31">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg teal" />
-					</widget>	
-					
-					<!-- fg teal darker -->
-					<widget class="label" spec="text" col="0" row="32">
-						<string id="text" value="fg teal darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="32">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg teal darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="32">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg teal darker" />
-					</widget>
-					
-					<!-- fg green lighter -->
-					<widget class="label" spec="text" col="0" row="33">
-						<string id="text" value="fg green lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="33">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg green lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="33">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg green lighter" />
-					</widget>						
-
-					<!-- fg green -->
-					<widget class="label" spec="text" col="0" row="34">
-						<string id="text" value="fg green" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="34">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg green" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="34">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg green" />
-					</widget>	
-					
-					<!-- fg green darker -->
-					<widget class="label" spec="text" col="0" row="35">
-						<string id="text" value="fg green darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="35">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg green darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="35">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg green darker" />
-					</widget>	
-					
-					<!-- fg light green lighter lighter -->
-					<widget class="label" spec="text" col="0" row="36">
-						<string id="text" value="fg light green lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="36">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg light green lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="36">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg light green lighter" />
-					</widget>	
-					
-					<!-- fg light green -->
-					<widget class="label" spec="text" col="0" row="37">
-						<string id="text" value="fg light green" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="37">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg light green" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="37">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg light green" />
-					</widget>	
-					
-					<!-- fg light green darker darker-->
-					<widget class="label" spec="text" col="0" row="38">
-						<string id="text" value="fg light green darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="38">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg light green darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="38">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg light green darker" />
-					</widget>
-					
-					<!-- fg lime lighter -->
-					<widget class="label" spec="text" col="0" row="39">
-						<string id="text" value="fg lime lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="39">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg lime lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="39">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg lime lighter" />
-					</widget>
-					
-					<!-- fg lime -->
-					<widget class="label" spec="text" col="0" row="40">
-						<string id="text" value="fg lime" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="40">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg lime" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="40">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg lime" />
-					</widget>						
-
-					<!-- fg lime darker -->
-					<widget class="label" spec="text" col="0" row="41">
-						<string id="text" value="fg lime darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="41">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg lime darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="41">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg lime darker" />
-					</widget>	
-					
-					<!-- fg yellow lighter -->
-					<widget class="label" spec="text" col="0" row="42">
-						<string id="text" value="fg yellow lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="42">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg yellow lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="42">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg yellow lighter" />
-					</widget>	
-					
-					<!-- fg yellow -->
-					<widget class="label" spec="text" col="0" row="43">
-						<string id="text" value="fg yellow" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="43">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg yellow" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="43">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg yellow" />
-					</widget>
-					
-					<!-- fg yellow darker -->
-					<widget class="label" spec="text" col="0" row="44">
-						<string id="text" value="fg yellow darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="44">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg yellow darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="44">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg yellow darker" />
-					</widget>						
-
-					<!-- fg amber lighter lighter -->
-					<widget class="label" spec="text" col="0" row="45">
-						<string id="text" value="fg amber lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="45">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg amber lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="45">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg amber lighter" />
-					</widget>	
-					
-					<!-- fg amber -->
-					<widget class="label" spec="text" col="0" row="46">
-						<string id="text" value="fg amber" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="46">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg amber" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="46">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg amber" />
-					</widget>	
-					
-					<!-- fg amber darker darker-->
-					<widget class="label" spec="text" col="0" row="47">
-						<string id="text" value="fg amber darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="47">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg amber darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="47">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg amber darker" />
-					</widget>
-					
-					<!-- fg orange lighter -->
-					<widget class="label" spec="text" col="0" row="48">
-						<string id="text" value="fg orange lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="48">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg orange lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="48">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg orange lighter" />
-					</widget>			
-					
-					<!-- fg orange -->
-					<widget class="label" spec="text" col="0" row="49">
-						<string id="text" value="fg orange" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="49">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg orange" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="49">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg orange" />
-					</widget>	
-					
-					<!-- fg orange darker -->
-					<widget class="label" spec="text" col="0" row="50">
-						<string id="text" value="fg orange darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="50">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg orange darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="50">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg orange darker" />
-					</widget>
-					
-					<!-- fg deep orange lighter lighter -->
-					<widget class="label" spec="text" col="0" row="51">
-						<string id="text" value="fg deep orange lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="51">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg deep orange lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="51">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg deep orange lighter" />
-					</widget>	
-					
-					<!-- fg deep orange -->
-					<widget class="label" spec="text" col="0" row="52">
-						<string id="text" value="fg deep orange" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="52">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg deep orange" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="52">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg deep orange" />
-					</widget>	
-					
-					<!-- fg deep orange darker darker-->
-					<widget class="label" spec="text" col="0" row="53">
-						<string id="text" value="fg deep orange darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="53">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg deep orange darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="53">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg deep orange darker" />
-					</widget>
-					
-					<!-- fg brown lighter lighter -->
-					<widget class="label" spec="text" col="0" row="54">
-						<string id="text" value="fg brown lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="54">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg brown lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="54">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg brown lighter" />
-					</widget>	
-					
-					<!-- fg brown -->
-					<widget class="label" spec="text" col="0" row="55">
-						<string id="text" value="fg brown" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="55">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg brown" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="55">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg brown" />
-					</widget>	
-					
-					<!-- fg brown darker darker-->
-					<widget class="label" spec="text" col="0" row="56">
-						<string id="text" value="fg brown darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="1" row="56">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="fg brown darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="2" row="56">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="fg brown darker" />
-					</widget>
-				
-			<!-- mg colours columns  3-5 -->
-					
-					<!-- mg grey lighter -->
-					<widget class="label" spec="text" col="3" row="0">
-						<string id="text" value="mg grey lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="0">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg grey lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="0">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg grey lighter" />
-					</widget>						
-
-					<!-- mg grey -->
-					<widget class="label" spec="text" col="3" row="1">
-						<string id="text" value="mg grey" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="1">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg grey" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="1">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg grey" />
-					</widget>									
-					
-					<!-- mg grey darker -->
-					<widget class="label" spec="text" col="3" row="2">
-						<string id="text" value="mg grey darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="2">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg grey darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="2">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg grey darker" />
-					</widget>		
-					
-					<!-- mg blue grey lighter -->
-					<widget class="label" spec="text" col="3" row="3">
-						<string id="text" value="mg blue grey lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="3">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg blue grey lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="3">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg blue grey lighter" />
-					</widget>	
-					
-					<!-- mg blue grey -->
-					<widget class="label" spec="text" col="3" row="4">
-						<string id="text" value="mg blue grey" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="4">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg blue grey" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="4">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg blue grey" />
-					</widget>	
-					
-					<!-- mg blue grey darker darker-->
-					<widget class="label" spec="text" col="3" row="5">
-						<string id="text" value="mg blue grey darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="5">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg blue grey darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="5">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg blue grey darker" />
-					</widget>	
-					
-					<!-- mg red lighter -->
-					<widget class="label" spec="text" col="3" row="6">
-						<string id="text" value="mg red lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="6">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg red lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="6">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg red lighter" />
-					</widget>
-					
-					<!-- mg red -->
-					<widget class="label" spec="text" col="3" row="7">
-						<string id="text" value="mg red" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="7">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg red" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="7">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg red" />
-					</widget>
-					
-					<!-- mg red darker -->
-					<widget class="label" spec="text" col="3" row="8">
-						<string id="text" value="mg red darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="8">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg red darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="8">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg red darker" />
-					</widget>						
-
-					<!-- mg pink lighter -->
-					<widget class="label" spec="text" col="3" row="9">
-						<string id="text" value="mg pink lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="9">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg pink lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="9">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg pink lighter" />
-					</widget>						
-
-					<!-- mg pink -->
-					<widget class="label" spec="text" col="3" row="10">
-						<string id="text" value="mg pink" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="10">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg pink" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="10">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg pink" />
-					</widget>	
-					
-					<!-- mg pink darker -->
-					<widget class="label" spec="text" col="3" row="11">
-						<string id="text" value="mg pink darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="11">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg pink darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="11">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg pink darker" />
-					</widget>
-					
-					<!-- mg purple lighter -->
-					<widget class="label" spec="text" col="3" row="12">
-						<string id="text" value="mg purple lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="12">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg purple lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="12">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg purple lighter" />
-					</widget>						
-
-					<!-- mg purple -->
-					<widget class="label" spec="text" col="3" row="13">
-						<string id="text" value="mg purple" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="13">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg purple" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="13">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg purple" />
-					</widget>	
-					
-					<!-- mg purple darker -->
-					<widget class="label" spec="text" col="3" row="14">
-						<string id="text" value="mg purple darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="14">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg purple darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="14">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg purple darker" />
-					</widget>	
-					
-					<!-- mg deep purple darker -->
-					<widget class="label" spec="text" col="3" row="15">
-						<string id="text" value="mg deep purple darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="15">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg deep purple darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="15">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg deep purple darker" />
-					</widget>	
-					
-					<!-- mg deep purple -->
-					<widget class="label" spec="text" col="3" row="16">
-						<string id="text" value="mg deep purple" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="16">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg deep purple" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="16">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg deep purple" />
-					</widget>	
-					
-					<!-- mg deep purple darker -->
-					<widget class="label" spec="text" col="3" row="17">
-						<string id="text" value="mg deep purple darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="17">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg deep purple darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="17">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg deep purple darker" />
-					</widget>
-					
-					<!-- mg indigo lighter -->
-					<widget class="label" spec="text" col="3" row="18">
-						<string id="text" value="mg indigo lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="18">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg indigo lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="18">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg indigo lighter" />
-					</widget>	
-					
-					<!-- mg indigo -->
-					<widget class="label" spec="text" col="3" row="19">
-						<string id="text" value="mg indigo" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="19">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg indigo" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="19">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg indigo" />
-					</widget>	
-					
-					<!-- mg indigo darker -->
-					<widget class="label" spec="text" col="3" row="20">
-						<string id="text" value="mg indigo darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="20">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg indigo darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="20">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg indigo darker" />
-					</widget>
-					
-					<!-- mg blue lighter -->
-					<widget class="label" spec="text" col="3" row="21">
-						<string id="text" value="mg blue lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="21">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg blue lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="21">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg blue lighter" />
-					</widget>
-					
-					<!-- mg blue -->
-					<widget class="label" spec="text" col="3" row="22">
-						<string id="text" value="mg blue" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="22">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg blue" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="22">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg blue" />
-					</widget>						
-
-					<!-- mg blue darker -->
-					<widget class="label" spec="text" col="3" row="23">
-						<string id="text" value="mg blue darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="23">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg blue darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="23">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg blue darker" />
-					</widget>	
-					
-					<!-- mg light blue lighter -->
-					<widget class="label" spec="text" col="3" row="24">
-						<string id="text" value="mg light blue lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="24">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg light blue lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="24">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg light blue lighter" />
-					</widget>	
-					
-					<!-- mg light blue -->
-					<widget class="label" spec="text" col="3" row="25">
-						<string id="text" value="mg light blue" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="25">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg light blue" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="25">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg light blue" />
-					</widget>	
-					
-					<!-- mg light blue darker -->
-					<widget class="label" spec="text" col="3" row="26">
-						<string id="text" value="mg light blue darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="26">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg light blue darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="26">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg light blue darker" />
-					</widget>
-					
-					<!-- mg cyan lighter -->
-					<widget class="label" spec="text" col="3" row="27">
-						<string id="text" value="mg cyan lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="27">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg cyan lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="27">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg cyan lighter" />
-					</widget>	
-					
-					<!-- mg cyan -->
-					<widget class="label" spec="text" col="3" row="28">
-						<string id="text" value="mg cyan" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="28">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg cyan" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="28">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg cyan" />
-					</widget>
-					
-					<!-- mg cyan darker -->
-					<widget class="label" spec="text" col="3" row="29">
-						<string id="text" value="mg cyan darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="29">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg cyan darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="29">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg cyan darker" />
-					</widget>						
-
-					<!-- mg teal lighter -->
-					<widget class="label" spec="text" col="3" row="30">
-						<string id="text" value="mg teal lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="30">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg teal lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="30">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg teal lighter" />
-					</widget>	
-					
-					<!-- mg teal -->
-					<widget class="label" spec="text" col="3" row="31">
-						<string id="text" value="mg teal" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="31">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg teal" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="31">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg teal" />
-					</widget>	
-					
-					<!-- mg teal darker -->
-					<widget class="label" spec="text" col="3" row="32">
-						<string id="text" value="mg teal darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="32">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg teal darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="32">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg teal darker" />
-					</widget>
-					
-					<!-- mg green lighter -->
-					<widget class="label" spec="text" col="3" row="33">
-						<string id="text" value="mg green lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="33">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg green lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="33">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg green lighter" />
-					</widget>						
-
-					<!-- mg green -->
-					<widget class="label" spec="text" col="3" row="34">
-						<string id="text" value="mg green" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="34">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg green" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="34">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg green" />
-					</widget>	
-					
-					<!-- mg green darker -->
-					<widget class="label" spec="text" col="3" row="35">
-						<string id="text" value="mg green darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="35">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg green darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="35">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg green darker" />
-					</widget>	
-					
-					<!-- mg light green lighter lighter -->
-					<widget class="label" spec="text" col="3" row="36">
-						<string id="text" value="mg light green lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="36">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg light green lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="36">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg light green lighter" />
-					</widget>	
-					
-					<!-- mg light green -->
-					<widget class="label" spec="text" col="3" row="37">
-						<string id="text" value="mg light green" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="37">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg light green" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="37">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg light green" />
-					</widget>	
-					
-					<!-- mg light green darker darker-->
-					<widget class="label" spec="text" col="3" row="38">
-						<string id="text" value="mg light green darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="38">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg light green darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="38">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg light green darker" />
-					</widget>
-					
-					<!-- mg lime lighter -->
-					<widget class="label" spec="text" col="3" row="39">
-						<string id="text" value="mg lime lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="39">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg lime lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="39">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg lime lighter" />
-					</widget>
-					
-					<!-- mg lime -->
-					<widget class="label" spec="text" col="3" row="40">
-						<string id="text" value="mg lime" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="40">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg lime" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="40">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg lime" />
-					</widget>						
-
-					<!-- mg lime darker -->
-					<widget class="label" spec="text" col="3" row="41">
-						<string id="text" value="mg lime darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="41">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg lime darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="41">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg lime darker" />
-					</widget>	
-					
-					<!-- mg yellow lighter -->
-					<widget class="label" spec="text" col="3" row="42">
-						<string id="text" value="mg yellow lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="42">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg yellow lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="42">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg yellow lighter" />
-					</widget>	
-					
-					<!-- mg yellow -->
-					<widget class="label" spec="text" col="3" row="43">
-						<string id="text" value="mg yellow" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="43">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg yellow" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="43">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg yellow" />
-					</widget>
-					
-					<!-- mg yellow darker -->
-					<widget class="label" spec="text" col="3" row="44">
-						<string id="text" value="mg yellow darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="44">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg yellow darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="44">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg yellow darker" />
-					</widget>						
-
-					<!-- mg amber lighter lighter -->
-					<widget class="label" spec="text" col="3" row="45">
-						<string id="text" value="mg amber lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="45">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg amber lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="45">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg amber lighter" />
-					</widget>	
-					
-					<!-- mg amber -->
-					<widget class="label" spec="text" col="3" row="46">
-						<string id="text" value="mg amber" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="46">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg amber" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="46">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg amber" />
-					</widget>	
-					
-					<!-- mg amber darker darker-->
-					<widget class="label" spec="text" col="3" row="47">
-						<string id="text" value="mg amber darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="47">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg amber darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="47">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg amber darker" />
-					</widget>
-					
-					<!-- mg orange lighter -->
-					<widget class="label" spec="text" col="3" row="48">
-						<string id="text" value="mg orange lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="48">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg orange lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="48">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg orange lighter" />
-					</widget>			
-					
-					<!-- mg orange -->
-					<widget class="label" spec="text" col="3" row="49">
-						<string id="text" value="mg orange" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="49">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg orange" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="49">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg orange" />
-					</widget>	
-					
-					<!-- mg orange darker -->
-					<widget class="label" spec="text" col="3" row="50">
-						<string id="text" value="mg orange darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="50">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg orange darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="50">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg orange darker" />
-					</widget>
-					
-					<!-- mg deep orange lighter lighter -->
-					<widget class="label" spec="text" col="3" row="51">
-						<string id="text" value="mg deep orange lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="51">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg deep orange lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="51">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg deep orange lighter" />
-					</widget>	
-					
-					<!-- mg deep orange -->
-					<widget class="label" spec="text" col="3" row="52">
-						<string id="text" value="mg deep orange" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="52">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg deep orange" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="52">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg deep orange" />
-					</widget>	
-					
-					<!-- mg deep orange darker darker-->
-					<widget class="label" spec="text" col="3" row="53">
-						<string id="text" value="mg deep orange darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="53">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg deep orange darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="53">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg deep orange darker" />
-					</widget>
-					
-					<!-- mg brown lighter lighter -->
-					<widget class="label" spec="text" col="3" row="54">
-						<string id="text" value="mg brown lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="54">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg brown lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="54">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg brown lighter" />
-					</widget>	
-					
-					<!-- mg brown -->
-					<widget class="label" spec="text" col="3" row="55">
-						<string id="text" value="mg brown" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="55">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg brown" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="55">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg brown" />
-					</widget>	
-					
-					<!-- mg brown darker darker-->
-					<widget class="label" spec="text" col="3" row="56">
-						<string id="text" value="mg brown darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="4" row="56">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="mg brown darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="5" row="56">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="mg brown darker" />
-					</widget>				
-
-		<!-- bg colours col. 6-8 -->
-		
-					<!-- bg grey lighter -->
-					<widget class="label" spec="text" col="6" row="0">
-						<string id="text" value="bg grey lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="0">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg grey lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="0">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg grey lighter" />
-					</widget>						
-
-					<!-- bg grey -->
-					<widget class="label" spec="text" col="6" row="1">
-						<string id="text" value="bg grey" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="1">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg grey" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="1">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg grey" />
-					</widget>									
-					
-					<!-- bg grey darker -->
-					<widget class="label" spec="text" col="6" row="2">
-						<string id="text" value="bg grey darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="2">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg grey darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="2">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg grey darker" />
-					</widget>		
-					
-					<!-- bg blue grey lighter -->
-					<widget class="label" spec="text" col="6" row="3">
-						<string id="text" value="bg blue grey lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="3">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg blue grey lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="3">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg blue grey lighter" />
-					</widget>	
-					
-					<!-- bg blue grey -->
-					<widget class="label" spec="text" col="6" row="4">
-						<string id="text" value="bg blue grey" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="4">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg blue grey" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="4">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg blue grey" />
-					</widget>	
-					
-					<!-- bg blue grey darker darker-->
-					<widget class="label" spec="text" col="6" row="5">
-						<string id="text" value="bg blue grey darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="5">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg blue grey darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="5">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg blue grey darker" />
-					</widget>	
-					
-					<!-- bg red lighter -->
-					<widget class="label" spec="text" col="6" row="6">
-						<string id="text" value="bg red lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="6">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg red lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="6">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg red lighter" />
-					</widget>
-					
-					<!-- bg red -->
-					<widget class="label" spec="text" col="6" row="7">
-						<string id="text" value="bg red" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="7">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg red" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="7">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg red" />
-					</widget>
-					
-					<!-- bg red darker -->
-					<widget class="label" spec="text" col="6" row="8">
-						<string id="text" value="bg red darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="8">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg red darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="8">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg red darker" />
-					</widget>						
-
-					<!-- bg pink lighter -->
-					<widget class="label" spec="text" col="6" row="9">
-						<string id="text" value="bg pink lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="9">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg pink lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="9">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg pink lighter" />
-					</widget>						
-
-					<!-- bg pink -->
 					<widget class="label" spec="text" col="6" row="10">
-						<string id="text" value="bg pink" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="10">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg pink" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="10">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg pink" />
-					</widget>	
-					
-					<!-- bg pink darker -->
-					<widget class="label" spec="text" col="6" row="11">
-						<string id="text" value="bg pink darker" />
+						<flags id="colour"	value="match caption background" />
 					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="11">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg pink darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="11">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg pink darker" />
-					</widget>
-					
-					<!-- bg purple lighter -->
-					<widget class="label" spec="text" col="6" row="12">
-						<string id="text" value="bg purple lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="12">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg purple lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="12">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg purple lighter" />
-					</widget>						
 
-					<!-- bg purple -->
-					<widget class="label" spec="text" col="6" row="13">
-						<string id="text" value="bg purple" />
+<!-- columns 4-6 right side bg values -->		
+					<!-- goalkeeper_line -->
+					<widget class="label" spec="text" col="7" row="0">
+						<string id="text" value="goalkeeper_line" />
 					</widget>
 					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="13">
+					<widget class="picture" col="8" row="0">
 						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg purple" />
+						<flags id="red_replacement" value="goalkeeper_line" />
 					</widget>
 					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="13">
+					<widget class="label" spec="text" col="9" row="0">
 						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg purple" />
-					</widget>	
-					
-					<!-- bg purple darker -->
-					<widget class="label" spec="text" col="6" row="14">
-						<string id="text" value="bg purple darker" />
+						<flags id="colour"	value="goalkeeper_line" />
 					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="14">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg purple darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="14">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg purple darker" />
-					</widget>	
-					
-					<!-- bg deep purple darker -->
-					<widget class="label" spec="text" col="6" row="15">
-						<string id="text" value="bg deep purple darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="15">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg deep purple darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="15">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg deep purple darker" />
-					</widget>	
-					
-					<!-- bg deep purple -->
-					<widget class="label" spec="text" col="6" row="16">
-						<string id="text" value="bg deep purple" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="16">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg deep purple" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="16">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg deep purple" />
-					</widget>	
-					
-					<!-- bg deep purple darker -->
-					<widget class="label" spec="text" col="6" row="17">
-						<string id="text" value="bg deep purple darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="17">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg deep purple darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="17">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg deep purple darker" />
-					</widget>
-					
-					<!-- bg indigo lighter -->
-					<widget class="label" spec="text" col="6" row="18">
-						<string id="text" value="bg indigo lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="18">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg indigo lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="18">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg indigo lighter" />
-					</widget>	
-					
-					<!-- bg indigo -->
-					<widget class="label" spec="text" col="6" row="19">
-						<string id="text" value="bg indigo" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="19">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg indigo" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="19">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg indigo" />
-					</widget>	
-					
-					<!-- bg indigo darker -->
-					<widget class="label" spec="text" col="6" row="20">
-						<string id="text" value="bg indigo darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="20">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg indigo darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="20">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg indigo darker" />
-					</widget>
-					
-					<!-- bg blue lighter -->
-					<widget class="label" spec="text" col="6" row="21">
-						<string id="text" value="bg blue lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="21">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg blue lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="21">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg blue lighter" />
-					</widget>
-					
-					<!-- bg blue -->
-					<widget class="label" spec="text" col="6" row="22">
-						<string id="text" value="bg blue" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="22">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg blue" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="22">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg blue" />
-					</widget>						
 
-					<!-- bg blue darker -->
-					<widget class="label" spec="text" col="6" row="23">
-						<string id="text" value="bg blue darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="23">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg blue darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="23">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg blue darker" />
-					</widget>	
-					
-					<!-- bg light blue lighter -->
-					<widget class="label" spec="text" col="6" row="24">
-						<string id="text" value="bg light blue lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="24">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg light blue lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="24">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg light blue lighter" />
-					</widget>	
-					
-					<!-- bg light blue -->
-					<widget class="label" spec="text" col="6" row="25">
-						<string id="text" value="bg light blue" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="25">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg light blue" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="25">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg light blue" />
-					</widget>	
-					
-					<!-- bg light blue darker -->
-					<widget class="label" spec="text" col="6" row="26">
-						<string id="text" value="bg light blue darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="26">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg light blue darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="26">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg light blue darker" />
-					</widget>
-					
-					<!-- bg cyan lighter -->
-					<widget class="label" spec="text" col="6" row="27">
-						<string id="text" value="bg cyan lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="27">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg cyan lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="27">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg cyan lighter" />
-					</widget>	
-					
-					<!-- bg cyan -->
-					<widget class="label" spec="text" col="6" row="28">
-						<string id="text" value="bg cyan" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="28">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg cyan" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="28">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg cyan" />
-					</widget>
-					
-					<!-- bg cyan darker -->
-					<widget class="label" spec="text" col="6" row="29">
-						<string id="text" value="bg cyan darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="29">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg cyan darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="29">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg cyan darker" />
-					</widget>						
-
-					<!-- bg teal lighter -->
-					<widget class="label" spec="text" col="6" row="30">
-						<string id="text" value="bg teal lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="30">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg teal lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="30">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg teal lighter" />
-					</widget>	
-					
-					<!-- bg teal -->
-					<widget class="label" spec="text" col="6" row="31">
-						<string id="text" value="bg teal" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="31">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg teal" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="31">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg teal" />
-					</widget>	
-					
-					<!-- bg teal darker -->
-					<widget class="label" spec="text" col="6" row="32">
-						<string id="text" value="bg teal darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="32">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg teal darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="32">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg teal darker" />
-					</widget>
-					
-					<!-- bg green lighter -->
-					<widget class="label" spec="text" col="6" row="33">
-						<string id="text" value="bg green lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="33">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg green lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="33">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg green lighter" />
-					</widget>						
-
-					<!-- bg green -->
-					<widget class="label" spec="text" col="6" row="34">
-						<string id="text" value="bg green" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="34">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg green" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="34">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg green" />
-					</widget>	
-					
-					<!-- bg green darker -->
-					<widget class="label" spec="text" col="6" row="35">
-						<string id="text" value="bg green darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="35">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg green darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="35">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg green darker" />
-					</widget>	
-					
-					<!-- bg light green lighter lighter -->
-					<widget class="label" spec="text" col="6" row="36">
-						<string id="text" value="bg light green lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="36">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg light green lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="36">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg light green lighter" />
-					</widget>	
-					
-					<!-- bg light green -->
-					<widget class="label" spec="text" col="6" row="37">
-						<string id="text" value="bg light green" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="37">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg light green" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="37">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg light green" />
-					</widget>	
-					
-					<!-- bg light green darker darker-->
-					<widget class="label" spec="text" col="6" row="38">
-						<string id="text" value="bg light green darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="38">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg light green darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="38">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg light green darker" />
-					</widget>
-					
-					<!-- bg lime lighter -->
-					<widget class="label" spec="text" col="6" row="39">
-						<string id="text" value="bg lime lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="39">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg lime lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="39">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg lime lighter" />
-					</widget>
-					
-					<!-- bg lime -->
-					<widget class="label" spec="text" col="6" row="40">
-						<string id="text" value="bg lime" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="40">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg lime" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="40">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg lime" />
-					</widget>						
-
-					<!-- bg lime darker -->
-					<widget class="label" spec="text" col="6" row="41">
-						<string id="text" value="bg lime darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="41">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg lime darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="41">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg lime darker" />
-					</widget>	
-					
-					<!-- bg yellow lighter -->
-					<widget class="label" spec="text" col="6" row="42">
-						<string id="text" value="bg yellow lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="42">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg yellow lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="42">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg yellow lighter" />
-					</widget>	
-					
-					<!-- bg yellow -->
-					<widget class="label" spec="text" col="6" row="43">
-						<string id="text" value="bg yellow" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="43">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg yellow" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="43">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg yellow" />
-					</widget>
-					
-					<!-- bg yellow darker -->
-					<widget class="label" spec="text" col="6" row="44">
-						<string id="text" value="bg yellow darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="44">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg yellow darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="44">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg yellow darker" />
-					</widget>						
-
-					<!-- bg amber lighter lighter -->
-					<widget class="label" spec="text" col="6" row="45">
-						<string id="text" value="bg amber lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="45">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg amber lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="45">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg amber lighter" />
-					</widget>	
-					
-					<!-- bg amber -->
-					<widget class="label" spec="text" col="6" row="46">
-						<string id="text" value="bg amber" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="46">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg amber" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="46">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg amber" />
-					</widget>	
-					
-					<!-- bg amber darker darker-->
-					<widget class="label" spec="text" col="6" row="47">
-						<string id="text" value="bg amber darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="47">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg amber darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="47">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg amber darker" />
-					</widget>
-					
-					<!-- bg orange lighter -->
-					<widget class="label" spec="text" col="6" row="48">
-						<string id="text" value="bg orange lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="48">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg orange lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="48">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg orange lighter" />
-					</widget>			
-					
-					<!-- bg orange -->
-					<widget class="label" spec="text" col="6" row="49">
-						<string id="text" value="bg orange" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="49">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg orange" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="49">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg orange" />
-					</widget>	
-					
-					<!-- bg orange darker -->
-					<widget class="label" spec="text" col="6" row="50">
-						<string id="text" value="bg orange darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="50">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg orange darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="50">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg orange darker" />
-					</widget>
-					
-					<!-- bg deep orange lighter lighter -->
-					<widget class="label" spec="text" col="6" row="51">
-						<string id="text" value="bg deep orange lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="51">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg deep orange lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="51">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg deep orange lighter" />
-					</widget>	
-					
-					<!-- bg deep orange -->
-					<widget class="label" spec="text" col="6" row="52">
-						<string id="text" value="bg deep orange" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="52">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg deep orange" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="52">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg deep orange" />
-					</widget>	
-					
-					<!-- bg deep orange darker darker-->
-					<widget class="label" spec="text" col="6" row="53">
-						<string id="text" value="bg deep orange darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="53">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg deep orange darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="53">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg deep orange darker" />
-					</widget>
-					
-					<!-- bg brown lighter lighter -->
-					<widget class="label" spec="text" col="6" row="54">
-						<string id="text" value="bg brown lighter" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="54">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg brown lighter" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="54">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg brown lighter" />
-					</widget>	
-					
-					<!-- bg brown -->
-					<widget class="label" spec="text" col="6" row="55">
-						<string id="text" value="bg brown" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="55">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg brown" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="55">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg brown" />
-					</widget>	
-					
-					<!-- bg brown darker darker-->
-					<widget class="label" spec="text" col="6" row="56">
-						<string id="text" value="bg brown darker" />
-					</widget>
-					<!-- box solid colour example -->
-					<widget class="picture" col="7" row="56">
-						<flags id="file" value="boxes/custom/solid/paper" />
-						<flags id="red_replacement" value="bg brown darker" />
-					</widget>
-					<!-- recoloured text example -->
-					<widget class="label" spec="text" col="8" row="56">
-						<string id="text" value="Football Manager" />
-						<flags id="colour"	value="bg brown darker" />
-					</widget>
-			
-					
-					
-					
-					
-					
-					
-					
-
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-				</widget>
+			</widget>
+<!-- END SPECIAL COLOURS TABLE -->
 
 			</container>
 		</container>

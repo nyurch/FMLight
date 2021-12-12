@@ -34,7 +34,7 @@
 		<container>
 			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="10"/>
 
-			<container class="bordered_box_transparent" appearance="boxes/custom/end of season/pack/paper_disabled" id="con1" navigation_container="true">
+			<container class="bordered_box_transparent" id="con1" navigation_container="true">
 				<attachment_group class="vertical_arrange" vertical_alignment="top,extend"/>
 
 				<widget class="text" height="25" id="mnaT">
@@ -92,7 +92,7 @@
 				</container>
 			</container>
 
-			<container class="bordered_box_transparent" appearance="boxes/custom/end of season/pack/paper_disabled" id="con2" navigation_container="true" default_focus="true">
+			<container class="bordered_box_transparent" id="con2" navigation_container="true" default_focus="true">
 				<attachment_group class="vertical_arrange" vertical_layout="25, -1"/>
 				<widget class="text" id="plrA">
 					<translation id="text" translation_id="509703" type="use" value="Player Awards[COMMENT: AREA: End of Season Review; SUB-AREA: Accolades; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: title]" />
@@ -126,7 +126,7 @@
 
 			</container>
 
-			<container class="bordered_box_transparent" appearance="boxes/custom/end of season/pack/paper_disabled" id="con3" navigation_container="true">
+			<container class="bordered_box_transparent" id="con3" navigation_container="true">
 				<attachment_group class="vertical_arrange" vertical_alignment="top,extend"/>
 				<widget class="text" height="25" id="rcbT">
 					<translation id="text" translation_id="509706" type="use" value="Record Breakers[COMMENT: AREA: End of Season Review; SUB-AREA: Accolades; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: title]" />
