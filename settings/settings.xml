@@ -431,29 +431,29 @@
 
 	<!-- match rating colours -->
 	<colour name="match rating none" 						value="bg lighter" />
-	<colour name="match rating zero to five" 				value="bg range1" />
-	<colour name="match rating five to six" 				value="bg range2" />
+	<colour name="match rating zero to five" 				value="fg range1" />
+	<colour name="match rating five to six" 				value="fg range2" />
 	<colour name="match rating six to seven" 				value="bg lighter" />
-	<colour name="match rating seven to eight" 				value="bg range16" />
-	<colour name="match rating eight to nine" 				value="bg range18" />
-	<colour name="match rating nine to ten" 				value="bg range20" />
+	<colour name="match rating seven to eight" 				value="fg range16" />
+	<colour name="match rating eight to nine" 				value="fg range18" />
+	<colour name="match rating nine to ten" 				value="fg range20" />
 
 	<!-- match rating text colours -->
-	<colour name="match rating text none" 					value="faded text" />
-	<colour name="match rating text zero to five" 			value="faded black" />
-	<colour name="match rating text five to six" 			value="faded black" />
-	<colour name="match rating text six to seven" 			value="fg alpha" />
-	<colour name="match rating text seven to eight" 		value="faded black" />
-	<colour name="match rating text eight to nine" 			value="faded black" />
-	<colour name="match rating text nine to ten" 			value="faded black" />
+	<colour name="match rating text none" 					value="black" />
+	<colour name="match rating text zero to five" 			value="white" />
+	<colour name="match rating text five to six" 			value="white" />
+	<colour name="match rating text six to seven" 			value="black" />
+	<colour name="match rating text seven to eight" 		value="white" />
+	<colour name="match rating text eight to nine" 			value="white" />
+	<colour name="match rating text nine to ten" 			value="white" />
 
 	<!-- match form colours -->
 	<colour name="match form none" 						value="bg lighter" />
 	<colour name="match form zero to five" 				value="bg range1" />
 	<colour name="match form five to six" 				value="bg range2" />
 	<colour name="match form six to seven" 				value="bg range10" />
-	<colour name="match form seven to eight" 				value="bg range16" />
-	<colour name="match form eight to nine" 				value="bg range18" />
+	<colour name="match form seven to eight" 			value="bg range16" />
+	<colour name="match form eight to nine" 			value="bg range18" />
 	<colour name="match form nine to ten" 				value="bg range20" />
 
 	<!-- training rating colours -->
@@ -472,7 +472,7 @@
 	<colour name="tactics player name injured" 				value="white" />
 	<colour name="tactics player name yellow card" 			value="yellow 500" />
 
-	<!--colours for the position lines on the tactics pitch and widgets-->
+	<!-- Colours for the position lines on the tactics pitch and widgets -->
 	<colour name="goalkeeper_line" 							value="rgb(150,0,0)" />
 	<colour name="defender_line" 							value="rgb(150,100,0)" />
 	<colour name="defensive_midfielder_line" 				value="rgb(150,150,150)" />
@@ -481,16 +481,6 @@
 	<colour name="attacker_line" 							value="rgb(0,150,0)" />
 	<colour name="substitutes_line" 						value="rgb(125,125,125)"/>
 	<colour name="sweeper_line" 							value="rgb(141,198,63)" />
-
-	<!-- Lines -->
-	<colour name="goalkeeper_line" red="150" green="0" blue="0" />
-	<colour name="sweeper_line" red="141" green="198" blue="63" />
-	<colour name="defender_line" red="150" green="100" blue="0" />
-	<colour name="defensive_midfielder_line" red="150" green="150" blue="150" />
-	<colour name="midfielder_line" red="0" green="135" blue="200" />
-	<colour name="attacking_midfielder_line" red="0" green="150" blue="150" />
-	<colour name="attacker_line" red="0" green="150" blue="0" />
-	<colour name="substitutes_line" red="125" green="125" blue="125" />
 
 	<!-- Player/Object colours -->
 	<colour name="virtual player" 							value="red 500"/>

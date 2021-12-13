@@ -4,7 +4,7 @@
 
 <container class="vertical_adaptive_container" inset="0" offset="0" gap="0">
 
-	<container class="main_box" height="170"/>
+	<container class="main_box" appearance="boxes/custom/interface/sidebar/paper" height="170"/>
 
   	<container class="main_box" appearance="boxes/custom/interface/sidebar/paper" default_height="-1">
 		<layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="0" offset="4"/>
@@ -133,7 +133,7 @@
 		</container>
 	</container>
 
-	<container class="main_box" height="220"/>
+	<container class="main_box" appearance="boxes/custom/interface/sidebar/paper" height="220"/>
 
 </container>
 </panel>
