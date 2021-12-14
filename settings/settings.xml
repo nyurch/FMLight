@@ -483,18 +483,18 @@
 	<colour name="sweeper_line" 							value="rgb(141,198,63)" />
 
 	<!-- Player/Object colours -->
-	<colour name="virtual player" 							value="red 500"/>
-	<colour name="loan out" 								value="fg purple"/>
-	<colour name="loan out background" 						value="fg blue"/>
-	<colour name="loan in" 									value="fg blue"/>
-	<colour name="co own in" 								value="fg lime lighter"/>
-	<colour name="co own out" 								value="fg lime"/>
-	<colour name="trial in" 								value="green lighter"/>
+	<colour name="virtual player" 							value="grey 200"/>
+	<colour name="loan out" 								value="purple"/>
+	<colour name="loan out background" 						value="blue"/>
+	<colour name="loan in" 									value="blue"/>
+	<colour name="co own in" 								value="lime"/>
+	<colour name="co own out" 								value="lime"/>
+	<colour name="trial in" 								value="green"/>
 	<colour name="trial out" 								value="green"/>
 	<colour name="shortlisted" 								value="dark orange"/>
 	<colour name="golden generation" 						value="gold"/>
-	<colour name="human controlled" 						value="fg cyan" />
-	<colour name="feeder club" 								value="fg purple"/>
+	<colour name="human controlled" 						value="cyan 900" />
+	<colour name="feeder club" 								value="purple 900"/>
 
 	<!-- Status Button Colours -->
 	<colour name="status_advisory" 							value="rgb(103,190,129)"/>
@@ -833,7 +833,7 @@
 	<colour name="human speech bubble" 						value="bg lighter"/>
 	<colour name="happy speech bubble"						value="bg positive"/>
 	<colour name="unhappy speech bubble" 					value="bg negative"/>
-	<colour name="negotiation speech bubble" 				value="bg info"/>
+	<colour name="negotiation speech bubble" 				value="bg lighter"/>
 	<colour name="negotiation last chance bubble" 			value="bg alert"/>
 
 	<!-- General Conversation Colours for the team meeting + other players -->
