@@ -483,14 +483,14 @@
 	<colour name="sweeper_line" 							value="rgb(141,198,63)" />
 
 	<!-- Player/Object colours -->
-	<colour name="virtual player" 							value="grey 200"/>
-	<colour name="loan out" 								value="purple"/>
-	<colour name="loan out background" 						value="blue"/>
-	<colour name="loan in" 									value="blue"/>
-	<colour name="co own in" 								value="lime"/>
-	<colour name="co own out" 								value="lime"/>
-	<colour name="trial in" 								value="green"/>
-	<colour name="trial out" 								value="green"/>
+	<colour name="virtual player" 							value="grey 600"/>
+	<colour name="loan out" 								value="purple 900"/>
+	<colour name="loan out background" 						value="blue 900"/>
+	<colour name="loan in" 									value="blue 900"/>
+	<colour name="co own in" 								value="lime 900"/>
+	<colour name="co own out" 								value="lime 900"/>
+	<colour name="trial in" 								value="green 900"/>
+	<colour name="trial out" 								value="green 900"/>
 	<colour name="shortlisted" 								value="dark orange"/>
 	<colour name="golden generation" 						value="gold"/>
 	<colour name="human controlled" 						value="cyan 900" />
@@ -711,7 +711,7 @@
 	<!-- player unavailable -->
 	<colour name="picking player available" 				value="teal 900" />
 	<!-- player available - only used on the tactics pitch-->
-	<colour name="picking player first team" 					value="bg blue lighter" />
+	<colour name="picking player first team" 					value="bg blue" />
 	<!--  senior player available for no senior team- only used on the tactics pitch-->
 	<!-- Picking Button - Starting-->
 	<colour name="picking_starting_button" 					value="rgb(45,135,52)"/>
@@ -833,7 +833,7 @@
 	<colour name="human speech bubble" 						value="bg lighter"/>
 	<colour name="happy speech bubble"						value="bg positive"/>
 	<colour name="unhappy speech bubble" 					value="bg negative"/>
-	<colour name="negotiation speech bubble" 				value="bg lighter"/>
+	<colour name="negotiation speech bubble" 				value="bg info"/>
 	<colour name="negotiation last chance bubble" 			value="bg alert"/>
 
 	<!-- General Conversation Colours for the team meeting + other players -->
@@ -1690,8 +1690,8 @@
 
 
 	<!--fine colours-->
-	<colour name="fine no action" 							value="white" />
-	<colour name="fine warning" 								value="yellow 300" />
+	<colour name="fine no action" 							value="black" />
+	<colour name="fine warning" 								value="yellow 500" />
 	<colour name="fine 1 day" 									value="orange 100" />
 	<colour name="fine 1/2 week" 								value="orange 500" />
 	<colour name="fine 1 week" 									value="deep orange 500" />
@@ -1715,15 +1715,15 @@
 	<colour name="performance fans tag" 					value="teal" />
 	<colour name="performance A plus grade" 				value="teal 900" />
 	<colour name="performance A grade" 						value="teal 600" />
-	<colour name="performance A minus grade" 				value="teal 300" />
+	<colour name="performance A minus grade" 				value="teal 500" />
 	<colour name="performance B plus grade" 				value="green 900" />
 	<colour name="performance B grade" 						value="green 600" />
-	<colour name="performance B minus grade" 				value="green 300" />
-	<colour name="performance C plus grade" 				value="orange 300" />
+	<colour name="performance B minus grade" 				value="green 500" />
+	<colour name="performance C plus grade" 				value="orange 500" />
 	<colour name="performance C grade" 						value="orange 600" />
 	<colour name="performance C minus grade" 				value="orange 900" />
-	<colour name="performance D grade" 						value="red 300" />
-	<colour name="performance E grade" 						value="red 300" />
+	<colour name="performance D grade" 						value="red 500" />
+	<colour name="performance E grade" 						value="red 500" />
 	<colour name="performance F grade" 						value="red 600" />
 	<colour name="performance G grade" 						value="red 900" />
 	<colour name="performance waiting grade" 				value="faded text" />
@@ -1823,7 +1823,7 @@
 	<colour name="deadline day fg colour" 					value="rgb(250,160,30)"/>
 	<colour name="deadline day fg darker" 					value="rgb(205,205,205)"/>
 	<colour name="deadline day fg alpha" 					value="rgb(179,179,179)"/>
-	<colour name="deadline day fg accent" 					value="rgb(247,212,0)"/>
+	<colour name="deadline day fg accent" 					value="rgb(230,115,0)"/>
 	<colour name="deadline day fg tertiary" 				value="fg tertiary"/>
 	<colour name="deadline day fg titles" 					value="rgb(246,83,29)"/>
 	<colour name="deadline day body text" 					value="rgb(2,2,2)"/>

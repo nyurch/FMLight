@@ -45,7 +45,7 @@
 		<boolean id="exclude_from_find" value="true" />
 		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 	</widget>
-	<container class="main_box" entity_layout_id="at00" id="at00" name="background box" background_colour="white">
+	<container class="main_box" entity_layout_id="at00" id="at00" name="background box" >
 		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
 		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
 		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
@@ -92,7 +92,8 @@
 			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
 			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
 		</widget>
-		<container class="main_subtle_box" background_colour="faded white" entity_layout_id="at06" id="at06" name="how it unfolded box" navigation_container="true">
+		<container class="main_subtle_box" entity_layout_id="at06" id="at06" name="how it unfolded box" navigation_container="true">
+			<layout class="stick_to_object_attachment" id="align_bottom" offset="0" get_side="bottom" set_side="bottom" target="main"/>
 			<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" move_side="true" target="at05" />
 			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
 			<layout class="stick_to_sizes_attachment" width="29.000000" />
@@ -170,7 +171,7 @@
 					<layout class="stick_to_object_attachment" id="align_top" get_side="bottom" set_side="top" move_side="true" target="at0A" />
 					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
 				</container>
-				<widget class="text" entity_layout_id="at0B" auto_size="horizontal" id="fpTX" alignment="centre_y,left" needs_width="true" height="30" name="text">
+				<widget class="text" entity_layout_id="at0B" auto_size="horizontal" id="fpTX" alignment="centre_y,left" height="30" needs_width="true" name="text">
 					<integer id="horizontal_gap" value="10" />
 					<string id="font" value="bold" />
 					<string id="size" value="large" />
@@ -276,7 +277,7 @@
 					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
 					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
 				</widget>
-				<container class="performance_grade_box" entity_layout_id="at0R" id="trGB"  file="widgets/performance grade box review">
+				<container class="performance_grade_box" entity_layout_id="at0R" id="trGB" file="widgets/performance grade box review">
 					<layout class="stick_to_object_attachment" id="align_bottom" offset="-20" get_side="bottom" set_side="bottom" target="main"/>
 					<layout class="stick_to_object_attachment" id="align_top" offset="8" get_side="bottom" set_side="top" move_side="true" target="at0Q" />
 					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
@@ -284,7 +285,8 @@
 				</container>
 			</container>
 		</container>
-		<container class="main_subtle_box" background_colour="faded white" entity_layout_id="at07" id="at07" height="520" name="league table box" navigation_container="true">
+		<container class="main_subtle_box" entity_layout_id="at07" id="at07" height="520" name="league table box">
+			<layout class="stick_to_object_attachment" id="align_bottom" offset="0" get_side="bottom" set_side="bottom" target="main"/>
 			<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" move_side="true" target="at05" />
 			<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at06" />
 			<layout class="stick_to_sizes_attachment" width="27.000000" />
@@ -311,7 +313,8 @@
 				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
 			</container>
 		</container>
-		<container class="main_subtle_box" background_colour="faded white" entity_layout_id="at08" id="at08" name="biggest streak box" navigation_container="true">
+		<container class="main_subtle_box" entity_layout_id="at08" id="at08" name="biggest streak box" navigation_container="true">
+			<layout class="stick_to_object_attachment" id="align_bottom" offset="0" get_side="bottom" set_side="bottom" target="main"/>
 			<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" move_side="true" target="at05" />
 			<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" target="at07" />
 			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />

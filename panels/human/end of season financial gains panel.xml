@@ -39,7 +39,7 @@
 			<attachment_group class="horizontal_arrange" horizontal_gap="12" horizontal_alignment="fill" />
 
 
-			<container class="bordered_box_transparent" width="310" id="con1">
+			<container class="main_subtle_box" width="310" id="con1">
 				<attachment_group class="vertical_arrange" vertical_gap="12" />
 
 				<widget class="text" id="clrT" auto_size="vertical">
@@ -106,7 +106,7 @@
 				</container>
 			</container>
 
-			<container class="bordered_box_transparent" width="310" id="con2">
+			<container class="main_subtle_box" width="310" id="con2">
 				<attachment_group class="vertical_arrange" horizontal_gap="10" />
 				<widget class="text" id="anrT" height="25">
 					<translation id="text" translation_id="509711" type="use" value="Annual Revenue[COMMENT: AREA: End of Season Review; SUB-AREA: Financial; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title]" />
@@ -121,7 +121,7 @@
 
 			</container>
 
-			<container class="bordered_box_transparent" width="310" id="con3">
+			<container class="main_subtle_box" width="310" id="con3">
 				<attachment_group class="vertical_arrange" horizontal_gap="10" vertical_gap="0" />
 				<widget class="text" id="mrcT" height="29">
 					<translation id="text" translation_id="509712" type="use" value="Merchandise[COMMENT: AREA: End of Season Review; SUB-AREA: Financial; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title]" />

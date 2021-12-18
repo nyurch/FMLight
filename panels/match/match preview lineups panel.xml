@@ -117,7 +117,7 @@
 						<container id="hpco">
 							<layout class="stick_to_sides_attachment" alignment="all" inset="0,0,15,0" apply_to_children="true" />
 
-							<widget class="picture" id="hpic" default_path="boxes/custom/match/lineup pitch/" file="boxes/custom/match/lineup pitch/paper" image_alignment="centre" scale_picture="true" keep_aspect_ratio="false">
+							<widget class="picture" id="hpic" default_path="boxes/custom/match/lineup pitch/" file="boxes/custom/match/lineup pitch/circles" image_alignment="centre" scale_picture="true" keep_aspect_ratio="false">
 								<animation class="scale_animation" start_value="0, 1" end_value="1, 1" duration="0.4" delay="1.6" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" centre_point="0.5,0.5" no_clipping="true" />
 								<animation class="fade_animation" start_value="0" end_value="1" duration="0.3" delay="1.8" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
 							</widget>
@@ -345,7 +345,7 @@
 						<container id="apco">
 							<layout class="stick_to_sides_attachment" alignment="all" inset="0,0,15,0" apply_to_children="true" />
 
-							<widget class="picture" id="apic" default_path="boxes/custom/match/lineup pitch/" file="boxes/custom/match/lineup pitch/paper" image_alignment="centre" scale_picture="true" keep_aspect_ratio="false">
+							<widget class="picture" id="apic" default_path="boxes/custom/match/lineup pitch/" file="boxes/custom/match/lineup pitch/circles" image_alignment="centre" scale_picture="true" keep_aspect_ratio="false">
 								<animation class="scale_animation" start_value="0, 1" end_value="1, 1" duration="0.4" delay="1.6" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" centre_point="0.5,0.5" no_clipping="true" />
 								<animation class="fade_animation" start_value="0" end_value="1" duration="0.3" delay="1.8" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
 							</widget>

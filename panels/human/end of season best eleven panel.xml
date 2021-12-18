@@ -30,7 +30,7 @@
 		</widget>
 
 
-		<container class="bordered_box_transparent" id="con1" >
+		<container class="main_subtle_box" id="con1" >
 			<layout class="arrange_horizontal_attachment" layout="-4,-6,-2"/>
 			<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" />
 
@@ -162,7 +162,7 @@
 				<layout class="stick_to_sides_attachment" alignment="vertical" />
 
 
-				<widget class="picture" id="hpic" default_path="boxes/custom/match/lineup pitch/" file="boxes/custom/match/lineup pitch/paper" image_alignment="centre"  scale_picture="true" keep_aspect_ratio="true" >
+				<widget class="picture" id="hpic" default_path="boxes/custom/match/lineup pitch/" file="boxes/custom/match/lineup pitch/circles" image_alignment="centre"  scale_picture="true" keep_aspect_ratio="true" >
 					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
 				</widget>
 
