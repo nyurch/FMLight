@@ -99,7 +99,14 @@
 
 			</container>
 
-			<widget class="pitch_with_tactics" id="ptpc" pitch_alignment="right,centre,can_scale" pitch_draw_grass="false" horizontal="true" icon_flags="show_name,use_player_kits_front,show_team_name,show_preview_info_popup,show_extra_details" player_icon_file="tactics/tactics icon info panel news item" pitch_kit_height="42" />			
+			<widget class="pitch_with_tactics" id="ptpc" height="300" player_icon_file="tactics/tactics icon info panel news item" icon_flags="show_name,use_player_kits_front,show_team_name,show_preview_info_popup,show_extra_details"  >
+				<integer id="pitch_horizontal_padding" value="40" />
+				<integer id="pitch_vertical_padding" value="25" />
+				<string id="pitch_draw_grass" value="true" />
+				<integer id="pitch_alignment" value="centre_x,bottom,can_scale" />
+				<boolean id="vertical" value="false" />
+				<integer id="pitch_kit_height" value="42" />
+			</widget>
 		</container>
 
 		<container>
