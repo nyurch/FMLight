@@ -1,0 +1,241 @@
+<panel>
+	<boolean id="save_session_state" value="true" />
+	<boolean id="save_default_state" value="true" />
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<set_var name="button_label_attachments">
+		<attachment_group class="vertical_arrange" vertical_alignment="bottom" vertical_gap="0" vertical_offset="0" horizontal_inset="0" />
+	</set_var>
+
+	<container id="fAll">
+
+		<!--Horizontal Pitch for overview-->
+		<container id="sdch" hidden="true" class="main_contrast_box" red_replacement="pitch_box_background">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="70,0,0,0" apply_to_children="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			<container>
+				<layout class="centre_in_parent_attachment" alignment="horizontal" offset="0" apply_to_children="true" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="10" apply_to_children="true" />
+
+				<!-- Pitch -->
+				<widget class="pitch_with_squad_depth" id="psdh" width="900" vertical="false" pitch_alignment="centre_x,top" pitch_draw_goals="true" pitch_draw_markings="true" show_position_strength="false" pitch_show_names="false" pitch_draw_grass="false" pitch_line_colour="faded white" pitch_touchline_width_percentage="1" pitch_perspective="0.0" pitch_override_icon_size="2" line_width="1.4" pitch_vertical_padding="0" disable_animations="true">
+
+					<!-- Set the icon to use for people on the pitch. The icon will first look for a size that matches the pitch's size, for instance 'pitch/icons/kit/tiny/kit' or 'pitch/icons/kit/medium/kit'.
+              If an icon for the size category is not found it will try the base path: pitch/icons/kit/kit. This means that if you want to use an icon on a pitch that will only ever be one size you 
+              can just provide the base and not worry about the tiny/small/medium/large size categories -->
+					<string id="pitch_kit_icon" value="pitch/icons/dots" />
+				</widget>
+			</container>
+		</container>
+
+		<!--Vertical Pitch for Squad Depth-->
+		<container class="main_contrast_box" id="sdcv" red_replacement="pitch_box_background">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			<container class="scrolling_box" hidden="false" navigation_container="true" default_focus="true">
+				<container height="900">
+					<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="66,0,0,0" apply_to_children="true" />
+
+					<!-- Pitch -->
+					<widget class="pitch_with_squad_depth" id="psdv" height="830" vertical="false" pitch_alignment="centre_x,top" pitch_draw_goals="true" pitch_draw_markings="true" show_position_strength="false" pitch_show_names="false" pitch_draw_grass="false" pitch_line_colour="faded white" pitch_touchline_width_percentage="1" pitch_perspective="0.0" pitch_override_icon_size="2" line_width="1.4" pitch_vertical_padding="0" disable_animations="true">
+
+						<!-- Set the icon to use for people on the pitch. The icon will first look for a size that matches the pitch's size, for instance 'pitch/icons/kit/tiny/kit' or 'pitch/icons/kit/medium/kit'.
+	              If an icon for the size category is not found it will try the base path: pitch/icons/kit/kit. This means that if you want to use an icon on a pitch that will only ever be one size you 
+	              can just provide the base and not worry about the tiny/small/medium/large size categories -->
+						<string id="pitch_kit_icon" value="pitch/icons/dots" />
+					</widget>
+				</container>
+			</container>
+		</container>
+
+		<!--Your team buttons-->
+		<container id="butC" navigation_container="true" default_focus="true">
+			<attachment_group class="vertical_arrange_autosize" />
+			<layout class="stick_to_sides_attachment" alignment="top,horizontal" inset="4" />
+
+			<container class="main_transparent_box" id="btna" height="70">
+				<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_offset="0" horizontal_gap="0" vertical_inset="0" />
+
+				<container navigation_container="false">
+					<attachment_group class="horizontal_arrange" horizontal_layout="-2,1,-2,-2,-3" horizontal_offset="6" horizontal_gap="8" vertical_inset="0" />
+
+					<container>
+						<var name="button_label_attachments" />
+
+						<widget class="label" font="title" colour="accent" auto_size="vertical" >
+							<translation id="text" translation_id="420744" type="use" value="Show[COMMENT: team report squad depth panel; text leading to dropdown for sorting squad depth rows current/potential ability]" />
+						</widget>
+
+						<widget class="popup_button" id="hedp" select_event="hedp" fixed="false" auto_size="vertical">
+							<boolean id="auto_tick_exclusive" value="true" />
+						</widget>
+					</container>
+
+					<widget class="vertical_divider"/>
+
+					<container>
+						<var name="button_label_attachments" />
+
+						<widget class="label" id="perl" auto_size="vertical" colour="accent" font="title">
+							<translation id="text" translation_id="420745" type="use" value="Formation[COMMENT: team report squad depth panel; text leading into a dropdown list of formations]" />
+						</widget>
+
+						<widget class="subtle_popup_button" id="form" select_event="form" fixed="false" auto_size="vertical">
+							<boolean id="save_session_state" value="true" />
+							<boolean id="auto_tick_exclusive" value="true" />
+						</widget>
+					</container>
+
+					<container width="160">
+						<var name="button_label_attachments" />
+
+						<widget class="label" id="perl" font="title" colour="accent" auto_size="vertical" >
+							<translation id="text" translation_id="420746" type="use" value="Roles[COMMENT: team report squad depth panel; text leading to dropdown for sorting squad depth rows by role]" />
+						</widget>
+
+						<widget class="popup_table_button" id="hipo" appearance="buttons/standard/normal/button" item_file="tactics/selected role indicator menu" fixed="false" select_event="uSRC" auto_size="vertical">
+							<flags id="appearance" value="buttons/subtle/normal/button" />
+							<flags id="font" value="fonts/button" />
+							<boolean id="save_session_state" value="true" />
+						</widget>
+
+					</container>
+
+					<container>
+
+						<string id="remove_if" value="ui.is_fmt_controller_skin"/>
+
+						<var name="button_label_attachments" />
+
+						<widget class="label" id="perl" font="title" colour="accent" auto_size="vertical" >
+							<translation id="text" translation_id="420747" type="use" value="Opinion of[COMMENT: team report squad depth panel; text leading into a dropdown list of backroom staff user can choose to compile team report, please leave space in string, it is intentional]" />
+						</widget>
+
+						<widget class="subtle_popup_button" id="pers" select_event="pers" fixed="false" auto_size="vertical">
+							<boolean id="save_session_state" value="true" />
+							<boolean id="auto_tick_exclusive" value="true" />
+						</widget>
+					</container>
+				</container>
+
+				<container navigation_container="false">
+					<attachment_group class="horizontal_arrange_autosize" horizontal_alignment="right" horizontal_offset="0" horizontal_gap="8" vertical_inset="0"/>
+
+					<!--  Customisation toggle -->
+					<container width="200" id="cusC">
+						
+						<string id="remove_if" value="ui.is_fmt_controller_skin"/>
+
+						<var name="button_label_attachments" />
+
+						<widget class="label" id="rrrl" font="title" colour="accent" auto_size="vertical" >
+							<translation id="text" translation_id="420748" type="use" value="Customisations[COMMENT: team report squad depth panel; CUstomisations option]" />
+						</widget>
+
+						<container width="200">
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+							<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+							<layout class="arrange_horizontal_attachment" alignment="left" gap="1" offset="0" />
+
+							<widget class="radio_toggle_switch_left" id="cuon" select_event="CusN" fixed="false" auto_size="all" width="55">
+								<!--  Ignore the comments on these strings, they're just reused from elsewhere -->
+								<translation id="text" translation_id="332255" type="use" value="On[COMMENT: label for a radio button to turn sound on]" />
+								<!--  Customisation toggle -->
+							</widget>
+
+							<widget class="radio_toggle_switch_right" id="cuof" select_event="CusF" fixed="false" auto_size="all" width="55">
+								<!--  Ignore the comments on these strings, they're just reused from elsewhere -->
+								<translation id="text" translation_id="332254" type="use" value="Off[COMMENT: label for a radio button to turn sound off]" />
+							</widget>
+
+							<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+							<layout class="arrange_horizontal_attachment" alignment="left" gap="0" offset="0" />
+
+							<widget class="spacer" width="24"/>
+
+							<widget class="subtle_button" id="clal" click_event="cale" auto_size="vertical" width="85">
+								<translation id="hint" translation_id="338087" type="use" value="Reset all players displayed for all positions[COMMENT: hint text used for reset button on team report panels]" />
+								<translation id="text" translation_id="321118" type="use" value="Reset[COMMENT - clear filter menu item]" />
+							</widget>
+						</container>
+					</container>
+
+					<widget class="vertical_divider" width="1"/>
+
+					<!--  filter button -->
+					<container width="120">
+						<layout class="arrange_vertical_attachment" alignment="bottom" gap="2" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="right" inset="0" apply_to_children="true" />
+
+						<container height="30" width="120">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+							<!-- we have no room for the full filter button which has a pin button attached to it so we've made this custom without the pin -->
+							<widget class="filter_button" id="sfjc"   target="fAll"  save_session_state="true" secondary_icon_enabled="true" secondary_icon="icons/16px/down" auto_size="none" file="none">
+								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" embed_in_frame="true"/>
+
+								<widget class="widget_popup_button" id="FiBn" embed_in_frame="true" auto_size="none">
+									<flags id="appearance" value="buttons/subtle/normal/button" />
+									<translation id="text" translation_id="247166" type="use" value="Show Filters"/>
+								</widget>
+
+							</widget>
+						</container>
+					</container>
+
+				</container>
+			</container>
+		</container>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		<!--Opp team button-->
+		<container id="butO">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="top,horizontal" inset="0" />
+
+
+			<container class="main_box" id="btno" hidden="true" height="70" appearance="boxes/bordered/blurred/paper" wants_mouse_events="true">
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+				<layout class="arrange_horizontal_attachment" layout="-1,330" gap="0" offset="0" />
+
+				<container>
+					<layout class="arrange_horizontal_attachment" alignment="left" gap="5" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="6" apply_to_children="true" />
+
+					<container>
+						<layout class="fit_children_attachment" alignment="horizontal" />
+						<layout class="stick_to_sides_attachment" alignment="left" inset="0" apply_to_children="true" />
+						<layout class="arrange_vertical_attachment" alignment="top" gap="4" offset="0" />
+
+						<widget class="label" id="perl" font="title" colour="accent" auto_size="all">
+							<translation id="text" translation_id="424585" type="use" value="Compare[COMMENT: team report squad depth panel; text leading to dropdown for comparing opp players vs your own]" />
+						</widget>
+
+						<widget class="popup_button" id="otpo" height="30" select_event="cvht" auto_size="horizontal" fixed="false">
+							<boolean id="auto_tick_exclusive" value="true" />
+						</widget>
+					</container>
+				</container>
+
+				<container maximum_width="330">
+					<layout class="arrange_horizontal_attachment" alignment="right" gap="0" offset="3" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="8" apply_to_children="true" />
+
+					<!--filter button-->
+					<container width="120">
+						<layout class="arrange_vertical_attachment" alignment="bottom" gap="2" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+						<!--we have no room for the full filter button which has a pin button attached to it so we've made this custom without the pin-->
+						<widget class="filter_button" id="sfac"  target="fAll"  save_session_state="true" secondary_icon_enabled="true" secondary_icon="icons/16px/down" auto_size="none" file="none">
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" embed_in_frame="true"/>
+
+							<widget class="widget_popup_button" id="FiBn" embed_in_frame="true">
+								<flags id="appearance" value="buttons/standard/normal/button" />
+								<translation id="text" translation_id="247166" type="use" value="Show Filters"/>
+							</widget>
+
+						</widget>
+					</container>
+				</container>
+			</container>
+		</container>
+	</container>
+</panel>

@@ -1,0 +1,32 @@
+<panel>
+	<attachment_group class="button_arrangement_right" />
+	<widget class="reset_popup_button" id="mRsp" width="100" height="40" >
+		<layout class="stick_to_sides_attachment" alignment="bottom, left"  inset="0" />
+	</widget>
+
+	<widget class="primary_icon_tick_button" id="conf" click_event="CnfR" controller_button="y_button">
+		<translation id="text" translation_id="229918" type="use" value="Confirm" />
+		<flags id="disa" value="true" />
+	</widget>
+	
+	<widget class="icon_button" id="rels" click_event="CnfR" auto_size="all">
+		<translation id="text" translation_id="312731" type="use" value="Reload Skin[COMMENT: preferences screen; reloads the skin]" />
+
+	</widget>
+	<widget class="clear_cache_button" auto_size="all">
+		<translation id="hint" translation_id="329823" type="use" value="Click to clear the cache, and reload the skin[COMMENT: game preferences; hint text explaining to the user how to clear their skin cache]" />
+	</widget>
+	
+	
+	<widget class="button" id="sdef" click_event="Undo" auto_size="all">
+		<translation id="text" translation_id="247978" type="use" value="Undo Changes" />
+		<flags id="disa" value="true" />
+	</widget>
+	<widget class="icon_button" id="canc" click_event="canc" auto_size="all" controller_button="1">
+		<translation id="text" translation_id="229828" type="use" value="Cancel" />
+	</widget>
+	<widget class="primary_button" id="chnt" click_event="chnt" auto_size="all">
+		<translation id="hint" translation_id="320479" type="use" value="Confirm network game settings and proceed to Choose Nations[COMMENT: network game tooltip to indicate the purpose of Choose Nations button]" />
+		<translation id="text" translation_id="320478" type="use" value="Choose Nations[COMMENT: new game screen title]" />
+	</widget>
+</panel>
