@@ -1,0 +1,38 @@
+<panel >
+  <layout class="arrange_horizontal_attachment" layout="30,-1,40" offset="0" gap="0" />
+  <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+  
+  <widget class="picture" file="icons/custom/staff/little guy" image_alignment="centre">
+    <record id="object_property">
+      <list id="get_properties">
+        <record>
+          <integer id="get_property" value="rrep" />
+          <integer id="set_property" value="rrep" />
+        </record>
+      </list>
+    </record>
+  </widget>
+
+  <widget class="person_button" id="name" colour="black">
+    <record id="object_property">
+      <list id="get_properties">
+        <record>
+          <integer id="get_property" value="Pers" />
+          <integer id="set_property" value="valu" />
+        </record>
+      </list>
+    </record>
+  </widget>
+
+  <widget class="attribute_label" id="attv" alignment="centre">
+    <record id="object_property">
+      <list id="get_properties">
+        <record>
+          <integer id="get_property" value="attr" />
+          <integer id="set_property" value="valu" />
+        </record>
+      </list>
+    </record>
+  </widget>
+
+</panel>

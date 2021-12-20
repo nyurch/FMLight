@@ -1318,19 +1318,19 @@
 	<colour name="staff comparison bar normal" 				value="rgb(63,65,71)" />
 
 	<!-- Staff colours -->
-	<colour name="staff overview manager colour" 								value="cyan"/>
-	<colour name="staff overview assistant manager colour" 						value="indigo"/>
+	<colour name="staff overview manager colour" 								value="cyan 900"/>
+	<colour name="staff overview assistant manager colour" 						value="indigo 900"/>
 	<colour name="staff overview general coach colour" 							value="blue 900"/>
 	<colour name="staff overview fitness coach colour" 							value="light blue"/>
 	<colour name="staff overview goalkeeping coach colour"						value="blue 600"/>
-	<colour name="staff overview head of youth dev colour" 						value="purple"/>
+	<colour name="staff overview head of youth dev colour" 						value="purple 900"/>
 	<colour name="staff overview dof colour" 									value="green 900"/>
 	<colour name="staff overview technical director colour"						value="green 700"/>
 	<colour name="staff overview head of player dev colour"						value="green 300"/>
 	<colour name="staff overview chief scout colour" 							value="teal 900"/>
 	<colour name="staff overview scout colour" 									value="teal 600"/>
 	<colour name="staff overview head performance analyst colour" 				value="black"/>
-	<colour name="staff overview performance analyst colour" 					value="orange"/>
+	<colour name="staff overview performance analyst colour" 					value="orange 900"/>
 	<colour name="staff overview recruitment analyst colour" 					value="brown 400"/>
 	<colour name="staff overview head physio colour" 							value="deep orange 900"/>
 	<colour name="staff overview physio colour" 								value="deep orange 600"/>

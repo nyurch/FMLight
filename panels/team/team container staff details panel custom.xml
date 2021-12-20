@@ -1,0 +1,128 @@
+<panel>
+  <boolean id="save_session_state" value="true" />
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+  <widget class="subsection_box" id="plti" alignment="left" appearance="boxes/subsection/standard/paper" >
+    <layout class="arrange_vertical_attachment" alignment="fill" offset="0" />
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+    <container embed_in_frame="true">
+      <layout class="arrange_horizontal_attachment" alignment="left" embed_in_frame="true" offset="0" gap="10" />
+      <layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" embed_in_frame="true" />
+      <layout class="stick_to_sides_attachment" alignment="top,left" embed_in_frame="true" inset="5" />
+      <layout class="fit_children_attachment" alignment="vertical" embed_in_frame="true" />
+      <layout class="fit_children_attachment" alignment="horizontal,fill" embed_in_frame="true" offset="0" gap="10"/>
+      <widget class="view_menu_label" id="titl" embed_in_frame="true">
+        <translation id="text" translation_id="229528" type="use" value="Staff" />
+      </widget>
+      <widget class="view_menu_popup" id="plvi" embed_in_frame="true" />
+    </container>
+
+    <widget class="client_object_list_table" id="pltb" database_table_type="1" customisation_context="staf" mode="fill_rows, stripe_rows, printable, store_sort_state, drag_rows, drop_on_rows, select_rows, select_multiple" column_mode="resize_columns, move_columns, custom_views" auto_size_rows="true" fixed_size_rows="false" row_spacing="-4">
+
+      <boolean id="save_session_state" value="true" />
+      <boolean id="save_default_state" value="true" />
+	  <integer id="contextual_handler_column_id" value="Psnm" />
+
+      <!-- default sort by team, job (primary) then name -->
+      <list id="default_sort_column">
+        <integer value="PcnT" />
+        <integer value="PcjN"/>
+      </list>
+
+      <!--default view-->
+      <flags id="default_view" value="ucsv" />
+
+      <list id="viws">
+
+        <record id="ctrc">
+          <translation id="text" translation_id="230163" type="use" value="Contract" />
+          <record id="view">
+            <record id="PcjN" width="140" alignment="left, centre,can_scale" />
+            <!-- post name -->
+            <record id="Psnm" width="140" alignment="left, centre,can_scale"/>
+            <!-- person name -->
+            <record id="Pnat" width="20">
+               <flags id="use_format" value="very_short" />
+            </record>
+            <!-- nationality -->
+            <flags id="Pcif"/>
+            <!-- full time or part-time contract -->
+            <flags id="Pcww"/>
+            <!-- weekly wage -->
+            <flags id="Pced" />
+            <!-- end date -->
+          </record>
+        </record>
+
+        <record id="coat">
+          <translation id="text" translation_id="230027" type="use" value="Coaching Attributes" />
+          <record id="view">
+            <record id="PcjN" width="140" alignment="left,centre,can_scale" />
+            <!-- post name -->
+            <record id="Psnm" width="140" alignment="left,centre,can_scale"/>
+            <!-- person name -->
+            <record id="Npgd" width="20"/>
+            <!-- goalkeeper coaching distribution -->
+            <record id="Npgh" width="20"/>
+            <!-- goalkeeper coaching handling -->
+            <record id="Npgs" width="20"/>
+            <!-- goalkeeper coaching shot stopping -->
+            <record id="Ncha" width="20" />
+            <!-- coaching attacking-->
+            <record id="Nchd" width="20" />
+            <!-- coaching defending-->
+            <record id="Nchf" width="20" />
+            <!-- fitness coaching -->
+            <record id="Nchm" width="20" />
+            <!-- mental coaching-->
+            <record id="Ncte" width="20" />
+            <!-- technical coaching-->
+            <record id="Ncta" width="20" />
+            <!-- tactical coaching-->
+            <record id="Npmm" width="20" />
+            <!-- man management -->
+            <record id="Npwy" width="20" />
+            <!-- working with youngsters -->
+          </record>
+        </record>
+
+        <record id="meat">
+          <translation id="text" translation_id="230062" type="use" value="Mental Attributes" />
+          <record id="view">
+            <record id="PcjN" width="140" alignment="left,centre,can_scale" />
+            <!-- post name -->
+            <record id="Psnm" width="140" alignment="left,centre,can_scale"/>
+            <!-- person name -->
+            <record id="Npad" width="20"/>
+            <!-- adaptability -->
+            <record  id="Npde" width="20" />
+            <!-- determination -->
+            <record id="Npja" width="20" />
+            <!-- judging ability -->
+            <record id="Npjp" width="20" />
+            <!-- judgning potential -->
+            <record id="Npjd" width="20"/>
+            <!-- judgning player data -->
+            <record id="Npjt" width="20"/>
+            <!-- judgning team data -->
+            <record id="Nppd" width="20"/>
+            <!-- presenting data -->
+            <record id="Npld" width="20"/>
+            <!-- level of discipline -->
+            <record id="Npph" width="20" />
+            <!-- physiotherapy -->
+            <record id="NpIM" width="20" />
+            <!-- injury management -->
+            <record id="Npmo" width="20" />
+            <!-- motivating -->
+            <record id="Nptk" width="20" />
+            <!-- tactical knowledge -->
+          </record>
+        </record>
+
+      </list>
+
+    </widget>
+  </widget>
+</panel>

@@ -1,28 +1,183 @@
-<panel height="655">
+<panel height="770">
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 
 	<string id="skin_style" value="title link"/>
 
 	<!-- content area -->
 	<container>
-		<layout class="arrange_vertical_attachment" layout="-1,-3" offset="0"/>
+		<layout class="arrange_vertical_attachment" layout="290,-3" offset="0"/>
 		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
 
-		<container class="inner_subtle_box">
-			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+        <container>
+        <layout class="arrange_horizontal_attachment" layout="-1,150,-1,300,-2" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 
+			<container class="inner_box">
+				<layout class="arrange_horizontal_attachment" layout="-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+                <widget class="object_portrait_picture" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true">
+                  <record id="object_property">
+                    <integer id="get_property" value="objt" />
+                  </record>
+                </widget>
+			</container>
+
+			<container class="inner_box">
+				<layout class="arrange_vertical_attachment" layout="-1,-1,-1,-1,-1,-2" offset="3" gap="5" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+				<widget class="person_button" alignment="centre,can_scale" auto_size="vertical">
+                    <record id="object_property">
+                    <integer id="get_property" value="objt" />
+                    </record>
+                </widget>
+			</container>
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+			<!-- Age in years -->
+			<widget class="dob_label" id="ages" alignment="left,centre,can_scale" size="large" display_format="2">
+				<record id="object_property">
+				<integer id="get_property" value="Pdob"/>
+				</record>
+			</widget>
+			</container>
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+				<!-- Position -->
+            <widget class="position_label" id="inst" alignment="left,centre,can_scale" size="large" colour="black">
+                <integer id="display_format" value="1"/>
+                <record id="object_property">
+                <integer id="get_property" value="PpsC"/>
+                </record>
+            </widget>
+			</container>
+			<container>
+				<layout class="arrange_vertical_attachment" layout="-1,-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+			<!-- Linked header -->
+			<widget class="text" section="Plov" colour="title" size="large" alignment="left,centre,can_scale" auto_size="horizontal">
+				<translation id="text" translation_id="332515" type="use" value="Best Position"/>
+			</widget>
+	        <!--best position-->
+            <widget class="position_label" spec="text" id="bpos" size="large" colour="black" alignment="left,centre,can_scale" display_format="0" >
+               <record id="object_property">
+               <integer id="get_property" value="Pnps" />
+               </record>
+            </widget>
+			</container>
+			<container>
+				<layout class="arrange_vertical_attachment" layout="-1,-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+				<widget class="label" colour="title" size="large" alignment="left,centre">
+					<translation id="text" translation_id="227783" type="use" alignment="left,centre, can_scale" auto_size="vertical" value="Squad Status" />
+				</widget> 
+				<widget class="squad_status_label" id="sqst"  spec="text" style="bold" size="large" alignment="centre, can_scale" auto_size="vertical">
+					<record id="object_property">
+                    <integer id="get_property" value="Pccs" />
+                    </record>
+                </widget>
+			</container>
+			<!-- Media Handling style-->
+			<container priority="1">
+                <layout class="arrange_vertical_attachment" layout="-2,-3" offset="0" />
+                <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+				<widget class="label" id="cobp" alignment="left,centre, can_scale" colour="title" size="large">
+					<layout class="stick_to_sides_attachment" alignment="top" inset="1"/>
+					<translation id="text" translation_id="291327" type="use" value="Media Handling Style[COMMENT: player transfer panel; how staff handles media]" />
+				</widget>
+				<widget class="media_handling_label" id="pghm" style="bold" size="large" alignment="left,centre, can_scale" auto_size="vertical" >
+					<record id="object_property">
+					<integer id="get_property" value="Pghm" />
+					</record>
+				</widget> 
+			</container>
+			</container>
+
+			<container class="inner_subtle_box">
+				<layout class="arrange_vertical_attachment" layout="-7,-5,-4,-4,-3,-3" offset="2" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<container >
+				<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+ 
+					<container>
+						<layout class="arrange_horizontal_attachment" layout="-1" offset="0" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+						<widget class="object_portrait_picture" id="npiB" image_alignment="centre" scale_picture="true" width="75" height="75" wants_mouse_events="true" embed_in_frame="true">
+							<layout class="centre_in_parent_attachment" alignment="all" inset="0" embed_in_frame="true" />
+							<record id="object_property" dont_set_hint="true" get_property="PNat" set_property="objt" />
+						</widget>
+					</container>
+					<container>
+						<layout class="arrange_horizontal_attachment" layout="-1" offset="0" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+						<widget class="object_portrait_picture" id="pclB" image_alignment="centre" scale_picture="true" width="75" height="75" wants_mouse_events="true" embed_in_frame="true">
+							<layout class="centre_in_parent_attachment" alignment="all" inset="0" embed_in_frame="true" />
+							<record id="object_property" dont_set_hint="true" get_property="Pclb" set_property="objt" />
+						</widget>
+					</container>
+			</container>
+			<!-- Reputation label -->
+			<container>
+				<layout class="arrange_vertical_attachment" layout="-1,-1" offset="0" gap="-5" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+				<widget class="label" auto_size="vertical" alignment="centre">
+					<translation id="text" translation_id="227963" type="use" value="Reputation" />
+				</widget>
+			<!-- Reputation -->
+			<widget class="global_reputation_stars_label" lrge="true" id="PrSr" mode="0" alignment="centre">
+				<record id="object_property" get_property="PrSr" dont_set_object="true"/>
+			</widget>
+			</container>
+			<!-- Contract expires -->
+			<container>
+				<layout class="arrange_vertical_attachment" layout="-1,-1" offset="3" gap="3" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+                    <widget class="label" auto_size="vertical" alignment="centre">
+                      <translation id="text" translation_id="227785" type="use" value="Contract Expires" />
+                    </widget>
+					<widget class="editable_client_object_property_panel" alignment="centre, can_scale" auto_size="vertical" id="expd">
+                      <record id="object_property">
+					  <integer id="get_property" value="Pcex" />
+                      </record>
+                      <record id="widget_properties" spec="text" style="bold" size="large" format="[%date#1-shortest]" alignment="centre, can_scale" auto_size="none" />
+                    </widget>
+			</container>
+			<!-- Agent -->
+			<container>
+				<layout class="arrange_vertical_attachment" layout="-1,-1" offset="4" gap="4" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+				<widget class="label" id="Agn:" auto_size="vertical" alignment="centre" size="large" >
+					<translation id="text" translation_id="308473" type="use" value="Agent" />
+				</widget>
+				<widget class="person_button" spec="text" style="bold" size="large" alignment="centre, can_scale" auto_size="vertical" >
+					<record id="object_property" get_property="Pagn"/>
+				</widget>
+			</container>
+			</container>
+
+			<container class="inner_subtle_box">
+				<layout class="arrange_vertical_attachment" layout="-1" offset="3" gap="4" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+				<container>
+					<layout class="arrange_vertical_attachment" layout="-1,-1" gap="10" offset="2"/>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
 			<container class="icon_box" icon="icons/custom/icon box/progress">
 				<layout class="arrange_vertical_attachment" alignment="top,extend" gap="0" offset="0"/>
-
-				<widget class="link_button" section="Pgrg" id="trRE" auto_size="horizontal" alignment="left,centre_y" font="title" colour="accent">
+				<widget class="link_button" section="Pgrg" id="trRE" auto_size="horizontal" alignment="left,centre_y" font="title">
 					<layout class="stick_to_sides_attachment" alignment="left" inset="0"/>
-					<translation id="text" translation_id="420691" type="use" value="Progress (last 3 months)[COMMENT: player training]"/>
+					<translation id="text" translation_id="420691" type="use" value="Progress(3 months)[COMMENT: player training]"/>
 				</widget>
 				<widget class="label" id="imTX" hidden="true" alignment="left,centre_y" size="large" auto_size="vertical" colour="positive" style="semi_bold">
 					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
 					<translation id="text" translation_id="420692" type="use" value="Improved[COMMENT: training focus inbox item, label indicating a training area which improved]"/>
 				</widget>
-				<widget class="label" id="noTX" hidden="true" alignment="left,centre_y" size="large" auto_size="vertical" colour="warning" style="semi_bold">
+				<widget class="label" id="noTX" hidden="true" alignment="left,centre_y" size="large" auto_size="vertical" colour="neutral" style="semi_bold">
 					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
 					<translation id="text" translation_id="424583" type="use" value="No progress[COMMENT: training focus inbox item, label indicating a training area with no progress]"/>
 				</widget>
@@ -35,7 +190,35 @@
 					<widget class="text" auto_size="vertical" colour="text" id="adtx"/>
 				</container>
 			</container>
+						<container class="icon_box" id="adBo" hidden="true" icon="icons/custom/icon box/staff">
+							<layout class="arrange_vertical_attachment" alignment="middle,extend" gap="8" offset="0"/>
+							<layout class="stick_to_sides_attachment" alignment="left" apply_to_children="true"/>
+							<widget class="link_button" section="PdAp" id="trRE" auto_size="horizontal" alignment="left, centre_y">
+								<translation id="text" translation_id="309188" type="use" value="Advice[COMMENT: interaction manager; category type]"/>
+							</widget>
+							<container class="scrolling_box">
+								<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+								<widget class="text" id="adTs" alignment="left, centre_y" auto_size="vertical" />
+							</container>
+						</container>
+				</container>
+			</container>
 
+			<container class="inner_subtle_box" >
+				<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+					<!-- Position -->
+			         <container class="inner_box" minimum_width="300" default_width="-1" priority="3">
+			       	 <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+						<widget class="player_positions_indicator_panel" file="player/player positions indicator small horizontal custom" id="ppsh" late_loading="true">
+							<translation id="title" translation_id="230082" type="use" value="Positions" />
+                            <record id="object_property">
+								<integer id="get_property" value="objt" />
+								<integer id="set_property" value="objt" />
+							</record>
+						</widget>
+					</container>
+			</container>
 		</container>
 
 		<container class="player_training_panel" file="none">
