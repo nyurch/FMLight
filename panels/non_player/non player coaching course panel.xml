@@ -185,8 +185,9 @@
 					<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" target="main" />
 					<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
 				</widget>
-				<widget class="value_label" entity_layout_id="at00" id="coCL" height="30" name="costprice">
+				<widget class="value_label" entity_layout_id="at00" alignment="left,bottom" id="coCL" height="30" name="costprice">
 					<string id="style" value="semi_bold" />
+					<string id="colour" value="text" />
 					<layout class="stick_to_object_attachment" id="alPt" offset="2" get_side="bottom" set_side="top" move_side="true" target="at16" />
 					<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" target="main" />
 					<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
