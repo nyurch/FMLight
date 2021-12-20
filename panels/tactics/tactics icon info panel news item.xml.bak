@@ -22,7 +22,7 @@
 	    <container class="main_contrast_box_no_margin" red_replacement="bg lighter" height="48">      
 	    </container>
 
-	    <container class="main_contrast_box_no_margin" red_replacement="positive bg" height="48" id="hbKt">
+	    <container class="main_contrast_box_no_margin" red_replacement="bg lighter" height="48" id="hbKt">
 	    </container>
     
 		<container height="48">
@@ -36,7 +36,7 @@
 			<container>
 				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 
-				<container>
+				<container background_colour="bg">
 					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
 
