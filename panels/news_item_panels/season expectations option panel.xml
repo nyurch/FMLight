@@ -1,0 +1,42 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="4" horizontal_alignment="horizontal" horizontal_inset="0"/>
+
+	<!-- This is the button appearance change this to change the button appearance -->
+	<flags id="appearance" value="switches/toggle"/>
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,180"/>
+
+		<widget class="comp_button" id="comp" style="bold" alignment="left, centre_y" auto_size="horizontal"/>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_layout="-1, -1"/>
+
+			<widget class="text" font="label" alignment="left, centre_y" auto_size="vertical">
+				<translation id="text" translation_id="491858" type="use" value="Importance[COMMENT: AREA: Club vision panel; SUB-AREA: Objectives list column heading; FR-BN: 23335; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Column heading to indicate the importance of each objective]"/>
+			</widget>
+
+			<widget class="club_vision_objective_importance_widget" id="impo" font="value"/>
+		</container>
+	</container>
+
+	<widget class="table" id="optn" layout="40, -1, 40" mode="fill_rows, printable" auto_size="vertical" row_height="40" all_content_same_height="true" column_spacing="0">
+		<widget class="icon_button" id="Cwrs" icon="icons/16px/left" click_event="Cwrs" appearance="switches/toggle/left/button" width="40" hidden="true" row="0" col="0"/>
+
+		<container height="40" row="0" col="1">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+			<widget class="button" id="0" alignment="centre" multiline="true" hidden="true"/>
+			<widget class="button" id="1" alignment="centre" multiline="true" hidden="true"/>
+			<widget class="button" id="2" alignment="centre" multiline="true" hidden="true"/>
+		</container>
+
+		<widget class="icon_button" id="Cbtr" icon="icons/16px/right" click_event="Cbtr" appearance="switches/toggle/right/button" width="40" hidden="true" row="0" col="2"/>
+	</widget>
+
+	<widget class="manager_text" id="djtx" alignment="left, centre_y" auto_size="vertical" hidden="true">
+		<translation id="text" translation_id="491983" type="use" value="[%person#1-You] have chosen not to be judged on this competition. The board will place extra importance on other competitions as a result.[COMMENT: AREA: Club competition expectations panel; SUB-AREA: Competition expectation; FR-BN: 23335; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: String that displays when the user has asked to not be judged on an individual competition performance]"/>
+	</widget>
+
+</panel>
