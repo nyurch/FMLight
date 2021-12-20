@@ -165,8 +165,8 @@
 	<colour name="searchbox text" 							value="fg"/>
 	<colour name="continue text" 							value="bg" />
 	<colour name="continue text match" 						value="bg" />
-	<colour name="sidebar text" 							value="black"/>
-	<colour name="sidebar" 									value="white"/>
+	<colour name="sidebar text" 							value="fg"/>
+	<colour name="sidebar" 									value="bg"/>
 	<colour name="news ticker" 								value="fg alert" />
 	<colour name="accent button text" 						value="fg" />
 
