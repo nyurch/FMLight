@@ -1817,7 +1817,7 @@
 	<colour name="deadline day bg colour" 					value="rgb(250,160,30)"/>
 	<colour name="deadline day bg darker" 					value="rgb(2,2,2)"/>
 	<colour name="deadline day bg alpha" 					value="rgb(55,55,55)"/>
-	<colour name="deadline day bg tertiary" 				value="rgb(39,39,39)"/>
+	<colour name="deadline day bg tertiary" 				value="rgb(110,110,110)"/>
 	<colour name="deadline day bg accent" 					value="rgb(250,160,30)"/>
 	<colour name="deadline day fg lighter" 					value="rgb(247,212,0)"/>
 	<colour name="deadline day fg colour" 					value="rgb(250,160,30)"/>
