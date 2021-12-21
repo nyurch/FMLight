@@ -1,4 +1,4 @@
-﻿<panel width="230">
+﻿<panel width="210">
     <attachment_group class="vertical_arrange_autosize" vertical_offset="4" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0"/>
 
     <list id="properties_to_forward">
@@ -7,7 +7,7 @@
     </list>
 
     <!-- person details -->
-    <container class="main_box" appearance="boxes/main/contrast/top/paper" height="160" red_replacement="bg lighter">
+    <container class="main_box" appearance="boxes/main/contrast/top/paper" height="150" red_replacement="bg lighter">
         <attachment_group class="horizontal_arrange" horizontal_layout="26, 1,1, -1" horizontal_inset="0" horizontal_gap="0"/>
 
         <!-- left column - ranking and winner icon -->
