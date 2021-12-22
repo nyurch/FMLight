@@ -93,7 +93,7 @@
 				<string id="value" value="99 - "/>
 				<string id="size" value="xlarge"/>
 				<string id="font" value="title"/>
-				<string id="colour" value="black"/>
+				<string id="colour" value="white"/>
 				<string id="multiline" value="true"/>
 				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
 				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
@@ -103,7 +103,7 @@
 				<animation class="fade_animation" start_value="0" end_value="1" duration="0.2" delay="0.5" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_value="false"/>
 				<string id="value" value="|b|TROY DEENEY|/b|"/>
 				<string id="size" value="xlarge"/>
-				<string id="colour" value="black"/>
+				<string id="colour" value="white"/>
 				<string id="font" value="title"/>
 				<string id="multiline" value="true"/>
 				<string id="maximum_width" value="260"/>
