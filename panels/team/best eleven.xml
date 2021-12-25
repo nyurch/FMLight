@@ -54,7 +54,7 @@
 
 		</container>
 
-		<widget class="pitch_with_tactics" id="attp" icon_flags="show_name,use_player_kits_back,show_selection_image,show_number" player_icon_file="tactics/tactics icon welcome to team panel" navigation_container="true">
+		<widget class="pitch_with_tactics" id="attp" icon_flags="show_name" player_icon_file="tactics/tactics icon welcome to team panel" navigation_container="true">
 			<boolean id="vertical" value="true"/>
 			<boolean id="pitch_is_read_only" value="true" />
 			<integer id="pitch_vertical_padding" value="20" />
