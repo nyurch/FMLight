@@ -15,7 +15,7 @@
     <widget file="player/player attribute analyser panel" id="paAn" class="client_object_viewer_xml_panel" late_loading="true">
         <translation id="title" translation_id="334971" type="use" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" />
     </widget>
-    <widget class="person_information_panel" id="pelp" file="player/player overview panels/player eligibility small" late_loading="true">
+    <widget class="person_information_panel" id="pelp" file="player/player overview panels/player eligibility" late_loading="true">
         <translation id="title" translation_id="260816" type="use" value="Eligibility" />
         <record id="object_property" get_property="objt" set_property="objt"/>
     </widget>
