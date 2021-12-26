@@ -128,6 +128,21 @@
 		</container>
 
 		<widget class="horizontal_subtle_divider" />
+
+		<!-- CA -->
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+			<widget class="label" id="PCAB:" auto_size="vertical" font="title" colour="text">
+				<record id="object_property" get_property="PCAB" name="true" />
+			</widget>
+			<widget class="dashed_number_label" id="PCAB" auto_size="vertical">
+				<record id="object_property" get_property="PCAB"/>
+				<record id="widget_properties" alignment="right,centre_y" />
+			</widget>
+		</container>
+
+		<widget class="horizontal_subtle_divider" />
+
 	</container>
 
 	<!-- Preferred moves -->

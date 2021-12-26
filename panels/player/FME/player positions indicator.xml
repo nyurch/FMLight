@@ -2,7 +2,7 @@
 	<layout class="horizontal_arrange" horizontal_alignment="fill"/>
 
 	<!-- Pitch -->
-	<widget class="pitch_with_player_positions" id="ppip" height="140" vertical="true" pitch_alignment="centre,can_scale" pitch_draw_goals="false" pitch_draw_markings="false" pitch_draw_grass="false" pitch_line_colour="faded text" pitch_touchline_width_percentage="1" pitch_override_icon_size="2" line_width="1.4" appearance="boxes/custom/pitch selection/paper">
+	<widget class="pitch_with_player_positions" id="ppip" height="140" vertical="true" pitch_alignment="centre,can_scale" pitch_draw_goals="false" pitch_draw_markings="false" pitch_draw_grass="true" pitch_line_colour="white" hide_player_positions="true" pitch_touchline_width_percentage="1" pitch_override_icon_size="2" line_width="1.4" appearance="boxes/custom/pitch selection/paper">
 		<string id="pitch_kit_icon" value="pitch/icons/dots" />
 	</widget>
 
