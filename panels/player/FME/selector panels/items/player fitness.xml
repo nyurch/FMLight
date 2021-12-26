@@ -1,0 +1,103 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="icon_box" icon="icons/custom/icon box/fitness">
+		<record id="object_property">
+            <list id="get_properties">
+              <record get_property="tbcl" set_property="icRR" dont_set_object="true" />
+              <record get_property="ttcl" set_property="icBR" dont_set_object="true" />
+            </list>
+          </record>
+		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="2" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<container height="15">
+			<attachment class="vertical_arrange_autosize_all"/>
+
+			<string id="skin_style" value="title link" />
+
+			<!-- Linked header -->
+			<widget class="link_button" id="link" section="PInj" auto_size="horizontal">
+				<translation id="text" translation_id="247571" type="use" value="Fitness" />
+			</widget>
+		</container>
+
+		<container class="scrolling_box">
+			<container>
+				<attachment_group class="vertical_arrange_autosize"/>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left,as_needed" />
+					<!-- Fitness text -->
+					<widget class="fitness_label" id="fitL" multiline="false" auto_size="all" style="semi_bold"/>
+					<!-- Expected time out for injury -->
+					<widget class="label" id="injD" auto_size="all" multiline="true" colour="faded text"/>
+				</container>
+
+				<container>
+
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill"/>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="0"/>
+						<widget class="label" auto_size="vertical" font="label">
+							<translation id="text" translation_id="227793" type="use" value="Condition" />
+						</widget>
+
+						<widget class="client_object_property_panel" property="PcOI" height="25">
+
+							<record id="object_property" get_property="objt" set_property="objt" />
+
+						</widget>
+
+
+					</container>
+
+					<container >
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="0"/>
+						<widget class="label" auto_size="vertical" font="label">
+							<translation id="text" translation_id="395316" type="use" value="Sharpness" />
+						</widget>
+
+						<widget class="client_object_property_panel" property="PftI" height="25">
+
+							<record id="object_property" get_property="objt" set_property="objt" />
+
+						</widget>
+
+
+					</container>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<!-- Treatment for injured players -->
+						<container id="treC">
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+							<widget class="label" auto_size="vertical" font="label">
+								<translation id="text" translation_id="447652" type="use" value="Treatment[COMMENT: FR 20159; player injury table; treatment type player is receiving column header]"/>
+							</widget>
+							<widget class="label" id="trea" auto_size="vertical"/>
+						</container>
+
+						<!-- Injury risk for uninjured players -->
+						<container id="inrC">
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<widget class="label" auto_size="vertical" font="label">
+								<translation id="text" translation_id="450118" type="use" value="Injury Risk[COMMENT: player injury panel section detailing susceptibility to injury, title]" />
+							</widget>
+							<widget class="injury_risk_label" id="injR" auto_size="vertical"/>
+						</container>
+
+
+					</container>
+
+
+				</container>
+			</container>
+		</container>
+
+
+	</container>
+</panel>

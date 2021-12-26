@@ -1,0 +1,17 @@
+<class class="tabs" parent="multi_box" contents_kind="plain_box" appearance="boxes/FME/tabs/paper" top_kind="tab_strip" dont_set_title_text="true">
+
+	<flags id="top_layout" value="horizontal"/>
+
+	<record id="top_properties">
+		<flags id="appearance" value="tabs/FME"/>
+		<flags id="height" value="28"/>
+		<flags id="alignment" value="top"/>
+		<flags id="navigation_container" value="true"/>
+		<boolean id="use_alt_end_tab_appearances" value="false"/>
+	</record>
+
+	<record id="group_properties">
+		<flags id="appearance" value="boxes/FME/tabs/group/paper"/>
+	</record>
+
+</class>
