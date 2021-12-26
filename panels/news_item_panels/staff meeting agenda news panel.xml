@@ -1,0 +1,39 @@
+﻿<panel height="630">
+	
+<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+	<container id="PreM">
+		<attachment_group class="horizontal_arrange" horizontal_layout="220,-1" horizontal_gap="8"/>
+
+		<container class="inner_subtle_box">
+			<string id="colour" value="accent" />
+			<string id="size" value="large" />
+			<translation id="title" translation_id="376487" type="use" value="In Attendance[COMMENT: FR 7884 - in attendance label; team meeting introduction box; team meeting, list of players who are in attendance]" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<widget class="person_details_panel_small_list" id="staf"/>
+		</container>
+
+		<container class="inner_subtle_box">
+			<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_offset="0" vertical_gap="20" horizontal_inset="0" />
+
+			<container height="30">
+				<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_gap="10"/>
+
+				<widget class="text" id="titl" auto_size="horizontal" font="title" alignment="left,centre_y">
+					<string id="colour" value="accent" />
+					<string id="size" value="large" />
+					<translation id="text" translation_id="509176" type="use" value="Meeting Agenda[COMMENT: AREA: Recruitment meeting; FR-BN: 32765; NOTE: Recruitment meeting agenda panel title]" />
+				</widget>
+
+			</container>
+			<container class="scrolling_box">
+				<widget class="simple_data_list" id="agen" set_property="objt" gap="20" auto_size="vertical">
+					<record id="widget_properties" class="property_list_viewer_xml_panel" file="club/staff meeting category agenda"/>
+				</widget>
+			</container>
+		</container>
+	</container>
+
+	<container id="PosM" class="backroom_advice_meeting_base_panel" file="human/backroom advice meeting summary only" hidden="true"/>
+
+
+</panel>
