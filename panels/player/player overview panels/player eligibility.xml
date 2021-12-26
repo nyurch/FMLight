@@ -1,0 +1,22 @@
+<panel>
+    <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+    <container class="inner_box" id="elig">
+        <translation id="title" translation_id="260816" type="use" value="Eligibility[COMMENT: filter panel; a player eligibility for certain squads e.g. U21s]" />
+        <attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="10" vertical_offset="0" horizontal_inset="0" />
+        <container>
+            <attachment_group class="vertical_arrange" vertical_layout="-1,-1" vertical_gap="10" vertical_inset="0" />
+            <container class="simple_data_list" id="nats" set_property="objt" alignment="horizontal,fill" gap="10" height="100">
+                <record id="object_property">
+                    <integer id="get_property" value="PhgN" />
+                </record>
+                <record id="widget_properties" class="client_object_viewer_xml_panel" file="player/player overview panels/club or nation logo panel"/>
+            </container>
+            <container class="simple_data_list" id="clbs" set_property="objt" alignment="horizontal,fill" gap="10" height="100">
+                <record id="object_property">
+                    <integer id="get_property" value="PhCe" />
+                </record>
+                <record id="widget_properties" class="property_list_viewer_xml_panel" file="player/player overview panels/eligibility logo panel" />
+            </container>
+        </container>
+    </container>
+</panel>
