@@ -18,7 +18,7 @@
 
 	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 
-	<container class="inner_box" id="titl" red_replacement="text" colour="text">
+	<container class="inner_box" id="titl" red_replacement="text" colour="white">
 		<layout class="stick_to_sides_attachment" alignment="all" inset="4,0,0,0" apply_to_children="true" />
 
 		<!-- buttons area -->
@@ -53,7 +53,7 @@
 		<!--no selected item-->
 		<container id="nose">
 			<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="20" apply_to_children="true" />
-			<widget class="text" id="expt" auto_size="vertical" click_event="mana" colour="faded text" alignment="centre">
+			<widget class="text" id="expt" auto_size="vertical" click_event="mana" colour="white" alignment="centre">
 			</widget>
 		</container>
 
