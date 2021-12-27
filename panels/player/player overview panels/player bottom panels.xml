@@ -1,60 +1,34 @@
 <panel>
 <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 <container class="vertical_adaptive_container" gap="0" offset="0" inset="0" mode="distribute_equally">
-	<container class="horizontal_adaptive_container" offset="0" inset="0" minimum_height="100" priority="2">
+	<container class="horizontal_adaptive_container" offset="0" inset="0" minimum_height="150" priority="2">
 		<record id="default_properties" file="player/player overview small selector panel" save_session_state="true" minimum_width="290" default_width="-1" />
 			<container class="client_object_viewer_selector_panel" id="ps1" priority="1" navigation_container="true">
-				<integer id="default_for_unemployed_managers" value="ppsp"/>
-				<integer id="default_for_international_managers_other_team" value="ppsp"/>
-				<integer id="default_for_everyone_else" value="ppsp"/>
-				<integer id="default_for_versus_mode" value="ppsp"/>
+				<integer id="default_for_unemployed_managers" value="Pfor"/>
+				<integer id="default_for_international_managers_other_team" value="Pfor"/>
+				<integer id="default_for_everyone_else" value="Pfor"/>
+				<integer id="default_for_versus_mode" value="Pfor"/>
 			</container>
 			<container class="client_object_viewer_selector_panel" id="ps2" priority="2" navigation_container="true">
-				<integer id="default_for_unemployed_managers" value="Phap"/>
-				<integer id="default_for_international_managers_other_team" value="Phap"/>
-				<integer id="default_for_everyone_else" value="Phap"/>
-				<integer id="default_for_versus_mode" value="Phap"/>
+				<integer id="default_for_unemployed_managers" value="Pfor"/>
+				<integer id="default_for_international_managers_other_team" value="Pfor"/>
+				<integer id="default_for_everyone_else" value="Pfor"/>
+				<integer id="default_for_versus_mode" value="Pfor"/>
 			</container>
 			<container class="client_object_viewer_selector_panel" id="ps3" priority="3" navigation_container="true">	
-				<integer id="default_for_unemployed_managers" value="Ppla"/>
-				<integer id="default_for_international_managers_other_team" value="Ppla"/>
-				<integer id="default_for_everyone_else" value="Ppla"/>
-				<integer id="default_for_versus_mode" value="Ppla"/>
+				<integer id="default_for_unemployed_managers" value="Pfor"/>
+				<integer id="default_for_international_managers_other_team" value="Pfor"/>
+				<integer id="default_for_everyone_else" value="Pfor"/>
+				<integer id="default_for_versus_mode" value="Pfor"/>
 			</container>
 			<container class="client_object_viewer_selector_panel" id="ps4" priority="4" navigation_container="true">
-				<integer id="default_for_unemployed_managers" value="pbop"/>
-				<integer id="default_for_international_managers_other_team" value="pbop"/>
-				<integer id="default_for_everyone_else" value="pbop"/>
-				<integer id="default_for_versus_mode" value="pbop"/>
+				<integer id="default_for_unemployed_managers" value="Pfor"/>
+				<integer id="default_for_international_managers_other_team" value="Pfor"/>
+				<integer id="default_for_everyone_else" value="Pfor"/>
+				<integer id="default_for_versus_mode" value="Pfor"/>
 			</container>
 	</container>
-	<container class="horizontal_adaptive_container" offset="0" inset="0" minimum_height="100" priority="3">
-		<record id="default_properties" file="player/player overview small selector panel" save_session_state="true" minimum_width="290" default_width="-1" />
-			<container class="client_object_viewer_selector_panel" id="ps7" priority="1" navigation_container="true">
-				<integer id="default_for_unemployed_managers" value="pscR"/>
-				<integer id="default_for_international_managers_other_team" value="pscR"/>
-				<integer id="default_for_everyone_else" value="pTTS"/>
-				<integer id="default_for_versus_mode" value="pscR"/>
-			</container>
-			<container class="client_object_viewer_selector_panel" id="ps8" priority="2" navigation_container="true">
-				<integer id="default_for_unemployed_managers" value="pcon"/>
-				<integer id="default_for_international_managers_other_team" value="pcon"/>
-				<integer id="default_for_everyone_else" value="pcon"/>
-				<integer id="default_for_versus_mode" value="pcon"/>
-			</container>
-			<container class="client_object_viewer_selector_panel" id="ps9" priority="3" navigation_container="true">
-				<integer id="default_for_unemployed_managers" value="ptri"/>
-				<integer id="default_for_international_managers_other_team" value="ptri"/>
-				<integer id="default_for_everyone_else" value="ptri"/><integer id="default_for_versus_mode" value="ptri"/>
-			</container>
-			<container class="client_object_viewer_selector_panel" id="ps10" priority="4" navigation_container="true">
-				<integer id="default_for_unemployed_managers" value="pac1"/>
-				<integer id="default_for_international_managers_other_team" value="pac1"/>
-				<integer id="default_for_everyone_else" value="PPtp"/>
-				<integer id="default_for_versus_mode" value="PPtp"/>
-			</container>
-	</container>
-	<container minimum_height="100" priority="1">
+	<container minimum_height="150" priority="1">
 		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 			<record id="mask" alignment="vertical, left" top="180" bottom="140" width="200" file="backgrounds/pattern" offset_x="-300" offset_y="50"/>
 				<container class="horizontal_adaptive_container" offset="0" inset="0">
