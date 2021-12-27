@@ -285,7 +285,7 @@
 	<colour name="good attribute background" 												value="green 600" />
 	<colour name="excellent attribute background" 											value="green 900" />
 	<colour name="special attribute" 														value="fg blue" />
-	<colour name="attribute label" 															value="red" />
+	<colour name="attribute label" 															value="fg" />
 	<colour name="special attribute label" 													value="fg" />
 	<colour name="profile extra text" 														value="fg" />
 
