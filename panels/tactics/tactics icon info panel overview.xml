@@ -139,7 +139,7 @@
 		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
 
 		<widget class="picture" file="icons/custom/player instruction/player pitch" id="PInI" image_alignment="bottom,left" scale_picture="false">
-			<layout class="stick_to_sides_attachment" alignment="all" inset="0,0,45,0" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0,0,30,0" />
 		</widget>
 
 	</container>
