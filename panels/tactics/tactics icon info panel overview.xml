@@ -23,8 +23,8 @@
 				<record id="object_property" get_property="objt" set_property="objt" />
 			</widget>
 			<widget class="position_role_duty_suitability_pie" id="prdF" width="24" height="24">
-				<layout class="stick_to_sides_attachment" alignment="left" inset="0"/>
-				<layout class="stick_to_sides_attachment" alignment="bottom" inset="36"/>
+				<layout class="stick_to_sides_attachment" alignment="left" inset="-2"/>
+				<layout class="stick_to_sides_attachment" alignment="bottom" inset="65"/>
 				<animation class="scale_animation" animation_id="extd" duration="0.15" trigger_id="hidden" trigger_value="false" start_value="1.0,0.0" end_value="1.0,1.0" centre_point="0.0, 0.0" />
 			</widget>
 		</container>
