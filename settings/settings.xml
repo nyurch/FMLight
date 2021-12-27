@@ -279,13 +279,13 @@
 	<colour name="normal attribute" 														value="green 300"/>
 	<colour name="good attribute" 															value="green 600" />
 	<colour name="excellent attribute" 														value="green 900" />
-	<colour name="unknown attribute background" 											value="bg darker"/>
-	<colour name="low attribute background" 												value="bg darker"/>
-	<colour name="normal attribute background" 												value="bg lighter"/>
-	<colour name="good attribute background" 												value="bg blue darker" />
-	<colour name="excellent attribute background" 											value="bg range20" />
+	<colour name="unknown attribute background" 											value="grey"/>
+	<colour name="low attribute background" 												value="orange"/>
+	<colour name="normal attribute background" 												value="green 300"/>
+	<colour name="good attribute background" 												value="green 600" />
+	<colour name="excellent attribute background" 											value="green 900" />
 	<colour name="special attribute" 														value="fg blue" />
-	<colour name="attribute label" 															value="fg" />
+	<colour name="attribute label" 															value="red" />
 	<colour name="special attribute label" 													value="fg" />
 	<colour name="profile extra text" 														value="fg" />
 
