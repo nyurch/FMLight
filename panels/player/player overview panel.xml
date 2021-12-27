@@ -1,5 +1,5 @@
 <panel>
-    <attachment class="vertical_arrange" vertical_layout="650,-1" vertical_gap="10"/>
+    <attachment class="vertical_arrange" vertical_layout="-1,300" vertical_gap="10"/>
     <widget class="player_overview_panel" file="player/player overview panels/player main">
         <record id="object_property" get_property="objt" set_property="objt"/>
     </widget>
