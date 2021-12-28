@@ -80,7 +80,7 @@
 						<container>
 							<attachment_group class="button_arrangement_right" />
 
-							<widget class="icon_button" id="CnCb" auto_size="all" click_event="CTcr" controller_button="b_button">
+							<widget class="primary_icon_button" id="CnCb" auto_size="all" click_event="CTcr" controller_button="b_button">
 								<translation id="text" translation_id="297550" type="use" />
 							</widget>
 							<widget class="primary_icon_button" id="nxtB" auto_size="all" click_event="NxTS" icon="icons/16px/right" icon_alignment="right" controller_button="y_button">
