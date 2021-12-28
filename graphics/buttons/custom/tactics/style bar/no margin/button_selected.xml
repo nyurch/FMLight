@@ -18,7 +18,7 @@
 	<colour id="blue_replacement" name="white"/>
 
 
-	<record id="primary_icon_properties" red_replacement="normal_icon" />
-	<record id="secondary_icon_properties" red_replacement="normal_icon"/>
+	<record id="primary_icon_properties" red_replacement="white" />
+	<record id="secondary_icon_properties" red_replacement="white"/>
 	
 </properties>
