@@ -15,11 +15,11 @@
       	<container id="styC">
         	<attachment_group class="vertical_arrange_autosize" vertical_gap="0" vertical_offset="5"/>
 
-        	<widget class="text" auto_size="vertical" font="label" colour="faded white" alignment="centre" size="large">
+        	<widget class="text" auto_size="vertical" font="label" colour="faded white" alignment="left" size="large">
          	 	<translation id="text" translation_id="466531" type="use" value="Tactical Style[COMMENT: FR 23334; tactics panel; title for a button to allow the user to choose a tactical style]" />
         	</widget>
 
-       		<widget class="tactics_tactical_style_popup_button" id="TcSt" widget_type="tactics_tactical_style_popup_panel" popup_alignment="left, bottom" auto_size="vertical" appearance="" font="title" size="large" alignment="centre" colour="white" disabled_colour="faded white" secondary_icon_alignment="centre_right, centre_y" multiline="true" focus_appearance="buttons/subtle/flex/button_controller">
+       		<widget class="tactics_tactical_style_popup_button" id="TcSt" widget_type="tactics_tactical_style_popup_panel" popup_alignment="left, bottom" auto_size="vertical" appearance="" font="title" size="large" alignment="left" colour="white" disabled_colour="faded white" secondary_icon_alignment="centre_right, centre_y" multiline="true" focus_appearance="buttons/subtle/flex/button_controller">
        				<record id="secondary_icon_properties" red_replacement="white" />
           		<translation id="text" translation_id="466531" type="use" value="Tactical Style[COMMENT: FR 23334; tactics panel; title for a button to allow the user to choose a tactical style]" />
           		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
@@ -31,14 +31,14 @@
       <container id="MENT">
         <attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="10" horizontal_offset="0"/>
 
-        <widget class="text" id="mstR" auto_size="vertical" font="label" colour="white" alignment="centre" vertical_offset="0">
+        <widget class="text" id="mstR" auto_size="vertical" font="label" colour="white" alignment="left" vertical_offset="0">
           <translation id="text" translation_id="348204" type="use" value="Mentality[Comment: prefix used before mentality type text on quick tactical instruction button during match]" />
         </widget>
 
         <widget class="mentality_table_popup_button" id="ment" auto_size="vertical" height="150" vertical_offset="0" focus_appearance="buttons/subtle/flex/button_controller" red_replacement="white">
           <flags id="appearance" value="buttons/custom/tactics/style bar/button" />
-          <flags id="alignment" value="centre" />
-          <flags id="icon_alignment" value="centre" />
+          <flags id="alignment" value="left,centre" />
+          <flags id="icon_alignment" value="left" />
           <flags id="secondary_icon_colour" value="white" />
           <flags id="colour" value="white" />
           <flags id="disabled_colour" value="faded white" />
@@ -73,18 +73,18 @@
 						<attachment_group class="vertical_arrange_autosize" vertical_gap="5" vertical_alignment="top" vertical_offset="0"/>
 
 						<container>
-							<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle" vertical_offset="2" horizontal_gap="4"/>
+							<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left" vertical_offset="2" horizontal_gap="4"/>
 
 							<!--Title-->
 							<widget class="picture" auto_size="all" file="icons/16px/in possession" red_replacement="white" />
 
-							<widget class="text" auto_size="all" font="title" colour="white" alignment="centre" size="small">
+							<widget class="text" auto_size="all" font="title" colour="white" alignment="left" size="small">
 								<translation id="text" translation_id="466532" type="use" value="In Possession[COMMENT: team instructions, what the team do when they have the ball]" />
 							</widget>
 
 						</container>
 
--2						<widget class="text" id="tinP" auto_size="vertical" colour="faded white" alignment="centre" size="xsmall">
+-2						<widget class="text" id="tinP" auto_size="vertical" colour="faded white" alignment="left" size="xsmall">
 							<record id="click_event">
 								<flags id="event_id" value="teIn" />
 								<flags id="index" value="poSE" />
@@ -92,7 +92,7 @@
 						</widget>
 
 						<!--Change Done-->
-						<widget class="icon_button" id="inPb" appearance="" height="22" font="label" colour="white" alignment="centre" icon="icons/16px/reduce" icon_alignment="centre">
+						<widget class="icon_button" id="inPb" appearance="" height="22" font="label" colour="white" alignment="left,centre" icon="icons/16px/reduce" icon_alignment="left">
 							<record id="primary_icon_properties" red_replacement="white" />
 							<record id="secondary_icon_properties" red_replacement="white" />
 							<translation id="text" translation_id="466533" type="use" value="Change[COMMENT::Tactics side bar - string to open Change tactics popup]" />
@@ -125,18 +125,18 @@
 
 
 						<container>
-							<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle" vertical_offset="2" horizontal_gap="4"/>
+							<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left" vertical_offset="2" horizontal_gap="4"/>
 
 							<!--Title-->
 							<widget class="picture" auto_size="all" file="icons/16px/in transition" red_replacement="white" />
 
-							<widget class="text" auto_size="all" font="title" colour="white" alignment="centre" size="small">
+							<widget class="text" auto_size="all" font="title" colour="white" alignment="left" size="small">
 								<translation id="text" translation_id="466534" type="use" value="In Transition[COMMENT: team instructions, what the team do when transitioning from having the ball to losing it, or vice-versa, this section contains instructions for both situations]" />
 							</widget>
 
 						</container>
 
-						<widget class="text" id="tinT" auto_size="vertical" colour="faded white" alignment="centre" size="xsmall">
+						<widget class="text" id="tinT" auto_size="vertical" colour="faded white" alignment="left" size="xsmall">
 							<record id="click_event">
 								<flags id="event_id" value="teIn" />
 								<flags id="index" value="trSE" />
@@ -144,7 +144,7 @@
 						</widget>
 
 						<!--Change Done-->
-						<widget class="icon_button" id="trAb" appearance="" height="22" font="label" colour="white" alignment="centre" icon="icons/16px/reduce" icon_alignment="centre">
+						<widget class="icon_button" id="trAb" appearance="" height="22" font="label" colour="white" alignment="left,centre" icon="icons/16px/reduce" icon_alignment="left">
 							<record id="primary_icon_properties" red_replacement="white" />
 							<record id="secondary_icon_properties" red_replacement="white" />
 							<translation id="text" translation_id="466533" type="use" value="Change[COMMENT::Tactics side bar - string to open Change tactics popup]" />
@@ -176,18 +176,18 @@
 						<attachment_group class="vertical_arrange_autosize" vertical_gap="5" vertical_alignment="top" vertical_offset="0"/>
 
 						<container>
-							<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle" vertical_offset="2" horizontal_gap="5"/>
+							<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left" vertical_offset="2" horizontal_gap="5"/>
 
 							<!--Title-->
 							<widget class="picture" auto_size="all" file="icons/16px/out of possession" red_replacement="white" />
 
-							<widget class="text" auto_size="all" font="title" colour="white" alignment="centre" size="small">
+							<widget class="text" auto_size="all" font="title" colour="white" alignment="left" size="small">
 								<translation id="text" translation_id="466535" type="use" value="Out of Possession[COMMENT: team instructions, what the team do when they do not have the ball]" />
 							</widget>
 
 						</container>
 
-						<widget class="text" id="tinO" auto_size="vertical" colour="faded white" alignment="centre" size="xsmall">
+						<widget class="text" id="tinO" auto_size="vertical" colour="faded white" alignment="left" size="xsmall">
 							<record id="click_event">
 								<flags id="event_id" value="teIn" />
 								<flags id="index" value="opSE" />
@@ -195,7 +195,7 @@
 						</widget>
 
 						<!--Change Done-->
-						<widget class="icon_button" id="ouPb" appearance="" height="22" font="label" colour="white" alignment="centre" icon="icons/16px/reduce" icon_alignment="centre">
+						<widget class="icon_button" id="ouPb" appearance="" height="22" font="label" colour="white" alignment="left,centre" icon="icons/16px/reduce" icon_alignment="left">
 							<record id="primary_icon_properties" red_replacement="white" />
 							<record id="secondary_icon_properties" red_replacement="white" />
 							<translation id="text" translation_id="466533" type="use" value="Change[COMMENT::Tactics side bar - string to open Change tactics popup]" />
