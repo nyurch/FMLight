@@ -1,0 +1,148 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container id="nCot">
+
+		<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="17" />
+
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="1" vertical_alignment="top" />
+
+			<widget class="text" id="mstR" font="label" colour="faded white" alignment="left" auto_size="vertical">
+				<translation id="text" translation_id="466531" type="use" value="Tactical Style[COMMENT: FR 23334; tactics panel; title for a button to allow the user to choose a tactical style]" />
+			</widget>
+
+			<widget class="tactics_tactical_style_popup_button" id="TcSt" widget_type="tactics_tactical_style_popup_panel" popup_alignment="left, bottom" auto_size="vertical" read_only="true" disabled_colour="white" appearance="" font="title" size="large" alignment="left" colour="white" secondary_icon="" multiline="true">
+				<translation id="text" translation_id="466531" type="use" value="Tactical Style[COMMENT: FR 23334; tactics panel; title for a button to allow the user to choose a tactical style]" />
+			</widget>
+
+			<widget class="spacer" height="4" />
+
+			<widget class="text" id="TsDC" colour="faded white" alignment="left" auto_size="vertical" size="small">
+				<translation id="text" translation_id="466531" type="use" value="Tactical Style[COMMENT: FR 23334; tactics panel; title for a button to allow the user to choose a tactical style]" />
+			</widget>
+
+		</container>
+
+
+		<container id="MENT">
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="2" />
+
+
+			<widget class="text" id="mstR" auto_size="vertical" font="label" colour="white" alignment="left">
+				<translation id="text" translation_id="348204" type="use" value="Mentality[Comment: prefix used before mentality type text on quick tactical instruction button during match]" />
+			</widget>
+
+			<widget class="mentality_label" id="menT" auto_size="vertical" navigation_focus_target="false">
+				<flags id="appearance" value="buttons/custom/very subtle/button" />
+				<flags id="alignment" value="left,centre" />
+				<flags id="icon_alignment" value="left" />
+				<flags id="colour" value="white" />
+				<integer id="size" value="large" />
+				<record id="primary_icon_properties" red_replacement="white" />
+			</widget>
+
+		</container>
+
+		<container class="scrolling_box">
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="17" />
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="5" vertical_alignment="top" />
+
+					<container>
+
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="4" vertical_alignment="top" />
+
+						<container>
+							<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left" vertical_offset="0" />
+
+							<!--Title-->
+							<widget class="picture" auto_size="all" file="icons/16px/in possession" red_replacement="white" />
+
+							<widget class="text" auto_size="all" font="label" colour="white" alignment="left">
+								<translation id="text" translation_id="466532" type="use" value="In Possession[COMMENT: team instructions, what the team do when they have the ball]" />
+							</widget>
+
+						</container>
+
+						<widget class="text" id="tinP" auto_size="vertical" colour="faded white" size="small" alignment="left" />
+
+					</container>
+
+				</container>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="0" vertical_alignment="top" />
+
+					<container>
+
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="4" vertical_alignment="top" />
+
+						<container>
+							<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left" vertical_offset="0" />
+
+							<!--Title-->
+							<widget class="picture" auto_size="all" file="icons/16px/in transition" red_replacement="white" />
+
+							<widget class="text" auto_size="all" font="label" colour="white" alignment="left">
+								<translation id="text" translation_id="466534" type="use" value="In Transition[COMMENT: team instructions, what the team do when transitioning from having the ball to losing it, or vice-versa, this section contains instructions for both situations]" />
+							</widget>
+
+						</container>
+
+						<widget class="text" id="tinT" auto_size="vertical" colour="faded white" size="small" alignment="left" />
+
+					</container>
+
+				</container>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="0" vertical_alignment="top" />
+
+					<container>
+
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="4" vertical_alignment="top" />
+
+						<container>
+							<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left" vertical_offset="0" />
+
+							<!--Title-->
+							<widget class="picture" auto_size="all" file="icons/16px/out of possession" red_replacement="white" />
+
+							<widget class="text" auto_size="all" font="label" colour="white" alignment="left">
+								<translation id="text" translation_id="466535" type="use" value="Out of Possession[COMMENT: team instructions, what the team do when they do not have the ball]" />
+							</widget>
+
+						</container>
+
+						<widget class="text" id="tinO" auto_size="vertical" colour="faded white" size="small" alignment="left" />
+
+					</container>
+
+				</container>
+
+			</container>
+		</container>
+	</container>
+
+	<container id="cOsl">
+		<attachment_group class="vertical_arrange" vertical_alignment="top" />
+
+		<widget class="text" auto_size="vertical" font="label" colour="faded white" alignment="left">
+			<translation id="text" translation_id="466531" type="use" value="Tactical Style[COMMENT: FR 23334; tactics panel; title for a button to allow the user to choose a tactical style]" />
+		</widget>
+
+		<widget class="manager_text" auto_size="vertical" font="title" size="xlarge" colour="faded white" alignment="left">
+			<translation id="text" translation_id="466536" type="use" value="Create [%person#1-Your] Own[COMMENT: FR 23334; tactics panel; create your own tactical style]" />
+		</widget>
+
+		<widget class="manager_text" auto_size="vertical" alignment="left" colour="faded white">
+			<translation id="text" translation_id="466537" type="use" value="[%person#1-You] will be able to create [%person#1-your] own tactical style in the next step[COMMENT: FR 23334; tactics panel; create your own tactical style]" />
+		</widget>
+
+	</container>
+
+</panel>
