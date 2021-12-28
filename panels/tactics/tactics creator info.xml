@@ -118,7 +118,7 @@
 									<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" />
 
 									<!--Recommended formation radio button appearance. will be applied to widgets created in code in container with id frRc-->
-									<string id="Rfba" value="buttons/subtle/normal/button"/>
+									<string id="Rfba" value="buttons/subtle/normal/buttonn"/>
 									<!--Recommended formation radio button height. will be applied to widgets created in code in container with id frRc-->
 									<integer id="Rfbh" value="30" />
 
