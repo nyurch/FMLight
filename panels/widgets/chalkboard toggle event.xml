@@ -9,7 +9,7 @@
 		<container class="chalkboard_stat_count" id="csCt" size="small" background_colour="cbe not selected colour" style="bold" appearance="buttons/standard/flex/button" width="60" click_event="fCbE" navigation_focus_target="false">
 		</container>
 	</container>
-	<widget class="check_box" id="selc" click_event="fCbE" show_button_appearance="false" appearance="switches/toggle/normal/button" embed_in_frame="true" icon_enabled="false"  green_replacement="bg cyan" red_replacement="white">
+	<widget class="check_box" id="selc" click_event="fCbE" show_button_appearance="false" appearance="switches/toggle/normal/button" embed_in_frame="true" icon_enabled="false"  green_replacement="bg cyan" red_replacement="standard_button">
 		<layout class="stick_to_sides_attachment" alignment="all" inset="0" embed_in_frame="true"/>
 	</widget>
 </panel>
