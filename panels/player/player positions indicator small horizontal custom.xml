@@ -37,7 +37,7 @@
 		<string id="pitch_kit_icon" value="pitch/icons/dots"/>
   </widget>
 
-		<container height="250">
+		<container height="218">
 			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="15" />
 			<!-- Info labels for when the data isn't available-->
 			<container>
