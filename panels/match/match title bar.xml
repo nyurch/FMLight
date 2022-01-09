@@ -54,36 +54,62 @@
 		</container>
 
 		<container navigation_container="true">
+			<attachment_group class="horizontal_arrange_autosize" horizontal_gap="8" horizontal_offset="0" vertical_inset="0" />
 
-			<animation class="translate_animation" start_value="1, 0" end_value="0, 0" duration="0.5" delay="0.8" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_target" />
-			<attachment_group class="horizontal_arrange_autosize" horizontal_gap="-4" horizontal_offset="0" vertical_inset="0" />
+			<container height="44">
+				<layout class="horizontal_arrange_autosize" horizontal_gap="8"/>
 
-			<container class="match_playback_control_container" id="TopR" file="">
-				<layout class="horizontal_arrange_autosize"/>
+				<container class="main_transparent_box_no_margin" draw_vertical_dividers="true">
+					<layout class="horizontal_arrange_autosize" horizontal_gap="0"/>
 
-				<record id="object_property" get_property="maCo" set_property="maCo" />
+					<!--home-->
+					<widget class="widget_popup_button" id="homb" width="44" icon="icons/26px/home" secondary_icon_enabled="false" appearance="" controller_button="select_button" gamepad_icon_alignment="centre_right" icon_alignment="centre">
+						<event id="click_event">
+							<flags id="event_id" value="HOME" />
+							<flags id="event_target" value="scrC" />
+						</event>
+						<record id="primary_icon_properties" red_replacement="text" />
+					</widget>
 
-				<widget class="icon_button" id="inst" appearance="buttons/custom/match/simulate/button" icon="icons/26px/transfer" label_disabled="true" alignment="centre" icon_alignment="centre" click_event="inst" auto_size="horizontal" icon_colour="white" red_replacement="bg negative">
-					<translation id="hint" translation_id="383109" type="use" value="Simulate Match[COMMENT: button text to go through the next match leaving the result to the staff, using the full match engine to simulate the match result]" />
-				</widget>
+					<!--fm-->
+					<widget class="popup_button" id="fmst" default_focus="false" fixed="true" appearance="" width="44" icon="icons/26px/fm" disable_wheel="true" secondary_icon_enabled="false" controller_button="select_button" gamepad_icon_alignment="centre_right" icon_alignment="centre">
+						<event id="click_notification_event" event_id="FM" item="NULL" />
+						<event id="menu_layout_notification_event" event_id="mlne" event_target="fmst" />
+						<record id="items" file="menus/game" />
+						<record id="primary_icon_properties" red_replacement="text" />
+						<translation id="hint" translation_id="292829" type="use" value="Options[COMMENT: menubar game options button]" />
+					</widget>
+
+					<!--settings-->
+					<widget class="widget_popup_button" id="Sett" width="44" red_replacement="bg darker" icon="icons/16px/settings" widget_type="match_settings_panel" mpmF="generic/modal popup panel match" secondary_icon_enabled="false" appearance="" controller_button="select_button" gamepad_icon_alignment="centre_right" icon_alignment="centre" icon_always_spaced="true">
+						<record id="modal_popup_properties">
+							<boolean id="darkened" value="false" />
+						</record>
+						<translation id="hint" translation_id="332230" type="use" value="Click to show the match settings.[COMMENT: hint for a button to toggle showing the match settings panel]" />
+						<record id="primary_icon_properties" red_replacement="text" />
+						<record id="secondary_icon_properties" red_replacement="text" />
+					</widget>
+
+				</container>
+
+				<container class="match_playback_control_container" id="TopR" file="">
+					<layout class="horizontal_arrange_autosize"/>
+					<attachment class="hide_empty_container_attachment"/>
+
+					<record id="object_property" get_property="maCo" set_property="maCo" />
+
+					<widget class="icon_button" id="inst" width="44" appearance="boxes/contrast/no margin/paper" red_replacement="bg negative" icon="icons/26px/transfer" label_disabled="true" alignment="centre" icon_alignment="centre" click_event="inst">
+						<translation id="hint" translation_id="383109" type="use" value="Simulate Match[COMMENT: button text to go through the next match leaving the result to the staff, using the full match engine to simulate the match result]" />
+						<record id="primary_icon_properties" red_replacement="white" />
+					</widget>
+
+				</container>
 
 			</container>
 
-			<widget class="widget_popup_button" id="Sett" auto_size="horizontal" red_replacement="bg darker" icon="icons/16px/settings" widget_type="match_settings_panel" mpmF="generic/modal popup panel match" secondary_icon_enabled="false" appearance="buttons/custom/match/play/button" controller_button="select_button"  gamepad_icon_alignment="centre_right" icon_alignment="centre_left" icon_always_spaced="true">
-				<record id="modal_popup_properties">
-					<boolean id="darkened" value="false" />
-				</record>
-				<translation id="hint" translation_id="332230" type="use" value="Click to show the match settings.[COMMENT: hint for a button to toggle showing the match settings panel]" />
-				<record id="primary_icon_properties" red_replacement="text" />
-				<record id="secondary_icon_properties" red_replacement="text" />
-			</widget>
-
 			<!-- continue button -->
 			<widget class="match_continue_panel" id="mcnt" auto_size="horizontal">
-				<record id="object_property">
-					<integer id="get_property" value="objt" />
-					<integer id="set_property" value="objt" />
-				</record>
+				<record id="object_property" get_property="objt" set_property="objt"/>
 			</widget>
 
 		</container>
