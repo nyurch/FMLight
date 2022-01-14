@@ -1,1 +1,0 @@
-<panel><layout class="stick_to_sides_attachment" apply_to_children="true"/><container class="main_subtle_box"><layout class="stick_to_sides_attachment" apply_to_children="true"/><container class="scrolling_box"><widget class="text" id="text" auto_size="vertical" /></container></container></panel>
