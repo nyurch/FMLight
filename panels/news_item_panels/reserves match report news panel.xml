@@ -25,7 +25,7 @@
 							<widget class="formatted_label" auto_size="all" format="[%fraction#1-2.2]">
 								<record id="object_property" get_property="fhxG" alignment="right,centre_y" set_property="valu" />
 							</widget>
-							<widget class="picture" file="icons/16px/xg" red_replacement="text" scale_picture="false" keep_aspect_ratio="true" auto_size="all" />
+							<widget class="picture" file="icons/16px/xg" red_replacement="purple 900" scale_picture="false" keep_aspect_ratio="true" auto_size="all" />
 						</container>
 					</container>
 					<!-- Home team logo -->
@@ -55,7 +55,7 @@
 						</widget>
 						<container>
 							<attachment_group class="horizontal_arrange_autosize_all" vertical_offset="0" horizontal_alignment="left" horizontal_inset="0" />
-							<widget class="picture" file="icons/16px/xg" red_replacement="text" scale_picture="false" keep_aspect_ratio="true" auto_size="all" />
+							<widget class="picture" file="icons/16px/xg" red_replacement="purple 900" scale_picture="false" keep_aspect_ratio="true" auto_size="all" />
 							<widget class="formatted_label" auto_size="all" format="[%fraction#1-2.2]">
 								<record id="object_property" get_property="faxG" alignment="right,centre_y" set_property="valu" />
 							</widget>
