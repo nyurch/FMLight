@@ -206,7 +206,18 @@
 
 	<!-- FOOTER CONTAINER -->
 	<container>
-		<layout class="horizontal_arrange" horizontal_layout="250,250,250,750,-1" />
+		<layout class="horizontal_arrange" horizontal_layout="280,250,250,250,-1" />
+		<!-- STAFF -->
+		<container class="main_subtle_box">
+			<translation id="title" translation_id="509699" type="use" value="Key People" />
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
+			<widget class="club_overview_staff_panel" id="cloS">
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</widget>
+		</container>
 		<!-- LEGENDS -->
 		<container class="main_subtle_box">
 			<translation id="title" translation_id="281393" type="use" value="Legends[COMMENT: heading; team_information_panel; list of legends persons to current club]" />
@@ -300,18 +311,5 @@
 				</container>
 			</container>
 		</container>
-			<!--staff-->
-		<container class="main_subtle_box">
-			<translation id="title" translation_id="509699" type="use" value="Key People" />
-			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
-			
-				<widget class="club_overview_staff_panel" id="cloS">
-					<record id="object_property">
-						<integer id="get_property" value="objt" />
-						<integer id="set_property" value="objt" />
-					</record>
-				</widget>
-			
-			</container>
 	</container>
 </panel>
