@@ -1,0 +1,10 @@
+<panel height="36">
+	<widget class="picture" id="pict" file="icons/26px/additional squads" image_alignment="centre" red_replacement="sidebar text">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+	</widget>
+
+	<widget class="text" id="extx" alignment="centre_x,bottom" auto_size="all" size="6" colour="white">
+		<layout class="centre_in_parent_attachment" alignment="horizontal" />
+		<layout class="stick_to_sides_attachment" alignment="bottom" inset="5"/>
+	</widget>
+</panel>
