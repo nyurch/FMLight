@@ -19,6 +19,9 @@
 					<integer id="set_property" value="valu" />
 				</record>
 			</widget-->
+			<!---widget class="object_portrait_picture" height="30" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="true">
+				<record id="object_property" get_property="PNat"/>
+			</widget--->
 			<widget class="picture" height="30" scale_picture="false" image_alignment="centre" file="icons/custom/facilities/location" red_replacement="red 900" />
 			<widget class="nation_button" id="SnaV" icon_enabled="false" alignment="centre" appearance="none">
 				<record id="object_property">
