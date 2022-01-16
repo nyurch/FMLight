@@ -13,8 +13,14 @@
 					<boolean id="name" value="true"/>
 				</record>
 			</widget>
+			<!--widget class="picture" height="30" id="flag" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true">
+				<record id="object_property">
+					<integer id="get_property" value="flag" />
+					<integer id="set_property" value="valu" />
+				</record>
+			</widget-->
 			<widget class="picture" height="30" scale_picture="false" image_alignment="centre" file="icons/custom/facilities/location" red_replacement="red 900" />
-			<widget class="nation_button" id="SnaV" icon_alignment="centre" alignment="centre" appearance="none">
+			<widget class="nation_button" id="SnaV" icon_enabled="false" alignment="centre" appearance="none">
 				<record id="object_property">
 					<integer id="get_property" value="Snat"/>
 				</record>
