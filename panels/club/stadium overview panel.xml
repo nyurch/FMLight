@@ -1,5 +1,5 @@
 <panel>
-	<layout class="vertical_arrange" vertical_layout="80,500,-1" />
+	<layout class="vertical_arrange" vertical_layout="120,500,-1" />
 	<boolean id="should_force_refresh" value="true"/>
 
 	<!-- HEADER CONTAINER -->
@@ -13,6 +13,7 @@
 					<boolean id="name" value="true"/>
 				</record>
 			</widget>
+			<widget class="picture" height="30" scale_picture="false" image_alignment="centre" file="icons/custom/facilities/location" red_replacement="red 900" />
 			<widget class="nation_button" id="SnaV" icon_alignment="centre" alignment="centre" appearance="none">
 				<record id="object_property">
 					<integer id="get_property" value="Snat"/>
@@ -20,10 +21,11 @@
 			</widget>
 		</container>
 		<!--city-->
-		<container class="vertical_label_value_pair" value_widget="namL">
-			<widget class="label" >
+		<container class="vertical_label_value_pair" value_widget="namL" label_widget="City">
+			<widget class="label" id="City">
 				<translation id="text" translation_id="319589" type="use" value="City[COMMENT: team stadium city, short title]"/>
 			</widget>
+			<widget class="picture" height="30" scale_picture="false" image_alignment="centre" file="icons/custom/facilities/capital" red_replacement="blue 900" />
 			<widget class="city_label" id="namL">
 				<record id="object_property">
 					<integer id="get_property" value="SctI"/>
@@ -38,6 +40,7 @@
 					<boolean id="name" value="true"/>
 				</record>
 			</widget>
+			<widget class="picture" height="30" scale_picture="false" image_alignment="centre" file="icons/custom/facilities/stadium" red_replacement="yellow 900" />
 			<widget class="yes_no_label" id="ScoV" >
 				<record id="object_property">
 					<integer id="get_property" value="Scov"/>
@@ -45,10 +48,11 @@
 			</widget>
 		</container>
 		<!--surface-->
-		<container class="vertical_label_value_pair" value_widget="SsfL">
-			<widget class="label">
+		<container class="vertical_label_value_pair" value_widget="SsfL" label_widget="Surf">
+			<widget class="label" id="Surf">
 				<translation id="text" translation_id="284339" type="use" value="Surface[COMMENT: heading; team_information_panel; pitch surface type]"/>
 			</widget>
+			<widget class="picture" height="30" scale_picture="false" image_alignment="centre" file="icons/custom/facilities/pitch" red_replacement="green 900" />
 			<widget class="pitch_surface_type_label" id="SsfL" >
 				<record id="object_property">
 					<integer id="get_property" value="SsfT"/>
@@ -57,17 +61,18 @@
 		</container>
 		<!--undersoil heating-->
 		<container class="vertical_label_value_pair" value_widget="SusV" label_widget="SusL">
-					<widget class="label" id="SusL">
-					  <record id="object_property">
-						<integer id="get_property" value="Sush"/>
-						<boolean id="name" value="true"/>
-					  </record>
-					</widget>
-					<widget class="yes_no_label" id="SusV" >
-					  <record id="object_property">
-						<integer id="get_property" value="Sush"/>
-					  </record>
-					</widget>
+			<widget class="label" id="SusL">
+				<record id="object_property">
+					<integer id="get_property" value="Sush"/>
+					<boolean id="name" value="true"/>
+				</record>
+			</widget>
+			<widget class="picture" height="30" scale_picture="false" image_alignment="centre" file="icons/custom/facilities/undersoil" red_replacement="orange 900" />
+			<widget class="yes_no_label" id="SusV" >
+				<record id="object_property">
+					<integer id="get_property" value="Sush"/>
+				</record>
+			</widget>
 		</container>
 		<!--capacity-->
 		<container class="vertical_label_value_pair" value_widget="ScpV" label_widget="ScpL">
@@ -77,6 +82,7 @@
 					<boolean id="name" value="true"/>
 				</record>
 			</widget>
+			<widget class="picture" file="icons/custom/facilities/capacity" red_replacement="accent" height="30" scale_picture="false" image_alignment="centre" />
 			<widget class="dashed_number_label" id="ScpV">
 				<record id="object_property">
 					<integer id="get_property" value="Scpy"/>
@@ -91,6 +97,7 @@
 					<boolean id="name" value="true"/>
 				</record>
 			</widget>
+			<widget class="picture" file="icons/custom/facilities/built" red_replacement="normal_icon" height="30" scale_picture="false" image_alignment="centre" />
 			<widget class="dashed_number_label" id="SbdV">
 				<boolean id="NumF" value="0"/>
 				<record id="object_property">
@@ -106,6 +113,7 @@
 					<boolean id="name" value="true"/>
 				</record>
 			</widget>
+			<widget class="picture" height="30" scale_picture="false" image_alignment="centre" file="icons/custom/facilities/stadium" red_replacement="pink 900" />
 			<widget class="stadium_condition_label" id="SdcV">
 				<list id="value_list">
 					<record min_value="0" max_value="1" colour="very good"/>
