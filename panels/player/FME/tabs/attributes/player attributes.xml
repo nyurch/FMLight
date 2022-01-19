@@ -110,7 +110,7 @@
 			</container>
 
 			<container>
-				<layout class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="1"/>
+				<layout class="vertical_arrange" vertical_alignment="centre,extend" vertical_gap="5"/>
 
 				<!-- Additional attributes table -->
 				<container class="client_object_viewer_xml_panel" id="attT">
