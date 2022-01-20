@@ -33,7 +33,7 @@
 					<widget class="label" col="0" row="6" font="label">
 						<translation id="text" translation_id="247453" type="use" value="Favoured Clubs" />
 					</widget>
-					<widget class="favourite_clubs_text" id="fvcw" col="0" row="7" auto_size="vertical" spec="text" />
+					<widget class="favourite_clubs_text" id="fvcw" col="0" colour="black" row="7" auto_size="vertical" spec="text" />
 
 					<!-- media description -->
 					<widget class="label" col="0" row="4" font="label">
@@ -73,7 +73,7 @@
 					<widget class="label" col="0" row="6" font="label">
 						<translation id="text" translation_id="247454" type="use" value="Favoured Personnel" />
 					</widget>
-					<widget class="favourite_personel_text" id="fvpw" col="0" row="7" auto_size="vertical" spec="text" />
+					<widget class="favourite_personel_text" id="fvpw" colour="black" col="0" row="7" auto_size="vertical" spec="text" />
 
 					<!-- similar players "similar type of player to" -->
 					<widget class="label" col="0" row="8" font="label">
