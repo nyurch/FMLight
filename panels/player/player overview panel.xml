@@ -522,7 +522,7 @@
 <!-- FOOTER CONTAINER -->
 <container>
 <layout class="horizontal_arrange" horizontal_layout="500,500,-1" />
-	<container class="main_subtle_box">
+	<container>
 	<layout class="vertical_arrange" vertical_layout="-1,-1" />
 		<!-- BANS -->
 		<container class="main_subtle_box">
@@ -541,7 +541,7 @@
 			</widget>
 		</container>
 	</container>
-	<container class="main_subtle_box">
+	<container>
 		<layout class="vertical_arrange" vertical_layout="-1,-1" />
 		<!-- HAPPINESS -->
 		<container class="main_subtle_box">
