@@ -17,8 +17,8 @@
 					<!--home team name and xG for match-->
 					<container>
 						<attachment_group class="vertical_arrange_horizontal_autosize" vertical_alignment="middle" vertical_offset="0" horizontal_alignment="right" horizontal_inset="0" />
-						<widget class="client_object_label" auto_size="all" spec="text" font="title" size="normal" colour="text" alignment="right, centre_y">
-							<record id="object_property" get_property="home" set_property="valu" />
+						<widget class="team_button" icon_enabled="false" auto_size="all" spec="text" font="title" size="normal" colour="text" alignment="right, centre_y">
+							<record id="object_property" get_property="home"  dont_set_object="true" />
 						</widget>
 						<container>
 							<attachment_group class="horizontal_arrange_autosize_all" vertical_offset="0" horizontal_alignment="right" horizontal_inset="0" />
@@ -50,8 +50,8 @@
 					<!--away team name and xG for match-->
 					<container>
 						<attachment_group class="vertical_arrange_horizontal_autosize" vertical_alignment="middle" vertical_offset="0" horizontal_alignment="left" horizontal_inset="0" />
-						<widget class="client_object_label" auto_size="all" spec="text" font="title" size="normal" colour="text" alignment="left, centre_y">
-							<record id="object_property" get_property="away" set_property="valu" />
+						<widget class="team_button" icon_enabled="false" auto_size="all" spec="text" font="title" size="normal" colour="text" alignment="left, centre_y">
+							<record id="object_property" get_property="away"  dont_set_object="true" />
 						</widget>
 						<container>
 							<attachment_group class="horizontal_arrange_autosize_all" vertical_offset="0" horizontal_alignment="left" horizontal_inset="0" />
