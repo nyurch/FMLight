@@ -494,19 +494,16 @@
 				<record id="Psnm" width="-3">
 					<string id="multiline" value="false" />
 				</record>
-				<record id="Pclb" width="-3">
+				<record id="Pclb" width="-2">
 					<string id="multiline" value="false" />
 				</record>
-				<record id="pDcl" width="-8">
+				<record id="pDcl" width="-2">
 					<string id="multiline" value="false" />
 				</record>
 				<record id="Page" width="40">
 					<string id="multiline" value="false" />
 				</record>
 				<record id="Pnat" width="80">
-					<string id="multiline" value="false" />
-				</record>
-				<record id="Pdva" width="60">
 					<string id="multiline" value="false" />
 				</record>
 			</record>
