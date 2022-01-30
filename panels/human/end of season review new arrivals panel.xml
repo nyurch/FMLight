@@ -126,7 +126,7 @@
 				</container>
 			</container>
 			<!--Player Table-->
-			<container class="client_object_list_table" entity_layout_id="at07" id="prsT" name="list table" height="500" navigation_focus_target="true">
+			<container class="client_object_list_table" entity_layout_id="at07" id="prsT" name="list table" height="700" navigation_focus_target="true">
 				<global id="override_select_row_flags" name="platform_is_stadia"/>
 				<integer id="row_height" value="70" />
 				<integer id="fixed_row_height" value="30" />
