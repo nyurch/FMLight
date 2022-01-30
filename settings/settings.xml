@@ -659,12 +659,12 @@
 	<!-- Comment box on transfer offer screen colour -->
 
 	<!-- Linear progress bars -->
-	<colour name="progress_empty" 							value="fg"/>
-	<colour name="progress_full" 							value="fg"/>
+	<colour name="progress_empty" 							value="rgba(0,0,0,0.3)"/>
+	<colour name="progress_full" 							value="accent"/>
 
-	<colour name="bar value" 								value="fg"/>
+	<colour name="bar value" 								value="accent"/>
 	<!-- percentage bar fill colour -->
-	<colour name="bar filler" 								value="bg lighter"/>
+	<colour name="bar filler" 								value="tertiary"/>
 	<!-- percentage bar filler colour -->
 
 	<!--For the Team meeting- the overall colour changes-->
