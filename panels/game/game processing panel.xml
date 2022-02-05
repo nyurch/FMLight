@@ -157,7 +157,7 @@
     </container>
 
 		<!-- Footer with hints -->
-		<container background_colour="processing_box_background" height="85">
+		<container background_colour="processing_hints_background" height="85">
 			<layout class="arrange_horizontal_attachment" layout="180, 2, -1, 200" offset="0" gap="10" />
 			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 
