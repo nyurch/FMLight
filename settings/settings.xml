@@ -1434,7 +1434,7 @@
 	<!-- Processing -->
 	<colour name="world_news_background" 					value="teal 900"/>
 	<!-- World news background colour - red_replacement -->
-	<colour name="processing_box_background" 				value="rgb(44,44,44)"/>
+	<colour name="processing_box_background" 				value="rgb(220,220,220)"/>
 	<!-- Processing box background colour - red_replacement -->
 	<colour name="processing_box_border" 					value="bg"/>
 	<!-- Processing box border - blue_replacement -->
