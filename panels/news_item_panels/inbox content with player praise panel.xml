@@ -1,6 +1,5 @@
 ﻿<panel>
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
-	
 	<string id="skin_style" value="subtle box" />
 
 	<!-- content area -->
@@ -12,14 +11,12 @@
 
 			<container>
 				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
-
 				<!-- main body text -->
 				<widget class="inbox_body_text" id="bdtx" />
 			</container>
 
 			<container class="inner_subtle_box">
 				<attachment_group class="vertical_arrange_autosize" alignment="centre" />
-
 				<!-- comp and award -->
 				<container>
 					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" vertical_offset="8" />
@@ -30,110 +27,8 @@
 						<widget class="award_button" id="anam" auto_size="vertical" spec="text" colour="faded text" alignment="left" size="large" adt="1" /> <!-- adt="1" Short format -->
 					</container>
 				</container>
-					
-				<!-- logos -->
-				<container id="ICdi" height="150">
-					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
-				</container>
-
-				<container>
-					<attachment_group class="vertical_arrange_autosize" vertical_offset="8" />
-				
-					<!-- Manager Name -->
-					<container>
-						<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
-
-						<!--<widget class="person_button" id="psbf" auto_size="all" auto_size_restricted_to_parent_width="true" navigation_focus_target="false" style="semi_bold" colour="white" info_popup_enabled="true" person_is_player="false">-->
-						<widget class="person_button" id="apfn" auto_size="all" style="semi_bold" size="large">
-							<layout class="centre_in_parent_attachment" alignment="all" />
-							<record id="object_property" get_property="Pnms" set_property="valu" />
-						</widget>
-					</container>
-
-					<!-- Job Type -->
-					<widget class="job_label" auto_size="all" auto_size_restricted_to_parent_width="true" alignment="centre" colour="faded text" size="large">
-						<record id="object_property" get_property="PcJj" set_property="valu" />
-					</widget>
-				</container>
-				
-				<container>
-					<attachment_group class="vertical_arrange_autosize" />
-					<widget class="picture" file="dividers/standard/horizontal/line" height="8" />
-				</container>
-
-				<!-- Win% / League Pos. / Form -->
-				<container>
-					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1,-1,-1" />
-
-					<!-- Win% -->
-					<container>
-						<attachment_group class="vertical_arrange_autosize" />
-
-						<widget class="text" alignment="centre" auto_size="vertical" font="label" colour="faded text" size="large">
-							<translation id="text" translation_id="338615" type="use" value="Win %[COMMENT: manager stats: games won ratio text title]" />
-						</widget>
-						<widget class="percentage_label" id="wper" auto_size="vertical" spec="text" font="text" colour="black" alignment="centre" style="semi_bold" size="large" />
-					</container>
-
-					<!-- League Pos. -->
-					<container>
-						<attachment_group class="vertical_arrange_autosize" />
-
-						<widget class="text" alignment="centre" auto_size="vertical" font="label" colour="faded text" size="large">
-							<translation id="text" translation_id="242478" type="use" value="Pos[(league position)]" />
-						</widget>
-						<widget class="team_league_position_text" id="lpos" auto_size="vertical" spec="text" font="text" colour="black" alignment="centre" style="semi_bold" size="large" />
-					</container>
-
-					<!-- Form -->
-					<container>
-						<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
-
-						<widget class="text" alignment="centre" auto_size="vertical" font="label" colour="faded text" size="large">
-							<translation id="text" translation_id="308194" type="use" value="Form[COMMENT: team form 5 games, all competitions, short version]" />
-						</widget>
-
-						<widget class="team_recent_form_widget" id="form" show_form_popup="true" navigation_focus_target="false" icon_alignment="centre" height="21" />
-					</container>
-				</container>
-
-				<!-- Most Notable Result -->
-				<container>
-					<attachment_group class="vertical_arrange_autosize" vertical_offset="8" />
-
-					<widget class="picture" file="dividers/standard/horizontal/line" height="8" />
-						
-					<widget class="text" alignment="centre" auto_size="vertical" font="label" colour="title" size="large">
-						<translation id="text" translation_id="539001" type="use" value="Most Notable Result[COMMENT: AREA: Inbox content; SUB-AREA: Praise for winning Manager of the Month award; FR: 35907]" />
-					</widget>
-					<container height="32">
-						<layout class="arrange_horizontal_attachment" alignment="middle,fill" offset="0" />
-						<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
-
-						<!-- Home team name -->
-						<widget class="team_button" id="brht" icon_enabled="false" alignment="right,centre_y" style="bold" navigation_focus_target="true" />
-
-						<container id="cent">
-							<attachment_group class="horizontal_arrange_autosize" horizontal_offset="8" vertical_inset="0" />
-
-							<!-- Home team logo -->
-							<widget class="object_portrait_picture" id="brhl" image_alignment="centre" scale_picture="true" width="30" height="30" />
-
-							<container class="inner_subtle_box">
-								<attachment_group class="horizontal_arrange_autosize" horizontal_offset="8" horizontal_gap="1" vertical_inset="0" />
-								<!-- scoreline -->
-								<widget class="text" id="brsl" size="15" alignment="centre" auto_size="horizontal" style="bold" navigation_focus_target="true" />
-							</container>
-
-							<!-- Away team logo -->
-							<widget class="object_portrait_picture" id="bral" scale_picture="true" width="30" height="30" image_alignment="centre" />
-						</container>
-
-						<!-- Away team name -->
-						<widget class="team_button" id="brat" icon_enabled="false" style="bold" navigation_focus_target="true" />
-					</container>
-				</container>
 			</container>
+
 		</container>
 	</container>
 </panel>
