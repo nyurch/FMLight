@@ -7,18 +7,14 @@
 		<layout class="arrange_horizontal_attachment" layout="-1, -1" offset="0"/>
 		<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
 
-		<widget class="inner_subtle_box" height="340" priority="1">
-			<translation id="title" translation_id="248418" type="use" value="Profile" />
-			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
-
-			<widget class="client_object_viewer_xml_panel" id="huPo" file="human/human popup mini profile" auto_size="vertical">
-				<layout class="stick_to_sides_attachment" alignment="top" inset="0" />
-				<record id="object_property">
-					<integer id="get_property" value="objt" />
-					<integer id="set_property" value="objt" />
-				</record>
-			</widget>
-		</widget>
+		<container class="inner_subtle_box" id="tncP">
+			<attachment_group class="vertical_arrange" vertical_layout="20, -1" vertical_gap="5" vertical_offset="0" horizontal_inset="10" />
+			<widget class="label" id="knfL" col="0" row="0" alignment="left, centre_y" font="title" height="20"/>
+			<container class="scrolling_box" id="chrA">
+				<layout class="stick_to_sides_attachment" alignment="top, left" apply_to_children="true" />
+				<widget class="text" id="tncs" auto_size="vertical" />
+			</container>
+		</container>
 
 		<container>
 			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
