@@ -1,7 +1,19 @@
 <panel>
-	<attachment_group class="horizontal_arrange" horizontal_layout="-1,-2" horizontal_offset="0" vertical_inset="0">
+	<attachment_group class="horizontal_arrange" horizontal_layout="230,440,-1" horizontal_offset="0" vertical_inset="0">
 		<global id="horizontal_gap" name="ui.main_contrast_box_gap"/>
 	</attachment_group>
+
+	<container id="copw" navigation_container="true">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+		<widget class="competition_overview_past_winners_panel" id="cowp">
+			<integer id="maximum_winners_to_show" value="520" />
+			<integer id="winner_entry_height" value="42" />
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="objt" />
+			</record>
+		</widget>
+	</container>
 
 	<container class="main_subtle_box" id="cost" red_replacement="black" navigation_container="true" default_focus="true">
 		<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_offset="0" horizontal_inset="0"/>
@@ -72,31 +84,25 @@
 				</widget>
 			</container>
 
-			<container class="competition_overview_reputation_panel" default_width="-3" minimum_width="200" priority="3" id="colr" navigation_container="true">
+			<container class="competition_overview_reputation_panel" default_width="-3" minimum_width="100" priority="2" id="colr" navigation_container="true">
 				<record id="object_property">
 					<integer id="get_property" value="objt" />
 					<integer id="set_property" value="objt" />
 				</record>
 			</container>
 
-			<container class="competition_qualifiers_panel" file="competition/competition overview qualifiers" minimum_width="400" priority="5" id="coqp">
+			<container class="competition_qualifiers_panel" file="competition/competition overview qualifiers" minimum_width="100" priority="3" id="coqp">
 				<record id="object_property">
 					<integer id="get_property" value="objt" />
 					<integer id="set_property" value="objt" />
 				</record>
 			</container>
 
-			<container minimum_width="260" priority="4" id="copw" navigation_container="true">
-				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
-
-				<widget class="competition_overview_past_winners_panel" id="cowp">
-					<integer id="maximum_winners_to_show" value="20" />
-					<integer id="winner_entry_height" value="42" />
-					<record id="object_property">
-						<integer id="get_property" value="objt" />
-						<integer id="set_property" value="objt" />
-					</record>
-				</widget>
+			<container class="competition_injury_table_panel" id="coic" file="competition/competition overview injury table" minimum_width="250" priority="4" navigation_container="true">
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
 			</container>
 
 		</container>
@@ -169,19 +175,13 @@
 				</container>
 			</container>
 
-			<container class="competition_injury_table_panel" id="coic" file="competition/competition overview injury table" minimum_width="260" priority="2" default_width="-1" navigation_container="true">
-				<record id="object_property">
-					<integer id="get_property" value="objt" />
-					<integer id="set_property" value="objt" />
-				</record>
-			</container>
-
 			<container class="client_object_viewer_xml_panel" id="Mmov" file="competition/competition manager movements mini panel" minimum_width="260" priority="3" default_width="-1" navigation_container="true">
 				<record id="object_property">
 					<integer id="get_property" value="objt" />
 					<integer id="set_property" value="objt" />
 				</record>
 			</container>
+
 		</container>
 	</container>
 </panel>
