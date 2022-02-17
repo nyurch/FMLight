@@ -69,7 +69,7 @@
 						<widget class="label" auto_size="vertical" font="title" size="large" style="bold" colour="accent" id="tage">
 							<translation id="text" type="use"  translation_id="227770" value="Age" />
 						</widget>
-						<widget class="label" id="age" auto_size="vertical" colour="text">
+						<widget class="label" id="age" auto_size="vertical" size="normal" colour="text">
 							<record id="widget_info" class="formatted_label">
 								<translation id="format" translation_id="242551" type="use" value="[%number#1] years old" />
 							</record>
@@ -83,7 +83,7 @@
 						<widget class="label" id="tcst" auto_size="vertical" font="title" size="large" style="bold" colour="accent">
 							<translation id="text" translation_id="247433"  type="use" value="Started" />
 						</widget>
-						<widget class="date_cell" id="star">
+						<widget class="date_cell" id="star" size="normal">
 							<record id="object_property" get_property="Pcsd" />
 						</widget>
 					</container>
@@ -93,7 +93,7 @@
 						<widget class="label" id="tcex" auto_size="vertical" font="title" size="large" style="bold" colour="accent">
 							<translation id="text" translation_id="227784"  type="use" value="Expiry Date" />
 						</widget>
-						<widget class="date_cell" id="expd">
+						<widget class="date_cell" id="expd" size="normal">
 							<record id="object_property" get_property="Pcex" />
 						</widget>
 					</container>
