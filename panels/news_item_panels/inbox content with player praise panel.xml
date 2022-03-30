@@ -1,25 +1,19 @@
 ﻿<panel>
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
-	
 	<string id="skin_style" value="subtle box" />
-
 	<!-- content area -->
 	<container class="scrolling_box">
 		<container>
 			<layout class="fit_children_attachment" alignment="vertical" />
 			<layout class="arrange_horizontal_attachment" layout="-1, 350" offset="0" />
 			<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
-
 			<container>
 				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
-
 				<!-- main body text -->
 				<widget class="inbox_body_text" id="bdtx" />
 			</container>
-
 			<container class="inner_subtle_box">
 				<attachment_group class="vertical_arrange_autosize" alignment="centre" />
-
 				<!-- comp and award -->
 					<container>
 						<attachment_group class="vertical_arrange_autosize" />
@@ -27,103 +21,82 @@
 							<widget class="comp_button" id="cnam" auto_size="vertical" spec="text" font="title" colour="black" alignment="centre" size="large" icon_enabled="false" />
 							<widget class="award_button" id="anam" auto_size="vertical" spec="text" colour="faded text" alignment="centre" size="large" /> <!-- adt="1" Short format -->
 					</container>
-					
 				<!-- logos -->
 				<container id="ICdi" height="150">
 					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 				</container>
-
 				<container>
 					<attachment_group class="vertical_arrange_autosize" vertical_offset="8" />
-				
 					<!-- Manager Name -->
 					<container>
 						<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
-
 						<widget class="person_button" id="apfn" auto_size="all" style="semi_bold" size="large">
 							<layout class="centre_in_parent_attachment" alignment="all" />
+							<record id="object_property" get_property="Pnms" set_property="valu" />
 						</widget>
 					</container>
-
 					<!-- Job Type -->
 					<widget class="job_label" id="jola" auto_size="all" auto_size_restricted_to_parent_width="true" alignment="centre" colour="faded text" size="large"/>
 				</container>
-				
-				<!-- Win% / League Pos. / Form -->
 				<container id="wlpf">
 					<attachment_group class="vertical_arrange_autosize" />
 					<widget class="picture" file="dividers/standard/horizontal/line" height="8" />
-
+					<!-- Manager Age/Contract -->
 					<container>
 						<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1,-1,-1" />
-
-						<!-- Win% -->
-						<container>
-							<attachment_group class="vertical_arrange_autosize" />
-
-							<widget class="text" alignment="centre" auto_size="vertical" font="label" colour="faded text" size="large">
-								<translation id="text" translation_id="338615" type="use" value="Win %[COMMENT: manager stats: games won ratio text title]" />
+						<!-- Age -->
+						<container class="vertical_label_value_pair" value_widget="age" label_widget="tage">
+							<widget class="label" auto_size="vertical" font="title" size="large" style="bold" colour="accent" id="tage">
+								<translation id="text" type="use"  translation_id="227770" value="Age" />
 							</widget>
-							<widget class="percentage_label" id="wper" auto_size="vertical" spec="text" font="text" colour="white" alignment="centre" style="semi_bold" size="large" />
+							<widget class="label" id="age" auto_size="vertical" size="normal" colour="text">
+								<record id="widget_info" class="formatted_label">
+									<translation id="format" translation_id="242551" type="use" value="[%number#1] years old" />
+								</record>
+								<record id="widget_edit_info" width="0" height="0"/>
+								<record id="object_property" get_property="Page" />
+							</widget>
 						</container>
-
-						<!-- League Pos. -->
-						<container>
-							<attachment_group class="vertical_arrange_autosize" />
-
-							<widget class="text" alignment="centre" auto_size="vertical" font="label" colour="faded text" size="large">
-								<translation id="text" translation_id="242478" type="use" value="Pos[(league position)]" />
+						<!-- Contract start -->
+						<container class="vertical_label_value_pair" value_widget="star" label_widget="tcst">
+							<widget class="label" id="tcst" auto_size="vertical" font="title" size="large" style="bold" colour="accent">
+								<translation id="text" translation_id="247433"  type="use" value="Started" />
 							</widget>
-							<widget class="team_league_position_text" id="lpos" auto_size="vertical" spec="text" font="text" colour="white" alignment="centre" style="semi_bold" size="large" />
+							<widget class="date_cell" id="star" size="normal">
+								<record id="object_property" get_property="Pcsd" />
+							</widget>
 						</container>
-
-						<!-- Form -->
-						<container>
-							<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
-
-							<widget class="text" alignment="centre" auto_size="vertical" font="label" colour="faded text" size="large">
-								<translation id="text" translation_id="308194" type="use" value="Form[COMMENT: team form 5 games, all competitions, short version]" />
+						<!-- Contract end -->
+						<container class="vertical_label_value_pair" value_widget="expd" label_widget="tcex">
+							<widget class="label" id="tcex" auto_size="vertical" font="title" size="large" style="bold" colour="accent">
+								<translation id="text" translation_id="227784"  type="use" value="Expiry Date" />
 							</widget>
-
-							<widget class="team_recent_form_widget" id="form" show_form_popup="true" navigation_focus_target="false" icon_alignment="centre" height="21" />
+							<widget class="date_cell" id="expd" size="normal">
+								<record id="object_property" get_property="Pcex" />
+							</widget>
 						</container>
 					</container>
-				</container>
-
-				<!-- Most Notable Result -->
-				<container id="mnre">
-					<attachment_group class="vertical_arrange_autosize" vertical_offset="8" />
-
-					<widget class="picture" file="dividers/standard/horizontal/line" height="8" />
-						
-					<widget class="text" alignment="centre" auto_size="vertical" font="label" colour="title" size="large">
-						<translation id="text" translation_id="539001" type="use" value="Most Notable Result[COMMENT: AREA: Inbox content; SUB-AREA: Praise for winning Manager of the Month award; FR: 35907]" />
-					</widget>
-					<container height="32">
-						<layout class="arrange_horizontal_attachment" alignment="middle,fill" offset="0" />
-						<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
-
-						<!-- Home team name -->
-						<widget class="team_button" id="brht" icon_enabled="false" alignment="right,centre_y" style="bold" navigation_focus_target="true" />
-
-						<container id="cent">
-							<attachment_group class="horizontal_arrange_autosize" horizontal_offset="8" vertical_inset="0" />
-
-							<!-- Home team logo -->
-							<widget class="object_portrait_picture" id="brhl" image_alignment="centre" scale_picture="true" width="30" height="30" />
-
-							<container class="inner_subtle_box">
-								<attachment_group class="horizontal_arrange_autosize" horizontal_offset="8" horizontal_gap="1" vertical_inset="0" />
-								<!-- scoreline -->
-								<widget class="text" id="brsl" size="15" alignment="centre" auto_size="horizontal" style="bold" navigation_focus_target="true" />
-							</container>
-
-							<!-- Away team logo -->
-							<widget class="object_portrait_picture" id="bral" scale_picture="true" width="30" height="30" image_alignment="centre" />
+					<!-- Manager Personality/Reputation -->
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,-1" />
+						<!-- Personality -->
+						<container class="vertical_label_value_pair" value_widget="PPst" label_widget="PPs:">
+							<widget class="label" id="PPs:" font="title" size="large" style="bold" colour="accent">
+								<record id="object_property" get_property="PPst" name="true" />
+							</widget>
+							<widget class="personality_label" id="PPst" size="normal" colour="text">
+								<record id="object_property" get_property="PPst" />
+							</widget>
 						</container>
-
-						<!-- Away team name -->
-						<widget class="team_button" id="brat" icon_enabled="false" style="bold" navigation_focus_target="true" />
+						<!-- Reputation -->
+						<container class="vertical_label_value_pair" value_widget="pReP" label_widget="tRep">
+							<widget class="label" id="tRep" font="title" size="large" style="bold" colour="accent">
+								<translation id="text" translation_id="227963" type="use" value="Reputation" />
+							</widget>
+							<widget class="global_reputation_stars_label" id="pReP">
+								<record id="object_property" get_property="Prsa" dont_set_hint="true" />
+							</widget>
+						</container>
 					</container>
 				</container>
 			</container>
