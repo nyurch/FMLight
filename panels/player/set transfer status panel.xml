@@ -165,16 +165,7 @@
 							<widget class="label" col="0" row="0" spec="text" auto_size="vertical"  font="label">
                                 <translation id="text" translation_id="227778" type="use" value="Asking Price"/>
 							</widget>
-							<widget class="cash_selection_list" col="0" row="1" id="maap" spec="text" cash_round_style="4" cash_min_value="0" cash_max_value="200000000" select_event="maap" height="26">
-								<flags id="colour" value="text" />
-								<record id="alternative_main_kind" class="edit_box">
-									<record id="properties">
-										<flags id="colour" value="text" />	
-										<boolean id="show_clear_text_icon" value="false"/>
-									</record>
-								</record>
-								<boolean id="enforce_style" value="true" />
-							</widget>
+							<widget class="cash_selection_list" col="0" row="1" id="maap" spec="text" cash_round_style="4" cash_min_value="0" cash_max_value="200000000" select_event="maap" height="26"/>
 
 							<widget class="label" col="1" row="0" spec="text" auto_size="vertical"  font="label">
 								<translation id="text" translation_id="335979" type="use" value="Expiry Date[COMMENT: transfers unwanted list; column header, expiry date of bid]"/>
