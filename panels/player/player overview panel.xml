@@ -351,6 +351,20 @@
 	<!-- ATTRIBUTES -->
 	<!-- Tabs -->
 	<container class="tabs" id="potp" height="403" default_item="po01">
+		<!-- Contract -->
+		<container class="scrolling_box" id="contr">
+			<translation id="title" translation_id="230163" type="use" value="Contract" />
+			<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+			<container>
+				<layout class="vertical_arrange" vertical_layout="-1,-1"/>
+			<widget class="player_contract_panel" file="player/FME/tabs/contract info/player contract subpanel horizontal">
+				<record id="object_property" get_property="objt" set_property="objt" />
+			</widget>
+			<widget class="player_contract_panel" file="player/FME/tabs/contract info/player contract horizontal">
+				<record id="object_property" get_property="objt" set_property="objt" />
+			</widget>
+			</container>
+		</container>
 		<!-- Attributes -->
 		<container class="player_overview_panel" id="po01" file="none">
 			<translation id="title" translation_id="229822" type="use" value="Attributes"/>
