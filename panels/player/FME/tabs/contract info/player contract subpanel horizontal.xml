@@ -2,8 +2,14 @@
 	<attachment_group class="vertical_arrange_autosize" alignment="top" vertical_offset="0" vertical_gap="8" horizontal_inset="0" />
 	<!-- wages -->
 	<container>
-		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
-
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="5" horizontal_alignment="horizontal" horizontal_inset="0" />
+		<!--Value-->
+		<widget class="label" font="label" auto_size="vertical">
+			<translation id="text" translation_id="292633" type="use" value="Estimated Value[COMMENT: player profile; value label]" />
+		</widget>
+		<widget class="transfer_value_label" id="valu" auto_size="all" font="value">
+			<record id="object_property" get_property="Pdva" dont_set_hint="true" />
+		</widget>
 		<!-- type -->
 		<widget class="text" spec="text" id="typw" auto_size="vertical" />
 
@@ -104,19 +110,5 @@
 
 	</container>
 
-	<!-- percentage of total wage bill -->
-	<container id="perW">
-		<attachment_group class="vertical_arrange_autosize" vertical_aligment="top,fill" vertical_gap="8"/>
-
-		<widget class="horizontal_percentage_bar" appearance="charts/bar/horizontal/standard" id="wbpt" max_value="20" bar_value_colour="tracksuit 1" alignment="left" col="0" row="12" column_span="2" height="22" label_width="40">
-			<flags id="bar_chart_label_type" value="bcFF" />
-			<translation id="format" translation_id="496366" type="use" value="[%fraction#1-1.1]%[COMMENT: AREA: Displayed Number Values; SUB-AREA: Percentages; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: percentage value displayed on screen]" />
-		</widget>
-
-		<widget class="text" col="0" row="13" column_span="2" id="wbpl" auto_size="vertical" colour="faded text">
-			<translation id="text" translation_id="360517" type="use" value="% of the club's total wage bill[COMMENT: FR 8964]" />
-		</widget>
-
-	</container>
 
 </panel>
