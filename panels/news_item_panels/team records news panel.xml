@@ -1,0 +1,160 @@
+<panel>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="200,-1" horizontal_offset="0" vertical_inset="0" />
+
+	<!-- Left Container -->
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<container class="inner_subtle_box" height="387">
+			<attachment_group class="vertical_arrange" />
+
+			<widget class="object_portrait_picture" id="clup" height="120" scale_picture="true" image_alignment="centre"/>
+
+			<widget class="club_button" id="club" alignment="centre" spec="text" size="large" colour="accent" style="semi_bold" height="30"/>
+
+			<widget class="horizontal_divider" />
+
+			<!-- Status and league -->
+			<container height="83">
+				<attachment_group class="vertical_arrange" />
+
+				<widget class="professional_status_label" id="prfs" alignment="centre" auto_size="vertical" spec="text" size="large" colour="text"/>
+				<widget class="comp_button" id="leag" alignment="centre" icon_enabled="false" auto_size="vertical" font="value" multiline="true"/>
+			</container>
+
+			<widget class="horizontal_divider" />
+
+			<!-- Year Founded -->
+			<container height="45">
+				<attachment_group class="vertical_arrange" />
+
+				<widget class="label" alignment="centre" auto_size="vertical" spec="text" font="label" colour="faded text">
+					<translation id="text" translation_id="257214" type="use" value="Year Founded"/>
+				</widget>
+				<widget class="dashed_number_label" id="yfou" alignment="centre" auto_size="vertical" font="value" NumF="0"/>
+			</container>
+
+			<widget class="horizontal_divider" />
+
+			<!-- Stadium -->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="2" horizontal_alignment="horizontal" />
+
+				<widget class="label" alignment="centre" auto_size="vertical" spec="text" font="label" colour="faded text">
+					<translation id="text" translation_id="252901" type="use" value="Stadium[COMMENT: team stadium, title]"/>
+				</widget>
+				<widget class="stadium_button" id="stad" alignment="centre" auto_size="vertical" font="value" multiline="true" icon_alignment="centre"/>
+			</container>
+		</container>
+
+		<container class="inner_subtle_box">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="5" horizontal_alignment="horizontal" />
+
+			<!-- Junior Coaching  -->
+			<container height="70">
+				<attachment_group class="vertical_arrange"  />
+
+				<widget class="label" alignment="centre" auto_size="vertical" spec="text" font="label" colour="faded text">
+					<translation id="text" translation_id="325853" type="use" value="Junior Coaching[COMMENT: heading; team_information_panel; the standard of the team's youth setup coaching, NOTE: This is a minor string change - 'Youth Coaching' changed to 'Junior coaching'. Please use 'Top 10 Matches']"/>
+				</widget>
+				<widget class="text" alignment="centre" height="40" spec="text" id="juco"/>
+			</container>
+
+			<widget class="horizontal_divider" />
+
+			<!-- Youth Recruitment  -->
+			<container height="70">
+				<attachment_group class="vertical_arrange" />
+
+				<widget class="label" alignment="centre" auto_size="vertical" spec="text" font="label" colour="faded text">
+					<translation id="text" translation_id="308084" type="use" value="Youth Recruitment[COMMENT: heading; team_information_panel; the standard of the team's youth recruitment network]"/>
+				</widget>
+				<widget class="text" alignment="centre" height="40" spec="text" id="yore"/>
+			</container>
+
+		</container>
+
+	</container>
+
+	<!-- Right Container -->
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<!-- Top Container -->
+		<container class="inner_subtle_box" height="330">
+			<attachment_group class="vertical_arrange" vertical_layout="270,30" vertical_gap="0"/>
+
+			<!-- main body text -->
+
+
+			<container class="main_box" red_replacement="primary">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+				<widget class="team_container_honours_panel" id="honp" file="team/team container honours panel for news"/>
+			</container>
+
+			<container>
+				<attachment_group class="horizontal_arrange" horizontal_alignment="right" horizontal_gap="8" vertical_inset="0"/>
+
+				<widget class="link_button" auto_size="horizontal" alignment="centre" section="trov">
+					<translation id="text" translation_id="349488" type="use" value="All Club Honours[COMMENT: team records panel header text; lists all club honours underneath]"/>
+				</widget>
+				<widget class="link_button" auto_size="horizontal" alignment="centre" section="Recs">
+					<translation id="text" translation_id="349489" type="use" value="All Club Records[COMMENT: team records panel header text; lists all club records underneath]"/>
+				</widget>
+			</container>
+		</container>
+
+		<container class="inner_subtle_box" height="87" >
+			<translation id="title" translation_id="251298" type="use" value="Fierce Rivals[COMMENT: heading; team_information_panel; list of fierce rival teams to current club]"/>
+
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+			<container class="horizontal_adaptive_container" id="rvls" default_height="-1" alignment="left" gap="10" />
+		</container>
+
+		<!-- Bottom Container -->
+		<container height="128">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_offset="0" vertical_inset="0" />
+
+			<container class="inner_subtle_box">
+				<attachment_group class="vertical_arrange" vertical_gap="1"/>
+
+				<!-- Youth Facilities -->
+				<container>
+					<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+
+					<widget class="label" alignment="centre" auto_size="vertical" spec="text" font="label" colour="faded text">
+						<translation id="text" translation_id="255008" type="use" value="Youth Facilities[COMMENT: heading; team_information_panel; the standard of a team's youth facilities]"/>
+					</widget>
+					<widget class="youth_facilities_stars_label" auto_size="vertical" alignment="centre" id="yofa" />
+					<widget class="stadium_button" alignment="centre" auto_size="vertical" spec="text" colour="text" id="yost" icon_alignment="centre"/>
+				</container>
+
+				<widget class="label" alignment="centre_x" auto_size="vertical" spec="text" size="small" colour="faded text" id="yfst"/>
+
+			</container>
+
+			<container class="inner_subtle_box">
+				<attachment_group class="vertical_arrange" vertical_gap="1"/>
+
+				<!-- Training Facilities -->
+				<container>
+					<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+
+					<widget class="label" alignment="centre" auto_size="vertical" spec="text" font="label" colour="faded text">
+						<translation id="text" translation_id="229395" type="use" value="Training Facilities"/>
+					</widget>
+					<widget class="training_facilities_stars_label" auto_size="vertical" alignment="centre" id="trfa" />
+					<widget class="stadium_button" alignment="centre" auto_size="vertical" spec="text" colour="text" id="trst" icon_alignment="centre"/>
+				</container>
+
+				<widget class="label" alignment="centre_x" auto_size="vertical" spec="text" size="small" colour="faded text" id="tfst"/>
+			</container>
+
+		</container>
+	</container>
+
+</panel>
