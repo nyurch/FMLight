@@ -1,5 +1,6 @@
 <panel width="140">
-<layout class="arrange_vertical_attachment" layout="-1, 60" offset="2" gap="8"/><layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="2"/>
+<layout class="arrange_vertical_attachment" layout="-1, 60" offset="2" gap="8"/>
+<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="2"/>
 
 <container>
 	<layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="2" offset="0"/>
