@@ -1,0 +1,6 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+    <container class="horizontal_adaptive_container" id="hnrs" default_height="270" />      
+
+</panel>
