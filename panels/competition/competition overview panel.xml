@@ -91,12 +91,14 @@
 				</record>
 			</container>
 
+<!--
 			<container class="competition_qualifiers_panel" file="competition/competition overview qualifiers" minimum_width="100" priority="3" id="coqp">
 				<record id="object_property">
 					<integer id="get_property" value="objt" />
 					<integer id="set_property" value="objt" />
 				</record>
 			</container>
+-->
 
 			<container class="competition_injury_table_panel" id="coic" file="competition/competition overview injury table" minimum_width="250" priority="4" navigation_container="true">
 				<record id="object_property">
