@@ -1,0 +1,43 @@
+<panel>
+    <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+    <container class="inner_box" id="elig">
+        <translation id="title" translation_id="260816" type="use" value="Eligibility[COMMENT: filter panel; a player eligibility for certain squads e.g. U21s]" />
+        <attachment_group class="vertical_arrange" vertical_layout="-1,-1" vertical_offset="0" horizontal_inset="0" />
+        <container>
+            <attachment_group class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_gap="10" horizontal_inset="0" />
+            <container class="simple_data_list" id="nats" set_property="objt" alignment="horizontal,fill" gap="10" height="100">
+                <record id="object_property">
+                    <integer id="get_property" value="PhgN" />
+                </record>
+                <record id="widget_properties" class="client_object_viewer_xml_panel" file="player/player overview panels/club or nation logo panel"/>
+            </container>
+            <container class="simple_data_list" id="clbs" set_property="objt" alignment="horizontal,fill" gap="10" height="100">
+                <record id="object_property">
+                    <integer id="get_property" value="PhCe" />
+                </record>
+                <record id="widget_properties" class="property_list_viewer_xml_panel" file="player/player overview panels/eligibility logo panel" />
+            </container>
+        </container>
+        <widget class="table" id="elit" layout="141,140,100,12" mode="stripe_rows" fixed_size_rows="false" auto_size_rows="true" sort_disabled="true">
+            <list id="headings">
+                <translation id="text" translation_id="229390" type="use" value="Nation" />
+                <translation id="text" translation_id="395180" type="use" value="Days To Eligibility[COMMENT: Column heading; National team eligibility rules - days until eligible]" />
+                <translation id="text" translation_id="258282" type="use" value="Days Completed[COMMENT: Work Permit qualification rules]" />
+            </list>
+            <record id="default_properties" colour="selection" />
+            <list id="column_table_properties">
+                <record indx="0">
+                    <record id="widget_info" class="nation_button" />
+                </record>
+                <record indx="3">
+                    <record id="widget_info" class="info_icon_hint_text" icon_alignment="centre">
+                        <record id="info_popup_hint">
+                            <translation id="title" translation_id="395202" type="use" value="Eligibility Rules[COMMENT: FR 11062; national team eligibility rules title]" />
+                            <translation id="text" translation_id="395744" type="use" value="The player must live in the country for at least five years consecutively after the age of 18 before he is eligible for selection.[COMMENT: FR 11062; national team eligibility rules title, this is a standard worldwide rule for acquiring nationality so doesn't need variables...yet]" />
+                        </record>
+                    </record>
+                </record>
+            </list>
+        </widget>
+    </container>
+</panel>

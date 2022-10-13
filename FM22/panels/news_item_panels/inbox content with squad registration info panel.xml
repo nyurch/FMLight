@@ -1,0 +1,44 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<boolean id="check_for_multiple_requests" value="true"/>
+
+	<list id="properties_to_forward">
+		<record get_property="Psqs" set_property="Psqs" target="tsip"/>
+		<record get_property="Ttea" set_property="object" target="tsip"/>
+	</list>
+
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<!--title button link-->
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="left" horizontal_inset="0" />
+
+			<string id="skin_style" value="title link" />
+
+			<widget class="link_button" id="sqrl" auto_size="all" colour="accent" alignment="left,centre_y" font="title" section="*ssl">
+				<translation id="text" translation_id="316860" type="use" value="Squad Registration[COMMENT: competition schedule panel; date of squad registration]" />
+			</widget>
+		</container>
+
+		<!--player list-->
+		<widget class="client_object_list_table" id="lstb" fixed_size_rows="true" auto_size="vertical" database_table_type="1" row_height="28">
+			<flags id="mode" value="fill_rows, stripe_rows"/>
+			<integer id="contextual_handler_column_id" value="Pnms"/>
+			<record id="viewed_property_ids">
+				<record id="Pnfo"/>
+				<record id="Pnms"/>
+				<record id="PSag"/>
+				<record id="Pnat"/>
+				<record id="Pcpt"/>
+				<record id="Ppos" navigation_focus_target="false"/>
+				<record id="Pdva"/>
+			</record>
+		</widget>
+
+	</container>
+
+	<!--rules-->
+	<widget class="squad_selection_info_panel" id="tsip" include_future_transfers_column="false" />
+</panel>

@@ -1,0 +1,124 @@
+﻿<panel>
+	<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0" />
+	<list id="draw_order">
+		<record entity_layout_id="at00" />
+		<record entity_layout_id="at01" />
+		<record entity_layout_id="at02" />
+		<record entity_layout_id="at03" />
+		<record entity_layout_id="at06" />
+		<record entity_layout_id="at04" />
+		<record entity_layout_id="at05" />
+		<record entity_layout_id="at07" />
+	</list>
+	<list id="properties_to_forward">
+		<record target="at06">
+			<string id="get_property" value="reas" />
+			<string id="set_property" value="valu" />
+		</record>
+		<record target="psdt">
+			<string id="get_property" value="objt" />
+			<string id="set_property" value="objt" />
+		</record>
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+	</widget>
+	<container class="titled_box" entity_layout_id="at00" id="at00" auto_size="all" needs_height="true" needs_width="true">
+		<translation id="title" translation_id="516553" type="use" value="Work Permit Application Result[COMMENT: AREA: brexit; SUB-AREA: news item; NOTE: section label]" />
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		<layout class="stick_to_object_attachment" id="group_align_bottom" get_side="bottom" set_side="bottom" use_own_content_rectangle="true" use_children_to_size="true" target="at03" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<container entity_layout_id="at01" id="at01" auto_size="all" needs_height="true" needs_width="true">
+			<layout class="stick_to_object_attachment" offset="20" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			<layout class="stick_to_object_attachment" id="group_align_bottom" get_side="bottom" set_side="bottom" use_own_content_rectangle="true" use_children_to_size="true" target="at04" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<container class="client_object_viewer_xml_panel" entity_layout_id="at04" id="psdt" width="350" height="100" size="large">
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="left" set_side="left" move_side="true" target="main" />
+				<layout class="arrange_horizontal_attachment" layout="100, -1" offset="2" gap="2" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="2" />
+				<flags id="child_for_sort" value="PnmP" />
+				<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x" height="100">
+					<record id="object_property">
+						<list id="get_properties">
+							<!--Facegen data request-->
+							<record get_property="fcgn" />
+							<!--Fake name request-->
+							<record get_property="Pfke" />
+							<record get_property="prpc" set_property="valu" />
+						</list>
+					</record>
+				</widget>
+
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+					<flags id="child_for_sort" value="PnmP" />
+
+					<widget class="person_button" id="PnmP" info_popup_enabled="true" auto_size="vertical" size="large" style="bold" colour="black">
+						<record id="object_property" get_property="PnmP" set_property="valu" />
+					</widget>
+
+					<widget class="text" entity_layout_id="at07" id="at07" alignment="left,centre_y" size="large" colour="faded text" auto_size="vertical" multiline="false"/>
+					
+				</container>
+			</container>
+			<widget class="icon_button" entity_layout_id="at05" id="at05" font="title" style="bold" auto_size="horizontal" height="50" appearance="buttons/custom/dof status/normal/button" navigation_focus_target="false" needs_width="true" needs_height="true">
+				<string id="red_replacement" value="positive" />
+				<string id="colour" value="background" />
+				<translation id="text" translation_id="516554" type="use" value="Application Successful[COMMENT: AREA: brexit; SUB-AREA: news item; NOTE: section label for work permits]" />
+				<layout class="centre_in_parent_attachment" id="align_centre_vertical" alignment="vertical" offset="0" />
+				<layout class="stick_to_object_attachment" id="align_right" offset="-20" get_side="right" set_side="right" move_side="true" target="main" />
+			</widget>
+		</container>
+		<widget class="horizontal_divider" entity_layout_id="at02" id="at02" needs_height="true">
+			<string id="image_alignment" value="centre_y" />
+			<layout class="stick_to_object_attachment" offset="20" id="align_top" get_side="bottom" set_side="top" move_side="true" target="at01" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		</widget>
+		<container class="titled_box" entity_layout_id="at03" id="at03" auto_size="vertical">
+			<string id="title" value="Reason" />
+			<layout class="stick_to_object_attachment" id="align_top" get_side="bottom" set_side="top" move_side="true" target="at02" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			<layout class="stick_to_object_attachment" id="group_align_bottom" get_side="bottom" set_side="bottom" use_own_content_rectangle="true" use_children_to_size="true" target="at06" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<widget class="text" entity_layout_id="at06" id="at06" auto_size="horizontal" multiline="true" needs_width="true" height="50">
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			</widget>
+		</container>
+	</container>
+</panel>

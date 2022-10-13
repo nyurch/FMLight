@@ -1,0 +1,119 @@
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+	<string id="skin_style" value="subtle box" />
+
+	<!-- content area -->
+	<container class="scrolling_box">
+		<container>
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+			<layout class="arrange_horizontal_attachment" layout="300, -1" gap="10" />
+			<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<container class="client_object_viewer_xml_panel" id="divC">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+					<container class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="4" vertical_gap="3" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<widget class="object_portrait_picture" id="cloi" height="50" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+							<record id="object_property">
+								<integer id="get_property" value="objt" />
+							</record>
+						</widget>
+
+						<widget class="client_object_label" id="cDoL" auto_size="vertical" size="normal" style="bold" colour="text" alignment="centre">
+							<record id="object_property">
+								<integer id="get_property" value="objt" />
+							</record>
+						</widget>
+
+						<widget class="stars_range_strip" id="dSrS" auto_size="vertical" navigation_focus_target="false">
+							<record id="object_property">
+								<integer id="get_property" value="crps" />
+							</record>
+						</widget>
+
+						<widget class="spacer" height="4"/>
+
+						<widget class="horizontal_divider" />
+
+						<widget class="spacer" height="4"/>
+
+						<widget class="text" alignment="centre" auto_size="vertical" font="label" colour="faded text">
+							<translation id="text" translation_id="395512" type="use" value="Transfer Window Closes[COMMENT: FR 11055, shows the date when the transfer window will close]" />
+						</widget>
+
+						<widget class="text" id="trwO" style="bold" alignment="centre" auto_size="vertical" size="large"/>
+
+					</container>
+				</container>
+
+				<container class="client_object_viewer_xml_panel" id="divH">
+					<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="1" />
+					<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="all" inset="0" />
+
+					<container class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<widget class="text" alignment="centre" font="title" auto_size="vertical">
+							<translation id="text" translation_id="395511" type="use" value="Transfer Rumour[COMMENT: FR 11055, section title on transfer window open news item detailing one highlighted transfer rumour]" />
+						</widget>
+
+						<widget class="person_button" id="perS" style="bold" auto_size="vertical" alignment="centre" colour="black">
+							<record id="object_property">
+								<integer id="get_property" value="objt" />
+							</record>
+						</widget>
+
+						<widget class="text" id="deSC" alignment="centre" auto_size="vertical" />
+
+						<container height="70">
+							<layout class="arrange_horizontal_attachment" layout="-1, -1, -1" gap="5" />
+							<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="vertical" inset="0" />
+
+							<container>
+								<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="all" inset="8" />
+
+								<widget class="object_portrait_picture" id="cOlP" image_alignment="right,centre_y" scale_picture="true" />
+							</container>
+
+							<widget class="object_portrait_picture" id="clPP" image_alignment="centre" scale_picture="true">
+								<record id="object_property">
+									<integer id="get_property" value="objt" />
+								</record>
+							</widget>
+
+							<container>
+								<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="all" inset="8" />
+
+								<widget class="object_portrait_picture" id="cOlp" image_alignment="left,centre_y" scale_picture="true" />
+							</container>
+						</container>
+
+						<widget class="horizontal_divider" />
+
+						<widget class="text" id="bTsl" alignment="centre" auto_size="vertical" />
+
+						<widget class="text" id="aprV" alignment="centre" auto_size="vertical" style="bold" />
+
+						<widget class="horizontal_divider" />
+
+						<widget class="text" alignment="centre" auto_size="vertical">
+							<translation id="text" translation_id="315461" type="use" value="Transfer Value" />
+						</widget>
+
+						<widget class="text" id="acVl" alignment="centre" style="bold" auto_size="vertical" />
+					</container>
+				</container>
+			</container>
+
+			<!-- main body text -->
+			<widget class="inbox_body_text" id="bdtx" />
+		</container>
+	</container>
+</panel>

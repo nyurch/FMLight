@@ -1,0 +1,55 @@
+<panel width="220" wants_mouse_events="true">
+
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+	<container class="standard_popup_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+		<container class="inner_box_no_margin" id="bClr" height="30">
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_offset="4" horizontal_gap="8" vertical_offset="0" />
+
+			<widget class="number_label" alignment="centre" id="nmbL" auto_size="all" />
+
+			<widget class="person_button" colour="black" id="pbtn" style="bold" enforce_style="true" auto_size="vertical">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="objt" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+		</container>
+
+		<container class="bordered_box_no_margin">
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1,50" horizontal_offset="0" horizontal_gap="0" vertical_offset="0" />
+
+			<widget class="text_button" id="evnT" auto_size="vertical" click_event="chbH" alignment="left,centre_y" />
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="4" vertical_gap="0" horizontal_inset="0" />
+
+				<widget class="text" id="mnTe" auto_size="vertical" alignment="right,bottom" font="label">
+					<translation id="text" translation_id="420753" type="use" value="Minute[COMMENT: chalkboard events panel, indicates which minute an event occurred in]" />
+				</widget>
+
+				<widget class="number_label" id="ShtC" auto_size="vertical" alignment="right,top" font="value"/>
+			</container>
+		</container>
+
+		<container class="inner_box_no_margin" id="evnC" height="2" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="4" vertical_gap="2" horizontal_inset="0" />
+
+			<widget class="button" id="shlE" click_event="sLev" auto_size="vertical">
+				<translation id="text" translation_id="420754" type="use" value="Show Linked Events[COMMENT: chalkboard detailed event panel, toggles whether linked event types are displayed]" />
+			</widget>
+
+			<widget class="button" id="shHl" click_event="chbH" auto_size="vertical">
+				<translation id="text" translation_id="420755" type="use" value="Watch Highlight[COMMENT: chalkboard detailed event panel, button text to show video of highlight being analysed]" />
+			</widget>
+		</container>
+	</container>
+</panel>

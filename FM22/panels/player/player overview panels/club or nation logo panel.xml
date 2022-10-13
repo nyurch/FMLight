@@ -1,0 +1,28 @@
+<panel>
+    <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+    <container class="main_subtle_box">
+        <layout class="arrange_vertical_attachment" layout="-3,-1" offset="0" gap="10" />
+        <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+        <widget class="object_portrait_picture" id="mbdg" image_alignment="centre_x,centre_y" scale_picture="true" keep_aspect_ratio="true">
+            <record id="object_property">
+                <integer id="get_property" value="objt" />
+                <integer id="set_property" value="objt" />
+            </record>
+        </widget>
+        <container>
+            <layout class="stick_to_sides_attachment" apply_to_children="true" inset="0" />
+            <widget class="nation_button" id="natb" icon_enabled="false" font="title" alignment="centre_x,centre_y">
+                <record id="object_property">
+                    <integer id="get_property" value="objt" />
+                    <integer id="set_property" value="valu" />
+                </record>
+            </widget>
+            <widget class="club_button" id="clbb" icon_enabled="false" auto_size="vertical" font="title" alignment="centre_x,centre_y">
+                <record id="object_property">
+                    <integer id="get_property" value="objt" />
+                    <integer id="set_property" value="valu" />
+                </record>
+            </widget>
+        </container>
+    </container>
+</panel>

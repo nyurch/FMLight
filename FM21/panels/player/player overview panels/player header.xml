@@ -1,0 +1,127 @@
+<panel>
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+    <container>
+        <attachment class="horizontal_arrange" horizontal_layout="140,-1" horizontal_gap="10"/>
+        <container>
+            <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+            <widget class="object_portrait_picture" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+                <layout class="show_medium_vertical" min_value="0" max_value="967"/>
+                <layout class="stick_to_sides_attachment" alignment="vertical" inset="10"/>
+                <record id="object_property" get_property="objt" set_property="objt" />
+            </widget>
+            <container>
+                <layout class="show_medium_vertical" min_value="968"/>
+                <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+                <widget class="picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+                    <layout class="stick_to_sides_attachment" alignment="vertical" inset="10"/>
+                    <record id="object_property" get_property="mnpc" set_property="file"/>
+                </widget>
+                <widget class="value_based_picture" scale_picture="true" file="icons/custom/staff/unemployed">
+                    <layout class="stick_to_sides_attachment" alignment="vertical" inset="10"/>
+                    <list id="value_list">
+                        <record min_value="0" max_value="0" file="none"/>
+                    </list>
+                    <record id="object_property">
+                        <list id="get_properties">
+                            <record get_property="mnpc" dont_set_hint="true"/>
+                        </list>
+                    </record>
+                </widget>
+            </container>
+        </container>
+        <container>
+            <attachment class="horizontal_arrange" horizontal_layout="300,-1" alignment="centre_y"/>
+            <container>
+                <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+                <layout class="arrange_vertical_attachment" alignment="middle" gap="0"/>
+                <record id="default_properties" size="9" colour="text"/>
+                <widget class="person_button" id="pnam" height="30" font="value" size="17" wants_mouse_events="false">
+                    <record id="object_property" get_property="objt"/>
+                </widget>
+                <widget height="20" class="nation_button" icon_alignment="right,centre_y">
+                    <record id="object_property" get_property="Pnat"/>
+                </widget>
+                <widget height="18" class="player_extra_details_text" id="plex" multiline="false" alignment="left,bottom">
+                    <record id="object_property" get_property="PExD" />
+                </widget>
+            </container>
+            <container class="horizontal_adaptive_container" alignment="right" gap="25" offset="20" inset="0">
+                <container default_width="60" priority="1">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+                    <widget class="age_label" size="13" font="lcsb" colour="text" alignment="middle,bottom" multiline="false">
+                        <record id="object_property" get_property="PSag" />
+                    </widget>
+                    <widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+                        <translation id="text" translation_id="227770" type="use" value="Age[comment - person age]" />
+                    </widget>
+                </container>
+                <container default_width="85" priority="3">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+                    <widget class="value_label" size="13" font="lcsb" colour="text" alignment="middle,bottom" multiline="false">
+                        <record id="object_property" get_property="Pdva" />
+                    </widget>
+                    <widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+                        <translation id="text" translation_id="227806" type="use" value="Value" />
+                    </widget>
+                </container>
+                <container default_width="135" priority="2">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0" multiline="false"/>
+                    <widget class="wage_label" format="2" size="13" font="lcsb" colour="text" alignment="middle,bottom">
+                        <record id="object_property" get_property="Pcwg" />
+                    </widget>
+                    <widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+                        <translation id="text" translation_id="227799" type="use" value="Wage" />
+                    </widget>
+                </container>
+                <container default_width="125" priority="5">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+                    <widget class="contract_expiry_button" size="13" font="lcsb" colour="text" alignment="middle,bottom" multiline="false">
+                        <record id="object_property" get_property="Pcsd" />
+                    </widget>
+                    <widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+                        <translation id="text" translation_id="383288" type="use" value="Contract Start" />
+                    </widget>
+                </container>
+                <container default_width="125" priority="4">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+                    <widget class="contract_expiry_button" size="13" font="lcsb" colour="text" alignment="middle,bottom" multiline="false">
+                        <record id="object_property" get_property="Pcex" />
+                    </widget>
+                    <widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+                        <translation id="text" translation_id="383287" type="use" value="Contract End" />
+                    </widget>
+                </container>
+                <container default_width="110" priority="6">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+                    <widget class="global_reputation_stars_label" alignment="centre_x,centre_y">
+                        <layout class="stick_to_sides_attachment" alignment="bottom" inset="31"/>
+                        <record id="object_property" get_property="PrSr"/>
+                    </widget>
+                    <widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+                        <translation id="text" translation_id="227963" type="use" value="Reputation" />
+                    </widget>
+                </container>
+                <container default_width="120" priority="3">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+                    <widget class="scout_stars_label" size="13" font="lcsb" colour="text" alignment="centre_x,centre_y" hint_if_no_value="-" multiline="false">
+                        <layout class="stick_to_sides_attachment" alignment="bottom" inset="31"/>
+                        <record id="object_property" get_property="Pcab" />
+                    </widget>
+                    <widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+                        <translation id="text" translation_id="310135" type="use" value="Current Ability[COMMENT: contract offer screen - comments table]" />
+                    </widget>
+                </container>
+                <container default_width="120" priority="4">
+                    <attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+                    <widget class="scout_stars_label" size="13" font="lcsb" colour="text" alignment="centre_x,centre_y" hint_if_no_value="-" multiline="false">
+                        <layout class="stick_to_sides_attachment" alignment="bottom" inset="31"/>
+                        <record id="object_property" get_property="Ppab" />
+                    </widget>
+                    <widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+                        <translation id="text" translation_id="310136" type="use" value="Potential Ability[COMMENT: contract offer screen - comments table]" />
+                    </widget>
+                </container>
+            </container>
+        </container>
+    </container>
+</panel>

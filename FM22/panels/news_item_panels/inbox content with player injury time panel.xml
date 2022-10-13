@@ -1,0 +1,36 @@
+<panel>
+
+	<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0,10,0,10"/>
+
+	<boolean id="check_for_multiple_requests" value="true" />
+
+
+	<widget class="table" id="plst" layout="38, -1, 80, 80, -1" mode="fill_rows, stripe_rows, printable, keyboard, dont_ask_for_focus" fixed_size_rows="true" auto_size="vertical" row_spacing="2" row_height="30">
+		<!-- don't bother trying to save the state here as state saving is broken, we need save it via the top level inbox panel -->2
+		<list id="headings">
+			<record index="0">
+			</record>
+			<record index="1">
+				<translation id="text" translation_id="229689" type="use" value="Name" />
+			</record>
+			<record index="2" alignment="centre">
+				<translation id="text" translation_id="389521" type="use" value="Missed[COMMENT: FR 11015; Time missed due to injury news item; column heading for percentage of games missed]" />
+			</record>
+			<record index="3" alignment="centre">
+				<translation id="text" translation_id="247861" type="use" value="Injuries[COMMENT: squad list view menu, injuries menu item label]" />
+			</record>
+			<record index="4">
+				<translation id="text" translation_id="389515" type="use" value="Longest Spell Unavailable[COMMENT: FR 11015; Time missed (i.e. a Spell, a period of time) due to injury news item; column heading]" />
+			</record>
+		</list>
+		<list id="column_widget_properties">
+			<record index="0" alignment="centre" />
+			<record index="1" alignment="left,centre_y" colour="black"/>
+			<record index="2" alignment="centre" />
+			<record index="3" alignment="centre" />
+			<record index="4" alignment="left,centre_y" />
+		</list>
+	</widget>
+
+</panel>

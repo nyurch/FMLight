@@ -1,0 +1,121 @@
+<panel>
+    <attachment class="vertical_arrange_autosize"/>
+    <container height="202">
+        <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+        <layout class="arrange_vertical_attachment" layout="-10,-7,-7,-7,-7,-7" gap="0"/>
+        <container>
+            <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0,0,0,25" />
+            <container class="main_box">
+                <attachment class="vertical_arrange" vertical_layout="-1,-1" vertical_gap="0"/>
+                <container>
+                    <attachment class="horizontal_arrange" horizontal_layout="-1,-2"/>
+                    <widget class="label" colour="faded text">
+                        <translation id="text" translation_id="227841" type="use" value="Nationality" />
+                    </widget>
+                    <widget class="nation_button" alignment="right,centre_y" icon_alignment="right">
+                        <record id="object_property" get_property="Pnat"/>
+                    </widget>
+                </container>
+                <container>
+                    <attachment class="horizontal_arrange" horizontal_layout="-6,-5" horizontal_gap="0"/>
+                    <record id="default_properties" colour="faded text"/>
+                    <widget class="international_appearances_label" size="small">
+                        <integer id="int_apps_label_format" value="9" />
+                        <record id="object_property" get_property="Pist" />
+                    </widget>
+                    <widget class="international_appearances_label" alignment="right,centre_y" size="small">
+                        <integer id="int_apps_label_format" value="8" />
+                        <record id="object_property" get_property="Pist" />
+                    </widget>
+                </container>
+            </container>
+        </container>
+        <container class="main_subtle_box">
+            <attachment class="horizontal_arrange" horizontal_layout="-1,-2"/>
+            <widget class="label" colour="faded text">
+                <translation id="text" translation_id="229407" type="use" value="Age" />
+            </widget>
+            <widget class="dob_label" alignment="right,centre_y">
+                <integer id="display_format" value="1" />
+                <record id="object_property" get_property="Pdob"/>
+            </widget>
+        </container>
+        <container class="main_box">
+            <attachment class="horizontal_arrange" horizontal_layout="-1,-2"/>
+            <widget class="label" colour="faded text">
+                <translation id="text" translation_id="227884" type="use" value="Position" />
+            </widget>
+            <widget class="position_label" alignment="right,centre_y">
+                <record id="object_property" get_property="PpsC"/>
+            </widget>
+        </container>
+        <container class="main_subtle_box" draw_vertical_dividers="true">
+            <attachment class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_gap="35"/>
+            <container>
+                <attachment class="horizontal_arrange" horizontal_layout="-3,-2"/>
+                <widget class="label" colour="faded text" size="normal">
+                    <translation id="text" translation_id="227956" type="use" value="Height[COMMENT - label for showing a player's height]" />
+                </widget>
+                <widget class="height_label" alignment="right,centre_y">
+                    <record id="object_property" get_property="Phei" />
+                </widget>
+            </container>
+            <container>
+                <attachment class="horizontal_arrange" horizontal_layout="-3,-2"/>
+                <widget class="label" colour="faded text">
+                    <translation id="text" translation_id="227957" type="use" value="Weight[COMMENT - label for showing a player's weight]" />
+                </widget>
+                <widget class="weight_label" alignment="right,centre_y">
+                    <record id="object_property" get_property="Pwei" />
+                </widget>
+            </container>
+        </container>
+        <container class="main_box" draw_vertical_dividers="true">
+            <attachment class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_gap="35"/>
+            <container>
+                <attachment class="horizontal_arrange" horizontal_layout="-3,-2"/>
+                <widget class="label" colour="faded text">
+                    <translation id="text" translation_id="227839" type="use" value="Morale" />
+                </widget>
+                <widget class="editable_client_object_property_panel">
+                    <record id="widget_info" class="morale_label" ShTx="false" alignment="right,centre_y" icon_alignment="left" should_recolour="true"/>
+                    <record id="widget_properties" alignment="right,centre_y"/>
+                    <record id="object_property" get_property="Pmor"/>
+                </widget>
+            </container>
+            <container>
+                <attachment class="horizontal_arrange" horizontal_layout="-3,-2"/>
+                <widget class="label" colour="faded text">
+                    <translation id="text" translation_id="242773" type="use" value="Training" />
+                </widget>
+                <widget class="training_rating_label_formatted" appearance="boxes/plain/standard/paper" font="text" size="normal" should_recolour="false" alignment="right,centre_y">
+                    <string id="format" value="[%fraction#1-3.2]" />
+                    <boolean id="dont_format_numeric_grouping" value="true" />
+                    <string id="hint_if_no_value" value="-" />
+                    <record id="object_property" get_property="Ptrt"/>
+                </widget>
+            </container>
+        </container>
+        <container class="main_subtle_box" draw_vertical_dividers="true">
+            <attachment class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_gap="35"/>
+            <container>
+                <attachment class="horizontal_arrange" horizontal_layout="-3,-2"/>
+                <widget class="label" colour="faded text">
+                    <translation id="text" translation_id="227793" type="use" value="Condition" />
+                </widget>
+                <widget class="client_object_property_panel" property="PcOI" height="25" alignment="right,centre_y">
+                    <record id="object_property" get_property="objt" set_property="objt" />
+                </widget>
+            </container>
+            <container>
+                <attachment class="horizontal_arrange" horizontal_layout="-3,-2"/>
+                <widget class="label" colour="faded text">
+                    <translation id="text" translation_id="395316" type="use" value="Sharpness" />
+                </widget>
+                <widget class="client_object_property_panel" property="PftI" height="25" alignment="right,centre_y">
+                    <record id="object_property" get_property="objt" set_property="objt" />
+                </widget>
+            </container>
+        </container>
+    </container>
+</panel>

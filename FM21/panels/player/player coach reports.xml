@@ -1,0 +1,303 @@
+﻿<!-- added colour to comparison table to reclour name -->
+<panel save_session_state="true" save_default_state="true" draw_horizontal_dividers="true">
+
+	<translation id="title" translation_id="247459" type="use" value="Scout Reports" />
+	<flags id="cham" value="tables/custom/league/champions/row" />
+
+	<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" >
+		<global id="gap" name="ui.main_box_gap"/>
+	</layout>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+	<container class="main_box" id="scou" navigation_container="true">
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_offset="0" vertical_offset="0" />
+
+		<container id="lll">
+			<attachment_group class="horizontal_arrange_autosize_all_centre" horizontal_alignment="left" horizontal_offset="0" horizontal_gap="10" vertical_offset="0" />
+
+			<widget class="label" id="perl" size="large" colour="contrast" auto_size="all" font="title">
+				<translation id="text" translation_id="248079" type="use" value="Report" />
+			</widget>
+
+			<widget class="label" id="lsdt" auto_size="all"/>
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right" horizontal_offset="0" horizontal_gap="8" vertical_offset="0" />
+
+			<container class="inner_subtle_box" id="klba" appearance="boxes/custom/scouting knowledge/paper" width="55" height="12">
+				<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" apply_to_children="true" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+				<global id="hidden" name="is_fmt"/>
+
+				<widget class="horizontal_percentage_bar" height="4" maximum_value="100" bar_value_colour="knowledge level" show_label_on_bar="false" label_width="0" appearance="charts/bar/custom/knowledge" id="kbar" />
+
+			</container>
+
+			<widget class="label" id="ktxt" auto_size="all" size="11" />
+
+			<widget class="button" id="ytab" auto_size="all" mouse_entered_event="ytin" mouse_exited_event="ytou" />
+
+
+		</container>
+
+	</container>
+
+	<container id="norp" hidden="true">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<!-- No scout report -->
+		<container id="nsrc" class="bordered_box_no_margin">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="6" horizontal_alignment="horizontal" horizontal_inset="20" />
+
+			<widget class="spacer" height="10" />
+
+			<container id="nocs" height="70">
+				<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="8" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+				<!--explanatory text-->
+				<widget class="label" alignment="centre" spec="text" size="11" auto_size="vertical">
+					<translation id="text" translation_id="320496" type="use" value="You need to request a member of your scouting staff to compile a report on this player.[COMMENT: scout report; need to scout advice]" />
+				</widget>
+
+				<container height="30">
+					<layout class="arrange_horizontal_attachment" alignment="middle" offset="0" gap="8" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+					<widget class="button" id="sctP" click_event="sctc" alignment="centre" auto_size="horizontal" height="30">
+						<translation id="text" translation_id="243421" type="use" value="Scout Player" />
+					</widget>
+
+				</container>
+			</container>
+
+			<widget id="nocn" class="label" spec="text" size="11" alignment="centre" auto_size="vertical">
+
+			</widget>
+
+
+			<widget class="spacer" height="10" />
+
+		</container>
+
+		<!-- No Coach Report-->
+		<container id="ncrc" class="main_box" height="150">
+			<layout class="arrange_vertical_attachment" alignment="top,extend" offset="5" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<!--explanatory text-->
+			<widget class="label" alignment="centre" spec="text" size="large" style="semi_bold" auto_size="vertical">
+				<translation id="text" translation_id="320498" type="use" value="You need to have at least one coach at your team to compile a report on this player.[COMMENT: coach report; need staff advice]" />
+			</widget>
+			<widget class="label" auto_size="vertical" spec="text" size="large" alignment="centre" colour="faded text">
+				<translation id="text" translation_id="326089" type="use" value="You can find staff to hire via the Staff Search.[COMMENT: team report; need to scout sub advice]" />
+			</widget>
+
+			<container height="5" />
+
+			<container>
+				<layout class="centre_in_parent_attachment" alignment="horizontal" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+				<widget class="link_appearance_button" click_event="gtss">
+					<translation id="text" translation_id="320500" type="use" value="Staff Search[COMMENT: team report; link to the staff search]" />
+					<layout class="stick_to_sides_attachment" alignment="bottom" inset="0" />
+					<layout class="centre_in_parent_attachment" alignment="horizontal" />
+				</widget>
+			</container>
+
+		</container>
+
+		<!-- No national report-->
+		<container id="nnrc" class="bordered_box_no_margin" height="100">
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="8" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="20" apply_to_children="true" />
+
+			<widget class="spacer" height="10" />
+
+			<!--explanatory text-->
+			<widget class="label" id="info" alignment="centre" spec="text" size="11" auto_size="vertical" />
+			<container height="30">
+				<layout class="arrange_horizontal_attachment" alignment="middle" offset="0" gap="8" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<widget class="button" id="sctn" click_event="sctn" alignment="centre" auto_size="horizontal" height="30">
+					<translation id="text" translation_id="243421" type="use" value="Scout Player" />
+				</widget>
+
+			</container>
+
+			<widget class="spacer" height="10" />
+
+		</container>
+
+		<!-- Already being scouted -->
+		<container id="Arbs" class="bordered_box_no_margin" height="80">
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="6" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="20" apply_to_children="true" />
+
+			<widget class="spacer" height="15" />
+
+			<!--explanatory text-->
+			<widget class="text" id="arbt" alignment="centre" spec="text" size="large" style="semi_bold, embossed" auto_size="vertical">
+				<translation id="text" translation_id="447600" type="use" value="This player is being scouted by [%person#1] and the report will be available shortly.[COMMENT:scout report, scouting in progress]" />
+			</widget>
+
+			<widget class="spacer" height="15" />
+
+		</container>
+
+		<!-- Already being scouted by pool-->
+		<container id="Pool" class="bordered_box_no_margin" height="80">
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="6" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="20" apply_to_children="true" />
+
+			<widget class="spacer" height="15" />
+
+			<!--explanatory text-->
+			<widget class="text" alignment="centre" spec="text" size="large" style="semi_bold, embossed" auto_size="vertical">
+				<translation id="text" translation_id="342085" type="use" value="Scouting In Progress[COMMENT: disabled menu item when a player is already being scouted]" />
+			</widget>
+
+			<widget class="spacer" height="15" />
+
+		</container>
+
+		<!-- No actions report-->
+		<container id="naSP"  class="bordered_box_no_margin">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="6" horizontal_alignment="horizontal" horizontal_inset="20" />
+
+			<widget class="spacer" height="15" />
+
+			<!--explanatory text-->
+			<widget class="text" alignment="centre" spec="text" size="large" style="semi_bold, embossed"  auto_size="vertical">
+				<translation id="text" translation_id="435189" type="use" value="Unavailable[COMMENT: no scouting report available; was ID 247303 but some languages need specific translations here]" />
+			</widget>
+
+			<widget class="spacer" height="15" />
+		</container>
+
+	</container>
+
+	<container draw_vertical_dividers="true">
+		<layout class="arrange_horizontal_attachment" layout="-2,-4" offset="0">
+			<global id="gap" name="ui.main_contrast_box_gap"/>
+		</layout>
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+		<container class="bordered_box" id="righ" navigation_container="true" default_focus="true">
+			<attachment_group class="vertical_arrange" vertical_layout="70,-5,-2" vertical_offset="0" horizontal_inset="0" />
+
+			<widget class="player_positions_indicator_panel" id="ppos" file="player/player positions indicator panel selector">
+				<record id="object_property" get_property="objt" set_property="objt" />
+			</widget>
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				<widget class="player_additional_stats_panel" id="staP" file="player/player additional stats mini report">
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</widget>
+				<widget class="data_analyst_visualisation_widget" id="visU" hidden="true" visualisation_type="3" data_type="2"  category="5" file="widgets/data analyst visualisation mini">
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</widget>
+			</container>
+
+
+			<container id="sqdC" class="main_box">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />
+
+				<widget class="horizontal_divider" height="1" />
+				<widget class="text" id="sqcw" font="title" size="small" auto_size="vertical"/>
+
+				<!-- Ability list table -->
+				<widget class="table" id="calL" mode="fill_rows,stripe_rows" layout="26,-5,-3,-3">
+					<list id="column_widget_properties">
+						<record indx="0" alignment="left,centre_y" colour="faded text" />
+						<record indx="1" alignment="left,centre_y" colour="text" />	<!-- player column comparison table colour added to recolour from white -->
+						<record indx="2" alignment="left,centre_y" navigation_focus_target="false" />
+						<record indx="3" alignment="left,centre_y" navigation_focus_target="false" />
+					</list>
+
+					<list id="column_table_properties">
+						<record indx="0" sort_disabled="true" left="5" />
+						<record indx="1" sort_disabled="true" >
+							<record id="column_heading">
+								<flags id="alignment" value="left,centre_y" />
+								<translation id="text" translation_id="227966" type="use" value="Player" />
+							</record>
+						</record>
+						<record indx="2" sort_disabled="true" >
+							<record id="column_heading">
+								<flags id="alignment" value="left,centre_y" />
+								<translation id="text" translation_id="314426" type="use" value="Ability[COMMENT: player popup info panel - scout current ability rating]" />
+								<translation id="hint" translation_id="310135" type="use" value="Current Ability[COMMENT: contract offer screen - comments table]" />
+							</record>
+						</record>
+						<record indx="3" sort_disabled="true" >
+							<record id="column_heading">
+								<flags id="alignment" value="left,centre_y" />
+								<translation id="text" translation_id="314427" type="use" value="Potential[COMMENT: player popup info panel - scout potential ability rating]"/>
+								<translation id="hint" translation_id="310136" type="use" value="Potential Ability[COMMENT: contract offer screen - comments table]" />
+							</record>
+						</record>
+					</list>
+				</widget>
+			</container>
+
+
+		</container>
+
+
+		<!-- If we have scout reports -->
+		<container class="main_box" id="main">
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />
+
+			<widget class="player_reports_overview_summary_panel" id="proS" always_recolour_wage_cost_text="true" />
+
+			<widget class="horizontal_subtle_divider" />
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0">
+					<global id="gap" name="ui.main_box_gap"/>
+				</layout>
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<container class="inner_box">
+					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />
+
+					<container class="main_subtle_box_no_margin" height="30" red_replacement="fg positive">
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="6" />
+
+						<widget class="label" font="title" colour="fg positive" alignment="left,centre_y">
+							<translation id="text" translation_id="361260" type="use" value="Pros[COMMENT: FR 8316 ]" />
+						</widget>
+					</container>
+
+					<widget class="table" id="tpro" layout="-1" inset="0" fixed_size_rows="false" auto_size_rows="true"  navigation_container="true">
+
+					</widget>
+
+				</container>
+
+				<container class="inner_box">
+					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />
+
+					<container class="main_subtle_box_no_margin" height="30" red_replacement="fg negative">
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="6" />
+
+						<widget class="label" font="title" colour="fg negative" alignment="left,centre_y">
+							<translation id="text" translation_id="361094" type="use" value="Cons[COMMENT: FR 8316 ]" />
+						</widget>
+					</container>
+
+					<widget class="table" id="tcon" layout="-1" inset="0" fixed_size_rows="false" auto_size_rows="true"  navigation_container="true">
+
+					</widget>
+
+				</container>
+
+			</container>
+
+		</container>
+
+	</container>
+
+</panel>

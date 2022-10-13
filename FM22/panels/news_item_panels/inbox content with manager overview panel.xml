@@ -1,0 +1,104 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<!-- content area -->
+	<container class="scrolling_box">
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right,extend" horizontal_offset="0" vertical_alignment="top" vertical_inset="0"  />
+
+			<!--body text-->
+			<widget class="inbox_body_text" id="bdtx"/>
+
+			<!--manager info and their team-->
+			<container width="250">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0"  horizontal_inset="0" />
+
+				<!--dynamic image here please-->
+				<container id="ICdi" height="150">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+				</container>
+
+				<!--profile-->
+				<container class="inner_subtle_box">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+					<!--name-->
+					<widget class="person_button" id="nmtx" auto_size="vertical" spec="text" multiline="false" info_popup_enabled="true" person_is_player="true" colour="black" style="semi_bold" size="large">
+						<record id="object_property" get_property="Pnms"/>
+					</widget>
+
+					<!--nationality-->
+					<widget class="person_nationality_button" id="Pnat" auto_size="vertical" colour="faded text">
+						<record id="object_property" get_property="objt" set_property="objt"/>
+					</widget>
+
+					<widget class="spacer" height="10"/>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="left" horizontal_inset="0" />
+
+						<widget class="link_button_title" id="stln" section="Pmhr">
+							<translation id="text" translation_id="319476" type="use" value="Career Stats[COMMENT: manager overview; section heading]"/>
+							<record id="object_property" get_property="objt" set_property="objt"/>
+						</widget>
+					</container>
+
+					<widget class="client_object_property_labelled_panel_grid" id="crst" row_count="2" height="85" horizontal_offset="0">
+						<record id="object_property" get_property="objt" set_property="objt"/>
+
+						<list id="properties">
+							<integer value="TgwR"/>
+							<integer value="Tcpw"/>
+							<integer value="TglR"/>
+							<integer value="Ctlw"/>
+						</list>
+					</widget>
+				</container>
+
+				<!--team info-->
+				<container class="inner_subtle_box">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+					<container class="client_object_viewer_xml_panel" id="team">
+
+						<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_offset="0" horizontal_gap="6" vertical_offset="0" />
+
+						<record id="object_property" get_property="Pmtm" set_property="objt"/>
+
+						<!--logo-->
+						<widget class="object_portrait_picture" id="TEAM" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" height="50" width="50">
+							<record id="object_property" get_property="objt" set_property="objt"/>
+						</widget>
+
+						<!--team info-->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" />
+
+							<!--name-->
+							<widget class="team_button" id="tbtn" auto_size="vertical" spec="text" style="semi_bold" size="large" icon_enabled="false">
+								<record id="object_property" get_property="objt"/>
+							</widget>
+
+							<!--division/position-->
+							<widget class="division_position_button" id="Tpos" auto_size="vertical" display_format="3" colour="faded text">
+								<record id="object_property" get_property="Tpos" />
+							</widget>
+
+							<!--stadium-->
+							<widget class="stadium_button" id="Tsta" auto_size="vertical" show_stadium_icon="false" colour="faded text">
+								<record id="object_property" get_property="Tsta" dont_set_hint="true" />
+							</widget>
+
+							<!--form-->
+							<widget class="team_recent_form_widget" id="Tfrm" auto_size="vertical" alignment="left">
+								<record id="object_property" get_property="Tfrm" />
+							</widget>
+						</container>
+					</container>
+				</container>
+			</container>
+		</container>
+	</container>
+</panel>

@@ -1,0 +1,23 @@
+﻿<panel>
+
+    <attachment_group class="horizontal_arrange_autosize_all_centre" horizontal_alignment="right" vertical_alignment="centre" horizontal_gap="6"/>
+
+	<widget class="text" auto_size="all" colour="accent">
+		<translation id="text" translation_id="509199" type="use" value="Tactical changes apply to:[COMMENT: AREA: tactics panel; SUB-AREA: tactics panel beforet the match; FR-BN: 30876; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: to choose for current tactical changes to be applied to only next match or should be the same for all other matches]" />
+	</widget>
+
+	<container>
+        <attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="right">
+        	<global id="horizontal_gap" name="ui.split_button_row_gap"/>
+        </attachment_group>
+
+		<widget class="radio_button" id="alMT" show_button_appearance="true" colour="white" icon="none" selected="true" click_event="SlAM" auto_size="all" appearance="switches/toggle/left/button">
+			<translation id="text" translation_id="509200" type="use" value="All Matches[COMMENT: AREA: tactics panel; SUB-AREA: tactics panel beforet the match; FR-BN: 30876; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: option to apply tactical changes to all other matches ]" />
+		</widget>
+		<widget class="radio_button" id="NMon" show_button_appearance="true" icon="none" click_event="SnMo" auto_size="all" appearance="switches/toggle/right/button">
+			<translation id="text" translation_id="509201" type="use" value="Next Match Only[COMMENT: AREA: tactics panel; SUB-AREA: tactics panel beforet the match; FR-BN: 30876; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: option to apply tactical changes only to the next matche]" />
+		</widget>
+	</container>
+	
+
+</panel>

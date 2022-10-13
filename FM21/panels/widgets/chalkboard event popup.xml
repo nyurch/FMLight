@@ -1,0 +1,50 @@
+<panel width="270" wants_mouse_events="true">
+
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" vertical_gap="0"/>
+
+		<container class="inner_box_no_margin" id="bClr" height="42">
+			<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="4" gap="4" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+			<widget class="number_label" alignment="centre" id="nmbL" auto_size="horizontal" />
+				
+
+			<container>
+				<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<widget class="person_button" colour="black" id="pbtn" style="bold" enforce_style="true">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="objt" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</list>
+					</record>
+				</widget>
+
+				<container width="60">
+					<layout class="arrange_vertical_attachment" alignment="top,extend" offset="4" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<widget class="text" id="mnTe" alignment="right" size="small" auto_size="vertical" font="label">
+						<translation id="text" translation_id="420753" type="use" value="Minute[COMMENT: chalkboard events panel, indicates which minute an event occurred in]" />
+					</widget>
+
+					<widget class="number_label" id="ShtC" alignment="right" font="value"/>
+				</container>
+			</container>
+		</container>
+
+		<container class="inner_box_no_margin" id="evnC" height="2" />
+
+		<container height="8" />
+
+		<widget class="button" id="shHl" click_event="chbH" auto_size="vertical">
+			<translation id="text" translation_id="420755" type="use" value="Watch Highlight[COMMENT: chalkboard detailed event panel, button text to show video of highlight being analysed]" />
+		</widget>
+	</container>
+</panel>

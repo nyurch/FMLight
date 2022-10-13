@@ -1,0 +1,141 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<boolean id="should_force_refresh" value="true"/>
+	<string id="skin_style" value="subtle box"/>
+
+	<!-- panels for when you can't make an offer -->
+	<widget class="transfer_offer_no_offers_panel" id="nofc"/>
+	<widget class="transfer_offer_impossible_transfer_panel" id="impo"/>
+	<container file="player/transfer offer board taken over panel" id="bord"/>
+
+	<container class="vertical_adaptive_container" id="main" offset="4" inset="0" gap="4">
+
+		<container default_height="-1" minimum_height="320" priority="1">
+			<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="4"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="2"/>
+
+			<container id="main" class="horizontal_arrange_container" layout="-2,-4" offset="0" inset="0" gap="10">
+				<container class="scrolling_box" navigation_container="true">
+					<container class="main_box_no_margin" id="pbio">
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="top"/>
+
+						<container class="inner_subtle_box">
+							<attachment_group class="vertical_arrange_autosize" />
+
+							<!-- messages from selling clubs -->
+							<container id="clmc" class="contrast_box">
+								<!-- <layout class="show_medium_vertical" min_value="820"/> -->
+
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="30,-1" />
+
+								<container height="30">
+									<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="3"/>
+
+									<widget class="object_portrait_picture" id="clmb" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" height="24" width="24">
+										<layout class="centre_in_parent_attachment" alignment="vertical"/>
+									</widget>
+								</container>
+
+								<container id="cltc">
+									<attachment_group class="vertical_arrange_autosize" vertical_offset="6"/>
+
+									<widget class="text" id="clmt" colour="orange" style="bold" auto_size="vertical"/>
+								</container>
+							</container>
+
+							<!-- Agent feedback -->
+							<container class="agent_transfer_feedback_panel" id="AgFb"/>
+						</container>
+
+						<widget class="transfer_offer_player_details_panel" id="pldt" priority="3"/>
+						<widget class="transfer_offer_budget_panel" id="tnbu" width="180"/>
+
+						<!-- messages, rules and comments -->
+						<container id="insc" >
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="bottom" vertical_offset="0" vertical_gap="6" horizontal_alignment="horizontal" horizontal_inset="0"/>
+
+							<widget class="transfer_offer_board_interact_panel" id="bint" auto_size="vertical"/>
+							<widget class="transfer_offer_message_panel" id="msgp" height="90"/>
+							<widget class="transfer_offer_comments_panel" id="comm" height="220"/>
+						</container>
+					</container>
+				</container>
+				
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+					<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="4"/>
+
+					<!-- current/previous offer tabs -->
+					<widget class="tab_strip" id="cpof" selection="coff" height="30" auto_size="none" select_event="slcp" appearance="tabs/subsection" use_alt_end_tab_appearances="false" priority="3">
+						<list id="items">
+							<record>
+								<translation id="name" translation_id="308455" type="use" value="Current Offer"/>
+								<integer id="id" value="coff"/>
+							</record>
+							<record>
+								<translation id="name" translation_id="313390" type="use" value="Previous Offer[COMMENT: contract offer panel; view the previous contract offer for this person]"/>
+								<integer id="id" value="poff"/>
+							</record>
+						</list>
+					</widget>
+					
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0"/>
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+						<container class="scrolling_box" navigation_container="true">
+							<container>
+								<attachment_group class="vertical_arrange_autosize" />
+								<widget class="transfer_offer_basic_offer_panel" id="offp"/>
+								<container class="inner_box_no_margin" file="player/transfer offer details transfer panel"/>
+							</container>
+						</container>
+					</container>
+				</container>
+			</container>
+
+			<!-- solidarity, transfer status and overall transfer value widgets -->
+			<container height="30">
+				<layout class="arrange_horizontal_attachment" alignment="right" offset="0" gap="8"/>
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+				<container height="30">
+					<layout class="fit_children_attachment" alignment="horizontal" offset="0"/>
+					<layout class="arrange_horizontal_attachment" alignment="left" offset="0"/>
+					<layout class="stick_to_sides_attachment" alignment="left" inset="0"/>
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+					<widget class="check_box" id="tlnw" click_event="tlnt" auto_size="horizontal">
+						<translation id="text" translation_id="295213" type="use" value="Transfer list and set player to not needed[COMMENT: offer to clubs; exclude rival clubs check box]"/>
+					</widget>
+					<widget class="check_box" id="pllw" click_event="pllc" auto_size="horizontal">
+						<translation id="text" translation_id="295214" type="use" value="Place on loan list[COMMENT: offer to clubs; exclude foreign clubs check box]"/>
+					</widget>
+					<widget class="link_appearance_button" id="vwof" click_event="vwto">
+						<translation id="text" translation_id="234327" type="use" value="View Offer"/>
+						<layout class="centre_in_parent_attachment" alignment="vertical"/>
+					</widget>
+				</container>
+
+				<widget class="text" id="tvwc" alignment="right,centre_y" colour="faded text" auto_size="horizontal"/>
+				<widget class="text" id="tvoc" alignment="right,centre_y" colour="faded text" auto_size="horizontal"/>
+				<widget class="text" id="trvl" alignment="right,centre_y" colour="selection" style="bold" auto_size="horizontal"/>
+			</container>
+
+			<container class="inner_box" appearance="boxes/custom/warning/rounded/paper" id="wrnc" hidden="true" red_replacement="negative dark" >
+				<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0"/>
+				<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="2" gap="10"/>
+				<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
+
+				<widget class="text" alignment="right,centre_y" id="wrnt" auto_size="vertical" colour="white"/>
+				<widget class="picture" file="icons/16px/urgent" auto_size="horizontal" image_alignment="centre" red_replacement="white"/>
+			</container>
+
+			<!-- buttons row -->
+			<widget class="text" id="rctx" auto_size="vertical" spec="text" size="large" colour="positive" hidden="true"/>
+			<container file="player/transfer offer buttons" id="tobu"  navigation_container="true"/>
+		</container>
+	</container>
+
+</panel>

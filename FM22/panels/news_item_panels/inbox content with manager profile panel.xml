@@ -1,0 +1,154 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<!-- content area -->
+	<container id="ctbx">
+		<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="10" do_not_size="true"/>
+		<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+
+		<widget class="inbox_body_text" id="bdtx" />
+
+		<container width="260">
+			<layout class="arrange_vertical_attachment" layout="140,110,80,-1" offset="0" gap="2" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+			<!-- comp news image -->
+			<widget class="competition_news_image_panel" id="ptpc" height="100" />
+
+			<container class="inner_subtle_box">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+				<!--manager profile-->
+				<container class="non_player_profile_panel" id="nPpP" file="none">
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="8" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+						<!--Name and age-->
+						<container>
+								<attachment_group class="vertical_arrange_autosize" vertical_alignment="top"/>
+
+								<!--Name-->
+								<widget class="person_button" id="namv" auto_size="vertical" colour="black" alignment="left,centre_y" style="semi_bold">
+									<record id="object_property" dont_set_hint="true" get_property="Pnms" />
+								</widget>
+
+								<!-- Age & job-->
+								<widget class="label" id="agjl" alignment="left,centre_y" auto_size="vertical" />
+						</container>
+
+						<widget class="horizontal_divider"/>
+
+
+						<!--team and rep-->
+						<container>
+							<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="0" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+
+							<!--team-->
+							<container>
+								<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+								<widget class="team_button" id="tmBu" icon_enabled="true" enable_icon_for_nations="true" height="20" style="semi_bold" alignment="left" />
+								<widget class="label" id="TjnL" auto_size="vertical" font="label" />
+							</container>
+
+							<!--reputation-->
+							<container>
+								<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+								<widget class="global_reputation_stars_label" id="pReP" height="20" alignment="left,centre_y" style="semi_bold" size="large" subject_is_person="true">
+									<record id="object_property" get_property="Prsa" dont_set_hint="true" />
+								</widget>
+
+								<widget class="label" auto_size="vertical" font="label">
+									<translation id="text" translation_id="227963" type="use" value="Reputation" />
+								</widget>
+							</container>
+						</container>
+					</container>
+				</container>
+			</container>
+
+			<!--Manager record-->
+			<container class="inner_subtle_box">
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="8" />
+
+				<!--link to manager history-->
+				<widget class="link_button_title" id="hLnk" font="title" section="Pmhr" size="small" colour="text" red_replacement="text">
+					<layout class="stick_to_sides_attachment" alignment="left"  inset="0"/>
+				</widget>
+
+				<!--Manager current record-->
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+					<layout class="arrange_horizontal_attachment" layout="-1,-1,-1,-1" offset="0" gap="2" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+					<!--matches total-->
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+						<widget class="number_label" id="ttmL" auto_size="vertical" size="large" style="semi_bold"/>
+						<widget class="label" auto_size="vertical" font="label" size="small" colour="faded text">
+							<translation id="text" translation_id="257238 " type="use" value="Matches"/>
+							<translation id="hint" translation_id="437030" type="use" value="Matches Played[COMMENT: leaderboard panel; total of matches played]" />
+						</widget>
+
+					</container>
+					<!--Win percent-->
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+						<widget class="percentage_label" id="wtmL" auto_size="vertical" size="large" style="semi_bold"/>
+						<widget class="label" auto_size="vertical" font="label" size="small" colour="faded text">
+							<translation id="text" translation_id="338615" type="use" value="Win %[COMMENT: manager stats: games won ratio text title]" />
+							<translation id="hint" translation_id="319603" type="use" value="Win Percentage[COMMENT: manager stats: games won ratio text title]" />
+						</widget>
+					</container>
+					<!--Draw percent-->
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+						<widget class="percentage_label" id="dtmL" auto_size="vertical" size="large" style="semi_bold"/>
+						<widget class="label" auto_size="vertical" font="label" size="small" colour="faded text">
+							<translation id="text" translation_id="420780" type="use" value="Draw %[COMMENT: manager stats: games drawn ratio text title]" />
+							<translation id="hint" translation_id="420779" type="use" value="Draw Percentage[COMMENT: manager stats: games drawn ratio text title]" />
+						</widget>
+					</container>
+					<!--Lose percent-->
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+						<widget class="percentage_label" id="ltmL" auto_size="vertical" size="large" style="semi_bold"/>
+						<widget class="label" auto_size="vertical" font="label" size="small" colour="faded text">
+							<translation id="text" translation_id="420782" type="use" value="Loss %[COMMENT: manager stats: games lost ratio text title]" />
+							<translation id="hint" translation_id="420781" type="use" value="Loss Percentage[COMMENT: manager stats: games lost ratio text title]" />
+						</widget>
+					</container>
+				</container>
+			</container>
+
+			<!--Manager trophies at current job-->
+			<container class="inner_subtle_box">
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="4" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+				<widget class="label" id ="troT" height="20" font="title" size="small" />
+
+				<container class="scrolling_box">
+					<container id="tphC">
+						<layout class="fit_children_attachment" alignment="vertical,extend" offset="0" gap="6" />
+						<layout class="arrange_horizontal_attachment" alignment="left" wrap="true" gap="6" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+					</container>
+				</container>
+			</container>
+		</container>
+
+	</container>
+
+
+</panel>

@@ -1,0 +1,204 @@
+﻿<panel  navigation_container="true">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="main_box" force_title_borders="true">
+
+		<string id="skin_style" value="title link" />
+
+		<widget class="link_button" section="TeSq" id="sqlw" auto_size="all" alignment="left,centre_y" embed_in_frame="true">
+			<translation id="text" translation_id="232113" type="use" value="Players" />
+			<layout class="stick_to_sides_attachment" alignment="left,top" embed_in_frame="true" inset="10,8" />
+		</widget>
+
+		<!--35,-32,-19-->
+		<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<!-- Players Used -->
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_gap="50" />
+
+			<container class="vertical_label_value_pair" id="pucn" value_widget="plus" label_widget="pULb">
+
+				<widget class="text" auto_size="all" id="pULb">
+					<translation id="text" translation_id="395293" type="use" value="Players Used[COMMENT: heading; team_information_panel; number players used in season]" />
+				</widget>
+
+				<widget class="text" id="plus" auto_size="all" />
+			</container>
+
+			<container class="vertical_label_value_pair" value_widget="cint" label_widget="cuLb">
+				<attachment_group class="vertical_arrange_autosize_all" vertical_alignment="top" vertical_offset="0" vertical_gap="0" horizontal_alignment="left" horizontal_inset="0" />
+
+				<widget class="text" auto_size="all" id="cuLb">
+					<translation id="text" translation_id="284323" type="use" value="Current Internationals[COMMENT: heading; team_information_panel; current internationals]" />
+				</widget>
+
+				<widget class="text" id="cint" auto_size="all" />
+			</container>
+		</container>
+
+		<container>
+
+			<attachment_group class="vertical_arrange" vertical_layout="-32,-15" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<!-- Noticable Players -->
+			<container>
+				<attachment_group class="vertical_arrange" vertical_layout="-10,-10" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<set_var name="person_panel_container">
+					<container class="main_box">
+						<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<widget class="label" auto_size="vertical" font="label">
+							<var id="text" name="title" />
+						</widget>
+
+						<widget class="person_snapshot_club_overview_panel" file="person/person snapshot team report">
+							<var id="widget_id" name="type_id" />
+						</widget>
+					</container>
+				</set_var>
+
+
+				<!--Club Important Players-->
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_offset="0" vertical_inset="0" />
+
+					<!--Captain-->
+					<var name="person_panel_container">
+						<set_var name="title">
+							<translation id="text" translation_id="300013" type="use" value="Captain" />
+						</set_var>
+						<set_var name="type_id">
+							<flags value="capt" />
+						</set_var>
+					</var>
+
+					<!--Vice captain-->
+					<var name="person_panel_container">
+						<set_var name="title">
+							<translation id="text" translation_id="300014" type="use" value="Vice Captain" />
+						</set_var>
+						<set_var name="type_id">
+							<flags value="vcpt" />
+						</set_var>
+					</var>
+
+					<!--Key Player-->
+					<var name="person_panel_container">
+						<set_var name="title">
+							<translation id="text" translation_id="227396" type="use" value="Key Player" />
+						</set_var>
+						<set_var name="type_id">
+							<flags value="kply" />
+						</set_var>
+					</var>
+
+					<!--Hot Prospect-->
+					<var name="person_panel_container">
+						<set_var name="title">
+							<translation id="text" translation_id="227404" type="use" value="Hot Prospect" />
+						</set_var>
+						<set_var name="type_id">
+							<flags value="htpr" />
+						</set_var>
+					</var>
+				</container>
+
+				<!--Club best team stats Players-->
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_offset="0" vertical_alignment="vertical" vertical_inset="0" />
+
+					<!--Top Goalscorer-->
+					<var name="person_panel_container">
+						<set_var name="title">
+							<translation id="text" translation_id="232092" type="use" value="Top Goalscorer" />
+						</set_var>
+						<set_var name="type_id">
+							<flags value="tpgl" />
+						</set_var>
+					</var>
+
+					<!--Most Assists-->
+					<var name="person_panel_container">
+						<set_var name="title">
+							<translation id="text" translation_id="232095" type="use" value="Most Assists" />
+						</set_var>
+						<set_var name="type_id">
+							<flags value="tass" />
+						</set_var>
+					</var>
+
+					<!--Highest Average Rating-->
+					<var name="person_panel_container">
+						<set_var name="title">
+							<translation id="text" translation_id="232096" type="use" value="Highest Average Rating" />
+						</set_var>
+						<set_var name="type_id">
+							<flags value="havr" />
+						</set_var>
+					</var>
+
+					<!--Most POMs-->
+					<var name="person_panel_container">
+						<set_var name="title">
+							<translation id="text" translation_id="420689" type="use" value="Most PoMs[COMMENT: Scout Report - Most Player of Match awards]" />
+						</set_var>
+						<set_var name="type_id">
+							<flags value="mpom" />
+						</set_var>
+					</var>
+				</container>
+			</container>
+
+			<!-- Unavaliable Players -->
+
+			<widget class="table" id="ijsu" name="Injuries - Suspensions" auto_size_rows="true">
+				<flags id="layout" value="80, -1, -1, -2" />
+
+				<flags id="mode" value="fill_rows,printable" />
+				<integer id="row_spacing" value="0" />
+				<boolean id="fixed_size_rows" value="false" />
+				<boolean id="save_session_state" value="true" />
+
+				<list id="headings">
+					<record alignment="left,centre_y" column_span="2" spec="text" style="bold">
+						<translation id="text" translation_id="420690" type="use" value="Injuries - Suspensions[COMMENT: Inbox Content Team Report - Injuries and Suspensions header]" />
+					</record>
+					<record alignment="left,centre_y">
+						<translation id="text" translation_id="492002" type="use" value="Agreed Playing Time[COMMENT: AREA: Player Happiness; SUB-AREA: Contract Promises; FR-BN: 14013; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: contract promise type]" />
+					</record>
+					<record alignment="left,centre_y">
+						<translation id="text" translation_id="247182" type="use" value="Expected Return" />
+					</record>
+				</list>
+
+
+				<!-- default properties adopted by every item in table -->
+				<record id="defp">
+					<flags id="algn" value="left,centre_y" />
+				</record>
+
+				<list id="column_widget_properties">
+					<record indx="0">
+						<flags id="offset" value="10" />
+						<flags id="algn" value="centre" />
+					</record>
+				</list>
+
+				<!-- small inset from sides of table -->
+				<list id="column_table_properties">
+					<record indx="0">
+						<boolean id="sort_disabled" value="true" />
+					</record>
+					<record indx="1">
+						<boolean id="sort_disabled" value="true" />
+					</record>
+					<record indx="2">
+						<boolean id="sort_disabled" value="true" />
+					</record>
+				</list>
+			</widget>
+		</container>
+	</container>
+</panel>

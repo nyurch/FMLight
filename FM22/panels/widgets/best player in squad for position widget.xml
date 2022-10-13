@@ -1,0 +1,46 @@
+﻿<panel>
+  <layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="2"/>
+  <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+  <widget class="object_portrait_picture" width="50" scale_picture="true" keep_aspect_ratio="true" image_alignment="top">
+     <record id="object_property">
+      <list id="get_properties">
+        <record>
+          <integer id="get_property" value="Pers" />
+          <integer id="set_property" value="objt" />
+        </record>
+      </list>
+    </record>
+  </widget>
+
+  <container>
+    <layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0"/>
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+    <widget class="person_button" colour="black" info_popup_enabled="true" Pipl="true" auto_size="vertical">
+      <record id="object_property">
+        <list id="get_properties">
+          <record>
+            <integer id="get_property" value="Pers" />
+            <integer id="set_property" value="valu" />
+          </record>
+        </list>
+      </record>
+    </widget>
+
+    <widget class="scout_stars_label" alignment="left,centre_y" auto_size="vertical">
+      <record id="object_property">
+        <list id="get_properties">
+          <record>
+            <integer id="get_property" value="valu" />
+            <integer id="set_property" value="valu" />
+          </record>
+        </list>
+      </record>
+    </widget>
+    
+  </container>
+ 
+  
+</panel>
+

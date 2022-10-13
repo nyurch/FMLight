@@ -1,0 +1,55 @@
+﻿<panel>
+
+	<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="all" inset="0"/>
+	<container class="horizontal_adaptive_container" inset="0" offset="0">
+		<!--Hierarchy level colour-->
+		<container class="main_box" id="pClr" appearance="tables/custom/dynamics/hierarachy indicator/row" default_width="4" priority="1" />
+
+		<!--Person Status Flag-->
+		<container class="vertical_adaptive_container" default_width="40" minimum_width="40" priority="1">
+			<container minimum_height="20">
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0"/>
+
+				<widget id="ppSb" class="player_status_button" height="20">
+					<layout class="centre_in_parent_attachment" alignment="all" offset="0"/>
+				</widget>
+			</container>
+		</container>
+
+		<!--picture-->
+		<container class="vertical_adaptive_container" default_width="50" minimum_height="40" priority="1000">
+			<container minimum_height="50" priority="1000">
+				<layout class="centre_in_parent_attachment" alignment="all" apply_to_children="true" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+
+				<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x" height="36" width="36">
+					<record id="object_property">
+						<list id="get_properties">
+							<!--Facegen data request-->
+							<record get_property="fcgn" />
+							<!--Fake name request-->
+							<record get_property="Pfke" />
+							<record get_property="prpc" set_property="valu" />
+						</list>
+					</record>
+				</widget>
+			</container>
+		</container>
+
+
+		<!--Name and age/player type-->
+		<container class="vertical_adaptive_container" gap="0" offset="4" default_width="-3" minimum_width="120" priority="1">
+			<widget class="person_button" id="perp"  priority="2" default_height="22" alignment="left,centre_y" info_popup_enabled="true" Pipl="true" colour="black"/>
+
+			<widget class="player_age_and_description_widget" id="pltx" colour="faded text"  spec="text" size="xsmall" default_height="18" alignment="left,centre_y" priority="2"  file="none">
+                    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+  
+                  <widget class="text" id="mtxt" auto_size="none">
+                    <translation id="text" translation_id="347559" type="use" value="[%number#1] year-old [%player_description#1][COMMENT: inbox person information panel; person description]" />
+                  </widget>
+
+			</widget>
+
+		</container>
+	</container>
+</panel>

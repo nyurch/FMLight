@@ -1,0 +1,43 @@
+<panel>
+	<list id="properties_to_forward">
+		<record get_property="pitch_kit_icon" set_property="shown" target="kIIC"/>
+	</list>
+
+
+	<widget class="widget_popup_button" id="WdPP" disable_layout_attachments_when_embedded="true" offset_x="0" offset_y="0" appearance="buttons/custom/tactics/player picker/button" secondary_icon_colour="text">
+		<flags id="alignment" value="centre_x,bottom" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+		<record id="modal_popup_properties" file="modal popup panel auto sized" ARep="true" IPid="true" stick_to_parent="middle" target="pltb" propagate_mouse_events="false" auto_size_maximum_width="960" auto_size_minimum_width="800">
+		</record>
+	</widget>
+
+
+
+	<container>
+		<layout class="arrange_horizontal_attachment" alignment="left, extend" offset="3" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+		<container class="kit_icon" file="generic/kit icon tactics" kit_path="default" kit_number_path="default" id="kIIC" width="20" height="20" keep_aspect_ratio="true" scale_picture="true" >
+			<layout class="centre_in_parent_attachment" alignment="vertical" />
+		</container>
+
+
+		<!-- We wrap our person_button in a container with mouse events item, so if we happen to click off of the players named text, we can still allow our popup widget WdPP to work -->
+		<container class="container_with_mouse_events" id="pSBC">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+			<layout class="stick_to_sides_attachment" alignment="right, extend" inset="28"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0"/>
+
+			<widget class="person_button" colour="black" id="pbtn" alignment="left,centre_y,can_scale" info_popup_enabled="true">
+
+			</widget>
+		</container>
+	</container>
+
+
+
+	<widget class="text" id="emTx" alignment="left,centre_y,can_scale" hidden="true" wants_mouse_events="false" >
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0,26,0,20" />
+	</widget>
+</panel>

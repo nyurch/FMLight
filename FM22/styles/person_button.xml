@@ -1,0 +1,18 @@
+<properties version="1.0">
+
+<!-- list all the widgets to override along with their properties and override values -->        
+<list id="skin_style">
+
+	<!-- use this to recolour the person_button class text from white, just need to set a style for each panel it is needed on but allows to recolor hard coded stuff -->
+    <record>
+		<string id="class_name" value="person_button" />
+		<colour id="colour" name="text" />
+    <boolean id="enforce_style" value="true" />
+    </record>
+	
+
+</list>
+
+    
+
+</properties>

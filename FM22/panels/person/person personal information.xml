@@ -1,0 +1,109 @@
+<panel>
+    <attachment_group class="vertical_arrange" vertical_alignment="top" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+    <widget class="table" id="left" layout="-1" mode="fill_rows" auto_size_rows="true" fixed_size_rows="false" auto_size="vertical">
+    
+        <record id="default_properties" col="0" />
+    
+        <!-- full name -->
+      <widget class="label" row="0" alignment="left,bottom" font="label" auto_size="vertical">
+        <translation id="text" translation_id="247452" type="use" value="Full Name" />
+      </widget>
+      <widget class="text" id="namw" row="1" auto_size="vertical" />
+
+      <!-- media description -->
+      <widget class="label" id="medi" row="2" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="319499" type="use" value="Media Description[COMMENT: personal information screen; text indicating a person's media description]" />
+      </widget>
+      <widget class="player_description_text" id="medt" row="3" auto_size="vertical" spec="text" />
+
+      <!-- media opinion (international) -->
+      <widget class="label" row="4" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="492005" type="use" value="Media Opinion (International)[COMMENT: player happiness panel; Players happiness with media opinion label]" />
+      </widget>
+      <widget class="text" id="moit" row="5" auto_size="vertical" spec="text" />
+      
+      <!-- personality -->
+      <widget class="label" row="6" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="247713" type="use" value="Personality" />
+      </widget>
+      <widget class="text" id="perw" row="7" auto_size="vertical" spec="text" />
+
+      <!-- coaching qualifications -->
+      <widget class="label" row="8" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="329843" type="use" value="Coaching Qualifications[COMMENT: non-player profile; coaching qualification]" />
+      </widget>
+      <widget class="text" id="coaq" row="9" auto_size="vertical" spec="text" />
+
+      <!-- favoured clubs -->
+      <widget class="label" row="10" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="247453" type="use" value="Favoured Clubs" />
+      </widget>
+      <widget class="favourite_clubs_text" id="fvcw" row="11" auto_size="vertical" spec="text" colour="accent" />
+
+      <!-- similar players "dubbed the new Ronaldo!" -->
+      <widget class="label" row="12" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="247714" type="use" value="Media Comparison[COMMENT: player_profile_panel_title; current legendary player this player is similar to]" />
+      </widget>
+      <widget class="text" id="meco" row="13" auto_size="vertical" spec="text" />
+    </widget>
+
+    <widget class="table" id="rigt" layout="-1" mode="fill_rows" auto_size_rows="true" fixed_size_rows="false" auto_size="vertical">
+    
+    <record id="default_properties" col="0" />
+
+      <!-- reputation -->
+      <widget class="label" row="0" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="227963" type="use" value="Reputation" />
+      </widget>
+      <widget class="global_reputation_stars_label" id="repw" row="1" auto_size="vertical" alignment="left" navigation_focus_target="false" subject_is_person="true"/>
+
+      <!-- Agent -->
+      <widget class="label" row="2" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="308473" type="use" value="Agent" />
+      </widget>
+      <widget class="text" id="agne" row="3" auto_size="vertical" spec="text" />
+
+      <!-- Media handling -->
+      <widget class="label" row="4" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="291327" type="use" value="Media Handling Style[COMMENT: player transfer panel; how staff handles media]" />
+      </widget>
+      <widget class="media_handling_label" id="mhst" row="5" auto_size="vertical" spec="text" />
+
+      <!-- favoured persons -->
+      <widget class="label" row="6" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="247454" type="use" value="Favoured Personnel" />
+      </widget>
+      <widget class="favourite_personel_text" id="fvpw" row="7" auto_size="vertical" spec="text"  colour="accent"/>
+
+      <!-- similar players "similar type of player to" -->
+      <widget class="label" row="8" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="255081" type="use" value="Team-mate Comparison[COMMENT: player_profile_panel_title; team-mate who is a similar type of player]" />
+      </widget>
+      <widget class="text" id="teco" row="9" auto_size="vertical" spec="text" />
+
+      <!-- past experience -->
+      <widget class="label" row="10" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="319440" type="use" value="Past Playing Experience[COMMENT: add_manager_panel; select starting reputation; define past football experience]" />
+      </widget>
+      <widget class="label" id="paex" row="11" auto_size="vertical" spec="text" />
+
+      <!-- offers (only shown here for non players) -->
+      <widget class="label" row="12" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="247457" type="use" value="Offers" />
+      </widget>
+      <widget class="text" id="offw" row="13" auto_size="vertical" spec="text" />
+
+      <!-- manager relationship with you (only shown here for non players -->
+      <widget class="label" row="14" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="243508" type="use" value="Relationship With You" />
+      </widget>
+      <widget class="relationship_label" id="mryw" display_format="0" row="15" auto_size="vertical" spec="text" />
+
+      <!-- based in nation -->
+      <widget class="label" row="16" alignment="left,bottom" font="label">
+        <translation id="text" translation_id="376424" type="use" value="Based In[COMMENT: player personal information; nation player is based in]" />
+      </widget>
+      <widget class="nation_button" id="natB" row="17" icon_enabled="true" auto_size="vertical" spec="text" />
+    </widget>
+</panel>

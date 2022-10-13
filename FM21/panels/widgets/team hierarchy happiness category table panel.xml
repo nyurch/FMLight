@@ -1,0 +1,37 @@
+﻿<panel> 
+	<layout class="arrange_vertical_attachment" alignment="top"/>
+
+	<layout class="fit_children_attachment" alignment="vertical,fill"/>
+
+	<widget class="text" id="lblT" auto_size="vertical" font="title" stype="semi_bold" alignment="left,bottom">
+		<layout class="stick_to_sides_attachment" alignment="horizontal"/>
+	</widget>
+
+	<widget class="client_object_list_table" id="objT" mode="store_sort_state, fill_rows, stripe_rows, hide_headings" auto_size="vertical" row_height="50" row_spacing="1" column_spacing="1" database_table_type="1" should_force_refresh="true" >
+    <boolean id="save_session_state" value="true" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+		<record id="viewed_property_ids">
+			<!--Person Hierarchy Details-->
+			<record id="Pnhw" width="-4"   />
+			<!-- player Promises with manager -->
+			<record id="Pmbm" width="60"   />
+			<!-- player morale -->
+			<record id="PhrM" width="95"   />
+			<!-- person training happiness-->
+			<record id="PHtr" width="90"  />
+			<!--  person treatment happiness -->
+			<record id="PHmt" width="90"  />
+			<!--  person club happiness-->
+			<record id="PHct"  width="90"   />
+			<!--  person management happiness-->
+			<record id="PHcm" width="90"   />
+			<!--  person playing time happiness-->
+			<record id="PHpt" width="90"   />
+			<!-- person overall happiness level -->
+			<record id="Pohl" width="110"   />
+
+		</record>
+	</widget>
+
+
+</panel>

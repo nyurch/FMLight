@@ -1,0 +1,70 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="main_box">
+		<translation id="title" translation_id="320487" type="use" value="Advice History[COMMENT: non player advice history panel; section heading]" />
+		<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+				<widget class="table" id="advt" mode="fill_rows, stripe_rows, select_rows, dont_allow_empty_selection" row_spacing="2" row_height="28" fixed_size_rows="true" layout="420, 240, -1, 80" select_event="eadv">
+					<list id="column_table_properties">
+						<!-- Subject-->
+						<record id="subc">
+							<record id="column_heading">
+								<translation id="text" translation_id="320488" type="use" value="Subject[COMMENT: non player advice history panel; title of advice subject column]" />
+							</record>
+						</record>
+						<record id="plyr">
+							<record id="widget_info" class="person_button" style="bold" colour="fg" info_popup_enabled="true" Pipl="true" info_popup_alignment="left,centre_y" icon_enabled="true" />
+							<record id="column_heading">
+								<translation id="text" translation_id="348241" type="use" value="Person[COMMENT: contract clause news panel; column header]"/>
+							</record>
+						</record>
+						<record id="txtc" sort_disabled="true">
+							<record id="widget_info" class="text" alignment="left,centre_y"/>
+							<record id="column_heading">
+								<translation id="text" translation_id="320489" type="use" value="Advice[COMMENT: non player advice history panel; title of advice text column]" />
+							</record>
+						</record>
+						<record id="disc" >
+							<record id="widget_info" class="picture" file="icons/16px/tick" image_alignment="centre" />
+							<record id="column_heading">
+								<translation id="text" translation_id="320490" type="use" value="Was Followed[COMMENT: non player advice history panel; title of advice response column (ie dismissed)]" />
+							</record>
+						</record>
+					</list>
+					<list id="column_widget_properties">
+						<record index="1" right="4"/>
+					</list>
+				</widget>
+				<!-- This can be used to display the selected full advice string if there is space -->
+				<container class="main_box" id="fulc" height="200">
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+					<widget class="text" id="fult" />
+				</container>
+			</container>
+
+			<!-- Text to display when no advice has been given -->
+			<widget class="text" id="noad" alignment="centre_x,top" hidden="true" />
+		</container>
+
+		<!-- A link button to be shown in summary mode -->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="right" inset="0" apply_to_children="true" />
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+
+			<widget class="link_appearance_button" id="alnk" hidden="true">
+				<translation id="text" translation_id="320487" type="use" value="Advice History[COMMENT: non player advice history panel; section heading]" />
+			</widget>
+		</container>
+	</container>
+</panel>

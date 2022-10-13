@@ -1,0 +1,89 @@
+<panel id="dlog" width="400" height="220">
+<!-- use to recolour edit_box text -->
+<string id="skin_style" value="edit_box" />
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="standard_popup_box">
+
+		<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<container class="manager_profile_panel" id="mPpa" file="none" default_focus="true">
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="5" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="10" />
+
+			<!-- Second nationality -->
+			<widget class="label" font="title" alignment="left,centre_y" colour="accent">
+				<translation id="text" translation_id="306613" type="use" value="Second Nationality" />
+			</widget>
+
+			<container height="30">
+				<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<widget class="filter_edit_box" id="2nat" appearance="edit boxes/custom/selection/box" alignment="left,centre_y">
+					<flags id="changed_event" value="2nat"/>
+					<flags id="select_on_focus" value="true"/>
+					<boolean id="validate_string" value="true" />
+				</widget>
+
+				<widget class="icon_button" click_event="2npu" id="2npu" appearance="buttons/standard/split/right/button" icon="icons/16px/down" auto_size="horizontal">
+				</widget>
+
+			</container>
+
+			<!-- Languages spoken -->
+			<widget class="label" font="title" colour="accent">
+				<translation id="text" translation_id="376378" type="use" value="Additional Languages Spoken[COMMENT: add manager extra info panel; select additional languages spoken]" />
+			</widget>
+
+			<container height="30">
+				<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<widget class="filter_edit_box" id="lng1" appearance="edit boxes/custom/selection/box" alignment="left,centre_y">
+					<flags id="changed_event" value="slng"/>
+					<flags id="select_on_focus" value="true"/>
+					<boolean id="validate_string" value="true" />
+				</widget>
+
+				<widget class="icon_button" click_event="l1pu" id="l1pu" appearance="buttons/standard/split/right/button" icon="icons/16px/down" auto_size="horizontal">
+				</widget>
+
+			</container>
+
+			<container height="30">
+				<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<widget class="filter_edit_box" id="lng2" appearance="edit boxes/custom/selection/box" alignment="left,centre_y">
+					<flags id="changed_event" value="slng"/>
+					<flags id="select_on_focus" value="true"/>
+					<boolean id="validate_string" value="true" />
+				</widget>
+
+				<widget class="icon_button" click_event="l2pu" id="l2pu" appearance="buttons/standard/split/right/button" icon="icons/16px/down" auto_size="horizontal">
+				</widget>
+
+			</container>
+
+			<container height="30">
+				<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<widget class="filter_edit_box" id="lng3" appearance="edit boxes/custom/selection/box" alignment="left,centre_y">
+					<flags id="changed_event" value="slng"/>
+					<flags id="select_on_focus" value="true"/>
+					<boolean id="validate_string" value="true" />
+				</widget>
+
+				<widget class="icon_button" click_event="l3pu" id="l3pu" appearance="buttons/standard/split/right/button" icon="icons/16px/down" auto_size="horizontal">
+				</widget>
+
+			</container>
+
+		</container>
+
+	</container>
+
+</panel>

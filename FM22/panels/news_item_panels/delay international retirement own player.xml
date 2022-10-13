@@ -1,0 +1,145 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+
+	<container>
+		<layout class="fit_children_attachment" alignment="vertical" />
+		<layout class="arrange_horizontal_attachment" layout="200, -1" gap="12" />
+		<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" />
+
+		<container id="psdt">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" />
+
+			<!-- portrait -->
+			<widget class="object_portrait_picture" scale_picture="true" keep_aspect_ratio="true" height="95" image_alignment="centre">
+				<layout class="stick_to_sides_attachment" alignment="top" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</widget>
+
+			<container height="12" />
+
+			<!-- person name -->
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="top" offset="0" />
+				<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" />
+
+				<widget class="person_button" id="pnam" auto_size="all" spec="text" style="bold" alignment="centre" size="12" colour="black">
+					<layout class="centre_in_parent_attachment" alignment="horizontal" />
+				</widget>
+			</container>
+
+			<!-- person description -->
+			<widget class="player_description_text" auto_size="vertical" colour="faded text" alignment="top" size="10" multiline="true">
+				<layout class="stick_to_sides_attachment" alignment="horizontal" />
+				<record id="object_property">
+					<integer id="get_property" value="Pdes" />
+					<integer id="set_property" value="valu" />
+				</record>
+			</widget>
+
+			<!-- nationality -->
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="top" offset="0" />
+				<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" />
+
+				<widget class="nation_button" auto_size="horizontal" height="24" colour="faded text" alignment="centre" size="10">
+					<layout class="centre_in_parent_attachment" alignment="horizontal" />
+					<record id="object_property">
+						<integer id="get_property" value="Pnat" />
+						<integer id="set_property" value="valu" />
+					</record>
+				</widget>
+			</container>
+
+			<!-- age -->
+			<widget class="age_label" auto_size="horizontal" height="24" colour="faded text" alignment="centre" size="10">
+				<layout class="centre_in_parent_attachment" alignment="horizontal" />
+				<translation id="format" translation_id="242551" type="use" value="[%number#1] years old" />
+				<record id="object_property">
+					<integer id="get_property" value="Page" />
+					<integer id="set_property" value="valu" />
+				</record>
+			</widget>
+		</container>
+
+		<container class="inner_subtle_box">
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="2" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="8" />
+
+			<container height="24">
+				<layout class="arrange_horizontal_attachment" alignment="left" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<widget class="link_button_title" section="Ppin">
+					<translation id="text" translation_id="441091" type="use" value="International Info[COMMENT: FR 13423; player delays international retirement news item; title for your players international carreer information box]" />
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
+			</container>
+
+			<widget class="international_appearances_label" auto_size="all" colour="text" alignment="left,centre_y">
+				<record id="object_property">
+					<integer id="get_property" value="Pist" />
+					<integer id="set_property" value="valu" />
+				</record>
+			</widget>
+
+			<!-- international debut -->
+			<widget class="label" font="title" alignment="left,centre_y" auto_size="all">
+				<translation id="text" translation_id="289169" type="use" value="International Debut Against[COMMENT: column heading; displayed on player personal panel]" />
+			</widget>
+
+			<container>
+				<layout class="fit_children_attachment" alignment="vertical" />
+				<layout class="arrange_horizontal_attachment" alignment="left,extend" gap="2" />
+				<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" />
+
+				<widget class="nation_button" auto_size="horizontal" alignment="left,centre_y">
+					<record id="object_property">
+						<integer id="get_property" value="Pidt" />
+						<integer id="set_property" value="valu" />
+					</record>
+				</widget>
+
+				<widget class="date_cell" auto_size="horizontal" alignment="left,centre_y" format="([%date#1-short])">
+					<record id="object_property">
+						<integer id="get_property" value="Pidd" />
+						<integer id="set_property" value="valu" />
+					</record>
+				</widget>
+			</container>
+
+			<!-- first international goal -->
+			<widget class="label" font="title" alignment="left,centre_y" auto_size="all">
+				<translation id="text" translation_id="291326" type="use" value="First International Goal Against[COMMENT: column heading; displayed on player personal panel]" />
+			</widget>
+
+			<container>
+				<layout class="fit_children_attachment" alignment="vertical" />
+				<layout class="arrange_horizontal_attachment" alignment="left,extend" gap="2" />
+				<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" />
+
+				<widget class="nation_button" col="1" row="7" alignment="left,centre_y" auto_size="horizontal">
+					<record id="object_property">
+						<integer id="get_property" value="Pigt" />
+						<integer id="set_property" value="valu" />
+					</record>
+				</widget>
+
+				<widget class="date_cell" auto_size="horizontal" alignment="left,centre_y" format="([%date#1-short])">
+					<record id="object_property">
+						<integer id="get_property" value="Pigd" />
+						<integer id="set_property" value="valu" />
+					</record>
+				</widget>
+			</container>
+		</container>
+	</container>
+
+</panel>

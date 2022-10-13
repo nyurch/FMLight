@@ -1,0 +1,42 @@
+<!-- Type = 2 is DT_OK_CANCEL -->
+<panel width="500" height="600" type="2">
+
+	<translation id="title" translation_id="337889" type="use" value="Edit Scenario[COMMENT: title for a dialog allowing the user to edit a match plan scenario]" />
+	<!-- make dialog moveable -->
+	<attachment class="moveable_attachment" />
+
+	<list id="properties_to_forward">
+		<record get_property="mpSI" target="mpsp"/>
+		<record get_property="mpSC" target="mpsp"/>
+		<record get_property="mpLA" target="mpsp"/>
+		<record get_property="tact" target="mpsp"/>
+	</list>
+
+	<integer id="default_button" value="ok" />
+
+	<layout class="centre_in_parent_attachment" alignment="all" />
+
+	<!-- arrange items vertically, with text at top -->
+	<layout class="arrange_vertical_attachment" alignment="bottom,extend" />
+	<!-- stretch everything to the sides of the dialog -->
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
+
+	<widget class="match_plan_scenario_panel" id="mpsp"/>
+
+	<!-- buttons panel -->
+	<container>
+		<attachment_group class="button_arrangement_right" />
+
+		<widget class="primary_icon_tick_button" id="ok  " disabled="true" hidn="true">
+			<translation id="text" translation_id="229829" type="use" value="Ok" />
+			<layout class="autosize_attachment" />
+		</widget>
+
+		<widget class="icon_button" id="canc" hidn="true" auto_size="all">
+			<translation id="text" translation_id="229828" type="use" value="Cancel" />
+			<layout class="autosize_attachment" />
+		</widget>
+
+	</container>
+
+</panel>

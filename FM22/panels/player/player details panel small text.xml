@@ -1,0 +1,30 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<list id="properties_to_forward">
+		<record get_property="InfT" set_property="text" target="InfT"/>
+	</list>
+
+	<container id="staf" height="50">
+		<attachment_group class="horizontal_arrange" horizontal_layout="40,-1" vertical_alignment="vertical" vertical_inset="0" />
+
+		<!-- Portrait -->
+		<widget class="object_portrait_picture" scale_picture="true" image_alignment="centre">
+			<record id="object_property" get_property="objt" set_property="objt"/>
+		</widget>
+
+		<container>
+			<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<!-- Person name -->
+			<widget class="person_button" alignment="left,centre_y" style="semi_bold" colour="black" info_popup_enabled="true" info_popup_alignment="left,centre_y" icon_enabled="true" person_is_player="true" auto_size="vertical">
+				<record id="object_property" get_property="objt" set_property="valu"/>
+			</widget>
+
+			<!-- text label -->
+			<widget class="text" id="InfT" size="small" colour="faded text" auto_size="vertical">
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="10"/>
+			</widget>
+		</container>
+	</container>
+</panel>

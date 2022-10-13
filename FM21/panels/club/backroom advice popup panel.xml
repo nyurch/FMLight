@@ -1,0 +1,185 @@
+<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="6" horizontal_alignment="horizontal" horizontal_inset="4" />
+
+	<!--this listens for EVENT_NAVIGATION_NOTIFICATION and cancels the popup if it hears one-->
+	<attachment class="global_event_relay_attachment" event_id="navn">
+		<record id="action_event" event_id="remo" />
+	</attachment>
+
+	<!-- Header - topic and advice index-->
+	<container height="40">
+		<layout class="arrange_horizontal_attachment" alignment="middle,extend" offset="8" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+		<record id="default_properties" alignment="left,centre_y" font="title" size="large" multiline="true"/>
+
+		<!-- Advice index/total -->
+		<widget class="label" id="numb" auto_size="horizontal" colour="title"/>
+		<!-- Advice topic -->
+		<widget class="label" id="topi" colour="text"/>
+		<container width="40"/>
+	</container>
+
+	<!-- Staff info -->
+	<container class="inner_subtle_box" height="80" >
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+		<container class="client_object_viewer_xml_panel" id="staf">
+			<layout class="arrange_horizontal_attachment" layout="40, -1, -1, -1" gap="10" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+			<!-- Portrait -->
+			<widget class="object_portrait_picture" scale_picture="true" image_alignment="centre">
+				<record id="object_property" get_property="objt" set_property="objt" />
+			</widget>
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+				
+				<!-- Person name -->
+				<widget class="person_button" alignment="left,bottom" style="semi_bold" size="large" info_popup_enabled="true" info_popup_alignment="left,bottom" icon_enabled="true" auto_size="vertical" colour="text" >
+					<record id="object_property" get_property="objt" set_property="valu" />
+				</widget>
+				<!-- Job -->
+				<widget class="job_label" alignment="left,top" size="small" colour="faded text">
+					<record id="object_property" get_property="PcJj" set_property="valu" />
+				</widget>
+			</container>
+      
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<!-- Knowledge of club players -->
+				<widget class="backroom_advice_knowledge_level_label" alignment="centre_x,bottom" style="semi_bold" size="large" auto_size="vertical" advice_knowledge_type="npck" >
+					<record id="object_property" get_property="Nbac" set_property="akwl" />
+				</widget>
+        
+				<widget class="label" alignment="centre_x,top" size="small" colour="faded text">
+					<translation id="text" translation_id="344089" type="use" value="Knowledge of Club Players[COMMENT: player transfer panel; the level of knowledge the non player has of the clubs players ]" />
+				</widget>
+			</container>
+      
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<!-- Ability in advice area -->
+				<widget class="backroom_advice_knowledge_level_label" id="salb" alignment="centre_x,bottom" style="semi_bold" size="large" auto_size="vertical">
+          <record id="object_property" get_property="Nbac" set_property="akwl" />
+        </widget>
+
+				<widget class="label" id="sahd" alignment="centre_x,top" size="small" colour="faded text"/>
+			</container>
+      
+		</container>
+	</container>
+
+	<!-- Advice message-->
+	<container>
+		<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="8" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+		<!-- Message and buttons -->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="8" gap="5" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<!-- Message -->
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<widget class="text" id="msgt" font="inbox_body" colour="text" >
+					<layout class="stick_to_sides_attachment" alignment="all" inset="10" />
+				</widget>
+
+				<!-- 'Done' overlay shown when advice is actioned-->
+				<container class="main_transparent_box" id="Aovr" hidden="true">
+					<layout class="arrange_vertical_attachment" alignment="top" offset="120" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<widget class="picture" image_alignment="centre" file="icons/48px/tick" auto_size="vertical" red_replacement="normal_icon" />
+					<widget class="label" size="large" auto_size="vertical" alignment="centre">
+						<translation id="text" translation_id="416311" type="use" value="Done[COMMENT: FR 16955; backroom advice; string displayed when advice has already been followed/actioned]" />
+					</widget>
+				</container>
+			</container>
+
+			<!-- Buttons -->
+			<container>
+				<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+				<layout class="arrange_horizontal_attachment" alignment="left" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+
+				<record id="default_properties" auto_size="all" />
+
+				<widget class="button" id="prev" click_event="prvA">
+					<translation id="text" translation_id="255267" type="use" value="Previous[COMMENT: wizard dialog: default previous button text]" />
+				</widget>
+				<widget class="button" id="next" click_event="nxtA">
+					<translation id="text" translation_id="255268" type="use" value="Next[COMMENT: wizard dialog: default next button text]" />
+				</widget>
+				<widget class="button" id="actb">
+					<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+				</widget>
+			</container>
+
+			<!-- Link buttons -->
+			<container id="lbcn">
+				<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+				<layout class="arrange_horizontal_attachment" alignment="right" offset="0" gap="10" />
+				<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+				<!-- Added in code -->
+				<record id="widget_properties" appearance="buttons/link/button" />
+			</container>
+		</container>
+
+		<widget class="vertical_divider" />
+
+		<!-- Subject info-->
+		<container class="client_object_viewer_xml_panel" id="subj" width="210">
+			<layout class="arrange_vertical_attachment" alignment="top" offset="20" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<!-- Portrait -->
+			<widget class="object_portrait_picture" height="90" scale_picture="true" image_alignment="centre">
+				<record id="object_property" get_property="objt" set_property="objt" />
+			</widget>
+			<container height="20" />
+			<!-- Person name -->
+			<widget class="person_button" alignment="centre_x,top" info_popup_enabled="true" info_popup_alignment="left,centre_y" icon_enabled="true" auto_size="vertical" style="semi_bold" size="large" colour="text">
+
+				<record id="object_property" get_property="objt" set_property="valu" />
+			</widget>
+			<!--<widget class="client_object_property_panel" property="Pnat" auto_size="vertical" height="20" alignment="centre" icon_alignment="centre" format="[%nation#1-nationality]">
+        <record id="object_property">
+          <integer id="get_property" value="objt" />
+          <integer id="set_property" value="objt" />
+        </record>
+      </widget>-->
+			<!-- Player description -->
+			<widget class="game_formatted_label" id="plyd" alignment="centre_x,top" auto_size="vertical" size="small" colour="faded text">
+				<record id="format">
+					<translation id="text" translation_id="453022" type="use" value="[%number#1] year-old [%position#2-nosides] [COMMENT: FR 16955; age and position player; only variable format changed from 374437]" />
+					<integer id="var2" value="vf_game_position_mask" />
+				</record>
+				<record id="object_property">
+					<list id="get_properties">
+						<!-- PROP_PERSON_AGE -->
+						<record id="object_property" get_property="Page" set_property="var1" />
+						<!-- PROP_PLAYER_NATURAL_POSITION -->
+						<record id="object_property" get_property="Pnps" set_property="var2" />
+					</list>
+				</record>
+			</widget>
+			<!-- Other info -->
+			<container class="client_object_property_labelled_panel_grid" id="prpL" row_count="3" height="180">
+				<record id="label_widget_properties" alignment="centre_x,bottom" />
+				<record id="value_widget_properties" alignment="centre_x,top" icon_enabled="false" />
+				<list id="properties">
+					<integer value="Pcpt" />
+					<integer value="Pcab" />
+					<integer value="Ppab" />
+				</list>
+				<record id="object_property" get_property="objt" set_property="objt" />
+			</container>
+		</container>
+	</container>
+</panel>

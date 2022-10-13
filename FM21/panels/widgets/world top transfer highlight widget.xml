@@ -1,0 +1,153 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<container class="inner_subtle_box" red_replacement="bg lighter">
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,110" horizontal_offset="10" vertical_alignment="vertical" vertical_inset="0" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="1" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<container class="client_object_viewer_xml_panel">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="tefc" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</list>
+				</record>
+				<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0" />
+
+				<widget class="comp_button"  icon_enabled="false" auto_size="vertical">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="Tdiv" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</list>
+					</record>
+				</widget>
+			</container>
+
+			<widget class="person_button" id="pers" auto_size="vertical" size="xlarge" colour="black" style="semi_bold" Pipl="true" ipen="true" >
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="Pers" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+
+			<container class="client_object_viewer_xml_panel">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="Pers" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</list>
+				</record>
+				<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0" />
+
+
+				<widget class="player_description_text" colour="faded text" auto_size="vertical">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="Pdes" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</list>
+					</record>
+				</widget>
+			</container>
+
+			<container height="1"/>
+
+			<container>
+				<layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true" offset="0" />
+				<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+				<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="2" />
+
+				<widget class="picture" width="20" height="20" image_alignment="centre" keep_aspect_ratio="true" scale_picture="false" file="icons/16px/sub off"/>
+
+				<widget class="team_button"  auto_size="vertical" icon_enabled="false">
+					<translation id="no_object_text" translation_id="242857" type="use" value="Free Transfer"/>
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="selt" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</list>
+					</record>
+				</widget>
+
+			</container>
+
+			<container>
+				<layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true" offset="0" />
+				<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+				<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="2" />
+
+				<widget class="picture" width="20" height="20" image_alignment="centre" keep_aspect_ratio="true" scale_picture="false" file="icons/16px/sub on"/>
+
+				<widget class="team_button" auto_size="vertical" icon_enabled="false">
+					<translation id="no_object_text" translation_id="242857" type="use" value="Free Transfer"/>
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="buyt" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</list>
+					</record>
+				</widget>
+
+			</container>
+
+			<widget class="horizontal_divider" />
+
+			<widget class="label" auto_size="vertical" size="xxlarge" style="bold">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="fee " />
+							<integer id="set_property" value="text" />
+						</record>
+					</list>
+				</record>
+			</widget>
+		</container>
+
+		<container class="client_object_viewer_xml_panel" >
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="Pers" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</list>
+			</record>
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<widget class="picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+
+				<record id="object_property">
+					<list id="get_properties">
+						<!--Facegen data request-->
+						<record get_property="fcgn" />
+						<!--Fake name request-->
+						<record get_property="Pfke" />
+						<record get_property="prpc" set_property="valu" />
+					</list>
+				</record>
+			</widget>
+		</container>
+	</container>
+</panel>

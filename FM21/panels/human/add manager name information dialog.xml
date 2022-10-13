@@ -1,0 +1,76 @@
+<panel id="dlog" width="400" height="200">
+<!-- use to recolour edit_box text -->
+<string id="skin_style" value="edit_box" />
+
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="standard_popup_box">
+
+		<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="10" />
+
+		<container class="manager_profile_panel" id="mPpa" file="none" check_profile="true">
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+
+			<widget class="label" id="admL" alignment="left,centre_y" font="title" colour="accent" />
+			
+			<container height="30">
+				<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<widget class="edit_box" id="pfrs" edit_event="pfrs" alignment="left,centre_y" >
+					<translation id="description" translation_id="298759" type="use" value="First Name[comment first name of a new untitled user]" />
+					<layout class="max_length_attachment" length="25" />
+					<boolean id="select_on_focus" value="true" />
+					<record id="changed_event">
+						<flags id="event_id" value="ChNa" />
+					</record>
+				</widget>
+
+				<widget class="edit_box" id="plas" edit_event="plas" alignment="left,centre_y">
+					<translation id="description" translation_id="298760" type="use" value="Last Name[comment: last name of a new untitled user]" />
+					<layout class="max_length_attachment" length="25" />
+					<boolean id="select_on_focus" value="true" />
+					<record id="changed_event">
+						<flags id="event_id" value="ChNa" />
+					</record>
+				</widget>
+				
+			</container>
+
+
+			<!--<widget class="edit_box" id="last" edit_event="last" alignment="left,centre_y">
+				<translation id="description" translation_id="298760" type="use" value="Last Name[comment: last name of a new untitled user]" />
+				<layout class="max_length_attachment" length="25" />
+				<boolean id="select_on_focus" value="true" />
+				<record id="changed_event">
+					<flags id="event_id" value="ChNa" />
+				</record>
+			</widget>-->
+
+			<!-- password -->
+			<widget class="label" alignment="left,centre_y" font="title" colour="accent" >
+				<translation id="text" translation_id="247149" type="use" value="Password" />
+			</widget>
+
+			<widget class="edit_box" id="pass" hide_text="true" changed_event="pass" height="30">
+				<translation id="description" translation_id="247149" type="use" value="Password" />
+			</widget>
+
+			<widget class="label" alignment="left,centre_y" font="title" colour="accent">
+				<translation id="text" translation_id="292608" type="use" value="Verify[COMMENT: add manager panel; label to re-type your password in order to verify it]" />
+			</widget>
+
+			<widget class="edit_box" id="veri" hide_text="true" changed_event="veri" height="30">
+				<translation id="description" translation_id="292608" type="use" value="Verify[COMMENT: add manager panel; label to re-type your password in order to verify it]" />
+			</widget>
+
+
+		</container>
+
+
+	</container>
+
+</panel>

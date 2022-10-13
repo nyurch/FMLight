@@ -1,0 +1,84 @@
+﻿<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+  <container class="inner_subtle_box" red_replacement="black">
+    <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="5"/>
+    <layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="0"/>
+
+    <widget class="check_box" id="dfcb" width="30" select_event="efts" selected="false" />
+
+    <container>
+      <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset=""/>
+      <layout class="arrange_horizontal_attachment" layout="-1,160" offset="0" gap="0"/>
+      <!--Player Details-->
+      <container>
+        <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+        <container>
+          <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+          <layout class="arrange_horizontal_attachment" layout="70, -1, " offset="0" gap="5" />
+
+          <!-- Profile picture -->
+          <widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x,bottom">
+            <record id="object_property">
+              <list id="get_properties">
+                <!--Facegen data request-->
+                <record get_property="fcgn" />
+                <!--Fake name request-->
+                <record get_property="Pfke" />
+                <record get_property="prpc" set_property="valu" />
+              </list>
+            </record>
+          </widget>
+
+          <!-- Personal Details -->
+          <container>
+            <layout class="arrange_vertical_attachment" alignment="top" offset="8" gap="2" />
+            <layout class="stick_to_sides_attachment" alignment="horizontal" inset="2" apply_to_children="true" />
+
+            <!--Name-->
+            <widget class="person_button" id="prsn" alignment="left" height="20" style="semi_bold" person_is_player="true" info_popup_enabled="true" icon_enabled="true" colour="black">
+              <record id="object_property" get_property="objt" set_property="valu"/>
+            </widget>
+
+            <!-- Age and Position-->
+            <widget class="label" id="agPl" alignment="left,centre_y" height="20" auto_size="horizontal"/>
+
+            <!-- Nationality -->
+            <widget class="club_button" spec="text" id="pare" alignment="left" display_format="1" height="20" icon_enabled="true">
+              <record id="object_property" dont_set_hint="true" get_property="Pclb" />
+            </widget>
+
+          </container>
+        </container>
+      </container>
+      <container>
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="10,8"/>
+        <container class="inner_subtle_box" red_replacement="black" appearance="boxes/custom/darken/rounded/no margin/paper" >
+          <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+          <!--content-->
+          <container>
+            <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="5"/>
+            <layout class="arrange_horizontal_attachment" layout="-1,20" offset="0" gap="0"/>
+
+            <!-- cost and wage-->
+            <container>
+              <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="10"/>
+              <layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0"/>
+
+              <!-- cost-->
+              <widget class="label" id="cstl" alignment="centre" spec="text" size="large" style="semi_bold" height="20"/>
+
+              <!--wage-->
+              <widget class="label" id="wagl" alignment="centre" height="20" />
+            </container>
+
+            <widget class="picture" file="icons/16px/right"  scale_picture="false"  keep_aspect_ratio="true" image_alignment="left,centre_y" />
+          </container>
+
+          <!--overlayed link button-->
+          <widget class="link_button" appearance="" section="S19A"/>
+        </container>
+      </container>
+    </container>
+  </container>
+</panel>

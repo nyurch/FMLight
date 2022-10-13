@@ -1,0 +1,56 @@
+<panel>
+	<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left,extend" horizontal_offset="0" vertical_inset="0"/>
+
+
+	<boolean id="should_force_refresh" value="true"/>
+
+	<container>
+		<attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="left" horizontal_offset="0" vertical_inset="0" >
+			<global id="horizontal_gap" name="ui.split_button_row_gap"/>
+		</attachment_group>
+
+			<widget class="button" id="undo" click_event="UNDO" auto_size="all" appearance="buttons/standard/split/left/button" >
+				<translation id="text" translation_id="230251" type="use" value="Undo"/>
+			</widget>
+
+			<widget class="popup_button" id="rvrd" select_event="rvrd" fixed="true" width="45" height="30" appearance="buttons/standard/split/right/button">
+				<list id="items">
+					<record id="REDO">
+						<translation id="text" translation_id="329043" type="use" value="Redo"/>
+					</record>
+					<record id="revt">
+						<translation id="text" translation_id="344717" type="use" value="Revert"/>
+					</record>
+					<record id="lneg">
+						<translation id="text" translation_id="295211" type="use" value="Last Negotiation[COMMENT: transfer offer screen action menu item]"/>
+					</record>
+				</list>
+			</widget>
+	</container>
+
+	<container>
+		<attachment_group class="button_arrangement_right" />
+
+		<widget class="primary_icon_tick_button" id="set " colour="white" click_event="fini" controller_button="y_button">
+			<translation id="text" translation_id="247977" type="use" value="Confirm Offer"/>
+		</widget>
+
+		<widget class="primary_button" colour="gold" id="nvwo">
+			<translation id="text" translation_id="326415" type="use" value="Negotiate Offer[COMMENT: transfer offer panel; make a transfer offer]"/>
+		</widget>
+
+		<widget class="primary_icon_button" id="sgtm" colour="gold" click_event="StST" default_focus="true">
+			<translation id="text" translation_id="308462" type="use" value="Suggest Terms"/>
+			<translation id="hint" translation_id="357281" type="use" value="Suggest the amended terms for an immediate response[COMMENT: hint text explaining 'Suggest Terms' on transfer negotiation news]"/>
+		</widget>
+
+		<widget class="button" id="stal" click_event="stal" auto_size="all" >
+			<translation id="text" translation_id="256673" type="use" value="Stall Offer[COMMENT: transfer offer screen action menu item]"/>
+		</widget>
+
+		<widget class="icon_button" id="disc" click_event="fini" auto_size="all" controller_button="x_button" >
+			<translation id="text" translation_id="247979" type="use" value="Withdraw Offer"/>
+		</widget>
+	</container>
+
+</panel>

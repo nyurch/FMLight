@@ -1,0 +1,80 @@
+﻿<panel>
+    <attachment_group class="vertical_arrange_autosize_horizontal_centre" vertical_alignment="top" vertical_gap="4" vertical_inset="0"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+
+    <container width="70" height="70">
+        <attachment_group class="horizontal_arrange" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
+
+        <widget class="picture" id="PoBk" file="icons/custom/quick chat/pitch" scale_picture="true" keep_aspect_ratio="true" width="70" height="70" image_alignment="centre">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+        </widget>
+
+        <!-- portrait -->
+        <widget class="object_portrait_picture" width="70" height="70" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+            <record id="object_property">
+                <integer id="get_property" value="Pers"/>
+                <boolean id="dont_set_object" value="true"/>
+                <boolean id="dont_set_hint" value="true"/>
+            </record>
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+        </widget>
+
+        <!-- currently speaking box and icon -->
+        <widget class="picture" id="talk" scale_picture="true" keep_aspect_ratio="true" width="70" height="70" image_alignment="centre">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+        </widget>
+    </container>
+
+    <!-- name -->
+    <widget class="person_button" colour="black" id="perb" size="large" style="bold" auto_size="all" auto_size_maximum_width="180" alignment="left, centre_y" info_popup_enabled="true" person_is_player="true">
+    <layout class="stick_to_sides_attachment" alignment="middle" inset="0"/>
+    </widget>
+
+    <!-- current team -->
+    <widget class="team_button" icon_enabled="true" size="medium" colour="faded text" auto_size="all">
+        <record id="object_property">
+            <integer id="get_property" value="PcMt"/>
+            <boolean id="dont_set_object" value="true"/>
+        </record>
+    </widget>
+
+    <!-- description -->
+    <widget class="text" id="Pdes" size="medium" colour="faded text" auto_size="vertical" width="180" alignment="centre_x, centre_y"/>
+
+
+    <!-- body language -->
+    <widget class="interaction_reaction_label" id="bdlg" show_button_appearance="true" wants_mouse_events="false" appearance="boxes/custom/reactions/neutral/paper" style="bold" height="25" width="180" hidden="true"/>
+
+    <!-- morale change, only shown in summary -->
+    <container id="MorC" class="interaction_person_morale_change_panel" hidden="true"/>
+
+    <container>
+        <attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="5" vertical_inset="0"/>
+        <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+
+        <widget class="horizontal_divider"/>
+
+        <!-- relationship with human -->
+        <widget class="text" font="label" auto_size="all" alignment="left, centre_y">
+            <translation id="text" translation_id="308637" type="use" value="Relationship[COMMENT: Relationship towards the human player]"/>
+        </widget>
+        <widget class="text" id="prel" spec="text" auto_size="all" auto_size_maximum_width="180" alignment="left, centre_y"/>
+
+        <widget class="horizontal_divider"/>
+
+        <!-- personality -->
+        <widget class="text" font="label" auto_size="all" alignment="left, centre_y">
+            <translation id="text" translation_id="247713" type="use" value="Personality"/>
+        </widget>
+        <widget class="text" id="psty" spec="text" auto_size="all" auto_size_maximum_width="180" alignment="left, centre_y"/>
+
+        <widget class="horizontal_divider"/>
+
+        <!-- opinion of human -->
+        <widget class="text" id="optt" font="label" auto_size="all" alignment="left, centre_y"/>
+        <widget class="text" id="opin" spec="text" auto_size="all" auto_size_maximum_width="180" alignment="left, top" multiline="true"/>
+    </container>
+    <container class="spacer" height="10">
+    </container>
+</panel>

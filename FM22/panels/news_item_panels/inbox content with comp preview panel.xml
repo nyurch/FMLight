@@ -1,0 +1,153 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<string id="skin_style" value="subtle box" />
+
+	<!-- content area -->
+	<container class="scrolling_box">
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right,extend"  />
+
+			<!--main body-->
+			<container id="main">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="8" horizontal_alignment="horizontal"  />
+
+				<!--text-->
+				<widget class="inbox_body_text" id="bdtx" />
+
+				<widget class="horizontal_divider" />
+
+				<!--relegated-->
+				<container class="inner_box" appearance="boxes/titled/compact/paper" id="rele" colour="faded text">
+
+					<layout class="fit_children_attachment" alignment="vertical,extend" gap="16" offset="0" />
+					<layout class="arrange_horizontal_attachment" alignment="left" wrap="true" gap="16" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+				</container>
+
+				<!--promoted-->
+				<container class="inner_box" appearance="boxes/titled/compact/paper" id="prom" colour="faded text">
+
+					<layout class="fit_children_attachment" alignment="vertical,extend" gap="16" offset="0" />
+					<layout class="arrange_horizontal_attachment" alignment="left" wrap="true" gap="16" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+				</container>
+			</container>
+
+			<!--bit at the right with picture, top goalscorer, top assister and highest rated player-->
+			<container class="client_object_viewer_xml_panel" id="comp" width="240">
+				<attachment_group class="vertical_arrange_autosize" />
+
+				<!--dynamic image and logo-->
+				<container id="ICdi" height="150">
+						<layout class="arrange_vertical_attachment" alignment="top" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				</container>
+
+				<container class="inner_subtle_box" red_replacement="black">
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="10"/>
+
+						<!--comp link-->
+						<container>
+							<layout class="arrange_horizontal_attachment" alignment="left" offset="0" gap="0" />
+							<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+							<widget class="link_button_title" id="cmpl">
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="objt" />
+											<integer id="set_property" value="objt" />
+											<boolean id="dont_set_hint" value="true" />
+										</record>
+										<record>
+											<integer id="get_property" value="titl" />
+											<integer id="set_property" value="text" />
+											<boolean id="dont_set_hint" value="true" />
+										</record>
+									</list>
+								</record>
+							</widget>
+						</container>
+
+						<container>
+
+							<attachment_group class="vertical_arrange_autosize" vertical_gap="2"/>
+
+							<!--nation-->
+							<widget class="label" id="cnaL" auto_size="vertical" font="label">
+								<record id="object_property">
+									<integer id="get_property" value="cnat" />
+									<boolean id="name" value="true" />
+								</record>
+							</widget>
+							<widget class="nation_button" id="cnaV" auto_size="vertical" font="value">
+								<record id="object_property">
+									<integer id="get_property" value="cnat" />
+								</record>
+							</widget>
+
+						</container>
+
+						<container>
+
+							<attachment_group class="vertical_arrange_autosize" vertical_gap="2"/>
+
+							<!--reputation-->
+							<widget class="label" id="crpL" auto_size="vertical" font="label">
+								<record id="object_property">
+									<integer id="get_property" value="crps" />
+									<boolean id="name" value="true" />
+								</record>
+							</widget>
+							<widget class="stars_range_strip" id="crpV" auto_size="vertical" alignment="left">
+								<record id="object_property">
+									<integer id="get_property" value="crps" />
+								</record>
+							</widget>
+
+						</container>
+
+						<container>
+
+							<attachment_group class="vertical_arrange_autosize" vertical_gap="2"/>
+
+							<!--holders-->
+							<widget class="label" id="ChoL" auto_size="vertical" font="label">
+								<record id="object_property">
+									<integer id="get_property" value="ChoR" />
+									<boolean id="name" value="true" />
+								</record>
+							</widget>
+							<widget class="team_button" id="ChoV" auto_size="vertical" font="value">
+								<record id="object_property">
+									<integer id="get_property" value="ChoR" />
+								</record>
+							</widget>
+
+						</container>
+
+						<container>
+
+							<attachment_group class="vertical_arrange_autosize" vertical_gap="2"/>
+
+							<!--start/end dates-->
+							<widget class="label" auto_size="vertical" font="label">
+								<translation id="text" translation_id="420673" type="use" value="Start/Closing Dates[COMMENT: FR13752 - label for text showing the start and end dates of the season]" />
+							</widget>
+							<widget class="text" id="scdV" auto_size="vertical" font="value">
+							</widget>
+
+						</container>
+
+					</container>
+
+				</container>
+			</container>
+
+	</container>
+
+</panel>

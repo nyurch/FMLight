@@ -1,0 +1,17 @@
+<properties version="1.0">
+
+<!-- list all the widgets to override along with their properties and override values -->        
+<list id="skin_style">
+
+    <record>
+        <string id="class_name" value="label" />
+        <colour id="colour" name="inbox_text" />
+    </record>
+	<record>
+		<string id="class_name" value="person_button" />
+		<colour id="colour" name="inbox_text" />
+		<boolean id="enforce_style" value="true" />
+    </record>
+</list>
+
+</properties>

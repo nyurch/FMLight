@@ -1,0 +1,66 @@
+<panel id="dlog" width="400" height="160">
+<!-- use to recolour edit_box text -->
+<string id="skin_style" value="edit_box" />
+
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="standard_popup_box">
+
+		<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<container class="manager_profile_panel" id="mPpa" file="none" default_focus="true">
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="5" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="10" />
+
+			<!-- 3 other favorite teams FFS -->
+			<widget class="label" font="title" alignment="left" colour="accent">
+				<translation id="text" translation_id="361248" type="use" value="Other Favourite Teams[COMMENT: add manager; selection for user to choose multiple favourite teams]" />
+			</widget>
+			<container height="30">
+				<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" >
+					<global id="horizontal_gap" name="ui.split_button_row_gap"/>
+				</attachment_group>
+
+				<widget class="filter_edit_box" id="fav1" appearance="edit boxes/custom/selection/box" forward_selection_event="true">
+					<flags id="changed_event" value="tSel" />
+					<flags id="select_on_focus" value="true" />
+					<boolean id="validate_string" value="true" />
+				</widget>
+
+				<widget class="icon_button" click_event="f1pu" id="f1pu" appearance="buttons/standard/split/right/button" icon="icons/16px/down" auto_size="horizontal"/>
+			</container>
+			
+			<container height="30">
+				<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" >
+					<global id="horizontal_gap" name="ui.split_button_row_gap"/>
+				</attachment_group>
+
+				<widget class="filter_edit_box" id="fav2" appearance="edit boxes/custom/selection/box" forward_selection_event="true">
+					<flags id="changed_event" value="tSel" />
+					<flags id="select_on_focus" value="true" />
+					<boolean id="validate_string" value="true" />
+				</widget>
+
+				<widget class="icon_button" click_event="f2pu" id="f2pu" appearance="buttons/standard/split/right/button" icon="icons/16px/down" auto_size="horizontal"/>
+			</container>
+			
+			<container height="30">
+				<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" >
+					<global id="horizontal_gap" name="ui.split_button_row_gap"/>
+				</attachment_group>
+
+				<widget class="filter_edit_box" id="fav3" appearance="edit boxes/custom/selection/box" forward_selection_event="true">
+					<flags id="changed_event" value="tSel" />
+					<flags id="select_on_focus" value="true" />
+					<boolean id="validate_string" value="true" />
+				</widget>
+
+				<widget class="icon_button" click_event="f3pu" id="f3pu" appearance="buttons/standard/split/right/button" icon="icons/16px/down" auto_size="horizontal"/>
+			</container>
+
+		</container>
+
+	</container>
+
+</panel>

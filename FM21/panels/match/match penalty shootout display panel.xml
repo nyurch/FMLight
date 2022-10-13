@@ -1,0 +1,283 @@
+﻿<panel height="110" width="465">
+	<list id="draw_order">
+		<record entity_layout_id="at00"/>
+		<record entity_layout_id="at07"/>
+		<record entity_layout_id="at02"/>
+		<record entity_layout_id="at06"/>
+		<record entity_layout_id="at0N"/>
+		<record entity_layout_id="at0O"/>
+		<record entity_layout_id="at01"/>
+		<record entity_layout_id="at05"/>
+		<record entity_layout_id="at0@"/>
+		<record entity_layout_id="at0A"/>
+		<record entity_layout_id="at08"/>
+		<record entity_layout_id="at03"/>
+		<record entity_layout_id="at04"/>
+		<record entity_layout_id="at0;"/>
+		<record entity_layout_id="at0&lt;"/>
+		<record entity_layout_id="at0="/>
+		<record entity_layout_id="at0&gt;"/>
+		<record entity_layout_id="at0?"/>
+		<record entity_layout_id="at0C"/>
+		<record entity_layout_id="at0:"/>
+		<record entity_layout_id="at0H"/>
+		<record entity_layout_id="at0I"/>
+		<record entity_layout_id="at0J"/>
+		<record entity_layout_id="at0K"/>
+		<record entity_layout_id="at0L"/>
+		<record entity_layout_id="at0M"/>
+		<record entity_layout_id="at09"/>
+		<record entity_layout_id="at0B"/>
+		<record entity_layout_id="at0D"/>
+		<record entity_layout_id="at0E"/>
+		<record entity_layout_id="at0F"/>
+		<record entity_layout_id="at0G"/>
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true"/>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true"/>
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+	</widget>
+	<container entity_layout_id="at00" id="at00" height="110">
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true"/>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true"/>
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+		</widget>
+		<container entity_layout_id="at07" id="at07" width="412" height="110">
+			<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="26"/>
+			<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+			</widget>
+			<container class="main_box_no_margin" entity_layout_id="at01" id="at01" width="373" height="110">
+				<string id="background_colour" value="text"/>
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+				</widget>
+				<container class="main_box_no_margin" entity_layout_id="at03" id="at03" height="38" appearance="boxes/custom/match/tv captions/si tv/caption/footer/paper" red_replacement="bg">
+					<string id="background_colour" value="bg darker"/>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+					<widget class="spacer" id="main">
+						<boolean id="exclude_from_find" value="true"/>
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+					</widget>
+					<widget class="spacer" id="fmin" embed_in_frame="true">
+						<boolean id="exclude_from_find" value="true"/>
+						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+					</widget>
+					<widget class="text" entity_layout_id="at04" id="at04" auto_size="all" needs_width="true" needs_height="true">
+						<translation id="text" value="Penalties" translation_id="230022" type="use"/>
+						<string id="font" value="title"/>
+						<string id="colour" value="fg"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="left" set_side="left" move_side="true" target="main"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="text" entity_layout_id="at0;" id="amT1" alignment="centre_x,centre_y" width="20" height="20">
+						<integer id="value" value="1"/>
+						<string id="font" value="title"/>
+						<string id="colour" value="red 900"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="73" get_side="right" set_side="left" move_side="true" target="at04"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="text" entity_layout_id="at0&lt;" id="amT2" alignment="centre_x,centre_y" width="20" height="20">
+						<integer id="value" value="1"/>
+						<string id="font" value="title"/>
+						<string id="colour" value="red 900"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="21" get_side="right" set_side="left" move_side="true" target="at0;"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="text" entity_layout_id="at0=" id="amT3" alignment="centre_x,centre_y" width="20" height="20">
+						<integer id="value" value="1"/>
+						<string id="font" value="title"/>
+						<string id="colour" value="red 900"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="right" set_side="left" move_side="true" target="at0&lt;"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="text" entity_layout_id="at0&gt;" id="amT4" alignment="centre_x,centre_y" width="20" height="20">
+						<integer id="value" value="1"/>
+						<string id="font" value="title"/>
+						<string id="colour" value="red 900"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="right" set_side="left" move_side="true" target="at0="/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="text" entity_layout_id="at0?" id="amT5" alignment="centre_x,centre_y" width="20" height="20">
+						<integer id="value" value="1"/>
+						<string id="font" value="title"/>
+						<string id="colour" value="red 900"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="right" set_side="left" move_side="true" target="at0&gt;"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+				</container>
+				<container entity_layout_id="at0C" id="at0C" height="35">
+					<layout class="stick_to_object_attachment" id="align_top" offset="2" get_side="bottom" set_side="top" move_side="true" target="at03"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+					<widget class="spacer" id="main">
+						<boolean id="exclude_from_find" value="true"/>
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+					</widget>
+					<widget class="spacer" id="fmin" embed_in_frame="true">
+						<boolean id="exclude_from_find" value="true"/>
+						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+					</widget>
+					<widget class="team_button" entity_layout_id="at09" id="hmTb" width="130" height="30" mode="1">
+						<string id="style" value="bold"/>
+						<string id="colour" value="bg"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="5" get_side="left" set_side="left" move_side="true" target="main"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="picture" entity_layout_id="at0B" file="icons/custom/penalty shootout/scored" id="hmA1" width="32" height="32">
+						<string id="image_alignment" value="centre"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="25" get_side="right" set_side="left" move_side="true" target="at09"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="picture" entity_layout_id="at0D" file="icons/custom/penalty shootout/scored" id="hmA2" width="32" height="32">
+						<string id="image_alignment" value="centre"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="8" get_side="right" set_side="left" move_side="true" target="at0B"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="picture" entity_layout_id="at0E" file="icons/custom/penalty shootout/scored" id="hmA3" width="32" height="32">
+						<string id="image_alignment" value="centre"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="8" get_side="right" set_side="left" move_side="true" target="at0D"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="picture" entity_layout_id="at0F" file="icons/custom/penalty shootout/scored" id="hmA4" width="32" height="32">
+						<string id="image_alignment" value="centre"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="8" get_side="right" set_side="left" move_side="true" target="at0E"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="picture" entity_layout_id="at0G" file="icons/custom/penalty shootout/scored" id="hmA5" width="32" height="32">
+						<string id="image_alignment" value="centre"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="8" get_side="right" set_side="left" move_side="true" target="at0F"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+				</container>
+				<container entity_layout_id="at0:" id="at0:" width="343">
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" target="at0C"/>
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+					<widget class="spacer" id="main">
+						<boolean id="exclude_from_find" value="true"/>
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+					</widget>
+					<widget class="spacer" id="fmin" embed_in_frame="true">
+						<boolean id="exclude_from_find" value="true"/>
+						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+					</widget>
+					<widget class="team_button" entity_layout_id="at0H" id="awTb" width="130" height="30" mode="1">
+						<string id="style" value="bold"/>
+						<string id="colour" value="bg"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="5" get_side="left" set_side="left" move_side="true" target="main"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="picture" entity_layout_id="at0I" file="icons/custom/penalty shootout/scored" id="awA1" width="32" height="32">
+						<string id="image_alignment" value="centre"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="25" get_side="right" set_side="left" move_side="true" target="at0H"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="picture" entity_layout_id="at0J" file="icons/custom/penalty shootout/scored" id="awA2" width="32" height="32">
+						<string id="image_alignment" value="centre"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="8" get_side="right" set_side="left" move_side="true" target="at0I"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="picture" entity_layout_id="at0K" file="icons/custom/penalty shootout/scored" id="awA3" width="32" height="32">
+						<string id="image_alignment" value="centre"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="8" get_side="right" set_side="left" move_side="true" target="at0J"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="picture" entity_layout_id="at0L" file="icons/custom/penalty shootout/scored" id="awA4" width="32" height="32">
+						<string id="image_alignment" value="centre"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="8" get_side="right" set_side="left" move_side="true" target="at0K"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+					<widget class="picture" entity_layout_id="at0M" file="icons/custom/penalty shootout/scored" id="awA5" width="32" height="32">
+						<string id="image_alignment" value="centre"/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="8" get_side="right" set_side="left" move_side="true" target="at0L"/>
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+					</widget>
+				</container>
+			</container>
+			<container class="main_box_no_margin" entity_layout_id="at05" id="at05" width="40" height="72">
+				<string id="background_colour" value="bg lighter"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" offset="0" get_side="bottom" set_side="bottom" move_side="true" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" offset="-12" get_side="right" set_side="left" move_side="true" target="at01"/>
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+				</widget>
+				<widget class="text" entity_layout_id="at0@" id="hmtT" alignment="centre_x,centre_y" width="20" height="20">
+					<integer id="value" value="1"/>
+					<integer id="size" value="12"/>
+					<string id="font" value="title"/>
+					<string id="colour" value="black"/>
+					<layout class="stick_to_object_attachment" id="align_top" offset="7" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0"/>
+				</widget>
+				<widget class="text" entity_layout_id="at0A" id="awtT" alignment="centre_x,centre_y" width="20" height="20">
+					<integer id="value" value="1"/>
+					<integer id="size" value="12"/>
+					<string id="font" value="title"/>
+					<string id="colour" value="black"/>
+					<layout class="stick_to_object_attachment" id="align_top" offset="15" get_side="bottom" set_side="top" move_side="true" target="at0@"/>
+					<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0"/>
+				</widget>
+			</container>
+			<widget class="horizontal_divider" entity_layout_id="at08" id="at08" height="1">
+				<string id="image_alignment" value="centre_y"/>
+				<string id="red_replacement" value="black"/>
+				<layout class="stick_to_object_attachment" id="align_top" offset="73" get_side="top" set_side="top" move_side="true" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+			</widget>
+		</container>
+		<container class="main_box_no_margin" entity_layout_id="at02" id="cmpH" width="55" height="38" appearance="boxes/custom/match/tv captions/si tv/caption/footer/paper" red_replacement="primary">
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_right" offset="12" get_side="left" set_side="right" move_side="true" target="at07"/>
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+			</widget>
+			<container class="object_portrait_picture" entity_layout_id="at06" id="cmpP" width="26" height="26">
+				<string id="image_alignment" value="centre"/>
+				<string id="scale_picture" value="true"/>
+				<string id="keep_aspect_ratio" value="true"/>
+				<string id="clickable" value="false"/>
+				<string id="no_object_picture" value="pictures/comp/none/logo/league"/>
+				<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0"/>
+				<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0"/>
+			</container>
+		</container>
+	</container>
+</panel>

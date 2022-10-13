@@ -1,0 +1,54 @@
+<panel height="200">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<string id="comp_win_background_appearance" value="boxes/custom/comp win/trophy/paper"/>
+	<string id="other_background_appearance" value="boxes/custom/comp loss/trophy/paper"/>
+
+	<container id="DtBx" class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="10" vertical_gap="30" horizontal_alignment="horizontal" horizontal_inset="0" />
+		
+		<container id="PvMt" height="60">
+			<layout class="arrange_vertical_attachment" alignment="top,extend" gap="0" offset="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+			<!--pivotal match-->
+			<widget class="label" font="title" colour="gold" alignment="centre" auto_size="vertical">
+				<translation id="text" translation_id="437033" type="use" value="Pivotal Match[COMMENT: FR 13665; comp win news item; section title for important match]"/>
+			</widget>
+
+			<!--pivotal match score-->
+			<container height="30">
+				<layout class="arrange_horizontal_attachment" layout="-2, -1, -2" gap="10"/>
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+				<widget class="team_button" id="hmnm" size="medium" style="bold" colour="bg" alignment="centre" format="[%team#1-short]" icon_alignment="top"/>
+				<widget class="fixture_button" id="scrl" size="14" style="bold" colour="gold" alignment="centre, auto_fit" format="[%scoreline#1-home_away]"/>
+				<widget class="team_button" id="awnm" size="medium" style="bold" colour="bg" alignment="centre" format="[%team#1-short]" icon_alignment="top"/>
+			</container>
+		</container>
+
+		<container id="kypC" height="75">
+			<layout class="arrange_vertical_attachment" layout="20, 25, 20" gap="0" offset="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+			<!--key player-->
+			<widget class="label" auto_size="none" font="title" colour="gold" alignment="centre">
+				<translation id="text" translation_id="227396" type="use" value="Key Player"/>
+			</widget>
+
+			<container height="25">
+				<layout class="arrange_vertical_attachment" alignment="top" gap="0"/>
+				<layout class="centre_in_parent_attachment" alignment="horizontal" apply_to_children="true"/>
+
+				<widget class="person_button" id="kypl" person_is_player="true" auto_size="all" alignment="centre" style="bold" colour="white">
+					<translation id="text" translation_id="227396" type="use" value="Key Player"/>
+				</widget>
+			</container>
+
+			<!--key player's average rating-->
+			<widget class="label" id="avrt" auto_size="none" colour="white" alignment="centre">
+			</widget>
+		</container>
+	</container>
+
+</panel>

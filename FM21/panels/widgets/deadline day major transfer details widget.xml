@@ -1,0 +1,167 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="inner_subtle_box">
+
+		<layout class="arrange_vertical_attachment" layout="25,18,70,4,4,-1,38" offset="-4" gap="0" />
+
+		<widget class="person_button" colour="black" Pipl="true" ipen="true" auto_size="horizontal" style="semi_bold">
+			<layout class="centre_in_parent_attachment" alignment="horizontal" />
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="Pers" />
+						<integer id="set_property" value="valu" />
+					</record>
+				</list>
+			</record>
+		</widget>
+
+		<container class="client_object_viewer_xml_panel">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="Pers" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</list>
+			</record>
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<widget class="tactical_role_label" auto_size="horizontal" alignment="centre" size="small" colour="faded text" show_position_if_unknown_role="true">
+				<layout class="centre_in_parent_attachment" alignment="horizontal" />
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="Pbpr" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+		</container>
+
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="-2,-3,-2" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="4" />
+				<widget class="object_portrait_picture" scale_picture="true" image_alignment="right,centre_y">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="selt" />
+								<integer id="set_property" value="valu" />
+							</record>
+							<record>
+								<integer id="get_property" value="hiST" />
+								<integer id="set_property" value="hidn" />
+							</record>
+						</list>
+					</record>
+				</widget>
+			</container>
+
+			<container class="client_object_viewer_xml_panel">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="Pers" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</list>
+				</record>
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+				<widget class="picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x,top">
+
+					<record id="object_property">
+						<list id="get_properties">
+							<!--Facegen data request-->
+							<record get_property="fcgn" />
+							<!--Fake name request-->
+							<record get_property="Pfke" />
+							<record get_property="prpc" set_property="valu" />
+						</list>
+					</record>
+				</widget>
+			</container>
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="4" />
+
+				<widget class="object_portrait_picture" scale_picture="true" image_alignment="left,centre_y">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="buyt" />
+								<integer id="set_property" value="valu" />
+							</record>
+							<record>
+								<integer id="get_property" value="hiBT" />
+								<integer id="set_property" value="hidn" />
+							</record>
+						</list>
+					</record>
+				</widget>
+			</container>
+
+		</container>
+
+		<widget class="spacer" />
+
+		<widget class="horizontal_divider">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+		</widget>
+
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+			<widget class="game_formatted_label" auto_size="vertical" size="small" multiline="true" alignment="centre" auto_size_maximum_height="38">
+				<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+				<list id="format">
+					<record value="0">
+						<translation id="format" translation_id="412469" type="use" value="[%team#2-short] to [%team#3-short][COMMENT: FR 15125]" />
+					</record>
+					<record value="1">
+						<translation id="format" translation_id="412470" type="use" value="Free Transfer to [%team#3][COMMENT: FR 15125]" />
+					</record>
+					<record value="2">
+						<translation id="format" translation_id="232075" type="use" value="Released on free transfer" />
+					</record>
+				</list>
+				<record id="object_property">
+					<list id="get_properties">
+						<record get_property="ttyp" set_property="var1" dont_set_object="true" />
+						<record get_property="selt" set_property="var2" dont_set_object="true" />
+						<record get_property="buyt" set_property="var3" dont_set_object="true" />
+
+					</list>
+				</record>
+			</widget>
+		</container>
+
+		<container class="inner_subtle_box">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="-6" />
+
+			<widget class="label" auto_size="all" size="xxlarge" >
+				<layout class="centre_in_parent_attachment" alignment="all" />
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="fee " />
+							<integer id="set_property" value="text" />
+						</record>
+					</list>
+				</record>
+			</widget>
+
+		</container>
+
+	</container>
+
+</panel>

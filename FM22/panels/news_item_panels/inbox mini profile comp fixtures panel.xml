@@ -1,0 +1,127 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<list id="properties_to_add_to_context">
+		<integer value="Ttea"/>
+		<integer value="Topp"/>
+		<integer value="date"/>
+	</list>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<container class="inner_subtle_box" red_replacement="black">
+		<translation id="title" translation_id="395516" type="use" value="Upcoming Fixtures[COMMENT: FR 9550 - inbox; title for section showing upcoming fixtures for the competition]"/>
+
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<container height="100">
+			<layout class="arrange_horizontal_attachment" layout="58, -1" offset="0" gap="15"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+			<!--logo-->
+			<container>
+				<layout class="arrange_horizontal_attachment" alignment="left" offset="10"/>
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+				<widget class="object_portrait_picture" id="tmbd" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="48">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="objt"/>
+								<integer id="set_property" value="objt"/>
+							</record>
+						</list>
+					</record>
+				</widget>
+			</container>
+
+			<!--name, dates and holders-->
+			<container>
+				<layout class="arrange_vertical_attachment" layout="20, 15, 15, 15" offset="8" gap="2"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+				<!--name-->
+				<widget class="comp_button" id="comp" icon_enabled="false" size="large" style="semi_bold">
+					<record id="object_property">
+						<integer id="get_property" value="objt"/>
+					</record>
+				</widget>
+
+				<!--dates-->
+				<container>
+					<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0"/>
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+					<widget class="date_cell" id="Cstd" auto_size="horizontal" colour="faded text">
+						<record id="object_property">
+							<integer id="get_property" value="Cstd"/>
+						</record>
+					</widget>
+
+					<widget class="text" auto_size="horizontal" colour="faded text">
+						<string id="text" value="-"/>
+					</widget>
+
+					<widget class="date_cell" id="Cend" auto_size="horizontal" alignment="left,centre_y" colour="faded text">
+						<record id="object_property">
+							<integer id="get_property" value="Cend"/>
+						</record>
+					</widget>
+				</container>
+
+				<!--holders-->
+				<container>
+					<layout class="arrange_horizontal_attachment" layout="-1, -1" gap="0" offset="0"/>
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+					<widget class="text" alignment="left,centre_y" multiline="false" auto_size="none" colour="faded text">
+						<translation id="text" translation_id="385506" type="use" value="Holders[COMMENT: FR 9550 - holders, i.e. last winners of a competition]"/>
+					</widget>
+
+					<widget class="team_button" id="ChoR" icon_enabled="false" style="semi_bold" alignment="right,centre_y" auto_size="none" colour="faded text">
+						<record id="object_property">
+							<integer id="get_property" value="ChoR"/>
+						</record>
+					</widget>
+				</container>
+
+				<!--hosts-->
+				<container>
+					<layout class="arrange_horizontal_attachment" layout="-1, -1" gap="0" offset="0"/>
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+					<widget class="text" alignment="left,centre_y" multiline="false" auto_size="horizontal" colour="faded text">
+						<translation id="text" translation_id="323056" type="use" value="Hosts[COMMENT: Hosts of a competition hosted in a county like world cup]"/>
+					</widget>
+
+					<widget class="db_record_list_text" id="ChnR" alignment="right,centre_y" multiline="false" style="semi_bold" auto_size="horizontal" colour="faded text">
+						<record id="object_property">
+							<integer id="get_property" value="ChnR"/>
+						</record>
+					</widget>
+				</container>
+			</container>
+		</container>
+
+		<widget class="client_object_list_table" id="pltb" database_table_type="53" fixed_size_rows="false" auto_size_rows="true" auto_size="vertical" mode="fill_rows, stripe_rows, printable, keyboard, hide_headings, dont_ask_for_focus" column_mode="">
+			<!-- default sort -->
+			<list id="default_sort_column">
+				<integer value="fxdt"/>
+			</list>
+
+			<record id="object_property">
+				<integer id="get_property" value="CxFx"/>
+				<integer id="set_property" value="objt"/>
+			</record>
+
+			<!--list of all available views-->
+			<record id="viewed_property_ids">
+				<record id="fopt" enable_icon_for_nations="true" alternate_format="[%team#1-six_letter]"/>
+				<record id="FxNm"/>
+				<record id="FxVn" width="25"/>
+				<record id="fxdt" width="85"/>
+				<record id="FXTm" width="45"/>
+			</record>
+		</widget>
+	</container>
+
+</panel>

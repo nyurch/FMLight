@@ -1,0 +1,147 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	
+	<container class="inner_subtle_box" navigation_container="true">
+		<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_offset="0" vertical_inset="0"/>
+		
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_offset="0" horizontal_gap="0" vertical_inset="0"/>
+
+			<widget class="object_portrait_picture" width="50" image_alignment="centre" scale_picture="true">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="objt" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</list>
+				</record>
+			</widget>
+
+			<container >
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="2" horizontal_inset="0"/>
+
+				<widget class="person_button" colour="black" style="semi_bold"  auto_size="all" >
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="objt" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</list>
+					</record>
+				</widget>
+
+				<widget class="dob_label" alignment="left,centre_y" display_format="2" auto_size="all" colour="faded text">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="Pdob" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</list>
+					</record>
+				</widget>
+
+
+				<widget class="club_button" alignment="left,centre_y" auto_size="all" colour="faded text">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="Pclb" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</list>
+					</record>
+				</widget>
+
+			</container>
+
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_offset="0"  vertical_inset="0"/>
+
+			<container>
+
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="2" horizontal_inset="0"/>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+					<widget class="label" alignment="left,centre_y" colour="faded text" font="title" auto_size="vertical" size="small">
+						<translation id="text" translation_id="227806" type="use" value="Value" />
+					</widget>
+					
+					<widget class="value_label" alignment="left,centre_y" style="bold" size="10" auto_size="vertical">
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="Pdva" />
+									<integer id="set_property" value="valu" />
+								</record>
+							</list>
+						</record>
+					</widget>
+
+				
+
+				</container>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+					<widget class="label" alignment="left,centre_y" colour="faded text" auto_size="vertical" font="title" size="small">
+						<translation id="text" translation_id="227799" type="use" value="Wage" />
+					</widget>
+					
+					<widget class="wage_label" alignment="left,centre_y" style="bold" size="10" format="2" auto_size="vertical">
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="Pcww" />
+									<integer id="set_property" value="valu" />
+								</record>
+							</list>
+						</record>
+					</widget>
+
+				
+				</container>
+
+			</container>
+
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<widget class="label" alignment="left,centre_y" colour="faded text" auto_size="vertical" font="title" size="small">
+
+					<translation id="text" translation_id="227785" type="use" value="Contract Expires" />
+				</widget>
+
+				<widget class="spacer" width="4" />
+
+				<widget class="date_cell" alignment="left,centre_y" auto_size="all" style="bold">
+
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="Pcex" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</list>
+					</record>
+				</widget>
+
+
+
+			</container>
+
+		</container>
+		
+	</container>
+	
+	
+
+
+</panel>

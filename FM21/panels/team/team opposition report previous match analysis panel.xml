@@ -1,0 +1,218 @@
+﻿<panel save_session_state="true">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="main_box">
+		<layout class="arrange_vertical_attachment" layout="120, -1" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<container embed_in_frame="true">
+			<layout class="centre_in_parent_attachment" alignment="vertical" offset="1" apply_to_children="true" embed_in_frame="true" />
+			<layout class="arrange_horizontal_attachment" alignment="left,extend" embed_in_frame="true" offset="4" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal,top" embed_in_frame="true" inset="6" />
+			<layout class="fit_children_attachment" alignment="vertical" offset="1" embed_in_frame="true" />
+
+			<widget class="label" alignment="left,centre_y" font="title" size="8" auto_size="all" embed_in_frame="true">
+				<translation id="text" translation_id="257237" type="use" value="Match Analysis[COMMENT: formerly known as TV Info]" />
+			</widget>
+
+			<widget class="embedded_popup_button" id="pfdd" auto_size="all" alignment="left,centre_y" select_event="slpf" fixed="false" embed_in_frame="true" />
+			<container class="client_object_viewer_xml_panel" id="opmi" embed_in_frame="true">
+				<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" apply_to_children="true" embed_in_frame="true" />
+				<layout class="arrange_horizontal_attachment" alignment="right,extend" embed_in_frame="true" />
+				<layout class="fit_children_attachment" alignment="vertical" offset="0" embed_in_frame="true" />
+
+				<widget class="fixture_name_text" auto_size="vertical" alignment="right,centre_y" embed_in_frame="true">
+					<record id="object_property">
+						<integer id="get_property" value="FxNm" />
+					</record>
+				</widget>
+
+				<widget class="relative_date_label" limit_to_recent_relevant_dates="true" alignment="left,centre_y" auto_size="all" colour="faded text" embed_in_frame="true">
+					<record id="object_property">
+						<integer id="get_property" value="fdRE" />
+					</record>
+				</widget>
+
+				<widget class="weather_indicator_panel" alignment="left,centre_y" width="60" file="match/weather indicator with temp" embed_in_frame="true">
+					<record id="object_property">
+						<integer id="get_property" value="FxWe" />
+					</record>
+				</widget>
+
+			</container>
+
+		</container>
+
+
+
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="-3, -1" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<container class="client_object_viewer_xml_panel" file="team/team opposition report previous result score panel" id="opmr" />
+
+			<container class="team_opposition_report_previous_result_stats_panel" id="opms" />
+		</container>
+
+		<container class="main_box" id="pmdc" red_replacement="pitch_box_background" navigation_container="true">
+			<layout class="arrange_vertical_attachment" layout="30, -1" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+			<container>
+				<layout class="arrange_horizontal_attachment" alignment="left,extend" gap="0" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<widget class="label" alignment="left,centre_y" font="title" size="8" auto_size="horizontal">
+					<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+          <translation id="text" translation_id="257237" type="use" value="Match Analysis[COMMENT: formerly known as TV Info]" />
+        </widget>
+
+				<container id="anbn">
+					<layout class="arrange_horizontal_attachment" alignment="right" offset="0" gap="-9" />
+					<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+					<widget class="radio_toggle_switch_left" auto_size="horizontal" select_event="shln" id="lnRb" selected="true">
+						<translation id="text" translation_id="247239" type="use" value="Line Up" />
+					</widget>
+
+					<widget class="radio_toggle_switch_middle" auto_size="horizontal" id="hmRb" select_event="shhm">
+						<translation id="text" translation_id="420701" type="use" value="Positional Heat Map[COMMENT: post match analysis label for a heat map displaying coverage by player position]" />
+					</widget>
+
+					<widget class="radio_toggle_switch_middle" auto_size="horizontal" id="pnRb" select_event="shpn">
+						<translation id="text" translation_id="420702" type="use" value="Passing Network[COMMENT: post match analysis panel, displays the various combinations of passes by a team]" />
+					</widget>
+
+					<widget class="radio_toggle_switch_right" auto_size="horizontal" id="kpRb" select_event="shkp">
+						<translation id="text" translation_id="515097" type="use" value="Key Passes/Mistakes L2G[COMMENT: AREA: post match stats analysis; NOTE: displays those who made key passes and/or mistakes]" />
+					</widget>
+
+				</container>
+			</container>
+
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-3, -2" offset="0" gap="8" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="4" />
+
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+					<widget class="pitch_with_tactics" id="plin" pitch_alignment="centre,can_scale" vertical="true" player_icon_file="tactics/tactics icon info panel overview role suitability" icon_flags="show_name,use_player_kits_front,show_team_name,show_selection_image,show_name_highlight,show_extra_details" pitch_vertical_padding="30" pitch_draw_grass="true" />
+
+					<widget class="preselected_match_chalkboard_panel" vertical="true" force_left_to_right_events="true" average_position_filter="1" hidden="true" id="hMnt" enable_popup="false">
+						<list id="chalkboard_events_to_display">
+						<!-- Heatmap -->
+								<integer value="42" />
+								<!--Average position-->
+								<integer value="62" />
+						</list>
+					</widget>
+
+					<widget class="preselected_match_chalkboard_panel" vertical="true" force_left_to_right_events="true" hidden="true" id="pChk" enable_popup="false">
+						<list id="chalkboard_events_to_display">
+							<!-- Pass Combinations -->
+								<integer value="63" />
+						</list>
+					</widget>
+
+					<widget class="preselected_match_chalkboard_panel" vertical="true" hidden="true" id="kPms">
+						<list id="chalkboard_events_to_display">
+								<!--Key Pass -->
+								<integer value="43" /> 
+								<!--Mistake leading to goal-->
+								<integer value="49" />
+								<!--Key Tackle -->
+								<integer value="45" />
+								<!--Key Header -->
+								<integer value="47" />
+						</list>
+					</widget>
+
+				</container>
+
+				<container class="inner_subtle_box">
+					<layout class="arrange_vertical_attachment" alignment="fill" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+					<container id="facn">
+						<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+						<widget class="label" font="label" auto_size="vertical">
+							<translation id="text" translation_id="420657" type="use" value="Focus of Attacks[COMMENT: match action zones label, indicates the main focuses of team attacking moves]" />
+						</widget>
+
+						<widget class="focus_of_attacks_widget" id="foca" />
+					</container>
+
+					<container id="plcn">
+						<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="2" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+						<widget class="horizontal_divider" />
+
+						<widget class="label" font="label" auto_size="vertical">
+							<translation id="text" translation_id="420704" type="use" value="Length of Passes[COMMENT: match analysis, label referencing how long passes were]" />
+						</widget>
+
+						<widget class="pie_chart_with_guide" id="lpie" mode="1" file="widgets/pass combo pie chart" text_guide_file="generic/guide item with small circle" />
+					</container>
+
+					<container id="pdcn">
+						<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="2" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+						<widget class="horizontal_divider" />
+
+						<widget class="label" font="label" auto_size="vertical">
+							<translation id="text" translation_id="420705" type="use" value="Direction of Passes[COMMENT: match analysis, label referencing the direction of passes]" />
+						</widget>
+
+						<widget class="pie_chart_with_guide" id="dpie" mode="1" file="widgets/pass combo pie chart" text_guide_file="generic/guide item with small circle" />
+					</container>
+
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="2" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+						<widget class="horizontal_divider" />
+
+						<widget class="label" font="label" auto_size="vertical">
+							<translation id="text" translation_id="363738" type="use" value="Substitutions[COMMENT: match plan option; substitution rules]" />
+						</widget>
+
+						<container class="scrolling_box">
+							<container>
+								<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="4" do_not_size="true" />
+								<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="4" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+								<container>
+									<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+									<layout class="arrange_horizontal_attachment" alignment="left,extend" gap="2" offset="0" />
+									<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+
+									<widget class="picture" file="icons/16px/sub on" auto_size="vertical" width="16" image_alignment="centre" scale_picture="true" />
+									<widget class="text" id="subn" auto_size="vertical" alignment="left,centre_y" size="small" />
+								</container>
+
+								<container>
+									<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+									<layout class="arrange_horizontal_attachment" alignment="left,extend" gap="2" offset="0" />
+									<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+
+									<widget class="picture" file="icons/16px/sub off" auto_size="vertical" width="16" image_alignment="centre" scale_picture="true" />
+									<widget class="text" id="subf" auto_size="vertical" alignment="left,centre_y" size="small" />
+								</container>
+							</container>
+						</container>
+					</container>
+
+				</container>
+			</container>
+		</container>
+
+	</container>
+
+</panel>

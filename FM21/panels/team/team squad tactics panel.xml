@@ -1,0 +1,296 @@
+<panel>
+    <boolean id="save_session_state" value="true" />
+    <boolean id="save_default_state" value="true" />
+    <flags id="stxi" value="tables/standard/row/normal/row" />
+    <flags id="subs" value="tables/custom/squad/substitute/row" />
+    <flags id="soff" value="tables/custom/cards/red/row" />
+    <flags id="nisq" value="tables/custom/squad/outside squad/row" />
+    <flags id="hida" value="tables/custom/squad/highlight/row" />
+    <flags id="unAP" value="tables/custom/squad/unavailable/row" />
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+    <container class="inner_box" id="plti" force_title_borders="true">
+        <layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0" />
+        <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0,4,0,0" />
+        <container embed_in_frame="true">
+            <attachment_group class="title_embedded_panel_left" />
+            <widget class="view_menu_popup" id="plvi" auto_tick_exclusive="true" fixed="false" />
+        </container>
+        <container height="30" embed_in_frame="true">
+            <attachment_group class="title_embedded_panel_right" horizontal_offset="0">
+                <global id="horizontal_gap" name="ui.button_row_gap" />
+            </attachment_group>
+            <widget class="embedded_action_button" id="slAd" auto_size="horizontal" embed_in_frame="true" click_event="sAVC">
+                <translation id="text" translation_id="492040" type="use" value="Selection Advice[COMMENT: AREA: A Button in the tactics panel; SUB-AREA: Opening a dialog suggesting the manager a team selection; FR-BN: 27347; ; CHARLIMIT: None;]" />
+            </widget>
+            <container embed_in_frame="true" height="30">
+                <layout class="arrange_horizontal_attachment" alignment="left" embed_in_frame="true" offset="0">
+                    <global id="gap" name="ui.split_button_row_gap" />
+                </layout>
+                <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" embed_in_frame="true" />
+                <layout class="fit_children_attachment" alignment="horizontal,fill" embed_in_frame="true" offset="0">
+                    <global id="gap" name="ui.split_button_row_gap" />
+                </layout>
+                <widget class="icon_button" id="askp" auto_size="horizontal" embed_in_frame="true" appearance="buttons/subtle/split/left/button" controller_button="y_button">
+                    <translation id="text" translation_id="344655" type="use" value="Quick Pick[COMMENT - team screen team selection, contains the former Ask To Pick menu but also acts as a standalone button which picks the team, renamed for accuracy]" />
+                </widget>
+                <widget class="popup_button" id="apic" fixed="true" fixed_icon="true" auto_size="horizontal" embed_in_frame="true" appearance="buttons/subtle/split/right/button" />
+            </container>
+            <widget class="embedded_filter_button" id="plsf" target="plti" auto_size="horizontal" embed_in_frame="true" />
+            <widget class="icon_button" appearance="buttons/primary/normal/button" icon="icons/26px/whistle" icon_alignment="right,centre_y" id="INST" embed_in_frame="true" auto_size="horizontal" colour="white" red_replacement="primary_button">
+                <translation id="text" translation_id="339740" type="use" value="Instant Result[COMMENT: text for a button that will generate an instant result for the upcoming match rather than having to go through and play it]" />
+                <record id="primary_icon_properties" red_replacement="white" />
+                <record id="click_event" event_id="INST" event_target="glob" />
+                <attachment class="test_global_attachment" get_property="section" mode="1" set_property="hidden">
+                    <list id="value">
+                        <integer value="phtc" />
+                        <integer value="PhcP" />
+                        <integer value="PhcR" />
+                        <integer value="PhcK" />
+                        <integer value="PhcH" />
+                        <integer value="PhcN" />
+                        <integer value="PhcC" />
+                        <integer value="PhcF" />
+                        <integer value="patc" />
+                        <integer value="PacP" />
+                        <integer value="PacR" />
+                        <integer value="PacK" />
+                        <integer value="PacH" />
+                        <integer value="PacN" />
+                        <integer value="PacC" />
+                        <integer value="PacF" />
+                    </list>
+                </attachment>
+            </widget>
+        </container>
+        <widget class="tactic_player_list_table" column_spacing="0" id="pltb" customisation_context="play" database_table_type="1" view_setting_name="stored_tactics_view" mode="fill_rows, select_rows, select_multiple, printable, store_sort_state, drag_rows, drop_on_rows, show_insert_column_popup, stripe_rows" column_mode="resize_columns, move_columns, custom_views" row_spacing="1" popup_menu_class="popup_button_table_header" row_height="40">
+            <boolean id="auto_size_rows" value="false" />
+            <boolean id="fixed_size_rows" value="true" />
+            <boolean id="dont_restore_selection" value="true" />
+            <boolean id="save_session_state" value="true" />
+            <boolean id="save_default_state" value="true" />
+            <integer id="contextual_handler_column_id" value="PlSE" />
+            <list id="default_sort_column">
+                <integer value="TPRD" />
+                <integer value="PpsC" />
+            </list>
+            <list id="disallowed_view_property_ids">
+                <flags value="Pssi" />
+                <flags value="PtsL" />
+                <flags value="Psne" />
+            </list>
+            <list id="required_view_property_ids">
+                <flags value="TPRD" />
+            </list>
+            <list id="Spid">
+                <integer value="PPra" />
+                <integer value="Psnu" />
+                <integer value="PCpQ" />
+            </list>
+            <flags id="default_view" value="sltn" />
+            <list id="viws">
+                <record id="sltn">
+                    <translation id="name" translation_id="326989" type="use" value="Selection Info[COMMENT: button in view_menu on squad screens; choose to view club stats]" />
+                    <record id="view">
+                        <record id="TPRD" auto_hide_priority="2" width="102" />
+                        <record id="PRPr" auto_hide_priority="6" width="82" navigation_focus_target="false" />
+                        <record id="pIDa" auto_hide_priority="7" width="47" navigation_focus_target="false"/>
+                        <record id="port" auto_hide_priority="3" width="40" navigation_focus_target="false" />
+                        <record id="PlSE" auto_hide_priority="1" minimum_width="120" />
+                        <record id="Pnfo" auto_hide_priority="4" navigation_focus_target="false" />
+                        <record id="PcOI" auto_hide_priority="3" navigation_focus_target="false" />
+                        <record id="PftI" auto_hide_priority="3" navigation_focus_target="false" />
+                        <record id="Pmor" auto_hide_priority="5" width="30" ShTx="false" navigation_focus_target="false" />
+                        <record id="PpsC" auto_hide_priority="9" navigation_focus_target="false" />
+                        <record id="pTLV" auto_hide_priority="12" width="70" navigation_focus_target="false"/>
+                        <record id="PMlo" auto_hide_priority="13" width="70" navigation_focus_target="false"/>
+                        <record id="Pfrm" auto_hide_priority="10" navigation_focus_target="false" />
+                        <record id="POwr" auto_hide_priority="15" navigation_focus_target="false" />
+                        <record id="Poap" auto_hide_priority="14" navigation_focus_target="false" />
+                        <record id="POag" auto_hide_priority="16" navigation_focus_target="false" />
+                        <record id="Pogl" auto_hide_priority="11" navigation_focus_target="false" />
+                        <record id="Poav" auto_hide_priority="8" width="60" navigation_focus_target="false"/>
+                        <record id="PaaA" auto_hide_priority="3" width="84" navigation_focus_target="false" />
+                                                
+                    </record>
+                </record>
+                <record id="slpo">
+                    <translation id="name" translation_id="227884" type="use" value="Position" />
+                    <record id="view">
+                        <record id="TPRD" auto_hide_priority="2" width="102" />
+                        <record id="PRPr" auto_hide_priority="7" width="85" navigation_focus_target="false"/>
+                        <record id="pIDa" auto_hide_priority="3" width="47" navigation_focus_target="false"/>
+                        <record id="PlSE" auto_hide_priority="1" minimum_width="115" />
+                        <record id="Pnfo" auto_hide_priority="5" navigation_focus_target="false"/>
+                        <record id="PpsC" auto_hide_priority="4" width="140" navigation_focus_target="false" />
+                        <record id="Pbps" auto_hide_priority="8" ShTx="false" navigation_focus_target="false"/>
+                        <record id="PcOI" auto_hide_priority="6" navigation_focus_target="false" />
+                        <record id="PftI" auto_hide_priority="6" navigation_focus_target="false" />
+                        <record id="Pmor" auto_hide_priority="9" width="22" ShTx="false" navigation_focus_target="false"/>
+                        <record id="Pfrm" auto_hide_priority="13" navigation_focus_target="false"/>
+                        <record id="Poap" auto_hide_priority="11" navigation_focus_target="false" />
+                        <record id="Pogl" auto_hide_priority="12" navigation_focus_target="false" />
+                        <record id="Poav" auto_hide_priority="10" width="45" navigation_focus_target="false" />
+                    </record>
+                </record>
+                <record id="csln">
+                    <translation id="name" translation_id="275847" type="use" value="Club Selection[COMMENT: button in view_menu on squad screens; choose to view club stats]" />
+                    <record id="view">
+                        <record id="TPRD" auto_hide_priority="2" width="102" />
+                        <record id="PRPr" auto_hide_priority="8" width="85" navigation_focus_target="false"/>
+                        <record id="pIDa" auto_hide_priority="5" width="47" navigation_focus_target="false" />
+                        <record id="PlSE" auto_hide_priority="1" minimum_width="115" />
+                        <record id="Pnfo" auto_hide_priority="3" navigation_focus_target="false" />
+                        <record id="PcOI" auto_hide_priority="4" navigation_focus_target="false" />
+                        <record id="PftI" auto_hide_priority="4" navigation_focus_target="false" />
+                        <record id="Pmor" auto_hide_priority="6" width="22" ShTx="false" navigation_focus_target="false" />
+                        <record id="PpsC" auto_hide_priority="10" navigation_focus_target="false" />
+                        <record id="pTLV" auto_hide_priority="12" navigation_focus_target="false" />
+                        <record id="Pfrm" auto_hide_priority="13" navigation_focus_target="false" />
+                        <record id="Poap" auto_hide_priority="14" navigation_focus_target="false" />
+                        <record id="Pogl" auto_hide_priority="11" navigation_focus_target="false" />
+                        <record id="Poav" auto_hide_priority="9" width="60" navigation_focus_target="false"/>
+                    </record>
+                    <record id="object_list_view_context">
+                        <integer id="player_stats_scope" value="5" />
+                    </record>
+                </record>
+                <record id="intf">
+                    <translation id="name" translation_id="275848" type="use" value="International Selection[COMMENT: button in view_menu on squad screens; choose to view international stats]" />
+                    <record id="view">
+                        <record id="TPRD" auto_hide_priority="2" width="102" />
+                        <record id="PRPr" auto_hide_priority="8" width="85" navigation_focus_target="false"/>
+                        <record id="pIDa" auto_hide_priority="5" width="47" navigation_focus_target="false" />
+                        <record id="PlSE" auto_hide_priority="1" minimum_width="115" />
+                        <record id="Pnfo" auto_hide_priority="3" navigation_focus_target="false"/>
+                        <record id="PcOI" auto_hide_priority="3" navigation_focus_target="false" />
+                        <record id="PftI" auto_hide_priority="3" navigation_focus_target="false" />
+                        <record id="Pmor" auto_hide_priority="6" width="20" ShTx="false" navigation_focus_target="false"/>
+                        <record id="PpsC" auto_hide_priority="10" navigation_focus_target="false" />
+                        <record id="pTLV" auto_hide_priority="12" navigation_focus_target="false"/>
+                        <record id="Pfrm" auto_hide_priority="13" navigation_focus_target="false" />
+                        <record id="Poap" auto_hide_priority="14" navigation_focus_target="false" />
+                        <record id="Pogl" auto_hide_priority="11" navigation_focus_target="false" />
+                        <record id="Poav" auto_hide_priority="9" width="60" navigation_focus_target="false" />
+                    </record>
+                    <record id="object_list_view_context">
+                        <integer id="player_stats_scope" value="7" />
+                    </record>
+                </record>
+                <record id="coac">
+                    <translation id="name" translation_id="292814" type="use" value="Reports[COMMENT: top level menu title for player reports screens]" />
+                    <record id="view">
+                        <record id="TPRD" auto_hide_priority="2" width="102" />
+                        <record id="PRPr" auto_hide_priority="7" width="85" navigation_focus_target="false"/>
+                        <record id="pIDa" auto_hide_priority="3" width="47" navigation_focus_target="false" />
+                        <record id="PlSE" auto_hide_priority="1" minimum_width="115" />
+                        <record id="Pnfo" auto_hide_priority="4" navigation_focus_target="false" />
+                        <record id="PcOI" auto_hide_priority="9" navigation_focus_target="false"/>
+                        <record id="PftI" auto_hide_priority="9" navigation_focus_target="false" />
+                        <record id="Pmor" auto_hide_priority="10" ShTx="true" navigation_focus_target="false"/>
+                        <record id="Pbrc" auto_hide_priority="5" navigation_focus_target="false"/>
+                        <record id="Pbdc" auto_hide_priority="6" navigation_focus_target="false" />
+                        <record id="Pbps" auto_hide_priority="11" navigation_focus_target="false"/>
+                        <record id="Pcac" auto_hide_priority="8" width="70" navigation_focus_target="false"/>
+                        <record id="Pppc" auto_hide_priority="12" width="70" navigation_focus_target="false"/>
+                        <record id="npps" auto_hide_priority="13" width="70" navigation_focus_target="false" />
+                    </record>
+                </record>
+                <record id="fitn">
+                    <translation id="name" translation_id="247571" type="use" value="Fitness" />
+                    <record id="view">
+                        <record id="TPRD" auto_hide_priority="2" width="102" />
+                        <record id="PRPr" auto_hide_priority="8" width="85" navigation_focus_target="false"/>
+                        <record id="pIDa" auto_hide_priority="3" width="47" navigation_focus_target="false" />
+                        <record id="PlSE" auto_hide_priority="1" minimum_width="115" />
+                        <record id="Pnfo" auto_hide_priority="4" navigation_focus_target="false"/>
+                        <record id="PcOI" auto_hide_priority="5" navigation_focus_target="false"/>
+                        <record id="PftI" auto_hide_priority="5" navigation_focus_target="false" />
+                        <record id="Pmor" auto_hide_priority="12" navigation_focus_target="false" />
+                        <record id="PMlo" auto_hide_priority="7" width="100" navigation_focus_target="false"/>
+                        <record id="PTWl" auto_hide_priority="10" width="100" navigation_focus_target="false"/>
+                        <record id="PInS" auto_hide_priority="11" width="120" navigation_focus_target="false" />
+                        <record id="POvR" auto_hide_priority="6" width="100" navigation_focus_target="false" />
+                    </record>
+                </record>
+                <record>
+                    <translation id="text" translation_id="247412" type="use" value="Stats" />
+                    <list id="items">
+                        <record id="SAvi">
+                            <translation id="name" translation_id="230042" type="use" value="Attacking" />
+                            <record id="view">
+                                <record id="TPRD" auto_hide_priority="2" width="102" />
+                                <record id="PRPr" auto_hide_priority="10" width="85" />
+                                <record id="pIDa" auto_hide_priority="3" width="47" navigation_focus_target="false"/>
+                                <record id="PlSE" auto_hide_priority="1" navigation_focus_target="false" />
+                                <record id="Pnfo" auto_hide_priority="4" />
+                                <flags id="PcOI" auto_hide_priority="5" navigation_focus_target="false" />
+                                <record id="PftI" auto_hide_priority="5" navigation_focus_target="false" />
+                                <flags id="Pmor" auto_hide_priority="6" ShTx="true" navigation_focus_target="false" />
+                                <flags id="Pfrm" auto_hide_priority="8" navigation_focus_target="false" />
+                                <flags id="POwr" auto_hide_priority="13" navigation_focus_target="false" />
+                                <flags id="POGg" auto_hide_priority="15" navigation_focus_target="false" />
+                                <record id="Poap" auto_hide_priority="11" navigation_focus_target="false"/>
+                                <record id="PODr" auto_hide_priority="19" navigation_focus_target="false" />
+                                <record id="Popa" auto_hide_priority="12" navigation_focus_target="false" />
+                                <record id="POCc" auto_hide_priority="18" navigation_focus_target="false" />
+                                <record id="Poas" auto_hide_priority="9" navigation_focus_target="false" />
+                                <flags id="POag" auto_hide_priority="17" navigation_focus_target="false" />
+                                <flags id="Post" auto_hide_priority="14" navigation_focus_target="false" />
+                                <flags id="Pogl" auto_hide_priority="8" navigation_focus_target="false" />
+                                <flags id="POgg" auto_hide_priority="16" navigation_focus_target="false" />
+                                <flags id="Poav" auto_hide_priority="7" navigation_focus_target="false" />
+                            </record>
+                        </record>
+                        <record id="SDvi">
+                            <translation id="name" translation_id="247413" type="use" value="Defensive" />
+                            <record id="view">
+                                <record id="TPRD" auto_hide_priority="2" width="102" />
+                                <record id="PRPr" auto_hide_priority="10" width="85" navigation_focus_target="false" />
+                                <record id="pIDa" auto_hide_priority="3" width="47" navigation_focus_target="false"/>
+                                <record id="PlSE" auto_hide_priority="1" />
+                                <record id="Pnfo" auto_hide_priority="4" navigation_focus_target="false"/>
+                                <record id="PcOI" auto_hide_priority="5" navigation_focus_target="false"/>
+                                <record id="PftI" auto_hide_priority="5" navigation_focus_target="false" />
+                                <record id="Pmor" auto_hide_priority="6" ShTx="true" navigation_focus_target="false" />
+                                <record id="Pfrm" auto_hide_priority="8" navigation_focus_target="false" />
+                                <record id="POwr" auto_hide_priority="13" navigation_focus_target="false"/>
+                                <record id="POCg" auto_hide_priority="9" navigation_focus_target="false" />
+                                <record id="Poap" auto_hide_priority="11" navigation_focus_target="false"/>
+                                <record id="PODr" auto_hide_priority="17" navigation_focus_target="false" />
+                                <record id="POgm" auto_hide_priority="12" navigation_focus_target="false"/>
+                                <record id="POtr" auto_hide_priority="14" navigation_focus_target="false"/>
+                                <record id="POhr" auto_hide_priority="15" navigation_focus_target="false" />
+                                <record id="Popa" auto_hide_priority="16" navigation_focus_target="false" />
+                                <record id="Poav" auto_hide_priority="7" navigation_focus_target="false" />
+                            </record>
+                        </record>
+                        <record id="SGvi">
+                            <translation id="name" translation_id="230024" type="use" value="Goalkeeping" />
+                            <record id="view">
+                                <record id="TPRD" auto_hide_priority="2" width="102" />
+                                <record id="PRPr" auto_hide_priority="11" width="85" navigation_focus_target="false" />
+                                <record id="pIDa" auto_hide_priority="3" width="47" navigation_focus_target="false"/>
+                                <record id="PlSE" auto_hide_priority="1" />
+                                <record id="Pnfo" auto_hide_priority="4" navigation_focus_target="false"/>
+                                <record id="PcOI" auto_hide_priority="5" navigation_focus_target="false"/>
+                                <record id="PftI" auto_hide_priority="5" navigation_focus_target="false" />
+                                <record id="Pmor" auto_hide_priority="6" ShTx="true" navigation_focus_target="false" />
+                                <record id="Pfrm" auto_hide_priority="10" navigation_focus_target="false"/>
+                                <record id="POwr" auto_hide_priority="14" navigation_focus_target="false" />
+                                <record id="POCg" auto_hide_priority="9" navigation_focus_target="false" />
+                                <record id="Poap" auto_hide_priority="12" navigation_focus_target="false" />
+                                <record id="POcs" auto_hide_priority="8" navigation_focus_target="false" />
+                                <record id="POgm" auto_hide_priority="13" navigation_focus_target="false" />
+                                <record id="Poav" auto_hide_priority="7" navigation_focus_target="false" />
+                            </record>
+                        </record>
+                    </list>
+                    <record id="object_list_view_context">
+                        <integer id="player_stats_scope" value="5" />
+                    </record>
+                </record>
+            </list>
+        </widget>
+        <widget class="match_squad_info_panel" id="ssnm" show_all_comps="false" should_force_refresh="true" />
+    </container>
+</panel>

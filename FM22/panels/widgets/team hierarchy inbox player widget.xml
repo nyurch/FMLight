@@ -1,0 +1,22 @@
+﻿<panel>
+  <boolean id="should_force_refresh" value="true"/>
+
+  <!--highlight box-->
+  <container class="main_contrast_box_no_margin" red_replacement="primary">
+      <layout class="arrange_vertical_attachment" alignment="bottom" offset="1" gap="0" />
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="4" apply_to_children="true" />
+      <layout class="stick_to_sides_attachment" alignment="all" inset="0"  />
+     
+      <widget class="person_button" id="pBut" style="bold" size="small" colour="black" alignment="centre" height="20" />
+    </container>
+
+  <container width="16" height="16">
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+    <layout class="stick_to_sides_attachment" alignment="left,top" inset="0" />
+    <!--icon indicating change in Hierarchy status-->
+    <!--change up-->
+    <widget class="picture" id="indu"  image_alignment="right,centre_y" scale_picture="false" keep_aspect_ratio="true" wants_mouse_events="false" file="icons/16px/change up"/>
+    <!--change down-->
+    <widget class="picture" id="indd"  image_alignment="right,centre_y" scale_picture="false" keep_aspect_ratio="true" wants_mouse_events="false" file="icons/16px/change down"/>
+  </container>
+</panel>

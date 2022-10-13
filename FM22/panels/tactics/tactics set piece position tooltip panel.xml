@@ -1,0 +1,68 @@
+<panel width="350">
+
+	<layout class="arrange_vertical_attachment" alignment="top" offset="0" />
+	<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+	<container class="standard_popup_box" id="pdpa">
+		<layout class="arrange_vertical_attachment" alignment="top" offset="10" gap="10" />
+		<layout class="fit_children_attachment" alignment="vertical,fill" offset="10" gap="10" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="10" />
+
+		<!--pos/role-->
+		<container class="table" layout="-1,-1" auto_size="vertical" auto_size_rows="true" fixed_size_rows="false">
+
+			<!--position-->
+			<widget class="label" spec="text" size="small" font="fonts/title" colour="accent" auto_size="vertical" row="0" col="0">
+				<translation id="text" translation_id="227884" type="use" value="Position" />
+			</widget>
+
+			<widget class="position_label" id="Posn" spec="text" style="semi_bold" icon_alignment="left,top" alignment="left,top" auto_size="vertical" row="0" col="1">
+			</widget>
+
+			<!--set piece role-->
+			<widget class="label" spec="text" size="small" font="fonts/title" colour="accent" auto_size="vertical" row="1" col="0">
+				<translation id="text" translation_id="395314" type="use" value="Set Piece Role[COMMENT: set piece creator, label showing the role that the player is being asked to fill at a set piece]" />
+			</widget>
+
+			<widget class="text" id="Role" spec="text" icon_alignment="left" alignment="left" style="semi_bold" auto_size="vertical" row="1" col="1">
+			</widget>
+
+		</container>
+
+		<container height="10" />
+
+		<!--info about the currently selected player if they exist-->
+		<container class="client_object_viewer_xml_panel" id="plDt" height="60">
+			<layout class="arrange_horizontal_attachment" layout="-1,60" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<!--name/role-->
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="top" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+				<widget class="text" font="fonts/title" colour="accent" auto_size="vertical">
+					<translation id="text" translation_id="395177" type="use" value="Currently Selected:[COMMENT: set piece creator, label showing the player currently selected in a position]" />
+				</widget>
+
+				<!--name-->
+				<widget class="person_button" id="Pnam" colour="black" style="semi_bold" size="xlarge" auto_size="vertical">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+					</record>
+				</widget>
+
+			</container>
+
+			<!--mugshot-->
+			<widget class="object_portrait_picture" id="ppic" image_alignment="centre" scale_picture="true">
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</widget>
+
+		</container>
+	</container>
+</panel>

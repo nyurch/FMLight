@@ -1,0 +1,120 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="inner_subtle_box" navigation_container="true">
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		<layout class="arrange_vertical_attachment" layout="24,-1,2,2,24,24" offset="0" gap="0" />
+
+		<widget class="person_button" Pipl="true" ipen="true" colour="black">
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="Pipl" />
+						<integer id="set_property" value="Pipl" />
+					</record>
+					<record>
+						<integer id="get_property" value="Pcjo" />
+						<integer id="set_property" value="Pcjo" />
+					</record>
+					<record>
+						<integer id="get_property" value="Prtd" />
+						<integer id="set_property" value="Prtd" />
+					</record>
+					<record>
+						<integer id="get_property" value="Pers" />
+						<integer id="set_property" value="valu" />
+					</record>
+				</list>
+			</record>
+		</widget>
+
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="0" />
+
+			<widget class="label" alignment="left,centre_y" size="14" style="bold">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="fee " />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+
+			<container class="client_object_viewer_xml_panel" width="50" >
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="Pers" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</list>
+				</record>
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+
+
+				<widget class="picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x,top">
+
+					<record id="object_property">
+						<list id="get_properties">
+							<!--Facegen data request-->
+							<record get_property="fcgn" />
+							<!--Fake name request-->
+							<record get_property="Pfke" />
+							<record get_property="prpc" set_property="valu" />
+						</list>
+					</record>
+				</widget>
+			</container>
+
+
+		</container>
+		<widget class="spacer" />
+		<widget class="horizontal_divider" auto_size="none" />
+
+		<container>
+			<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<widget class="picture" width="20" height="20" image_alignment="centre" keep_aspect_ratio="true" scale_picture="false" file="icons/16px/sub off"/>
+
+			<widget class="team_button" colour="fg negative" navigation_focus_target="true">
+				<translation id="no_object_text" translation_id="242857" type="use" value="Free Transfer"/>
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="selt" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+
+		</container>
+
+		<container>
+			<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<widget class="picture" width="20" height="20" image_alignment="centre" keep_aspect_ratio="true" scale_picture="false" file="icons/16px/sub on"/>
+
+			<widget class="team_button" colour="fg positive" navigation_focus_target="true">
+				<translation id="no_object_text" translation_id="242857" type="use" value="Free Transfer"/>
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="buyt" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+
+		</container>
+
+	</container>
+
+</panel>

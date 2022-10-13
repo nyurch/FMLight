@@ -1,0 +1,313 @@
+<panel wants_mouse_events="true">
+<!-- use to recolour edit_box text -->
+<string id="skin_style" value="edit_box" />
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	
+	<!-- When the panel is shown, tell the edit box for the first name to request keyboard focus -->
+	<record id="shown_event">
+		<flags id="event_id" value="REQF" />
+		<flags id="event_target" value="frst" />
+	</record>
+
+	<container class="inner_box">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+		<!-- box containing personal details form -->
+		<container id="pdpa">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<!-- Red text area - text informing the user what the asterisk means-->
+			<container>
+				<layout class="centre_in_parent_attachment" alignment="all" apply_to_children="true" />
+
+				<container width="520" height="600">
+					<layout class="grid_layout_attachment" row_layout="20,30,24,20,30,24,20,30,24,1,22,30,160" mode="auto" vertical_gap="5" vertical_offset_start="35" vertical_offset_end="0">
+						<list id="column_layout">
+							<record>
+								<string id="column_layout" value="-1,-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="10" />
+							</record>
+							<record>
+								<string id="column_layout" value="-1,-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="10" />
+							</record>
+							<record>
+								<string id="column_layout" value="-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="0" />
+							</record>
+							<record>
+								<string id="column_layout" value="-1,-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="10" />
+							</record>
+							<record>
+								<string id="column_layout" value="-1,-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="10" />
+							</record>
+							<record>
+								<string id="column_layout" value="-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="0" />
+							</record>
+							<record>
+								<string id="column_layout" value="-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="0" />
+							</record>
+							<record>
+								<string id="column_layout" value="-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="0" />
+							</record>
+							<record>
+								<string id="column_layout" value="-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="0" />
+							</record>
+							<record>
+								<string id="column_layout" value="-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="0" />
+							</record>
+							<record>
+								<string id="column_layout" value="-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="0" />
+							</record>
+							<record>
+								<string id="column_layout" value="-1,-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="5" />
+							</record>
+							<record>
+								<string id="column_layout" value="-1" />
+								<integer id="horizontal_offset" value="10" />
+								<integer id="horizontal_gap" value="0" />
+							</record>
+						</list>
+					</layout>
+
+					<container>
+						<attachment_group class="horizontal_arrange" horizontal_alignment="left" horizontal_offset="0" vertical_inset="0" />
+
+						<widget class="label" font="title" alignment="left,centre_y" auto_size="horizontal" colour="accent">
+							<translation id="text" translation_id="292600" type="use" value="Name[COMMENT: add manager panel; name label]" />
+						</widget>
+
+						<widget class="label" font="title" alignment="left,centre_y" auto_size="horizontal" colour="accent">
+							<translation id="hint" translation_id="300786" type="use" value="All items with a * must be filled in[COMMENT:indicator to the user that the coloured asterisk indicates that the user must fill in this field]" />
+							<translation id="text" translation_id="248129" type="use" value="*" />
+						</widget>
+					</container>
+					
+					<container>
+						<attachment_group class="horizontal_arrange" horizontal_alignment="left" horizontal_offset="0" vertical_inset="0" />
+
+						<widget class="label" font="title" alignment="left,centre_y" auto_size="horizontal" colour="accent">
+							<translation id="text" translation_id="374250" type="use" value="Surname[COMMENT: add manager panel; Surname label, somehow we've never actually had this string in the game!]" />
+						</widget>
+
+						<widget class="label" font="title" alignment="left,centre_y" auto_size="horizontal" colour="accent">
+							<translation id="hint" translation_id="300786" type="use" value="All items with a * must be filled in[COMMENT:indicator to the user that the coloured asterisk indicates that the user must fill in this field]" />
+							<translation id="text" translation_id="248129" type="use" value="*" />
+						</widget>
+					</container>
+
+					<widget class="edit_box" id="frst" edit_event="frst" alignment="left,centre_y" column_span="3" colour="text">
+						<translation id="description" translation_id="298759" type="use" value="First Name[comment first name of a new untitled user]" />
+						<layout class="max_length_attachment" length="25" />
+						<boolean id="select_on_focus" value="true" />
+						<record id="changed_event">
+							<flags id="event_id" value="ChNa" />
+						</record>
+					</widget>
+					
+					<widget class="edit_box" id="last" edit_event="last" alignment="left,centre_y">
+						<translation id="description" translation_id="298760" type="use" value="Last Name[comment: last name of a new untitled user]" />
+						<layout class="max_length_attachment" length="25" />
+						<boolean id="select_on_focus" value="true" />
+						<record id="changed_event">
+							<flags id="event_id" value="ChNa" />
+						</record>
+					</widget>
+
+					<container>
+						<layout class="stick_to_sides_attachment" alignment="left,top" apply_to_children="true" inset="0" />
+						
+						<widget class="widget_popup_button" Jcol="text" colour="disabled" secondary_icon="icons/16px/edit" appearance="" auto_size="all" id="mNam" popup_alignment="left,bottom" widget_type="container">
+							<record id="widget_properties" file="human/add manager name information dialog" width="500" />
+							<record id="modal_popup_properties" file="modal popup panel auto sized" propagate_mouse_events="false" />
+						</widget>
+					</container>
+
+					<container>
+						<attachment_group class="horizontal_arrange" horizontal_alignment="left" horizontal_offset="0" vertical_inset="0" />
+
+						<widget class="label" font="title" alignment="left,centre_y" auto_size="horizontal" colour="accent">
+							<translation id="text" translation_id="227841" type="use" value="Nationality" />
+						</widget>
+
+						<widget class="label" font="title" alignment="left,centre_y" auto_size="horizontal" colour="accent">
+							<translation id="hint" translation_id="300786" type="use" value="All items with a * must be filled in[COMMENT:indicator to the user that the coloured asterisk indicates that the user must fill in this field]" />
+							<translation id="text" translation_id="248129" type="use" value="*" />
+						</widget>
+					</container>
+					
+					<widget class="label" alpha="215" font="title" alignment="left,centre_y" colour="accent">
+						<translation id="text" translation_id="227960" type="use" value="Place Of Birth" />
+					</widget>
+
+					<container>
+						<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_gap="0">
+							<global id="horizontal_gap" name="ui.split_button_row_gap"/>
+						</attachment_group>
+
+						<widget class="filter_edit_box" id="natn" appearance="edit boxes/custom/selection/box" alignment="left,centre_y">
+							<flags id="changed_event" value="natn" />
+							<flags id="select_on_focus" value="true" />
+							<boolean id="validate_string" value="true" />
+						</widget>
+
+						<widget class="icon_button" click_event="napu" id="napu" appearance="buttons/standard/split/right/button" icon="icons/16px/down" auto_size="horizontal"/>
+					</container>
+
+					<container>
+						<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" >
+							<global id="horizontal_gap" name="ui.split_button_row_gap"/>
+						</attachment_group>
+
+						<widget class="city_picker_popup_button" id="city" appearance="edit boxes/custom/selection/box" alignment="left,centre_y" colour="text" >
+							<flags id="select_on_focus" value="true" />
+							<boolean id="validate_string" value="true" />
+						</widget>
+
+						<widget class="icon_button" click_event="cipu" id="cipu" appearance="buttons/standard/split/right/button" height="30" icon="icons/16px/down" auto_size="horizontal"/>
+					</container>
+
+					<container>
+						<layout class="stick_to_sides_attachment" alignment="left,top" apply_to_children="true" inset="0" />
+						
+						<widget class="widget_popup_button" Jcol="text" colour="disabled" secondary_icon="icons/16px/edit" appearance="" auto_size="all" id="mLan" popup_alignment="left,bottom" widget_type="container">
+							<translation id="text" translation_id="420653" type="use" value="Other Languages Spoken[COMMENT: add manager profile panel, section for displaying and choosing additional spoken languages]" />
+							<record id="widget_properties" file="human/add manager language information dialog" width="500" />
+							<record id="modal_popup_properties" file="modal popup panel auto sized" propagate_mouse_events="false" />
+						</widget>
+					</container>
+
+					<widget class="label" alpha="215" font="title" alignment="left" colour="accent">
+						<translation id="text" translation_id="247154" type="use" value="Favourite Team" />
+					</widget>
+
+					<container>
+						<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" >
+							<global id="horizontal_gap" name="ui.split_button_row_gap"/>
+						</attachment_group>
+
+						<widget class="filter_edit_box" id="favo" appearance="edit boxes/custom/selection/box" alignment="left,centre_y" forward_selection_event="true">
+							<flags id="changed_event" value="tSel" />
+							<flags id="select_on_focus" value="true" />
+							<boolean id="validate_string" value="true" />
+						</widget>
+
+						<widget class="icon_button" click_event="fapu" id="fapu" appearance="buttons/standard/split/right/button" icon="icons/16px/down" auto_size="horizontal"/>
+					</container>
+
+					<container>
+						<layout class="arrange_horizontal_attachment" layout="-1, -1" offset="0" gap="15" />
+						<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+						<container>
+							<layout class="stick_to_sides_attachment" alignment="top, left" apply_to_children="true" inset="0" />
+
+							<widget class="widget_popup_button" Jcol="text" auto_size="all" colour="disabled" secondary_icon="icons/16px/edit" appearance="" id="mTea" popup_alignment="left,bottom" widget_type="container">
+								<translation id="text" translation_id="361248" type="use" value="Other Favourite Teams[COMMENT: add manager; selection for user to choose multiple favourite teams]" />
+								<record id="widget_properties" file="human/add manager team information dialog" width="500" />
+								<record id="modal_popup_properties" file="modal popup panel auto sized" propagate_mouse_events="false" />
+							</widget>
+						</container>
+
+						<container>
+							<layout class="stick_to_sides_attachment" alignment="top, left" apply_to_children="true" inset="0" />
+
+							<widget class="widget_popup_button" Jcol="text" auto_size="all" colour="disabled" hidden="true" secondary_icon="icons/16px/edit" appearance="" click_event="Pref" id="PrSF" popup_alignment="left,bottom" widget_type="container">
+								<translation id="text" translation_id="491923" type="use" value="Preferred Style and Formation[COMMENT: AREA: Manager profile panel; SUB-AREA: a button in profile creation; FR-BN: 25960; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX;]" />
+								<record id="widget_properties" file="human/add manager formation information dialog" width="600" />
+								<record id="modal_popup_properties" file="modal popup panel auto sized" propagate_mouse_events="false" />
+							</widget>
+						</container>
+					</container>
+
+					<widget class="spacer" />
+
+					<!--  encapsulate social media widgets to aid code driven removal whilst keeping layout intact -->
+					<container>
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+						
+						<widget class="label" font="title" size="normal" colour="accent" alignment="left,centre_y">
+							<translation id="text" translation_id="312758" type="use" value="Social Networks" />
+							<!-- hide if game tells us-->
+							<attachment class="get_global_attachment" get_property="SnHd" set_property="hidn" skip_if_null="true" />
+						</widget>
+					</container>
+
+					<container>
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+						
+						<widget class="icon_button" id="yoib" icon="icons/16px/youtube" icon_alignment="centre" click_event="yoDI">
+							<!-- hide if game tells us-->
+							<attachment class="get_global_attachment" get_property="SnHd" set_property="hidn" skip_if_null="true" />
+						</widget>
+					</container>
+
+					<container>
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+							
+						<widget class="icon_button" id="twib" icon="icons/16px/twitter" icon_alignment="centre" click_event="twDI">
+							<!-- hide if game tells us-->
+							<attachment class="get_global_attachment" get_property="SnHd" set_property="hidn" skip_if_null="true" />
+						</widget>
+					</container>
+
+					<container class="main_contrast_box" red_replacement="tutorial bg">
+						<attachment_group class="vertical_arrange" vertical_offset="10" horizontal_inset="10" vertical_gap="8" />
+
+						<!-- Responsibilities-->
+						<widget class="label" alignment="left,centre_y" font="title" colour="gold" auto_size="vertical">
+							<translation id="text" translation_id="466439" type="use" value="Experienced[COMMENT: toggle for responsibilities relating to Tutorial mode; asks the user if they consider themselves experienced, Yes and No are the options]" />
+						</widget>
+
+						<container height="31">
+							<attachment_group class="horizontal_arrange" horizontal_layout="80,80,18,-1" horizontal_offset="0" horizontal_gap="-9" vertical_inset="0" />
+
+							<widget class="radio_toggle_switch_left" id="tuty" alignment="centre" click_event="Tyes" width="80">
+								<translation id="text" translation_id="242044" type="use" value="Yes" />
+							</widget>
+							<widget class="radio_toggle_switch_right" id="tutn" alignment="centre" click_event="Tnoo" width="80">
+								<translation id="text" translation_id="231460" type="use" value="No" />
+							</widget>
+
+							<container width="12" />
+
+							<widget class="icon_button" colour="bg" id="oRDb" click_event="oReD" red_replacement="bg" alignment="left,centre_y" secondary_icon="icons/16px/maximise" icon_enabled="false" secondary_icon_enabled="true" secondary_icon_colour="bg">
+								<translation id="text" translation_id="335274" type="use" value="Responsibilities[COMMENT: Manager main/top menu: national team options when team name is not visible]" />
+							</widget>
+						</container>
+
+						<widget class="text" id="expT" alignment="left,centre_y" colour="bg" multiline="true" auto_size="vertical">
+							<translation id="text" translation_id="466440" type="use" value="Experienced managers will be assigned the majority of Staff Responsibilities, whilst staff welcomes and introductions will be kept to a minimum.[COMMENT: toggle for responsibilities relating to Tutorial mode; asks the user if they consider themselves experienced, this is the explanatory tool-tip]" />
+						</widget>
+
+						<widget class="text" id="inxT" alignment="left,centre_y" colour="bg" multiline="true" auto_size="vertical">
+							<translation id="text" translation_id="466441" type="use" value="Inexperienced managers will be inducted into various aspects of their job, receiving an education into key areas of responsibility, before being given the option of personally handling them.[COMMENT: toggle for responsibilities relating to Tutorial mode; asks the user if they consider themselves experienced, this is the explanatory tool-tip]" />
+						</widget>
+					</container>
+				</container>
+			</container>
+		</container>
+	</container>
+
+</panel>

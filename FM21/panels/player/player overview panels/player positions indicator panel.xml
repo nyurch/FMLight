@@ -1,0 +1,116 @@
+<panel save_session_state="true">
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+    <widget class="player_positions_indicator_panel" id="ppi1" file="none" navigation_container="true" default_focus="true">
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+        <record id="object_property" get_property="objt" set_property="objt"/>
+        <boolean id="save_session_state" value="true"/>
+        <container>
+            <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+            <layout class="arrange_vertical_attachment" layout="176,164" gap="10" />
+            <container class="main_subtle_box">
+                <widget class="pitch_with_player_positions" id="ppip">
+                    <layout class="stick_to_sides_attachment" alignment="all" inset="15,0,0,0"/>
+                    <record id="object_property" get_property="objt" set_property="objt"/>
+                    <boolean id="vertical" value="false"/>
+                    <boolean id="hide_player_positions" value="true"/>
+                    <string id="pitch_draw_goals" value="false"/>
+                    <string id="pitch_draw_grass" value="true"/>
+                    <string id="pitch_base_appearance" value=""/>
+                    <string id="pitch_pattern" value="ui circles"/>
+                    <string id="pitch_draw_markings" value="false"/>
+                    <string id="pitch_line_colour" value="disabled"/>
+                    <string id="pitch_pattern" value="ui circles"/>
+                    <integer id="line_width" value="2"/>
+                    <integer id="pitch_override_icon_size" value="2"/>
+                    <integer id="pitch_length_percentage" value="130"/>
+                    <integer id="pitch_touchline_width_percentage" value="10"/>
+                </widget>
+                <container height="30">
+                    <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+                    <layout class="stick_to_sides_attachment" alignment="top" inset="0" />
+                    <layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+                    <layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+                    <string id="skin_style" value="title link" />
+                    <widget class="link_button" section="Ptac" auto_size="all" font="title">
+                        <layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+                        <translation id="text" translation_id="230082" type="use" value="Positions" />
+                    </widget>
+                    <widget class="popup_table_button" appearance="buttons/subtle/flex/button" show_button_appearance="false" id="hipo" item_file="tactics/positions indicator highlight menu" fixed="true" size="small" select_event="high" height="20" auto_size="horizontal">
+                        <layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+                    </widget>
+                </container>
+            </container>
+            <container class="main_subtle_box_no_margin">
+                <layout class="arrange_vertical_attachment" alignment="top,extend" offset="10" gap="5" />
+                <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="10" />
+                <widget class="text" font="title" auto_size="vertical">
+                    <translation id="text" translation_id="363721" type="use" value="Role and Duty[COMMENT: FR 8989 - title for a panel allowing choosing of the role and duty for a player]" />
+                </widget>
+                <widget class="text" id="posT" alignment="left" auto_size="vertical" colour="faded text"/>
+                <container>
+                    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+                    <container>
+                        <layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="4" />
+                        <widget class="text" id="nrLb" auto_size="vertical" hidden="true" alignment="middle">
+                            <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+                            <layout class="stick_to_sides_attachment" alignment="top" inset="40"/>
+                            <translation id="text" translation_id="383562" type="use" value="No suitable best roles for this position[COMMENT: FR 10661; player overview positions indicator; string displayed when the player is not good enough in a position to have a 'best role' for it]" />
+                        </widget>
+                        <widget class="text" id="arbs" auto_size="vertical" hidden="true" alignment="middle">
+                            <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+                            <layout class="stick_to_sides_attachment" alignment="top" inset="40"/>
+                            <translation id="text" translation_id="447600" type="use" value="This player is being scouted by [%person#1] and the report will be available shortly.[COMMENT:scout report, scouting in progress]" />
+                        </widget>
+                        <widget class="text" id="pool" auto_size="vertical" hidden="true" alignment="middle">
+                            <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+                            <translation id="text" translation_id="342085" type="use" value="Scouting In Progress[COMMENT: disabled menu item when a player is already being scouted]" />
+                            <layout class="stick_to_sides_attachment" alignment="top" inset="40"/>
+                        </widget>
+                        <widget class="button" id="scPb" click_event="sctc" auto_size="all" height="30" hidden="true">
+                            <translation id="text" translation_id="243421" type="use" value="Scout Player" />
+                            <layout class="centre_in_parent_attachment" alignment="horizontal" />
+                            <layout class="stick_to_sides_attachment" alignment="top" inset="30"/>
+                        </widget>
+                    </container>
+                    <widget class="table" id="Rcon" layout="70, 15, -1" auto_size_rows="false" row_height="24.25" row_spacing="1" column_spacing="1" mode="select_rows,stripe_rows" select_event="sdst">
+                        <translation id="hint" translation_id="330016" type="use" value="Highlight key attributes for role[COMMENT: option allowing for viewing the key attributes needed to play in a certain role]" />
+                        <record id="default_properties" colour="text">
+                            <translation id="hint" translation_id="330016" type="use" value="Highlight key attributes for role[COMMENT: option allowing for viewing the key attributes needed to play in a certain role]" />
+                        </record>
+                        <record id="table_properties">
+                            <list id="column_table_properties">
+                                <record index="1" right="-3">
+                                    <record id="widget_info" alignment="right,centre_y"/>
+                                </record>
+                            </list>
+                        </record>
+                        <widget class="position_role_duty_suitability_pie" id="roS1" row="0" col="0" />
+                        <widget class="info_icon_hint_text" id="hnt1" row="0" col="1"/>
+                        <widget class="popup_button" id="dut1" row="0" col="2" size="10" show_button_appearance="false"/>
+                        <widget class="position_role_duty_suitability_pie" id="roS2" row="1" col="0" />
+                        <widget class="info_icon_hint_text" id="hnt2" row="1" col="1" />
+                        <widget class="popup_button" id="dut2" row="1" col="2" size="10" show_button_appearance="false"/>
+                        <widget class="position_role_duty_suitability_pie" id="roS3" row="2" col="0" />
+                        <widget class="info_icon_hint_text" id="hnt3" row="2" col="1" />
+                        <widget class="popup_button" id="dut3" row="2" col="2" size="10" show_button_appearance="false"/>
+                        <widget class="position_role_duty_suitability_pie" id="roS4" row="3" col="0" />
+                        <widget class="info_icon_hint_text" id="hnt4" row="3" col="1" />
+                        <widget class="popup_button" id="dut4" row="3" col="2" size="10" show_button_appearance="false"/>
+                        <widget class="position_role_duty_suitability_pie" id="roS5" row="4" col="0" />
+                        <widget class="info_icon_hint_text" id="hnt5" row="4" col="1" />
+                        <widget class="popup_button" id="dut5" row="4" col="2" size="10" show_button_appearance="false"/>
+                        <widget class="position_role_duty_suitability_pie" id="roS6" row="5" col="0" />
+                        <widget class="info_icon_hint_text" id="hnt6" row="5" col="1" />
+                        <widget class="popup_button" id="dut6" row="5" col="2" size="10" show_button_appearance="false"/>
+                        <widget class="position_role_duty_suitability_pie" id="roS7" row="6" col="0" />
+                        <widget class="info_icon_hint_text" id="hnt7" row="6" col="1" />
+                        <widget class="popup_button" id="dut7" row="6" col="2" size="10" show_button_appearance="false"/>
+                        <widget class="position_role_duty_suitability_pie" id="roS8" row="7" col="0" />
+                        <widget class="info_icon_hint_text" id="hnt8" row="7" col="1" />
+                        <widget class="popup_button" id="dut8" row="7" col="2" size="10" show_button_appearance="false"/>
+                    </widget>
+                </container>
+            </container>
+        </container>
+    </widget>
+</panel>

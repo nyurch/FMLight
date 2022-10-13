@@ -1,0 +1,92 @@
+<panel>
+
+  <translation id="title" translation_id="306502" type="use" value="Player Mini Profile" />
+  <layout class="arrange_vertical_attachment" alignment="top" offset="0" />
+  <layout class="fit_children_attachment" alignment="vertical" offset="0" />
+  <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+  <!--name-->
+  <widget class="person_button" id="name" auto_size="vertical" alignment="centre_x" info_popup_enabled="false" colour="black">
+    <record id="object_property">
+      <integer id="get_property" value="Pers" />
+      <boolean id="dont_set_object" value="true" />
+    </record>
+  </widget>
+
+  <!--picture/details-->
+  <container height="130">
+    <layout class="arrange_horizontal_attachment" layout="-1,-1,-1" offset="0" gap="0" />
+    <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+    <container id="lftc">
+      <layout class="arrange_vertical_attachment" layout="-1,-1" offset="0" />
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+      <!--team badge picture-->
+      <widget class="object_portrait_picture" id="pnat" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true">
+        <record id="object_property">
+          <integer id="get_property" value="Pcte" />
+        </record>
+      </widget>
+
+      <!--team name-->
+      <widget class="team_button" spec="text" size="small" id="nnat" icon_enabled="false" auto_size="vertical" alignment="centre_x,top" display_format="3">
+        <record id="object_property">
+          <integer id="get_property" value="Pcte" />
+        </record>
+      </widget>
+    </container>
+
+    <!-- profile picture -->
+    <widget class="picture" id="prop">
+      <boolean id="scale_picture" value="true" />
+      <boolean id="keep_aspect_ratio" value="true" />
+      <flags id="image_alignment" value="centre" />
+      
+      <attachment class="test_setting_attachment" get_setting="show_portraits" default_value="true" set_property="hidn">
+        <list id="value">
+          <boolean value="false" />
+        </list>
+      </attachment>
+
+      <record id="object_property">
+        <list id="get_properties">
+          <record>
+            <integer id="get_property" value="fcgn" />
+            <!--Facegen data request-->
+          </record>
+          <record>
+            <integer id="get_property" value="Pfke" />
+            <!--Fake name request-->
+          </record>
+          <record>
+            <integer id="get_property" value="prpc" />
+            <integer id="set_property" value="valu" />
+          </record>
+        </list>
+      </record>
+    </widget>
+
+    <container id="rgtc">
+      <layout class="arrange_vertical_attachment" layout="-1,-1" offset="0" />
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+      <!--rating-->
+      <widget class="dashed_number_label" id="Prat" alignment="centre_x,bottom" spec="text" style="bold" size="16">
+        <record id="object_property">
+          <integer id="get_property" value="Prat" />
+        </record>
+      </widget>
+
+      <!--rating label-->
+      <widget class="label" spec="text" size="small" id="PraL" auto_size="vertical" alignment="centre_x,top">
+        <record id="object_property">
+          <integer id="get_property" value="Prat" />
+          <boolean id="name" value="true" />
+        </record>
+      </widget>
+    </container>
+
+  </container>
+
+</panel>

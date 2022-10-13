@@ -1,0 +1,61 @@
+<panel height="45">
+
+  <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+  <container class="inner_box" appearance="tables/custom/inbox/normal/row"> 
+    <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+    <layout class="arrange_horizontal_attachment" layout="80, -1, -1" offset="5" gap="0" />
+
+    <container>
+      <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+      
+      <widget class="cash_cell" id="feew" size="large" hidden="true" alignment="left,centre_y"/>
+      <widget class="label" id="free" size="large" hidden="true" alignment="left,centre_y">
+        <translation id="text" translation_id="232202" type="use" value="Free" />
+      </widget>
+      <widget class="label" id="loan" size="large" hidden="true" alignment="left,centre_y">
+        <translation id="text" translation_id="230124" type="use" value="Loan" />
+      </widget>
+    </container>
+
+
+    <widget class="person_button" colour="black" id="play" />
+
+    <container>
+      <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+      <layout class="arrange_horizontal_attachment" layout="20, -1" offset="0" gap="0" />
+
+      <container>
+        <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+        <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+
+        <widget class="picture" id="righ" width="20" height="20" scale_picture="false" file="icons/16px/sub on">
+          <boolean id="keep_aspect_ratio" value="true" />
+          <flags id="image_alignment" value="centre" />
+        </widget>
+
+        <widget class="picture" id="left" width="20" height="20" scale_picture="false" file="icons/16px/sub off">
+          <boolean id="keep_aspect_ratio" value="true" />
+          <flags id="image_alignment" value="centre" />
+        </widget>
+        
+      </container>
+
+      <container>
+        <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+        <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+
+        <widget class="team_button" id="to  " size="small" colour="faded text" height="20"/>
+        <widget class="team_button" id="from" size="small" colour="faded text" height="20"/>
+        
+
+      </container>
+      
+
+    </container>
+
+
+
+  </container>
+
+</panel>

@@ -1,0 +1,13 @@
+﻿<panel height="20">
+	<attachment_group class="horizontal_arrange_autosize_vertical_centre"/>
+
+	<string id="importance_icon_required" value="icons/custom/vision/priority/requirement"/>
+	<string id="importance_icon_desired" value="icons/custom/vision/priority/desirable"/>
+	<string id="importance_icon_preferred" value="icons/custom/vision/priority/preffered"/>
+	<string id="importance_icon_favoured" value="icons/custom/vision/priority/favourable"/>
+	<string id="importance_icon_dislikes" value="icons/custom/missing/icon"/>
+	<colour id="importance_icon_red_replacement_colour" name="accent"/>
+
+	<widget class="picture" id="impi" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="16" height="16" disabled_colour="faded white"/>
+	<widget class="text" id="impt" auto_size="all" alignment="left, centre_y" colour="accent" disabled_colour="faded white"/>
+</panel>

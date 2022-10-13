@@ -1,0 +1,22 @@
+<panel height="180">
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+  <container class="inner_subtle_box" red_replacement="black" id="psdt">
+    <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0"/>
+    <layout class="centre_in_parent_attachment" alignment="horizontal" apply_to_children="true" offset="0"/>
+
+    <widget class="object_portrait_picture" id="plpc" height="90" width="150" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
+	  
+    <container height="12" width="1"/>
+
+    <!-- person name -->
+    <widget class="person_button" id="pnam" auto_size="all" spec="text" style="bold" alignment="centre" size="12" colour="black">
+    </widget>
+
+    <!-- person description -->
+    <widget class="text" id="ppos" auto_size="vertical" colour="faded text" alignment="top" size="10" multiline="true">
+      <layout class="stick_to_sides_attachment" alignment="horizontal"/>
+    </widget>
+  </container>
+
+</panel>

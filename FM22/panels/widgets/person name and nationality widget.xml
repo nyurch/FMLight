@@ -1,0 +1,17 @@
+<panel auto_size_minimum_height="60">
+  <layout class="arrange_vertical_attachment" alignment="middle" offset="2" gap="0"/>
+  <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+  <flags id="child_for_sort" value="PnmP"/>
+
+  <widget class="person_button" colour="black" id="PnmP" info_popup_enabled="true" info_popup_alignment="left,centre_y" auto_size="vertical" style="semi_bold">
+    <record id="object_property" get_property="PnmP" set_property="valu" />
+  </widget>
+
+  <widget class="person_nationality_button" auto_size="vertical" colour="faded text">
+    <record id="object_property">
+      <integer id="get_property" value="objt"/>
+      <integer id="set_property" value="objt"/>
+    </record>
+  </widget>
+  
+</panel>

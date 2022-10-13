@@ -1,0 +1,40 @@
+<panel pitch_instruction_description_font="fonts/letterpressed" pitch_instruction_description_text_colour="black">
+	<!-- Tactics icon container -->
+	<container id="rdbt" hidden="true">
+		<layout class="arrange_horizontal_attachment" alignment="left" gap="0" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+		<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="top" inset="14" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+
+		<widget class="radio_button" show_button_appearance="true" appearance="buttons/custom/tactics/pitch switch/left/button" icon="" icon_alignment="right" secondary_icon_enabled="true" secondary_icon="icons/custom/player instruction/player" secondary_icon_alignment="centre" id="rldt" height="30" width="32" click_event="RLDT">
+			<translation id="hint" translation_id="383639" type="use" value="Show Role and Duty[COMMENT: hint for a radio button to toggle showing role and duty on the tactics pitch]" />
+		</widget>
+
+		<widget class="radio_button" show_button_appearance="true" appearance="buttons/custom/tactics/pitch switch/middle/button" icon="" icon_alignment="right" secondary_icon_enabled="true" secondary_icon="icons/custom/tactics/pitch switch/stats" secondary_icon_alignment="centre" id="exin" height="30" width="32" click_event="EXIN">
+			<translation id="hint" translation_id="383638" type="use" value="Show Extra Player Information[COMMENT: hint for a radio button to toggle showing extra player information on the tactics pitch]" />
+		</widget>
+
+		<widget class="radio_button" show_button_appearance="true" appearance="buttons/custom/tactics/pitch switch/right/button" icon="" icon_alignment="right" secondary_icon_enabled="true" secondary_icon="icons/16px/tactics" secondary_icon_alignment="centre" id="fmmd" height="30" width="32" click_event="FMMD">
+			<record id="secondary_icon_properties" red_replacement="white" />
+			<translation id="hint" translation_id="420756" type="use" value="Show Tactical Familiarity[COMMENT: BN 144236, hint for a radio button to toggle showing tactical familiarity on the tactics pitch]" />
+		</widget>
+
+    <widget class="radio_button" show_button_appearance="true" appearance="buttons/custom/tactics/pitch switch/right/button" icon="" icon_alignment="right" secondary_icon_enabled="true" secondary_icon="icons/16px/time" secondary_icon_alignment="centre" id="ptmd" height="30" width="32" click_event="PTMD">
+      <string id="hidden" value="true" />
+      <record id="secondary_icon_properties" red_replacement="white" />
+      <translation id="hint" translation_id="492053" type="use" value="Show Playing Time[COMMENT: AREA: Development Centre SUB-AREA: Youth Team Tactics; FR: 28435; TONE: Formal; CHARLIMIT: None; REF-ID: -; NOTE: hint for a radio button button to toggle showing playing time information on the tactics pitch]" />
+    </widget>
+
+
+    <!--extra info radio button-->
+		<widget class="check_box" id="anLB" show_button_appearance="true" appearance="buttons/custom/tactics/pitch switch/normal/button" icon_enabled="false" secondary_icon_enabled="true" secondary_icon="icons/custom/tactics/pitch switch/analysis" secondary_icon_alignment="left,centre_y" height="30" auto_size="horizontal" click_event="anOV">
+			<record id="secondary_icon_properties" red_replacement="green 400" />
+			<record id="state_on_properties" secondary_icon="icons/custom/tactics/pitch switch/analysis" />
+			<record id="state_off_properties" secondary_icon="icons/custom/tactics/pitch switch/analysis off" />
+			<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+			<translation id="text" translation_id="296334" type="use" value="Analysis[COMMENT: match screen; analysis panel]" />
+			<translation id="hint" translation_id="450818" type="use" value="Enable to display in-depth tactical analysis including detailed information on how the players work together.[COMMENT: match screen; analysis panel, hint text]" />
+		</widget>
+	</container>
+</panel>

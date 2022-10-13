@@ -1,0 +1,159 @@
+﻿<panel>
+	<colour id="positive_rating_background_colour" name="positive" />
+	<colour id="neutral_rating_background_colour" name="grey 900" />
+	<colour id="negative_rating_background_colour" name="negative" />
+
+	<colour id="positive_rating_text_colour" name="white" />
+	<colour id="neutral_rating_text_colour" name="orange" />
+	<colour id="negative_rating_text_colour" name="white" />
+
+
+	<layout class="arrange_vertical_attachment" layout="-1,4,-1" offset="0"  gap="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+
+	<!--best opposition player-->
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+		<container height="25">
+			<layout class="arrange_horizontal_attachment" alignment="left" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+			<widget class="link_button" id="bpln" section="mapl" auto_size="horizontal" colour="text" blue_replacement="text" appearance="buttons/link/title/button" size="small">
+				<record id="auto_size_restrictions">
+					<string id="type" value="available" />
+					<string id="limit_type" value="maximum" />
+					<string id="orientation" value="horizontal" />
+				</record>
+				<translation id="text" translation_id="420658" type="use" value="Best Performance[COMMENT: match analysis overview, label for the best performance during the match]" />
+			</widget>
+		</container>
+
+		<container class="client_object_viewer_xml_panel" id="bPOp">
+			<layout class="arrange_vertical_attachment" layout="45,-1" offset="6" gap="4" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="40,-1" offset="6" gap="8" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+					<widget class="object_portrait_picture" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+						<record id="object_property" get_property="objt" set_property="objt" />
+					</widget>
+				</container>
+
+
+				<container id="bphR">
+					<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+					<!-- Rating Text -->
+					<widget class="dashed_number_label" id="bpTx" alignment="centre" style="bold" spec="text" size="xlarge" auto_size="vertical" format="[%fraction#1-4.1]" />
+
+					<widget class="text" alignment="centre_x,top" colour="faded text" >
+						<translation id="text" translation_id="229619" type="use"  value="Rating" />
+					</widget>
+				</container>
+			</container>
+
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="2" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="6" apply_to_children="true" />
+
+				<widget class="person_button" alignment="left,centre_y" colour="accent" style="semi_bold" height="20">
+					<record id="object_property" get_property="Pnam"/>
+				</widget>
+
+				<widget class="position_label" alignment="left,centre_y" size="small" colour="faded text" auto_size="vertical">
+					<record id="object_property" get_property="Pmjp"/>
+				</widget>
+
+				<widget class="adaptive_match_player_summary"  alignment="left,top" icon_alignment="left,top" colour="text" >
+					<record id="object_property" get_property="PpSN"/>
+				</widget>
+			</container>
+
+
+		</container>
+
+		<widget class="text" id="bPaN" alignment="centre">
+			<string id="text" value="-"/>
+		</widget>
+	</container>
+
+	<widget class="horizontal_divider" red_replacement="white"/>
+	<!--worst opposition player-->
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+		<container height="25">
+			<layout class="arrange_horizontal_attachment" alignment="left" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+			<widget class="link_button" id="wpln" section="mapl" alignment="left,centre_y" auto_size="horizontal" colour="text" blue_replacement="text" appearance="buttons/link/title/button" size="small" >
+				<record id="auto_size_restrictions">
+					<string id="type" value="available" />
+					<string id="limit_type" value="maximum" />
+					<string id="orientation" value="horizontal" />
+				</record>
+				<translation id="text" translation_id="435188" type="use" value="Room for Improvement[COMMENT: match analysis overview, label for disappointing match performances, was 420659 Worst Performance but please shy away from such obvious negatives where possible please]" />
+			</widget>
+		</container>
+
+		<container class="client_object_viewer_xml_panel" id="wPop">
+			<layout class="arrange_vertical_attachment" layout="45,-1" offset="2" gap="4" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="40,-1" offset="6" gap="8" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+					<widget class="object_portrait_picture" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+						<record id="object_property" get_property="objt" set_property="objt" />
+					</widget>
+				</container>
+
+
+				<container id="bphR">
+					<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+					<!-- Rating Text -->
+					<widget class="dashed_number_label" id="bpTx" alignment="centre" style="bold" spec="text" size="xlarge" auto_size="vertical" format="[%fraction#1-4.1]" />
+
+					<widget class="text" alignment="centre_x,top" colour="faded text" >
+						<translation id="text" translation_id="229619" type="use"  value="Rating" />
+					</widget>
+				</container>
+			</container>
+
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="4" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="6" apply_to_children="true" />
+
+				<widget class="person_button" alignment="left,centre_y" colour="accent" style="semi_bold" height="20">
+					<record id="object_property" get_property="Pnam"/>
+				</widget>
+
+				<widget class="position_label" alignment="left,centre_y" size="small" colour="faded text" auto_size="vertical">
+					<record id="object_property" get_property="Pmjp"/>
+				</widget>
+
+				<widget class="adaptive_match_player_summary" alignment="left,top" icon_alignment="left,top" colour="text">
+					<record id="object_property" get_property="PpSN"/>
+				</widget>
+			</container>
+
+
+		</container>
+
+		<widget class="text" id="wPaN" alignment="centre">
+			<string id="text" value="-"/>
+		</widget>
+	</container>
+</panel>

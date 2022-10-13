@@ -1,0 +1,61 @@
+<panel>
+  <attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0"/>
+	
+  
+	<flags id="eidc" value="faded text"/>
+	<flags id="eirc" value="negative"/>
+	<flags id="iinc" value="text"/>
+	<flags id="iirc" value="negative"/>
+
+	<!-- The text icon -->
+	<container height="30">
+		<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
+		<layout class="arrange_horizontal_attachment" alignment="left, extend" gap="0" offset="0"/>
+		<widget class="label" id="star" height="30" width="10" hidden="true" colour="contract negotiation restriction" alignment="right, centre_y">
+			<string id="text" value="*"/>
+		</widget>
+
+		<container height="30">
+			<layout class="arrange_horizontal_attachment" alignment="right, extend" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+			<container height="30">
+				<layout class="arrange_horizontal_attachment" alignment="left, extend"/>
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+				<widget class="text" id="text" alignment="left, centre_y" multiline="false" font="title" colour="title"/>
+			</container>
+
+			<!-- condition lock -->
+			<widget class="check_box" id="lock" click_event="lock" label_disabled="true" width="32" alignment="right,centre_y" appearance="buttons/subtle/normal/button" icon="switches/lock/button" icon_alignment="centre">
+				<translation id="hint" translation_id="350950" type="use" value="Select to mark this as non-negotiable[COMMENT: contract offer panel and transfer offer panel; offer condition lock; the contract term or transfer condition is not negotiable, i.e. the wage, squad status etc]"/>
+			</widget>
+
+			<widget class="popup_button" id="icon" icon="icons/16px/remove from list" appearance="buttons/subtle/normal/button" icon_alignment="left" hidden="true">
+				<record id="primary_icon_properties" red_replacement=""/>
+			</widget>
+		</container>
+	</container>
+
+	<widget class="popup_button" id="popU" appearance="buttons/standard/normal/button" alignment="left, centre_y" auto_size="vertical" hidden="true"/>
+
+	<container id="drop">
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left, extend" horizontal_offset="0" vertical_alignment="vertical"/>
+
+		<widget class="left_right_list" id="left" width="150" auto_size="vertical" hidden="true" gap="-50"/>
+		<widget class="cash_selection_list" id="cash" auto_size="vertical" hidden="true" gap="-50">
+			<record id="default_properties" alignment="right,centre_y" colour="black"/>
+		</widget>
+	</container>
+
+	<widget class="text" id="ewad" multiline="true" auto_size="vertical" size="small" colour="text"/>
+
+  <container>
+    <attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_offset="0" horizontal_gap="0" />
+
+    <widget class="picture" id="eiiw" file="icons/custom/object preview/button" width="20" height="20" image_alignment="centre" hidden="true"/>
+    <widget class="text" id="eiwi" multiline="true" auto_size="all" size="small"/>
+  </container>
+	
+
+</panel>

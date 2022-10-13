@@ -1,0 +1,105 @@
+﻿<panel>
+	<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+	<list id="draw_order">
+		<record entity_layout_id="at00" />
+		<record entity_layout_id="at02" />
+		<record entity_layout_id="at01" />
+		<record entity_layout_id="at03" />
+		<record entity_layout_id="at04" />
+		<record entity_layout_id="at05" />
+		<record entity_layout_id="at06" />
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+	</widget>
+	<container class="inner_box" id="at00" entity_layout_id="at00" auto_size="vertical" width="200" name="in attendance box (needs to autosize)">
+		<translation id="title" translation_id="376487" type="use" value="In Attendance[COMMENT: FR 7884 - in attendance label; team meeting introduction box; team meeting, list of players who are in attendance]" />
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="left" set_side="left" move_side="true" target="main" />
+		<layout class="stick_to_object_attachment" id="group_align_bottom" get_side="bottom" set_side="bottom" use_own_content_rectangle="true" use_children_to_size="true" target="at02" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<container class="client_object_list_table" id="attB" entity_layout_id="at02" auto_size="vertical">
+			<integer id="row_height" value="50" />
+			<integer id="fixed_row_height" value="30" />
+			<string id="customisation_context" value="play" />
+			<string id="mode" value="hide_headings" />
+			<integer id="database_table_type" value="1" />
+			<boolean id="should_force_refresh" value="true" />
+			<string id="contextual_handler_column_id" value="Pnms" />
+			<record id="viewed_property_ids">
+				<record id="PNaJ" />
+			</record>
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" offset="5" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		</container>
+
+	</container>
+	<container class="inner_subtle_box" entity_layout_id="at01" id="at01" auto_size="vertical" red_replacement="black" name="agenda box (needs to autosize)">
+		<translation id="title" translation_id="509176" type="use" value="Meeting Agenda[COMMENT: AREA: Recruitment meeting; FR-BN: 32765; NOTE: Recruitment meeting agenda panel title]" />
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" target="at00" />
+		<layout class="stick_to_object_attachment" id="align_right" offset="-10" get_side="right" set_side="right" target="main" />
+		<layout class="stick_to_object_attachment" id="group_align_bottom" get_side="bottom" set_side="bottom" use_own_content_rectangle="true" use_children_to_size="true" target="at06" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<widget class="icon_button" id="at03" entity_layout_id="at03" auto_size="horizontal" needs_width="true" height="20" name="Reminder of club vision">
+			<string id="icon" value="icons/16px/bullet" />
+			<string id="colour" value="text" />
+			<string id="icon_colour" value="text" />
+			<string id="appearance" value="" />
+			<string id="size" value="large" />
+			<translation id="text" translation_id="511077" type="use" value="Remaining club vision and transfer budget[COMMENT: AREA: Recruitment meeting news item; FR-BN: 32765; NOTE: Recruitment meeting agenda item]" />
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="left" set_side="left" move_side="true" target="main" />
+		</widget>
+		<widget class="icon_button" id="at04" entity_layout_id="at04" auto_size="horizontal" needs_width="true" height="20" name="Determine areas to improve">
+			<string id="icon" value="icons/16px/bullet" />
+			<string id="colour" value="text" />
+			<string id="icon_colour" value="text" />
+			<string id="appearance" value="" />
+			<string id="size" value="large" />
+			<translation id="text" translation_id="511078" type="use" value="Determine areas to improve[COMMENT: AREA: Recruitment meeting news item; FR-BN: 32765; NOTE: Recruitment meeting agenda item]" />
+			<layout class="stick_to_object_attachment" id="align_top" offset="20" get_side="bottom" set_side="top" move_side="true" target="at03" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="left" set_side="left" move_side="true" target="main" />
+		</widget>
+		<widget class="icon_button" id="at05" entity_layout_id="at05" auto_size="horizontal" needs_width="true" height="20" name="Review recommendations">
+			<string id="icon" value="icons/16px/bullet" />
+			<string id="colour" value="text" />
+			<string id="icon_colour" value="text" />
+			<string id="appearance" value="" />
+			<string id="size" value="large" />
+			<translation id="text" translation_id="511079" type="use" value="Review recommendations[COMMENT: AREA: Recruitment meeting news item; FR-BN: 32765; NOTE: Recruitment meeting agenda item]" />
+			<layout class="stick_to_object_attachment" id="align_top" offset="20" get_side="bottom" set_side="top" move_side="true" target="at04" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="left" set_side="left" move_side="true" target="main" />
+		</widget>
+		<widget class="icon_button" id="at06" entity_layout_id="at06" auto_size="horizontal" needs_width="true" height="20" name="Decide on short term recruitment focuses">
+			<string id="icon" value="icons/16px/bullet" />
+			<string id="colour" value="text" />
+			<string id="icon_colour" value="text" />
+			<string id="appearance" value="" />
+			<string id="size" value="large" />
+			<translation id="text" translation_id="511080" type="use" value="Decide on short-term recruitment focus[COMMENT: AREA: Recruitment meeting news item; FR-BN: 32765; NOTE: Recruitment meeting agenda item]" />
+			<layout class="stick_to_object_attachment" id="align_top" offset="20" get_side="bottom" set_side="top" move_side="true" target="at05" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="left" set_side="left" move_side="true" target="main" />
+		</widget>
+	</container>
+</panel>

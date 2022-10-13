@@ -1,0 +1,82 @@
+<panel>
+  <layout class="arrange_horizontal_attachment" layout="60,-1,80" offset="2" gap="2" />
+  <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="2" />
+
+  <container class="client_object_viewer_xml_panel" height="25">
+    <record id="object_property">
+      <list id="get_properties">
+        <record>
+          <integer id="get_property" value="tefc" />
+          <integer id="set_property" value="objt" />
+        </record>
+      </list>
+    </record>
+    
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+    <widget class="object_portrait_picture" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true">
+      <layout class="stick_to_sides_attachment" alignment="vertical" inset="5" />
+      <record id="object_property">
+        <list id="get_properties">
+          <record>
+            <integer id="get_property" value="TDiv" />
+            <integer id="set_property" value="valu" />
+          </record>
+        </list>
+      </record>
+    </widget>
+  </container>
+  
+  <container>
+    <layout class="arrange_vertical_attachment" layout="-1,-1" offset="0" gap="0" />
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+    <widget class="person_button" colour="black" Pipl="true" ipen="true" >
+      <record id="object_property">
+        <list id="get_properties">
+          <record>
+            <integer id="get_property" value="Pers" />
+            <integer id="set_property" value="valu" />
+          </record>
+        </list>
+      </record>
+    </widget>
+
+    <widget class="game_formatted_label" size="small">
+      <list id="format">
+        <record value="0">
+          <translation id="format" translation_id="412471" type="use" value="[%team#2] to [%team#3][COMMENT: FR 15125]" />
+        </record>
+        <record value="1">
+          <translation id="format" translation_id="412470" type="use" value="Free Transfer to [%team#3][COMMENT: FR 15125]" />
+        </record>
+        <record value="2">
+          <translation id="format" translation_id="232075" type="use" value="Released on free transfer" />
+        </record>
+        <record value="3">
+          <translation id="format" translation_id="326998" type="use" value="Waived [COMMENT: team transfer section; List of players waived (MLS)]"/>
+        </record>
+      </list>
+      <record id="object_property">
+        <list id="get_properties">
+          <record get_property="ttyp" set_property="var1" dont_set_object="true" />
+          <record get_property="selt" set_property="var2" dont_set_object="true" />
+          <record get_property="buyt" set_property="var3" dont_set_object="true" />
+          
+        </list>
+      </record>
+    </widget>
+
+  </container>
+
+  <widget class="label" alignment="right" size="large" style="bold" >
+    <record id="object_property">
+      <list id="get_properties">
+        <record>
+          <integer id="get_property" value="fee " />
+          <integer id="set_property" value="text" />
+        </record>
+      </list>
+    </record>
+  </widget>
+</panel>

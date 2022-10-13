@@ -1,0 +1,79 @@
+﻿<panel>
+	<list id="draw_order">
+		<record entity_layout_id="at00"/>
+		<record entity_layout_id="at01"/>
+		<record entity_layout_id="at02"/>
+		<record entity_layout_id="at08"/>
+		<record entity_layout_id="at03"/>
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true"/>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true"/>
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+	</widget>
+	<container entity_layout_id="at00" id="at00" height="50" name="person container">
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true"/>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true"/>
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+		</widget>
+		<container class="object_portrait_picture" entity_layout_id="at01" id="port" width="50" name="person pic">
+			<string id="image_alignment" value="left"/>
+			<string id="scale_picture" value="true"/>
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<string id="get_property" value="objt"/>
+						<string id="set_property" value="valu"/>
+					</record>
+				</list>
+			</record>
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+		</container>
+		<container entity_layout_id="at02" id="at02" name="person info">
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="5" get_side="right" set_side="left" target="at01"/>
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+			</widget>
+			<container class="player_age_and_description_widget" entity_layout_id="at08" id="description" name="description widget">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<string id="get_property" value="objt"/>
+							<string id="set_property" value="valu"/>
+						</record>
+					</list>
+				</record>
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+				<layout class="stick_to_sizes_attachment" height="50.000000"/>
+			</container>
+			<widget class="person_button" colour="black" entity_layout_id="at03" id="Pbut" name="top prospect person button">
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+				<layout class="stick_to_sizes_attachment" height="50.000000"/>
+			</widget>
+		</container>
+	</container>
+</panel>

@@ -1,0 +1,11 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<widget class="scrolling_box">
+		<widget class="simple_data_list" set_property="prop" auto_size="vertical" gap="4">
+			<record id="object_property" get_property="itms" set_property="valu" />
+
+			<record id="widget_properties" class="text" auto_size="vertical" />
+		</widget>
+	</widget>
+</panel>

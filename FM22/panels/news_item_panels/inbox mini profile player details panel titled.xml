@@ -1,0 +1,36 @@
+<panel>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0"/>
+
+	<container class="inner_subtle_box" red_replacement="black" id="titl">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<!-- some pictures -->
+		<widget class="competition_news_image_panel" id="ptpc" height="95" />
+
+		<!-- person name -->
+		<widget class="person_button" id="pnam" auto_size="vertical" spec="text" style="bold" alignment="centre" size="12" info_popup_alignment="centre_left" colour="black"/>
+
+		<!--club-->
+		<widget class="team_button" id="Pcte" auto_size="vertical" spec="text" alignment="centre" icon_alignment="centre">
+			<record id="object_property">
+				<integer id="get_property" value="Pcte"/>
+			</record>
+		</widget>
+
+		<!--nationality-->
+		<widget class="nation_button" id="Pnat" auto_size="vertical" spec="text" alignment="centre" icon_alignment="centre">
+			<record id="object_property">
+				<integer id="get_property" value="Pnat"/>
+			</record>
+		</widget>
+
+		<!-- person description -->
+		<widget class="text" id="ppos" auto_size="vertical" colour="faded text" alignment="centre" size="10" multiline="true" />
+
+	</container>
+
+</panel>

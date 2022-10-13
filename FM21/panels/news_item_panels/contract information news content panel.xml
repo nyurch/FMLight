@@ -1,0 +1,100 @@
+<panel save_session_state="true" draw_horizontal_dividers="true">
+    <attachment_group class="vertical_arrange_autosize">
+        <global id="vertical_gap" name="ui.inner_box_gap"/>
+    </attachment_group>
+
+    <list id="properties_to_forward">
+        <record get_property="hinc" set_property="hidn" target="incn" />
+        <record get_property="hexc" set_property="hidn" target="expc" />
+        <record get_property="hpte" set_property="hidn" target="eptc" />
+        <record get_property="hstn" set_property="hidn" target="staN" />
+    </list>
+
+    <boolean id="should_force_refresh" value="true" />
+
+    <container id="incn" class="inner_box">
+        <attachment_group class="vertical_arrange_autosize" vertical_alignment="top" />
+
+        <widget class="text" font="title" colour="accent" auto_size="vertical">
+            <translation id="text" translation_id="491989" type="use" value="Player Interest[COMMENT: AREA: Contracts; SUB-AREA: Contract Negotiations; FR-BN: TBC; TONE: Formal; CHARLIMIT: Shortish; REF-ID: n/a; NOTE: title for how interested the player is in the proposed playing time as part of contract negotiations, Playing Time is ID 423887]" />
+        </widget>
+
+        <widget class="text" id="itxt" size="large" style="bold" auto_size="vertical" multiline="true"/>
+        <widget class="text" id="mitx" auto_size="vertical" multiline="true"/>
+        <widget class="text" id="sitx" auto_size="vertical" multiline="true"/>
+        <widget class="text" id="litx" auto_size="vertical" multiline="true"/>
+        <widget class="text" id="nitx" auto_size="vertical" multiline="true"/>
+    </container>
+
+    <container class="inner_box" id="expc">
+        <attachment_group class="vertical_arrange_autosize" />
+
+        <widget class="text" font="title" colour="accent" auto_size="vertical">
+            <translation id="text" translation_id="491990" type="use" value="Expectations[COMMENT: AREA: Inbox; SUB-AREA: Contract Negotiations; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: what the player expects from contract talks]" />
+        </widget>
+
+        <container draw_vertical_dividers="true">
+            <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill">
+                <global id="horizontal_gap" name="ui.main_box_gap" />
+            </attachment_group>
+
+            <container id="eptc">
+                <attachment_group class="vertical_arrange_autosize" />
+
+                <container class="vertical_label_value_pair" label_widget="Ptla" value_widget="Ptva">
+                    <widget class="text" id="Ptla" alignment="left,centre_y">
+                        <translation id="text" translation_id="423877" type="use" value="Playing Time[COMMENT: FR 14013, contract promise type]" />
+                    </widget>
+
+                    <widget class="playing_time_label" id="Ptva" alignment="left,centre_y" auto_size="vertical"/>
+                </container>
+
+                <widget class="text" id="ptds" alignment="left,centre_y" auto_size="vertical" multiline="true" colour="faded text">
+                    <translation id="text" translation_id="491991" type="use" value="Playing Time[COMMENT: Loan report panel string; AREA: Loan Report panel; SUB-AREA: playing time hint; FR-BN: 15859]" />
+                </widget>
+            </container>
+
+            <container>
+                <attachment_group class="vertical_arrange_autosize" />
+
+                <container class="vertical_label_value_pair" label_widget="wala" value_widget="wava">
+                    <widget class="text" id="wala" alignment="left,centre_y">
+                        <translation id="text" translation_id="227799" type="use" value="Wage" />
+                    </widget>
+
+                    <widget class="text" id="wava" alignment="left,centre_y" auto_size="vertical"/>
+                </container>
+
+                <widget class="text" id="wads" alignment="left,centre_y" auto_size="vertical" multiline="true" colour="faded text"/>
+            </container>
+        </container>
+    </container>
+
+    <container>
+        <attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend" >
+            <global id="horizontal_gap" name="ui.button_row_gap"/>
+        </attachment_group>
+
+        <container class="contract_promises_panel" id="prom" is_in_inbox="true" file="none" hidden="true">
+            <attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right" />
+
+            <widget class="icon_button" click_event="walk" auto_size="all" controller_button="x_button">
+                <translation id="text" translation_id="313553" type="use" value="Walk Away[COMMENT: contract offer panel; walk away from the current contract negotiation]" />
+            </widget>
+        </container>
+
+        <container class="contract_offer_panel" id="on" is_in_inbox="true" file="none" hidden="true">
+            <attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right" />
+
+            <widget class="icon_button" click_event="walk" auto_size="all" controller_button="x_button">
+                <translation id="text" translation_id="313553" type="use" value="Walk Away[COMMENT: contract offer panel; walk away from the current contract negotiation]" />
+            </widget>
+        </container>
+
+        <widget class="button" click_event="hdof" id="hdof" auto_size="all"/>
+        <widget class="icon_button" id="staN" click_event="evio" auto_size="all" appearance="buttons/primary/normal/button" controller_button="y_button">
+		<record id="default_properties" alignment="right,centre_y" colour="white"/>
+            <translation id="text" translation_id="491992" type="use" value="Start Negotiations[COMMENT: AREA: Inbox; SUB-AREA: Contracts; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: button text to begin contract talks]" />
+        </widget>
+    </container>
+</panel>
