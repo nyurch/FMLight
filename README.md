@@ -1,2 +1,2 @@
-# FM22Light
- Light skin for FM22
+# FMLight
+ Light skin for FM
