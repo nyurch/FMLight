@@ -1,0 +1,56 @@
+<panel>
+    <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+    <container class="main_subtle_box_no_margin">
+        <attachment class="vertical_arrange" vertical_layout="-2,-5,-2" vertical_gap="5" vertical_offset="10"/>
+        <container>
+            <attachment class="vertical_arrange" vertical_layout="-1,-1" vertical_gap="0"/>
+            <widget class="fixture_opponent_team_button" icon_enabled="false" show_button_appearance="false" size="8" font="lcsb" alignment="centre_x,bottom,can_scale" colour="text">
+                <record id="object_property" dont_set_hint="true">
+                    <integer id="get_property" value="fopt"/>
+                    <integer id="set_property" value="valu"/>
+                </record>
+            </widget>
+            <widget class="fixture_venue_label" format="1" colour="title" font="lcsb" size="8" alignment="centre_x,top,can_scale">
+                <record id="object_property" dont_set_hint="true">
+                    <integer id="get_property" value="FxVn"/>
+                    <integer id="set_property" value="valu"/>
+                </record>
+            </widget>
+        </container>
+        <widget class="fixture_opponent_picture" id="oppi" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x,centre_y">
+            <record id="object_property">
+                <list id="get_properties">
+                    <record>
+                        <integer id="get_property" value="fopP"/>
+                        <boolean id="dont_set_object" value="true"/>
+                    </record>
+                    <record>
+                        <integer id="get_property" value="text"/>
+                        <string id="set_property" value="hint"/>
+                    </record>
+                </list>
+            </record>
+        </widget>
+        <container><attachment class="vertical_arrange" vertical_layout="-1,-1" vertical_gap="0"/>
+            <widget class="game_formatted_label" format="([%comp#1-3letter])" colour="title" font="lcsb" size="8" alignment="centre_x,bottom,can_scale">
+                <record id="object_property" get_property="fxCo" set_property="var1"/>
+            </widget>
+            <container>
+                <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+                <layout class="arrange_horizontal_attachment" alignment="middle"/>
+                <container>
+                    <attachment_group class="horizontal_arrange_autosize" horizontal_gap="10"/>
+                    <record id="default_properties" auto_size="horizontal" alignment="centre_y"/>
+                    <widget class="fixture_result_icon" alignment="top" auto_size="all" wants_mouse_events="false">
+                        <record id="object_property" get_property="FxRs"/>
+                    </widget>
+                    <widget class="fixture_full_result_text" spec="text" size="8" font="lcsb" alignment="centre_x,top" multiline="false" format="[%scoreline#1-result_h_a_result]" colour="text">
+                        <record id="object_property">
+                            <integer id="get_property" value="FxFR"/>
+                        </record>
+                    </widget>
+                </container>
+            </container>
+        </container>
+    </container>
+</panel>

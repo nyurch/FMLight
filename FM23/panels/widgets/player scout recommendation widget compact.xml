@@ -1,0 +1,43 @@
+﻿<panel>
+
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+
+	<widget class="text" alignment="centre" id="norp" multiline="false" colour="faded text" auto_size="vertical" auto_size_minimum_height="27">
+		<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" />
+		<string id="text" value="-" />
+	</widget>
+
+
+
+	<container id="rpco" hidden="true">
+		<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="2" gap="4" />
+		<layout class="fit_children_attachment" alignment="vertical" offset="3" gap="0" />
+		<layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true" />
+
+		<container height="32" width="32">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<widget class="picture" id="icon" file="icons/48px/grade_scout"  red_replacement="white" image_alignment="left, centre_y" keep_aspect_ratio="true" scale_picture="true" height="32">
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+			</widget>
+
+			<widget class="text" id="rcVL" alignment="centre" style="bold" size="small" colour="foreground"/>
+
+		</container>
+
+		<container class="main_box" appearance="boxes/custom/scouting knowledge/paper" height="12" id="hbar">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<widget class="horizontal_percentage_bar" id="hpbr" height="4" bar_value_colour="knowledge level" show_label_on_bar="false" label_width="0" appearance="charts/bar/custom/knowledge">
+				<layout class="centre_in_parent_attachment" alignment="vertical" />
+			</widget>
+		</container>
+
+	</container>
+
+	<widget class="link_button" id="lnkb" section="Pssr" alignment="left,centre_y" appearance="buttons/custom/over state only/button" hidden="true">
+
+	</widget>
+
+</panel>

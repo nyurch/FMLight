@@ -1,0 +1,40 @@
+<panel>
+
+	<string id="skin_style" value="subtle box" />
+
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<container class="inner_subtle_box" red_replacement="black">
+		<translation id="title" type="use" translation_id="339935" value="Training Camp[COMMENT: squad selection panel; dropdown option to select training camp squad]" />
+
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<container height="50">
+			<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="8" />
+			<layout class="stick_to_sides_attachment" alignment="vertical"  apply_to_children="true" inset="0"/>
+
+			<widget class="object_portrait_picture" id="locp" width="100" image_alignment="top" scale_picture="true" />
+
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="top" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+				<widget class="text" id="loca" auto_size="vertical" />
+				<widget class="text" id="date" auto_size="vertical" />
+
+			</container>
+
+		</container>
+
+		<widget class="label" id="FxTT" font="title" size="small">
+			<translation id="text" translation_id="395516" type="use" value="Upcoming Fixtures[COMMENT: FR 9550 - inbox; title for section showing upcoming fixtures for the competition]" />
+		</widget>
+
+		<container id="cont">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" />
+
+		</container>
+
+	</container>
+
+</panel>

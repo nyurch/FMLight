@@ -1,0 +1,195 @@
+<!-- A panel showing various bits of information about a player -->
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<boolean id="should_force_refresh" value="true"/>
+
+	<container class="main_box_no_margin">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+		<container class="horizontal_adaptive_container" inset="0" gap="10" mode="distribute_equally">
+
+			<container minimum_width="304" priority="1">
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+				<layout class="arrange_horizontal_attachment" layout="85, -1, 10, 1" offset="0" gap="0" />
+
+				<!-- Profile picture -->
+				<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x">
+					<record id="object_property">
+						<list id="get_properties">
+							<!--Facegen data request-->
+							<record get_property="fcgn" />
+							<!--Fake name request-->
+							<record get_property="Pfke" />
+							<record get_property="prpc" set_property="valu" />
+						</list>
+					</record>
+				</widget>
+
+				<!-- Personal Details -->
+				<container class="icon_box" id="icn1" icon="">
+					<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<record id="icon_properties" red_replacement="bg lighter"/>
+
+					<!-- Get player status flags-->
+					<record id="object_property" get_property="Pnfo" dont_set_object="true" dont_set_hint="true"/>
+
+					<!-- Player status icon with a fitness donut as first item-->
+					<widget class="player_status_all_button" id="secw" appearance="buttons/custom/status round" auto_size="all" alignment="bottom" offset_x="0" offset_y="4" gap="-4" maximised="false" max_items_per_row_or_column="3" embed_in_frame="true">
+						<layout class="stick_to_sides_attachment" alignment="top, left" inset="0" embed_in_frame="true" />
+
+						<!-- Set icon to only show: HG, Int, Hol, Trv-->
+						<integer id="type" value="0" />
+
+						<!-- National flag image -->
+						<container embed_in_frame="true" width="20" height="26">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+							<layout class="stick_to_sides_attachment" alignment="top, left" inset="3,0" embed_in_frame="true" />
+
+							<widget class="object_portrait_picture" id="npiB" image_alignment="centre" scale_picture="true" wants_mouse_events="true">
+								<record id="object_property" dont_set_hint="true" get_property="PNat" set_property="objt" />
+							</widget>
+						</container>
+					</widget>
+
+					<!-- Nationality -->
+					<widget class="editable_client_object_property_panel" id="intc" auto_size="vertical" >
+						<record id="widget_info" class="nation_button" icon_enabled="false" auto_size="vertical" format="[%nation#1-nationality]" size="small"/>
+						<record id="widget_properties" auto_size="vertical"/>
+						<record id="object_property" dont_set_hint="true" get_property="PNat" />
+					</widget>
+
+					<!-- Age & DoB-->
+					<container>
+						<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0" />
+						<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="3" />
+						<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+						<!-- Age -->
+						<!-- We use an editable panel here just to make it disappear when editing-->
+						<!-- fixed height as an attempt to fix 152615 -->-->
+						<widget class="editable_client_object_property_panel" id="age " height="22" auto_size="horizontal" >
+							<record id="widget_info" class="formatted_label" alignment="left,centre_y" height="22" auto_size="horizontal" size="large" style="bold" appearance="buttons/primary/normal/button">
+								<translation id="format" translation_id="242551" type="use" value="[%number#1] years old" />
+							</record>
+							<record id="widget_edit_info" width="0" height="0"/>
+							<record id="object_property" get_property="Page" />
+						</widget>
+
+						<!-- DoB -->
+						<widget class="editable_client_object_property_panel" id="dobl" auto_size="vertical" size="small">
+							<record id="widget_info" class="game_formatted_label" alignment="left,centre_y" auto_size="vertical" auto_size_minimum_height="22" format="([%date#1-short])"/>
+							<record id="widget_properties" height="22"/>
+							<record id="object_property" get_property="Pdob" />
+						</widget>
+					</container>
+
+					<!-- Int Caps -->
+					<widget class="international_appearances_label" id="inta" auto_size="vertical" >
+						<integer id="int_apps_label_format" value="8" />
+						<record id="object_property" dont_set_hint="true" get_property="Pist" />
+					</widget>
+
+					<!-- Youth Caps -->
+					<widget class="international_appearances_label" id="inty" auto_size="vertical" size="small">
+						<integer id="int_apps_label_format" value="9" />
+						<record id="object_property" dont_set_hint="true" get_property="Pist" />
+					</widget>
+				</container>
+
+				<widget class="spacer" />
+				<widget class="vertical_divider" auto_size="none"/>
+			</container>
+
+			<!-- Contract info etc-->
+			<container minimum_width="304" priority="3">
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+				<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="10"/>
+
+				<container class="icon_box" id="icn2" icon="">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+					<record id="icon_properties" red_replacement="bg lighter"/>
+
+					<!-- Get player status flags-->
+					<record id="object_property" get_property="Pnfo" dont_set_object="true" dont_set_hint="true"/>
+					<!-- Player status icon with club badge-->
+					<widget class="player_status_all_button" id="secw" appearance="buttons/custom/status round" auto_size="all" alignment="bottom" offset_x="0" offset_y="4" gap="-4" maximised="false" max_items_per_row_or_column="3" embed_in_frame="true">
+						<layout class="stick_to_sides_attachment" alignment="top, left" inset="0" embed_in_frame="true" />
+						
+						<!-- Set icon to only show: Wnt, Bid, Trn, Lst, Loa, Yth, Wp-->
+						<integer id="type" value="1" />
+
+						<!-- Club badge image -->
+						<container width="26" height="26" embed_in_frame="true">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="4" apply_to_children="true"/>
+							<layout class="stick_to_sides_attachment" alignment="top, left" inset="0" embed_in_frame="true" />
+
+
+
+							<widget class="object_portrait_picture" id="pclB" image_alignment="centre" scale_picture="true" width="14" height="14" wants_mouse_events="true">
+								<record id="object_property" dont_set_hint="true" get_property="Pclb" set_property="objt" />
+							</widget>
+						</container>
+					</widget>
+					<container class="scrolling_box">
+						<container class="vertical_arrange_container" auto_size="vertical" offset="0" gap="2">
+
+
+							<!--Player extra details (e.g. onloan at...)-->
+							<widget class="player_extra_details_text" id="plex" auto_size="vertical" multiline="false" size="small">
+								<record id="object_property" get_property="PExD" />
+							</widget>
+
+							<!--Value-->
+							<widget class="editable_client_object_property_panel" id="valu" auto_size="all" font="bold" colour="text" alignment="left, centre">
+								<translation id="format" translation_id="383826" type="use" value="Valued at [%cash#1-roundsmall-short][COMMENT: FR 10661; player overview; string diaplyed a player's estimated monetary value]" />
+								<record id="widget_properties" auto_size="all"/>
+								<record id="object_property" get_property="Pdva" dont_set_hint="true" />
+							</widget>
+
+							<!--Wage / Expiry date-->
+							<container height="30" id="wged">
+								<layout class="arrange_horizontal_attachment" alignment="fill" offset="0" gap="2"/>
+								<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+								<widget class="editable_client_object_property_panel" id="Pcww" colour="fg" red_replacement="edit_box_background">
+									<record id="object_property" get_property="Pcww" />
+								</widget>
+								<widget class="editable_client_object_property_panel" id="Pcex" colour="fg" red_replacement="edit_box_background">
+									<record id="object_property" get_property="Pcex" />
+								</widget>
+							</container>
+							<widget class="link_text" id="wgex" section="Pcnr" auto_size="vertical" size="small" />
+
+							<!-- Agreed playing time-->
+							<widget class="playing_time_label" id="sqst" auto_size="vertical" size="small" >
+								<record id="object_property" get_property="Pcpt" />
+							</widget>
+						</container>
+					</container>
+
+				</container>
+
+				<!-- Vertical separator line -->
+				<widget class="vertical_divider" priority="4"/>
+			</container>
+
+			<!-- Scout report info etc-->
+			<container class="icon_box" id="scrB" icon="icons/custom/icon box/report" red_replacement="primary" minimum_width="304" priority="5">
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<record id="icon_properties" red_replacement="bg lighter" blue_replacement="text"/>
+
+				<!-- Set icon to only show: Sct-->
+				<record id="widget_properties" type="2" />
+
+				<container class="player_scout_reports_panel" id="psco" file="player/player scout reports small">
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</container>
+			</container>
+		</container>
+	</container>
+</panel>

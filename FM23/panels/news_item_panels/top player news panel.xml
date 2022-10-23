@@ -1,0 +1,87 @@
+﻿<panel width="210">
+    <attachment_group class="vertical_arrange_autosize" vertical_offset="4" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0"/>
+
+    <list id="properties_to_forward">
+        <record get_property="LPos" set_property="text" target="LPos"/>
+        <record get_property="swic" set_property="shown" target="swic"/>
+    </list>
+
+    <!-- person details -->
+    <container class="main_box" appearance="boxes/main/contrast/top/paper" height="150" red_replacement="bg lighter">
+        <attachment_group class="horizontal_arrange" horizontal_layout="26, 1,1, -1" horizontal_inset="0" horizontal_gap="0"/>
+
+        <!-- left column - ranking and winner icon -->
+        <container>
+            <attachment_group class="vertical_arrange" vertical_alignment="top" horizontal_inset="0"/>
+
+            <container width="26" height="26">
+                <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+                <widget class="picture" image_alignment="centre" file="icons/26px/circle" red_replacement="bg accent" blue_replacement="black" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+                    <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+                </widget>
+                <widget class="text" id="LPos" alignment="centre" size="small" style="semi_bold" colour="white">
+                    <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+                </widget>
+            </container>
+            <!-- icon indicating Player is winner -->
+            <widget class="picture" id="swic" image_alignment="centre" file="icons/custom/milestones/awards" red_replacement="fg alert" blue_replacement="black" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false" width="26" height="26"/>
+        </container>
+        <!-- face -->
+        <widget class="picture" id="lftH" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+            <layout class="stick_to_sides_attachment" alignment="top" inset="70"/>
+            <layout class="stick_to_sides_attachment" alignment="left" inset="70" />
+            <layout class="stick_to_sides_attachment" alignment="vertical" inset="35" />
+            <attachment class="test_setting_attachment" get_setting="show_portraits" default_value="true" set_property="hidn">
+               <list id="value">
+                   <boolean value="false" />
+               </list>
+            </attachment>
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+            <record id="object_property">
+               <integer id="get_property" value="mbpc"/>
+               <integer id="set_property" value="file"/>
+            </record>
+        </widget>
+        <!-- nation logo -->
+        <widget class="object_portrait_picture" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+           <layout class="stick_to_sides_attachment" alignment="top" inset="0"/>
+           <layout class="stick_to_sides_attachment" alignment="left" inset="115"/>
+           <record id="object_property" get_property="PNat" set_property="objt"/>
+           <layout class="stick_to_sides_attachment" alignment="all" inset="45"/>
+        </widget>
+        <!-- mugshot -->
+        <widget class="object_portrait_picture" id="trpf" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true">
+            <layout class="stick_to_sides_attachment" alignment="vertical" />
+            <layout class="stick_to_sides_attachment" alignment="left" inset="-10"/>
+            <record id="object_property" get_property="objt" set_property="valu"/>
+        </widget>
+    </container>
+
+    <container class="main_box" appearance="boxes/main/contrast/bottom/paper" red_replacement="bg accent">
+        <attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" vertical_offset="0" vertical_gap="4"/>
+        <!-- name -->
+        <widget class="person_button" id="psbf" auto_size="vertical" alignment="left, centre_y, can_scale" style="semi_bold" colour="white" size="xlarge" info_popup_enabled="true" person_is_player="true" format="[%person#1-initial_surname]">
+            <record id="object_property" get_property="objt" set_property="valu"/>
+            <layout class="stick_to_sides_attachment" alignment="horizontal" inset="4"/>
+        </widget>
+        <!-- club -->
+        <widget class="club_button" auto_size="vertical" alignment="left,centre_y" size="12" icon_enabled="true" icon_alignment="left,centre_y" colour="faded white">
+            <record id="object_property" get_property="Pclb" set_property="valu"/>
+            <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+        </widget>
+        <widget class="global_reputation_stars_label" id="pReP" lrge="true" colour="yellow" alignment="left, centre_y,">
+            <record id="object_property" get_property="Prsa" dont_set_object="true"/>
+        </widget>
+        <widget class="reputation_label" colour="white" id="repU" auto_size="vertical" alignment="left, centre_y, can_scale" hint="Reputation" >
+            <record id="object_property">
+               <integer id="get_property" value="Pcrp" />
+            </record>
+        </widget> 
+        <!-- age -->
+        <widget class="formatted_label" auto_size="vertical" alignment="left, centre_y, can_scale" size="10" colour="white">
+            <translation id="format" translation_id="242551" type="use" value="[%number#1] years old"/>
+            <record id="object_property" get_property="Page"/>
+            <layout class="stick_to_sides_attachment" alignment="horizontal" inset="4"/>
+        </widget>
+    </container>
+</panel>

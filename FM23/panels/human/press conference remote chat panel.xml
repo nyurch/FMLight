@@ -1,0 +1,117 @@
+﻿<panel>
+    <attachment_group class="vertical_arrange" vertical_layout="40, -1" vertical_offset="0"/>
+    <layout class="stick_to_sides_attachment" alignment="all"/>
+
+    <!-- title area -->
+    <container height="40" navigation_container="true">
+        <attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="-1, 25, 220"/>
+
+        <container>
+            <attachment_group class="horizontal_arrange_autosize_all_centre_centered_in_parent"/>
+
+            <widget class="picture" file="icons/custom/quick chat/remote_chat" scale_picture="true" image_alignment="centre" width="20" height="20" red_replacement="accent"/>
+            <widget class="text" id="titl" font="title" size="xlarge" auto_size="all" auto_size_maximum_width="350" alignment="left, centre_y" colour="accent"/>
+        </container>
+
+        <container width="20" height="30">
+            <attachment_group class="vertical_arrange" vertical_layout="-1, -1" horizontal_alignment="horizontal"/>
+
+            <!-- scroll through chat -->
+            <widget class="icon_button" id="ChUp" click_event="ChUp" icon="icons/16px/up" height="16" width="16" icon_alignment="centre" show_button_appearance="false"/>
+            <widget class="icon_button" id="ChDn" click_event="ChDn" icon="icons/16px/down" height="16" width="16" icon_alignment="centre" show_button_appearance="false"/>
+        </container>
+
+        <!-- leave -->
+        <container width="220" height="40">
+            <attachment_group class="horizontal_arrange" horizontal_alignment="right"/>
+
+            <widget class="icon_button" id="EndC" click_event="ENDc" auto_size="all" controller_button="b_button">
+                <translation id="text" translation_id="515051" type="use" value="End Chat[COMMENT: AREA: Interaction; SUB-AREA: Remote chat panel; FR: 32639; TONE: Formal; CHARLIMIT: None; NOTE: Button label to leave the conversation]"/>
+            </widget>
+        </container>
+    </container>
+
+    <container>
+        <attachment_group class="horizontal_arrange" horizontal_layout="220, -1, 220" vertical_alignment="vertical" horizontal_gap="8"/>
+
+        <!-- left panel - interactee info -->
+        <container class="main_transparent_box" red_replacement="bg darker" navigation_container="true">
+            <attachment_group class="vertical_arrange" vertical_alignment="top" vertical_offset="0"/>
+
+            <widget class="interaction_person_info_panel" id="SJrn" interaction_person_type="journo_detailed" width="200" >
+                <layout class="centre_in_parent_attachment" alignment="horizontal"/>
+            </widget>
+        </container>
+
+        <!-- conversation section -->
+
+        <!-- this container for progressing through "normal" chat -->
+        <container id="StIn">
+            <attachment_group class="vertical_arrange" vertical_alignment="top, extend" horizontal_alignment="horizontal" vertical_offset="0"/>
+
+            <container>
+                <layout class="fit_children_attachment" alignment="vertical, fill"/>
+                <layout class="arrange_vertical_attachment" alignment="top"/>
+                <layout class="stick_to_sides_attachment" alignment="horizontal"/>
+
+                <!-- interactee icon -->
+                <widget class="interaction_person_info_panel" id="tpep" interaction_person_type="journo_tiny" talk="true" speaking_box_colour="accent" navigation_focus_target="false">
+                    <layout class="stick_to_sides_attachment" alignment="left"/>
+                </widget>
+
+                <!-- interactee question -->
+                <container class="interaction_speech_bubble_panel" id="queb" show_minimise_icon="false" speech_bubble_appearance_override="boxes/custom/quick chat/ai_quick_chat_speech">
+					<flags id="colour" value="white" />
+                    <layout class="stick_to_sides_attachment" alignment="horizontal"/>
+                </container>
+
+                <!-- human icon -->
+                <widget class="interaction_person_info_panel" id="hpep" interaction_person_type="human_tiny" talk="true" speaking_box_colour="accent" navigation_focus_target="false"/>
+            </container>
+
+            <!-- human responses -->
+            <container class="interaction_grouped_response_selector_panel" id="resp" file="generic/interaction grouped response selector pc remote panel" navigation_container="true"/>
+
+            <!-- leave -->
+            <container id="ExtC" hidden="true" navigation_container="true">
+                <layout class="fit_children_attachment" alignment="vertical"/>
+                <layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true"/>
+
+                <!-- exit button -->
+                <widget class="button" click_event="ENDc" auto_size="all" navigation_focus_target="true" default_focus="true">
+                    <layout class="centre_in_parent_attachment" alignment="horizontal"/>
+                    <translation id="text" translation_id="515051" type="use" value="End Chat[COMMENT: AREA: Interaction; SUB-AREA: Remote chat panel; FR: 32639; TONE: Formal; CHARLIMIT: None; NOTE: Button label to leave the conversation]"/>
+                </widget>
+            </container>
+        </container>
+
+        <!-- this container for dynamically filling with previous questions and answers -->
+        <container class="scrolling_box" id="scrl" hidden="true">
+            <layout class="stick_to_sides_attachment" alignment="vertical"/>
+
+            <!-- this container for dynamically filling with previous questions and answers -->
+            <container id="ScIn">
+                <attachment_group class="vertical_arrange" vertical_alignment="top, extend" horizontal_alignment="horizontal" vertical_offset="0"/>
+
+                <!-- add questions and answers here -->
+            </container>
+        </container>
+
+        <!-- right panel - manager info -->
+        <container navigation_container="true">
+            <attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_offset="0" vertical_gap="10"/>
+
+            <container class="main_transparent_box" red_replacement="bg darker">
+                <attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0"/>
+
+                <widget class="interaction_person_info_panel" id="humd" interaction_person_type="human_detailed" talk="true" speaking_box_colour="accent" speaking_box_appearance="icons/custom/quick chat/quick_chat_speaking_mask_square_remote"/>
+            </container>
+
+            <container class="main_transparent_box" red_replacement="bg darker">
+                <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+
+                <container class="interaction_featured_object_container" id="FObP" file="generic/interaction featured object container remote chat" show_dynamic_image="false"/>
+            </container>
+        </container>
+    </container>
+</panel>

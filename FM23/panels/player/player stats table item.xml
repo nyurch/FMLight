@@ -1,0 +1,98 @@
+<panel>
+	<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="0"/>
+	<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+		<container >
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+			<container class="picture" id="emCH" file="boxes/custom/match/stat pack/paper"/>
+			<widget id="noSt" class="label" style="shadowed, bold" alignment="centre" size="35">
+				<translation id="text" translation_id="233089" type="use" value="-" />
+			</widget>
+		</container>
+
+		<container id="left">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+			<container class="picture" id="lghP" file="boxes/custom/match/stat pack/paper"/>
+			<container>
+				<layout class="arrange_vertical_attachment" layout="-1,30" offset="0" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+				<container>
+					<layout class="arrange_horizontal_attachment" layout="-2,-3" offset="10" gap="0"/>
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+					<widget id="HicP" class="object_portrait_picture">
+						<boolean id="scale_picture" value="true"/>
+						<boolean id="keep_aspect_ratio" value="true"/>
+						<flags id="image_alignment" value="centre"/>
+					</widget>
+
+					<container id="hSTA">
+						<layout class="arrange_vertical_attachment" alignment="middle" offset="20" gap="-3"/>
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+						<widget id="Hnum" class="label" auto_size="vertical" size="16" style="bold"/>
+						<widget id="Htch" class="label" auto_size="vertical" />
+					</container>
+				</container>
+
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+					<widget id="HBut" class="person_button" alignment="centre" size="10" style="semi_bold" navigation_focus_target="true" colour="black"/>
+				</container>
+			</container>
+
+		</container>
+	</container>
+
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+			<container class="picture" id="emCA" file="boxes/custom/match/stat pack/paper"/>
+			<widget id="noAt" class="label" style="shadowed, bold" alignment="centre" size="35">
+				<translation id="text" translation_id="233089" type="use" value="-" />
+			</widget>
+		</container>
+
+
+		<container id="rght">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+			<container class="picture" id="rghP" file="boxes/custom/match/stat pack/paper"/>
+			<container>
+				<layout class="arrange_vertical_attachment" layout="-1,30" offset="0" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+				<container>
+					<layout class="arrange_horizontal_attachment" layout="-3,-2" offset="10" gap="0"/>
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+					<container id="aSTA">
+						<layout class="arrange_vertical_attachment" alignment="middle" offset="20" gap="-3"/>
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+						<widget id="Anum" class="label" auto_size="vertical" size="16" style="bold"/>
+						<widget id="Mtch" class="label" auto_size="vertical" />
+					</container>
+
+					<widget id="picP" class="object_portrait_picture">
+						<boolean id="scale_picture" value="true"/>
+						<boolean id="keep_aspect_ratio" value="true"/>
+						<flags id="image_alignment" value="centre"/>
+					</widget>
+				</container>
+
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+					<widget id="PBut" class="person_button" alignment="centre" size="10" style="semi_bold" navigation_focus_target="true" colour="black"/>
+				</container>
+			</container>
+
+		</container>
+	</container>
+</panel>

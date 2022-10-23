@@ -1,0 +1,146 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+	<container class="main_box" background_colour="white">
+		<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_gap="10"/>
+
+
+		<container height="30">
+			<attachment_group class="horizontal_arrange" horizontal_gap="10" />
+
+			<widget class="object_portrait_picture" id="clLO" height="30" width="30" scale_picture="true" image_alignment="left" offset="5">
+				<record id="object_property" get_property="Ttea" set_property="objt" />
+			</widget>
+			<widget class="text" height="30" auto_size="horizontal" alignment="left,centre_y">
+				<translation id="text" translation_id="509701" type="use" value="The Accolades[COMMENT: AREA: End of Season Review; SUB-AREA: Accolades; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: title for section of review summarising the awards and standout performances from the season]" />
+				<string id="font" value="title" />
+				<string id="size" value="xxlarge" />
+				<string id="colour" value="text" />
+			</widget>
+		</container>
+
+		<container height="3">
+			<layout class="stick_to_sides_attachment" alignment="vertical, left" id="ttlD" inset="0" apply_to_children="true" />
+			<widget class="horizontal_solid_intro_divider" colour="fg" id="ttlD" width="50"/>
+		</container>
+
+		<widget class="manager_text" height="25">
+			<translation id="text" translation_id="510397" type="use" value="[%person#1-Your] hard work and effort paid off on the pitch and such a feat didn’t go unrewarded at our end of season awards ceremony.[COMMENT: AREA: End of Season Review; SUB-AREA: Accolades; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: review panel text, person1 here is the human]" />
+			<string id="multiline" value="true" />
+			<string id="colour" value="fg" />
+			<string id="size" value="large" />
+		</widget>
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="10"/>
+
+			<container class="main_subtle_box" id="con1" navigation_container="true">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend"/>
+
+				<widget class="text" height="25" id="mnaT">
+					<translation id="text" translation_id="509702" type="use" value="Manager Awards[COMMENT: AREA: End of Season Review; SUB-AREA: Accolades; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: title]" />
+					<string id="font" value="title" />
+					<string id="size" value="xlarge" />
+					<string id="colour" value="fg" />
+				</widget>
+
+				<container height="100">
+					<attachment_group class="horizontal_arrange" horizontal_layout="90,-1" />
+
+					<!-- Profile picture -->
+					<container>
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+						<!-- Player Picture -->
+						<widget class="picture" id="ppic" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
+					</container>
+
+					<!-- Personal Details -->
+					<container >
+						<attachment_group class="vertical_arrange_autosize" />
+
+						<!-- Name -->
+						<widget class="label" id="name" auto_size="vertical" style="bold" size="large" colour="fg" />
+
+						<!-- Age & DoB-->
+						<container>
+							<attachment_group class="horizontal_arrange_autosize_all" />
+
+							<!-- Age -->
+							<widget class="label" id="age " auto_size="all" style="bold" height="20" />
+
+							<!-- DoB -->
+							<widget class="label" id="dobl" auto_size="all" height="20" />
+						</container>
+
+						<widget class="person_nationality_button" id="intc" auto_size="vertical"/>
+
+						<!-- Int Caps -->
+						<widget class="international_appearances_label" id="inta" auto_size="vertical">
+							<integer id="int_apps_label_format" value="10" />
+						</widget>
+
+					</container>
+				</container>
+
+				<widget class="text" id="seST" height="25" value="" font="title" size="medium" alignment="left, centre_y" colour="faded text" />
+
+				<container class="scrolling_box">
+					<container id="mnAW">
+						<attachment_group class="vertical_arrange_autosize" />
+					</container>
+				</container>
+			</container>
+
+			<container class="main_subtle_box" id="con2" navigation_container="true" default_focus="true">
+				<attachment_group class="vertical_arrange" vertical_layout="25, -1"/>
+				<widget class="text" id="plrA">
+					<translation id="text" translation_id="509703" type="use" value="Player Awards[COMMENT: AREA: End of Season Review; SUB-AREA: Accolades; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: title]" />
+					<string id="font" value="title" />
+					<string id="size" value="xlarge" />
+					<string id="colour" value="fg" />
+				</widget>
+
+				<container class="tabbed_container" default_item="clAW">
+					<layout class="stick_to_sides_attachment" alignment="all" />
+					<container id="clAW">
+						<translation id="title" translation_id="509704" type="use" value="Club Awards[COMMENT: AREA: End of Season Review; SUB-AREA: Accolades; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: title for section showing the club's internal awards like player of the season]" />
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+						<container class="scrolling_box">
+							<container id="clAB">
+								<attachment_group class="vertical_arrange_autosize" vertical_offset="5"/>
+							</container>
+						</container>
+					</container>
+
+					<container id="coAW">
+						<translation id="title" translation_id="509705" type="use" value="Competition Awards[COMMENT: AREA: End of Season Review; SUB-AREA: Accolades; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: title]" />
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+						<container class="scrolling_box">
+							<container id="coAB">
+								<attachment_group class="vertical_arrange_autosize" />
+							</container>
+						</container>
+					</container>
+				</container>
+
+			</container>
+
+			<container class="main_subtle_box" id="con3" navigation_container="true">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend"/>
+				<widget class="text" height="25" id="rcbT">
+					<translation id="text" translation_id="509706" type="use" value="Record Breakers[COMMENT: AREA: End of Season Review; SUB-AREA: Accolades; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: title]" />
+					<string id="font" value="title" />
+					<string id="size" value="xlarge" />
+					<string id="colour" value="fg" />
+				</widget>
+
+				<container class="scrolling_box" >
+					<container id="rcBR">
+						<attachment_group class="vertical_arrange_autosize" />
+					</container>
+				</container>
+			</container>
+		</container>
+	</container>
+</panel>

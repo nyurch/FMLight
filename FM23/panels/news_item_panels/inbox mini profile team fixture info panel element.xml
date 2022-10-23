@@ -1,0 +1,102 @@
+<panel height="60">
+
+	<string id="skin_style" value="subtle box"/>
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<container class="inner_subtle_box" red_replacement="black">
+		<layout class="arrange_horizontal_attachment" layout="75, -1" offset="0" gap="8"/>
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+		<!--flag/logo-->
+		<widget class="fixture_opponent_picture" id="tmbd" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="fopP"/>
+						<integer id="set_property" value="valu"/>
+					</record>
+					<record>
+						<integer id="get_property" value="objt"/>
+						<integer id="set_property" value="objt"/>
+					</record>
+				</list>
+			</record>
+		</widget>
+
+		<!--versus, comp and venue-->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+			<!--versus-->
+			<container>
+				<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0"/>
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+				<!--opposition-->
+				<widget class="fixture_opponent_team_button" id="fopt" width="160" icon_enabled="false" size="large">
+					<record id="object_property">
+						<integer id="get_property" value="fopt"/>
+					</record>
+				</widget>
+
+				<!--ranking-->
+				<container class="fixture_context_team_passthrough_container" id="fppp" set_property="objt">
+					<record id="object_property">
+						<integer id="get_property" value="fopt"/>
+					</record>
+
+					<container class="client_object_viewer_xml_panel" id="trnk">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+						<widget class="fifa_ranking_label" id="Nffr" alignment="right,centre_y">
+							<record id="object_property">
+								<integer id="get_property" value="Nffr"/>
+							</record>
+						</widget>
+					</container>
+				</container>
+			</container>
+
+			<!--comp/venue-->
+			<container>
+				<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0"/>
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+				<container>
+					<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0"/>
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+					<widget class="comp_button" id="fxCo" auto_size="horizontal" comp_display_type="2" icon_enabled="false" colour="faded text">
+						<record id="object_property">
+							<integer id="get_property" value="fxCo"/>
+						</record>
+					</widget>
+
+					<widget class="fixture_venue_label" id="FxVn" auto_size="horizontal" colour="faded text" alignment="centre">
+						<record id="object_property">
+							<integer id="get_property" value="FxVn"/>
+						</record>
+					</widget>
+
+					<widget class="stadium_button" id="stad" colour="faded text">
+						<record id="object_property" dont_set_hint="true">
+							<integer id="get_property" value="stad"/>
+						</record>
+					</widget>
+
+				</container>
+
+				<widget class="date_cell" id="fxdt" auto_size="horizontal" format="[%date#1-shortest_no_year]" colour="faded text">
+					<record id="object_property">
+						<integer id="get_property" value="fxdt"/>
+					</record>
+				</widget>
+
+			</container>
+
+		</container>
+	</container>
+
+</panel>

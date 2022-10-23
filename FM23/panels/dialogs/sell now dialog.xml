@@ -1,0 +1,40 @@
+<panel id="dlog" width="450" height="500">
+	<!-- make dialog moveable -->
+	<attachment class="moveable_attachment"/>
+
+	<!-- add custom icon to top right corner of dialog (actual icon image gets set in code) -->
+	<widget class="picture" id="cico" auto_size="all" embed_in_frame="true">
+		<layout class="stick_to_sides_attachment" alignment="right,top" inset="0" embed_in_frame="true"/>
+	</widget>
+
+	<layout class="arrange_vertical_attachment" alignment="top" gap="8"/>
+	<layout class="centre_in_parent_attachment" alignment="vertical"/>
+	<layout class="fit_children_attachment" alignment="vertical,fill" gap="8"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+	<layout class="centre_in_parent_attachment" alignment="horizontal"/>
+
+	<!-- text field - should resize vertically to ensure that it's contents fit -->
+	<widget class="text" id="text" auto_size="vertical"/>
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal"  />
+
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
+			<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+			<layout class="arrange_horizontal_attachment" alignment="fill" offset="0"/>
+
+			<widget class="label" id="OAaw" alignment="left,centre_y">
+				<translation id="text" translation_id="227778" type="use" value="Asking Price"/>
+			</widget>
+
+			<widget class="cash_selection_list" id="OAai" spec="text" cash_round_style="4" cash_min_value="0" cash_max_value="100000000" select_event="OAae" width="140">
+				<record id="default_properties" alignment="right,centre_y" colour="black"/>
+			</widget>
+		</container>
+
+	</container>
+
+	<!-- standard buttons / these get shown & hidden by subclasses -->
+	<container id="btns" file="dialog buttons" />
+</panel>

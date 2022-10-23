@@ -1,0 +1,13 @@
+﻿<panel height="22">
+  <layout class="arrange_horizontal_attachment" layout="20, -1" offset="0" gap="0" do_not_size="true"/>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+  <widget class="picture" file="" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+    <layout class="centre_in_parent_attachment" alignment="vertical"/>
+  </widget>
+
+  <widget class="person_button" id="plyw" colour="black" auto_size="horizontal" multiline="false" person_is_player="true" info_popup_enabled="true">
+    <layout class="centre_in_parent_attachment" alignment="vertical"/>
+  </widget>
+
+</panel>

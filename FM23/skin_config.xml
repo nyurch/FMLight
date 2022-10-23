@@ -1,0 +1,9 @@
+<record>
+    <translation id="name" type="use" value="NY Light"/>
+    <string id="author" value="NY"/>
+    <translation id="description" type="use" value="NY Light"/>
+    <string id="version" value="0.1"/>
+    <flags id="parent" value="fm" />
+    <string id="skin_name" value="NY Light"/>
+    <string id="required_version" value="23.0.0"/>
+</record>

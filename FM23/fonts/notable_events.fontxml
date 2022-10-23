@@ -1,0 +1,21 @@
+<record>
+<!-- custom font for the notable events text as values are hardcoded, gradient overrides default colours, alpha allows some colour through -->
+
+	<string id="file_name" value="text.fontxml"/>
+
+
+	<integer id="gradient_upper_margin" value="20"/>
+	<integer id="gradient_lower_margin" value="0"/>
+	<integer id="gradient_curve" value="0"/>
+
+	<integer id="gradient_upper_colour_red" value="3"/>
+	<integer id="gradient_upper_colour_green" value="3"/>
+	<integer id="gradient_upper_colour_blue" value="3"/>
+	<integer id="gradient_upper_colour_alpha" value="200"/>
+	
+	<integer id="gradient_lower_colour_red" value="4"/>
+	<integer id="gradient_lower_colour_green" value="4"/>
+	<integer id="gradient_lower_colour_blue" value="4"/>
+	<integer id="gradient_lower_colour_alpha" value="200"/>
+	
+</record>

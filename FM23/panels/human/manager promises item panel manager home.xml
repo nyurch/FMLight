@@ -1,0 +1,52 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<container class="inner_subtle_box">
+		<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+		<!-- Person picture -->
+		<widget class="object_portrait_picture" width="50" scale_picture="true">
+			<record id="object_property">
+				<list id="get_properties">
+					<record get_property="Pers" set_property="valu"/>
+					<record get_property="shpc" set_property="Shwn`"/>
+				</list>
+			</record>
+		</widget>
+
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="1" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+			<!-- Person name -->
+			<widget class="person_button" auto_size="vertical" style="semi_bold" colour="black">
+				<record id="object_property" get_property="Pers" set_property="valu"/>
+			</widget>
+			<!-- Title -->
+			<widget class="label" auto_size="vertical" size="small">
+				<record id="object_property" get_property="text" set_property="text"/>
+			</widget>
+
+			<widget class="horizontal_divider" />
+
+			<container>
+				<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+				<!-- Days left -->
+				<widget class="label" size="small" alignment="left,centre_y">
+					<record id="object_property" get_property="MPtS" set_property="text"/>
+				</widget>
+				<!-- Status picture -->
+				<widget class="picture" scale_picture="true" width="16" image_alignment="centre">
+					<record id="object_property" get_property="file" set_property="file"/>
+				</widget>
+				<!-- Status text -->
+				<widget class="label" width="90" size="small" alignment="left,centre_y">
+					<record id="object_property" get_property="desc" set_property="text"/>
+				</widget>
+			</container>
+		</container>
+	</container>
+</panel>

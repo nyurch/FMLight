@@ -1,0 +1,102 @@
+<panel>
+	<layout class="arrange_vertical_attachment" layout="200, 1 , -1" offset="0" gap="8"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+	<!-- VERTICAL TOP -->
+	<widget class="manager_upcoming_fixture_panel" id="tufp" default_width="-2" minimum_width="580" height="200" priority="1" navigation_container="true" />
+
+	<widget class="horizontal_divider" red_replacement="" height="1" />
+
+	<!-- VERTICAL BOTTOM -->
+	<container class="horizontal_adaptive_container" inset="0" offset="0" mode="use_positional_appearance" draw_vertical_dividers="true">
+		<global id="gap" name="ui.main_box_gap"/>
+
+		<!-- HORIZONTAL LEFT -->
+		<container class="client_object_viewer_selector_panel" id="cos1" file="human/manager home selector panel" default_width="-1" minimum_width="300" priority="1" default_focus="true">
+			<integer id="default_for_club_teams" value="tlta"/>
+			<integer id="default_for_international_teams" value="pssu"/>
+			<integer id="default_for_international_youth_teams" value="pssu"/>
+			<integer id="default_for_no_team" value="mnew"/>
+			<integer id="default_for_pre_season" value="MedC"/>
+			<integer id="default_for_off_season" value="fsws"/>
+			<integer id="default_for_transfer_window" value="fsws"/>
+			<integer id="scenario_job_insecure" value="bcsn"/>
+		</container>
+
+		<!-- HORIZONTAL MIDDLE -->
+		<container class="vertical_adaptive_container" layout="-1, 200" inset="0" offset="0" minimum_width="300" default_width="-2" priority="1" gap="16" draw_horizontal_dividers="true">
+			<!-- MIDDLE TOP -->
+			<container class="horizontal_adaptive_container" mode="distribute_equally" inset="0" offset="0" minimum_height="300" default_height="-1" priority="1" gap="16" draw_vertical_dividers="true">
+				<!-- TOP LEFT -->
+				<container class="client_object_viewer_selector_panel" id="cos22" file="human/manager home selector panel"  minimum_width="300" default_width="-1" priority="1">
+					<integer id="default_for_club_teams" value="pssu"/>
+					<integer id="default_for_international_teams" value="comp"/>
+					<integer id="default_for_international_youth_teams" value="comp"/>
+					<integer id="default_for_pre_match" value="CTPP"/>
+					<integer id="default_for_post_match" value="MedC"/>
+					<integer id="default_for_off_season" value="bcsn"/>
+					<integer id="default_for_pre_season" value="tsin"/>
+					<integer id="default_for_transfer_window" value="bcsn"/>
+				</container>
+				<!-- TOP RIGHT -->
+				<container class="client_object_viewer_selector_panel" id="cos33" file="human/manager home selector panel"  minimum_width="300" default_width="-1" priority="1">
+					<integer id="default_for_club_teams" value="tssu"/>
+					<integer id="default_for_international_teams" value="comp"/>
+					<integer id="default_for_international_youth_teams" value="comp"/>
+					<integer id="default_for_pre_match" value="ttHp"/>
+					<integer id="default_for_post_match" value="tssu"/>
+				</container>
+			</container>
+
+			<!-- MIDDLE BOTTOM -->
+			<container class="horizontal_adaptive_container" mode="distribute_equally" inset="0" offset="0" minimum_height="300" default_height="-1" priority="1" gap="16" draw_vertical_dividers="true">
+				<!-- BOTTOM LEFT -->
+				<container class="client_object_viewer_selector_panel" id="cos44" file="human/manager home selector panel"  minimum_width="300" default_width="-1" priority="1">
+					<integer id="default_for_club_teams" value="tsco"/>
+					<integer id="default_for_international_teams" value="comp"/>
+					<integer id="default_for_international_youth_teams" value="comp"/>
+					<integer id="default_for_pre_match" value="CTPP"/>
+					<integer id="default_for_post_match" value="MedC"/>
+					<integer id="default_for_off_season" value="bcsn"/>
+					<integer id="default_for_pre_season" value="tsin"/>
+					<integer id="default_for_transfer_window" value="bcsn"/>
+				</container>
+				<!-- BOTTOM RIGHT -->
+				<container class="client_object_viewer_selector_panel" id="cos55" file="human/manager home selector panel"  minimum_width="300" default_width="-1" priority="1">
+					<integer id="default_for_club_teams" value="tsin"/>
+					<integer id="default_for_international_teams" value="comp"/>
+					<integer id="default_for_international_youth_teams" value="comp"/>
+					<integer id="default_for_pre_match" value="ttHp"/>
+					<integer id="default_for_post_match" value="tssu"/>
+				</container>
+			</container>
+		</container>
+
+		<!-- HORIZONTAL RIGHT -->
+		<container class="vertical_adaptive_container" layout="-1, -1" inset="0" offset="0" minimum_width="300" default_width="-1" priority="1" gap="16" draw_horizontal_dividers="true">
+			<!-- RIGHT TOP -->
+			<container class="client_object_viewer_selector_panel" id="cos66" file="human/manager home selector panel"  minimum_width="300" default_width="-1" priority="1">
+				<integer id="default_for_club_teams" value="mngp"/>
+				<integer id="default_for_international_teams" value="comp"/>
+				<integer id="default_for_international_youth_teams" value="comp"/>
+				<integer id="default_for_pre_match" value="CTPP"/>
+				<integer id="default_for_post_match" value="MedC"/>
+				<integer id="default_for_off_season" value="bcsn"/>
+				<integer id="default_for_pre_season" value="tsin"/>
+				<integer id="default_for_transfer_window" value="bcsn"/>
+			</container>
+			<!-- RIGHT BOTTOM -->
+			<container class="client_object_viewer_selector_panel" id="cos77" file="human/manager home selector panel"  minimum_width="300" default_width="-1" priority="1">
+				<integer id="default_for_club_teams" value="sssn"/>
+				<integer id="default_for_international_teams" value="comp"/>
+				<integer id="default_for_international_youth_teams" value="comp"/>
+				<integer id="default_for_pre_match" value="CTPP"/>
+				<integer id="default_for_post_match" value="MedC"/>
+				<integer id="default_for_off_season" value="bcsn"/>
+				<integer id="default_for_pre_season" value="tsin"/>
+				<integer id="default_for_transfer_window" value="bcsn"/>
+			</container>
+		</container>
+
+	</container>
+</panel>

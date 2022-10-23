@@ -1,0 +1,152 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<widget class="inbox_body_text" id="bdtx"/>
+	
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-7,-6" horizontal_offset="0" vertical_offset="0"/>
+
+		<string id="skin_style" value="subtle box"/>
+
+		<!--teams-->
+		<container class="inner_subtle_box">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0"/>
+
+				<container  height="60">
+					<attachment_group class="horizontal_arrange" horizontal_offset="0" horizontal_gap="8" horizontal_alignment="middle" vertical_inset="0" />
+					<!--home team name and xG for match-->
+					<container>
+						<attachment_group class="vertical_arrange_horizontal_autosize" vertical_alignment="middle" vertical_offset="0" horizontal_alignment="right" horizontal_inset="0" />
+						<widget class="team_button" icon_enabled="false" auto_size="all" spec="text" font="title" size="normal" colour="text" alignment="right, centre_y">
+							<record id="object_property" get_property="home"  dont_set_object="true" />
+						</widget>
+						<container>
+							<attachment_group class="horizontal_arrange_autosize_all" vertical_offset="0" horizontal_alignment="right" horizontal_inset="0" />
+							<widget class="formatted_label" auto_size="all" format="[%fraction#1-2.2]">
+								<record id="object_property" get_property="fhxG" alignment="right,centre_y" set_property="valu" />
+							</widget>
+							<widget class="picture" file="icons/16px/xg" red_replacement="purple 900" scale_picture="false" keep_aspect_ratio="true" auto_size="all" />
+						</container>
+					</container>
+					<!-- Home team logo -->
+					<widget class="object_portrait_picture" image_alignment="centre" scale_picture="true" width="30">
+						<record id="object_property" get_property="home" dont_set_object="true" />
+					</widget>
+					<container>
+						<attachment_group class="horizontal_arrange_autosize_vertical_centre" horizontal_offset="0" horizontal_gap="1" vertical_inset="0" />
+						<!-- scoreline -->
+						<widget class="fixture_button" id="FxRs" spec="text" width="70" height="30" alignment="centre" style="bold" size="xlarge" swap_for_context_team="false" navigation_focus_target="true">
+							<string id="format" value="[%scoreline#1-result_h_a_result]" />
+							<record id="object_property">
+								<!-- PROP_FIXTURE_SCORELINE -->
+								<integer id="get_property" value="FxRs" />
+							</record>
+						</widget>
+					</container>
+					<!-- Away team logo -->
+					<widget class="object_portrait_picture" scale_picture="true" width="30" image_alignment="centre">
+						<record id="object_property" get_property="away" dont_set_object="true" />
+					</widget>
+					<!--away team name and xG for match-->
+					<container>
+						<attachment_group class="vertical_arrange_horizontal_autosize" vertical_alignment="middle" vertical_offset="0" horizontal_alignment="left" horizontal_inset="0" />
+						<widget class="team_button" icon_enabled="false" auto_size="all" spec="text" font="title" size="normal" colour="text" alignment="left, centre_y">
+							<record id="object_property" get_property="away"  dont_set_object="true" />
+						</widget>
+						<container>
+							<attachment_group class="horizontal_arrange_autosize_all" vertical_offset="0" horizontal_alignment="left" horizontal_inset="0" />
+							<widget class="picture" file="icons/16px/xg" red_replacement="purple 900" scale_picture="false" keep_aspect_ratio="true" auto_size="all" />
+							<widget class="formatted_label" auto_size="all" format="[%fraction#1-2.2]">
+								<record id="object_property" get_property="faxG" alignment="right,centre_y" set_property="valu" />
+							</widget>
+						</container>
+					</container>
+				</container>
+
+			<widget class="match_team_stats_panel" id="hfMs" file="match/match team stats overview news item" team_index="0">
+				<record id="object_property" get_property="objt" set_property="objt"/>
+			</widget>
+			<widget class="match_team_stats_panel" id="afMs" file="match/match team stats overview news item" team_index="1">
+				<record id="object_property" get_property="objt" set_property="objt"/>
+			</widget>
+
+			<!--legend-->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, fill" horizontal_offset="0" vertical_offset="0"/>
+
+				<record id="default_properties" auto_size="all" multiline="false" alignment="right"/>
+
+				<widget class="text" colour="match man of match">
+					<translation id="text" translation_id="420696" type="use" value="Player of the Match[COMMENT: Player of the Match award]"/>
+				</widget>
+				
+				<widget class="text" colour="loan in">
+					<translation id="text" translation_id="301156" type="use" value="On Loan[COMMENT:column header for a column displaying the names of clubs where a player is loaned from or to. Column contents will say 'from Real Madrid' or 'at Getafe' for example.]"/>
+				</widget>
+
+				<widget class="text" colour="hilight_first_teamers">
+					<translation id="text" translation_id="424584" type="use" value="Senior squad member[COMMENT: FR10300 - text to show what highlighted players mean]"/>
+				</widget>
+			</container>
+		</container>
+
+		<!--man of the match and league table/results-->
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0"/>
+
+			<!-- man of the match -->
+			<container class="inner_subtle_box" height="124">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="2" vertical_gap="1" horizontal_alignment="horizontal" horizontal_inset="0"/>
+
+				<!--title-->
+				<widget class="text" auto_size="vertical" font="title" multiline="false" alignment="left,centre_y" colour="accent">
+					<translation id="text" translation_id="420696" type="use" value="Player of the Match[COMMENT: Player of the Match award]"/>
+				</widget>
+
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical"/>
+
+					<!--mugshot-->
+					<widget class="object_portrait_picture" id="momP" width="80" scale_picture="true" image_alignment="centre"/>
+
+					<!--name, rating, club-->
+					<container>
+						<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal"/>
+
+						<!--name-->
+						<widget class="person_button" id="momN" auto_size="vertical" multiline="false" style="bold" size="large" colour="black" default_focus="true">
+							<record id="object_property" get_property="objt" set_property="valu"/>
+						</widget>
+
+						<!--rating-->
+						<widget class="text" id="momr" auto_size="vertical" colour="faded text" multiline="false" alignment="left,centre_y">
+							<translation id="text" translation_id="420697" type="use" value="Match Rating[COMMENT: match report news panel]"/>
+						</widget>
+
+						<!--team-->
+						<widget class="team_button" id="momt" auto_size="vertical" scale_picture="true" image_alignment="left,centre_y" icon_enabled="true" colour="faded text"/>
+					</container>
+				</container>
+			</container>
+
+			<!--league table/results-->
+			<container class="inner_subtle_box">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0"/>
+
+				<!--title-->
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="left" horizontal_inset="0"/>
+
+					<widget class="link_button_title" id="cmlk" font="title" multiline="false"/>
+				</container>
+
+				<!--league table-->
+				<widget class="opponents_league_table" id="tltp" file="competition/opponents league table auto sized vertical"/>
+
+				<!---results-->
+				<widget class="competition_fixtures_panel" id="resp" file="competition/competition fixtures match preview"  height="300"/>
+			</container>
+		</container>
+	</container>
+
+</panel>

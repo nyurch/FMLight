@@ -1,0 +1,114 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" alignment="top" vertical_offset="0" vertical_gap="8" horizontal_inset="0" />
+	<!-- wages -->
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="5" horizontal_alignment="horizontal" horizontal_inset="0" />
+		<!--Value-->
+		<widget class="label" font="label" auto_size="vertical">
+			<translation id="text" translation_id="292633" type="use" value="Estimated Value[COMMENT: player profile; value label]" />
+		</widget>
+		<widget class="transfer_value_label" id="valu" auto_size="all" font="value">
+			<record id="object_property" get_property="Pdva" dont_set_hint="true" />
+		</widget>
+		<!-- type -->
+		<widget class="text" spec="text" id="typw" auto_size="vertical" />
+
+		<widget class="editable_client_object_property_panel" id="wagw" style="semi_bold" colour="text" size="large" alignment="left,top" navigation_focus_target="false">
+			<record id="widget_properties" auto_size="vertical" />
+		</widget>
+
+	</container>
+
+	<!-- wage responsibility -->
+	<widget class="text" id="wagi" auto_size="vertical" colour="faded text" />
+
+	<!-- future contract -->
+	<widget class="text" id="ftct" auto_size="vertical" />
+
+	<widget class="horizontal_divider" height="2" />
+
+	<!-- contract dates -->
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize" vertical_aligment="top,fill" horizontal_alignment="fill" horizontal_inset="0" />
+
+		<!--optional!, only when player has contract-->
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="arrange_horizontal_attachment" offset="0" gap="4" alignment="left,extend" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+			<widget class="label" auto_size="horizontal">
+				<translation id="text" translation_id="247433" type="use" value="Started" />
+			</widget>
+
+			<widget class="date_cell" id="staw" auto_size="horizontal" style="bold" alignment="left,centre_y" navigation_focus_target="false" />
+		</container>
+
+		<!-- expiry date -->
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left" horizontal_offset="0" />
+
+				<widget class="label" id="expL" height="26" auto_size="horizontal">
+					<translation id="text" translation_id="227784" type="use" value="Expires" />
+				</widget>
+
+				<widget class="editable_client_object_property_panel" id="expw" auto_size="vertical" height="22" navigation_focus_target="false">
+					<record id="widget_properties" auto_size="horizontal" style="bold" alignment="left,centre_y" />
+				</widget>
+
+				<widget class="picture" file="icons/16px/warning" id="warn" auto_size="all" hidden="true" alignment="left,centre_y">
+					<layout class="stick_to_sides_attachment" alignment="top" inset="2" />
+				</widget>
+
+			</container>
+
+			<widget class="text" id="gues" hidden="true" auto_size="vertical" size="small" colour="faded text" />
+
+		</container>
+
+	</container>
+
+	<!-- work permit -->
+	<container class="main_box" id="wpco" hidden="true" red_replacement="negative bg">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<widget class="text" col="0" auto_size="vertical" style="bold" size="small">
+			<translation id="text" translation_id="494257" type="use" value="Work Permit Expired[COMMENT: AREA: Player Status; SUB-AREA: Title; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: 456575; NOTE: Title that displays when a player does not have a work permit, this is the same as the referenced ID, but in proper casing, as the previous version needlessly used all caps]" />
+		</widget>
+
+		<widget class="text" id="wptx" auto_size="vertical" />
+
+	</container>
+
+	<widget class="horizontal_divider" height="2" />
+
+	<!-- Agreed Playing Time -->
+	<container id="sQCo">
+		<attachment_group class="horizontal_arrange_vertical_autosize" vertical_aligment="top,fill" horizontal_alignment="fill" horizontal_inset="0" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_aligment="top,fill" horizontal_inset="0" />
+
+			<widget class="label" id="sqsl" col="0" row="10" auto_size="vertical">
+				<translation id="text" translation_id="492002" type="use" value="Agreed Playing Time[COMMENT: AREA: Player Happiness; SUB-AREA: Contract Promises; FR-BN: 14013; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: contract promise type]" />
+			</widget>
+
+			<widget class="playing_time_label" id="sqst" col="0" row="11" size="xlarge" auto_size="vertical" style="semi_bold" colour="text" alignment="left,top" />
+
+		</container>
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_aligment="top,fill" horizontal_inset="0" />
+
+			<!-- Actual Playing Time -->
+			<widget class="label" id="acpL" col="1" row="10" auto_size="vertical">
+				<translation id="text" translation_id="492001" type="use" value="Actual Playing Time[COMMENT: AREA: Playing Time for Players; SUB-AREA: Contract Negotiations; FR-BN: 25975; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: concerns how much playing time a player is being promised]" />
+			</widget>
+
+			<widget class="playing_time_label" id="acpT" col="1" row="11" size="xlarge" auto_size="vertical" style="semi_bold" colour="text" alignment="left,top" />
+		</container>
+
+	</container>
+
+
+</panel>

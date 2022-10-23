@@ -1,0 +1,32 @@
+<properties version="1.0">
+<!-- used to recolour edit box text from white -->
+
+<!-- list all the widgets to override along with their properties and override values -->        
+<list id="skin_style">
+
+
+	
+	<record>
+		<string id="class_name" value="edit_box" />
+		<colour id="colour" name="text" />
+    <boolean id="enforce_style" value="true" />
+    </record>
+	
+	<record>
+		<string id="class_name" value="filter_edit_box" />
+		<colour id="colour" name="text" />
+    <boolean id="enforce_style" value="true" />
+    </record>
+	
+	<record>
+		<string id="class_name" value="city_picker_popup_button" />
+		<colour id="colour" name="text" />
+    <boolean id="enforce_style" value="true" />
+    </record>
+	
+	
+</list>
+
+    
+
+</properties>

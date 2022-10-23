@@ -1,0 +1,80 @@
+<!-- A panel with a table showing manager job changes for team in a competition for the current season -->
+<!-- colour added to person_button -->
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<container class="main_box">
+		<translation id="title" translation_id="352110" type="use" value="Manager Movements[COMMENT: section title for panel showing manager job changes for the current season]" />
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+    <!-- embedded buttons -->
+    <container id="btns" embed_in_frame="true">
+      <attachment_group class="title_embedded_panel_right" />
+
+      <!-- seasons popup -->
+      <widget class="embedded_season_selection_list" id="tsbw" save_immediate_state="true" sele="sech" height="30" width="300" embed_in_frame="true"/>
+
+    </container>
+
+    <widget class="table" id="tabl" mode="fill_rows, stripe_rows" layout="-1, -1, 100, 160, -1, 100" auto_size_rows="true" fixed_size_rows="false">
+			<!-- Setup columns, including the widget type to use for each-->
+			<list id="column_table_properties">
+				<record id="team">
+					<record id="widget_info" class="team_button" />
+					<record id="column_heading">
+						<translation id="text" translation_id="229408" type="use" value="Team" />
+						<translation id="hint" translation_id="229408" type="use" value="Team" />
+					</record>
+				</record>
+				<record id="outM">
+					<record id="widget_info" class="person_button" colour="text" />
+					<record id="column_heading">
+						<translation id="text" translation_id="350897" type="use" value="Outgoing Manager[COMMENT: manager movements; column heading for column showing the manager leaving a job]" />
+						<translation id="hint" translation_id="350897" type="use" value="Outgoing Manager[COMMENT: manager movements; column heading for column showing the manager leaving a job]" />
+					</record>
+				</record>
+				<record id="outD">
+					<record id="widget_info" class="date_cell" />
+					<record id="column_heading">
+						<translation id="text" translation_id="251891" type="use" value="Date Left[COMMENT - player achievements panel; column heading for table]" />
+						<translation id="hint" translation_id="251891" type="use" value="Date Left[COMMENT - player achievements panel; column heading for table]" />
+					</record>
+				</record>
+				<record id="outR">
+					<record id="widget_info" class="text" />
+					<record id="column_heading">
+						<translation id="text" translation_id="316688" type="use" value="Reason Left[COMMENT:team screen; history section; heading for history table - why manager left]" />
+						<translation id="hint" translation_id="316688" type="use" value="Reason Left[COMMENT:team screen; history section; heading for history table - why manager left]" />
+					</record>
+				</record>
+				<record id="incM">
+					<record id="widget_info" class="person_button" colour="text" />
+					<record id="column_heading">
+						<translation id="text" translation_id="350832" type="use" value="Incoming Manager[COMMENT: manager movements; column heading for column showing the manager taking a job]" />
+						<translation id="hint" translation_id="350832" type="use" value="Incoming Manager[COMMENT: manager movements; column heading for column showing the manager taking a job]" />
+					</record>
+				</record>
+				<record id="incD">
+					<record id="widget_info" class="date_cell" />
+					<record id="column_heading">
+						<translation id="text" translation_id="230120" type="use" value="Date" />
+						<translation id="hint" translation_id="230120" type="use" value="Date" />
+					</record>
+				</record>
+			</list>
+
+			<list id="default_sort_column">
+				<integer value="incD" />
+			</list>
+
+			<!-- Properties to apply to set on all widgets-->
+			<record id="default_properties" spec="text" alignment="left,centre_y" />
+			<!-- Properties for specific columns -->
+			<list id="column_widget_properties">
+				<record indx="0" navigation_focus_target="true"/>
+				<record indx="2" format="[%date#1-date_short_month_year]" navigation_focus_target="false" />
+				<record indx="5" format="[%date#1-date_short_month_year]" navigation_focus_target="false"/>
+			</list>
+		</widget>
+	</container>
+</panel>

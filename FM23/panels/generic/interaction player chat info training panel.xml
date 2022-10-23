@@ -1,0 +1,16 @@
+﻿<panel>
+    <attachment_group class="vertical_arrange_autosize"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+    <string id="positive_training_colour" value="bg positive"/>
+    <string id="negative_training_colour" value="bg negative"/>
+    <container class="main_transparent_box" id="rtbx" red_replacement="bg lighter">
+        <attachment_group class="vertical_arrange_autosize"/>
+
+        <widget class="text" font="title" colour="gold" auto_size="vertical" alignment="left, centre_y">
+            <translation id="text" translation_id="466504" type="use" value="Training Rating[COMMENT: a rating of how well the player is getting on in training]"/>
+        </widget>
+
+        <widget class="text" id="ratl" auto_size="all" colour="white" style="bold" size="large" alignment="left, centre_y"/>
+    </container>
+</panel>

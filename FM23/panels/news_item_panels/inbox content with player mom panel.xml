@@ -1,0 +1,139 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<!-- content area -->
+	<container class="scrolling_box">
+		<container>
+			<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+			<layout class="arrange_horizontal_attachment" layout="250, -1" gap="12" offset="0"/>
+			<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
+
+			<container class="inner_subtle_box" id="psdt">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<!-- match score -->
+				<widget class="text" id="scor" auto_size="vertical" spec="text" colour="text" font="fonts/inbox_body" alignment="top" size="small">
+					<layout class="stick_to_sides_attachment" alignment="horizontal"/>
+				</widget>
+
+				<widget class="text" auto_size="vertical" spec="text" style="bold" colour="text" font="fonts/inbox_body" alignment="top" size="large">
+					<layout class="stick_to_sides_attachment" alignment="horizontal"/>
+					<translation id="text" translation_id="257306" type="use" value="Man of the Match" />
+				</widget>
+
+				<widget class="container" height="4"/>
+
+				<!--dynamic image here please-->
+				<container id="ICdi" height="140">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+				</container>
+
+				<widget class="container" height="9"/>
+
+				<!-- person name -->
+				<widget class="person_button" id="pnam" auto_size="vertical" spec="text" style="bold" alignment="centre" size="large" colour="black">
+					<layout class="centre_in_parent_attachment" alignment="horizontal"/>
+				</widget>
+
+				<!-- person club -->
+				<widget class="team_button" id="pclb" icon_enabled="false" format="[%team#1-long]" auto_size="vertical" spec="text" colour="text" alignment="top">
+					<layout class="stick_to_sides_attachment" alignment="horizontal"/>
+					<record id="object_property" get_property="Pcte" set_property="valu"/>
+				</widget>
+
+				<!-- person description -->
+				<widget class="player_age_and_description_widget" id="ppos" auto_size="vertical" spec="text" colour="text" alignment="top" file="none">
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_offset="0" vertical_inset="0"/>
+					<widget class="text" id="mtxt" auto_size="vertical" width="230" multiline="true">
+						<translation id="text" translation_id="347559" type="use" value="[%number#1] year-old [%player_description#1][COMMENT: inbox person information panel; person description]" />
+					</widget>
+				</widget>
+
+				<widget class="container" height="4"/>
+
+				<widget class="horizontal_divider" />
+
+				<widget class="container" height="4"/>
+
+				<widget class="table" mode="" layout="-1, -1, -1" auto_size="vertical" row_spacing="0" column_spacing="0" auto_size_rows="true" fixed_size_rows="false" >
+					<layout class="stick_to_sides_attachment" alignment="horizontal"/>
+
+					<list id="column_table_properties" >
+						<record index="0" alignment="centre"/>
+						<record index="1" alignment="centre"/>
+						<record index="2" alignment="centre"/>
+					</list>
+
+					<record id="default_properties" alignment="centre" auto_size="vertical" spec="text" />
+
+
+					<widget class="label" id="gllb" colour="text" col="0" row="0">
+						<translation id="text" translation_id="227857" type="use" value="Goals" />
+					</widget>
+
+					<widget class="label" id="goal" spec="text" style="bold" size="12" col="0" row="1"/>
+
+					<widget class="label" id="aslb" colour="text" col="1" row="0">
+						<translation id="text" translation_id="227847" type="use" value="Assists" />
+					</widget>
+
+					<widget class="label" id="asst" style="bold" colour="text" size="12" col="1" row="1"/>
+
+					<widget class="label" colour="text" col="2" row="0">
+						<translation id="text" translation_id="251253" type="use" value="Rating[COMMENT: official_profile; match rating heading]" />
+					</widget>
+
+					<widget class="label" id="ratg" style="bold" colour="text" size="12" col="2" row="1"/>
+
+				</widget>
+
+				<container height="4"/>
+
+				<widget class="horizontal_divider" />
+
+				<container height="4"/>
+
+				<widget class="text" auto_size="vertical" id="fstt" spec="text" colour="text" alignment="top" >
+					<layout class="stick_to_sides_attachment" alignment="horizontal"/>
+				</widget>
+
+				<widget class="text" auto_size="vertical" id="fstv" spec="text" style="bold" colour="text" alignment="top" size="12">
+					<layout class="stick_to_sides_attachment" alignment="horizontal"/>
+				</widget>
+
+				<container height="4"/>
+
+				<widget class="horizontal_divider" />
+
+				<container height="4"/>
+
+				<widget class="text" auto_size="vertical" id="sstt" spec="text" colour="text" alignment="top"  >
+					<layout class="stick_to_sides_attachment" alignment="horizontal"/>
+				</widget>
+
+				<widget class="text" auto_size="vertical" id="sstv" spec="text" style="bold" colour="text" alignment="top" size="12" >
+					<layout class="stick_to_sides_attachment" alignment="horizontal"/>
+				</widget>
+
+				<container height="4"/>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+
+					<widget class="link_appearance_button" id="anlk">
+						<record id="auto_size_restrictions">
+							<string id="type" value="widget" />
+							<string id="limit_type" value="maximum" />
+							<string id="orientation" value="horizontal" />
+							<string id="target" value="parent" />
+						</record>
+					</widget>
+				</container>
+			</container>
+
+			<!-- main body text -->
+			<widget class="inbox_body_text" id="bdtx"/>
+		</container>
+	</container>
+
+</panel>

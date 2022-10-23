@@ -1,0 +1,317 @@
+﻿<panel>
+	<!--colours used for the min rec widgets in the filter popup-->
+	<flags id="mruc" value="grey" />
+	<flags id="mrsc" value="positive" />
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+	<container class="standard_popup_box" id="SCfp">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="8" vertical_gap="8" horizontal_inset="8" />
+
+		<widget class="text" id="titw" auto_size="vertical" colour="faded text">
+			<record id="object_property" get_property="SCFt" set_property="text" />
+		</widget>
+
+		<container class="scrolling_box" auto_size="vertical">
+			<record id="auto_size_restrictions">
+				<string id="type" value="screen" />
+				<string id="limit_type" value="maximum" />
+				<string id="orientation" value="vertical" />
+			</record>
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="6" horizontal_inset="0" />
+
+				<!--Scouts-->
+				<container navigation_container="true">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="6" horizontal_inset="0" />
+					<container>
+						<attachment_group class="vertical_arrange_autosize" horizontal_inset="4" />
+
+						<widget class="scouting_centre_delivery_widget" id="scow" height="30" npdC="1" font="title">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="AGis" />
+										<integer id="set_property" value="npdY" />
+									</record>
+
+								</list>
+							</record>
+						</widget>
+
+						<container>                   
+							<attachment_group class="vertical_arrange_autosize" vertical_inset="5" />
+
+							<widget class="text" auto_size="vertical" alignment="left" font="label" colour="faded text">
+								<translation id="text" translation_id="451386" type="use" value="Minimum recommendation level[COMMENT: Bug 169893, allows the user to set a threshold for players recommended to them]" />
+								<translation id="hint" translation_id="451387" type="use" value="Only show suggested players from assignments in the scouting centre at the specified recommendation level[COMMENT: Bug 169893, allows the user to set a threshold for players recommended to them]" />
+							</widget>
+
+							<widget class="simple_data_list" id="mirc" height="40" set_property="objt">
+								<attachment_group class="horizontal_arrange_autosize" horizontal_alignment="right" horizontal_gap="12" vertical_inset="0" />
+								<record id="widget_properties" class="property_list_viewer_xml_panel" file="widgets/player minimum scout recommendation button" />
+							</widget>
+						</container>
+						
+					</container>
+
+					<widget class="horizontal_divider" />
+				</container>
+
+				<!--Recruitment Meeting-->
+				<container navigation_container="true">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="8" horizontal_inset="0" />
+					
+					<container>
+						<attachment_group class="vertical_arrange_autosize" horizontal_inset="4" />
+
+						<widget class="scouting_centre_delivery_widget" id="MeTw" height="30" npdC="8">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="AGis" />
+										<integer id="set_property" value="npdY" />
+									</record>
+
+								</list>
+							</record>
+						</widget>
+					</container>
+
+					<widget class="horizontal_divider" />
+
+				</container>
+
+				<!--Agents Notifications-->
+				<container navigation_container="true">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="8" horizontal_inset="0" />
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" horizontal_inset="4" />
+
+						<widget class="scouting_centre_delivery_widget" id="agnw" height="30" npdC="5">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="AGis" />
+										<integer id="set_property" value="npdY" />
+									</record>
+
+								</list>
+							</record>
+						</widget>
+					</container>
+
+					<widget class="horizontal_divider" />
+
+				</container>
+
+				<!--Analysts-->
+				<container navigation_container="true" id="anac">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="8" horizontal_inset="0" />
+					
+					<container>
+						<attachment_group class="vertical_arrange_autosize" horizontal_inset="4" />
+
+						<widget class="scouting_centre_delivery_widget" id="anaw" height="30" npdC="2">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="AGis" />
+										<integer id="set_property" value="npdY" />
+									</record>
+
+								</list>
+							</record>
+						</widget>
+					</container>
+
+					<widget class="horizontal_divider" />
+				</container>
+
+				<!--Transfer Targets-->
+				<container navigation_container="true" id="trac">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="8" horizontal_inset="0" />
+					
+					<container>
+						<attachment_group class="vertical_arrange_autosize" horizontal_inset="4" />
+
+						<widget class="scouting_centre_delivery_widget" id="trtw" height="30" npdC="3">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="AGis" />
+										<integer id="set_property" value="npdY" />
+									</record>
+
+								</list>
+							</record>
+						</widget>
+					</container>
+
+					<widget class="horizontal_divider" />
+
+				</container>
+
+				<!--Agents Suggestions-->
+				<container navigation_container="true">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="8" horizontal_inset="0" />
+					
+					<container>
+						<attachment_group class="vertical_arrange_autosize" horizontal_inset="4" />
+
+						<widget class="scouting_centre_delivery_widget" id="agsw" height="30" npdC="4">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="AGis" />
+										<integer id="set_property" value="npdY" />
+									</record>
+
+								</list>
+							</record>
+						</widget>
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_gap="8" />
+
+							<widget class="manager_text" auto_size="vertical" alignment="left,top" colour="faded text">
+								<translation id="text" translation_id="538848" type="use" value="Select the type of players [%person#1-you] wish agents to contact you about:[COMMENT: AREA: Scouting; SUB-AREA: Scouting Centre; FR: 36351; NOTE: title string on scouting centre filters popup subsection]" />
+							</widget>
+
+							<container>
+								<attachment_group class="vertical_arrange_autosize" vertical_gap="6" />
+
+								<container>
+									<attachment_group class="horizontal_arrange_autosize_all" horizontal_gap="10" />
+
+									<widget class="check_box" colour="black" id="faoa" auto_size="all" click_event="pase">
+										<translation id="text" translation_id="333665" type="use" value="All players[COMMENT: team options panel; string identifying drop-down item to filter out agent approach news items]" />
+										<translation id="hint" translation_id="383798" type="use" value="This option includes all options below as well as all other players[COMMENT: team options panel; string identifying drop-down item to filter out agent approach news items]" />
+									</widget>
+
+									<widget class="check_box" colour="black" id="faoy" auto_size="all">
+										<translation id="text" translation_id="538849" type="use" value="Future prospects[COMMENT: AREA: Scouting; SUB-AREA: Scouting Centre; FR: 36351; NOTE: string identifying drop-down item to filter for future prospects]" />
+									</widget>
+
+									<widget class="check_box" colour="black" id="faot" auto_size="all">
+										<translation id="text" translation_id="538850" type="use" value="Transfer Listed[COMMENT: AREA: Scouting; SUB-AREA: Scouting Centre; FR: 36351; NOTE: string identifying drop-down item to filter for transfer listed players]" />
+									</widget>
+
+								</container>
+
+								<container>
+									<attachment_group class="horizontal_arrange_autosize_all" horizontal_gap="10" />
+
+									<widget class="check_box" colour="black" id="faou" auto_size="all">
+										<translation id="text" translation_id="538851" type="use" value="Unattached[COMMENT: AREA: Scouting; SUB-AREA: Scouting Centre; FR: 36351; NOTE: string identifying drop-down item to filter for unattached players]" />
+									</widget>
+									<widget class="check_box" colour="black" id="faos" auto_size="all">
+										<translation id="text" translation_id="538852" type="use" value="Shortlisted[COMMENT: AREA: Scouting; SUB-AREA: Scouting Centre; FR: 36351; NOTE: string identifying drop-down item to filter for shortlisted players]" />
+									</widget>
+									<widget class="check_box" colour="black" id="faaf" auto_size="all">
+										<translation id="text" translation_id="538853" type="use" value="Affordable[COMMENT: AREA: Scouting; SUB-AREA: Scouting Centre; FR: 36351; NOTE: string identifying drop-down item to filter for affordable players]" />
+									</widget>
+								</container>
+
+							</container>
+						</container>
+					</container>
+
+					<widget class="horizontal_divider" />
+
+				</container>
+
+
+				<!--Free Agent-->
+				<container navigation_container="true">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="8" horizontal_inset="0" />
+					
+					<container>
+						<attachment_group class="vertical_arrange_autosize" horizontal_inset="4" />
+
+						<widget class="scouting_centre_delivery_widget" id="fraw" height="30" npdC="6">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="AGis" />
+										<integer id="set_property" value="npdY" />
+									</record>
+
+								</list>
+							</record>
+						</widget>
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize_all" vertical_inset="8" />
+	
+							<record id="default_properties" auto_size="all" />
+
+							<widget class="text" font="label" colour="faded text">
+								<translation id="text" translation_id="538854" type="use" value="Player Age Range[COMMENT: AREA: Scouting; SUB-AREA: Scouting Centre; FR: 36351; NOTE: title string on scouting centre filters popup subsection]" />
+							</widget>
+
+							<container>
+								<attachment_group class="horizontal_arrange_autosize_all" horizontal_gap="10" />
+								
+								<widget class="selection_list" id="mina" use_menu_for_plus_minus="false" select_event="mias" width="140" />
+
+								<widget class="text">
+									<string id="text" value="-" />
+								</widget>
+
+								<widget class="selection_list" id="maxa" use_menu_for_plus_minus="false" select_event="maas" width="140" />
+							</container>
+
+						</container>
+
+					</container>
+
+					<widget class="horizontal_divider" />
+
+				</container>
+
+				<!--Other-->
+				<container navigation_container="true" id="othc">
+				  <attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="8" horizontal_inset="0" />
+				  
+				  <container>
+					<attachment_group class="vertical_arrange_autosize" horizontal_inset="4" />
+
+					<widget class="scouting_centre_delivery_widget" id="othw" height="30" npdC="7">
+					  <record id="object_property">
+						<list id="get_properties">
+						  <record>
+							<integer id="get_property" value="AGis" />
+							<integer id="set_property" value="npdY" />
+						  </record>
+
+						</list>
+					  </record>
+					</widget>
+				  </container>
+
+				  <widget class="horizontal_divider" />
+
+				</container>
+				
+				<container navigation_container="true">
+					<attachment_group class="horizontal_arrange_vertical_autosize" vertical_inset="6" horizontal_gap="10" />
+
+					<widget class="button" auto_size="all" click_event="ersf">
+						<translation id="text" translation_id="230013" type="use" value="Reset" />
+					</widget>
+
+					<widget class="button" auto_size="all" id="adfb" click_event="advf">
+						<translation id="text" translation_id="466397" type="use" value="Advanced filters...[COMMENT: FR 22700, scouting centre filter type]" />
+					</widget>
+					
+				</container>
+
+			</container>
+		</container>
+	</container>
+
+
+
+</panel>

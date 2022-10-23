@@ -1,0 +1,48 @@
+﻿<panel width="900">
+    <layout class="arrange_vertical_attachment" alignment="top" gap="8"/>
+    <layout class="centre_in_parent_attachment" alignment="all"/>
+    <layout class="fit_children_attachment" alignment="vertical, fill" offset="2" gap="8"/>
+    <layout class="stick_to_sides_attachment" alignment="horizontal" inset="8" apply_to_children="true"/>
+
+
+  <!-- header -->
+	<translation id="title" translation_id="509146" type="use" value="Give other interested clubs ultimatum to match offer?[COMMENT: AREA: Player Transfer; SUB-AREA: Accept offer; FR-BN: 27674; TONE: Formal; CHARLIMIT: n/a; REF-ID: n/a; NOTE: Asking the player if they want to offer other clubs a chance to match this offer]" />
+
+  <widget class="manager_text" id="titL" auto_size="vertical" multiline="true">
+    <translation id="text" translation_id="509147" type="use" value="[%person#1-You] have received other offers for this player. Do [%person#1-you] wish to give the following clubs an ultimatum to match the accepted offer?[COMMENT: AREA: Player Transfer; SUB-AREA: Accept offer; FR-BN: 27674; TONE: Formal; CHARLIMIT: n/a; REF-ID: n/a; NOTE: Asking the player if they want to offer other clubs a chance to match this offer]" />
+  </widget>
+
+	<widget class="table" id="ulTI" fixed_size_rows="false" auto_size_rows="true" select_event="strw" save_session_state="true" save_default_state="true"  auto_size="vertical" row_spacing="-10" auto_size_maximum_height="300">
+		<string id="layout" value="30, -1" />
+		<flags id="mode" value="stripe_rows" />
+	</widget>
+
+	<widget class="horizontal_divider"/>
+
+	<widget class="text" id="mtTX" auto_size="vertical" multiline="true">
+		<translation id="text" translation_id="509148" type="use" value="Ask to match the following offer:[COMMENT: AREA: Player Transfer; SUB-AREA: Accept offer; FR-BN: 27674; TONE: Formal; CHARLIMIT: n/a; REF-ID: n/a; NOTE: Asking the player if they want to offer other clubs a chance to match this offer]" />
+	</widget>
+
+	<widget class="table" id="ulOF" fixed_size_rows="false" auto_size_rows="true" select_event="strw" save_session_state="true" save_default_state="true" auto_size="vertical" row_spacing="4">
+		<string id="layout" value="-1" />
+		<flags id="mode" value="" />
+	</widget>
+
+	<!-- row of buttons -->
+	<container>
+		<attachment_group class="button_arrangement_right"/>
+		
+		<widget class="icon_button" id="yes" auto_size="all" colour="white" icon="icons/16px/tick" controller_button="y_button" appearance="buttons/primary/normal/button">
+				<translation id="text" translation_id="509149" type="use" value="Accept and give ultimatum to selected clubs[COMMENT: AREA: Player Transfer; SUB-AREA: Accept offer; FR-BN: 27674; TONE: Formal; CHARLIMIT: n/a; REF-ID: n/a; NOTE: On a button to accept a transfer offer]" />
+		</widget>
+
+		<widget class="icon_button" id="canc" auto_size="all" controller_button="b_button">
+			<translation id="text" translation_id="229828" type="use" value="Cancel" />
+		</widget>
+
+		<widget class="icon_button" id="Sall" click_event="ALL " auto_size="all" controller_button="x_button">
+			<translation id="text" translation_id="247116" type="use" value="Select All" />
+		</widget>
+
+	</container>
+</panel>

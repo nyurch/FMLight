@@ -1,0 +1,64 @@
+﻿<panel navigation_focus_target="true" should_force_refresh="true">
+	<flags id="selected_appearance" value="boxes/custom/tactics kit/selected/paper"/>
+
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="-7"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+		<container class="plain_box" id="bssl" hidden="true">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+		</container>
+
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+			<container>
+				<widget class="tactics_kit_picture" id="kitp">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				</widget>
+
+				<!--containers for the indicators-->
+				<!--injury/red/yellow card-->
+				<container id="inji" width="16" height="14">
+					<layout class="stick_to_sides_attachment" alignment="left" inset="15"/>
+					<layout class="stick_to_sides_attachment" alignment="bottom" inset="2"/>
+				</container>
+				<!--captain icon-->
+				<widget class="picture" id="capi" scale_picture="true" file="icons/16px/captain" width="14" height="14">
+					<layout class="stick_to_sides_attachment" alignment="left" inset="0"/>
+					<layout class="stick_to_sides_attachment" alignment="bottom" inset="9"/>
+				</widget>
+				<!--position in scouting focus icon-->
+				<widget class="picture" id="scfI" scale_picture="true" file="icons/16px/recommended nation" width="14" height="14" hidden="true">
+					<layout class="stick_to_sides_attachment" alignment="left" inset="0"/>
+					<layout class="stick_to_sides_attachment" alignment="top" inset="9"/>
+				</widget>
+			</container>
+
+			<container>
+
+				<!--role/duty-->
+				<container id="rldB" height="30" width="38" class="contrast_box_no_margin">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+					<layout class="centre_in_parent_attachment" alignment="all" />
+
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+					<widget class="tactical_role_label" id="role" abbt="true" size="xsmall" colour="white" style="bold" alignment="centre"/>
+				</container>
+			</container>
+
+		</container>
+		
+		<!--name/condition etc.-->
+		<container id="nmcN" class="inner_contrast_box_no_margin" red_replacement="style_background">
+			<attachment_group class="vertical_arrange_autosize" horizontal_inset="2" vertical_offset="2" vertical_gap="0"/>
+
+			<widget class="text" id="name" size="small" alignment="centre,can_scale" auto_size="vertical" multiline="false" />
+			<widget class="picture" id="prdS" auto_size="vertical" auto_size_maximum_height="20" image_alignment="centre" />
+		</container>
+	</container>
+
+</panel>

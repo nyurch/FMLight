@@ -1,0 +1,127 @@
+﻿<panel height="265" width="200">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+	<container class="main_box" appearance="boxes/custom/cards/paper" navigation_container="true">
+		<!--header box-->
+		<container height="27" id="tpbR" embed_in_frame="true">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="2"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal"  inset="4"/>
+			<layout class="stick_to_sides_attachment" alignment="top"  inset="0"/>
+
+			<!--header person name-->
+			<widget class="person_button" colour="black"  person_is_player="true" font="title" icon_enabled="true" info_popup_enabled="false">
+				<record id="object_property" get_property="objt" set_property="valu" />
+			</widget>
+		</container>
+
+		<!--main container-->
+		<container >
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+			<layout class="arrange_horizontal_attachment" layout="75,-1" offset="0" gap="2" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			<!--left hand container-->
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+				<layout class="arrange_vertical_attachment" layout="-2,24,0,-3" offset="0" gap="1" />
+				<!--player head-->
+				<container class="inner_subtle_box" appearance="boxes/custom/cards/inner/top left/paper">
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="2,0,0,0"/>
+					<widget class="object_portrait_picture" id="face" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+						<record id="object_property" get_property="objt" set_property="objt" />
+					</widget>
+				</container>
+				<!--player coach stats-->
+				<container class="inner_subtle_box" appearance="boxes/custom/cards/inner/middle/paper" >
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+					<container class="coach_stars_label" id="pStr" width="80" />
+				</container>
+
+				<widget class="spacer" />
+
+				<!--player positions-->
+				<container class="inner_subtle_box" appearance="boxes/custom/cards/inner/pitch/paper">
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+					<widget class="player_basic_positions_indicator_widget" file="widgets/player basic positions indicator cards">
+						<string id="remove_if" value="platform_is_handheld" />
+						<record id="object_property" get_property="objt" set_property="objt" />
+					</widget>
+				</container>
+			</container>
+			<!--right hand container-->
+			<container class="inner_subtle_box" appearance="boxes/custom/cards/inner/right/paper">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+				<container id="stsC">
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="4"/>
+					<layout class="arrange_vertical_attachment" alignment="top" offset="4" gap="4" />
+
+					<widget class="primary_popup_button" id="popB" auto_size="vertical" mode="1" />
+
+					<!--Moreale and fitness-->
+					<container height="34">
+						<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="4"/>
+						<layout class="arrange_horizontal_attachment" layout="-1,-1,-1" offset="0" gap="0" />
+
+						<widget class="player_condition_icon_widget" id="cond" icon_alignment="centre" smpc="false">
+								<flags id="appearance" value="" />
+								<record id="object_property" get_property="PcOI" />
+								<boolean id="label_disabled" value="true" />
+							</widget>
+						
+						<widget class="player_match_sharpness_icon_widget"  icon_alignment="centre" smpc="false">
+								<flags id="appearance" value="" />
+								<record id="object_property" get_property="PftI" />
+								<boolean id="label_disabled" value="true" />
+							</widget>
+
+						<widget class="morale_label" id="resL" icon_alignment="centre" ShTx="false" scale_picture="true" keep_aspect_ratio="true" default_path="icons/custom/morale/large/default" path="icons/custom/morale/large" >
+							<record id="object_property">
+								<integer id="get_property" value="Pmor"/>
+							</record>
+						</widget>
+
+					</container>
+
+					<!--Games played in Position-->
+					<container height="38">
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+						<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+						<widget class="label" font="label" auto_size="vertical" alignment="centre">
+							<translation id="text" translation_id="229777" type="use"  value="Played" />
+						</widget>
+
+						<widget class="number_label" id="GmpL" alignment="centre_x,top" font="value" />
+					</container>
+					<!--Goals scored in Position-->
+					<container height="38">
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+						<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+						<widget class="label" font="label" auto_size="vertical" alignment="centre">
+							<translation id="text" translation_id="227857" type="use" value="Goals"/>
+						</widget>
+
+						<widget class="number_label" id="GlsL" alignment="centre_x,top" font="value" />
+					</container>
+					<!--Average rating in position-->
+					<container height="38">
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+						<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+						<widget class="label" font="label" auto_size="vertical" alignment="centre">
+							<translation id="text" translation_id="229619" type="use" value="Rating" />
+						</widget>
+
+						<widget class="dashed_number_label" id="RatL"  alignment="centre_x,top" font="value" />
+					</container>
+				</container>
+
+
+				<container  id="nomt">
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+					<widget class="text" alignment="centre" >
+						<translation id="text" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
+					</widget>
+				</container>
+			</container>
+		</container>
+
+	</container>
+</panel>

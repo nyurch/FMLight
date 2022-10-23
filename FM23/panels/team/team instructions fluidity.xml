@@ -1,0 +1,19 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize_all"  apply_to_children="true"/>
+
+	<!--fluidity-->
+	<container id="FLUI">
+		<attachment_group class="vertical_arrange_autosize_all" vertical_alignment="bottom" vertical_gap="0" vertical_inset="0" horizontal_alignment="left" />
+		<widget class="text" id="phiL" auto_size="all" font="title" colour="white" >
+			<translation id="text" translation_id="465563" type="use" value="Team Fluidity[COMMENT: team tactical instruction, reference ID 364787, team shape is now team fluidity]" />
+			<translation id="hint" translation_id="468958" type="use" value="Team Fluidity reflects the shape and structure of the team based on their roles and duties.[COMMENT: tooltip help text for ID 465563 Team Fluidity]" />
+		</widget>
+
+		<widget class="fluidity_label" id="fluI" auto_size="all" icon_colour="white" font="semibold" colour="white" navigation_focus_target="false" />
+	</container>
+
+
+
+
+
+</panel>

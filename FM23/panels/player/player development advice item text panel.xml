@@ -1,0 +1,38 @@
+<!-- Panel used to display backroom advice text with a dismiss button -->
+<panel>
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<container>
+		<layout class="arrange_horizontal_attachment" alignment="right" offset="5"/>
+
+		<widget class="picture" file="boxes/custom/speech bubble/right/paper" colour="general speech bubble 2" scale_picture="true" keep_aspect_ratio="false">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="4"/>
+		</widget>
+
+		<!-- Advice text -->
+		<widget class="text" id="Atxt" alignment="left,top" size="10" auto_size="none" colour="white">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="20"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="20"/>
+		</widget>
+
+	</container>
+
+	<!-- 'Done' overlay shown when advice is actioned-->
+	<container class="main_box" id="Aovr" hidden="true">
+
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true" />
+			<layout class="centre_in_parent_attachment" alignment="vertical" />
+			<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+
+
+			<widget class="picture" image_alignment="centre_x,top" file="icons/48px/tick" auto_size="vertical" red_replacement="white" />
+			<widget class="label" alignment="centre_x,top" size="large" colour="white" auto_size="vertical">
+				<translation id="text" translation_id="416311" type="use" value="Done[COMMENT: FR 16955; backroom advice; string displayed when advice has already been followed/actioned]" />
+			</widget>
+		</container>
+	</container>
+</panel>

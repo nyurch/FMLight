@@ -1,0 +1,228 @@
+<panel save_session_state="true">
+<string id="skin_style" value="person_button" />
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+  <container class="main_box" id="Titl">
+    <translation id="title" translation_id="247194" type="use" value="Search" />
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+    <!-- A container to show when there are no search results that includes a search box for entering a new search -->
+    <container id="tmrl" hidden="true">
+      <layout class="centre_in_parent_attachment" alignment="horizontal" offset="0" apply_to_children="true" />
+      <layout class="arrange_vertical_attachment" alignment="top" offset="10" gap="0" />
+
+      <!-- Too many results label -->
+      <widget class="label" size="10" alignment="left,top" auto_size="all">
+        <translation id="text" translation_id="313218" type="use" value="Too many matching results found. Please make your search more specific.[COMMENT: text on search panel when quick search term is too short]" />
+      </widget>
+    </container>
+
+    <!-- No results label -->
+    <container id="nrla" hidden="true">
+      <layout class="centre_in_parent_attachment" alignment="horizontal" offset="0" apply_to_children="true" />
+      <layout class="arrange_vertical_attachment" alignment="top" offset="10" gap="0" />
+
+      <widget class="label" alignment="left,top" size="10" auto_size="all">
+        <translation id="text" translation_id="316649" type="use" value="No results found[COMMENT: search panel; no matches were found for the search conducted]" />
+      </widget>
+      <!-- JT: Removed as no longer correct in new skin -->
+      <!--<widget class="label" alignment="left,top" size="8" auto_size="all">
+        <translation id="text" translation_id="328540" type="use" value="Enter or modify your search using the box in the top-right.[COMMENT: search panel; hint for helping the user to find the search entry box]" />
+      </widget>-->
+    </container>
+
+    <!-- No search has been done label -->
+    <container id="nrlb" hidden="true">
+      <layout class="centre_in_parent_attachment" alignment="horizontal" offset="0" apply_to_children="true" />
+      <layout class="arrange_vertical_attachment" alignment="top" offset="10" gap="0" />
+
+      <widget id="ebTX" class="label" alignment="left,top" size="8" auto_size="all" />
+    </container>
+
+    <!-- Search box -->
+
+    <!-- Multibox containing the search results -->
+    <container class="tabbed_container" id="main" navigation_container="true">
+
+      <!-- IMPORTANT: The index property set on these widgets is so that the code can find the corresponding tab in the tab_strip. If the order of the
+          results tables is changed the indices must be updated! -->
+
+      <!-- All Results -->
+      <container index="0" id="cnt0">
+        <translation id="title" translation_id="316650" type="use" value="All[COMMENT: search panel results tab; Show all results]" />
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+        <widget class="client_object_list_table" id="all ">
+          <flags id="mode" value="select_rows, stripe_rows, show_bullets, select_multiple" />
+		  <boolean id="navigation_container" value="true" />
+          <record id="default_properties">
+            <integer id="default_sort_column" value="dref" />
+          </record>
+
+          <record id="viewed_property_ids">
+            <record id="dref" />
+            <record id="obtd" />
+            <record id="nsss" />
+          </record>
+
+          <widget class="label" id="nrtl" hidden="true" alignment="left,top">
+            <translation id="text" translation_id="316649" type="use" value="No results found[COMMENT: search panel; no matches were found for the search conducted]" />
+          </widget>
+        </widget>
+      </container>
+
+      <!-- People -->
+      <container index="1" id="cnt1">
+        <translation id="title" translation_id="316651" type="use" value="People[COMMENT: search panel results tab; Show person/people results]" />
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+        <widget class="client_object_list_table" id="pers" database_table_type="1">
+          <flags id="mode" value="select_rows, stripe_rows, show_bullets, select_multiple" />
+		  <boolean id="navigation_container" value="true" />
+          <integer id="contextual_handler_column_id" value="Pnms" />
+          <record id="viewed_property_ids">
+            <record id="Pnms" />
+            <record id="PSag" />
+            <record id="Pnat" />
+            <record id="Pccj">
+              <flags id="expj" value="false" />
+            </record>
+            <record id="Pclb" />
+            <record id="nsss" />
+          </record>
+
+          <widget class="label" id="nrtl" hidden="true" alignment="left,top">
+            <translation id="text" translation_id="316649" type="use" value="No results found[COMMENT: search panel; no matches were found for the search conducted]" />
+          </widget>
+        </widget>
+      </container>
+
+      <!-- Clubs -->
+      <container index="2" id="cnt2">
+        <translation id="title" translation_id="316652" type="use" value="Clubs[COMMENT: search panel results tab; Show club result]" />
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+        <widget class="client_object_list_table" id="club" database_table_type="3">
+          <flags id="mode" value="select_rows, stripe_rows, show_bullets, select_multiple" />
+   		  <boolean id="navigation_container" value="true" />
+       	  <integer id="contextual_handler_column_id" value="Cnam" />
+          <record id="viewed_property_ids">
+            <record id="Cref" />
+            <record id="Cnam" />
+            <record id="Cnat" />
+            <record id="Cdiv" />
+            <record id="nsss" />
+          </record>
+
+          <widget class="label" id="nrtl" hidden="true" alignment="left,top">
+            <translation id="text" translation_id="316649" type="use" value="No results found[COMMENT: search panel; no matches were found for the search conducted]" />
+          </widget>
+        </widget>
+      </container>
+
+      <!-- Nations -->
+      <container index="3" id="cnt3">
+        <translation id="title" translation_id="316653" type="use" value="Nations[COMMENT: search panel results tab; Show nation results]" />
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+        <widget class="client_object_list_table" id="nati" database_table_type="9">
+          <flags id="mode" value="select_rows, stripe_rows, show_bullets, select_multiple" />
+          <boolean id="navigation_container" value="true" />
+          <integer id="contextual_handler_column_id" value="Nnat" />
+          <record id="viewed_property_ids">
+            <record id="Nnat" />
+            <record id="Ncni" />
+            <record id="nsss" />
+          </record>
+
+          <widget class="label" id="nrtl" hidden="true" alignment="left,top">
+            <translation id="text" translation_id="316649" type="use" value="No results found[COMMENT: search panel; no matches were found for the search conducted]" />
+          </widget>
+        </widget>
+      </container>
+
+      <!-- Competitions -->
+      <container index="4" id="cnt4">
+        <translation id="title" translation_id="316654" type="use" value="Competitions[COMMENT: search panel results tab; Show competition results]" />
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+        <widget class="client_object_list_table" id="comp" database_table_type="25">
+          <flags id="mode" value="select_rows, stripe_rows, show_bullets, select_multiple" />
+   		  <boolean id="navigation_container" value="true" />
+          <integer id="contextual_handler_column_id" value="comp" />
+          <record id="viewed_property_ids">
+            <record id="comp">
+              <record id="cdt " value="0">
+              </record>
+            </record>
+            <record id="cnat" />
+            <record id="nsss" />
+          </record>
+          
+          <widget class="label" id="nrtl" hidden="true" alignment="left,top">
+            <translation id="text" translation_id="316649" type="use" value="No results found[COMMENT: search panel; no matches were found for the search conducted]" />
+          </widget>
+        </widget>
+      </container>
+
+      <!-- Awards -->
+      <container index="5" id="cnt5">
+        <translation id="title" translation_id="316655" type="use" value="Awards[COMMENT: search panel results tab; Show award results]" />
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+        <widget class="client_object_list_table" id="awar" database_table_type="0">
+          <flags id="mode" value="select_rows, stripe_rows, show_bullets, select_multiple" />
+		  <boolean id="navigation_container" value="true" />
+          <record id="viewed_property_ids">
+            <record id="awrd" />
+            <record id="nsss" />
+          </record>
+
+          <widget class="label" id="nrtl" hidden="true" alignment="left,top">
+            <translation id="text" translation_id="316649" type="use" value="No results found[COMMENT: search panel; no matches were found for the search conducted]" />
+          </widget>          
+        </widget>
+      </container>
+
+      <!-- Media Sources -->
+      <container index="6" id="cnt6">
+        <translation id="title" translation_id="293579" type="use" value="Media Sources[COMMENT: Competition editor; field name]" />
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+        <widget class="client_object_list_table" id="medi" database_table_type="7">
+          <flags id="mode" value="select_rows, stripe_rows, show_bullets, select_multiple" />
+          <record id="viewed_property_ids">
+            <record id="Mgna" />
+            <record id="Mtyp" />
+            <record id="Mnrf" />
+          </record>
+
+          <widget class="label" id="nrtl" hidden="true" alignment="left,top">
+            <translation id="text" translation_id="316649" type="use" value="No results found[COMMENT: search panel; no matches were found for the search conducted]" />
+          </widget>
+        </widget>
+      </container>
+
+      <!-- Stadiums -->
+      <container index="7" id="cnt7">
+        <translation id="title" translation_id="293581" type="use" value="Stadiums[COMMENT editor field name]" />
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+        <widget class="client_object_list_table" id="stad" database_table_type="21">
+          <flags id="mode" value="select_rows, stripe_rows, show_bullets, select_multiple" />
+		  <boolean id="navigation_container" value="true" />
+          <record id="viewed_property_ids">
+            <record id="stad" />
+            <record id="Snat" />
+            <record id="SctI" />
+            <record id="Scpy" />
+          </record>
+
+          <widget class="label" id="nrtl" hidden="true" alignment="left,top">
+            <translation id="text" translation_id="316649" type="use" value="No results found[COMMENT: search panel; no matches were found for the search conducted]" />
+          </widget>
+        </widget>
+      </container>
+    </container>
+  </container>
+</panel>

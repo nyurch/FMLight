@@ -1,0 +1,15 @@
+<panel>
+	<attachment_group class="button_arrangement_right" />
+
+	<widget class="primary_icon_tick_button" id="set " click_event="set ">
+	<record id="default_properties" alignment="right,centre_y" colour="white"/>
+		<translation id="text" translation_id="229918" type="use" value="Confirm" />
+	</widget>
+	<widget class="button" click_event="revt" auto_size="all">
+		<translation id="text" translation_id="247978" type="use" value="Undo Changes" />
+	</widget>
+	<widget class="button" click_event="disc" auto_size="all">
+		<translation id="text" translation_id="248072" type="use" value="Cancel Changes" />
+	</widget>
+ 
+</panel>

@@ -1,0 +1,129 @@
+﻿<panel>
+<string id="skin_style" value="person_button" />
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<!-- current injuries -->
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" vertical_gap="4"/>
+
+		<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left" horizontal_inset="0"/>
+
+			<widget class="picture" file="icons/26px/injured" scale_picture="true" height="26" width="26" keep_aspect_ratio="true" image_alignment="centre"/>
+
+			<widget class="text" id="InjL" font="title" colour="accent" auto_size="all"/>
+
+			<widget class="text" id="InTx" auto_size="all" font="title" colour="accent" hidden="true">
+			    <translation id="text" translation_id="227748" type="use" value="Injuries" />
+			</widget>
+			<widget class="link_button_title" id="InBu" section="InOv" colour="accent" hidden="true" auto_size="all">
+			    <translation id="text" translation_id="227748" type="use" value="Injuries" />
+			</widget>
+
+		</container>
+
+		<widget class="table" id="InjT" layout="-2, -3, -1, -2" mode="fill_rows, stripe_rows" all_content_same_height="false" auto_size="vertical" auto_size_rows="true" fixed_size_rows="false" row_spacing="0" save_session_state="true" colour="text">
+			<list id="headings">
+				<record index="0">
+					<translation id="text" translation_id="227966" type="use" value="Player"/>
+				</record>
+				<record index="1">
+					<translation id="text" translation_id="247523" type="use" value="Injury[COMMENT: Player Injury name, table header]"/>
+				</record>
+				<record index="2">
+					<translation id="text" translation_id="447652" type="use" value="Treatment[COMMENT: FR 20159; player injury table; treatment type player is receiving column header]"/>
+				</record>
+				<record index="3">
+					<translation id="text" translation_id="450765" type="use" value="Out For[COMMENT: FR 20159; team injuries overview panel; table column header indicating how long a player will be injured for]"/>
+				</record>
+			</list>
+
+			<list id="column_table_properties">
+				<record indx="0" alignment="left,centre_y" auto_hide_priority="1" minimum_width="140">
+					<boolean id="sort_ascending" value="true"/>
+				</record>
+				<record indx="1" alignment="left,centre_y" auto_hide_priority="1" minimum_width="140">
+					<boolean id="sort_ascending" value="false"/>
+				</record>
+				<record indx="2" alignment="left,centre_y" auto_hide_priority="1" minimum_width="140">
+					<boolean id="sort_ascending" value="false"/>
+				</record>
+				<record indx="3" alignment="left,centre_y" auto_hide_priority="1" minimum_width="140">
+					<boolean id="sort_ascending" value="false"/>
+				</record>
+			</list>
+
+			<list id="sort">
+				<integer value="0"/>
+			</list>
+		</widget>
+	</container>
+
+	<!-- players recently returned from injury -->
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" vertival_gap="4"/>
+
+		<container>
+		   <attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left" horizontal_inset="0"/>
+
+			<widget class="picture" file="icons/26px/slightly injured" scale_picture="true" height="26" width="26" keep_aspect_ratio="true" image_alignment="centre_x" red_replacement="yellow"/>
+
+			<widget class="text" id="ReRL" font="title" colour="accent" auto_size="all"/>
+
+			<widget class="text" id="RRTx" auto_size="all" font="title" colour="accent" hidden="true">
+			    <translation id="text" translation_id="450766" type="use" value="Recently Returned From Injury[COMMENT: FR 20159; team injuries overview panel; title for number of players that have recently returned from injury]"/>
+			</widget>
+			<widget class="link_button_title" id="RRBu" colour="accent" hidden="true" auto_size="all">
+			    <translation id="text" translation_id="450766" type="use" value="Recently Returned From Injury[COMMENT: FR 20159; team injuries overview panel; title for number of players that have recently returned from injury]"/>
+			</widget>
+
+		</container>
+
+		<widget class="table" id="ReRT" layout="-2, -3, 90, 90" mode="fill_rows, stripe_rows" all_content_same_height="false" auto_size="vertical" auto_size_rows="true" fixed_size_rows="false" row_spacing="0" save_session_state="true">
+			<list id="headings">
+				<record index="0">
+					<translation id="text" translation_id="227966" type="use" value="Player"/>
+				</record>
+				<record index="1">
+					<translation id="text" translation_id="450767" type="use" value="Recent Injury[COMMENT: FR 20159; team injuries overview panel; table column header indicating what injury a player has recovered from]"/>
+				</record>
+				<record index="2">
+					<translation id="text" translation_id="227793" type="use" value="Condition"/>
+				</record>
+				<record index="3">
+					<translation id="text" translation_id="247571" type="use" value="Fitness"/>
+				</record>
+			</list>
+
+			<list id="column_table_properties">
+				<record indx="0" alignment="left,centre_y" auto_hide_priority="1" minimum_width="140">
+					<boolean id="sort_ascending" value="true"/>
+				</record>
+				<record indx="1" alignment="left,centre_y" auto_hide_priority="1" minimum_width="140">
+					<boolean id="sort_ascending" value="false"/>
+				</record>
+				<record indx="2" alignment="left,centre_y" auto_hide_priority="1" minimum_width="140">
+					<boolean id="sort_ascending" value="false"/>
+					
+				</record>
+				<record indx="3" alignment="left,centre_y" auto_hide_priority="1" minimum_width="140">
+					<boolean id="sort_ascending" value="false"/>
+				</record>
+			</list>
+			
+			<!-- added to recolour condition text -->
+			<list id="column_widget_properties">
+				<record alignment="left,centre_y" auto_size="none">
+					<integer id="index" value="2" />
+					<string id="colour" value="text" />	<!-- added to recolour cond. text -->
+				</record>
+				
+			</list> 
+
+			<list id="sort">
+				<integer value="0"/>
+			</list>
+		</widget>
+	</container>
+
+</panel>

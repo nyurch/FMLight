@@ -1,0 +1,16 @@
+<panel>
+	<layout class="arrange_vertical_attachment" layout="34,-1" offset="0" gap="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="4" />
+
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+		<widget class="text" id="prcn" alignment="left,centre_y" colour="faded text" >
+			<record id="object_property" get_property="comp" set_property="text"/>
+		</widget>
+	</container>
+	<!-- Stat text -->
+	<widget class="text" id="proz" alignment="centre" colour="text">
+		<record id="object_property" get_property="text" set_property="text"/>
+	</widget>
+</panel>

@@ -1,0 +1,27 @@
+<panel height="230">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<container class="inner_subtle_box" red_replacement="black">
+		<attachment_group class="vertical_arrange" vertical_alignment="top" vertical_offset="0" horizontal_inset="0" />
+
+		<!-- trophy picture -->
+		<widget class="comp_award_trophy_picture" id="trop" scale_picture="true" keep_aspect_ratio="true" height="175" image_alignment="centre">
+			<record id="object_property">
+				<integer id="get_property" value="objt"/>
+				<integer id="set_property" value="valu"/>
+			</record>
+		</widget>
+
+			<!-- trophy name -->
+			<widget class="comp_button" id="cnam" style="bold" colour="text" alignment="left,centre_y" auto_size="vertical" multiline="true">
+				<record id="object_property">
+					<integer id="get_property" value="objt"/>
+					<integer id="set_property" value="valu"/>
+				</record>
+			</widget>
+
+
+	</container>
+</panel>

@@ -1,0 +1,31 @@
+<panel>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0"/>
+
+	<container class="inner_subtle_box" red_replacement="black">
+		<translation id="title" translation_id="229527" type="use" value="Squad" />
+
+		<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0" />
+
+		<container class="table" id="tsit" mode="fill_rows, stripe_rows" layout="-1,80,20" fixed_size_rows="false" row_spacing="5">
+			<flags id="auto_size" value="vertical" />
+
+			<list id="column_widget_properties">
+				<record index="0" alignment="left,centre_y" spec="text" multiline="false" auto_size="vertical" />
+				<record index="1" auto_size="vertical" alignment="right,centre_y"/>
+				<record index="2" image_alignment="right,centre_y" spec="text" colour="selection" multiline="false" style="bold" auto_size="vertical" />
+			</list>
+
+			<list id="column_table_properties">
+				<record index="0" left="5"/>
+				<record index="1" />
+			</list>
+
+		</container>
+	</container>
+
+</panel>

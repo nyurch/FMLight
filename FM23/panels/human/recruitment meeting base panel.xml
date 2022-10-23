@@ -1,0 +1,272 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" value="all" inset="0" />
+	<list id="draw_order">
+		<record entity_layout_id="at00" />
+		<record entity_layout_id="at01" />
+		<record entity_layout_id="at03" />
+		<record entity_layout_id="at0:" />
+		<record entity_layout_id="at0=" />
+		<record entity_layout_id="at0&gt;" />
+		<record entity_layout_id="at0?" />
+		<record entity_layout_id="at0@" />
+		<record entity_layout_id="at07" />
+		<record entity_layout_id="at02" />
+		<record entity_layout_id="at0E" />
+		<record entity_layout_id="at0F" />
+		<record entity_layout_id="at0G" />
+		<record entity_layout_id="at0;" />
+		<record entity_layout_id="at0&lt;" />
+		<record entity_layout_id="at0C" />
+		<record entity_layout_id="at0D" />
+		<record entity_layout_id="at08" />
+		<record entity_layout_id="at0B" />
+		<record entity_layout_id="at04" />
+		<record entity_layout_id="at05" />
+		<record entity_layout_id="at09" />
+		<record entity_layout_id="at0A" />
+		<record entity_layout_id="at06" />
+	</list>
+	<boolean id="save_immediate_state" value="true" />
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+	</widget>
+	<container entity_layout_id="at00" id="baGN" name="base">
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<container entity_layout_id="at01" id="hmdl" height="70" name="human profile box">
+			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<container class="main_transparent_box_no_margin" entity_layout_id="at04" id="prfB" height="70" name="profile box">
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<container class="main_box" entity_layout_id="at05" id="at05" appearance="boxes/custom/solid/paper" name="profile box shaded" navigation_container="true">
+					<animation class="translate_animation" start_value="0, 1" end_value="0, 0" duration="0.3" delay="0" end_mode="hold_end" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" no_clipping="true" />
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+					<widget class="spacer" id="main">
+						<boolean id="exclude_from_find" value="true" />
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+					</widget>
+					<widget class="spacer" id="fmin" embed_in_frame="true">
+						<boolean id="exclude_from_find" value="true" />
+						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+					</widget>
+					<container class="person_button_with_job_description" entity_layout_id="at09" id="hmpf" width="140" height="50" name="human profile">
+						<string id="person_icon_file" value="icons/26px/manager respo" />
+						<boolean id="show_person_icon" value="true" />
+						<record id="object_property">
+							<string id="get_property" value="objt" />
+							<string id="set_property" value="valu" />
+						</record>
+						<layout class="stick_to_object_attachment" id="align_top" offset="15" get_side="top" set_side="top" move_side="true" target="main" />
+						<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+					</container>
+					<widget class="button" entity_layout_id="at0A" id="at0A" appearance="buttons/standard/flex/button" width="140" height="30">
+						<string id="click_event" value="emCK" />
+						<translation id="text" translation_id="510685" type="use" value="End Meeting[COMMENT: AREA: Recruitment meeting; FR-BN: 32765; NOTE: Recruitment meeting end meeting dialog popup title]" />
+						<layout class="stick_to_object_attachment" id="align_right" offset="-20" get_side="right" set_side="right" move_side="true" target="main" />
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0" />
+					</widget>
+				</container>
+			</container>
+		</container>
+		<container entity_layout_id="at03" id="prcp" auto_size="vertical" name="participants and top dialogue">
+			<animation class="fade_animation" start_value="0" end_value="1" duration="0.6" delay="0" end_mode="hold_end" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+			<layout class="stick_to_object_attachment" id="align_top" offset="15" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			<layout class="stick_to_object_attachment" id="group_align_bottom" get_side="bottom" set_side="bottom" use_own_content_rectangle="true" use_children_to_size="true" target="at0=" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<container class="horizontal_arrange_container" entity_layout_id="at0:" id="ppHA" auto_size="horizontal" height="60" name="participant widgets">
+				<integer id="gap" value="10" />
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+				<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+			</container>
+			<container entity_layout_id="at0=" id="sCBB" auto_size="all" appearance="boxes/custom/darken/rounded/no margin/paper" name="speech bubble">
+				<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0:" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+				<layout class="stick_to_object_attachment" id="group_align_bottom" offset="10" get_side="bottom" set_side="bottom" use_own_content_rectangle="true" use_children_to_size="true" target="at0?" />
+				<layout class="stick_to_object_attachment" id="group_align_right" get_side="right" set_side="right" use_own_content_rectangle="true" use_children_to_size="true" target="at0?" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" entity_layout_id="at0&gt;" id="alSP" width="10" height="50" name="spacer">
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+				</widget>
+				<container class="standard_popup_box" entity_layout_id="at0?" id="spBB" appearance="boxes/custom/speech bubble/top/paper" auto_size="vertical" width="400" name="speech bubble">
+					<string id="red_replacement" value="bg" />
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="right" set_side="left" move_side="true" target="at0&gt;" />
+					<layout class="stick_to_object_attachment" id="group_align_bottom" get_side="bottom" set_side="bottom" use_own_content_rectangle="true" use_children_to_size="true" target="at0@" />
+					<widget class="spacer" id="main">
+						<boolean id="exclude_from_find" value="true" />
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+					</widget>
+					<widget class="spacer" id="fmin" embed_in_frame="true">
+						<boolean id="exclude_from_find" value="true" />
+						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+					</widget>
+					<widget class="text" entity_layout_id="at0@" id="spTX" auto_size="vertical" needs_height="true" name="dialogue">
+						<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="top" set_side="top" move_side="true" target="main" />
+						<layout class="stick_to_object_attachment" id="align_left" offset="5" get_side="left" set_side="left" target="main" />
+						<layout class="stick_to_object_attachment" id="align_right" offset="-5" get_side="right" set_side="right" target="main" />
+					</widget>
+				</container>
+			</container>
+		</container>
+		<container class="main_transparent_box" entity_layout_id="at07" id="bbls" auto_size="horizontal" height="110" name="speech bubble parent" navigation_container="true" default_focus="true">
+			<animation class="fade_animation" start_value="0" end_value="1" duration="1" delay="0.2" end_mode="hold_end" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+			<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+			<layout class="stick_to_object_attachment" id="align_bottom" offset="10" get_side="top" set_side="bottom" move_side="true" target="at01" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="40" get_side="left" set_side="left" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="group_align_right" offset="10" get_side="right" set_side="right" use_own_content_rectangle="true" use_children_to_size="true" target="at0G" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<container entity_layout_id="at0E" id="lhSB" width="320" height="75">
+				<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="top" set_side="top" move_side="true" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="left" set_side="left" move_side="true" target="main" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<widget class="button" entity_layout_id="at08" id="lhsB" appearance="buttons/standard/flex/button" width="320">
+					<string id="click_event" value="nxsC" />
+					<boolean id="multiline" value="true" />
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+					<layout class="stick_to_object_attachment" id="align_bottom" offset="-16" get_side="bottom" set_side="bottom" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+				</widget>
+				<widget class="text" entity_layout_id="at0B" id="lHEM" alignment="centre_x,centre_y" height="20">
+					<translation id="text" translation_id="510685" type="use" value="End Meeting[COMMENT: AREA: Recruitment meeting; FR-BN: 32765; NOTE: Recruitment meeting end meeting dialog popup title]" />
+					<string id="font" value="title" />
+					<string id="colour" value="faded text" />
+					<string id="size" value="small" />
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				</widget>
+			</container>
+			<container entity_layout_id="at0F" id="cnTB" width="320" height="75">
+				<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="top" set_side="top" move_side="true" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" offset="15" get_side="right" set_side="left" move_side="true" target="at0E" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<widget class="button" entity_layout_id="at0;" id="cntB" appearance="buttons/standard/flex/button" width="320">
+					<string id="click_event" value="insC" />
+					<boolean id="multiline" value="true" />
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+					<layout class="stick_to_object_attachment" id="align_bottom" offset="-16" get_side="bottom" set_side="bottom" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+				</widget>
+				<widget class="text" entity_layout_id="at0C" id="cTEM" alignment="centre_x,centre_y" height="20">
+					<translation id="text" translation_id="510685" type="use" value="End Meeting[COMMENT: AREA: Recruitment meeting; FR-BN: 32765; NOTE: Recruitment meeting end meeting dialog popup title]" />
+					<string id="font" value="title" />
+					<string id="colour" value="faded text" />
+					<string id="size" value="small" />
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				</widget>
+			</container>
+			<container entity_layout_id="at0G" id="rhSB" width="320" height="75">
+				<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="top" set_side="top" move_side="true" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" offset="15" get_side="right" set_side="left" move_side="true" target="at0F" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<widget class="button" entity_layout_id="at0&lt;" id="rhsB" appearance="buttons/standard/flex/button" width="320">
+					<string id="click_event" value="pvsC" />
+					<boolean id="multiline" value="true" />
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+					<layout class="stick_to_object_attachment" id="align_bottom" offset="-16" get_side="bottom" set_side="bottom" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+				</widget>
+				<widget class="text" entity_layout_id="at0D" id="rHEM" alignment="centre_x,centre_y" height="20">
+					<translation id="text" translation_id="510685" type="use" value="End Meeting[COMMENT: AREA: Recruitment meeting; FR-BN: 32765; NOTE: Recruitment meeting end meeting dialog popup title]" />
+					<string id="font" value="title" />
+					<string id="colour" value="faded text" />
+					<string id="size" value="small" />
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				</widget>
+			</container>
+		</container>
+		<container entity_layout_id="at02" id="mncp" name="main content panel">
+			<animation class="fade_animation" start_value="0" end_value="1" duration="0.6" delay="0" end_mode="hold_end" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+			<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" target="at03" />
+			<layout class="stick_to_object_attachment" id="align_bottom" offset="-12" get_side="top" set_side="bottom" target="at07" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="40" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" offset="-40" get_side="right" set_side="right" target="main" />
+		</container>
+	</container>
+</panel>

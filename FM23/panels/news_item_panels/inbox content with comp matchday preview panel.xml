@@ -1,0 +1,111 @@
+<panel>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<container class="scrolling_box">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		<container>
+
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+			<layout class="arrange_horizontal_attachment" layout="-1, 220" />
+			<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
+
+			<container id="mnbx">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<!-- main body text -->
+				<widget class="inbox_body_text" id="bdtx"/>
+			</container>
+
+			<!-- right hand panels -->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<!--dynamic image here please-->
+				<container id="ICdi" height="134">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+				</container>
+
+				<!-- holders -->
+				<container class="inner_subtle_box" id="hlBx" height="64">
+					<layout class="arrange_horizontal_attachment" layout="45, -1" offset="0" gap="10"/>
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="2" apply_to_children="true"/>
+
+					<widget class="object_portrait_picture" id="hlbd" scale_picture="true" image_alignment="centre"/>
+
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="middle" gap="-2"/>
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+						<widget class="client_object_label" id="hltx" auto_size="vertical" spec="text" size="large" colour="text" alignment="left,bottom" multiline="false"/>
+						<widget class="label" auto_size="vertical" font="label" alignment="left,top">
+							<translation id="text" translation_id="361100" type="use" value="Current Holders[COMMENT: FR 6567; matchday preview news; side panel heading for current competition champions]"/>
+						</widget>
+					</container>
+				</container>
+
+				<!-- fixture info -->
+				<container class="inner_subtle_box" red_replacement="black">
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="2" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+					<container height="80">
+						<layout class="arrange_horizontal_attachment" alignment="middle,fill" offset="0" gap="0"/>
+						<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
+
+						<container height="80">
+							<layout class="arrange_vertical_attachment" alignment="bottom,extend"/>
+							<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+							<widget class="object_portrait_picture" id="hmpc" scale_picture="true" image_alignment="centre" />
+							<!--widget class="client_object_label" id="hmnm" auto_size="vertical" spec="text" size="8" colour="text" alignment="centre"/-->
+						</container>
+
+						<widget class="text" auto_size="all" alignment="centre" colour="text" style="semi_bold" size="xlarge">
+							<layout class="stick_to_sides_attachment" alignment="top" inset="8"/>
+							<translation id="text" translation_id="242324" type="use" value="v[versus]"/>
+						</widget>
+
+						<container height="80">
+							<layout class="arrange_vertical_attachment" alignment="bottom,extend"/>
+							<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+							<widget class="object_portrait_picture" id="awpc" scale_picture="true" image_alignment="centre"/>
+							<!--widget class="client_object_label" id="awnm" auto_size="vertical" spec="text" size="8" colour="text" alignment="centre"/-->
+						</container>
+					</container>
+
+					<widget class="label" auto_size="vertical" spec="text" style="bold" colour="text" alignment="centre_x,top">
+						<translation id="text" translation_id="361353" type="use" value="Top Clash[COMMENT: FR 6567; matchday preview news; ]"/>
+					</widget>
+
+					<container height="1"/>
+
+					<!-- fixture date-->
+					<widget class="label" auto_size="vertical" spec="text" font="label" colour="faded text" alignment="centre_x,top">
+						<translation id="text" translation_id="230120" type="use" value="Date"/>
+					</widget>
+					<widget class="label" id="fxdt" auto_size="vertical" spec="text" size="9" colour="text" alignment="centre_x,top"/>
+
+					<container height="1"/>
+
+					<!-- fixture date-->
+					<widget class="label" auto_size="vertical" spec="text" font="label" colour="faded text" alignment="centre_x,top">
+						<translation id="text" translation_id="316799" type="use" value="Time[COMMENT: date of a fixture]"/>
+					</widget>
+					<widget class="label" id="fxtm" auto_size="vertical" spec="text" size="9" colour="text" alignment="centre_x,top"/>
+
+					<container height="1"/>
+
+					<!-- fixture venue-->
+					<widget class="label" auto_size="vertical" spec="text" font="label" colour="faded text" alignment="centre_x,top">
+						<translation id="text" translation_id="247233" type="use" value="Venue"/>
+					</widget>
+					<widget class="stadium_button" id="fxvn" auto_size="vertical" spec="text" size="9" colour="text" alignment="centre" show_stadium_icon="true" icon_alignment="centre" multiline="true" navigation_focus_target="false"/>
+				</container>
+
+			</container>
+		</container>
+	</container>
+
+
+</panel>

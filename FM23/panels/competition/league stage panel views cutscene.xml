@@ -1,0 +1,26 @@
+﻿<record>
+  <list id="views">
+
+    <!-- Overall stats with position change-->
+    <!-- Used in the match -->
+    <record id="ovrC">
+      <translation id="text" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+      <record id="view">
+        <!-- Main league position -->
+        <record id="Lpos"  style="bold" colour="text" background_colour="bg lighter" alignment="centre" width="60"/>
+				<record id="Lqin" colour="black" red_replacement="white"/>
+        <!-- Team name -->
+        <record id="Ttea" font="title" colour="black" red_replacement="white" dont_colour_feeder_club="true"/>
+					
+        <!-- Overall played -->
+        <record id="LOpl" colour="black" red_replacement="white"/>
+        <!-- Overall goal difference -->
+        <record id="LOgd" colour="black" red_replacement="white"/>
+				<!-- Overall goal difference -->
+        <record id="LOpo" colour="black" style="bold"/>
+
+      </record>
+    </record>
+
+  </list>
+</record>

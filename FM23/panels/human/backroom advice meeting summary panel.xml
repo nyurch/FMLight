@@ -1,0 +1,70 @@
+﻿<panel backroom_advice_meeting_ui_mode="summary">
+<string id="skin_style" value="simple_data_list" />
+	<attachment_group class="vertical_arrange" vertical_layout="-7,-80,-13" />
+
+	<container />
+
+	<container>
+		<attachment_group class="horizontal_arrange" horizontal_layout="-17,-66,-17" />
+
+		<container />
+
+		<container class="inner_contrast_box" red_replacement="red 400">
+			<attachment_group class="horizontal_arrange" horizontal_layout="-9,-8" horizontal_gap="8" />
+
+			<!-- summary details-->
+			<container class="inner_subtle_box">
+				<string id="colour" value="text" />
+				<translation id="text" translation_id="515156" type="use" value="Meeting Summary[COMMENT: AREA: Conversations; SUB-AREA: Header section; FR-BN: 32022; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title for conversation summary screen]" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="12,0,0,0" apply_to_children="true" />
+
+				<container class="scrolling_box">
+					<widget class="simple_data_list" id="agen" set_property="objt" gap="20" auto_size="vertical">
+						<record id="widget_properties" class="property_list_viewer_xml_panel" file="club/staff meeting category agenda" isMf="true" />
+					</widget>
+				</container>
+
+
+			</container>
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="8" />
+
+				<!--Lewis plug the action points panel here with id "actp"-->
+
+				<container class="inner_contrast_box" red_replacement="blue grey 500">
+					<string id="colour" value="text" />
+					<translation id="title" translation_id="534809" type="use" value="Action Points[COMMENT: AREA: Staff Meeting; SUB-AREA: Staff Meeting Summary; FR-BN: 35392; TONE: Informal;]" />
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="6" />
+					<widget class="text" colour="faded text" auto_size="vertical">
+						<translation id="text" translation_id="538963" type="use" value="These items will be compiled into an inbox item:[COMMENT: FR-35392 AREA: Staff Meeting; SUB-AREA: Staff Meeting Summary; FR-BN: 35392; TONE: Informal;]" />
+					</widget>
+
+					<widget class="simple_data_list" id="actp" gap="6" set_property="valu" auto_size="vertical" icon_colour="text" colour="text" red_replacement="text" >
+						<record id="widget_properties" class="icon_button" icon_spacing="10" size="large" icon_colour="text" colour="text" red_replacement="text" height="22" icon="icons/26px/inbox" appearance="" />
+						<record id="widget_properties" class="text" icon_spacing="10" size="large" icon_colour="text" colour="text" red_replacement="text" height="22" icon="icons/26px/inbox" appearance="" />
+					</widget>
+
+				</container>
+
+				<!--Lewis plug the staff in attendance panel here with id "staf"-->
+				<container class="inner_subtle_box">
+					<string id="colour" value="text" />
+					<translation id="title" translation_id="376487" type="use" value="In Attendance[COMMENT: FR 7884 - in attendance label; team meeting introduction box; team meeting, list of players who are in attendance]" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+					<widget class="person_details_panel_small_list" id="sslP" />
+				</container>
+
+			</container>
+
+
+		</container>
+
+		<container />
+
+	</container>
+
+
+
+	<container />
+
+</panel>

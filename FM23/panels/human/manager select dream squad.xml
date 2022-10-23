@@ -1,0 +1,165 @@
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="top,extend" gap="0" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+	<container height="120">
+
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+		<container class="main_box">
+			<layout class="arrange_horizontal_attachment" alignment="right,extend" gap="10" offset="4" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="4" />
+
+			<widget class="text" alignment="centre">
+				<translation id="text" translation_id="420656" type="use" value="Players may be added and removed from the squad as you wish, as long as you remain within the constraints of the overall budget. Each player is assigned a Budget Amount based on their value and current wage. Additional players may be created should you wish to add them to your squad.[COMMENT: FR 8517 description for creating fantasy club, can't be feminised as no human manager can be guaranteed at this stage]" />
+			</widget>
+
+			<container width="160">
+
+				<layout class="arrange_vertical_attachment" layout="-1,-1" gap="5" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="5" />
+
+				<container class="inner_subtle_box_no_margin" appearance="boxes/custom/darken/rounded/no margin/paper" red_replacement="bg darker">
+					<layout class="arrange_vertical_attachment" layout="-5,-4" gap="0" offset="4" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="5" />
+					<widget class="cash_cell" format="[%cash#1-short-roundtiny]" font="value" colour="text" alignment="centre_x,bottom" id="sqBu" />
+					<widget class="text" alignment="centre_x,top" font="label" colour="faded text">
+						<translation id="text" translation_id="395045" type="use" value="Squad Budget Value[COMMENT: FR 8517 Fantasy Club;total budget avaiable for the selected club to spend on the players]" />
+					</widget>
+				</container>
+
+				<container class="inner_subtle_box_no_margin" appearance="boxes/custom/darken/rounded/no margin/paper" red_replacement="bg darker">
+					<layout class="arrange_vertical_attachment" layout="-5,-4" gap="0" offset="4" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="5" />
+					<widget class="label" id="sqMX" font="value" colour="text" alignment="centre_x,bottom" />
+					<widget class="text" font="label" colour="faded text" alignment="centre_x,top">
+						<translation id="text" translation_id="395028" type="use" value="Max Squad Size[COMMENT: FR 8517 maximum number of players allowed for create-a-club mode]" />
+					</widget>
+				</container>
+			</container>
+
+			<container width="160">
+
+				<layout class="arrange_vertical_attachment" layout="-1,-1" gap="5" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="5" />
+
+				<container id="BDSc" class="inner_subtle_box_no_margin" appearance="boxes/custom/darken/rounded/no margin/paper"  >
+					<layout class="arrange_vertical_attachment" layout="-5,-4" gap="0" offset="4" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="5" />
+					<widget class="cash_cell" format="[%cash#1-short-roundtiny]" font="value" colour="text" alignment="centre_x,bottom" id="csTt" />
+					<widget class="text" alignment="centre_x,top" font="label" colour="faded text">
+						<translation id="text" translation_id="395044" type="use" value="Squad Budget Spent[COMMENT: FR 8517 Fantasy Club;total budget spend for the current squad selected]" />
+					</widget>
+				</container>
+
+				<container id="SSSc" class="inner_subtle_box_no_margin" appearance="boxes/custom/darken/rounded/no margin/paper"  >
+					<layout class="arrange_vertical_attachment" layout="-5,-4" gap="0" offset="4" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="5" />
+					<widget class="label" id="sqCH" font="value" colour="text" alignment="centre_x,bottom" />
+					<widget class="label" font="label" colour="faded text" alignment="centre_x,top">
+						<translation id="text" translation_id="395015" type="use" value="Current Squad Size[COMMENT: FR 8517 maximum number of players allowed for create-a-club mode]" />
+					</widget>
+				</container>
+			</container>
+		</container>
+	</container>
+
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="0" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<container class="main_subtle_box">
+
+			<layout class="arrange_vertical_attachment" layout="-1,40" gap="10" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+			<widget class="client_object_list_table" id="tSqp" customisation_context="play" select_event="slPL" database_table_type="1" mode="fill_rows, stripe_rows, printable, keyboard, select_rows, select_multiple, show_bullets" column_mode="resize_columns, move_columns, custom_views" row_spacing="2" row_height="28" navigation_container="true" default_focus="true">
+				<boolean id="save_session_state" value="true" />
+				<integer id="contextual_handler_column_id" value="Pnms" />
+				<boolean id="should_force_refresh" value="true" />
+
+				<!-- default sort by playing position (primary), then picked position, then name -->
+				<list id="default_sort_column">
+					<integer value="PtsL" />
+					<integer value="PpsC" />
+				</list>
+
+				<!--default view-->
+				<flags id="default_view" value="geni" />
+
+				<!--available views-->
+				<list id="viws">
+					<record id="geni">
+
+						<translation id="name" translation_id="247410" type="use" value="General Info" />
+						<!-- Define attributes/properties to view in this view type on the panel.
+								   Any properties not defined here will be hidden for this view. -->
+						<record id="view">
+							<flags id="Pnfo" />
+							<!-- player status/info -->
+							<record id="Pers" colour="text"/>
+							<!-- person name, dont use coloured as loan players get recalled -->
+							<flags id="PpsC" />
+							<!-- position -->
+							<flags id="PSag" />
+							<!-- person age -->
+							<flags id="Pclb" />
+							<!-- person club -->
+							<record id="Pnat">
+								<!-- person nationality -->
+								<flags id="use_format" value="short" />
+							</record>
+							<flags id="Pcac" />
+							<!-- currant ability -->
+							<flags id="fTsQ" />
+							<!-- player budget value -->
+							<flags id="Pcww" />
+							<!-- Player wage value -->
+						</record>
+					</record>
+				</list>
+			</widget>
+
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0,5" />
+
+				<container navigation_container="true">
+					<layout class="arrange_horizontal_attachment" alignment="middle" gap="4" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+					<record id="default_properties" auto_size="horizontal" />
+
+					<widget class="primary_icon_button" icon="icons/16px/add to list" icon_colour="white" click_event="adPL" controller_button="y_button">
+						<translation id="text" translation_id="395006" type="use" value="Add Player[COMMENT: FR 8517 button text for adding a specific player to a fantasy club]" />
+					</widget>
+
+					<widget class="icon_button" icon="icons/16px/remove from list" id="remp" click_event="rmPL" controller_button="x_button">
+						<translation id="text" translation_id="233090" type="use" value="Remove Player" />
+					</widget>
+
+					<widget class="icon_button" icon="icons/16px/man" id="crea" click_event="crPL">
+						<translation id="text" translation_id="395013" type="use" value="Create Player[COMMENT: FR 8517 button text for create a specific player to a fantasy club]" />
+					</widget>
+
+					<widget class="icon_button" icon="icons/16px/folder" id="load" click_event="ldCP">
+						<translation id="text" translation_id="491932" type="use" value="Load Created Player[COMMENT: Create a Player Mode; SUB-AREA: Select Squad; FR-BN: 27410; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: FR 27410 button text for load a created player to a fantasy club]" />
+					</widget>
+
+					<widget class="button" click_event="auFs">
+						<translation id="text" translation_id="395008" type="use" value="Auto-Fill Squad[COMMENT: FR 8517 button text for auto filling the squad with random players for a fantasy club]" />
+					</widget>
+
+					<widget class="button" click_event="clSq" id="clSQ">
+						<translation id="text" translation_id="395011" type="use" value="Clear Squad[COMMENT: FR 8517 button text for clearing the squad for a fantasy club]" />
+					</widget>
+				</container>
+			</container>
+
+		</container>
+
+		<!-- panel showing squad selection rules for the squad -->
+		<widget class="squad_selection_info_panel" id="tsip" red_replacement="light_box_background" />
+
+	</container>
+</panel>

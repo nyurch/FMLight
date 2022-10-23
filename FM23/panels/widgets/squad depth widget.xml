@@ -1,0 +1,176 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<container class="inner_contrast_box_no_margin" id="bckb" navigation_container="true" red_replacement="background">
+		<attachment_group class="vertical_arrange" vertical_layout="-3,-10,20" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+		<!--Header Panel-->
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"  apply_to_children="true" />
+
+			<widget class="button" appearance="" id="Clop" click_event="edpd" />
+
+			<container>
+				<attachment_group class="horizontal_arrange" horizontal_layout="-1,36" horizontal_offset="4" horizontal_gap="0" vertical_inset="0" />
+
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+					<widget class="position_label" id="posl" size="9" alignment="left,centre_y" colour="gold" style="semi_bold" auto_size="vertical" click_event="edpd" display_format="0"/>
+
+					<container id="tacC" height="14">
+						<container>
+							<attachment_group class="horizontal_arrange" horizontal_layout="-1,14" horizontal_offset="0" horizontal_gap="0" vertical_inset="0" />
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+							<widget class="tactical_role_label" id="tacl" size="7" alignment="left,centre_y" colour="white" font="title"/>
+							<container id="rfil" />
+						</container>
+
+						<widget class="popup_button" id="rswi" appearance="" auto_size="horizontal" height="12" inset="4" select_event="ersl" fixed="true">
+							<layout class="stick_to_sides_attachment" alignment="bottom,right" inset="0" />
+							<boolean id="save_session_state" value="true" />
+							<boolean id="auto_tick_exclusive" value="true" />
+						</widget>
+
+					</container>
+				</container>
+
+				<container id="cbxC">
+					<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0"  horizontal_alignment="right" horizontal_inset="0" />
+
+					<container class="main_box" id="clbx" appearance="boxes/custom/warning/paper" height="20" width="36">
+						<attachment_group class="horizontal_arrange" horizontal_alignment="middle" horizontal_offset="0" horizontal_gap="0" vertical_inset="0" />
+
+						<widget class="picture" file="icons/16px/man" colour="white" image_alignment="centre" width="16"/>
+						<widget class="label" size="small" id="nmlb" alignment="left,centre_y" style="semi_bold" colour="white" width="16"/>
+					</container>
+				</container>
+			</container>
+
+		</container>
+
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<!--Table - Star Rating + Name -->
+			<container id="tblC">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<widget class="table" id="sqdP" hidden="true" mode="fill_rows,stripe_rows" layout="-1,20, 80,-1" auto_size_rows="false" row_height="20" row_spacing="0">
+
+					<list id="column_table_properties">
+						<record indx="1" sort_disabled="true" auto_hide_priority="0" />
+						<record indx="2" sort_disabled="true" auto_hide_priority="0" />
+					</list>
+
+					<list id="column_widget_properties">
+						<record indx="1" alignment="centre" />
+						<record indx="2" alignment="left,centre_y" />
+					</list>
+
+					<widget class="label" row="0" col="2">
+						<translation id="text" translation_id="469471" type="use" value="Great[COMMENT: quality of squad depth, same as ID 396487 but split out so it can have a different gender in some languages]" />
+					</widget>
+					<widget class="label" row="1" col="2">
+						<translation id="text" translation_id="469472" type="use" value="Good[COMMENT: quality of squad depth, same as ID 396486 but split out so it can have a different gender in some languages]" />
+					</widget>
+					<widget class="label" row="2" col="2">
+						<translation id="text" translation_id="469473" type="use" value="Average[COMMENT: quality of squad depth, same as ID 396473 but split out so it can have a different gender in some languages]" />
+					</widget>
+					<widget class="label" row="3" col="2">
+						<translation id="text" translation_id="469474" type="use" value="Poor[COMMENT: quality of squad depth, same as ID 396498 but split out so it can have a different gender in some languages]" />
+					</widget>
+				</widget>
+				<widget class="table" id="sqdT" mode="fill_rows,stripe_rows" layout="80, -1, 18" row_height="24" auto_size_rows="false" column_spacing="0" row_spacing="0" hidden="true" sort_disabled="true">
+					<list id="column_widget_properties">
+						<record indx="1" size="9.2">
+						</record>
+					</list>
+				</widget>
+
+			</container>
+
+			<!--Best XI Personal Details-->
+			<container class="bordered_box_no_margin" id="bstC" hidden="true">
+				<attachment_group class="vertical_arrange" vertical_layout="68,-1" vertical_offset="0" horizontal_inset="0" />
+
+				<!--Player Personal Details-->
+				<container class="player_personal_details_panel" id="pdet" file="none">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+					<container class="bordered_box_no_margin" red_replacement="dark_box_background">
+						<attachment_group class="horizontal_arrange" horizontal_layout="70,-1" horizontal_offset="0" horizontal_gap="2" vertical_inset="0" />
+
+						<!-- Profile picture -->
+						<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x,bottom">
+							<record id="object_property">
+								<list id="get_properties">
+									<!--Facegen data request-->
+									<record get_property="fcgn" />
+									<!--Fake name request-->
+									<record get_property="Pfke" />
+									<record get_property="prpc" set_property="valu" />
+								</list>
+							</record>
+						</widget>
+
+						<!-- Personal Details -->
+						<container>
+							<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+							<!--Name-->
+							<widget class="person_button" id="prsn" alignment="left" height="20" person_is_player="true" info_popup_enabled="true" icon_enabled="true" />
+
+							<!-- Age -->
+							<!-- We use an editable panel here just to make it disappear when editing-->
+							<!-- fixed height as an attempt to fix 152615 -->--&gt;
+							<widget class="editable_client_object_property_panel" id="age " height="20">
+								<record id="widget_info" class="formatted_label" alignment="left,centre_y" height="20">
+									<translation id="format" translation_id="242551" type="use" value="[%number#1] years old" />
+								</record>
+								<record id="widget_properties" width="0" height="0" />
+								<record id="object_property" get_property="Page" />
+							</widget>
+
+							<!-- Nationality -->
+							<widget class="editable_client_object_property_panel" id="intc " auto_size="vertical">
+								<record id="widget_info" class="nation_button" icon_enabled="true" auto_size="vertical" size="small" colour="faded text" format="[%nation#1-nationality]" />
+								<record id="widget_properties" auto_size="vertical" />
+								<record id="object_property" dont_set_hint="true" get_property="PNat" />
+							</widget>
+						</container>
+					</container>
+				</container>
+				<!--CA and PA-->
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_offset="0" horizontal_inset="0" />
+					<!-- CA -->
+					<container>
+						<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_gap="0" vertical_offset="0" horizontal_inset="0" />
+
+						<widget class="label" alignment="centre" auto_size="vertical" font="label">
+							<translation id="text" translation_id="293291" type="use" value="Current Ability" />
+						</widget>
+						<widget class="player_rating_for_team_stars_label" id="CAic" alignment="centre" auto_size="vertical" click_event="ltms" />
+					</container>
+					<!-- PA -->
+					<container>
+						<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_gap="0" vertical_offset="0" horizontal_inset="0" />
+
+						<widget class="label" alignment="centre" auto_size="vertical" font="label">
+							<translation id="text" translation_id="293292" type="use" value="Potential Ability" />
+						</widget>
+						<widget class="player_rating_for_team_stars_label" id="PAic" alignment="centre" auto_size="vertical" click_event="ltms" />
+					</container>
+				</container>
+			</container>
+		</container>
+
+		<!--Footer-->
+		<container class="inner_box_no_margin" id="ftBd" click_event="edpd" fixed="true" wants_mouse_events="true">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<widget class="label" id="ftlb" alignment="centre" size="small" colour="fg" />
+		</container>
+	</container>
+
+
+</panel>

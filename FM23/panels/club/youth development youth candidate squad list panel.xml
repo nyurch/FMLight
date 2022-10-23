@@ -1,0 +1,160 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+	<container id="YinC">
+		<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="10" horizontal_inset="0" />
+		<container id="MCon" class="main_box">
+
+			<attachment_group class="horizontal_arrange" vertical_offset="20" horizontal_layout="-1,280" />
+			<container class="scrolling_box">
+				<container id="tale">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+
+				</container>
+			</container>
+
+			<container id="side">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+				<attachment class="test_screen_size_attachment">
+					<list id="properties">
+							<record>
+								<flags id="alignment" value="horizontal" />
+								<integer id="min_value" value="0" />
+								<integer id="max_value" value="1450" />
+								<symbol id="set_property" value="shown" />
+								<integer id="true_value" value="false" />
+								<integer id="false_value" value="true" />
+							</record>
+					</list>
+				</attachment>
+				<container id="InCt">
+					<attachment_group class="vertical_arrange" vertical_layout="120,-1" vertical_offset="0" horizontal_inset="0" />
+
+					<container id="intk" class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_horizontal_centre" vertical_alignment="middle" vertical_offset="0" horizontal_inset="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+
+						<widget class="stars_range_strip" id="InSt" auto_size="vertical" alignment="centre" />
+
+						<widget class="label" id="ytrt" auto_size="all" font="bold" colour="accent" alignment="centre" />
+						<widget class="text" id="intx" auto_size="vertical" colour="faded text" alignment="centre" />
+					</container>
+
+					<container id="IPos" class="inner_subtle_box">
+						<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />
+						<widget class="label" alignment="centre" auto_size="vertical" font="bold" colour="accent">
+							<translation id="text" translation_id="538863" type="use" value="Intake Distribution[COMMENT: AREA: dev centre; SUB-AREA: youth intake; NOTE: provides a breakdown of players in your youth intake distributed by elite talent, top talent, good talent etc]" />
+						</widget>
+						<widget class="text" alignment="centre" multiline="true" colour="faded text" auto_size="vertical">
+							<translation id="text" translation_id="538864" type="use" value="Players by preferred positions[COMMENT: AREA: dev centre; SUB-AREA: youth intake; NOTE: provides a breakdown of players in your youth intake by position]" />
+						</widget>
+						<widget class="pitch_squad_depth" id="pitc" vertical="true" pitch_length_multiplier="1.02" pitch_draw_grass="false" select_event="slic" pitch_line_colour="faded black" pitch_keep_selected_icons="true" pitch_touchline_width_percentage="30" line_width="1">
+							<boolean id="pitch_draw_goals" value="false" />
+							<boolean id="pitch_draw_markings" value="true" />
+							<boolean id="pitch_allow_player_selection" value="false" />
+						</widget>
+					</container>
+
+				</container>
+
+				<container hidden="true" id="ScCt">
+					<attachment_group class="vertical_arrange" vertical_offset="0" horizontal_inset="0" />
+					<container id="GrCt" height="500" class="inner_subtle_box">
+						<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />
+
+						<widget class="label" alignment="centre" auto_size="vertical" font="title" colour="accent">
+							<translation id="text" font="bold" colour="accent" translation_id="538865" type="use" value="Star Graduate[COMMENT: AREA: dev centre; SUB-AREA: youth intake; NOTE: highlights the star player in the intake group]" />
+						</widget>
+
+						<container id="ICdi" height="150" width="150">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						</container>
+
+						<widget class="client_object_viewer_xml_panel" id="ScBG" navigation_focus_target="true">
+							<attachment_group class="vertical_arrange_horizontal_centre" vertical_alignment="middle" vertical_offset="0" horizontal_inset="0" />
+							<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+
+							<widget class="person_button" id="PnmP" navigation_focus_target="true" info_popup_enabled="true" alignment="centre" info_popup_alignment="centre" auto_size="vertical" font="semibold">
+								<record id="object_property" get_property="PnmP" set_property="valu" />
+							</widget>
+
+							<widget class="game_formatted_label" alignment="left,centre_y" size="small" colour="faded text" auto_size="all" multiline="false">
+								<layout class="centre_in_parent_attachment" alignment="horizontal" />
+								<record id="format">
+									<translation id="text" translation_id="388547" type="use" value="[%number#1] year-old [%player_description#2][COMMENT: transfer window opening news, rumoured player moving, graphical display]" />
+									<integer id="var2" value="vf_player_description" />
+								</record>
+								<record id="object_property">
+									<list id="get_properties">
+										<!-- age -->
+										<record get_property="Page" set_property="var1" dont_set_object="true" />
+										<!-- description -->
+										<record get_property="Pdes" set_property="var2" dont_set_object="true" />
+									</list>
+								</record>
+							</widget>
+
+							<widget class="game_formatted_label" id="wgex" alignment="centre" auto_size="vertical" size="small" multiline="true">
+								<record id="object_property">
+									<list id="get_properties">
+										<record get_property="PcMM" set_property="var1" dont_set_object="true" />
+										<record get_property="Pcww" set_property="var2" dont_set_object="true" />
+										<record get_property="Pced" set_property="var3" dont_set_object="true" />
+									</list>
+								</record>
+								<list id="format">
+									<record value="-1">
+										<string id="format" value="" />
+									</record>
+									<record value="0">
+										<translation id="format" translation_id="450823" type="use" value="[%wage#2] until [%date#3-short][COMMENT: player overview; wage and contract expiry date string, small change to ID 394401 to remove the 'Earning' part so this can be used in a lot of places]" />
+									</record>
+									<record>
+										<string id="format" value="[%wage#2]" />
+									</record>
+								</list>
+								<record id="forced_formats" var2="vf_wage" />
+							</widget>
+
+							<widget class="person_nationality_button" navigation_focus_target="true" entity_layout_id="at05" id="pntB" alignment="centre" icon_alignment="centre" auto_size="all">
+								<record id="dbrp">
+									<string id="get_property" value="objt" />
+									<string id="set_property" value="objt" />
+								</record>
+							</widget>
+
+							<widget class="horizontal_divider" auto_size="horizontal" />
+
+							<widget class="label" alignment="centre" auto_size="all" font="label">
+								<translation id="text" translation_id="293292" type="use" value="Potential Ability" />
+							</widget>
+							<widget class="scout_stars_label" id="PAic" alignment="centre" auto_size="all" click_event="ltms" mode="2">
+								<record id="object_property" get_property="PSpA" set_property="valu" />
+							</widget>
+
+
+							<widget class="text" id="PPot" alignment="centre" multiline="true" auto_size="vertical">
+								<string id="text" value="" />
+							</widget>
+						</widget>
+
+					</container>
+
+				</container>
+			</container>
+
+		</container>
+	</container>
+
+	<container id="noYC" height="140" hidden="true" name="empty_state">
+		<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />
+		<widget class="text" entity_layout_id="at08" alignment="centre_x,centre_y" id="at08" height="70" name="no_intake_text">
+			<string id="size" value="large" />
+			<string id="style" value="bold" />
+			<translation id="value" translation_id="491880" type="use" value="List of players in youth intake is not yet available[COMMENT: AREA: Development Centre; SUB-AREA: youth_development_club_area; FR-BN: 28187; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: text for when no academy graduates are ready to join the youth team]" />
+		</widget>
+	</container>
+
+</panel> 

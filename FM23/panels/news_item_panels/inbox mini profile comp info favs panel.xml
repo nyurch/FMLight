@@ -1,0 +1,77 @@
+<panel height="112">
+	<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+	<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="horizontal,top" inset="0"/>
+
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<container height="42">
+			<layout class="arrange_horizontal_attachment" alignment="left,extend" gap="10" offset="0"/>
+			<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="vertical" inset="0"/>
+
+			<widget class="object_portrait_picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="50">
+				<record id="object_property">
+					<integer id="get_property" value="objt"/>
+					<integer id="set_property" value="objt"/>
+				</record>
+			</widget>
+
+			<container>
+				<layout class="arrange_vertical_attachment" layout="-1, -1" gap="-2" offset="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+				<widget class="comp_button" alignment="left,bottom" auto_size="none" size="9" style="bold" colour="faded black" font="label" icon_enabled="false">
+					<record id="object_property">
+						<integer id="get_property" value="objt"/>
+						<integer id="set_property" value="valu"/>
+					</record>
+				</widget>
+
+				<widget class="nation_button" auto_size="none" size="9" style="bold" colour="faded black" font="label">
+					<record id="object_property">
+						<integer id="get_property" value="cnat"/>
+						<integer id="set_property" value="objt"/>
+					</record>
+				</widget>
+			</container>
+		</container>
+
+		<container height="54">
+			<layout class="arrange_vertical_attachment" layout="-1, -1" offset="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-1, -1" offset="0"/>
+				<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="vertical" inset="0"/>
+
+				<widget class="club_reputation_stars_label" alignment="left,centre_y" navigation_focus_target="false">
+					<record id="object_property">
+						<integer id="get_property" value="crps"/>
+						<integer id="set_property" value="valu"/>
+					</record>
+				</widget>
+
+				<widget class="team_button" icon_enabled="false" alignment="left,centre_y" style="bold" size="large" colour="white" font="label">
+					<record id="object_property">
+						<integer id="get_property" value="Cpsf"/>
+						<integer id="set_property" value="valu"/>
+					</record>
+				</widget>
+			</container>
+
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-1, -1" offset="0"/>
+				<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="vertical" inset="0"/>
+
+				<widget class="label" style="bold" size="large" colour="faded black" font="label">
+					<translation id="text" translation_id="306609" type="use" value="Reputation[COMMENT: competitions reputation in a continent]"/>
+				</widget>
+
+				<widget class="label" style="bold" size="large" colour="faded black" font="label" id="psFv">
+					<translation id="text" translation_id="437031" type="use" value="Pre-Season Favs[COMMENT: FR 13665 - team wins competition news item; pre-season favourites for competition title]"/>
+				</widget>
+			</container>
+		</container>
+	</container>
+</panel>

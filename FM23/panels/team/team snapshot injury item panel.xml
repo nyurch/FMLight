@@ -1,0 +1,27 @@
+<!-- A panel displaying info about a single player injury. To be used with a PROPERTY_LIST_XML_VIEWER_PANEL -->
+<panel>
+	<layout class="arrange_vertical_attachment" layout="-1,2" offset="0" gap="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+	<container>
+		<layout class="arrange_horizontal_attachment" layout="-2, -1" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<widget class="person_button" alignment="left,centre_y"  colour="black">
+				<record id="object_property" get_property="Iper" dont_set_object="true"/>
+			</widget>
+			<widget class="label" alignment="left,centre_y" colour="match injury">
+				<record id="object_property" get_property="Ides" dont_set_object="true"/>
+			</widget>
+		</container>
+
+		<widget class="text" alignment="right,centre_y">
+			<record id="object_property" get_property="Itim" dont_set_object="true"/>
+		</widget>
+	</container>
+	<widget class="horizontal_divider" />
+</panel>

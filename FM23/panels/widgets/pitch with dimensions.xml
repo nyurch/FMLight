@@ -1,0 +1,17 @@
+<panel>
+
+  <string id="font" value="regular" />
+
+  <container class="main_box" height="100" width="200">
+    <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="4"/>
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+    <layout class="centre_in_parent_attachment" alignment="all"/>
+
+    <widget class="label" spec="text" size="small" alignment="centre_x,bottom" height="30" colour="white" font="fonts/letterpressed">
+      <translation id="text" translation_id="284339" type="use" value="Surface[COMMENT: heading; team_information_panel; pitch surface type]" />
+    </widget>
+    <widget class="pitch_surface_type_label" spec="text" colour="white" style="bold" id="Sfty" size="13" alignment="centre_x,top" font="fonts/letterpressed" multiline="true">
+    </widget>
+
+  </container>
+</panel>

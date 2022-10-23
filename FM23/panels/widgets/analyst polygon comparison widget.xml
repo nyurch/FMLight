@@ -1,0 +1,12 @@
+﻿<panel>
+	<layout class="arrange_vertical_attachment" layout="-1,30" offset="0" gap="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+
+	<widget class="polygon_data_analyser" id="plyG" file="widgets/data hub polygon analyser visualisation" />
+
+	<container class="horizontal_arrange_container" alignment="fill" gap="10" id="legC">
+		<record id="default_properties" colour="black"/>
+	</container>
+	
+</panel>

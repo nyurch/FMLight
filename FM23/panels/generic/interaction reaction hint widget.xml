@@ -1,0 +1,17 @@
+﻿<panel width="250">
+    <attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_offset="10"/>
+
+    <list id="properties_to_forward">
+        <record get_property="titl" set_property="text" target="titl"/>
+        <record get_property="colour" set_property="colour" target="titl"/>
+        <record get_property="text" set_property="text" target="desc"/>
+    </list>
+
+    <container class="bordered_box_no_margin" appearance="boxes/popup/standard/paper">
+        <attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend"/>
+
+        <widget class="text" id="titl" style="bold" colour="white" alignment="left, centre_y" auto_size="vertical"/>
+        <widget class="horizontal_divider"/>
+        <widget class="text" id="desc" colour="white" alignment="left, centre_y" auto_size="vertical"/>
+    </container>
+</panel>

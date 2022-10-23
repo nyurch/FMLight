@@ -1,0 +1,25 @@
+﻿<panel navigation_container="true">
+	<attachment_group class="horizontal_arrange_autosize" horizontal_offset="0" horizontal_gap="0" />
+
+	<string id="transfer_in_icon_appearance" value="icons/16px/transfer in"/>
+	<string id="transfer_out_icon_appearance" value="icons/16px/transfer out"/>
+
+	<container class="inner_subtle_box_no_margin" >
+		<attachment_group class="horizontal_arrange_autosize" horizontal_offset="4" horizontal_gap="4" vertical_inset="2" />
+
+		<widget class="picture" id="ClDi" scale_picture="false" keep_aspect_ratio="true" auto_size="horizontal" image_alignment="left,centre_y"/>
+
+		<container>
+			<layout class="fit_children_attachment" alignment="horizontal" offset="0"/>
+			<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="left" apply_to_children="true" inset="0"/>
+
+			<widget class="person_button" id="plyw" style="semi_bold" colour="accent" auto_size="all" multiline="false"/>
+			<widget class="text" id="trtw" auto_size="all" size="small" colour="faded text"/>
+		</container>
+
+		<widget class="button" click_event="ClLi" auto_size="horizontal" alignment="left,centre_y" appearance="icons/16px/right">
+		</widget>
+	</container>
+
+</panel>

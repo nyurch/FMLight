@@ -1,0 +1,156 @@
+<panel height="152">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<container class="inner_subtle_box_no_margin" >
+		<layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="0" offset="0"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<!--top bit with info and that-->
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="75, -4, 2, -7, 2, 130" gap="6"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="4" apply_to_children="true"/>
+
+			<!--mugshot-->
+			<widget class="object_portrait_picture" id="ppic" scale_picture="true" image_alignment="centre">
+				<record id="object_property" get_property="objt" set_property="objt" />
+			</widget>
+
+			<!--name and basic details-->
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="middle" gap="2" offset="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+				<!--name-->
+				<widget class="person_button" id="nmtx" enforce_style="true" auto_size="vertical" spec="text" multiline="false" info_popup_enabled="true" person_is_player="true" style="semi_bold" size="large" colour="black">
+					<record id="object_property" get_property="Pnms"/>
+				</widget>
+				<!--role-->
+				<widget class="tactical_role_label" id="Pbrs" spec="text" auto_size="vertical" display_format="0" multiline="false">
+				</widget>
+				<!--position-->
+				<widget class="position_label" id="pstx" spec="text" auto_size="vertical" display_format="2" multiline="false" colour="faded text" alignment="left">
+					<record id="object_property" get_property="Ppos"/>
+				</widget>
+				<!--age-->
+				<widget class="text" id="agtx" auto_size="vertical" spec="text" multiline="false" colour="faded text">
+				</widget>
+			</container>
+
+			<widget class="vertical_divider"/>
+
+			<!--club/costs/transfer status-->
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="middle" gap="8" offset="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+				<!--club-->
+				<widget class="club_button" id="clbt" auto_size="vertical" spec="text" multiline="false" style="bold" size="large" alignment="left,centre_y">
+					<record id="object_property" get_property="Pclb"/>
+				</widget>
+
+				<!--costs/transfer status-->
+				<container>
+					<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+					<layout class="arrange_horizontal_attachment" alignment="fill" offset="0" gap="2"/>
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+					<!--estimated cost-->
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="2" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<widget class="label" alignment="left" auto_size="vertical" font="label">
+							<translation id="text" translation_id="335037" type="use" value="Estimated Cost[COMMENT: scout report panel label]" />
+						</widget>
+
+						<widget class="label" auto_size="vertical" id="esco" font="value" size="small" alignment="left,can_scale"/>
+
+					</container>
+
+					<!--wage demands-->
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="2" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<widget class="label" alignment="left" auto_size="vertical" spec="text" font="label">
+							<translation id="text" translation_id="335516" type="use" value="Wage Demands[COMMENT: scout report panel label]" />
+						</widget>
+
+						<widget class="label" auto_size="vertical" id="wade" font="value" size="small" alignment="left,can_scale"/>
+
+					</container>
+
+				</container>
+				
+				<!-- separator image -->
+				<widget class="horizontal_divider" priority="1" />
+
+				<!--transfer status-->
+				<widget id="trst" class="text" auto_size="vertical" multiline="true" style="semi_bold">
+				</widget>
+			</container>
+
+			<widget class="vertical_divider"/>
+
+			<!--CA/PA-->
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="middle" gap="4" offset="8"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+				<widget class="text" auto_size="vertical" spec="text" font="title" colour="faded text" alignment="centre">
+					<translation id="text" translation_id="251893" type="use" value="Current Ability[COMMENT: scout report panel box heading]"/>
+				</widget>
+
+				<!--CA-->
+				<widget class="scout_stars_label" id="cast" auto_size="vertical" alignment="centre" mode="1">
+					<record id="object_property" get_property="Pcab"/>
+				</widget>
+
+				<!--no CA-->
+				<widget class="text" id="noca" auto_size="horizontal" height="20" spec="text" colour="text" alignment="centre" hidden="true">
+					<translation id="text" translation_id="242522" type="use" value="N/A"/>
+				</widget>
+
+				<container height="4"/>
+
+				<widget class="text" auto_size="vertical" spec="text" font="title" colour="faded text" alignment="centre">
+					<translation id="text" translation_id="251894" type="use" value="Potential Ability[COMMENT: scout report panel box heading]"/>
+				</widget>
+
+				<!--PA-->
+				<widget class="scout_stars_label" id="past" auto_size="vertical" alignment="centre" mode="2">
+					<record id="object_property" get_property="Ppab"/>
+				</widget>
+
+				<!--no PA-->
+				<widget class="text" id="nopa" auto_size="horizontal" height="20" spec="text" colour="text" alignment="centre" hidden="true">
+					<translation id="text" translation_id="242522" type="use" value="N/A"/>
+				</widget>
+
+			</container>
+
+		</container>
+
+		<!--bottom bit with buttons and that-->
+		<container class="inner_subtle_box_no_margin" >
+			<layout class="fit_children_attachment" alignment="vertical" offset="2"/>
+			<layout class="arrange_horizontal_attachment" alignment="right" offset="2" gap="2"/>
+			<layout class="stick_to_sides_attachment" alignment="top" inset="2" apply_to_children="true"/>
+
+			<!--view report button-->
+			<widget class="link_appearance_button" id="vwrp">
+				<translation id="text" translation_id="317219" type="use" value="View Report[COMMENT - view scout report card screen]"/>
+			</widget>
+
+			<!--add to shortlist button-->
+			<widget class="icon_button" id="adsh" click_event="adts" auto_size="all" controller_button="x_button">
+				<translation id="text" translation_id="243350" type="use" value="Add To Shortlist"/>
+			</widget>
+
+			<!--make offer button-->
+			<widget class="icon_button" id="mkof" auto_size="all" controller_button="y_button">
+				<translation id="text" translation_id="242212" type="use" value="Make Offer"/>
+			</widget>
+		</container>
+
+	</container>
+
+</panel>

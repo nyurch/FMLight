@@ -1,0 +1,44 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="dynamic_image_text" set_property="valu" target="bldT"/>
+		<record get_property="Ttea" set_property="objt" target="log1"/>
+		<record get_property="ottm" set_property="objt" target="log2"/>
+	</list>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+	
+	<!-- overlay -->
+	<widget class="picture" id="ssha" file="photos/dynamic/comp summary/bg" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true"/>
+
+	<container>
+		<layout class="arrange_vertical_attachment" layout="-6, -7, -6, -1" offset="0" gap="0"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="spacer" />
+
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="-5,-9,-2,-3,-2,-9,-5" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+			<widget class="spacer" />
+			<!-- Logo/Portrait -->
+			<widget class="object_portrait_picture" id="log1" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+				<!-- PROP_TEAM -->
+				<record id="object_property" get_property="Ttea" set_property="objt"/>
+			</widget>
+			<widget class="spacer" />
+			<widget class="text" alignment="centre,auto_fit" style="bold" colour="gold">
+				<translation id="text" translation_id="242324" type="use" value="v[versus]" />
+			</widget>
+			<widget class="spacer" />
+			<widget class="object_portrait_picture" id="log2" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+				<!-- PROP_OTHER_TEAM -->
+				<record id="object_property" get_property="ottm" set_property="objt"/>
+			</widget>
+			<widget class="spacer" />
+		</container>
+		
+		<widget class="text" id="bldT" alignment="centre" colour="white" style="bold" size="xlarge" font="title"/>
+		<widget class="spacer"/>
+
+	</container>
+</panel>

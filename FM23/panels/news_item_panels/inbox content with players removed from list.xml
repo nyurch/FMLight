@@ -1,0 +1,66 @@
+﻿<panel>
+	<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+	<list id="draw_order">
+		<record entity_layout_id="at03" />
+		<record entity_layout_id="at00" />
+		<record entity_layout_id="at01" />
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+	</widget>
+	<container entity_layout_id="at03" id="at03" auto_size="vertical">
+		<layout class="stick_to_object_attachment" id="align_top" offset="1" get_side="top" set_side="top" move_side="true" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="left" set_side="left" target="main" />
+		<layout class="stick_to_object_attachment" id="align_right" offset="-10" get_side="right" set_side="right" target="main" />
+		<layout class="stick_to_object_attachment" id="group_align_bottom" get_side="bottom" set_side="bottom" use_own_content_rectangle="true" use_children_to_size="true" target="at01" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<container class="table" entity_layout_id="at00" id="rmPL" auto_size="vertical" layout="-2,-1" mode="fill_rows, stripe_rows" needs_height="true" name="players_removed_from_list_table">
+			<string id="auto_size_rows" value="false" />
+			<string id="fixed_size_rows" value="true" />
+			<string id="row_height" value="30" />
+			<list id="column_table_properties">
+				<record id="plrC">
+					<integer id="index" value="0" />
+					<string id="sort_disabled" value="true" />
+					<integer id="left" value="4" />
+					<record id="column_heading">
+						<translation id="text" translation_id="227966" type="use" value="Player" />
+					</record>
+				</record>
+				<record id="tckB">
+					<integer id="index" value="1" />
+					<string id="sort_disabled" value="true" />
+					<integer id="left" value="4" />
+				</record>
+			</list>
+			<list id="column_widget_properties">
+				<record alignment="centre_y,left" colour="black">
+					<integer id="index" value="0" />
+				</record>
+				<record alignment="centre_y,left">
+					<integer id="index" value="1" />
+				</record>
+			</list>
+			<layout class="stick_to_object_attachment" id="align_top" offset="-1" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		</container>
+		<widget class="button" entity_layout_id="at01" id="xtnd" auto_size="horizontal" needs_width="true" height="70" name="extend_button">
+			<translation id="text" translation_id="516909" type="use" value="Keep all players in list[COMMENT: AREA: Transfers; SUB-AREA: option to keep all players on one of the DoF lists; FR: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: heading]" />
+			<layout class="stick_to_object_attachment" id="align_top" offset="30" get_side="bottom" set_side="top" move_side="true" target="at00" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" move_side="true" target="main" />
+		</widget>
+	</container>
+</panel>

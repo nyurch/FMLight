@@ -1,0 +1,121 @@
+﻿<panel>
+	<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+	<layout class="arrange_vertical_attachment" alignment="top, extend" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+	<container class="inner_subtle_box" colour="title" entity_layout_id="at01" id="mhed" auto_size="vertical">
+
+		<attachment_group class="vertical_arrange_autosize" vertical_layout="-1,5,10,-1" entity_layout_id="at00" id="at00" auto_size="vertical"/>
+		
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="120, -1" horizontal_offset="0" vertical_offset="0"/>
+
+			<widget class="icon_button" size="large" style="bold" id="ibut" height="40" width="120" navigation_focus_target="false" appearance="buttons/custom/dof status/normal/button" wants_mouse_events="false" alignment="centre_y" red_replacement="bg">
+				<string id="text" value="Accepted"/>
+				<flags id="colour" value="white" />
+			</widget>
+			
+			<container class="horizontal_arrange_container" layout="-1,-1,-1" gap="10" entity_layout_id="at02" id="at02" auto_size="vertical">
+				
+				<container class="titled_box" colour="faded black" alignment="top" entity_layout_id="at06" hidden="true" id="hed1">
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_offset="0" vertical_offset="0"/>
+					<widget class="label" size="large" alignment="centre" entity_layout_id="at09" id="dta1" auto_size="vertical" />
+				</container>
+
+				<container class="titled_box" colour="faded black" alignment="top" entity_layout_id="at07" hidden="true" id="hed2">
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_offset="0" vertical_offset="0"/>
+					<widget class="label" size="large" alignment="centre" colour="black" entity_layout_id="at0:" id="dta2" auto_size="vertical" needs_height="true"/>
+				</container>
+
+
+				<container class="titled_box" colour="faded black" alignment="top" entity_layout_id="at08" hidden="true" id="hed3" >
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_offset="0" vertical_offset="0"/>
+					<widget class="label" entity_layout_id="at0;" size="large" alignment="centre" id="dta3" auto_size="vertical" needs_height="true"/>
+				</container>
+			</container>
+		</container>
+		<widget class="horizontal_divider" height="20" hidden="true" id="at03"/>
+
+		<!--reason-->
+		<container class="titled_box" hidden="true" id="hed4">
+			<translation id="title" translation_id="232957" type="use" value="Reason"/>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+			<widget class="text" entity_layout_id="at0&lt;" id="rtxt"  multiline="true" auto_size="vertical" >
+
+			</widget>
+		</container>
+
+		<!--blueprint-->
+		<container entity_layout_id="at0=" hidden="true" id="at0=" auto_size="vertical" needs_height="true">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="8" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<!--blueprint-->
+			<container class="inner_subtle_box" appearance="boxes/custom/blueprint/paper" height="280">
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+				<!-- main body text -->
+				<widget class="text" auto_size="vertical" height="20" size="large" font="capitals_bold" colour="faded black">
+					<translation id="text" translation_id="416358" type="use" value="New Stadium Plans[COMMENT: FR11233 - title for a blueprint for new stadium plans]"/>
+				</widget>
+
+				<container>
+					<layout class="arrange_horizontal_attachment" layout="264, -1" offset="0"/>
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+					<!--dummy container-->
+					<container>
+					</container>
+
+					<!--info on the right-->
+					<container class="object_property_labelled_panel_grid" id="grid" vertical_offset="0" vertical_gap="0" row_count="4" colour="black" can_update_with_no_objects="true">
+						<record id="label_widget_properties" colour="faded black"/>
+						<record id="value_widget_properties" colour="black" multiline="true" auto_size_maximum_height="38"/>
+						<list id="properties">
+							<record id="SctI">
+								<record id="label_widget_properties">
+									<translation id="text" translation_id="319589" type="use" value="City[COMMENT: team stadium city, short title]" />
+								</record>
+							</record>
+							<record id="Scos">
+								<record id="label_widget_properties">
+									<translation id="text" translation_id="333752" type="use" value="Cost[COMMENT: store dialog; text indicating how much a purchasable item costs]" />
+								</record>
+							</record>
+							<record id="Scov">
+								<record id="label_widget_properties">
+									<translation id="text" translation_id="284338" type="use" value="Roof[COMMENT: heading; team_information_panel; indicates if stadium is covered]"  />
+								</record>
+							</record>
+							<record id="SblS">
+								<record id="label_widget_properties">
+									<translation id="text" translation_id="420795" type="use" value="Build Start Date[COMMENT: stadium: date it it due to commence being built]" />
+								</record>
+							</record>
+							<record id="Scpy">
+								<record id="label_widget_properties">
+									<translation id="text" translation_id="252902" type="use" value="Capacity[COMMENT: team stadium capacity, short title]" />
+								</record>
+							</record>
+							<record id="SsfT">
+								<record id="label_widget_properties">
+									<translation id="text" translation_id="284339" type="use" value="Surface[COMMENT: heading; team_information_panel; pitch surface type]" />
+								</record>
+							</record>
+							<record id="Sush">
+								<record id="label_widget_properties">
+									<translation id="text" translation_id="284337" type="use" value="Under Soil Heating[COMMENT: heading; team_information_panel; under soil heating]" />
+								</record>
+							</record>
+							<record id="SblC">
+								<record id="label_widget_properties">
+									<translation id="text" translation_id="420796" type="use" value="Build Completion Date[COMMENT: stadium: date it it due to finish being built]" />
+								</record>
+							</record>
+						</list>
+					</container>
+				</container>
+			</container>
+		</container>
+	</container>
+</panel>

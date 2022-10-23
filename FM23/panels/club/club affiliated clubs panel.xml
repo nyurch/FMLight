@@ -1,0 +1,411 @@
+<panel>
+	<list id="draw_order">
+		<record entity_layout_id="at31" />
+		<record entity_layout_id="at30" />
+		<record entity_layout_id="at29" />
+		<record entity_layout_id="at00" />
+		<record entity_layout_id="at25" />
+		<record entity_layout_id="at26" />
+		<record entity_layout_id="at27" />
+		<record entity_layout_id="at28" />
+		<record entity_layout_id="at0:" />
+		<record entity_layout_id="at24" />
+		<record entity_layout_id="at23" />
+		<record entity_layout_id="at02" />
+		<record entity_layout_id="at01" />
+		<record entity_layout_id="at22" />
+		<record entity_layout_id="at21" />
+		<record entity_layout_id="at09" />
+		<record entity_layout_id="at05" />
+		<record entity_layout_id="at03" />
+		<record entity_layout_id="at04" />
+		<record entity_layout_id="at08" />
+		<record entity_layout_id="at06" />
+		<record entity_layout_id="at07" />
+		<record entity_layout_id="at12" />
+		<record entity_layout_id="at10" />
+		<record entity_layout_id="at11" />
+		<record entity_layout_id="at19" />
+		<record entity_layout_id="at15" />
+		<record entity_layout_id="at13" />
+		<record entity_layout_id="at14" />
+		<record entity_layout_id="at18" />
+		<record entity_layout_id="at16" />
+		<record entity_layout_id="at17" />
+		<record entity_layout_id="at20" />
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+	</widget>
+	<container entity_layout_id="at31" hidden="true" id="noaf">
+		<string id="header_widget" value="BShe" />
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<widget class="text" entity_layout_id="at30" id="BShe" alignment="centre_x,bottom" auto_size="vertical" needs_height="true">
+			<translation id="text" translation_id="301277" type="use" value="No affiliated clubs.[COMMENT: label shown when a non-human team doesn't have any affiliated clubs (e.g. feeder clubs or parent clubs)]" />
+			<string id="standard_spec" value="text" />
+			<string id="style" value="bold" />
+			<string id="size" value="large" />
+			<string id="colour" value="text" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0" />
+		</widget>
+	</container>
+	<container class="main_box" entity_layout_id="at29" id="reqb" height="72">
+		<string id="navigation_container" value="true" />
+		<translation id="text" translation_id="255092" type="use" value="Board Requests[COMMENT: team feeder club info - button to search for new one]" />
+		<record id="default_properties" auto_size="all" />
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<container entity_layout_id="at00" id="at00" height="30">
+			<layout class="arrange_horizontal_attachment" alignment="middle" offset="0" gap="4" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="stick_to_object_attachment" id="align_top" offset="1" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+
+			<widget class="icon_button" entity_layout_id="at25" id="neae" auto_size="all" needs_width="true" needs_height="true">
+				<string id="click_event" value="neac" />
+				<string id="icon" value="icons/16px/speech bubble" />
+				<translation id="text" translation_id="420571" type="use" value="Negotiate Existing Affiliation[COMMENT: FR 6794; interaction type, header text]" />
+			</widget>
+
+			<widget class="button" entity_layout_id="at26" id="lofe" auto_size="all" needs_width="true" needs_height="true">
+				<string id="click_event" value="lofc" />
+				<translation id="text" translation_id="377098" type="use" value="Look for Affiliate Club[COMMENT: team feeder club info - button to search for new one, use top 10 matches, this is formerly Feeder Club, legal request to change to something less divisive than Parent/Feeder]" />
+			</widget>
+
+			<widget class="button" entity_layout_id="at27" id="asfe" auto_size="all" needs_width="true" needs_height="true">
+				<string id="click_event" value="asfc" />
+				<translation id="text" translation_id="377099" type="use" value="Look for Senior Affiliate[COMMENT: affiliate club info - button to search for new one, use top 10 matches, this is formerly Parent Club, legal request to change to something less divisive than Parent/Feeder]" />
+			</widget>
+			<widget class="button" entity_layout_id="at28" id="canw" auto_size="all" needs_width="true" needs_height="true">
+				<string id="click_event" value="canc" />
+				<translation id="text" translation_id="255095" type="use" value="Cancel Link[COMMENT: team feeder club info - button to cancel a feeder team link]" />
+			</widget>
+		</container>
+	</container>
+	<container class="main_box" entity_layout_id="at24" hidden="true" id="affc">
+		<translation id="title" translation_id="316692" type="use" value="Affiliated Clubs[COMMENT: feederclub header-xml]" />
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+		<layout class="stick_to_object_attachment" id="align_bottom" offset="-2" get_side="top" set_side="bottom" target="at29" />
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<container entity_layout_id="at23" id="asda">
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<container class="inner_subtle_box" red_replacement="black" entity_layout_id="at02" id="at02" width="300">
+				<string id="navigation_container" value="true" />
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<container class="table" entity_layout_id="at01" id="tfed" save_session_state="true" select_event="slrw" layout="-1" mode="select_rows,fill_rows,dont_allow_empty_selection,stripe_rows">
+					<string id="navigation_focus_target" value="true" />
+					<string id="fixed_size_rows" value="true" />
+					<string id="auto_size_rows" value="true" />
+					<record id="shown_event">
+						<string id="event_id" value="REQF" />
+						<string id="event_target" value="self" />
+					</record>
+					<list id="column_table_properties">
+						<record id="a_button" alignment="centre_x,centre_y">
+							<string id="sort_disabled" value="true" />
+							<record id="column_widget_properties" auto_size="vertical" />
+						</record>
+					</list>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				</container>
+			</container>
+			<container class="club_overview_details_panel" entity_layout_id="at22" id="cluI" file="club/club overview details panel affiliate" width="650">
+				<string id="navigation_container" value="true" />
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" move_side="true" target="main" />
+			</container>
+			<container class="inner_subtle_box" entity_layout_id="at21" id="at21">
+				<string id="navigation_container" value="true" />
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" offset="2" get_side="right" set_side="left" target="at02" />
+				<layout class="stick_to_object_attachment" id="align_right" offset="-2" get_side="left" set_side="right" target="at22" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<container entity_layout_id="at09" id="at09" height="65">
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+					<widget class="spacer" id="main">
+						<boolean id="exclude_from_find" value="true" />
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+					</widget>
+					<widget class="spacer" id="fmin" embed_in_frame="true">
+						<boolean id="exclude_from_find" value="true" />
+						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+					</widget>
+					<container entity_layout_id="at05" id="at05">
+						<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+						<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+						<layout class="stick_to_object_attachment" id="align_left" offset="1" get_side="left" set_side="left" move_side="true" target="main" />
+						<layout class="stick_to_sizes_attachment" width="50.000000" />
+						<widget class="spacer" id="main">
+							<boolean id="exclude_from_find" value="true" />
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+						</widget>
+						<widget class="spacer" id="fmin" embed_in_frame="true">
+							<boolean id="exclude_from_find" value="true" />
+							<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+						</widget>
+						<widget class="label" entity_layout_id="at03" alignment="centre_x,top" auto_size="all" id="at03" needs_width="true" needs_height="true">
+							<string id="standard_spec" value="text" />
+							<string id="size" value="small" />
+							<string id="font" value="fonts/letterpressed" />
+							<translation id="text" translation_id="377286" type="use" value="Senior Affiliate[COMMENT: interaction manager; type of interaction, this is formerly Parent Club, legal request to change to something less divisive than Parent/Feeder]" />
+							<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+							<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="-4" />
+						</widget>
+						<widget class="club_button" entity_layout_id="at04" id="parent_competition" alignment="centre_x,bottom" auto_size="vertical" needs_height="true">
+							<string id="standard_spec" value="text" />
+							<string id="style" value="bold" />
+							<integer id="size" value="13" />
+							<string id="font" value="fonts/letterpressed" />
+							<string id="icon_enabled" value="false" />
+							<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at03" />
+							<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+							<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+						</widget>
+					</container>
+					<container entity_layout_id="at08" id="at08">
+						<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+						<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+						<layout class="stick_to_object_attachment" id="align_left" offset="1" get_side="right" set_side="left" target="at05" />
+						<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+						<widget class="spacer" id="main">
+							<boolean id="exclude_from_find" value="true" />
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+						</widget>
+						<widget class="spacer" id="fmin" embed_in_frame="true">
+							<boolean id="exclude_from_find" value="true" />
+							<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+						</widget>
+						<widget class="label" entity_layout_id="at06" alignment="centre_x,top" auto_size="all" id="at06" needs_width="true" needs_height="true">
+							<string id="standard_spec" value="text" />
+							<string id="size" value="small" />
+							<string id="font" value="fonts/letterpressed" />
+							<translation id="text" translation_id="376841" type="use" value="Affiliate Club[COMMENT: interaction manager; type of interaction, this is formerly Feeder Club, legal request to change to something less divisive than Parent/Feeder]" />
+							<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+							<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="-4" />
+						</widget>
+						<widget class="club_button" entity_layout_id="at07" id="feed" alignment="centre_x,bottom" auto_size="all" needs_width="true" needs_height="true">
+							<string id="standard_spec" value="text" />
+							<string id="style" value="bold" />
+							<integer id="size" value="13" />
+							<string id="font" value="fonts/letterpressed" />
+							<string id="icon_enabled" value="false" />
+							<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="bottom" set_side="top" move_side="true" target="at06" />
+							<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+						</widget>
+					</container>
+				</container>
+				<container entity_layout_id="at12" id="at12" height="80">
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at09" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+					<layout class="stick_to_sizes_attachment" width="100.000000" />
+					<widget class="spacer" id="main">
+						<boolean id="exclude_from_find" value="true" />
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+					</widget>
+					<widget class="spacer" id="fmin" embed_in_frame="true">
+						<boolean id="exclude_from_find" value="true" />
+						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+					</widget>
+					<widget class="label" entity_layout_id="at10" alignment="centre_x,top" auto_size="all" id="at10" needs_width="true" needs_height="true">
+						<string id="standard_spec" value="text" />
+						<string id="size" value="small" />
+						<string id="font" value="fonts/letterpressed" />
+						<translation id="text" translation_id="344137" type="use" value="Link Type[COMMENT: label for some text saying what kind of affiliate club link is being shown]" />
+						<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+						<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0" />
+					</widget>
+					<widget class="text" entity_layout_id="at11" id="type" alignment="centre_x,bottom" height="22">
+						<string id="standard_spec" value="text" />
+						<string id="style" value="bold" />
+						<integer id="size" value="13" />
+						<string id="font" value="fonts/letterpressed" />
+						<string id="multiline" value="true" />
+						<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="bottom" set_side="top" move_side="true" target="at10" />
+						<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+						<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+					</widget>
+				</container>
+				<container entity_layout_id="at19" id="at19" height="65">
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at12" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+					<widget class="spacer" id="main">
+						<boolean id="exclude_from_find" value="true" />
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+					</widget>
+					<widget class="spacer" id="fmin" embed_in_frame="true">
+						<boolean id="exclude_from_find" value="true" />
+						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+					</widget>
+					<container entity_layout_id="at15" id="at15">
+						<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+						<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+						<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+						<layout class="stick_to_sizes_attachment" width="50.000000" />
+						<widget class="spacer" id="main">
+							<boolean id="exclude_from_find" value="true" />
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+						</widget>
+						<widget class="spacer" id="fmin" embed_in_frame="true">
+							<boolean id="exclude_from_find" value="true" />
+							<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+						</widget>
+						<widget class="label" entity_layout_id="at13" alignment="centre_x,top" auto_size="all" id="at13" needs_width="true" needs_height="true">
+							<string id="standard_spec" value="text" />
+							<string id="size" value="small" />
+							<translation id="text" value="Start Date" translation_id="293013" type="use" />
+							<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+							<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="-4" />
+						</widget>
+						<widget class="date_cell" entity_layout_id="at14" id="star" alignment="centre_x,bottom" auto_size="all" needs_width="true" needs_height="true">
+							<string id="navigation_focus_target" value="false" />
+							<string id="standard_spec" value="text" />
+							<string id="style" value="bold" />
+							<integer id="size" value="12" />
+							<string id="multiline" value="true" />
+							<layout class="stick_to_object_attachment" id="align_top" offset="3" get_side="bottom" set_side="top" move_side="true" target="at13" />
+							<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+						</widget>
+					</container>
+					<container entity_layout_id="at18" id="at18">
+						<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+						<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+						<layout class="stick_to_object_attachment" id="align_left" offset="1" get_side="right" set_side="left" target="at15" />
+						<layout class="stick_to_object_attachment" id="align_right" offset="-4" get_side="right" set_side="right" target="main" />
+						<widget class="spacer" id="main">
+							<boolean id="exclude_from_find" value="true" />
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+						</widget>
+						<widget class="spacer" id="fmin" embed_in_frame="true">
+							<boolean id="exclude_from_find" value="true" />
+							<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+						</widget>
+						<widget class="label" entity_layout_id="at16" alignment="centre_x,top" auto_size="all" id="at16" needs_width="true" needs_height="true">
+							<string id="standard_spec" value="text" />
+							<string id="size" value="small" />
+							<translation id="text" translation_id="343228" type="use" value="Annual Fee[COMMENT: label for some text showing how much is paid per year to have this club affiliation]" />
+							<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+							<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="-4" />
+						</widget>
+						<widget class="cash_cell" entity_layout_id="at17" id="annf" alignment="centre_x,bottom" auto_size="all" needs_width="true" needs_height="true">
+							<string id="standard_spec" value="text" />
+							<string id="style" value="bold" />
+							<integer id="size" value="12" />
+							<layout class="stick_to_object_attachment" id="align_top" offset="2" get_side="bottom" set_side="top" move_side="true" target="at16" />
+							<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+						</widget>
+					</container>
+				</container>
+				<container class="table" entity_layout_id="at20" id="tafi" layout="-1">
+					<string id="fixed_size_rows" value="false" />
+					<boolean id="auto_size_rows" value="true" />
+					<boolean id="all_content_same_height" value="false" />
+					<record id="default_properties" alignment="centre_y,left" />
+					<list id="column_table_properties">
+						<record>
+							<integer id="index" value="0" />
+							<string id="sort_disabled" value="true" />
+							<integer id="left" value="4" />
+							<integer id="top" value="3" />
+							<integer id="bottom" value="3" />
+						</record>
+					</list>
+					<list id="column_widget_properties">
+						<record>
+							<integer id="index" value="0" />
+							<string id="standard_spec" value="text" />
+							<string id="font" value="fonts/inbox_body" />
+							<integer id="size" value="10" />
+						</record>
+					</list>
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" target="at19" />
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				</container>
+			
+
+			<container class="club_overview_details_panel" entity_layout_id="at22" id="cluI0" file="club/club overview details panel affiliate">
+				<string id="navigation_container" value="true" />
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" move_side="true" target="main" />
+			</container>
+			
+
+			</container>
+		</container>
+	</container>
+</panel>

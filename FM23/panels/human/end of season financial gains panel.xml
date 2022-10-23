@@ -1,0 +1,167 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange"  vertical_alignment="fill" />
+
+	<container class="main_box" background_colour="white">
+		<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="10" horizontal_inset="0" />
+
+		<container height="30">
+			<attachment_group class="horizontal_arrange_autosize" horizontal_gap="10" />
+
+			<widget class="object_portrait_picture" id="clLO" height="30" width="30" scale_picture="true" image_alignment="left" offset="5">
+				<record id="object_property" get_property="Ttea" set_property="objt" />
+			</widget>
+			<widget class="text" height="30" auto_size="horizontal" alignment="left,centre_y">
+				<translation id="text" translation_id="509708" type="use" value="The Finances[COMMENT: AREA: End of Season Review; SUB-AREA: Financial; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: title for end of season financial summary]" />
+				<string id="font" value="title" />
+				<string id="size" value="xxlarge" />
+				<string id="colour" value="text" />
+			</widget>
+		</container>
+
+		<container height="1">
+		<layout class="stick_to_sides_attachment" alignment="vertical, left" inset="0" apply_to_children="true" />
+		<widget class="horizontal_solid_intro_divider" colour="fg" id="ttlD" width="50" />
+		</container>
+
+		<widget class="text" auto_size="vertical" id="FGSu">
+			<string id="multiline" value="true" />
+			<string id="colour" value="fg" />
+			<string id="size" value="large" />
+		</widget>
+
+		<widget class="text" entity_layout_id="at04" id="InDS" auto_size="vertical" needs_height="true" name="It was a busy summer etc.">
+			<string id="multiline" value="true" />
+			<string id="colour" value="fg" />
+			<string id="size" value="large" />
+		</widget>
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_gap="12" horizontal_alignment="fill" />
+
+
+			<container class="main_subtle_box" width="310" id="con1">
+				<attachment_group class="vertical_arrange" vertical_gap="12" />
+
+				<widget class="text" id="clrT" auto_size="vertical">
+					<translation id="text" translation_id="509709" type="use" value="Club Reputation[COMMENT: AREA: End of Season Review; SUB-AREA: Financial; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title for end of season club reputation changes summary]" />
+					<string id="font" value="title" />
+					<string id="size" value="xlarge" />
+					<string id="colour" value="fg" />
+				</widget>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,-1" />
+
+					<container class="vertical_label_value_pair" value_widget="crep" label_widget="creL" disabled="true">
+						<widget class="label" id="creL" colour="secondary" alignment="left" auto_size="vertical">
+						<translation id="value" translation_id="538965" type="use" value="Previous[COMMENT: AREA: club reputation; SUB-AREA: previous club reputation level; FR-BN: 47074; TONE: Formal; CHARLIMIT: one word; REF-ID: n/a; NOTE: same as ID 255267 but some languages wanted a specific version for use here]" />
+						</widget>
+						<widget class="club_reputation_stars_label" id="creS" alignment="left" auto_size="vertical" image_alignment="left" navigation_focus_target="false">
+							<record id="object_property">
+						<integer id="get_property" value="Cpst" />
+							</record>
+						</widget>
+						<widget class="reputation_label" id="crep" mode="1" size="small" alignment="left" auto_size="vertical">
+							<record id="object_property">
+								<integer id="get_property" value="Cpsc" />
+							</record>
+						</widget>
+					</container>
+
+					<container class="vertical_label_value_pair" value_widget="crPR" label_widget="creP">
+						<widget class="label" id="creP" colour="fg" alignment="left" auto_size="vertical">
+						<translation id="value" translation_id="538966" type="use" value="Current[COMMENT: AREA: club reputation; SUB-AREA: current club reputation level; FR-BN: 47074; TONE: Formal; CHARLIMIT: one word; REF-ID: n/a; NOTE: same as ID 416328 but some languages wanted a specific version for use here]" />
+						</widget>
+						<widget class="club_reputation_stars_label" id="crSP" alignment="left" auto_size="vertical" image_alignment="left" navigation_focus_target="false">
+							<record id="object_property">
+								<integer id="get_property" value="Csta" />
+							</record>
+						</widget>
+						<widget class="reputation_label" id="crPR" mode="1" size="small" alignment="left" auto_size="vertical">
+							<record id="object_property">
+								<integer id="get_property" value="Crsc" />
+							</record>
+						</widget>
+					</container>
+				</container>
+
+				<widget class="text" id="repT" auto_size="vertical" multiline="true" />
+
+				<widget class="horizontal_divider" height="2" />
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="12" />
+
+
+					<widget class="text" id="spdT" auto_size="vertical">
+						<translation id="text" translation_id="509710" type="use" value="Sponsorship Deals[COMMENT: AREA: End of Season Review; SUB-AREA: Financial; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title for end of season sponsorship summary]" />
+						<string id="font" value="title" />
+						<string id="size" value="xlarge" />
+						<string id="colour" value="fg" />
+					</widget>
+
+					<container id="spDE">
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="12" />
+					</container>
+				</container>
+			</container>
+
+			<container class="main_subtle_box" width="310" id="con2">
+				<attachment_group class="vertical_arrange" horizontal_gap="10" />
+				<widget class="text" id="anrT" height="25">
+					<translation id="text" translation_id="509711" type="use" value="Annual Revenue[COMMENT: AREA: End of Season Review; SUB-AREA: Financial; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title]" />
+					<string id="font" value="title" />
+					<string id="size" value="xlarge" />
+					<string id="colour" value="fg" />
+				</widget>
+
+				<container id="anRV">
+					<attachment_group class="vertical_arrange_autosize" />
+				</container>
+
+			</container>
+
+			<container class="main_subtle_box" width="310" id="con3">
+				<attachment_group class="vertical_arrange" horizontal_gap="10" vertical_gap="0" />
+				<widget class="text" id="mrcT" height="29">
+					<translation id="text" translation_id="509712" type="use" value="Merchandise[COMMENT: AREA: End of Season Review; SUB-AREA: Financial; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title]" />
+					<string id="font" value="title" />
+					<string id="size" value="xlarge" />
+					<string id="colour" value="fg" />
+				</widget>
+
+				<container id="MERH">
+					<attachment_group class="vertical_arrange_autosize" />
+				</container>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+
+				<container>
+					<global id="hidden" name="ui.is_fmt_controller_skin" />
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="2" />
+					<widget class="text" id="shsT" auto_size="vertical">
+						<translation id="text" translation_id="509713" type="use" value="Shirt Sales[COMMENT: AREA: End of Season Review; SUB-AREA: Financial; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title, will be followed by a cash value]" />
+						<string id="font" value="title" />
+						<string id="size" value="xlarge" />
+						<string id="colour" value="fg" />
+					</widget>
+				</container>
+
+				<container id="shSA">
+					<attachment_group class="vertical_arrange_autosize" />
+				</container>
+				<container id="tpKI" height="95">
+					<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="middle" />
+				</container>
+				<container id="kiCO" height="200">
+					<layout class="arrange_horizontal_attachment" alignment="middle" wrap="true" gap="4" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+				</container>
+				</container>
+
+			</container>
+
+		</container>
+	</container>
+</panel>

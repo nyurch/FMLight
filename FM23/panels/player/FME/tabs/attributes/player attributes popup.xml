@@ -1,0 +1,243 @@
+<panel>
+	<layout class="vertical_arrange" vertical_alignment="top,extend"/>
+
+	
+
+	<flags id="required_attribute_row_appearance" value="tables/custom/attributes/required/row"/>
+	<flags id="preferred_attribute_row_appearance" value="tables/custom/attributes/preferred/row"/>
+	<flags id="not_important_attribute_row_appearance" value="tables/standard/row/normal/row"/>
+
+	<!-- Table properties to use for all attribute tables -->
+	<record id="table_properties" mode="fill_rows, stripe_rows, printable" layout="-1, 15, 37, 37" row_height="21" row_spacing="1" default_sort_column="name">
+
+		<list id="column_table_properties">
+
+			<!-- Attribute name -->
+			<record index="0" id="name" left="8" top="0">
+				<record id="widget_info" class="text" alignment="left,centre_y" multiline="false"/>
+			</record>
+
+			<!-- Attribute training improvement offset -->
+			<record index="1" id="offs" sort_disabled="true">
+				<record id="widget_info" class="training_improvement" />
+			</record>
+
+			<!-- Attribute value -->
+			<record index="2" id="val " sort_disabled="true" column_alignment="centre" right="0">
+				<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" style="semi_bold"/>
+				<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" size="11" font="label" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+			</record>
+
+			<!-- Attribute edit widget -->
+			<record index="3" id="edit" sort_disabled="true">
+				<record id="widget_info" class="editable_client_object_property_panel" alignment="centre" />
+			</record>
+
+		</list>
+
+	</record>
+
+	<container>
+		<layout class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="1"/>
+
+		<!-- Technical Table -->
+		<container class="vertical_arrange_container" alignment="top,extend" gap="0">
+
+			<record id="object_property" get_property="Pigo" set_property="hidn"/>
+
+			<container height="18">
+				<layout class="vertical_arrange" horizontal_inset="8"/>
+
+				<widget class="text" font="title" auto_size="vertical">
+					<translation id="text" translation_id="229413" type="use" value="Technical"/>
+				</widget>
+
+			</container>
+
+			<widget class="table" id="pltt" layout="-1"/>
+
+		</container>
+
+		<!-- Goalkeeping Table -->
+		<container class="vertical_arrange_container" alignment="top,extend" gap="0">
+
+			<record id="object_property" get_property="Pigo" set_property="Shwn"/>
+
+			<container height="18">
+				<layout class="vertical_arrange" horizontal_inset="8"/>
+
+				<widget class="text" font="title" auto_size="vertical">
+					<translation id="text" translation_id="230024" type="use" value="Goalkeeping" />
+				</widget>
+
+			</container>
+
+			<widget class="table" id="plgk" layout="-1"/>
+
+		</container>
+
+		<!-- Mental Table -->
+		<container class="vertical_arrange_container" alignment="top,extend" gap="0">
+
+			<container height="18">
+				<layout class="vertical_arrange" horizontal_inset="8"/>
+
+				<widget class="text" font="title" auto_size="vertical">
+					<translation id="text" translation_id="230106" type="use" value="Mental"/>
+				</widget>
+
+			</container>
+
+			<widget class="table" id="plmt" layout="-1"/>
+
+		</container>
+
+		<!-- Physical Table + Extras -->
+		<container class="vertical_arrange_container" alignment="top,extend" gap="0">
+
+			<container class="vertical_arrange_container" alignment="top,extend" gap="0" auto_size="vertical">
+
+				<container height="18">
+					<layout class="vertical_arrange" horizontal_inset="8"/>
+
+					<widget class="text" font="title" auto_size="vertical">
+						<translation id="text" translation_id="230003" type="use" value="Physical"/>
+					</widget>
+
+				</container>
+
+				<!-- Physical Table -->
+				<widget class="table" id="plpt" layout="-1" auto_size="vertical"/>
+
+			</container>
+
+			<container>
+				<layout class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="1"/>
+
+				<!-- Additional attributes table -->
+				<container class="client_object_viewer_xml_panel" id="attT">
+					<layout class="vertical_arrange_autosize"/>
+
+					<widget class="table" layout="-1, 90" mode="fill_rows, printable" row_height="22" row_spacing="0" auto_size="vertical">
+
+						<record id="object_property" get_property="objt" set_property="objt" />
+
+						<list id="column_table_properties">
+							<record index="0" left="8" sort_disabled="true"/>
+							<record index="1" right="8" sort_disabled="true"/>
+						</list>
+
+						<list id="row_properties">
+							<record indx="0" appearance="tables/standard/row/alternate/row" />
+						</list>
+
+						<!-- Height-->
+						<widget class="label" row="0" column="0">
+							<record id="object_property" get_property="Phei" name="true"/>
+						</widget>
+
+						<widget class="editable_client_object_property_panel" id="Phei" row="0" column="1" style="semi_bold" appearance="" font="text">
+							<record id="object_property" get_property="Phei"/>
+							<record id="widget_properties" alignment="right,centre_y" />
+						</widget>
+
+						<!-- Weight-->
+						<widget class="label" row="1" column="0">
+							<record id="object_property" get_property="Pwei" name="true"/>
+						</widget>
+
+						<widget class="editable_client_object_property_panel" id="Pwei" row="1" column="1" style="semi_bold" appearance="" font="text">
+							<record id="object_property" get_property="Pwei"/>
+							<record id="widget_properties" alignment="right,centre_y" />
+						</widget>
+
+					</widget>
+
+				</container>
+
+				<!-- Foot Labels -->
+				<container>
+					<layout class="stick_to_sides_attachment" apply_to_children="true" inset="0,0,0,0"/>
+
+					<container>
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+						<widget class="table" mode="fill_rows" layout="-1,43" row_height="43" row_spacing="1">
+
+							<record id="object_property" get_property="objt" set_property="objt"/>
+
+							<list id="column_table_properties">
+								<record indx="0" left="8">
+									<record id="widget_info" alignment="centre"/>
+								</record>
+							</list>
+
+							<flags id="row_appearance" value="tables/standard/row/alternate/row"/>
+
+							<!-- Left Foot -->
+							<container col="0" row="0">
+								<layout class="vertical_arrange" vertical_alignment="middle" vertical_gap="0"/>
+
+								<widget class="label" font="title" colour="accent" auto_size="vertical">
+									<translation id="text" translation_id="230000" type="use" value="Left Foot"/>
+								</widget>
+
+								<widget class="footedness_label" format="[%string#1]" auto_size="vertical">
+									<record id="object_property" get_property="PlfG"/>
+								</widget>
+
+							</container>
+
+							<widget class="value_based_picture" file="icons/custom/footed/left" col="1" row="0">
+								<list id="value_list">
+									<record min_value="1" max_value="4" red_replacement="fg range1"/>
+									<record min_value="5" max_value="8" red_replacement="fg range4"/>
+									<record min_value="9" max_value="11" red_replacement="fg range8"/>
+									<record min_value="12" max_value="14" red_replacement="fg range12"/>
+									<record min_value="15" max_value="17" red_replacement="fg range16"/>
+									<record min_value="18" max_value="20" red_replacement="fg range20"/>
+								</list>
+								<record id="object_property" get_property="PlfG"/>
+							</widget>
+
+							<!-- Right Foot -->
+
+							<container col="0" row="1">
+								<layout class="vertical_arrange" vertical_alignment="middle" vertical_gap="0"/>
+
+
+								<widget class="label" font="title" colour="accent" auto_size="vertical">
+									<translation id="text" translation_id="230001" type="use" value="Right Foot" />
+								</widget>
+
+								<widget class="footedness_label" format="[%string#1]" auto_size="vertical">
+									<record id="object_property" get_property="PrfG"/>
+								</widget>
+
+							</container>
+
+							<widget class="value_based_picture" file="icons/custom/footed/right" col="1" row="1">
+								<list id="value_list">
+									<record min_value="1" max_value="4" red_replacement="fg range1"/>
+									<record min_value="5" max_value="8" red_replacement="fg range4"/>
+									<record min_value="9" max_value="11" red_replacement="fg range8"/>
+									<record min_value="12" max_value="14" red_replacement="fg range12"/>
+									<record min_value="15" max_value="17" red_replacement="fg range16"/>
+									<record min_value="18" max_value="20" red_replacement="fg range20"/>
+								</list>
+								<record id="object_property" get_property="PrfG"/>
+							</widget>
+
+						</widget>
+
+					</container>
+
+				</container>
+
+			</container>
+
+		</container>
+
+	</container>
+
+</panel>

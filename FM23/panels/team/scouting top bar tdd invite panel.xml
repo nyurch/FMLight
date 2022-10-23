@@ -1,0 +1,57 @@
+﻿<panel height="85" navigation_container="false">
+    <boolean id="should_force_refresh" value="true"/>
+    <colour id="budget_info_positive_colour" name="positive"/>
+    <colour id="budget_info_zero_colour" name="text"/>
+    <colour id="budget_info_negative_colour" name="negative"/>
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+    <list id="visible_items">
+        <flags value="trbc"/>
+    </list>
+
+    <container id="msbx" class="main_subtle_box" navigation_container="false">
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+        <!--Transfer budget-->
+        <container class="inner_box_no_margin" id="trbc" appearance="boxes/inner/standard/no margin/paper" minimum_width="290" navigation_container="false">
+            <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+            <container wants_mouse_events="false" navigation_container="false">
+                <attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0"/>
+
+                <widget class="widget_popup_button" id="bact" widget_type="client_object_viewer_xml_panel" file="modal popup panel auto sized" popup_alignment="right, bottom" offset_y="2" appearance="buttons/custom/over state only/button" navigation_focus_target="true">
+                    <record id="widget_properties" file="club/popup budget adjustment panel" width="500"/>
+                </widget>
+            </container>
+
+            <container wants_mouse_events="false">
+                <attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" horizontal_offset="8" horizontal_gap="8" vertical_alignment="vertical" vertical_inset="0"/>
+
+                <widget class="picture" file="icons/custom/icon box/budget" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" width="26"/>
+
+                <container wants_mouse_events="false">
+                    <attachment_group class="horizontal_arrange" horizontal_layout="-1, -1" horizontal_offset="0" horizontal_gap="8" vertical_alignment="vertical" vertical_inset="0"/>
+
+                    <container wants_mouse_events="false">
+                        <attachment_group class="vertical_arrange_autosize" vertical_offset="12"/>
+
+                        <widget class="text" auto_size="vertical" colour="fg" font="label" alignment="left,centre_y" wants_mouse_events="false" multiline="false">
+                            <translation id="text" translation_id="242603" type="use" value="Transfer Budget"/>
+                        </widget>
+                        <widget class="text" id="tbva" auto_size="vertical" font="value" alignment="left, centre_y" wants_mouse_events="false" colour="fg"/>
+                        <widget class="text" id="nxbw" auto_size="vertical" size="small" alignment="left, centre_y" wants_mouse_events="false" colour="faded text"/>
+                    </container>
+
+                    <container wants_mouse_events="false">
+                        <attachment_group class="vertical_arrange_autosize" vertical_offset="12"/>
+
+                        <widget class="text" auto_size="vertical" colour="fg" font="label" alignment="left, centre_y" wants_mouse_events="false" multiline="false">
+                            <translation id="text" translation_id="242605" type="use" value="Wage Budget"/>
+                        </widget>
+                        <widget class="text" id="wbva" auto_size="vertical" font="value" alignment="left, centre_y" wants_mouse_events="false" colour="fg"/>
+                    </container>
+                </container>
+            </container>
+        </container>
+    </container>
+</panel>

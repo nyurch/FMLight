@@ -1,0 +1,869 @@
+<panel>
+<layout class="stick_to_sides_attachment" alignment="all" inset="6" apply_to_children="true"/>
+<container>
+	<layout class="vertical_arrange" vertical_layout="190,-1,350,-1,370" />
+
+	<container class="horizontal_adaptive_container" offset="0" inset="0" gap="0" >
+		<container class="plain_box" default_width="900" priority="1" >
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+			<!--Top Part-->
+			<container class="non_player_profile_panel" file="none">
+				<layout class="horizontal_arrange" horizontal_layout="280,-1"/>
+				<boolean id="should_force_refresh" value="true"/>
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+
+				<!-- CONTAINER HOLDING PLAYER PICTURE  + KIT ICON -->
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" offset="0" gap="0" />
+
+					<!-- Player Picture -->
+					<widget class="picture" id="ppic" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre,bottom" />
+
+					<widget class="icon_button" white_icon_colour="white" show_button_appearance="false" white_icon_enabled="true" white_icon="icons/16px/edit" white_icon_alignment="right,top" click_event="eMan">
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="PiCh" />
+									<integer id="set_property" value="Shwn" />
+								</record>
+							</list>
+						</record>
+						<translation id="hint" translation_id="443654" type="use" value="Edit Manager Appearance[COMMENT: manager edit appearance panel; editing manager's look]" />
+					</widget>
+				</container>
+
+				<container >
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+					<!-- LAYOUT / USE A,B,C,D, ETC NAMING -->
+					<layout class="arrange_horizontal_attachment" layout="200,3,200,3,200,3,-1" offset="0" gap="0" />
+
+					<container >
+						<layout class="arrange_vertical_attachment" alignment="top,extend" offset="40" gap="20" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="15" apply_to_children="true" />
+						<record id="object_property" get_property="objt" set_property="objt" />
+
+						<!-- COUNTRY NATION BADGES-->
+						<container  height="80">
+							<layout class="arrange_horizontal_attachment" alignment="fill" offset="0" gap="5"/>
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+							<widget class="object_portrait_picture" id="npiB" image_alignment="right" scale_picture="true" wants_mouse_events="true">
+								<record id="object_property" dont_set_hint="true" get_property="PNat" set_property="objt" />
+							</widget>
+
+							<widget class="object_portrait_picture" id="pclB" image_alignment="centre" scale_picture="true" wants_mouse_events="true">
+								<record id="object_property" dont_set_hint="true" get_property="Pclb" set_property="objt" />
+							</widget>
+						</container>
+
+						<!--Player extra details (e.g. onloan at...)-->
+						<widget class="label" id="coaq" auto_size="all" alignment="centre" font="title" size="big" colour="text" />
+
+					</container>
+
+					<!-- B // SPACER -->
+					<widget class="vertical_divider" priority="4"/>
+
+					<!-- C // PERSONAL -->
+					<!-- 1ST SECTION-->
+					<container >
+						<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="-1" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="10" apply_to_children="true" />
+
+						<!-- AGE + DOB -->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="-2" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<!-- AGE LABEL-->
+							<widget class="label" auto_size="vertical" font="title" colour="accent">
+								<translation id="text" type="use"  translation_id="227770" value="Age" />
+							</widget>
+
+							<!-- CONTAINER USED TO SET AGE + DOB HORIZONTALLY -->
+							<container>
+								<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0" />
+								<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="1" />
+								<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+								<!-- AGE -->
+								<widget class="editable_client_object_property_panel" id="age" size="10" height="30" auto_size="horizontal" colour="text">
+									<record id="widget_info" class="formatted_label" alignment="left,centre_y" height="30" auto_size="horizontal" size="large" >
+										<translation id="format" translation_id="242551" type="use" value="[%number#1] years old" />
+									</record>
+									<record id="widget_edit_info" width="0" height="0"/>
+									<record id="object_property" get_property="Page" />
+								</widget>
+
+								<!-- DoB -->
+								<widget class="editable_client_object_property_panel" id="dobl" auto_size="vertical" colour="text" size="medium">
+									<record id="widget_info" class="game_formatted_label" alignment="left,centre_y" auto_size="vertical" auto_size_minimum_height="30" format=" ([%date#1-short])" colour="faded text"/>
+									<record id="widget_properties" height="30"/>
+									<record id="object_property" get_property="Pdob" />
+								</widget>
+								<!-- END OF AGE + DOB -->
+							</container>
+						</container>
+
+						<!-- INTERNATIONAL RECORD -->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<widget class="label" auto_size="vertical" font="title" colour="accent">
+								<translation id="text" translation_id="227820" type="use" value="International" />
+							</widget>
+							<widget class="international_appearances_label" id="inta"  auto_size="vertical" colour="text">
+								<integer id="int_apps_label_format" value="10" />
+								<record id="object_property" dont_set_hint="true" get_property="Pist" />
+							</widget>
+						</container>
+
+
+						<!-- PERSONALITY -->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<widget class="label" id="PPs:" auto_size="vertical" font="title" colour="accent">
+								<record id="object_property" get_property="PPst" name="true" />
+							</widget>
+							<widget class="personality_label" id="PPst" auto_size="vertical" colour="text">
+								<record id="object_property" get_property="PPst" />
+							</widget>
+						</container>
+
+						<!-- SQUAD STATUS -->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" gap="0" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<widget class="label" auto_size="vertical" font="title" colour="accent">
+								<translation id="text" translation_id="227963" type="use" value="Reputation" />
+							</widget>
+							<widget class="global_reputation_stars_label" alignment="left" id="pReP" auto_size="vertical" size="small" colour="text">
+								<record id="object_property" get_property="Prsa" dont_set_hint="true" />
+							</widget>
+						</container>
+
+					</container>
+
+					<!-- D // SPACER -->
+					<widget class="vertical_divider" priority="4"/>
+
+					<!-- E //TRANSFER - CONTRACT -->
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="2" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="10" apply_to_children="true" />
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" gap="-5" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<widget class="label" auto_size="vertical" font="title"  colour="accent">
+								<translation id="text" translation_id="227964"  type="use" value="Job" />
+							</widget>
+
+							<widget class="job_label" id="Pcww" auto_size="vertical" colour="text">
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="Pcjo" />
+											<integer id="set_property" value="valu" />
+										</record>
+									</list>
+								</record>
+							</widget>
+						</container>
+
+						<!-- WAGE -->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" gap="-5" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<widget class="label" id="wglb" auto_size="vertical" font="title"  colour="accent">
+								<translation id="text"  type="use"   translation_id="242353" value="Wages" />
+							</widget>
+							<widget class="wage_label" id="wkwg" alignment="left" format="2" auto_size="vertical" colour="text">
+								<record id="object_property" get_property="Pcww" />
+							</widget>
+						</container>
+
+						<!-- STARTED -->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" gap="-5" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<widget class="label" auto_size="vertical" font="title"  colour="accent">
+								<translation id="text" translation_id="247433"  type="use" value="Started" />
+							</widget>
+							<widget class="date_cell" id="star" alignment="left"  auto_size="vertical" colour="text">
+								<record id="object_property" get_property="Pcsd" />
+							</widget>
+						</container>
+
+						<!-- EXPIRES -->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" gap="-5" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<widget class="label"  auto_size="vertical" font="title"  colour="accent">
+								<translation id="text" translation_id="227784"  type="use" value="Expiry Date" />
+							</widget>
+							<widget class="date_cell" id="expd" alignment="left"  auto_size="vertical" colour="text">
+								<record id="object_property" get_property="Pcex" />
+							</widget>
+						</container>
+					</container>
+
+					<!-- D // SPACER -->
+					<widget class="vertical_divider" priority="4"/>
+
+					<!-- PLAYER SCOUT REPORT -->
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="2" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="10" apply_to_children="true" />
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" gap="-5" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<widget class="label"  auto_size="vertical" font="title"  colour="text">
+								<record id="object_property">
+									<integer id="get_property" value="Tgpl" />
+									<boolean id="name" value="true" />
+								</record>
+							</widget>
+							<widget class="dashed_number_label" id="Vogp" alignment="left" spec="text" auto_size="vertical" colour="black">
+								<integer id="get_property" value="Tgpl" />
+							</widget>
+						</container>
+
+
+					</container>
+				</container>
+			</container>
+
+		</container>
+
+		<container class="plain_box" default_width="-1">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+			<widget class="player_history_achievements_panel" id="pac1" file="non_player/non player history">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="objt" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</list>
+				</record>
+			</widget>
+		</container>
+
+		<container class="plain_box" default_width="-1">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+			<container class="icon_box" icon="icons/custom/icon box/achivements">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+				<container height="15">
+					<layout class="stick_to_sides_attachment" alignment="left,vertical" inset="0" apply_to_children="true" />
+
+					<string id="skin_style" value="title link" />
+
+					<!-- Linked header -->
+					<widget class="link_button" section="Pmhr" auto_size="horizontal">
+						<translation id="text" translation_id="319476" type="use" value="Career Stats[COMMENT: manager overview; section heading]" />
+					</widget>
+				</container>
+
+				<widget class="table" mode="fill_rows, printable" id="ovst" layout="-3, 32, -3, 32" auto_size="none">
+					<boolean id="auto_size_rows" value="true" />
+					<boolean id="fixed_size_rows" value="false" />
+					<boolean id="save_session_state" value="true" />
+					<boolean id="sdst" value="true" />
+
+					<!-- disable sorting on all columns -->
+					<list id="column_table_properties">
+						<record indx="0">
+							<boolean id="sort_disabled" value="true" />
+						</record>
+						<record indx="1">
+							<boolean id="sort_disabled" value="true" />
+							<flags id="alignment" value="centre_y" />
+						</record>
+						<record indx="2">
+							<boolean id="sort_disabled" value="true" />
+						</record>
+						<record indx="3">
+							<boolean id="sort_disabled" value="true" />
+							<flags id="alignment" value="centre_y" />
+						</record>
+					</list>
+
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+
+					<!--Game Played - Entire Career -->
+					<widget class="label" id="Logp" row="0" col="0">
+						<record id="object_property">
+							<integer id="get_property" value="Tgpl" />
+							<boolean id="name" value="true" />
+						</record>
+					</widget>
+					<widget class="dashed_number_label" id="Vogp" row="0" col="1" auto_size="all" spec="text" size="normal">
+						<record id="object_property">
+							<integer id="get_property" value="Tgpl" />
+						</record>
+					</widget>
+
+					<!--Games Won - Entire Career -->
+					<widget class="label" id="Logw" row="1" col="0">
+						<record id="object_property">
+							<integer id="get_property" value="Tgwn" />
+							<boolean id="name" value="true" />
+						</record>
+					</widget>
+					<widget class="dashed_number_label" id="Vogw" row="1" col="1" auto_size="all" spec="text" size="normal">
+						<record id="object_property">
+							<integer id="get_property" value="Tgwn" />
+						</record>
+					</widget>
+
+					<!--Games Drawn - Entire Career -->
+					<widget class="label" id="Logd" row="2" col="0">
+						<record id="object_property">
+							<integer id="get_property" value="Tgdw" />
+							<boolean id="name" value="true" />
+						</record>
+					</widget>
+					<widget class="dashed_number_label" id="Vogd" row="2" col="1" auto_size="all" spec="text" size="normal">
+						<record id="object_property">
+							<integer id="get_property" value="Tgdw" />
+						</record>
+					</widget>
+
+					<!--Games Lost - Entire Career -->
+					<widget class="label" id="Logl" row="3" col="0">
+						<record id="object_property">
+							<integer id="get_property" value="Tglt" />
+							<boolean id="name" value="true" />
+						</record>
+					</widget>
+					<widget class="dashed_number_label" id="Vogl" row="3" col="1" auto_size="all" spec="text" size="normal">
+						<record id="object_property">
+							<integer id="get_property" value="Tglt" />
+						</record>
+					</widget>
+
+					<!--Goals Scored - Nation -->
+					<widget class="label" id="Logf" row="0" col="2">
+						<record id="object_property">
+							<integer id="get_property" value="Tgfr" />
+							<boolean id="name" value="true" />
+						</record>
+					</widget>
+					<widget class="dashed_number_label" id="Vogf" row="0" col="3" auto_size="all" spec="text" size="normal">
+						<record id="object_property">
+							<integer id="get_property" value="Tgfr" />
+						</record>
+					</widget>
+
+					<!--Goals Conceded - Entire Career -->
+					<widget class="label" id="Logc" row="1" col="2">
+						<record id="object_property">
+							<integer id="get_property" value="Tgaa" />
+							<boolean id="name" value="true" />
+						</record>
+					</widget>
+					<widget class="dashed_number_label" id="Vogc" row="1" col="3" auto_size="all" spec="text" size="normal">
+						<record id="object_property">
+							<integer id="get_property" value="Tgaa" />
+						</record>
+					</widget>
+
+					<!--Goals Difference - Entire Career -->
+					<widget class="label" id="Lodi" row="2" col="2">
+						<record id="object_property">
+							<integer id="get_property" value="Tgdf" />
+							<boolean id="name" value="true" />
+						</record>
+					</widget>
+					<widget class="dashed_number_label" id="Vodi" row="2" col="3" auto_size="all" spec="text" size="normal">
+						<record id="object_property">
+							<integer id="get_property" value="Tgdf" />
+						</record>
+					</widget>
+
+					<!-- Win Ratio - Entire Career -->
+					<widget class="label" id="Lowr" row="3" col="2">
+						<record id="object_property">
+							<integer id="get_property" value="Tgwr" />
+							<boolean id="name" value="true" />
+						</record>
+					</widget>
+					<widget class="dashed_record_percentage_label" id="Vowr" row="3" col="3" auto_size="all" spec="text" size="normal">
+						<record id="object_property">
+							<integer id="get_property" value="Tgwr" />
+						</record>
+					</widget>
+
+					<!-- everything should be left aligned -->
+					<record id="default_properties">
+						<flags id="alignment" value="left,centre_y" />
+					</record>
+				</widget>
+			</container>
+		</container>
+	</container>
+	
+	<widget class="horizontal_subtle_divider" />
+
+	<container class="horizontal_adaptive_container" offset="0" inset="0" gap="0" >
+
+		<!-- ATTRIBUTES -->
+		<container class="plain_box" default_width="1250" draw_vertical_dividers="true">
+			
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="top" vertical_offset="0" horizontal_inset="0" />
+				<widget class="text" font="title" colour="text" height="24" alignment="centre_x,centre_y">
+					<translation id="text" translation_id="420655" type="use" value="Characteristic" />
+				</widget>
+				<widget class="human_attributes_panel" id="attr">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
+			</container>
+			
+			<!--Tends to-->
+							<container id="tncP">
+								<attachment_group class="vertical_arrange" vertical_layout="20, -1" vertical_gap="5" vertical_offset="0" horizontal_inset="10" />
+								<widget class="label" id="knfL" col="0" row="0" alignment="left, centre_y" font="title" height="20"/>
+								<container class="scrolling_box" id="chrA">
+									<layout class="stick_to_sides_attachment" alignment="top, left" apply_to_children="true" />
+									<widget class="text" id="tncs" auto_size="vertical" />
+								</container>
+							</container>
+
+
+			<!-- coaching attributes -->
+			<widget class="client_object_label_value_table" id="coAT">
+
+				<record id="table_properties">
+					<flags id="mode" value="fill_rows, printable" />
+					<boolean id="auto_size_rows" value="false" />
+					<boolean id="fixed_size_rows" value="true" />
+					<flags id="auto_size" value="none" />
+
+					<string id="layout" value="-1,25" />
+					<integer id="row_spacing" value="0" />
+					<integer id="row_height" value="26" />
+					<list id="column_widget_properties">
+						<record indx="0" alignment="left,centre_y" />
+						<record indx="1" alignment="left,centre_y" auto_size="vertical" spec="text" colour="fg accent" />
+					</list>
+
+					<list id="headings">
+						<record alignment="centre_x,centre_y" column_span="2" colour="text" font="title">
+							<translation id="text" translation_id="230043" type="use" value="Coaching" />
+						</record>
+					</list>
+
+					<list id="column_table_properties">
+						<record indx="0">
+							<flags id="sort_disabled" value="true" />
+							<integer id="left" value="8" />
+						</record>
+						<record indx="1">
+							<flags id="sort_disabled" value="true" />
+
+							<flags id="alignment" value="left,centre_y" />
+							<integer id="top" value="2" />
+							<integer id="bottom" value="2" />
+						<record id="widget_info" class="attribute_label"  alignment="centre,can_scale" colour="white" size="11" font="label" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+						</record>
+					</list>
+
+					<!-- This is an effort to have hints display on table entry. -->
+					<list id="label_hints">
+						<record id="Ncha">
+							<translation id="text" translation_id="453928" type="use" value="This represents a competency at coaching attacking football. A higher attribute doesn't necessarily indicate a preference for attacking football, merely that the individual is quite good at it.[COMMENT: non-playing attribute tooltip for Attacking]" />
+						</record>
+						<record id="Nchd">
+							<translation id="text" translation_id="453929" type="use" value="This represents the ability to coach the defensive side of the game. Higher ratings indicate a proficiency in denying the opposition attacking success.[COMMENT: non-playing attribute tooltip for Defending]" />
+						</record>
+						<record id="Nchf">
+							<translation id="text" translation_id="453930" type="use" value="This represents the ability to work on the fitness side of the game and, as such, should be one of the key attributes to look at when hiring personnel for the Medical department.[COMMENT: non-playing attribute tooltip for Fitness]" />
+						</record>
+						<record id="Npgd">
+							<translation id="text" translation_id="453931" type="use" value="This represents an ability to competently coach a goalkeeper in the quality and effectiveness of their distribution. Their technical attributes - Kicking and Throwing in particular - will govern the success of their delivery; this attribute primarily deals with identifying the right player to distribute to and the method of getting the ball there.[COMMENT: non-playing attribute tooltip for Goalkeeper Distribution, Kicking is ID 227832, Throwing is ID 227906]" />
+						</record>
+						<record id="Npgh">
+							<translation id="text" translation_id="453932" type="use" value="This represents an ability to coach a goalkeeper's Handling attribute as well as impacting upon their Aerial Reach, Command Of Area and Communication.[COMMENT: non-playing attribute tooltip for Goalkeeper Handling, Aerial Reach ID 388017, Command Of Area 230025, and Communication 227791]" />
+						</record>
+						<record id="Npgs">
+							<translation id="text" translation_id="453933" type="use" value="This represents an ability to coach a goalkeeper's ability to stop all types of shots. A better coach will see improvements in a goalkeeper's Reflexes and One On Ones in particular.[COMMENT: non-playing attribute tooltip for Goalkeeper Shot Stopping, Reflexes ID 227888, One On Ones 227861]" />
+						</record>
+						<record id="Nchm">
+							<translation id="text" translation_id="453934" type="use" value="This represents how the individual deals with the mental side of coaching a player. A coach with a good mental approach will be able to observe each player's state of mind and react accordingly.[COMMENT: non-playing attribute tooltip for Mental]" />
+						</record>
+						<record id="Ncta">
+							<translation id="text" translation_id="453935" type="use" value="This represents the individual's tactical astuteness. More tactically astute coaches will not only be able to coach that side of the game more effectively, but any advice they may offer is likely to be more accurate and informative.[COMMENT: non-playing attribute tooltip for Tactical]" />
+						</record>
+						<record id="Ncte">
+							<translation id="text" translation_id="453936" type="use" value="This represents an ability to teach the technical side of the game; i.e. the work with the ball. A good technical coach can help improve a player's all-round game whilst also benefitting the team as a whole.[COMMENT: non-playing attribute tooltip for Technical]" />
+						</record>
+						<record id="Npwy">
+							<translation id="text" translation_id="453937" type="use" value="This represents success at working with younger players, those aged 18 and under in particular. Having someone who is very good at nurturing young talent can be priceless if just one or two of them develop into useful players.[COMMENT: non-playing attribute tooltip for Working with Youngsters]" />
+						</record>
+					</list>
+				</record>
+
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+
+				<list id="viewed_property_ids">
+					<integer value="Ncha" />
+					<integer value="Nchd" />
+					<integer value="Nchf" />
+					<integer value="Npgd" />
+					<integer value="Npgh" />
+					<integer value="Npgs" />
+					<integer value="Ncta" />
+					<integer value="Ncte" />
+					<integer value="Nchm" />
+					<integer value="Npwy" />
+				</list>
+
+			</widget>
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<!-- mental attributes -->
+				<widget class="client_object_label_value_table" id="meAT">
+
+					<record id="table_properties">
+						<flags id="mode" value="fill_rows, printable" />
+						<boolean id="auto_size_rows" value="false" />
+						<boolean id="fixed_size_rows" value="true" />
+
+						<string id="layout" value="-1,25" />
+						<integer id="row_height" value="26" />
+						<integer id="row_spacing" value="0" />
+
+						<list id="headings">
+							<record alignment="centre_x,centre_y" column_span="2" colour="black" font="title">
+								<translation id="text" translation_id="230106" type="use" value="Mental" />
+							</record>
+						</list>
+
+						<list id="column_widget_properties">
+							<record indx="0" alignment="left,centre_y" />
+							<record indx="1" alignment="left,centre_y" auto_size="vertical" spec="text" colour="selection" />
+						</list>
+
+						<list id="column_table_properties">
+							<record indx="0">
+								<flags id="sort_disabled" value="true" />
+								<integer id="left" value="8" />
+							</record>
+							<record indx="1">
+								<flags id="sort_disabled" value="true" />
+								<flags id="alignment" value="left,centre_y" />
+								<integer id="top" value="2" />
+								<integer id="bottom" value="2" />
+							<record id="widget_info" class="attribute_label"  alignment="centre,can_scale" colour="white" size="11" font="label" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+							</record>
+						</list>
+
+						<!-- This is an effort to have hints display on table entry. -->
+						<list id="label_hints">
+							<record id="Npad">
+								<translation id="text" translation_id="453938" type="use" value="This affects the individual's chances of finding employment in a foreign league, and then whether or not they're likely to succeed there.[COMMENT: non-playing attribute tooltip for 227943 Adaptability]" />
+							</record>
+							<record id="Npde">
+								<translation id="text" translation_id="453939" type="use" value="This affects how adept the individual is at getting their own way with the board; a less determined person is more likely to have their requests turned down.[COMMENT: non-playing attribute tooltip for 227803 Determination]" />
+							</record>
+							<record id="Hplk">
+								<translation id="text" translation_id="453940" type="use" value="This affects knowledge of individual senior player attributes.[COMMENT: non-playing attribute tooltip for 378023 Player Knowledge]" />
+							</record>
+							<record id="Hynk">
+								<translation id="text" translation_id="453941" type="use" value="This affects knowledge of individual youth player attributes.[COMMENT: non-playing attribute tooltip for 378145 Youngster Knowledge]" />
+							</record>
+							<record id="Npld">
+								<translation id="text" translation_id="453942" type="use" value="This affects how likely a player is to bring their concerns to the individual; a stricter person will find that players are less likely to bring minor issues to them.[COMMENT: non-playing attribute tooltip for 227949 Level of Discipline]" />
+							</record>
+							<record id="Npmm">
+								<translation id="text" translation_id="453943" type="use" value="This affects the ability to manage training overall and how the individual interacts with players on a one-to-one basis.[COMMENT: non-playing attribute tooltip for 227951 Motivating]" />
+							</record>
+							<record id="Npmo">
+								<translation id="text" translation_id="453944" type="use" value="This affects the ability to motivate players as a group in team talks and team meetings.[COMMENT: non-playing attribute tooltip for 248621 Man Management]" />
+							</record>
+						</list>
+					</record>
+
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+
+					<list id="viewed_property_ids">
+						<integer value="Npad" />
+						<integer value="Npde" />
+						<integer value="Hplk" />
+						<integer value="Hynk" />
+						<integer value="Npld" />
+						<integer value="Npmm" />
+						<integer value="Npmo" />
+					</list>
+				</widget>
+			</container>
+		</container>
+		
+		<!-- Pitch -->
+		<widget class="non_player_tactics_overview_panel" file="none" id="tact" default_width="-1">
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="objt" />
+			</record>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+			<container class="plain_box">
+				<layout class="arrange_horizontal_attachment" layout="-3,-2" offset="0" gap="10" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<widget class="pitch_with_tactics" id="attp"  icon_flags="show_selection_image,dont_fade_icons" >
+					<boolean id="pitch_is_read_only" value="true" />
+					<boolean id="vertical" value="true" />
+					<boolean id="pitch_dont_draw_indicators" value="true" />
+					<integer id="pitch_kit_height" value="0" />
+					<integer id="pitch_alignment" value="centre_x,top" />
+				</widget>
+
+				<widget class="table" id="tacT" layout="-1" mode="fill_rows" row_height="22">
+					<record id="default_properties" col="0" />
+
+					<widget class="label" row="0" font="label" colour="black" alignment="left,bottom">
+						<translation id="text" translation_id="229988" type="use" value="Preferred Formation" />
+					</widget>
+					<widget class="label" row="2" font="label" colour="black" alignment="left,bottom">
+						<translation id="text" translation_id="242539" type="use" value="Playing Mentality" />
+					</widget>
+					<widget class="label" row="4" font="label" colour="black" alignment="left,bottom">
+						<translation id="text" translation_id="242534" type="use" value="Pressing Style" />
+					</widget>
+					<widget class="label" row="6" font="label" colour="black" alignment="left,bottom">
+						<translation id="text" translation_id="242547" type="use" value="Marking Style" />
+					</widget>
+					<widget class="label" row="8" font="label" colour="black" alignment="left,bottom">
+						<translation id="text" translation_id="242543" type="use" value="Coaching Style" />
+					</widget>
+
+					<widget class="label" id="prfo" row="1" />
+					<widget class="label" id="plma" row="3" />
+					<widget class="label" id="prst" row="5" />
+					<widget class="label" id="mars" row="7" />
+					<widget class="label" id="coas" row="9" />
+				</widget>
+			</container>
+		</widget>
+
+	</container>
+	
+	<widget class="horizontal_subtle_divider" />
+
+	<container>
+		<!-- LAYOUT BELOW ARRANGES PANEL ACROSS THE SCREEN -->
+		<layout class="horizontal_arrange" horizontal_layout="500,1,800,1,-1" />
+
+
+		<container class="vertical_adaptive_container" default_width="-1" offset="30" inset="0" gap="0" >
+
+			<!-- PRESS CONFERENCES/-->
+			<container class="plain_box" default_height="-1" minimum_height="50" priority="1">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<container class="scrolling_box">
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="fill" vertical_offset="0" horizontal_inset="0" />
+
+						<!-- Press conference -->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+
+							<widget class="label" auto_size="vertical" alignment="left" font="title" colour="black">
+								<translation id="text" translation_id="308467" type="use" value="Press Conferences[COMMENT: number of clients]" />
+							</widget>
+							<widget class="text" id="prcn" height="20" alignment="left,top" auto_size="vertical" />
+						</container>
+
+						<widget class="horizontal_divider" />
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+							<widget class="label" height="12" alignment="left" auto_size="vertical" font="title" colour="black">
+								<translation id="text" translation_id="343976" type="use" value="Interaction Style[COMMENT: human profile; title text for section indicating how the human manager interacts with his players on a one to one basis]" />
+							</widget>
+							<widget class="text" id="prco" height="20" alignment="left,top" auto_size="vertical" />
+						</container>
+
+						<widget class="horizontal_divider" />
+
+						<container class="person_personal_information_panel" file="none" height="54">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="objt" />
+									</record>
+								</list>
+							</record>
+
+							<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+							<widget class="table" id="left" />
+
+							<widget class="table" id="rigt" layout="-1" mode="fill_rows" auto_size_rows="true" fixed_size_rows="false" auto_size="none">
+
+								<!-- past experience -->
+								<widget class="label" col="0" row="0" alignment="left,bottom" font="title" colour="black" auto_size="vertical" multiline="false">
+									<translation id="text" translation_id="319440" type="use" value="Past Playing Experience[COMMENT: add_manager_panel; select starting reputation; define past football experience]" />
+								</widget>
+								<widget class="label" id="paex" col="0" row="1" auto_size="vertical" alignment="left,top" multiline="true" />
+							</widget>
+						</container>
+
+						<widget class="horizontal_divider" />
+
+						<container class="person_personal_information_panel" file="none">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="objt" />
+									</record>
+								</list>
+							</record>
+
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" horizontal_inset="0" />
+
+							<widget class="table" id="left" layout="-1" mode="fill_rows" auto_size_rows="true" fixed_size_rows="false" auto_size="vertical">
+								<list id="column_table_properties">
+									<record index="0" sort_disabled="true" alignment="left,centre_y" />
+									<record index="1" sort_disabled="true" alignment="left,centre_y" />
+								</list>
+
+								<!-- languages -->
+								<widget class="label" col="0" row="0" alignment="left,bottom" font="title" colour="black" auto_size="vertical">
+									<translation id="text" translation_id="295874" type="use" value="Languages Spoken" />
+								</widget>
+								<widget class="languages_text" id="lngw" col="0" row="1" alignment="left,centre_y" auto_size="vertical" spec="text" multiline="true" />
+
+							</widget>
+						</container>
+
+						<widget class="horizontal_divider" />
+
+						<container class="person_personal_information_panel" file="none">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="objt" />
+									</record>
+								</list>
+							</record>
+
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+							<widget class="table" id="left" />
+
+							<widget class="table" id="rigt" layout="-1" mode="fill_rows" auto_size_rows="true" fixed_size_rows="false" auto_size="vertical">
+
+								<widget class="label" col="0" row="0" alignment="left,bottom" font="title" colour="black" auto_size="vertical">
+									<translation id="text" translation_id="247453" type="use" value="Favoured Clubs" />
+								</widget>
+								<widget class="favourite_clubs_text" id="fvcw" col="0" row="1" auto_size="vertical" spec="text" multiline="true" />
+							</widget>
+						</container>
+					</container>
+				</container>
+			</container>
+		</container>
+		
+		<!-- Vertical separator line -->
+		<widget class="vertical_divider"/>
+
+		<!-- Knowledge panel -->
+
+		<container class="tabbed_container" id="main" minimum_width="500" default_width="800" default_item="know" save_session_state="true" save_default_state="true">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"  />
+			<record id="default_properties" late_loading="true">
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</record>
+
+			<widget class="non_player_knowledge_panel" id="know">
+				<translation id="title" translation_id="327250" type="use" value="Scouting Knowledge"/>
+			</widget>
+
+			<widget class="manager_promises_panel" file="human/manager promises panel" id="mngp">
+				<translation id="title" translation_id="320154" type="use" value="Promises"/>
+			</widget>
+
+			<widget class="manager_relationships_panel" file="human/manager relationships panel" id="m">
+				<translation id="title" translation_id="308474" type="use" value="Relationships"/>
+			</widget>
+		</container>
+		
+		<!-- Vertical separator line -->
+		<widget class="vertical_divider"/>
+
+		<container class="inner_box" default_width="-1">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+			<!-- Club history -->
+			<container class="main_box">
+				<translation id="title" translation_id="229719" type="use" value="History" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="4" />
+
+				<!-- Awards totals -->
+				<widget class="client_object_viewer_xml_panel" file="person/person achievements summary" id="pacs" auto_size="vertical" default_height="181" priority="4">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
+
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="4" />
+
+					<!-- Achievement history -->
+					<container class="person_club_achievements_history_list_panel" id="calp">
+						<layout class="stick_to_sides_attachment" alignment="horizontal" />
+
+						<record id="object_property">
+							<integer id="get_property" value="objt" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</container>
+
+					<!-- Link to full career history -->
+					<widget class="link_button" id="PHac" section="PHac" auto_size="all" default_focus="true">
+						<translation id="text" translation_id="435775" type="use" value="Career Milestones[COMMENT: was previously ID 329749 Career Achievements, rewording as it's a better term for the content on the screen]" />
+						<layout class="stick_to_sides_attachment" alignment="right" />
+					</widget>
+				</container>
+			</container>
+		</container>
+	</container>
+	</container>
+
+</panel>

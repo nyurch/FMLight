@@ -1,0 +1,86 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+	<container class="inner_subtle_box" red_replacement="black">
+		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="10" gap="10"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+
+		<!--City-->
+		<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+		<container class="plain_box" height="33" appearance="boxes/contrast/no margin/bottom/paper" red_replacement="primary">
+			<layout class="stick_to_sides_attachment" apply_to_children="true" inset="10"/>
+			<widget class="nation_button" id="nati" font="main menu" colour="secondary" size="11" alignment="centre_x,centre_y,can_scale">
+				<record id="object_property">
+				<integer id="get_property" value="Cnat"/>
+				</record>
+			</widget>
+		</container>
+		<container class="plain_box" id="tstf" height="320" priority="1">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<widget class="background" file="backgrounds" id="bgnd">
+				<layout class="stick_to_sides_attachment" alignment="top" inset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+				<layout class="stick_to_sides_attachment" alignment="left" offset="0" gap="0" />
+				<record id="object_property">
+				<integer id="get_property" value="bgnd" />
+				<integer id="set_property" value="file" />
+				</record>
+			</widget>
+		</container>
+			<container class="plain_box" height="33" appearance="boxes/contrast/no margin/bottom/paper" red_replacement="primary">
+			<layout class="stick_to_sides_attachment" apply_to_children="true" inset="10"/>
+			<widget class="city_label" id="namL" font="main menu" colour="secondary" size="11" alignment="centre_x,centre_y,can_scale">
+			<record id="object_property">
+			<integer id="get_property" value="SctI"/>
+			</record>
+			</widget>
+		</container>
+		</container>
+		
+		<!--Stadium-->
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container class="main_subtle_box_no_margin" minimum_width="440" default_width="-1" priority="2">
+			<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+			<container class="club_overview_stadium_panel" file="none">
+				<attachment class="vertical_arrange" vertical_layout="33,320,33" vertical_gap="0"/>
+				<record id="object_property" get_property="Tsre" set_property="objt" dont_set_hint="true"/>
+			    <container class="plain_box" appearance="boxes/contrast/no margin/bottom/paper" red_replacement="primary">
+					<layout class="stick_to_sides_attachment" apply_to_children="true" inset="10"/>
+                <widget class="client_object_label" id="namV" font="main menu" colour="secondary" size="11" alignment="centre_x,centre_y,can_scale">
+                    <record id="object_property">
+                        <integer id="get_property" value="objt"/>
+                    </record>
+				</widget>
+                </container>
+            <container>
+                <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+                <widget class="stadium_picture" file="none" scale_picture="true" keep_aspect_ratio="true">
+                    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="-60"/>
+                    <record id="object_property" get_property="objt" set_property="objt"/>
+                    <widget class="picture" file="pictures/stadiums/stadium_bg" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x"/>
+                    <widget class="picture" id="STPC" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x">
+                        <layout class="centre_in_parent_attachment" alignment="all"/>
+                        <record id="object_property">
+                            <integer id="get_property" value="text"/>
+                            <string id="set_property" value="hint"/>
+                        </record>
+                    </widget>
+                </widget>
+            </container>
+            <container class="plain_box" appearance="boxes/contrast/no margin/bottom/paper" red_replacement="primary">
+                <layout class="stick_to_sides_attachment" apply_to_children="true" inset="10"/>
+					<widget class="dashed_number_label" id="ScpV" font="main menu" colour="secondary" size="11" alignment="centre_x,centre_y,can_scale">
+						<record id="object_property">
+							<integer id="get_property" value="Scpy"/>
+						</record>
+					</widget>
+            </container>
+			</container>
+			</container>
+		</container>
+
+	</container>
+
+</panel>

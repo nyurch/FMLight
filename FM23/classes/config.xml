@@ -1,0 +1,4 @@
+<record>
+	<boolean id="store_resource_list" value="true"/>
+	<boolean id="preload" value="true"/>
+</record>

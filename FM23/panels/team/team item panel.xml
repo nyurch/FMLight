@@ -1,0 +1,54 @@
+<panel>
+
+	<translation id="title" translation_id="308033" type="use" value="Club Mini Profile" />
+	<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="80,-1" horizontal_offset="0" vertical_offset="0" />
+
+	<!-- profile picture -->
+	<widget class="object_portrait_picture" id="prop" height="45">
+		<boolean id="scale_picture" value="true" />
+		<boolean id="keep_aspect_ratio" value="true" />
+		<flags id="image_alignment" value="centre" />
+
+		<attachment class="test_setting_attachment" get_setting="show_portraits" default_value="true" set_property="hidn">
+			<list id="value">
+				<boolean value="false" />
+			</list>
+		</attachment>
+
+		<record id="object_property">
+			<list id="get_properties">
+				<record>
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</list>
+		</record>
+	</widget>
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="2" horizontal_inset="0" />
+
+		<!-- Name -->
+		<widget class="team_button" id="ClNa" style="semi_bold" icon_enabled="false" size="11" auto_size="vertical">
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+			</record>
+		</widget>
+
+		<!-- Nationality -->
+		<widget class="nation_button" id="natp" size="8" auto_size="vertical">
+			<record id="object_property">
+				<integer id="get_property" value="Tnat" />
+			</record>
+		</widget>
+
+		<!-- Division -->
+		<widget class="comp_button" id="inst" size="8" icon_enabled="false" auto_size="vertical">
+			<record id="object_property">
+				<integer id="get_property" value="Tdiv" />
+			</record>
+		</widget>
+	</container>
+
+
+</panel>

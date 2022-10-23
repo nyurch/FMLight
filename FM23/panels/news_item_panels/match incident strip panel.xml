@@ -1,0 +1,10 @@
+<panel height="24">
+	<attachment_group class="horizontal_arrange" horizontal_layout="20,36,4,14,4,-1" horizontal_gap="0" horizontal_offset="0" vertical_inset="0"/>
+
+	<widget class="picture" id="inty" scale_picture="false" image_alignment="centre" />
+	<widget class="text" id="inct" alignment="centre" size="small" colour="faded text" />
+	<widget class="spacer" />
+	<widget class="object_portrait_picture" id="miTp" scale_picture="true" image_alignment="centre" />
+	<widget class="spacer" />
+	<widget class="person_button" colour="black" id="Plpc" />
+</panel>

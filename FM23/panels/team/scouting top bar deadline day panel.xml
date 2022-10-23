@@ -1,0 +1,75 @@
+﻿<panel height="70">
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+    <boolean id="should_force_refresh" value="true" />
+    <colour id="budget_info_positive_colour" name="positive" />
+    <colour id="budget_info_zero_colour" name="text" />
+    <colour id="budget_info_negative_colour" name="negative" />
+    <colour id="scouting_package_highlight_colour" name="bg accent" />
+
+    <list id="visible_items">
+        <flags value="trbc" />
+        <flags value="rtec" />
+        <flags value="TrAc" />
+    </list>
+
+    <container class="main_subtle_box" navigation_container="true" default_focus="true">
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+        <container class="horizontal_adaptive_container" mode="distribute_equally" inset="0" offset="0" gap="20" draw_vertical_dividers="true">
+
+            <!--Transfer budget-->
+            <container minimum_width="290" id="trbc" priority="2">
+                <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+                <container wants_mouse_events="false">
+                    <attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+
+                    <widget class="widget_popup_button" id="bact" widget_type="client_object_viewer_xml_panel" file="modal popup panel auto sized" popup_alignment="right, bottom" offset_y="2" appearance="buttons/custom/over state only/button">
+                        <record id="widget_properties" file="club/popup budget adjustment panel" width="500" />
+                    </widget>
+                </container>
+
+                <container wants_mouse_events="false">
+                    <attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" horizontal_offset="8" horizontal_gap="8" vertical_alignment="vertical" vertical_inset="0" />
+
+                    <widget class="picture" file="icons/custom/icon box/budget" red_replacement="deadline day fg accent" blue_replacement="deadline day body text" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" width="26" />
+
+                    <container wants_mouse_events="false">
+                        <attachment_group class="vertical_arrange" vertical_layout="-1, -1" horizontal_offset="0" horizontal_gap="8" horizontal_alignment="horizontal" vertical_offset="6" />
+
+                        <container wants_mouse_events="false">
+                            <attachment_group class="horizontal_arrange" horizontal_layout="-2, -1" />
+
+                            <widget class="text" auto_size="none" colour="faded text" font="label" size="small" alignment="left, centre_y" wants_mouse_events="false" multiline="false">
+                                <translation id="text" translation_id="321077" type="use" value="Transfer Budget Remaining: [COMMENT: player search; displays team's remaining transfer budget]" />
+                            </widget>
+
+                            <widget class="text" id="tbva" auto_size="none" style="bold" alignment="left, centre_y" wants_mouse_events="false" colour="fg" />
+                        </container>
+
+                        <container wants_mouse_events="false">
+                            <attachment_group class="horizontal_arrange" horizontal_layout="-2, -1" />
+
+                            <widget class="text" auto_size="none" colour="faded text" font="label" size="small" alignment="left, centre_y" wants_mouse_events="false" multiline="false">
+                                <translation id="text" translation_id="374980" type="use" value="Wage Budget Remaining[COMMENT: contract offer screen - comments table]" />
+                            </widget>
+
+                            <widget class="text" id="wbva" auto_size="none" style="bold" alignment="left, centre_y" wants_mouse_events="false" colour="fg" />
+                        </container>
+                    </container>
+                </container>
+            </container>
+
+            <!--Recruitment team-->
+            <widget class="property_list_viewer_xml_panel" file="widgets/scouting top bar widget" minimum_width="190" id="rtec" priority="1" icon="icons/custom/icon box/package" red_replacement="red" puhd="true" section="tssc" lkcl="red" lkrr="deadline day fg titles" navigation_focus_target="false">
+                <translation id="lktx" translation_id="539027" type="use" value="Recruitment[COMMENT: AREA: Backroom advice; SUB-AREA: Backroom advice category; FR-BN: 35379; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE: Name of backroom advice category]" />
+            </widget>
+
+            <!-- Transfer Activity -->
+            <widget class="property_list_viewer_xml_panel" file="widgets/scouting top bar widget" minimum_width="190" id="TrAc" priority="1" icon="icons/custom/icon box/transfer centre" red_replacement="red" puhd="true" section="trcn" lkcl="red" lkrr="deadline day fg titles" navigation_focus_target="false">
+                <translation id="lktx" translation_id="330721" type="use" value="Transfer Activity[COMMENT: how to system; help string]" />
+            </widget>
+        </container>
+    </container>
+</panel>

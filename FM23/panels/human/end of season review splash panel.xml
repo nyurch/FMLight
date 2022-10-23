@@ -1,0 +1,105 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" value="all" inset="0" />
+	<list id="draw_order">
+		<record entity_layout_id="at00" />
+		<record entity_layout_id="at0:" />
+		<record entity_layout_id="at05" />
+		<record entity_layout_id="at06" />
+		<record entity_layout_id="at02" />
+		<record entity_layout_id="at01" />
+		<record entity_layout_id="at03" />
+		<record entity_layout_id="at04" />
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+	</widget>
+		<container class="main_subtle_box" appearance="boxes/custom/interaction/person/paper_disabled" entity_layout_id="at00" id="at00">
+		<attachment class="test_screen_size_attachment" skip_if_false="true">
+			<list id="properties">
+				<record>
+					<flags id="alignment" value="vertical" />
+					<integer id="min_value" value="0" />
+					<integer id="max_value" value="2000" />
+					<symbol id="set_property" value="height" />
+					<integer id="true_value" value="320" />
+					<integer id="false_value" value="320" />
+				</record>
+				<record>
+					<flags id="alignment" value="vertical" />
+					<integer id="min_value" value="2000" />
+					<integer id="max_value" value="10000" />
+					<symbol id="set_property" value="height" />
+					<integer id="true_value" value="640" />
+					<integer id="false_value" value="640" />
+				</record>
+			</list>
+		</attachment>
+		<layout class="stick_to_object_attachment" id="align_left" offset="260" get_side="left" set_side="left" target="main" />
+		<layout class="stick_to_object_attachment" id="align_right" offset="-260" get_side="right" set_side="right" target="main" />
+		<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<container entity_layout_id="at0:" id="at0:" auto_size="vertical" width="440">
+			<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0" />
+			<layout class="stick_to_object_attachment" id="align_top" offset="12" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+			<layout class="stick_to_object_attachment" id="group_align_bottom" get_side="bottom" set_side="bottom" use_own_content_rectangle="true" use_children_to_size="true" target="at06" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<container class="object_portrait_picture" entity_layout_id="at02" id="tmPC" width="60" height="60">
+				<string id="image_alignment" value="centre" />
+				<string id="scale_picture" value="true" />
+				<string id="keep_aspect_ratio" value="true" />
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+				<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="-1" />
+			</container>
+			<widget class="text" entity_layout_id="at01" id="tmBT" auto_size="vertical" needs_width="true" height="25" width="350" alignment="centre">
+				<string id="font" value="title" />
+				<string id="colour" value="gold" />
+				<string id="size" value="xxlarge" />
+				<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" move_side="true" target="at02" />
+				<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
+			</widget>
+			<widget class="horizontal_solid_intro_divider" entity_layout_id="at03" id="ttlD" width="165" height="1">
+				<string id="colour" value="fg" />
+				<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" move_side="true" target="at01" />
+				<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="-1" />
+			</widget>
+			<widget class="text" entity_layout_id="at04" id="at04" auto_size="horizontal" needs_width="true" height="20">
+				<translation id="text" translation_id="509217" type="use" value="End of Season Review[COMMENT: AREA: End of season pack; FR-BN: 32407; NOTE: End of season review title]" />
+				<string id="font" value="title" />
+				<string id="colour" value="gold" />
+				<string id="size" value="large" />
+				<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" move_side="true" target="at03" />
+				<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="-1" />
+			</widget>
+			<widget class="text" entity_layout_id="at05" id="yrST" auto_size="horizontal" needs_width="true" height="20">
+				<string id="size" value="medium" />
+				<string id="colour" value="gold" />
+				<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at04" />
+				<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="-1" />
+			</widget>
+			<container class="horizontal_arrange_container" entity_layout_id="at06" id="trCO" height="70" auto_size="horizontal">
+				<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" move_side="true" target="at05" />
+				<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" />
+			</container>
+		</container>
+	</container>
+</panel>

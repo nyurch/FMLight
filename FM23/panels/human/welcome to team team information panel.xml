@@ -1,0 +1,317 @@
+﻿<!-- panel to be used during the welcome to the club briefing -->
+<panel>
+	<attachment_group class="vertical_arrange_autosize">
+		<global id="vertical_gap" name="ui.main_contrast_box_gap" />
+	</attachment_group>
+
+	<boolean id="should_force_refresh" value="true" />
+
+	<container class="main_contrast_box_no_margin" red_replacement="accent">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+		<attachment class="test_screen_size_attachment" skip_if_false="true">
+			<list id="properties">
+				<record>
+					<flags id="alignment" value="vertical" />
+					<integer id="min_value" value="0" />
+					<integer id="max_value" value="720" />
+					<!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+					<symbol id="set_property" value="height" />
+					<integer id="true_value" value="110" />
+					<integer id="false_value" value="110" />
+				</record>
+				<record min_value="720" max_value="868" true_value="125" />
+				<record min_value="868" max_value="10000" true_value="145" />
+			</list>
+		</attachment>
+
+		<widget class="picture" file="patterns/faded/9" image_alignment="left, bottom" red_replacement="white" />
+
+		<widget class="picture" file="patterns/faded/10" image_alignment="right, top" red_replacement="white">
+			<layout class="stick_to_sides_attachment" alignment="right" inset="12" />
+		</widget>
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_layout="120, 100, 1, -1, 1, -1, 1, -1" horizontal_offset="12" vertical_alignment="vertical" vertical_inset="8" horizontal_gap="8" />
+
+			<!-- badge -->
+			<widget class="object_portrait_picture" id="tmlg" scale_picture="true" image_alignment="centre" clickable="false">
+				<layout class="stick_to_sides_attachment" alignment="top,bottom" inset="15" />
+			</widget>
+
+			<!-- home kit -->
+			<widget class="kit_picture" id="tmkt" kit_id="0" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
+
+			<widget class="picture" file="dividers/standard/vertical/line" width="1" />
+
+			<!-- Reputation and prediction -->
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="14" horizontal_alignment="horizontal" horizontal_inset="10" />
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="26, -1" horizontal_offset="0" vertical_alignment="vertical" vertical_inset="0" horizontal_gap="10" />
+
+					<widget class="picture" file="icons/custom/icon box/report" height="26" scale_picture="true" image_alignment="centre" red_replacement="white" blue_replacement="red" />
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<widget class="text" auto_size="vertical" font="label" colour="white">
+							<translation id="text" translation_id="227963" type="use" value="Reputation" />
+						</widget>
+						<widget class="club_reputation_stars_label" id="rpst" mode="0" size="11" auto_size="vertical" alignment="left, centre_y" multiline="true" navigation_focus_target="false" />
+					</container>
+				</container>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="30, -1" horizontal_offset="0" vertical_alignment="vertical" vertical_inset="0" horizontal_gap="10" />
+
+					<widget class="object_portrait_picture" id="cmpl" width="30" height="30" scale_picture="true" image_alignment="centre" clickable="false" />
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="1" />
+
+						<widget class="text" auto_size="vertical" font="label" colour="white">
+							<translation id="text" translation_id="243509" type="use" value="Media Prediction" />
+						</widget>
+						<widget class="text" id="medp" auto_size="vertical" font="value" colour="white" />
+					</container>
+				</container>
+			</container>
+
+			<widget class="picture" file="dividers/standard/vertical/line" width="1" />
+
+			<!-- Staff -->
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="10" vertical_gap="14" horizontal_alignment="horizontal" horizontal_inset="10" />
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="1" />
+
+						<widget class="text" id="dofl" auto_size="vertical" font="label" colour="white">
+							<translation id="text" translation_id="227972" type="use" value="Director of Football" />
+						</widget>
+						<widget class="person_button" id="dofn" height="20" auto_size="horizontal" font="value" colour="white" alignment="left, centre_x" info_popup_enabled="true" person_is_player="false" links_enabled_in_popup="false" info_popup_instead_of_link="true" navigation_focus_target="false" />
+						<widget class="text" id="dofv" auto_size="vertical" font="value" colour="white" />
+					</container>
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="1" />
+
+						<widget class="text" auto_size="vertical" font="label" colour="white">
+							<translation id="text" translation_id="227983" type="use" value="Assistant Manager" />
+						</widget>
+						<widget class="person_button" id="assn" height="20" auto_size="horizontal" font="value" colour="white" alignment="left, centre_x" info_popup_enabled="true" person_is_player="false" links_enabled_in_popup="false" info_popup_instead_of_link="true" navigation_focus_target="false" />
+						<widget class="text" id="assv" height="20" auto_size="horizontal" font="value" colour="white" />
+					</container>
+			</container>
+
+			<widget class="picture" file="dividers/standard/vertical/line" width="1" />
+
+			<!-- Founded & Rival -->
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="10" vertical_gap="14" horizontal_alignment="horizontal" horizontal_inset="10" />
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="1" />
+
+						<widget class="text" auto_size="vertical" font="label" colour="white">
+							<translation id="text" translation_id="257214" type="use" value="Year Founded" />
+						</widget>
+						<widget class="text" id="yrfd" height="20" font="value" colour="white" />
+					</container>
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="1" />
+
+						<widget class="text" auto_size="vertical" font="label" colour="white">
+							<translation id="text" translation_id="251298" type="use" value="Fierce Rivals[COMMENT: heading; team_information_panel; list of fierce rival teams to current club]" />
+						</widget>
+						<widget class="text" id="cRvl" height="20" auto_size="horizontal" font="value" colour="white" />
+					</container>
+			</container>
+		</container>
+	</container>
+
+	<container class="main_transparent_box">
+		<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="4" />
+		<attachment class="test_screen_size_attachment" skip_if_false="true">
+			<list id="properties">
+				<record>
+					<flags id="alignment" value="vertical" />
+					<integer id="min_value" value="0" />
+					<integer id="max_value" value="601" />
+					<!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+					<symbol id="set_property" value="height" />
+					<integer id="true_value" value="295" />
+					<integer id="false_value" value="360" />
+				</record>
+				<record min_value="601" max_value="720" true_value="330" />
+				<record min_value="720" max_value="868" true_value="370" />
+				<record min_value="868" max_value="968" true_value="490" />
+				<record min_value="968" max_value="10000" true_value="590" />
+			</list>
+		</attachment>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="430, 1, -5, 1, -2" vertical_alignment="vertical">
+				<global id="horizontal_gap" name="ui.main_contrast_box_gap" />
+			</attachment_group>
+			<container class="inner_box">
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="8" />
+				
+				<!-- Last season comp finishes -->
+				<widget class="text" id="cstt" font="title" colour="title" height="25" alignment="left,centre_y" />
+				<widget class="text" id="pstx" auto_size="vertical" clickable="false">
+					<attachment class="test_screen_size_attachment" skip_if_false="true">
+						<list id="properties">
+							<record>
+								<flags id="alignment" value="vertical" />
+								<integer id="min_value" value="0" />
+								<integer id="max_value" value="601" />
+								<!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+								<symbol id="set_property" value="hidden" />
+								<integer id="true_value" value="true" />
+								<integer id="false_value" value="true" />
+							</record>
+							<record min_value="601" max_value="10000" true_value="false" />
+						</list>
+					</attachment>
+				</widget>
+				<widget class="team_season_achievement_panel" id="tsap" />
+			</container>
+
+			<widget class="picture" file="dividers/standard/vertical/line" width="1" />
+
+			<container class="inner_box">
+				<translation id="title" translation_id="316691" type="use" value="Facilities" />
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="3" />
+
+				<!-- Stadium info -->
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" />
+
+					<widget class="picture" file="icons/custom/stadium/stadium" scale_picture="true" red_replacement="text" image_alignment="left" width="20" height="20" />
+					<widget class="text" id="stnm" style="bold" auto_size="all" alignment="centre" />
+				</container>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" />
+
+				<widget class="dashed_number_label" id="stcp" auto_size="all" alignment="centre" colour="faded text">
+					<translation id="format" translation_id="493428" type="use" value="[%number#1] capacity[COMMENT: AREA: Welcome to team; SUB-AREA: team information and history; FR-BN: 22765; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: String detailing the current capacity of the team's main stadium on the team information and history step of the welcome pack when the human has taken over a club or national team]" />
+				</widget>
+				<widget class="text" alignment="centre" auto_size="all" value="-" colour="faded text"/>
+				<widget class="text" id="stag" auto_size="all" alignment="centre" size="all" colour="faded text"/>
+
+				</container>
+
+				<!-- Planned stadium move -->
+				<container class="inner_subtle_box_no_margin" id="psei" >
+
+					<!--<string id="remove_if" value="ui.is_fmt_controller_skin"/>-->
+
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="16,-1" vertical_offset="4" horizontal_offset="4"/>
+
+					<widget class="picture" file="icons/16px/info" scale_picture="true" red_replacement="text" image_alignment="left" height="16" />
+					<widget class="planned_stadium_expansion_label" id="psep" auto_size="vertical" alignment="centre" />
+				</container>
+
+				<container height="4"/>
+
+				<!-- Training ground info -->
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" />
+
+					<widget class="picture" file="icons/26px/training" scale_picture="true" red_replacement="text" image_alignment="left" width="20" height="20" />
+					<widget class="text" id="trnm" style="bold" auto_size="all" alignment="centre" />
+				</container>
+				<widget class="training_facilities_description_text" id="trfa" format="0" stfd="false" auto_size="vertical" alignment="centre" colour="faded text"/>
+				<widget class="youth_facilities_description_text" id="tryf" format="0" syfd="false" auto_size="vertical" alignment="centre" colour="faded text"/>
+				<widget class="youth_recruitment_status_label" id="tryr" syrd="false" auto_size="vertical" alignment="centre" colour="faded text">
+					<attachment class="test_screen_size_attachment" skip_if_false="true">
+						<list id="properties">
+							<record>
+								<flags id="alignment" value="vertical" />
+								<integer id="min_value" value="0" />
+								<integer id="max_value" value="601" />
+								<!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+								<symbol id="set_property" value="hidden" />
+								<integer id="true_value" value="true" />
+								<integer id="false_value" value="true" />
+							</record>
+							<record min_value="601" max_value="10000" true_value="false" />
+						</list>
+					</attachment>
+				</widget>
+			</container>
+
+			<widget class="picture" file="dividers/standard/vertical/line" width="1" />
+
+			<container class="inner_box">
+				<translation id="title" translation_id="229821" type="use" value="Finances" />
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="10" />
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" />
+
+					<!-- Status -->
+					<widget class="text" auto_size="vertical" alignment="left" font="label">
+						<translation id="text" translation_id="242853" type="use" value="Status" />
+					</widget>
+					
+					<widget class="financial_status_label" id="fist" style="bold" auto_size="all" alignment="left,centre" />
+
+				</container>
+				
+				<container class="finances_summary_panel" id="fisc" file="none">
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="10" />
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" />
+
+					<!-- Transfer Budget -->
+					<widget class="text" auto_size="vertical" alignment="left" font="label">
+						<translation id="text" translation_id="242603" type="use" value="Transfer Budget" />
+					</widget>
+					<widget class="cash_cell" id="tfbg" style="bold" alignment="left" auto_size="vertical" />
+
+					</container>
+
+					<container>
+
+						<attachment_group class="vertical_arrange_autosize" />
+
+						<!-- Wage Budget -->
+						<widget class="text" auto_size="vertical" alignment="left" font="label">
+							<translation id="text" translation_id="291308" type="use" value="Wage Budget[COMMENT:Wage budget label]" />
+						</widget>
+						<widget class="wage_label" id="wagl" style="bold" alignment="left" auto_size="vertical" />
+
+					</container>
+				</container>
+				
+			</container>
+		</container>
+		
+		<widget class="picture" file="dividers/standard/horizontal/line" height="1" />
+
+		<container class="inner_box">
+			<translation id="title" translation_id="491951" type="use" value="Club History[COMMENT: AREA: Welcome to team; SUB-AREA: team information and history; FR-BN: 22765; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title string for the club history sub-panel on the team information and history step of the welcome pack when the human has taken over a club team]" />
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<container class="scrolling_box" navigation_container="true">
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="400, -1">
+						<global id="horizontal_gap" name="ui.main_contrast_box_gap" />
+					</attachment_group>
+				
+					<!-- Club trophies -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize" />
+						<widget class="team_container_honours_panel" id="trpp" honour_subpanel_filename="human/welcome to team honours info panel" file="human/welcome to team honours panel" />
+					</container>
+			
+					<!-- Club or nation history -->
+					<widget class="text" id="bgtx" auto_size="vertical" clickable="false" />
+				</container>
+			</container>
+		</container>
+	</container>
+	
+</panel>

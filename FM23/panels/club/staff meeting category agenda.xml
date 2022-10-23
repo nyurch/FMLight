@@ -1,0 +1,59 @@
+﻿<panel draw_horizontal_dividers="true">
+	<attachment_group class="vertical_arrange_autosize">
+		<global id="vertical_gap" name="ui.main_box_gap" />
+	</attachment_group>
+
+	<list id="properties_to_forward">
+		<record get_property="isMf" target="smtl" set_property="isMf" />
+	</list>
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" />
+
+		<container width="30" height="30">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			
+			<widget class="picture" file="icons/26px/circle" scale_picture="true" image_alignment="centre" keep_aspect_ratio="true" red_replacement="white">
+
+			</widget>
+
+			<widget class="value_based_picture" scale_picture="false" image_alignment="centre" keep_aspect_ratio="true">
+				<record id="object_property" get_property="SMCi" set_property="valu"/>
+				<list id="value_list">
+					<record value="0" file="icons/26px/training" red_replacement="green 900" />
+					<record value="1" file="icons/26px/transfer" red_replacement="red 900" />
+					<record value="2" file="icons/26px/development" red_replacement="blue 900" />
+					<record value="3" file="icons/26px/staff" red_replacement="pink 900" />
+				</list>
+			</widget>
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend" horizontal_offset="4" />
+
+			<widget class="text" id="catT" auto_size="vertical" font="title" size="large" colour="fg tertiary">
+				<record id="object_property" get_property="titl" set_property="valu" />
+			</widget>
+
+			<widget class="formatted_label" auto_size="all" colour="faded text">
+				<record id="object_property" get_property="SMCc" set_property="valu" />
+				<!-- Choose string based on category id -->
+				<list id="format">
+					<record value="1">
+						<translation id="format" translation_id="538861" type="use" value="1 topic[COMMENT: AREA: Staff; SUB-AREA: Meeting agenda; FR-BN: 35342; TONE: Formal; CHARLIMIT: If Applicable, otherwise None; NOTE: number of topics to be discussed in meeting]" />
+					</record>
+					<record default_value="true">
+						<translation id="format" translation_id="538862" type="use" value="[%number#1] topics[COMMENT: AREA: Staff; SUB-AREA: Meeting agenda; FR-BN: 35342; TONE: Formal; CHARLIMIT: If Applicable, otherwise None; NOTE: number of topics to be discussed in meeting]" />
+					</record>
+				</list>
+			</widget>
+
+
+		</container>
+
+	</container>
+
+	<widget class="staff_meeting_topic_actions_list" id="smtl" auto_size="vertical">
+		<record id="object_property" get_property="SMTL" set_property="valu" />
+	</widget>
+</panel>

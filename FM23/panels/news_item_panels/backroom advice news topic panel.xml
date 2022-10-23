@@ -1,0 +1,71 @@
+<!-- A panel used on the inbox backroom advice panel to show a summary of backroom advice on a particular topic -->
+<panel navigation_container="true">
+	<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="0" apply_to_children="true" />
+
+	<container class="inner_subtle_box" id="titl">
+		<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="0" apply_to_children="true" />
+
+		<!-- Embedded buttons-->
+		<container embed_in_frame="true">
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+			<layout class="arrange_horizontal_attachment" alignment="right" offset="0" gap="4" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="4" />
+
+			<!-- Apply all button -->
+			<widget class="subtle_button" id="appb" auto_size="all">
+				<translation id="text" translation_id="433555" type="use" value="Apply All[COMMENT: button to apply all backroom advice suggestions (string ID 418191 will appear when clicking this button), was formerly ID 306593 but some languages need a different version]" />
+			</widget>
+
+			<!-- Settings button -->
+			<widget class="icon_button" id="setb" file="icons/16px/settings" auto_size="horizontal">
+				<event id="click_event" event_id="setb" file="news_item_panels/backroom advice news topic settings popup panel" />
+			</widget>
+		</container>
+
+		<widget class="table" id="list" auto_size_rows="true" layout="-1,-1,-1,-2,34" auto_size="vertical">
+			<list id="column_table_properties">
+				<!-- Player -->
+				<record id="Aplr">
+					<record id="widget_info" class="person_button" colour="black" info_popup_enabled="true" info_popup_alignment="left,centre_y" icon_enabled="true" />
+					<record id="column_heading">
+						<translation id="text" translation_id="298220" type="use" value="Player[COMMENT: transfer list, player column, header]" />
+					</record>
+				</record>
+				<!-- Team -->
+				<record id="Atem">
+					<record id="widget_info" class="team_button"/>
+					<record id="column_heading">
+						<translation id="text" translation_id="291477" type="use" value="Team[COMMENT: match analysis panel; team label]" />
+					</record>
+				</record>
+				<!-- Action text description, varies by topic -->
+				<record id="Aact">
+					<record id="widget_info" class="text" alignment="left,centre_y" multiline="true"/>
+				</record>
+				<!-- Reason-->
+				<record id="Ares">
+					<record id="widget_info" class="icon_button" secondary_icon="icons/16px/maximise" secondary_icon_enabled="true" secondary_icon_alignment="far_right, centre_y" appearance="buttons/subtle/normal/button" />
+					<record id="column_heading">
+						<translation id="text" translation_id="330386" type="use" value="Reason[COMMENT: the reason why a relationship exists]" />
+					</record>
+				</record>
+				<!-- Apply button -->
+				<record id="Appl">
+					<record id="widget_info" class="icon_button" file="icons/16px/tick" icon_alignment="centre" appearance="buttons/subtle/normal/button" />
+					<record id="column_heading">
+						<translation id="text" translation_id="424582" type="use" value="Apply[COMMENT: backroom advice button text to apply the given advice, DIFFERENT to ID 247315 which is Apply in a job sense]" />
+					</record>
+				</record>
+			</list>
+
+			<list id="column_widget_properties">
+				<record index="1">
+					<flags id="alignment" value="left,centre_y" />
+				</record>
+			</list>
+		</widget>
+	</container>
+</panel>

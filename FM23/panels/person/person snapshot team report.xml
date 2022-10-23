@@ -1,0 +1,50 @@
+<panel>
+
+	<attachment_group class="horizontal_arrange" horizontal_layout="-1,-3" horizontal_offset="0" vertical_inset="0" />
+
+	<widget class="picture" id="picM" scale_picture="true" file="pictures/person/none/male/portrait" keep_aspect_ratio="true" image_alignment="left,centre_y">
+		<attachment class="test_setting_attachment" get_setting="show_portraits" default_value="true" set_property="hidn">
+			<list id="value">
+				<boolean value="false" />
+			</list>
+		</attachment>
+
+		<record id="object_property">
+			<list id="get_properties">
+				<record>
+					<integer id="get_property" value="fcgn" />
+					<!--Facegen data request-->
+				</record>
+				<record>
+					<integer id="get_property" value="Pfke" />
+					<!--Fake name request-->
+				</record>
+				<record>
+					<integer id="get_property" value="prpc" />
+					<integer id="set_property" value="valu" />
+				</record>
+			</list>
+		</record>
+	</widget>
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+		<container id="info" hidden="true">
+			<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+			<widget class="person_button" colour="black" style="semi_bold" id="perM" auto_size="vertical">
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="valu" />
+				</record>
+			</widget>
+
+			<widget class="text" id="anfo" size="small" colour="faded text" auto_size="vertical" />
+			<widget class="text" id="anfe" size="small" colour="faded text"  auto_size="vertical" />
+		</container>
+
+		<widget class="label" id="nofo">
+			<translation id="text" translation_id="320493" type="use" value="None currently[COMMENT: text indicating that there is no person to view here currently (e.g. a manager, captain, vice captain etc.)]" />
+		</widget>
+	</container>
+</panel>

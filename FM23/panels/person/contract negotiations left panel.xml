@@ -1,0 +1,414 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="hinc" set_property="hidn" target="incn" />
+		<record get_property="hbud" set_property="hidn" target="tstb" />
+		<record get_property="hscr" set_property="hscr" target="plaw" />
+		<record get_property="hcor" set_property="hcor" target="plaw" />
+		<record get_property="Piag" set_property="Piag" target="agmi" />
+	</list>
+
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container>
+		<attachment_group class="vertical_arrange" vertical_alignment="bottom,extend">
+			<global id="vertical_gap" name="ui.main_contrast_box_gap" />
+		</attachment_group>
+
+		<container class="main_transparent_box" navigation_container="false">
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend"/>
+
+			<container class="client_object_viewer_xml_panel" id="agmi">
+				<list id="properties_to_forward">
+					<record get_property="Pipl" set_property="Pipl" target="poct" />
+					<record get_property="Pinp" set_property="Pinp" target="poct" />
+					<record get_property="Piag" set_property="Piag" target="poct" />
+				</list>
+				
+				<attachment_group class="vertical_arrange_autosize" />
+
+				<container id="pers">
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="50,-1,100" horizontal_gap="6" />
+
+					<widget class="object_portrait_picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x,top" height="50">
+
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="objt" />
+									<integer id="set_property" value="objt" />
+								</record>
+							</list>
+						</record>
+					</widget>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" />
+
+						<widget class="job_label" auto_size="vertical" font="title" alignment="left,centre_y" colour="faded text" size="small">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="PcJj" />
+										<integer id="set_property" value="valu" />
+									</record>
+								</list>
+							</record>
+						</widget>
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+
+							<widget class="person_button" colour="black" id="poct" auto_size="all" font="value" info_popup_enabled="true" icon_enabled="true" navigation_focus_target="false">
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="Pers" />
+											<integer id="set_property" value="valu" />
+										</record>
+									</list>
+								</record>
+							</widget>
+
+							<widget class="relationship_label" id="char" auto_size="vertical" display_format="3" colour="faded text">
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="ARel" />
+											<integer id="set_property" value="valu" />
+										</record>
+									</list>
+								</record>
+							</widget>
+
+						</container>
+
+
+
+					</container>
+
+					<container id="AgPt">
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+
+						<widget class="text" auto_size="all" font="title" alignment="left,centre_y" colour="faded text" size="small">
+							<translation id="text" translation_id="308644" type="use" value="Patience[COMMENT: his patience in negotiation]" />
+						</widget>
+
+						<widget class="horizontal_percentage_bar" id="apat" height="20" label_width="0" max_value="20">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="Apat" />
+										<integer id="set_property" value="valu" />
+									</record>
+								</list>
+							</record>
+						</widget>
+
+					</container>
+
+
+				</container>
+
+			</container>
+
+			<!-- The agents demands -->
+			<container class="property_list_viewer_xml_panel" id="cell" file="generic/response holder panel for promises"/>
+
+		</container>
+
+		<container id="plAP" hidden="true">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0">
+				<global id="vertical_gap" name="ui.main_box_gap" />
+			</attachment_group>
+
+			<container class="main_transparent_box" id="plds" navigation_container="true">
+				<attachment class="hide_medium_horizontal" />
+				<string id="remove_if" value="ui.is_fmt_controller_skin" />
+				<list id="properties_to_forward">
+					<record get_property="objt" set_property="objt" target="plaw" />
+				</list>
+
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+				<widget class="player_personal_details_panel" id="plaw" auto_size="vertical" file="player/player personal details for contract promises">
+
+				</widget>
+
+
+			</container>
+
+			<container id="incn" class="main_transparent_box">
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" />
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend" />
+
+					<widget class="text" font="title" colour="accent" auto_size="vertical">
+						<translation id="text" translation_id="491989" type="use" value="Player Interest[COMMENT: AREA: Contracts; SUB-AREA: Contract Negotiations; FR-BN: TBC; TONE: Formal; CHARLIMIT: Shortish; REF-ID: n/a; NOTE: title for how interested the player is in the proposed playing time as part of contract negotiations, Playing Time is ID 423887]" />
+					</widget>
+
+					<widget class="horizontal_percentage_bar" id="ibar" width="60" height="20" label_width="0" max_value="100">
+
+					</widget>
+
+
+				</container>
+
+				<widget class="text" id="itxt" size="large" style="bold" auto_size="vertical" multiline="true">
+
+				</widget>
+
+
+				<widget class="text" id="mitx" auto_size="vertical" multiline="true">
+
+				</widget>
+
+				<widget class="text" id="sitx" auto_size="vertical" multiline="true">
+
+				</widget>
+
+				<widget class="text" id="litx" auto_size="vertical" multiline="true">
+
+				</widget>
+
+				<widget class="text" id="nitx" auto_size="vertical" multiline="true">
+
+				</widget>
+
+			</container>
+
+			<container id="aprc" class="main_transparent_box">
+				<attachment class="show_medium_vertical" id="smv1" disabled="true" />
+
+				<attachment class="test_global_attachment" mode="equal" get_property="CNsp" value="1" set_property="hidden" skip_if_false="true" />
+				<attachment class="test_global_attachment" mode="equal" get_property="CNsp" value="1" set_property="disabled" skip_if_false="false">
+					<event id="action_event" event_id="set_attachment_property_event" attachment_id="smv1" />
+				</attachment>
+
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="10" />
+				<list id="properties_to_forward">
+					<record get_property="objt" set_property="objL" target="apbt" />
+				</list>
+
+
+				<widget class="text" auto_size="vertical" font="title" colour="accent">
+					<translation id="text" translation_id="320154" type="use" value="Promises[COMMENT: player status panel; panel header title for a section listing all promises a manager has made to a player]" />
+				</widget>
+
+				<widget class="property_list_table" id="apbt" mode="fill_rows" auto_size="vertical" auto_size_maximum_height="500" row_spacing="5" auto_size_rows="true" fixed_size_rows="false">
+
+
+					<record id="Cols" file="panels/widgets/player agreed promises properties" />
+
+
+					<!--default view-->
+					<flags id="default_view" value="over" />
+
+					<list id="viws">
+						<record id="over">
+							<translation id="name" translation_id="257300" type="use" value="Overview[COMMENT: Overview menu item on the notes view menu]" />
+							<record id="view">
+								<flags id="icon" />
+								<flags id="text" />
+
+							</record>
+						</record>
+
+					</list>
+
+				</widget>
+
+			</container>
+
+			<container id="tstb" class="main_transparent_box" navigation_container="true">
+
+				<attachment_group class="vertical_arrange_autosize" />
+
+				<widget class="property_list_viewer_xml_panel" id="budc" file="person/contract negotiation budget impact" auto_size="vertical" />
+
+
+			</container>
+
+			<container id="tptc" class="main_transparent_box">
+				<attachment class="test_screen_size_attachment" id="smv2">
+					<list id="properties">
+						<record>
+							<boolean id="test_on_layout" value="true" />
+							<flags id="alignment" value="vertical" />
+							<integer id="min_value" value="1000" />
+							<integer id="max_value" value="100000" />
+							<!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+							<symbol id="set_property" value="shown" />
+						</record>
+					</list>
+				</attachment>
+
+				<attachment class="test_global_attachment" mode="equal" get_property="CNsp" value="0" set_property="hidden" skip_if_false="true" />
+				<attachment class="test_global_attachment" mode="equal" get_property="CNsp" value="0" set_property="disabled" skip_if_false="false">
+					<event id="action_event" event_id="set_attachment_property_event" attachment_id="smv2" />
+				</attachment>
+
+
+				<attachment_group class="vertical_arrange_autosize" />
+
+				<list id="properties_to_forward">
+					<record get_property="objt" set_property="objt" target="tobc" />
+				</list>
+
+				<container class="client_object_viewer_xml_panel" id="tobc" should_force_refresh="true">
+
+					<attachment_group class="vertical_arrange_autosize" />
+
+					<widget class="game_formatted_label" auto_size="vertical" font="title" colour="accent">
+						<translation id="format" translation_id="491998" type="use" value="[%club#1-short] Playing Time Break Down[COMMENT: AREA: Contracts; SUB-AREA: Contract Negotiations; FR-BN: TBC; TONE: Formal; CHARLIMIT: Shortish; REF-ID: n/a; NOTE: title for how the proposed playing time for a player breaks down by season, Playing Time is ID 423887]" />
+						<record id="object_property">
+							<list id="get_properties">
+								<record get_property="objt" set_property="var1" />
+							</list>
+						</record>
+					</widget>
+
+					<widget class="property_list_table" mode="fill_rows,stripe_rows" auto_size="vertical">
+
+						<record id="object_property">
+							<integer id="get_property" value="CPTb" />
+							<integer id="set_property" value="objL" />
+						</record>
+
+						<record id="Cols" file="panels/widgets/club playing time breakdown properties" />
+
+
+						<!--default view-->
+						<flags id="default_view" value="over" />
+
+						<list id="viws">
+							<record id="over">
+								<translation id="name" translation_id="257300" type="use" value="Overview[COMMENT: Overview menu item on the notes view menu]" />
+								<record id="view">
+									<flags id="valu" />
+									<flags id="pbpt" />
+
+								</record>
+							</record>
+
+						</list>
+
+					</widget>
+				</container>
+
+
+			</container>
+
+		</container>
+
+		<container id="stAp" hidden="true">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0">
+				<global id="vertical_gap" name="ui.main_contrast_box_gap" />
+			</attachment_group>
+
+			<container class="main_transparent_box">
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+				<container height="55">
+					<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_gap="8" />
+
+					<widget class="picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x" height="45" width="45">
+						<record id="object_property">
+							<list id="get_properties">
+								<!--Facegen data request-->
+								<record get_property="fcgn" />
+								<!--Fake name request-->
+								<record get_property="Pfke" />
+								<record get_property="prpc" set_property="valu" />
+							</list>
+						</record>
+					</widget>
+
+					<container>
+						<attachment_group class="vertical_arrange" vertical_gap="0" vertical_alignment="middle"/>
+
+						<widget class="person_button" auto_size="all" colour="black" style="bold" info_popup_enabled="true" icon_enabled="true" person_is_player="false" navigation_focus_target="false">
+							<record id="object_property" get_property="objt" set_property="valu" />
+						</widget>
+
+
+						<container>
+							<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" />
+
+							<widget class="object_portrait_picture" image_alignment="centre" scale_picture="true" wants_mouse_events="true" width="20" height="20">
+								<record id="object_property" dont_set_hint="true" get_property="PNat" set_property="objt" />
+							</widget>
+
+							<widget class="game_formatted_label" auto_size="vertical">
+								<translation id="format" translation_id="491999" type="use" value="[%number#1] year-old [%job#2][COMMENT: AREA: Contracts; SUB-AREA: Contract Negotiations; FR-BN: TBC; TONE: Formal; CHARLIMIT: Shortish; REF-ID: n/a; NOTE: person description label]" />
+								<record id="object_property">
+									<list id="get_properties">
+										<record get_property="Page" set_property="var1" />
+										<record get_property="Ppfj" set_property="var2" />
+									</list>
+								</record>
+								<record id="forced_formats" var2="vf_job" />
+							</widget>
+
+
+						</container>
+
+
+
+					</container>
+
+				</container>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+
+					<widget class="text" font="title" auto_size="vertical">
+						<translation id="text" translation_id="227963" type="use" value="Reputation" />
+					</widget>
+
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_gap="20" />
+
+						<widget class="global_reputation_stars_label" auto_size="all" subject_is_person="true" navigation_focus_target="false">
+							<record id="object_property" get_property="Prsa" set_property="valu" />
+						</widget>
+
+						<widget class="coaching_badge_label" navigation_focus_target="false">
+							<record id="object_property" get_property="Pcqu" set_property="valu" />
+						</widget>
+
+					</container>
+				</container>
+
+		        <widget class="non_player_roles_panel" file="non_player/non player roles panel for contract negotiations" show_only_suitable="true">
+		          <record id="object_property">
+		            <list id="get_properties">
+		              <record>
+		                <integer id="get_property" value="PcJj" />
+		                <integer id="set_property" value="valu" />
+		              </record>
+		            </list>
+		          </record>
+		        </widget>
+        
+
+			</container>
+
+			<container class="main_transparent_box" navigation_container="true">
+				<string id="remove_if" value="ui.is_fmt_controller_skin" />
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" vertical_gap="10" />
+
+				<widget class="team_staff_subteam_overview_panel" id="pjsb" auto_size="vertical" file="team/team staff subteam impact for contract negotiations" >
+
+				</widget>
+
+				<widget class="team_staff_subteam_overview_panel" id="sjsb" auto_size="vertical" file="team/team staff subteam impact for contract negotiations" hibb="true" >
+
+				</widget>
+
+			</container>
+
+		</container>
+
+
+	</container>
+
+</panel>

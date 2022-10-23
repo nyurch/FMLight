@@ -1,0 +1,49 @@
+<panel >
+	<!-- Version of the competition_player_stats_panel. Displays a the top player statistic in a panel -->
+	<layout class="fit_children_attachment" alignment="vertical"  />
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="0" apply_to_children="true" />
+
+	<container class="property_list_viewer_xml_panel" id="tops">
+		<layout class="fit_children_attachment" alignment="vertical"  />
+		<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="0" apply_to_children="true" />
+
+		<!-- Radio button for selecting this stat -->
+		<widget class="radio_button" id="selc" group="psrb" group_parent_level="radC" click_event="PstS" select_event="rbse" icon_enabled="false" appearance="switches/custom/competition stats/list/button" embed_in_frame="true" show_button_appearance="true">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" embed_in_frame="true" />
+		</widget>
+
+		<!-- Player name and team-->
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0,10,0,0" />
+
+			<widget class="label" alignment="left,bottom" colour="text" size="small" auto_size="none" height="20" highlighted_text_colour="faded text">
+				<record id="object_property" get_property="name" dont_set_object="true" />
+			</widget>
+
+			<!-- Due to the weird structure used here with the radio button behind the other bits we need to propagate events when not over a hotspot so they hit it correctly-->
+			<container class="container_with_mouse_events" propagate_mouse_events="true" disable_wheel="false">
+				<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="0" apply_to_children="true" />
+
+				<widget class="game_formatted_label" maximum_items="3" auto_size="vertical" colour="text" highlighted_text_colour="faded text" multiline="true">
+					<list id="format">
+						<record value="1">
+							<translation id="format" translation_id="392283" type="use" value="[%person#2], [%team#3-short] - [%string#4][COMMENT: FR 8873; Competition player stats; brief stat info - player, their team and the stat value]" />
+						</record>
+						<record default_value="true">
+							<translation id="format" translation_id="392276" type="use" value="[%number#1] Players - [%string#4][COMMENT: FR 8873; Competition player stats; brief stat info - number of players with identical stat value, then the value]" />
+						</record>
+					</list>
+					<record id="object_property">
+						<list id="get_properties">
+							<record get_property="csTR" set_property="var1" dont_set_object="true" />
+							<record get_property="Pers" set_property="var2" dont_set_object="true" />
+							<record get_property="Ttea" set_property="var3" dont_set_object="true" />
+							<record get_property="csSS" set_property="var4" dont_set_object="true" />
+						</list>
+					</record>
+				</widget>
+			</container>
+		</container>
+	</container>
+</panel>

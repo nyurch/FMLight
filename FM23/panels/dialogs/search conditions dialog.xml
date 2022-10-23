@@ -1,0 +1,283 @@
+<panel width="1006" height="670" appearance="">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<container class="standard_popup_box">
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		<layout class="arrange_vertical_attachment" layout="-1,15,45" gap="0" offset="0" />
+
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+			<layout class="arrange_vertical_attachment" layout="50,4,-1" gap="0" offset="0" />
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" />
+				<layout class="arrange_horizontal_attachment" layout="-1,-3,-1" />
+
+				<widget class="label" size="13">
+					<translation id="text" translation_id="227995" type="use" value="Player Search" />
+				</widget>
+
+				<!--do not change this id-->
+				<widget class="widget_popup_button" id="topb" widget_type="client_object_viewer_xml_panel" popup_alignment="centre_x,bottom" offset_y="2" appearance="buttons/standard/normal/button" size="13">
+					<record id="widget_properties" file="generic/search conditions popup container" width="960" height="450" />
+				</widget>
+
+				<widget class="spacer" />
+
+			</container>
+
+			<widget class="horizontal_divider" />
+
+			<container id="dtls" hidden="true">
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+				<layout class="arrange_vertical_attachment" layout="60,1,-1" gap="0" offset="0" />
+
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+					<layout class="arrange_horizontal_attachment" alignment="left" gap="0" offset="0" />
+
+					<animation class="translate_animation" start_value="0, -0.2" end_value="0, 0" duration="0.2" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_screen" />
+
+					<container id="trtc" width="144" height="60">
+						<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+						<layout class="arrange_horizontal_attachment" alignment="left" gap="0" offset="0" />
+
+						<container width="140" height="60">
+							<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="8" />
+							<layout class="arrange_vertical_attachment" layout="-1,-2" gap="8" offset="0" />
+
+							<widget class="label" size="11" spec="title">
+								<translation id="text" translation_id="336071" type="use" value="Transfer Type[COMMENT: transfer lists; column header, type of transfer proposed for a player]" />
+							</widget>
+
+							<widget class="popup_button" id="trty" select_event="trte" size="10" auto_size="vertical" />
+						</container>
+
+						<widget class="vertical_divider"/>
+					</container>
+
+
+
+					<container id="trbc" width="284" height="60">
+						<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+						<layout class="arrange_horizontal_attachment" alignment="left" gap="0" offset="0" />
+
+						<container width="280" height="60">
+							<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="8" />
+							<layout class="arrange_vertical_attachment" layout="-1,-2" gap="8" offset="0" />
+
+							<container>
+								<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+								<layout class="arrange_horizontal_attachment" layout="-1,-1" gap="8" offset="0" />
+
+								<widget class="label" size="11" spec="title">
+									<translation id="text" translation_id="291309" type="use" value="Transfer Budget[COMMENT:Transfer budget label]" />
+								</widget>
+
+								<widget class="label" id="ttbu" alignment="right" size="11">
+								</widget>
+
+							</container>
+
+							<widget class="cash_selection_list" id="trbu">
+								<record id="default_properties" alignment="right,centre_y" colour="black"/>
+							</widget>
+						</container>
+
+						<widget class="vertical_divider"/>
+
+					</container>
+
+
+
+					<container width="280">
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="8" />
+						<layout class="arrange_vertical_attachment" layout="17,30" gap="8" offset="0" />
+
+						<widget class="label" size="11" spec="title">
+							<translation id="text" translation_id="229407" type="use" value="Age" />
+						</widget>
+
+						<container>
+							<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+							<layout class="arrange_horizontal_attachment" alignment="left" gap="4" offset="0" />
+
+							<widget class="selection_list" id="mina" width="120" use_menu_for_plus_minus="false" height="30" select_event="mias"/>
+
+							<widget class="label" auto_size="horizontal" height="30">
+								<translation id="text" translation_id="233089" type="use" value="-" />
+							</widget>
+
+							<widget class="selection_list" id="maxa" width="120" use_menu_for_plus_minus="false" height="30" select_event="maas"/>
+
+						</container>
+
+					</container>
+
+					<widget class="vertical_divider"/>
+
+					<container width="140" id="cuac">
+
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="8" />
+						<layout class="arrange_vertical_attachment" alignment="top" gap="8" offset="0" />
+
+						<widget class="label" size="11" spec="title" height="17">
+							<translation id="text" translation_id="251893" type="use" value="Current Ability[COMMENT: scout report panel box heading]" />
+						</widget>
+
+						<widget class="popup_button" id="cuab" height="30" select_event="mcas">
+							<translation id="hint" translation_id="249826" type="use" value="Is At Least[COMMENT - filter rule type]" />
+						</widget>
+
+					</container>
+
+					<widget class="vertical_divider"/>
+
+					<container width="140" id="poac">
+
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="8" />
+						<layout class="arrange_vertical_attachment" alignment="top" gap="8" offset="0" />
+
+						<widget class="label" size="11" spec="title" height="17">
+							<translation id="text" translation_id="251894" type="use" value="Potential Ability[COMMENT: scout report panel box heading]" />
+						</widget>
+
+						<widget class="popup_button" id="poab" height="30" select_event="mpas">
+							<translation id="hint" translation_id="249826" type="use" value="Is At Least[COMMENT - filter rule type]" />
+						</widget>
+
+					</container>
+
+				</container>
+
+				<widget class="horizontal_divider" />
+
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+					<layout class="arrange_horizontal_attachment" layout="-1,1,-1" gap="0" offset="0" />
+
+					<container class="inner_box">
+						<translation id="title" translation_id="229822" type="use" value="Attributes"/>
+
+						<animation class="translate_animation" start_value="-0.2, 0" end_value="0, 0" duration="0.6" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_screen" />
+
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="4" />
+						<layout class="arrange_vertical_attachment" layout="-1,25,8" gap="0" offset="0" />
+
+						<container>
+							<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+							<layout class="arrange_horizontal_attachment" layout="-1,-1,-1" gap="2" offset="0" />
+
+							<widget class="table" id="tect" mode="fill_rows, printable, select_rows, select_multiple, show_bullets, always_multi_select" layout="-1" row_height="24" row_spacing="0">
+								<list id="headings">
+									<record alignment="left,centre_y" column_span="3">
+										<translation id="text" translation_id="229413" type="use" value="Technical" />
+									</record>
+								</list>
+
+								<!-- small inset from sides of table -->
+								<list id="column_table_properties">
+									<record indx="0" left="4" right="4" sort_disabled="true" />
+								</list>
+							</widget>
+
+							<widget class="table" id="ment" mode="fill_rows, printable, select_rows, select_multiple, show_bullets, always_multi_select" layout="-1" row_height="24" row_spacing="0">
+								<list id="headings">
+									<record alignment="left,centre_y" column_span="3">
+										<translation id="text" translation_id="230106" type="use" value="Mental" />
+									</record>
+								</list>
+
+								<!-- small inset from sides of table -->
+								<list id="column_table_properties">
+									<record indx="0" left="4" right="4" sort_disabled="true" />
+								</list>
+
+							</widget>
+
+							<widget class="table" id="phyt" mode="fill_rows, select_rows, select_multiple, show_bullets, always_multi_select" layout="-1" row_height="24" row_spacing="0">
+								<list id="headings">
+									<record alignment="left,centre_y" column_span="3">
+										<translation id="text" translation_id="230003" type="use" value="Physical" />
+									</record>
+								</list>
+
+								<!-- small inset from sides of table -->
+								<list id="column_table_properties">
+									<record indx="0" left="4" right="4" sort_disabled="true" />
+								</list>
+							</widget>
+						</container>
+
+						<widget class="button" alignment="centre" id="savb" click_event="savc" auto_size="all">
+							<translation id="text" translation_id="364762" type="use" value="Specify Attribute Values" />
+
+						</widget>
+
+						<widget class="spacer" />
+
+					</container>
+
+					<widget class="vertical_divider"/>
+
+					<container class="inner_box">
+						<translation id="title" translation_id="364209" type="use" value="Additional Conditions[COMMENT: FR 6137, scout assignement dialog text, search conditions]" />
+
+						<animation class="translate_animation" start_value="0.2, 0" end_value="0, 0" duration="0.6" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_screen" />
+
+						<!-- embedded buttons -->
+						<container id="btns" height="26" embed_in_frame="true">
+							<attachment_group class="title_embedded_panel_right" />
+
+							<widget class="popup_button" id="addc" auto_size="all" fixed="true" embed_in_frame="true" />
+
+						</container>
+
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+						<layout class="arrange_vertical_attachment" layout="-1" gap="0" offset="0" />
+
+						<!-- table containing filter rules -->
+						<widget class="filter_table" id="fcrt" show_compare_rules="true" mode="fill_rows, stripe_rows" show_enabled_column="false" />
+
+					</container>
+
+				</container>
+
+			</container>
+
+		</container>
+
+		<widget class="horizontal_divider" />
+
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="arrange_horizontal_attachment" layout="770,-1" gap="0" offset="0" />
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+				<layout class="arrange_horizontal_attachment" alignment="left" gap="0" offset="10" />
+
+				<widget class="manager_text" id="qses" width="750" height="40" alignment="left,top">
+					<translation id="text" translation_id="381876" type="use" value="Based upon [%person#1-your] requirements, all existing scout reports held by the club will be examined and any suitable players will be returned[COMMENT: used on quick search dialog]" />
+				</widget>
+			</container>
+
+			<container>
+				<attachment_group class="button_arrangement_right" />
+
+				<widget class="button" id="canc" auto_size="horizontal" height="30" hidden="true">
+					<translation id="text" translation_id="229828" type="use" value="Cancel" />
+					<layout class="centre_in_parent_attachment" alignment="vertical"/>
+				</widget>
+
+				<widget class="primary_icon_tick_button" id="ok  " hidden="true">
+					<translation id="text" translation_id="229829" type="use" value="Ok" />
+					<layout class="centre_in_parent_attachment" alignment="vertical"/>
+				</widget>
+
+			</container>
+		</container>
+
+	</container>
+
+</panel>

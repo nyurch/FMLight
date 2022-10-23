@@ -1,0 +1,126 @@
+<panel>
+    <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+    <!-- Player Information Table -->
+    <widget class="table" mode="fill_rows" layout="-15,-20,1,-15,-20" auto_size_rows="false" fixed_size_rows="true" row_height="33">
+        <record id="object_property" get_property="objt" set_property="objt"/>
+
+        <record id="default_properties" font="text" size="normal"/>
+
+        <list id="row_properties">
+            <record index="0" row_height="39"/>
+            <record index="1">
+                <flags id="appearance" value="tables/standard/row/alternate/row" />
+            </record>
+            <record index="3">
+                <flags id="appearance" value="tables/standard/row/alternate/row" />
+            </record>
+            <record index="5">
+                <flags id="appearance" value="tables/standard/row/alternate/row" />
+            </record>
+        </list>
+
+        <list id="column_table_properties">
+            <record index="0" left="6"/>
+            <record index="1" right="6"/>
+            <record index="2" top="4" bottom="4"/>
+            <record index="3" left="6"/>
+            <record index="4" right="6"/>
+        </list>
+
+        <list id="column_widget_properties">
+            <record index="0" alignment="left,centre_y" colour="faded text"/>
+            <record index="1" alignment="right,centre_y"/>
+            <record index="3" alignment="left,centre_y" colour="faded text"/>
+            <record index="4" alignment="right,centre_y"/>
+        </list>
+
+        <!-- Nationality & Caps -->
+        <container class="vertical_arrange_container" layout="-25,-20" gap="-5" column_span="5" row="0" col="0">
+
+            <!-- Nationality -->
+            <container class="horizontal_arrange_container" alignment="fill" gap="0">
+
+                <widget class="label" colour="faded text">
+                    <translation id="text" translation_id="227841" type="use" value="Nationality" />
+                </widget>
+
+                <widget class="nation_button" format="[%nation#1-nationality]" icon_alignment="right" alignment="right,centre_y">
+                    <record id="object_property" get_property="Pnat"/>
+                </widget>
+
+            </container>
+
+            <!-- Caps -->
+            <widget class="international_appearances_label" alignment="right" size="small">
+                <record id="object_property" dont_set_hint="true" get_property="Pist" />
+            </widget>
+
+        </container>
+
+        <!-- Age -->
+        <widget class="label" column_span="1" row="1" col="0">
+            <translation id="text" translation_id="458477" type="use" value="D.O.B" />
+        </widget>
+
+        <widget class="dob_label" column_span="4" row="1" col="1" display_format="1">
+            <record id="object_property" get_property="Pdob"/>
+        </widget>
+
+        <!-- Coaching Qualifications-->
+        <widget class="label" column_span="2" row="2" col="0">
+            <record id="object_property" get_property="Pcqu" name="true"/>
+        </widget>
+
+        <widget class="coaching_badge_label" column_span="4" row="2" col="1">
+            <record id="object_property" get_property="Pcqu"/>
+        </widget>
+
+        <!-- Preferred Job -->
+        <widget class="label" column_span="2" row="3" col="0">
+            <record id="object_property" get_property="Ppfj" name="true"/>
+        </widget>
+
+        <widget class="job_label" column_span="4" row="3" col="1">
+            <record id="object_property" get_property="Ppfj"/>
+        </widget>
+
+        <!-- Preferred Job Rating -->
+        <widget class="label" column_span="2" row="4" col="0">
+            <record id="object_property" get_property="NIst" name="true"/>
+        </widget>
+
+        <widget class="person_stars_range_strip" column_span="4" row="4" col="1">
+            <record id="object_property" get_property="NIst"/>
+        </widget>
+
+        <!-- Wages -->
+        <widget class="label" row="5" col="0">
+            <translation id="text" translation_id="227799" type="use" value="Wage" />
+        </widget>
+
+        <widget class="wage_label" row="5" col="1" format="1">
+            <record id="object_property" get_property="Pcww" />
+        </widget>
+
+        <widget class="vertical_divider" row="5" col="2"/>
+
+        <!-- Contract Expires -->
+        <widget class="label" row="5" col="3">
+            <translation id="text" translation_id="227784" type="use" value="Expires" />
+        </widget>
+
+        <container class="player_contract_panel" file="none" row="5" col="4">
+            <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+            <record id="object_property" get_property="objt" set_property="objt" />
+
+            <widget class="editable_client_object_property_panel" id="expw" appearance="" size="normal">
+                <record id="widget_properties" alignment="right,centre_y" />
+            </widget>
+
+        </container>
+
+    </widget>
+
+</panel>

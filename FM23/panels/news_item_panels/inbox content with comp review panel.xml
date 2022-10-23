@@ -1,0 +1,222 @@
+<panel>
+	<container class="scrolling_box">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+		<!-- content area -->
+		<container>
+			<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+			<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+			<!--main body-->
+			<container id="main">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="8" horizontal_alignment="horizontal" />
+
+				<!--the banners for winners will be added in code here-->
+
+				<!--blurb about the champions-->
+				<widget class="text" id="blub" auto_size="vertical" />
+
+				<widget class="horizontal_divider" />
+
+				<!--promoted/relegated-->
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+					<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0" />
+					<layout class="arrange_horizontal_attachment" alignment="fill" offset="0" />
+
+					<!--promoted-->
+					<container class="inner_subtle_box" appearance="boxes/titled/compact/paper" id="prom" colour="positive">
+						<layout class="fit_children_attachment" alignment="vertical,extend" gap="0" offset="0" />
+						<layout class="arrange_horizontal_attachment" alignment="left" wrap="true" gap="0" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+					</container>
+
+					<!--relegated-->
+					<container class="inner_subtle_box" appearance="boxes/titled/compact/paper" id="rele" colour="negative">
+						<translation id="title" translation_id="249385" type="use" value="Relegated[COMMENT: home_page; team league/group fate]" />
+
+						<layout class="fit_children_attachment" alignment="vertical,extend" gap="0" offset="0" />
+						<layout class="arrange_horizontal_attachment" alignment="left" wrap="true" gap="0" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+					</container>
+				</container>
+
+				<!--overachievers-->
+				<container class="inner_subtle_box" id="oabx" appearance="boxes/titled/compact/paper" colour="text">
+					<translation id="title" translation_id="346588" type="use" value="Biggest Overachievers[COMMENT: season summary review; section title for most overachieving team]" />
+
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" />
+					<layout class="fit_children_attachment" alignment="vertical" />
+					<layout class="arrange_horizontal_attachment" layout="40, -1" gap="8" />
+
+					<!--logo-->
+					<widget class="object_portrait_picture" id="oalw" clickable="true" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
+
+					<!--text-->
+					<widget class="text" id="oasw" auto_size="vertical" />
+				</container>
+
+				<!--underachievers-->
+				<container class="inner_subtle_box" id="uabx" appearance="boxes/titled/compact/paper" colour="text">
+					<translation id="title" translation_id="350745" type="use" value="Biggest Underachievers[COMMENT: season summary review; section title for most underachieving team]" />
+
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" />
+					<layout class="fit_children_attachment" alignment="vertical" />
+					<layout class="arrange_horizontal_attachment" layout="40, -1" gap="8" />
+
+					<!--logo-->
+					<widget class="object_portrait_picture" id="ualw" clickable="true" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
+
+					<!--text-->
+					<widget class="text" id="uasw" auto_size="vertical" />
+				</container>
+
+				<!--best match-->
+				<container class="inner_subtle_box" id="BsMt" appearance="boxes/titled/compact/paper" colour="text">
+					<translation id="title" translation_id="420674" type="use" value="Best Match[COMMENT: season summary review; section title for best match of the season]" />
+
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" />
+					<layout class="fit_children_attachment" alignment="vertical" />
+					<layout class="arrange_horizontal_attachment" layout="165, -1" gap="8"/>
+
+					<!--match logos and score-->
+					<container class="client_object_viewer_xml_panel" id="fxdt" height="60">
+						<layout class="arrange_horizontal_attachment" alignment="fill" gap="0" offset="0" />
+						<layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true" />
+
+						<!--home team-->
+						<widget class="object_portrait_picture" id="htpi" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" height="60">
+							<record id="object_property">
+								<integer id="get_property" value="home" />
+								<integer id="set_property" value="objt" />
+							</record>
+						</widget>
+
+						<!--result-->
+						<widget class="fixture_button" alignment="centre" style="bold" size="large" id="vlbl" auto_size="vertical" swap_for_context_team="false">
+							<record id="object_property">
+								<integer id="get_property" value="FxRs" />
+							</record>
+						</widget>
+
+						<!--away team-->
+						<widget class="object_portrait_picture" id="atpi" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" height="60">
+							<record id="object_property">
+								<integer id="get_property" value="away" />
+								<integer id="set_property" value="objt" />
+							</record>
+						</widget>
+					</container>
+
+					<!--match report-->
+					<widget class="text" id="mtrp" auto_size="vertical" alignment="left,centre_y" />
+				</container>
+			</container>
+
+
+			<!--bit at the right with picture, top goalscorer, top assister and highest rated player-->
+			<container class="inner_subtle_box" width="260" red_replacement="blue">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<!--picture-->
+				<container id="ICdi" height="156">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				</container>
+
+				<!--top goalscorer-->
+				<container class="inner_subtle_box_no_margin" id="scSB" height="110">
+					<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+					<!--mugshot-->
+					<widget class="object_portrait_picture" id="scpc" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="60" />
+
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="middle" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+						<!--comp link-->
+						<container>
+							<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+							<layout class="stick_to_sides_attachment" alignment="left,top" inset="0" apply_to_children="true" />
+
+							<widget class="link_button_title" id="scln" section="cspl">
+							</widget>
+						</container>
+						<!--name-->
+						<widget class="person_button" id="scnm" auto_size="vertical" alignment="left,centre_y" colour="black" style="bold" multiline="true" />
+						<!--team-->
+						<widget class="team_button" id="sccl" auto_size="vertical" alignment="left,centre_y" format="[%team#1-long]" />
+						<!--stat-->
+						<widget class="text" id="scvl" auto_size="vertical" colour="faded text" alignment="left,centre_y" />
+					</container>
+				</container>
+
+				<!--top assister-->
+				<container class="inner_subtle_box_no_margin" id="asSB" height="110">
+					<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+					<!--mugshot-->
+					<widget class="object_portrait_picture" id="aspc" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="60" />
+
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="middle" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+						<!--comp link-->
+						<container>
+							<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+							<layout class="stick_to_sides_attachment" alignment="left,top" inset="0" apply_to_children="true" />
+
+							<widget class="link_button_title" id="asln" section="cspl">
+							</widget>
+						</container>
+						<!--name-->
+						<widget class="person_button" id="asnm" auto_size="vertical" colour="black" style="bold" alignment="left,centre_y" multiline="true" />
+						<!--team-->
+						<widget class="team_button" id="ascl" auto_size="vertical" alignment="left,centre_y" format="[%team#1-long]" />
+						<!--stat-->
+						<widget class="text" id="asvl" auto_size="vertical" colour="faded text" alignment="left,centre_y" />
+					</container>
+				</container>
+
+				<!--top rated person-->
+				<container id="raSB" class="inner_subtle_box_no_margin" height="110">
+					<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+					<!--mugshot-->
+					<widget class="object_portrait_picture" id="rapc" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="60" />
+
+					<container>
+						<layout class="arrange_vertical_attachment" alignment="middle" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+						<!--comp link-->
+						<container>
+							<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+							<layout class="stick_to_sides_attachment" alignment="left,top" inset="0" apply_to_children="true" />
+
+							<widget class="link_button_title" id="raln" section="cspl">
+							</widget>
+						</container>
+						<!--name-->
+						<widget class="person_button" id="ranm" auto_size="vertical" colour="black" style="bold" alignment="left,centre_y" multiline="true" />
+						<!--team-->
+						<widget class="team_button" id="racl" auto_size="vertical" alignment="left,centre_y" format="[%team#1-long]" />
+						<!--stat-->
+						<widget class="text" id="ravl" auto_size="vertical" colour="faded text" alignment="left,centre_y" />
+					</container>
+				</container>
+			</container>
+
+		</container>
+
+	</container>
+
+</panel>

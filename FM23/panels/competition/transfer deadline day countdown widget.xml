@@ -1,0 +1,33 @@
+﻿<panel height="42" width="180">
+    <attachment_group class="horizontal_arrange" horizontal_alignment="right, extend" horizontal_inset="0, 0, 0, 0"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+
+    <container class="main_box" id="CtDn" appearance="boxes/custom/transfer deadline day/clock/countdown/paper">
+        <attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_gap="0" vertical_offset="-1"/>
+
+        <widget class="text" auto_size="none" alignment="centre, centre_y, can_scale" font="title" size="small" style="bold" colour="bg">
+            <translation id="text" translation_id="342607" type="use" value="Countdown[COMMENT: Game status screen; idle column showing seconds left/current match for each user]" />
+        </widget>
+        
+        <container class="main_box" id="CtDn" appearance="boxes/custom/transfer deadline day/clock/hours/paper">
+            <attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_gap="0" vertical_offset="0"/>
+            <widget class="text" id="TmLf" auto_size="none" alignment="centre, centre_y, can_scale"  multiline="true" font="title" colour="deadline day bg"/>
+        </container>
+    </container>
+
+    <widget class="current_game_date_widget" id="cgdw" height="42" hidden="true" can_control_own_visibility="false">
+        <attachment class="test_global_attachment" get_property="cont" set_property="disa">
+            <list id="value">
+                <integer value="-5"/>
+            </list>
+        </attachment>
+    </widget>
+
+    <container class="vertical_arrange_container" alignment="fill" width="16">
+        <widget class="icon_button" id="upar" icon="icons/16px/up" width="16" icon_alignment="centre" show_button_appearance="false" click_event="swap"/>
+        <widget class="icon_button" id="dnar" icon="icons/16px/down" width="16" icon_alignment="centre" show_button_appearance="false" click_event="swap"/>
+    </container>
+
+    <widget class="spacer" width="16"/>
+</panel>

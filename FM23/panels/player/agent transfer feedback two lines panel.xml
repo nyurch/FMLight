@@ -1,0 +1,42 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="2" vertical_gap="0" horizontal_inset="0" />
+
+	<boolean id="should_force_refresh" value="true" />
+
+	<container class="main_contrast_box" red_replacement="grey 300">
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend" horizontal_offset="0" vertical_offset="0" />
+
+		<container class="vertical_arrange_container" auto_size="vertical" alignment="horizontal" inset="4" gap="0">
+			<widget class="label" spec="title" auto_size="vertical" multiline="true">
+				<translation id="text" translation_id="466494" type="use" value="Agent Feedback:[COMMENT: FR 22718; transfer offer panel; button label to initiate conversation to persuade player to leave club]" />
+			</widget>
+
+			<widget class="label" id="FbTx" spec="text" auto_size="vertical" multiline="true" />
+		</container>
+
+		<container class="horizontal_arrange_container" auto_size="horizontal" alignment="right" height="32">
+			<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+
+			<widget class="primary_icon_button" id="perS" auto_size="horizontal" icon="icons/16px/speech bubble" click_event="perS">
+				<translation id="text" translation_id="466495" type="use" value="Persuade to Stay[COMMENT: FR 22718; transfer offer panel; button label to initiate conversation to persuade player to stay at club]" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+			</widget>
+
+			<widget class="primary_icon_button" id="perL" auto_size="horizontal" icon="icons/16px/speech bubble" click_event="perL">
+				<translation id="text" translation_id="466496" type="use" value="Persuade to Leave[COMMENT: FR 22718; transfer offer panel; button label to initiate conversation to persuade player to leave club]" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+			</widget>
+
+			<widget class="primary_icon_button" id="perA" auto_size="horizontal" icon="icons/16px/speech bubble" click_event="perA">
+				<translation id="text" translation_id="539019" type="use" value="Persuade to Accept Asking Price[COMMENT: AREA: Agent Feedback Panel; SUB-AREA: Conversation button; FR-BN: 34713; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Any other information the translator can make use of]" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+			</widget>
+
+			<widget class="popup_button" id="perJ" auto_size="horizontal" icon="icons/16px/speech bubble" fixed="true">
+				<translation id="text" translation_id="466497" type="use" value="Persuade to Join...[COMMENT: FR 22718; transfer offer panel; button label to initiate conversation to persuade player to join a particular club]" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+			</widget>
+		</container>
+	</container>
+
+</panel>

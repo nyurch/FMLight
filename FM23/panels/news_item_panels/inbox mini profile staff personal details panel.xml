@@ -1,0 +1,75 @@
+﻿<panel>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0"/>
+
+	<container class="inner_subtle_box" red_replacement="black">
+		<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+		<layout class="arrange_horizontal_attachment" alignment="left,extend"/>
+		<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
+
+		<!-- Contract info etc-->
+		<container class="vertical_arrange_container" auto_size="vertical" inset="0" offset="0" gap="0">
+
+			<container class="icon_box" icon="icons/26px/circle" height="60">
+				<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" do_not_size="false"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+				<record id="icon_properties" red_replacement="primary"/>
+
+				<!-- Get player status flags-->
+				<record id="object_property" get_property="Pnfo" dont_set_object="true"/>
+
+				<!-- Player status icon with club badge-->
+				<widget class="player_status_all_button" id="secw" appearance="buttons/custom/status round" auto_size="all" alignment="bottom" offset_x="0" offset_y="4" gap="-4" maximised="false" max_items_per_row_or_column="3" embed_in_frame="true">
+					<layout class="stick_to_sides_attachment" alignment="left,top" inset="0,0,0,0" embed_in_frame="true" />
+
+					<!-- Set icon to only show: Wnt, Bid, Trn, Lst, Loa, Yth, Wp-->
+					<integer id="type" value="1" />
+
+					<!-- Club badge image -->
+					<container width="26" height="26" embed_in_frame="true">
+						<widget class="object_portrait_picture" id="pclB" image_alignment="centre" scale_picture="true" width="14" height="14" embed_in_frame="true">
+							<layout class="centre_in_parent_attachment" alignment="all" embed_in_frame="true" />
+							<record id="object_property" dont_set_hint="true" get_property="Pclb" set_property="objt" />
+						</widget>
+					</container>
+				</widget>
+
+				<!--Non Player extra details (e.g. onloan at...)-->
+				<widget class="player_extra_details_text" id="plex" auto_size="vertical" size="small" colour="faded text">
+					<record id="object_property" get_property="NPxD" />
+				</widget>
+
+				<!--Job-->
+				<widget class="label" id="pcjo" auto_size="vertical" style="semi_bold" size="large"/>
+
+				<!--Wage / Expiry date-->
+				<container height="24" id="wged">
+					<layout class="arrange_horizontal_attachment" alignment="fill" offset="0" gap="0"/>
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+					<widget class="editable_client_object_property_panel" id="Pcww">
+						<record id="object_property" get_property="Pcww" />
+					</widget>
+					<widget class="editable_client_object_property_panel" id="Pcex">
+						<record id="object_property" get_property="Pcex" />
+					</widget>
+				</container>
+				<widget class="link_text" id="wgex" section="Pcnr" auto_size="vertical" size="normal" />
+			</container>
+
+			<!-- international job-->
+			<container class="horizontal_arrange_container" layout="43,16, -1" auto_size="vertical" inset="2" offset="4" gap="5">
+				<widget class="spacer" />
+				<widget class="object_portrait_picture" id="pnji" image_alignment="top" scale_picture="true" width="16" height="16"/>
+				<widget class="text" id="pnjo" auto_size="vertical" colour="faded text" size="small" alignment="left,top">
+					<layout class="stick_to_sides_attachment" alignment="top" inset="0"/>
+				</widget>
+			</container>
+		</container>
+	</container>
+
+</panel>

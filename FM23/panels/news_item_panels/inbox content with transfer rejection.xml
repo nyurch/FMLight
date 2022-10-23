@@ -1,0 +1,226 @@
+﻿<panel>
+    <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="220, -1"/>
+
+    <!-- left panel -->
+    <container class="inner_subtle_box">
+        <attachment_group class="vertical_arrange_autosize" vertical_offset="0"/>
+
+        <!-- player/club pictures widget -->
+        <container id="ICdi" height="120" width="220">
+            <layout class="arrange_vertical_attachment" alignment="top" offset="0"/>
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+        </container>
+
+        <container>
+            <attachment_group class="vertical_arrange_autosize_horizontal_centre" vertical_offset="0" vertical_alignment="top, extend"/>
+
+            <widget class="person_button" colour="black" id="plyB" auto_size="all" alignment="centre_x, centre_y" icon_alignment="centre_x, centre_y" person_is_player="true" style="semi_bold" size="large" info_popup_enabled="true" icon_enabled="true"/>
+            <widget class="team_button" id="plyT" auto_size="all" alignment="centre_x, centre_y" icon_alignment="centre_x, centre_y"/>
+            <widget class="person_nationality_button" id="plyN" auto_size="all"/>
+            <widget class="player_age_and_description_widget" id="plyD" auto_size="horizontal" height="24" alignment="centre_x, centre_y" size="small" colour="faded text"/>
+        </container>
+
+        <container class="main_contrast_box" id="AgFb" red_replacement="primary_button">
+            <attachment_group class="vertical_arrange_autosize" vertical_offset="0"/>
+
+            <widget class="text" font="label" auto_size="all">
+                <translation id="text" translation_id="466494" type="use" value="Agent Feedback:[COMMENT: FR 22718; transfer offer panel; button label to initiate conversation to persuade player to leave club]"/>
+            </widget>
+            <widget class="text" id="agnt" auto_size="vertical"/>
+        </container>
+
+        <widget class="horizontal_divider"/>
+
+        <widget class="text" font="label" alignment="left, centre_y" auto_size="vertical">
+            <translation id="text" translation_id="538841" type="use" value="Transfer Value[COMMENT: AREA: Transfers; SUB-AREA: Transfer Value; FR-BN: 34410; TONE: Formal; CHARLIMIT: Shortish, column header; REF-ID: 227806; NOTE: displays the player's estimated transfer value in a range]"/>
+        </widget>
+        <widget class="value_label" id="rpvl" font="value" alignment="left, centre_y" auto_size="vertical">
+            <translation id="text" translation_id="249426" type="use" value="N/A[COMMENT: Not Applicable, abbreviation]"/>
+        </widget>
+
+        <widget class="horizontal_divider"/>
+
+        <widget class="text" font="label" alignment="left, centre_y" auto_size="vertical">
+            <translation id="text" translation_id="227799" type="use" value="Wage"/>
+        </widget>
+        <widget class="text" id="rwag" font="value" alignment="left, centre_y" auto_size="vertical">
+            <translation id="text" translation_id="249426" type="use" value="N/A[COMMENT: Not Applicable, abbreviation]"/>
+        </widget>
+
+        <widget class="horizontal_divider"/>
+
+        <widget class="text" font="label" alignment="left, centre_y" auto_size="vertical">
+            <translation id="text" value="Expires" translation_id="227784" type="use"/>
+        </widget>
+        <widget class="text" id="rcex" font="value" alignment="left, centre_y" auto_size="vertical">
+            <translation id="text" translation_id="249426" type="use" value="N/A[COMMENT: Not Applicable, abbreviation]"/>
+        </widget>
+    </container>
+
+    <!-- right panel -->
+    <container>
+        <attachment_group class="vertical_arrange_autosize" vertical_offset="0"/>
+
+        <container>
+            <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1, -1"/>
+
+            <container>
+                <attachment_group class="vertical_arrange_autosize" vertical_offset="0"/>
+                <widget class="text" font="label" width="215" height="20">
+                    <translation id="text" value="Reason" translation_id="232957" type="use"/>
+                </widget>
+
+                <container>
+                    <attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="left"/>
+
+                    <widget class="picture" file="icons/16px/thumbs down" image_alignment="centre" width="20" height="20"/>
+                    <widget class="text" id="rjrs" multiline="true" colour="negative" auto_size="all">
+                        <translation id="text" translation_id="249426" type="use" value="N/A[COMMENT: Not Applicable, abbreviation]"/>
+                    </widget>
+                </container>
+            </container>
+
+            <container class="main_contrast_box_no_margin" red_replacement="negative">
+                <attachment_group class="vertical_arrange_autosize_all" horizontal_offset="8"/>
+                <layout class="centre_in_parent_attachment" alignment="vertical"/>
+
+                <container>
+                    <attachment_group class="horizontal_arrange_autosize_all_centre" horizontal_alignment="left" vertical_alignment="vertical"/>
+
+                    <widget class="picture" id="cats" file="icons/26px/transfer" width="30" height="30" image_alignment="centre" red_replacement="fg"/>
+                    <widget class="text" alignment="centre_y, left" auto_size="all">
+                        <translation id="text" translation_id="256851" type="use" value="Rejected[COMMENT: transfer centre screen; label text for rejected transfer]"/>
+                    </widget>
+                </container>
+            </container>
+        </container>
+
+        <container id="tofi">
+            <attachment_group class="vertical_arrange_autosize" vertical_offset="0"/>
+
+            <widget class="text" font="title" size="10" colour="fg" alignment="centre_y, left" height="30">
+                <translation id="text" value="Transfer Offer" translation_id="248364" type="use"/>
+            </widget>
+
+            <container>
+                <attachment_group class="vertical_arrange_autosize_all" vertical_offset="0"/>
+
+                <widget class="text" font="label" auto_size="all">
+                    <translation id="text" translation_id="336071" type="use" value="Transfer Type[COMMENT: transfer lists; column header, type of transfer proposed for a player]"/>
+                </widget>
+                <widget class="text" id="typV" font="value" size="small" auto_size="all">
+                    <translation id="text" translation_id="249426" type="use" value="N/A[COMMENT: Not Applicable, abbreviation]"/>
+                </widget>
+            </container>
+
+            <container>
+                <attachment_group class="vertical_arrange_autosize_all" vertical_offset="0"/>
+
+                <widget class="text" font="label" auto_size="all">
+                    <translation id="text" translation_id="423877" type="use" value="Playing Time[COMMENT: FR 14013, contract promise type]"/>
+                </widget>
+                <widget class="text" id="Pltm" font="value" size="small" auto_size="all">
+                    <translation id="text" translation_id="249426" type="use" value="N/A[COMMENT: Not Applicable, abbreviation]"/>
+                </widget>
+            </container>
+
+            <container id="fewg">
+                <attachment_group class="vertical_arrange_autosize_all" vertical_offset="0"/>
+
+                <container>
+                    <attachment_group class="vertical_arrange_autosize_all" vertical_offset="0"/>
+
+                    <widget class="text" font="label" auto_size="all">
+                        <translation id="text" translation_id="396639" type="use" value="Max. Monthly Fee[COMMENT: Transfer Target List panel; bug 122290]"/>
+                    </widget>
+                    <widget class="value_label" id="mont" font="value" auto_size="all">
+                        <translation id="text" translation_id="249426" type="use" value="N/A[COMMENT: Not Applicable, abbreviation]"/>
+                    </widget>
+                </container>
+
+                <container>
+                    <attachment_group class="vertical_arrange_autosize_all" vertical_offset="0"/>
+
+                    <widget class="text" font="label" auto_size="all">
+                        <translation id="text" translation_id="348991" type="use" value="Max. Wage Amount[COMMENT: transfers target list; column header]"/>
+                    </widget>
+                    <widget class="text" id="Mwag" font="value" auto_size="all">
+                        <translation id="text" translation_id="249426" type="use" value="N/A[COMMENT: Not Applicable, abbreviation]"/>
+                    </widget>
+                </container>
+            </container>
+        </container>
+
+        <container id="lofC">
+            <attachment_group class="vertical_arrange_autosize_all" vertical_offset="0"/>
+
+            <widget class="text" id="durL" font="label" auto_size="all">
+                <translation id="text" value="Duration" translation_id="230113" type="use"/>
+            </widget>
+            <widget class="text" id="dura" font="value" auto_size="all">
+                <translation id="text" translation_id="249426" type="use" value="N/A[COMMENT: Not Applicable, abbreviation]"/>
+            </widget>
+            <widget class="value_label" id="lofa" font="value" auto_size="all">
+                <translation id="text" translation_id="249426" type="use" value="N/A[COMMENT: Not Applicable, abbreviation]"/>
+            </widget>
+        </container>
+
+        <container class="titled_box" font="title" size="medium">
+            <translation id="title" translation_id="343974" type="use" value="Instructions[COMMENT: title for a table that shows additional instructions to be employed by the team]"/>
+            <attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="12"/>
+
+            <container>
+                <attachment_group class="vertical_arrange_autosize_all" vertical_offset="0"/>
+
+                <widget class="text" font="label" auto_size="all">
+                    <translation id="text" translation_id="336071" type="use" value="Transfer Type[COMMENT: transfer lists; column header, type of transfer proposed for a player]"/>
+                </widget>
+                <widget class="popup_button" id="trtp" select_event="typc" auto_size="all"/>
+            </container>
+
+            <container id="plTc">
+                <attachment_group class="vertical_arrange_autosize_all" vertical_offset="0"/>
+
+                <widget class="text" font="label" auto_size="all">
+                    <translation id="text" translation_id="423877" type="use" value="Playing Time[COMMENT: FR 14013, contract promise type]"/>
+                </widget>
+                <widget class="popup_button" id="ptim" auto_size="all"/>
+            </container>
+
+            <container id="DurC">
+                <attachment_group class="vertical_arrange_autosize_all" vertical_offset="0"/>
+
+                <widget class="text" font="label" auto_size="all">
+                    <translation id="text" value="Duration" translation_id="230113" type="use"/>
+                </widget>
+                <widget class="popup_button" id="durP" auto_size="all"/>
+            </container>
+
+            <container>
+                <attachment_group class="vertical_arrange_autosize_all" vertical_offset="0"/>
+
+                <widget class="text" id="fepT" font="label" auto_size="all">
+                    <translation id="text" translation_id="396639" type="use" value="Max. Monthly Fee[COMMENT: Transfer Target List panel; bug 122290]"/>
+                </widget>
+                <widget class="cash_selection_list" id="maca" select_event="ofvc" width="250" auto_size="vertical"/>
+            </container>
+
+            <container id="stWc">
+                <attachment_group class="vertical_arrange_autosize_all" vertical_offset="0"/>
+
+                <widget class="text" id="wagT" font="label" auto_size="all">
+                    <translation id="text" translation_id="348991" type="use" value="Max. Wage Amount[COMMENT: transfers target list; column header]"/>
+                </widget>
+                <widget class="cash_selection_list" id="SmxW" select_event="Lwag" width="250" auto_size="vertical"/>
+            </container>
+
+            <container>
+                <attachment_group class="vertical_arrange_autosize_all" vertical_offset="0"/>
+
+                <widget class="icon_button" id="stin" click_event="stin" icon="icons/16px/edit" auto_size="all">
+                    <translation id="text" translation_id="517541" type="use" value="Update Instructions[COMMENT: AREA: News Item; SUB-AREA: Transfer Rejection News Ite,; BN: 44313; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE;]"/>
+                </widget>
+            </container>
+        </container>
+    </container>
+</panel>

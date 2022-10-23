@@ -1,0 +1,111 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" />
+
+	<string id="skin_style" value="subtle box"/>
+
+	<container height="130">
+		<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1" vertical_inset="0" horizontal_offset="0"/>
+
+		<container class="inner_subtle_box">
+			<layout class="arrange_horizontal_attachment" layout="110, -1"  offset="0"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+				<widget class="object_portrait_picture" id="clul" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" width="80" >
+					<layout class="stick_to_sides_attachment" alignment="left" inset="0"/>
+				</widget>
+
+				<widget class="object_portrait_picture"  image_alignment="centre" scale_picture="true" keep_aspect_ratio="true"  width="80">
+					<layout class="stick_to_sides_attachment" alignment="right" inset="0"/>
+					<record id="object_property">
+						<integer id="get_property" value="objt"/>
+						<integer id="set_property" value="objt"/>
+					</record>
+				</widget>
+			</container>
+
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="2"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+				<widget class="person_button" info_popup_enabled="true" Pipl="true" auto_size="vertical" size="large" style="bold" colour="black">
+					<record id="object_property">
+						<integer id="get_property" value="objt"/>
+						<integer id="set_property" value="valu"/>
+					</record>
+				</widget>
+
+				<!-- Age -->
+				<widget class="game_formatted_label"  alignment="left,centre_y" auto_size="vertical" colour="faded text" >
+					<record id="format">
+						<translation id="text" translation_id="388547" type="use" value="[%number#1] year-old [%player_description#2][COMMENT: transfer window opening news, rumoured player moving, graphical display]"/>
+						<integer id="var2" value="vf_player_description"/>
+					</record>
+
+					<record id="object_property">
+						<list id="get_properties">
+							<!-- age -->
+							<record get_property="Page" set_property="var1" dont_set_object="true"/>
+							<!-- description -->
+							<record get_property="Pdes" set_property="var2" dont_set_object="true"/>
+						</list>
+					</record>
+				</widget>
+
+				<widget class="nation_button" auto_size="vertical">
+					<record id="object_property" get_property="PNat"/>
+				</widget>
+			</container>
+		</container>
+
+		<container class="inner_subtle_box">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+			<widget class="person_happiness_panel" file="person/person happiness profile" id="Phap">
+				<record id="object_property">
+					<integer id="get_property" value="objt"/>
+					<integer id="set_property" value="objt"/>
+				</record>
+				<translation id="title" translation_id="447669" type="use" value="Dynamics[COMMENT: Manager Main/Top Menu; link to Dynamics screen showcasing a representation of interpersonal relationships at the club]" />
+			</widget>
+		</container>
+
+
+	</container>
+
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0"/>
+
+		<widget class="table" id="tabl" layout="-1,20,-1" mode="fill_rows,stripe_rows" auto_size="vertical">
+
+			<list id="column_table_properties">
+				<record>
+					<flags id="id" value="prom" />
+					<record id="column_heading">
+						<translation id="text" translation_id="378026" type="use" value="Promise[COMMENT: FR 3585; manager promises; heading on promises table]" />
+						<flags id="alignment" value="left,centre_y" />
+						<flags id="column" value="0" />
+					</record>
+				</record>
+				<record>
+					<flags id="id" value="prog" />
+					<record id="column_heading">
+						<translation id="text" translation_id="289978" type="use" value="Progress[COMMENT:person screen; achievements section; heading for achievements panel - cup progress]" />
+						<flags id="alignment" value="left,centre_y" />
+						<flags id="column" value="1" />
+						<flags id="column_span" value="2" />
+					</record>
+				</record>
+			</list>
+
+			<list id="column_widget_properties">
+				<record index="1" image_alignment="centre"/>
+
+			</list>
+
+			</widget>
+	</container>
+
+</panel>

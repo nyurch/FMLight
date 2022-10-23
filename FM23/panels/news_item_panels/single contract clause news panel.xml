@@ -1,0 +1,119 @@
+<panel>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0"/>
+	<layout class="arrange_horizontal_attachment" layout="-1, -1"  offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="top"  apply_to_children="true" inset="0"/>
+
+	<container class="vertical_arrange_container"  background_colour="grey 100" id="infc" auto_size="vertical"  gap="1" inset="0" offset="0">
+
+		<container class="inner_subtle_box" id="psdt" height="220">
+			<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+			<!-- some pictures -->
+			<widget class="competition_news_image_panel" id="ptpc" height="105">
+				<layout class="stick_to_sides_attachment" alignment="top"/>
+			</widget>
+
+			<container height="12"/>
+
+			<!-- person name -->
+			<widget class="person_button" id="pnam" auto_size="vertical" spec="text" style="bold" alignment="centre" size="12" colour="black">
+				<layout class="centre_in_parent_attachment" alignment="horizontal"/>
+			</widget>
+
+			<!-- person description -->
+			<widget class="text" id="ppos" auto_size="vertical" colour="faded text" alignment="top" size="10" multiline="true">
+				<layout class="stick_to_sides_attachment" alignment="horizontal"/>
+			</widget>
+
+
+
+		</container>
+
+	</container>
+
+	<container class="vertical_arrange_container" id="infc" auto_size="vertical" gap="10" offset="0" inset="0">
+
+		<container class="inner_subtle_box" id="psdt" height="220">
+			<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+			<widget class="container" height="10"/>
+
+			<widget class="label" height="18" font="label" alignment="bottom">
+				<translation id="text" translation_id="351957" type="use" value="Contracted to[COMMENT: player transfer information; label for a field showing the team that owns a player]" />
+			</widget>
+
+			<widget class="team_button" id="tnam" icon_enabled="false" height="25" spec="text" style="bold" colour="text" alignment="centre" size="large">
+			</widget>
+
+			<widget class="container" height="10"/>
+
+			<widget class="horizontal_divider" />
+
+			<widget class="container" height="10"/>
+
+			<widget class="table" layout="-1, -1" mode="" auto_size="vertical" fixed_size_rows="false" auto_size_rows="true" row_spacing="0">
+				<list id="column_table_properties">
+					<record index="0" alignment="centre" />
+					<record index="1" alignment="centre" />
+				</list>
+
+				<widget class="label" height="20" font="label" alignment="bottom" row="0" col="0">
+					<translation id="text" translation_id="227799" type="use" value="Wage" />
+				</widget>
+				<widget class="label" height="20" font="label" alignment="bottom" row="0" col="1">
+					<translation id="text" translation_id="227784" type="use" value="Expires" />
+				</widget>
+
+				<widget class="label" id="wagw" height="30" spec="text" style="semi_bold" colour="text" alignment="centre" size="large" row="1" col="0" />
+				<widget class="label" id="conw" height="30" spec="text" style="semi_bold" colour="text" alignment="centre" size="large" row="1" col="1" />
+
+
+			</widget>
+
+			<widget class="spacer" height="10"/>
+
+			<widget class="horizontal_divider" />
+
+			<widget class="spacer" height="10"/>
+
+			<container height="45">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+				<!--player value-->
+				<container id="valu">
+					<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0"/>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+					<!-- Value Label -->
+					<widget class="label" height="18" font="label" alignment="bottom">
+						<translation id="text" translation_id="292633" type="use" value="Estimated Value[COMMENT: player profile; value label]" />
+					</widget>
+
+					<!-- Value -->
+					<widget class="transfer_value_label" id="pval" height="25" spec="text" style="bold" colour="text" alignment="centre" size="large" />
+				</container>
+
+				<!--staff reputation-->
+				<container id="repu" hidden="true">
+					<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0"/>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+					<!-- Value Label -->
+					<widget class="label" height="18" font="label" alignment="bottom">
+						<translation id="text" translation_id="227963" type="use" value="Reputation"/>
+					</widget>
+
+					<!-- Value -->
+					<widget class="global_reputation_stars_label" id="sRep" height="25" spec="text" style="bold" colour="text" alignment="centre" size="large" />
+				</container>
+			</container>
+			<widget class="spacer" height="10"/>
+
+		</container>
+
+	</container>
+
+
+</panel>

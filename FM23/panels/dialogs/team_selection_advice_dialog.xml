@@ -1,0 +1,105 @@
+﻿<panel height="768" width="1000">
+
+  <layout class="centre_in_parent_attachment" alignment="all" />
+  
+  <list id="draw_order">
+		<record entity_layout_id="at02" />
+		<record entity_layout_id="at03" />
+		<record entity_layout_id="at07" />
+		<record entity_layout_id="at06" />
+		<record entity_layout_id="at05" />
+		<record entity_layout_id="at04" />
+		<record entity_layout_id="at00" />
+		<record entity_layout_id="at08" />
+		<record entity_layout_id="at01" />
+		<record entity_layout_id="at09" />
+	</list>
+	<translation id="title" translation_id="492040" type="use" value="Selection Advice[COMMENT: AREA: A Button in the tactics panel; SUB-AREA: Opening a dialog suggesting the manager a team selection; FR-BN: 27347; ; CHARLIMIT: None;]" />
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+	</widget>
+	<widget class="primary_button" entity_layout_id="at02" auto_size="horizontal" colour="white" id="at02" needs_width="true" height="36">
+		<string id="click_event" value="piSG" />
+		<translation id="text" translation_id="289813" type="use" value="Use Suggested Squad[COMMENT: action button on national team news items to allow manager to accept the squad that has been suggested by a staff member]" />
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" move_side="true" target="main" />
+	</widget>
+	<widget class="icon_button" entity_layout_id="at03" id="canc" auto_size="horizontal" needs_width="true" height="36">
+		<translation id="text" value="Cancel" translation_id="229828" type="use" />
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
+		<layout class="stick_to_object_attachment" id="align_right" get_side="left" set_side="right" move_side="true" target="at02" />
+	</widget>
+	<container class="team_selection_advice_list_panel" entity_layout_id="at07" id="PpeC">
+		<layout class="stick_to_object_attachment" id="align_top" offset="11" get_side="top" set_side="top" target="main" />
+		<layout class="stick_to_object_attachment" id="align_bottom" offset="-36" get_side="bottom" set_side="bottom" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+		<layout class="stick_to_sizes_attachment" width="100.000000" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<container entity_layout_id="at06" id="kjts" auto_size="horizontal" height="30">
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="4" get_side="left" set_side="left" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="group_align_right" get_side="right" set_side="right" use_own_content_rectangle="true" use_children_to_size="true" target="at04" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<widget class="text" entity_layout_id="at05" alignment="centre_x,centre_y" id="at05" auto_size="horizontal" needs_width="true" height="30">
+				<translation id="value" translation_id="497165" type="use" value="Recommendation From:[COMMENT: AREA: Tactics; SUB-AREA: Recommended team; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: team selection advice, pick who recommends the team selection]" />
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+			</widget>
+			<widget class="subtle_popup_button" entity_layout_id="at04" id="stSL" auto_size="horizontal" needs_width="true" height="30" auto_size_maximum_width="475">
+				<layout class="stick_to_object_attachment" id="align_left" offset="8" get_side="right" set_side="left" move_side="true" target="at05" />
+				<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0" />
+			</widget>
+		</container>
+		<container class="team_selection_advice_panel" entity_layout_id="at00" id="tAdl">
+			<layout class="stick_to_object_attachment" id="align_top" get_side="bottom" set_side="top" target="at06">
+				<global id="offset" name="ui.main_contrast_box_gap" />
+			</layout>
+			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		</container>
+		<container entity_layout_id="at08" id="at08">
+			<layout class="stick_to_object_attachment" id="align_top" offset="64" get_side="top" set_side="top" target="main" />
+			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		</container>
+		<widget class="radio_button" appearance="switches/toggle/right/button" icon_enabled="false" show_button_appearance="true" id="at01" entity_layout_id="at01" auto_size="horizontal" needs_width="true" height="24">
+      <record id="click_event">
+        <integer id="event_id" value="tPUO" />
+        <integer id="index" value="true" />
+      </record>
+      <translation id="text" value="Unpicked Positions Only[COMMENT - team screen team selection, when we want the coach to pick just the team selection slots that the user has left empty]" translation_id="338601" type="use" />
+      <layout class="stick_to_object_attachment" id="align_top" offset="0" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" offset="-5" get_side="right" set_side="right" move_side="true" target="main" />
+		</widget>
+		<widget class="radio_button" appearance="switches/toggle/left/button" icon_enabled="false" show_button_appearance="true" id="at09" entity_layout_id="at09" auto_size="horizontal" needs_width="true" height="24" selected="true">
+      <record id="click_event">
+        <integer id="event_id" value="tPUO" />
+        <integer id="index" value="false" />
+      </record>
+      <translation id="text" value="Entire Team[COMMENT:Ask to Pick menu option, allows the chosen member of staff to pick a team for all the position in the current formation]" translation_id="422586" type="use" />
+      <layout class="stick_to_object_attachment" id="align_top" offset="0" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" offset="-1" get_side="left" set_side="right" move_side="true" target="at01" />
+		</widget>
+	</container>
+</panel>

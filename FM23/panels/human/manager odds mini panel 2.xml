@@ -1,0 +1,83 @@
+<!-- A panel that show a manager's portrait, name, job and the odds of something (like their odds of getting fired) -->
+<!-- Data comes from a property list and this should be used with PROPERTY_LIST_VIEWER_XML_PANEL -->
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="4"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+	<!-- Top section layered person and team images and odds -->
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+		<!-- Team image -->
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="10"/>
+			<layout class="arrange_horizontal_attachment" layout="30, -1, 54" offset="0" gap="0"/>
+
+			<!-- This image uses a club set in the property list instead of getting it from the person (as the 'panel 1' version does) -->
+			<widget class="object_portrait_picture" alignment="right,top" scale_picture="true" keep_aspect_ratio="true">
+				<layout class="stick_to_sides_attachment" alignment="right" inset="45"/>
+				<record id="object_property">
+					<integer id="get_property" value="Cclu"/>
+					<integer id="set_property" value="objt"/>
+				</record>
+			</widget>
+		</container>
+
+		<!-- Person image and odds -->
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="-1, 60" gap="18" offset="0"/>
+
+			<!-- Portrait -->
+			<widget class="object_portrait_picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="right,centre_y">
+				<layout class="stick_to_sides_attachment" alignment="left,vertical" inset="0"/>
+				<record id="object_property">
+					<integer id="get_property" value="Pers"/>
+					<integer id="set_property" value="valu"/>
+				</record>
+			</widget>
+
+			<!-- Odds -->
+			<container id="ODDS" class="main_box" appearance="labels/standard/label" red_replacement="negative dark">
+				<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0"/>
+				<layout class="centre_in_parent_attachment" alignment="vertical" offset="15"/>
+				<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+				<layout class="stick_to_sides_attachment" alignment="top" inset="0"/>
+
+				<widget class="odds_label" id="odds" spec="text" size="large"  alignment="centre,can_scale" auto_size="vertical" colour="white">
+					<record id="object_property">
+						<integer id="get_property" value="valu"/>
+					</record>
+				</widget>
+			</container>
+		</container>
+	</container>
+
+	<!-- Manager name and team -->
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0"/>
+
+		<widget class="person_button" style="semi_bold" auto_size="vertical" alignment="centre" colour="text">
+			<record id="object_property">
+				<integer id="get_property" value="Pers"/>
+			</record>
+		</widget>
+
+		<container>
+			<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal, top" apply_to_children="true" inset="0"/>
+			<record id="object_property">
+				<integer id="get_property" value="Pers"/>
+				<integer id="set_property" value="objt"/>
+			</record>
+
+			<widget class="club_button" alignment="centre" icon_enabled="false" auto_size="vertical" colour="faded text">
+				<translation id="no_object_text" translation_id="351074" type="use" value="Unemployed[COMMENT: person doesn't have a job; translation already exists with a different case on the first character, use top 10 matches]"/>
+				<record id="object_property">
+					<integer id="get_property" value="Cclu"/>
+					<boolean id="dont_set_object" value="true"/>
+				</record>
+			</widget>
+		</container>
+	</container>
+</panel>

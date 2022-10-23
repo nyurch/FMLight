@@ -1,0 +1,368 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="empty_state" id="hidr" hidden="true" header_widget="spNL">
+
+		<!--explanatory text-->
+		<widget class="text" alignment="centre" auto_size="vertical" size="11" font="fonts/letterpressed" id="spNL">
+			<translation id="text" translation_id="357279" type="use" value="Stat Pack is only available for league games.[COMMENT: Panel text, explaining why the Stat Pack is not being displayed]" />
+		</widget>
+
+	</container>
+
+	<container id="maCN">
+		<attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_offset="0" horizontal_inset="0" />
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_layout="-2,-1" horizontal_offset="0" vertical_inset="0" />
+
+			<container>
+				<attachment_group class="horizontal_arrange" horizontal_layout="-2,-1" horizontal_offset="0" vertical_inset="0" />
+
+				<container>
+					<attachment_group class="vertical_arrange" vertical_layout="-1,-2" vertical_offset="0" horizontal_inset="0" />
+
+					<!-- Teams section -->
+					<container class="main_box_no_margin" navigation_container="true">
+						<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_gap="0" horizontal_offset="0" vertical_inset="0" />
+						<translation id="title" translation_id="229362" type="use" value="Teams" />
+
+						<container>
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0,0,0,20" />
+							<container class="picture" id="htCO" file="boxes/custom/match/stat pack/paper">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+							</container>
+							<widget class="object_portrait_picture" id="loPI" scale_picture="true" image_alignment="left">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="10" />
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="home" />
+											<integer id="set_property" value="valu" />
+										</record>
+									</list>
+								</record>
+							</widget>
+							<!-- The mode=1 tells it to use the passed in colour, ignoring recolouring for human team, etc this is so we can
+				     always see the text as we use the fixture specific fore/background colours -->
+							<widget class="team_button" icon_enabled="false" style="semi_bold" id="hTem" alignment="right,centre_y" size="10" mode="1" navigation_focus_target="true">
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="home" />
+											<integer id="set_property" value="valu" />
+										</record>
+										<record>
+											<integer id="get_property" value="txHT" />
+											<integer id="set_property" value="colr" />
+										</record>
+									</list>
+								</record>
+							</widget>
+						</container>
+						<container>
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0,20,0,0" />
+
+							<container class="picture" id="awCO" file="boxes/custom/match/stat pack/paper">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+							</container>
+							<widget class="object_portrait_picture" id="loPA" scale_picture="true" image_alignment="right">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="10" />
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="away" />
+											<integer id="set_property" value="valu" />
+										</record>
+									</list>
+								</record>
+							</widget>
+
+							<!-- The mode=1 tells it to use the passed in colour, ignoring recolouring for human team, etc this is so we can
+				     always see the text as we use the fixture specific fore/background colours -->
+							<widget class="team_button" icon_enabled="false" style="semi_bold" icon_alignment="right" id="aTem" size="10" mode="1" navigation_focus_target="true">
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="away" />
+											<integer id="set_property" value="valu" />
+										</record>
+										<record>
+											<integer id="get_property" value="txAT" />
+											<integer id="set_property" value="colr" />
+										</record>
+									</list>
+								</record>
+							</widget>
+						</container>
+					</container>
+
+					<!-- Records Section -->
+					<container class="main_box">
+						<translation id="title" translation_id="497048" type="use" value="Records[COMMENT: AREA: Stat Pack; SUB-AREA: head to head record; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: this string is used as a header for a section comparing two teams and their won/drawn/lost records against each other. Not to be confused with ID 243323 which concerns record-book milestone-type records]" />
+
+						<attachment_group class="vertical_arrange" vertical_layout="25,-1" vertical_offset="0" vertical_gap="1" horizontal_inset="0" />
+
+						<container>
+							<attachment_group class="horizontal_arrange" horizontal_layout="-8,60,60,60" horizontal_gap="0" horizontal_offset="0" vertical_inset="0" />
+							<widget class="spacer" />
+							<container>
+								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="1,0" />
+								<container class="picture" id="piBG" file="boxes/custom/match/stat pack/paper" red_replacement="stat_pack_records_won" />
+
+								<widget class="label" alignment="centre" colour="white" style="semi_bold, embossed">
+									<translation id="text" translation_id="249367 " type="use" value="Won[(games won)]" />
+								</widget>
+							</container>
+							<container>
+								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="1,0" />
+								<container class="picture" id="piBG" file="boxes/custom/match/stat pack/paper" red_replacement="stat_pack_records_drew" />
+								<widget class="label" alignment="centre" colour="white" style="semi_bold, embossed">
+									<translation id="text" translation_id="346636 " type="use" value="Drew[COMMENT - draw]" />
+								</widget>
+							</container>
+							<container>
+								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="1,0" />
+								<container class="picture" id="piBG" file="boxes/custom/match/stat pack/paper" red_replacement="stat_pack_records_lost" />
+
+								<widget class="label" alignment="centre" colour="white" style="semi_bold, embossed">
+									<translation id="text" translation_id="242496 " type="use" value="Lost[COMMENT games lost]" />
+								</widget>
+							</container>
+						</container>
+						<widget class="table" id="reTB" layout="-8, 30, 30, 30, 30, 30, 30" fixed_size_rows="true" row_spacing="1" row_height="30" mode="fill_rows" auto_size="vertical" column_spacing="0">
+
+							<list id="column_widget_properties">
+								<record index="0" sort_disabled="true" alignment="right,centre_y" />
+								<record index="1" sort_disabled="true" alignment="centre" />
+							</list>
+
+							<list id="column_table_properties">
+								<record index="0" left="0" right="4" sort_disabled="true" />
+								<record index="1" left="1" right="0" sort_disabled="true" />
+								<record index="2" left="0" right="1" sort_disabled="true" />
+								<record index="3" left="1" right="0" sort_disabled="true" />
+								<record index="4" left="0" right="1" sort_disabled="true" />
+								<record index="5" left="1" right="0" sort_disabled="true" />
+								<record index="6" left="0" right="1" sort_disabled="true" />
+							</list>
+
+							<widget col="0" row="0" class="label" style="semi_bold" size="9.5">
+								<translation id="text" translation_id="347957" type="use" value="Against top half of the table[COMMENT: pre match stat pack; showing team records]" />
+							</widget>
+
+							<widget col="0" row="1" class="label" style="semi_bold" size="9.5">
+								<translation id="text" translation_id="347956" type="use" value="Against bottom half of the table[COMMENT: pre match stat pack; showing team records]" />
+							</widget>
+
+							<widget col="0" row="2" class="label" style="semi_bold" size="9.5">
+								<translation id="text" translation_id="348492" type="use" value="When scoring first[COMMENT: pre match stat pack; showing team records]" />
+							</widget>
+
+							<widget col="0" row="3" class="label" style="semi_bold" size="9.5">
+								<translation id="text" translation_id="348490" type="use" value="When conceding first[COMMENT: pre match stat pack; showing team records]" />
+							</widget>
+
+						</widget>
+
+					</container>
+
+				</container>
+
+				<!-- League games since -->
+				<container class="main_box">
+					<translation id="title" translation_id="348169" type="use" value="League games since[COMMENT: Pre match stat pack panel; the title of a section showing the number of games since last win or deafeat]" />
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+					<widget class="table" id="lgTB" layout="30, 30, -1" fixed_size_rows="true" row_height="30" row_spacing="1" mode="fill_rows">
+
+						<list id="column_widget_properties">
+							<record index="0" sort_disabled="true" alignment="right,centre_y" />
+							<record index="1" sort_disabled="true" alignment="centre" />
+						</list>
+
+						<list id="column_table_properties">
+							<record index="0" sort_disabled="true" />
+							<record index="1" sort_disabled="true" />
+							<record index="2" left="5" sort_disabled="true" />
+						</list>
+						<widget col="2" row="0" class="label" style="semi_bold" size="9.5">
+							<translation id="text" translation_id="348493" type="use" value="Win[COMMENT: pre match stat pack; Showing league games since last win]" />
+						</widget>
+
+						<widget col="2" row="1" class="label" style="semi_bold" size="9.5">
+							<translation id="text" translation_id="348028" type="use" value="Defeat[COMMENT: pre match stat pack; Showing league games since last defeat]" />
+						</widget>
+
+						<widget col="2" row="2" class="label" style="semi_bold" size="9.5">
+							<translation id="text" translation_id="491958" type="use" value="Scored[COMMENT: AREA: Pre-Match Stats Pack; SUB-AREA: Goals Scored; FR-BN: 6215; TONE: Formal; CHARLIMIT: Short; REF-ID: 323266; NOTE: A bespoke version of the referenced ID for certain languages]" />
+						</widget>
+
+						<widget col="2" row="3" class="label" style="semi_bold" size="9.5">
+							<translation id="text" translation_id="491959" type="use" value="Conceded[COMMENT: AREA: Pre-Match Stats Pack; SUB-AREA: Goals Conceded; FR-BN: 6215; TONE: Formal; CHARLIMIT: Short; REF-ID: 249074; NOTE: A bespoke version of the referenced ID for certain languages]" />
+						</widget>
+					</widget>
+
+				</container>
+
+			</container>
+
+			<!-- League result this season -->
+			<container class="main_box">
+				<translation id="title" translation_id="348170" type="use" value="League result this season[COMMENT: Pre match stat pack panel; title of section showing a table showing all the league results]" />
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+				<container class="client_object_viewer_xml_panel" file="competition/league result table" id="tbLG">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="objt" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</list>
+					</record>
+				</container>
+			</container>
+
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_layout="-2,-1" horizontal_offset="0" vertical_inset="0" />
+
+			<container class="main_box">
+				<translation id="title" translation_id="348255" type="use" value="Player stats[COMMENT: Pre match stat pack panel; title of section showing a table of top players stats comparison]" />
+				<attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_offset="0" vertical_gap="10" horizontal_inset="0" />
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+					<!--Goals-->
+					<container class="inner_subtle_box" appearance="boxes/custom/match/stat pack/paper" navigation_container="true">
+						<attachment_group class="vertical_arrange" vertical_layout="30,-1" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+						<container class="label" alignment="centre" size="11" style="bold">
+							<translation id="text" translation_id="227857" type="use" value="Goals" />
+						</container>
+
+						<container class="client_object_viewer_xml_panel" id="mGLS" file="player/player stats table item">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="valu" />
+									</record>
+								</list>
+							</record>
+						</container>
+
+
+					</container>
+
+					<!--Assists-->
+					<container class="inner_subtle_box" appearance="boxes/custom/match/stat pack/paper" navigation_container="true">
+						<attachment_group class="vertical_arrange" vertical_layout="30,-1" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+						<container class="label" alignment="centre" size="11" style="bold">
+							<translation id="text" translation_id="227847" type="use" value="Assists" />
+						</container>
+
+						<container class="client_object_viewer_xml_panel" id="MAsi" file="player/player stats table item">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="valu" />
+									</record>
+								</list>
+							</record>
+						</container>
+
+					</container>
+				</container>
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+					<!--Shots-->
+					<container class="inner_subtle_box" appearance="boxes/custom/match/stat pack/paper" navigation_container="true">
+						<attachment_group class="vertical_arrange" vertical_layout="30,-1" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+						<container class="label" alignment="centre" size="11" style="bold">
+							<translation id="text" translation_id="247381" type="use" value="Shots" />
+						</container>
+
+						<container class="client_object_viewer_xml_panel" id="MSHT" file="player/player stats table item">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="valu" />
+									</record>
+								</list>
+							</record>
+						</container>
+					</container>
+
+					<!--Shots on Target-->
+					<container class="inner_subtle_box" appearance="boxes/custom/match/stat pack/paper" navigation_container="true">
+						<attachment_group class="vertical_arrange" vertical_layout="30,-1" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+						<container class="label" alignment="centre" size="11" style="bold">
+							<translation id="text" translation_id="249450" type="use" value="Shots on target" />
+						</container>
+
+						<container class="client_object_viewer_xml_panel" id="SOTG" file="player/player stats table item">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="valu" />
+									</record>
+								</list>
+							</record>
+						</container>
+
+					</container>
+				</container>
+			</container>
+			<container class="main_box">
+				<translation id="title" translation_id="319446" type="use" value="League History[COMMENT: title for the league position history on the club overview panel]" />
+
+				<attachment_group class="vertical_arrange" vertical_layout="-1,30" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+				<!--<translation id="title" translation_id="348166" type="use" value="Last 10 years[COMMENT: Pre match stat pack panel; showing league position in the last 10 years]" />-->
+				<widget class="club_league_history_graph" id="clhg" lnwd="3" file="club/club league history graph no buttons">
+					<translation id="title" translation_id="319446" type="use" value="League History[COMMENT: title for the league position history on the club overview panel]" />
+				</widget>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle" horizontal_offset="0" vertical_offset="0" />
+
+					<container class="picture" file="icons/16px/row graph_selected" image_alignment="centre" red_replacement="title" width="20" height="16" />
+
+					<widget class="team_button" icon_enabled="false" style="semi_bold" alignment="left,centre_y" mode="1" auto_size="all">
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="home" />
+									<integer id="set_property" value="value" />
+								</record>
+							</list>
+						</record>
+					</widget>
+
+					<container class="picture" file="icons/16px/row graph_selected" image_alignment="centre" red_replacement="orange" width="20" height="16" />
+
+					<widget class="team_button" icon_enabled="false" style="semi_bold" mode="1" alignment="left,centre_y" auto_size="all">
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="away" />
+									<integer id="set_property" value="value" />
+								</record>
+							</list>
+						</record>
+					</widget>
+
+				</container>
+
+			</container>
+		</container>
+	</container>
+</panel>

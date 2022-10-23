@@ -1,0 +1,97 @@
+<panel save_session_state="true">
+	<layout class="horizontal_arrange" horizontal_alignment="fill"/>
+
+	<!-- Pitch -->
+	<widget class="pitch_with_player_positions" id="ppip" height="140" vertical="true" pitch_alignment="centre,can_scale" pitch_draw_goals="false" pitch_draw_markings="false" pitch_draw_grass="true" pitch_line_colour="white" hide_player_positions="true" pitch_touchline_width_percentage="1" pitch_override_icon_size="2" line_width="1.4" appearance="boxes/custom/pitch selection/paper">
+		<string id="pitch_kit_icon" value="pitch/icons/dots" />
+	</widget>
+
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<container class="inner_box">
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="2" />
+			<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="2" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+			<!-- Position label-->
+			<widget class="text" id="posT" auto_size="vertical" font="title" size="normal"/>
+
+			<!-- Position strength label -->
+			<widget class="icon_button" id="posS" icon="icons/16px/circle" show_button_appearance="false" auto_size="vertical" style="semi_bold" size="large" navigation_focus_target="false"/>
+
+			<!-- Side preference string -->
+			<widget class="text" id="Psid" colour="faded text" auto_size="vertical" />
+
+		</container>
+
+		<container class="inner_box" id="posB" font="title">
+				<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="2" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+					<!-- Info labels for when the data isn't available-->
+					<container id="inFC">
+						<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="4" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+						<widget class="text" id="nrLb" auto_size="vertical" hidden="true">
+							<translation id="text" translation_id="383562" type="use" value="No suitable best roles for this position[COMMENT: FR 10661; player overview positions indicator; string displayed when the player is not good enough in a position to have a 'best role' for it]" />
+						</widget>
+						<widget class="text" id="arbs" auto_size="vertical" hidden="true">
+							<translation id="text" translation_id="447600" type="use" value="This player is being scouted by [%person#1] and the report will be available shortly.[COMMENT:scout report, scouting in progress]" />
+						</widget>
+				          <widget class="text" id="pool" auto_size="vertical" hidden="true">
+				            <translation id="text" translation_id="342085" type="use" value="Scouting In Progress[COMMENT: disabled menu item when a player is already being scouted]" />
+				          </widget>
+						<widget class="button" id="scPb" click_event="sctc" auto_size="all" height="30" hidden="true">
+							<translation id="text" translation_id="243421" type="use" value="Scout Player" />
+							<layout class="centre_in_parent_attachment" alignment="horizontal" />
+						</widget>
+					</container>
+
+					<!-- Best roles for selected position -->					
+					<widget class="table" id="Rcon" layout="70, 18, -1" auto_size_rows="true" row_spacing="0" column_spacing="2">
+						<widget class="stars_range_strip" id="roS1" row="0" col="0" />
+						<widget class="info_icon_hint_text" id="hnt1" row="0" col="1" />
+						<widget class="label" id="roL1" row="0" col="2" />
+
+						<widget class="stars_range_strip" id="roS2" row="1" col="0" />
+						<widget class="info_icon_hint_text" id="hnt2" row="1" col="1" />
+						<widget class="label" id="roL2" row="1" col="2" />
+
+						<widget class="stars_range_strip" id="roS3" row="2" col="0" />
+						<widget class="info_icon_hint_text" id="hnt3" row="2" col="1" />
+						<widget class="label" id="roL3" row="2" col="2" />
+
+						<widget class="stars_range_strip" id="roS4" row="3" col="0" />
+						<widget class="info_icon_hint_text" id="hnt4" row="3" col="1" />
+						<widget class="label" id="roL4" row="3" col="2" />
+
+						<widget class="stars_range_strip" id="roS5" row="4" col="0" />
+						<widget class="info_icon_hint_text" id="hnt5" row="4" col="1" />
+						<widget class="label" id="roL5" row="4" col="2" />
+
+						<widget class="stars_range_strip" id="roS6" row="5" col="0" />
+						<widget class="info_icon_hint_text" id="hnt6" row="5" col="1" />
+						<widget class="label" id="roL6" row="5" col="2" />
+
+						<widget class="stars_range_strip" id="roS7" row="6" col="0" />
+						<widget class="info_icon_hint_text" id="hnt7" row="6" col="1" />
+						<widget class="label" id="roL7" row="6" col="2" />
+
+						<widget class="stars_range_strip" id="roS8" row="7" col="0" />
+						<widget class="info_icon_hint_text" id="hnt8" row="7" col="1" />
+						<widget class="label" id="roL8" row="7" col="2" />
+					</widget>
+
+				</container>
+
+		</container>
+
+	</container>
+
+</panel>

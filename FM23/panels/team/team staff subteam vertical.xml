@@ -1,0 +1,13 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+  <container class="bordered_box" appearance="">
+    <layout class="arrange_vertical_attachment" layout="280,270,-1" offset="0" gap="0"/>
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+    <widget class="team_staff_subteam_overview_panel" id="ovvw" link="true"/>
+    <widget class="team_staff_attributes_comparison_panel" id="tsac"/>
+	<widget class="team_container_staff_details_panel" file="team/team container staff details panel custom" id="deta" />
+  </container>
+
+</panel>

@@ -1,0 +1,23 @@
+<panel>
+	<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="0" apply_to_children="true"/>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<container class="inner_subtle_box" red_replacement="blue">
+		<translation id="title" translation_id="247942" type="use" value="Past Winners" />
+		<layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true"/>
+		<layout class="fit_children_attachment" alignment="vertical,fill" offset="0"/>
+
+		<!-- winners list -->
+		<widget class="table" id="pwtb" layout="60, -1" mode="fill_rows" fixed_size_rows="true" auto_size="vertical">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+		</widget>
+
+			<!-- link to full history -->
+		<widget class="link_appearance_button" id="pwln">
+			<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+			<translation id="text" translation_id="319444" type="use" value="View History[COMMENT: club league history graph; button which when clicked takes you to the full club history]" />
+		</widget>
+	</container>
+</panel>

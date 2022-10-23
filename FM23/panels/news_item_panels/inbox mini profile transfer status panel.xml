@@ -1,0 +1,21 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<string id="skin_style" value="subtle box" />
+
+	<container class="inner_subtle_box" red_replacement="black">
+		<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+    <widget class="label" auto_size="all" spec="text" size="large" colour="text" alignment="centre">
+			<translation id="text" translation_id="492002" type="use" value="Agreed Playing Time[COMMENT: AREA: Player Happiness; SUB-AREA: Contract Promises; FR-BN: 14013; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: contract promise type]" />
+		</widget>
+
+		<widget class="playing_time_label" id="stlb" auto_size="all" spec="text" size="large" colour="text" style="bold" alignment="centre">
+			<record id="object_property">
+				<integer id="get_property" value="Pcpt" />
+				<integer id="set_property" value="valu" />
+			</record>
+		</widget>
+	</container>
+
+</panel>

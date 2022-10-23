@@ -1,0 +1,78 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	
+	<container class="inner_subtle_box" navigation_container="true">
+		<attachment_group class="horizontal_arrange" horizontal_layout="-2, -3" horizontal_offset="0" vertical_inset="0" />
+		
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" horizontal_offset="0" horizontal_gap="0" vertical_inset="0" />
+
+			<widget class="object_portrait_picture" width="50" image_alignment="centre" scale_picture="true">
+				<record id="object_property" get_property="objt" set_property="objt" />
+			</widget>
+
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="2" horizontal_inset="0" />
+
+				<widget class="person_button" colour="black" style="semi_bold"  auto_size="vertical">
+					<record id="object_property" get_property="objt" set_property="valu" />
+				</widget>
+
+				<widget class="dob_label" alignment="left, centre_y" display_format="2" auto_size="vertical" colour="faded text">
+					<record id="object_property" get_property="Pdob" set_property="valu" />
+				</widget>
+
+				<widget class="club_button" alignment="left, centre_y" auto_size="vertical" colour="faded text">
+					<record id="object_property" get_property="Pclb" set_property="valu" />
+				</widget>
+			</container>
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_layout="-1, -1" horizontal_offset="0"  vertical_inset="0" />
+
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="2" horizontal_inset="0" />
+
+                <container>
+                    <attachment_group class="vertical_arrange_autosize" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="left" horizontal_inset="2" />
+
+                    <widget class="label" alignment="left, centre_y" colour="faded text" font="title" auto_size="all" size="small">
+                        <translation id="text" translation_id="538841" type="use" value="Transfer Value[COMMENT: AREA: Transfers; SUB-AREA: Transfer Value; FR-BN: 34410; TONE: Formal; CHARLIMIT: Shortish, column header; REF-ID: 227806; NOTE: displays the player's estimated transfer value in a range]" />
+                    </widget>
+
+                    <widget class="transfer_value_label" alignment="left, centre_y" style="bold" size="10" auto_size="all">
+                        <record id="object_property" get_property="Pdva" set_property="valu" />
+                    </widget>
+                </container>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+					<widget class="label" alignment="left, centre_y" colour="faded text" auto_size="vertical" font="title" size="small">
+						<translation id="text" translation_id="227799" type="use" value="Wage" />
+					</widget>
+					
+					<widget class="wage_label" alignment="left, centre_y" style="bold" size="10" format="2" auto_size="vertical">
+						<record id="object_property" get_property="Pcww" set_property="valu" />
+					</widget>			
+				</container>
+			</container>
+
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<widget class="label" alignment="left, centre_y" colour="faded text" auto_size="vertical" font="title" size="small">
+					<translation id="text" translation_id="227785" type="use" value="Contract Expires" />
+				</widget>
+
+				<widget class="spacer" width="4" />
+
+				<widget class="date_cell" alignment="left, centre_y" auto_size="all" style="bold" navigation_focus_target="false">
+					<record id="object_property" get_property="Pcex" set_property="valu" />
+				</widget>
+			</container>
+		</container>		
+	</container>
+	
+</panel>

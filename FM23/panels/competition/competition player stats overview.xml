@@ -1,0 +1,160 @@
+<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />
+
+	<boolean id="save_session_state" value="true" />
+
+	<!-- Default stat type to select -->
+	<integer id="default_value" value="2"/>
+
+	<!-- panel for no data available-->
+	<container class="empty_state" id="nost" header_widget="BShe" hidden="true">
+		<widget class="text" id="BShe">
+			<translation id="text" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
+		</widget>
+	</container>
+
+	<container class="main_contrast_box" height="480" red_replacement="blue 100" colour="white" navigation_container="true">
+		<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_offset="0" horizontal_gap="1" vertical_inset="0"/>
+
+		<!-- Large box with single selectable stats and a list displaying more when one is highlighted -->
+		<container width="560">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+			<!-- Label and stage selector -->
+			<container embed_in_frame="true">
+				<attachment_group class="title_embedded_panel_left"/>
+
+				<widget class="view_menu_label" id="labl" colour="white">
+					<translation id="text" translation_id="392261" type="use" value="Player Stats Overview[COMMENT: FR 8873; Competition player stats overview; panel title]" />
+				</widget>
+
+				<!-- The stages menu: visible if more than one stage/substage -->
+				<widget class="view_menu_popup" id="sviw" auto_tick_exclusive="true" save_session_state="true" />
+			</container>
+
+			<!-- Background pitch-->
+			<widget class="pitch" vertical="true" pitch_alignment="centre" pitch_draw_goals="false" pitch_draw_markings="false" pitch_draw_grass="false" pitch_line_colour="faded white" pitch_touchline_width_percentage="1" pitch_perspective="0.15" line_width="1.4" />
+
+			<!-- Single stats items. This container or one above it must have this id to make the radio buttons work -->
+			<container class="vertical_arrange_container" id="radC" alignment="fill" offset="30" gap="30" inset="0">
+
+				<record id="default_properties" layout="-1,50,-1" offset="10" gap="0" inset="0" />
+				<set_var name="player_stats_container">
+					<container class="horizontal_arrange_container">
+						<widget class="competition_player_stats_panel" file="competition/competition player stats item panel left" maximum_items="top_only_with_count">
+							<var id="type" name="left_stat_type" />
+						</widget>
+						<widget class="picture" image_alignment="centre">
+							<var id="file" name="icon_file" />
+						</widget>
+						<widget class="competition_player_stats_panel" file="competition/competition player stats item panel right" maximum_items="top_only_with_count">
+							<var id="type" name="right_stat_type" />
+						</widget>
+					</container>
+				</set_var>
+				
+				<var name="player_stats_container">
+					<!-- CPS_GOALS -->
+					<set_var name="left_stat_type">
+						<integer value="2" />
+					</set_var>
+					<set_var name="icon_file">
+						<string value="icons/48px/player shot" />
+					</set_var>
+					<!-- CPS_ASSISTS -->
+					<set_var name="right_stat_type">
+						<integer value="5" />
+					</set_var>
+				</var>
+
+				<var name="player_stats_container">
+					<!-- CPS_SHOTS -->
+					<set_var name="left_stat_type">
+						<integer value="46" />
+					</set_var>
+					<set_var name="icon_file">
+						<string value="icons/48px/player pass" />
+					</set_var>
+					<!-- CPS_MAN_OF_MATCH -->
+					<set_var name="right_stat_type">
+						<integer value="12" />
+					</set_var>
+				</var>
+
+				<var name="player_stats_container">
+					<!-- CPS_KEY_PASSES -->
+					<set_var name="left_stat_type">
+						<integer value="23" />
+					</set_var>
+					<set_var name="icon_file">
+						<string value="icons/48px/player run" />
+					</set_var>
+					<!-- CPS_PASS_COMPLETION -->
+					<set_var name="right_stat_type">
+						<integer value="13" />
+					</set_var>
+				</var>
+
+				<var name="player_stats_container">
+					<!-- CPS_TACKLES_WON -->
+					<set_var name="left_stat_type">
+						<integer value="63" />
+					</set_var>
+					<set_var name="icon_file">
+						<string value="icons/48px/player tackle" />
+					</set_var>
+					<!-- CPS_DRIBBLES_MADE -->
+					<set_var name="right_stat_type">
+						<integer value="62" />
+					</set_var>
+				</var>
+
+				<var name="player_stats_container">
+					<!-- CPS_CLEAN_SHEETS -->
+					<set_var name="left_stat_type">
+						<integer value="20" />
+					</set_var>
+					<set_var name="icon_file">
+						<string value="icons/48px/player save" />
+					</set_var>
+					<!-- CPS_CONCEDED -->
+					<set_var name="right_stat_type">
+						<integer value="3" />
+					</set_var>
+				</var>
+				
+			</container>
+
+		</container>
+
+		<!-- Stats panel showing the highlighted stat -->
+		<container class="competition_player_stats_panel" id="selP" maximum_items="8" type="2">
+			<!-- Header with stat type string and stat selector button -->
+			<widget class="link_button_title" id="stit" font="title" colour="white" embed_in_frame="true" red_replacement="white">
+				<layout class="stick_to_sides_attachment" alignment="left,top" inset="0" embed_in_frame="true" />
+			</widget>
+		</container>
+	</container>
+
+	<!-- Adaptive rows of little stat boxes-->
+	<container class="vertical_adaptive_container" inset="0" offset="0" mode="distribute_equally" navigation_container="true">
+
+		<record id="default_properties" inset="0" offset="0"  minimum_height="160" mode="distribute_equally">
+			<record id="default_properties" file="competition/competition player stats panel small" maximum_items="7" minimum_width="280" store_config_id="plSC" option="true" navigation_container="true" />
+		</record>
+		
+		<container class="horizontal_adaptive_container" priority="1">
+			<container class="competition_player_stats_panel" id="sta1" type="1" priority="1" />
+			<container class="competition_player_stats_panel" id="sta2" type="2" priority="2" />
+			<container class="competition_player_stats_panel" id="sta3" type="3" priority="3" />
+			<container class="competition_player_stats_panel" id="sta4" type="4" priority="4" />
+		</container>
+
+		<container class="horizontal_adaptive_container" priority="2">
+			<container class="competition_player_stats_panel" id="sta5" type="5" priority="1" />
+			<container class="competition_player_stats_panel" id="sta6" type="10" priority="2" />
+			<container class="competition_player_stats_panel" id="sta7" type="11" priority="3" />
+			<container class="competition_player_stats_panel" id="sta8" type="12" priority="4" />
+		</container>
+	</container>
+</panel>

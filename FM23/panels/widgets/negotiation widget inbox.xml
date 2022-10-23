@@ -1,0 +1,59 @@
+<panel height="70">
+  <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+  <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+  <!--Widgets at the top-->
+  <container height="30">
+    <layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+    <layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="2" />
+
+    <!-- The text icon -->
+    <container height="30">
+      <layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+      <layout class="arrange_horizontal_attachment" alignment="left,extend" gap="0" offset="0" />
+
+      <widget class="label" auto_size="horizontal" hidden="true" colour="contract negotiation restriction" id="star">
+        <string id="text" value="*" />
+      </widget>
+
+      <!-- condition lock -->
+      <container height="30">
+        <layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="0" />
+        <layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+
+        <widget class="text" id="text" auto_size="vertical" alignment="left,centre_y" size="10" multiline="false" font="semibold" colour="text">
+          <layout class="stick_to_sides_attachment" alignment="top" inset="5" />
+        </widget>
+
+        <widget class="check_box" id="lock" click_event="lock" label_disabled="true" width="34" height="30" alignment="right,centre_y" icon="switches/lock/button" appearance="buttons/subtle/normal/button" icon_alignment="centre">
+          <translation id="hint" translation_id="350950" type="use" value="Select to mark this as non-negotiable[COMMENT: contract offer panel and transfer offer panel; offer condition lock; the contract term or transfer condition is not negotiable, i.e. the wage, squad status etc]" />
+        </widget>
+
+        <widget class="popup_button" id="icon" icon="icons/16px/remove from list" width="50" height="30" icon_alignment="left,top" hidden="true">
+
+        </widget>
+      </container>
+    </container>
+  </container>
+
+  <widget class="popup_button" appearance="buttons/standard/normal/button" alignment="left" id="popU" height="30" hidden="true"/>
+
+  <container id="drop" height="32">
+    <layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+    <layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" />
+
+    <!--A left right widget-->
+    <widget class="left_right_list" id="left" width="150" height="30" hidden="true"/>
+    <widget class="edit_date_cell" id="datP" height="30" auto_size="horizontal" hidden="true">
+      <translation id="format" translation_id="437043" type="use" value="Expiry Date: [%date#1-short][COMMENT: FR 18181, date a transfer or contract clause expires on]" />
+      <translation id="alternate_text" translation_id="437044" type="use" value="No Expiry Date[COMMENT: FR 18181, transfer or contract clause has no expiry date]" />
+      <record id="dialog_properties">
+        <string id="file" value="dialogs/clause expiry date dialog" />
+      </record>
+    </widget>
+    <widget class="cash_selection_list" id="cash" height="30" hidden="true">
+		<record id="default_properties" alignment="right,centre_y" colour="black"/>
+	</widget>
+
+  </container>
+</panel>

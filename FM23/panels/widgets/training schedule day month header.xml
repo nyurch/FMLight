@@ -1,0 +1,10 @@
+﻿<panel height="30" wants_mouse_events="true">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	<container class="main_box" appearance="boxes/custom/darken/no margin/paper"  wants_mouse_events="false" red_replacement="bg darker">
+			<layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true" offset="0"/>
+		<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="6" />
+		<widget class="button" id="wekd" appearance="labels/standard/label" auto_size="all" wants_mouse_events="false" red_replacement="bg orange" alignment="centre" colour="text" style="bold" disabled_colour="faded text" navigation_focus_target="false"/>
+		<widget class="text" id="mnth" wants_mouse_events="false" size="8" colour="faded text" alignment="right,centre_y" height="19" disabled_colour="faded text"/>
+		</container>
+		
+</panel>

@@ -1,0 +1,36 @@
+<panel>
+
+  <!--<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>-->
+
+  <layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+  <layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0" />
+
+  <container class="main_box" id="titl">
+    <translation id="title" translation_id="308474" type="use" value="Relationships[COMMENT: Persons relationships with other people]" />
+    <layout class="fit_children_attachment" alignment="vertical" offset="0" />
+    <layout class="arrange_horizontal_attachment" offset="0" gap="5" layout="-1,-1" />
+    <layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+    <!-- We have two tables -->
+    <!-- LIked people -->
+    <widget class="table" id="favL" mode="fill_rows,stripe_rows" layout="-1" auto_size="vertical" sort_disabled="true">
+	<record id="default_properties" colour="black"/>
+      <list id="headings">
+        <record>
+          <translation id="text" translation_id="293060" type="use" value="Favourite People" /><flags id="colour" value="text" />
+        </record>
+      </list>
+    </widget>
+    <!-- Disliked people -->
+    <widget class="table" id="disL" mode="fill_rows,stripe_rows" layout="-1" auto_size="vertical" sort_disabled="true">
+	<record id="default_properties" colour="black"/>
+      <list id="headings">
+        <record>
+          <translation id="text" translation_id="293061" type="use" value="Disliked People" />
+        </record>
+      </list>
+    </widget>
+
+  </container>
+
+</panel>

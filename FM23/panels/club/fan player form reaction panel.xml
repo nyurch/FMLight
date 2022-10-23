@@ -1,0 +1,62 @@
+<panel default_focus="true">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="main_box" id="cftb" navigation_container="true" default_focus="true">
+		<translation id="title" translation_id="494173" type="use" value="Player Form Reactions[COMMENT: AREA: Confidence and Performance; SUB-AREA: Reactions; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: confidence summary header text, can be from fans or board, collective group of people]" />
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+    <container embed_in_frame="true">
+      <attachment_group class="title_embedded_panel_right" />
+
+      <widget class="icon_button" icon="icons/26px/board" auto_size="horizontal" icon_colour="performance fans tag" appearance="" colour="performance fans tag" font="title" embed_in_frame="true" navigation_focus_target="false">
+        <translation id="text" translation_id="491853" type="use" value="Fans[COMMENT: AREA: Confidence; SUB-AREA: Board Confidence; FR-BN: ?; TONE: Formal; CHARLIMIT: If Applicable, otherwise None; REF-ID: n/a; NOTE: section title for confidence opinions held by the Fans rather than the Board]" />
+      </widget>
+
+    </container>
+
+		<widget class="table" id="ctab" mode="fill_rows,stripe_rows,printable" wants_lazy_load="true" fixed_size_rows="false" auto_size_rows="true" row_spacing="4" column_spacing="8" layout="300,90,-1">
+			<!--headings-->
+			<record id="default_properties" alignment="left,centre_y" colour="black"/>
+			<list id="column_table_properties">
+				<record index="0" id="play">
+					<flags id="alignment" value="left,centre_y" />
+					<record id="column_heading">
+						<translation id="text" translation_id="227966" type="use" value="Player" />
+						<flags id="alignment" value="left,centre_y" />
+						<flags id="column" value="0" />
+					</record>
+				</record>
+				<record index="1" id="l5ga">
+					<flags id="alignment" value="left,centre_y" />
+					<record id="column_heading">
+						<translation id="text" translation_id="276271" type="use" value="Last 5 Games[COMMENT: heading for player form information]" />
+						<flags id="alignment" value="left,centre_y" />
+						<flags id="column" value="1" />
+					</record>
+				</record>
+			
+				<record index="2" id="reac">
+					<flags id="alignment" value="left,centre_y" />
+					<record id="column_heading">
+						<translation id="text" translation_id="331949" type="use" value="Reaction[COMMENT: person properties; text header for team talk screen which will list any feedback from individual players]" />
+						<flags id="alignment" value="left,centre_y" />
+						<flags id="column" value="2" />
+					</record>
+				</record>
+				
+			</list>
+
+			<list id="column_widget_properties">
+				<record indx="2" alignment="left,centre_y" appearance="" auto_size="vertical" multiline="true" size="large" navigation_focus_target="false" />
+				
+			</list>
+
+		</widget>
+
+		<widget class="text" id="nort" alignment="left,top">
+			<translation id="text" translation_id="494218" type="use" value="No reactions[COMMENT:AREA: Manager Performance; SUB-AREA: Tactics performance; FR 27625; TONE: Formal; CHARLIMIT: None; NOTE; Any other information the translator can make use of]" />
+
+		</widget>
+
+	</container>
+</panel>

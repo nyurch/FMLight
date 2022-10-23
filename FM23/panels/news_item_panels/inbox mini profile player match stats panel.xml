@@ -1,0 +1,65 @@
+<panel>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+
+	<container class="inner_subtle_box" red_replacement="black">
+		<translation id="text" translation_id="319905" type="use" value="Match[COMMENT: Manager main/top menu: human manager's game settings]" />
+
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+
+		<!--main scoreline-->
+		<container height="26">
+			<layout class="arrange_horizontal_attachment" layout="-1,50,-1" offset="0"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+			<!--home team-->
+			<widget class="team_button" id="home" enable_icon_for_nations="true">
+				<record id="object_property">
+					<integer id="get_property" value="home" />
+				</record>
+			</widget>
+
+			<!--result-->
+			<widget class="fixture_button" id="FxRs" alignment="centre" style="bold" swap_for_context_team="false">
+				<record id="object_property">
+					<integer id="get_property" value="FxRs" />
+				</record>
+			</widget>
+
+			<!--away team-->
+			<widget class="team_button" id="away" enable_icon_for_nations="true">
+				<record id="object_property">
+					<integer id="get_property" value="away" />
+				</record>
+			</widget>
+		</container>
+
+		<!--time on pitch-->
+		<container height="26">
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+			<!--label-->
+			<widget class="label" colour="faded text">
+				<translation id="text" translation_id="248440" type="use" value="Player Stats" />
+			</widget>
+
+			<!--time on pitch-->
+			<widget class="icon_button" id="tonp" icon="icons/16px/time" alignment="right,centre_y" colour="text" show_button_appearance="false">
+			</widget>
+		</container>
+
+		<widget class="horizontal_divider" />
+
+		<!--player stats-->
+		<widget class="table" id="plst" layout="-1, -1" mode="" auto_size="vertical" fixed_size_rows="true" row_height="22" row_spacing="1">
+			<list id="column_widget_properties">
+				<record index="0" alignment="left" colour="faded text"/>
+				<record index="1" alignment="right"/>
+			</list>
+		</widget>
+
+	</container>
+</panel>

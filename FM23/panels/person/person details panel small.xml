@@ -1,0 +1,30 @@
+﻿<panel>
+  <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+  <layout class="arrange_vertical_attachment" alignment="top,extend"/>
+
+  <container id="staf" height="50">
+    <layout class="arrange_horizontal_attachment" layout="50, -1" gap="8"/>
+    <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+    <!-- Portrait -->
+    <widget class="object_portrait_picture" scale_picture="true" image_alignment="centre">
+      <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+
+    <container id="pejo">
+      <layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="0"/>
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+      <!-- Person name -->
+      <widget class="person_button" id="pern" alignment="left,bottom" colour="black" style="semi_bold" info_popup_enabled="true" info_popup_alignment="left,bottom" icon_enabled="true" navigation_focus_target="false">
+        <record id="object_property" get_property="Pcjo" set_property="Pcjo"/>
+        <record id="object_property" get_property="objt" set_property="valu"/>
+      </widget>
+
+      <!-- Job -->
+      <widget class="job_label" id="pjob" alignment="left,top" size="small">
+        <record id="object_property" get_property="PcJj" set_property="valu"/>
+      </widget>
+    </container>
+  </container>
+</panel>

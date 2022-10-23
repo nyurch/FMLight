@@ -1,0 +1,101 @@
+﻿<panel height="40" navigation_container="true">
+	<list id="properties_to_forward">
+		<record get_property="titl" set_property="text" target="sect" />
+	</list>
+
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<boolean id="should_force_refresh" value="true" />
+
+	<container class="bordered_box" appearance="boxes/custom/full screen header/paper">
+		<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_offset="0"/>
+
+		<!-- Back Button -->
+		<widget class="screen_history_button" id="back" fixed="true" width="50" appearance="buttons/custom/interface/navigation bar/button" icon="icons/26px/back" icon_alignment="centre" controller_button="b_button">
+			<attachment class="get_global_attachment" get_property="hnpt" set_property="itms" />
+			<record id="primary_icon_properties" red_replacement="text" />
+			<record id="click_event" event_id="GOTO" event_target="brow" scin="-3" />
+
+		</widget>
+
+		<widget class="vertical_divider">
+			<attachment class="test_global_attachment" get_property="MnuS" mode="1" value="true" set_property="hidn" skip_if_null="true" />
+		</widget>
+
+		<widget class="text_button" id="T1nm" font="title" auto_size="horizontal" alignment="left,centre_y"  navigation_focus_target="false" colour="text"/>
+
+		<container>
+			<attachment_group class="horizontal_arrange_autosize" horizontal_gap="0"/>
+
+			<widget class="text" id="T1sc" size="large" font="title" alignment="right,centre_y" colour="red" auto_size="horizontal"/>
+
+			<widget class="text" size="large" font="title" alignment="centre" text="-" colour="red" auto_size="horizontal"/>
+
+			<widget class="text" id="T2sc" size="large" font="title" alignment="left,centre_y" colour="red" auto_size="horizontal"/>
+
+		</container>
+
+
+		<widget class="text_button" id="T2nm" font="title" auto_size="horizontal" alignment="left,centre_y"  navigation_focus_target="false" colour="text"/>
+
+
+		<widget class="text" alignment="left, centre_y" auto_size="horizontal" colour="fg" >
+			<record id="object_property" get_property="fxCo" set_property="valu" />
+		</widget>
+		
+		<widget class="comp_button" alignment="left, centre_y" auto_size="horizontal" colour="fg" icon_enabled="false" no_object_text="" navigation_focus_target="false">
+			<record id="object_property" get_property="fxCo" set_property="valu" />
+		</widget>
+
+		<widget class="text" alignment="left, centre_y" auto_size="horizontal" colour="fg" value="-" />
+
+		<widget class="date_cell" id="fxdV" format="[%date#1-long]" auto_size="horizontal" alignment="left, centre_y"  colour="fg" navigation_focus_target="false">
+			<record id="object_property">
+				<integer id="get_property" value="fxdt"/>
+			</record>
+		</widget>
+
+		<container class="match_playback_control_container" file="" >
+			<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_offset="0"/>
+
+			<record id="object_property" get_property="maCo" set_property="maCo" />
+
+			<widget class="spacer"/>
+
+			<!--save match-->
+			<widget class="icon_button" id="svmt" click_event="svmt" auto_size="horizontal" icon="icons/custom/highlights/save" appearance="buttons/subtle/normal/button">
+				<translation id="text" translation_id="232965" type="use" value="Save Match" />
+			</widget>
+
+			<widget id="View" class="priority_action_popup_button" auto_size="horizontal" file="">
+				<attachment_group class="horizontal_arrange_autosize" horizontal_offset="0"/>
+
+				<string id="main_button_appearance" value="buttons/custom/over state only/button"/>
+				<string id="split_main_button_appearance" value="buttons/custom/over state only/button"/>
+				<string id="split_popup_button_appearance" value="buttons/custom/over state only/button"/>
+				<string id="popup_button_appearance" value="buttons/custom/over state only/button"/>
+
+				<widget class="icon_button" id="mbut" auto_size="horizontal" colour="accent" font="title" icon="icons/26px/play" controller_button="right_trigger" gamepad_icon_alignment="centre_right" icon_alignment="centre_left" alignment="centre"/>
+				<widget class="popup_button" id="mpop" auto_size="horizontal"  fixed="true" />
+
+				<list id="items">
+					<record id="vgls" event_id="vgls" type="5" priority="1">
+						<translation id="name" translation_id="454724" type="use" value="Watch Goals[COMMENT: command to watch some match highlights]" />
+					</record>
+					<record id="vkey" event_id="vkey" type="3">
+						<translation id="name" translation_id="454725" type="use" value="Watch Key Highlights[COMMENT: command to watch some match highlights]" />
+					</record>
+					<record id="vext" event_id="vext" type="2">
+						<translation id="name" translation_id="454726" type="use" value="Watch Extended Highlights[COMMENT: command to watch some match highlights]" />
+					</record>
+					<record id="vcom" event_id="vcom" type="1">
+						<translation id="name" translation_id="454727" type="use" value="Watch Comprehensive Highlights[COMMENT: command to watch some match highlights]" />
+					</record>
+				</list>
+			</widget>
+
+		</container>
+
+	</container>
+
+</panel>

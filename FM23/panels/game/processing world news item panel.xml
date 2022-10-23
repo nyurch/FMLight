@@ -1,0 +1,29 @@
+<panel height="90">
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+  <container class="main_box" height="90" appearance="boxes/custom/processing/item/paper" red_replacement="teal 900">
+
+    <layout class="arrange_vertical_attachment" layout="20,-1" gap="5" offset="5"/>
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+    <container>
+      <layout class="arrange_vertical_attachment" alignment="vertical" gap="0" offset="0"/>
+     <layout class="stick_to_sides_attachment" alignment="left" apply_to_children="true" inset="0"/>
+
+      <widget class="button" height="20" appearance="labels/custom/processing/world news/label" id="nwsB" alignment="left,centre_y" auto_size="horizontal" colour="white" style="semi_bold">
+        <translation id="text" translation_id="349228" type="use" value="World News[COMMENT: Label for world news ticker on processing panel]" />
+      </widget>
+    </container>
+
+    <container>
+      <layout class="arrange_horizontal_attachment" alignment="left,extend" gap="10" offset="0" />
+      <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+      <container width="5"/>
+
+      <widget class="competition_news_image_panel" id="impl" file="game/processing news item image panel" width="40" />
+
+      <widget class="text" id="titl" multiline="true" alignment="left,centre_y" colour="white" style="semi_bold"/>
+    </container>
+  </container>
+</panel>

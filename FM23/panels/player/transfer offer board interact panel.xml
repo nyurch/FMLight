@@ -1,0 +1,27 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0"/>
+
+	<container class="main_contrast_box" red_replacement="bg info">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+		<boolean id="should_force_refresh" value="true"/>
+
+		<widget class="text" id="reqt" spec="text" auto_size="vertical" colour="fg info"/>
+
+		<widget class="icon_button" icon_alignment="centre" id="reqb" click_event="eiwb" red_replacement="fg info" icon_colour="fg info" auto_size="vertical" icon="icons/16px/speech bubble" alignment="centre">
+		<flags id="colour" value="fg info" />
+			<translation id="text" translation_id="308032" type="use" value="Interact with Board[COMMENT: Links to the board request panel]"/>
+		</widget>
+
+	  <widget class="icon_button" icon_alignment="centre" id="reql" click_event="eibl" red_replacement="fg info" icon_colour="fg info" icon="icons/16px/speech bubble" auto_size="vertical" alignment="centre" >
+	  <flags id="colour" value="fg info" />
+	    <translation id="text" translation_id="308032" type="use" value="Interact with Board[COMMENT: Links to the board request panel]"/>
+	  </widget>
+
+		<widget class="text" id="rdpt" spec="text" auto_size="vertical" colour="fg info"/>
+
+		<widget class="icon_button" icon_alignment="centre" id="rdpb" click_event="eidp" red_replacement="fg info" icon_colour="fg info" icon="icons/16px/speech bubble" auto_size="all" alignment="centre"  >
+		<flags id="colour" value="fg info" />
+			<translation id="text" translation_id="308032" type="use" value="Interact with Board[COMMENT: Links to the board request panel]"/>
+		</widget>
+	</container>
+</panel>

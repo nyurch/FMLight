@@ -1,0 +1,83 @@
+﻿<panel>
+
+	<string id="skin_style" value="subtle box" />
+
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<container id="vali">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="8" />
+
+
+		<container class="vertical_label_value_pair" label_widget="dlLb" value_widget="dura">
+
+			<widget class="text" id="dlLb" alignment="left">
+				<translation id="text" translation_id="230113" type="use" value="Duration" />
+			</widget>
+			<widget class="text" id="dura" alignment="left"/>
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_offset="0" vertical_alignment="top" vertical_inset="0" />
+			<container class="vertical_label_value_pair" label_widget="lmfl" value_widget="mnth">
+
+				<widget class="text" id="lmfl" alignment="left">
+					<translation id="text" translation_id="423917" type="use" value="Playing Monthly Fee[COMMENT: FR 14469; transfer offer; monthly fee paid to loaning club when the player is playing]" />
+				</widget>
+				<widget class="text" id="mnth" alignment="left" />
+
+			</container>
+
+			<container class="vertical_label_value_pair" label_widget="mthL" value_widget="umth">
+				<global id="hidden" name="is_fmt" />
+
+				<widget class="text" id="mthL" alignment="left">
+					<translation id="text" translation_id="420722" type="use" value="Unused Monthly Fee[COMMENT: FR 14469; transfer offer; monthly fee paid to loaning club when the player is not playing]" />
+				</widget>
+				<widget class="text" id="umth" alignment="left" />
+
+			</container>
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_offset="0" vertical_alignment="top" vertical_inset="0" />
+			
+			<container class="vertical_label_value_pair" label_widget="Plwp" value_widget="wage">
+
+				<widget class="text" id="Plwp" alignment="left">
+					<translation id="text" translation_id="420694" type="use" value="Playing Wage Percentage[COMMENT: FR 14469; transfer offer; wages paid to loaning club when the player is playing]" />
+				</widget>
+				<widget class="text" id="wage" alignment="left" />
+			</container>
+			
+			<container class="vertical_label_value_pair" label_widget="uwgL" value_widget="uwgs">
+				<global id="hidden" name="is_fmt" />
+
+				<widget class="text" id="uwgL" alignment="left">
+					<translation id="text" translation_id="420695" type="use" value="Unused Wage Percentage[COMMENT: FR 14469; transfer offer; wages paid to loaning club when the player is not playing]" />
+				</widget>
+				<widget class="text" id="uwgs" alignment="left" />
+			</container>
+		</container>
+
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+
+			<container class="transfer_offer_additional_fees_panel" id="fees" file="">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+				<widget class="text" auto_size="vertical" alignment="left" font="label">
+					<translation id="text" translation_id="380141" type="use" value="Bonuses and Clauses[COMMENT: title for help bubble; describing bonuses and clauses in a contract]" />
+				</widget>
+				
+				<widget class="table" layout="-3, -1, -2" id="adft" sort_disabled="true" mode="fill_rows, stripe_rows, printable" auto_size="vertical" auto_size_rows="true" fixed_size_rows="false" row_spacing="4">
+					<record id="default_properties" alignment="left,centre_y" auto_size="vertical" multiline="true" auto_size_minimum_height="22" />
+
+				</widget>
+			</container>
+
+		</container>
+	</container>
+	<container id="inva" class="inner_subtle_box" red_replacement="black" hidden="true" height="40" />
+</panel>

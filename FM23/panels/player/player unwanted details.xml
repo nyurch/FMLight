@@ -1,0 +1,98 @@
+<panel >
+
+
+  <!--appearances for status buttons and labels-->
+  <flags id="stfa" value="buttons/custom/dof status/failed/button"/>
+  <!--Failed label-->
+  <flags id="snsa" value="buttons/custom/dof status/not started/button"/>
+  <!--Not Started label-->
+  <flags id="spha" value="buttons/standard/normal/button"/>
+  <!--Put on Hold button-->
+  <flags id="soha" value="buttons/custom/dof status/not started/button"/>
+  <!--On Hold label-->
+  <flags id="ssna" value="buttons/primary/normal/button"/>
+  <!--Start Negotiations button-->
+  <flags id="sipa" value="buttons/custom/dof status/in progress/button"/>
+  <!--In Progress label-->
+  
+  
+  <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="8"/>
+  <layout class="fit_children_attachment" alignment="vertical,fill" gap="8" offset="0" />
+  <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+  <container height="30">
+    <layout class="arrange_horizontal_attachment" layout="-1,-2" offset="0" gap="0"/>
+    <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+    <widget class="label" id="dadd" colour="fg">
+
+    </widget>
+
+
+    <container height="28">
+      <layout class="arrange_horizontal_attachment" alignment="right" offset="0" gap="6"/>
+      <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+      <widget class="button" id="stal" auto_size="all" navigation_container="false" navigation_focus_target="false">
+
+      </widget>
+
+      <widget class="icon_button" id="stab" auto_size="all" controller_button="y_button">
+
+      </widget>
+
+    </container>
+
+  </container>
+
+
+  <container height="60">
+    <layout class="arrange_horizontal_attachment" layout="-8,-8,-5" offset="0" gap="8"/>
+    <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+    <container>
+      <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0"/>
+      <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+      <widget class="label">
+        <translation id="text" translation_id="316794" type="use" value="Type[COMMENT: default properties.xml; list header to describe the type of game object shown - a game object is anything the user can interact with]" />
+      </widget>
+
+      <widget class="popup_button" id="typp" height="30">
+      </widget>
+
+
+    </container>
+
+    <container>
+      <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0"/>
+      <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+      <widget class="label" id="AskP" >
+        <translation id="text" translation_id="336009" type="use" value="Minimum Acceptable Amount[COMMENT: transfers unwanted list; column header, mimimum bid to sell for if delegated to a member of staff]" />
+      </widget>
+
+      <widget class="cash_selection_list" id="mocs">
+		<record id="default_properties" alignment="right,centre_y" colour="black"/>
+      </widget>
+
+    </container>
+
+    <container>
+      <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0"/>
+      <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+      <widget class="label" >
+        <translation id="text" translation_id="335044" type="use" value="Expiry Date" />
+
+      </widget>
+
+      <widget class="date_select_panel" id="expd" auto_size="horizontal" height="30">
+      </widget>
+
+
+    </container>
+
+  </container>
+
+</panel>

@@ -1,0 +1,26 @@
+﻿<panel>
+
+	<list id="properties_to_forward">
+		<record get_property="objL" target="ptbl" set_property="objL" />
+		<record get_property="properties" target="ptbl" set_property="vpid" />
+		<record get_property="sele" target="ptbl" set_property="sele" />
+	</list>
+
+	<attachment_group class="vertical_arrange_autosize"/>
+
+	<container class="standard_popup_box">
+		<attachment_group class="vertical_arrange_autosize"/>
+
+		<widget class="client_object_list_table" auto_size_rows="true" id="ptbl" auto_size="vertical" mode="fill_rows, stripe_rows, select_rows">
+			<flags id="heading_class" value="column_heading_title" />
+			<list id="column_widget_properties">
+				<record>
+				<integer id="index" value="0" />
+				<string id="colour" value="text" />
+				</record>
+			</list>
+		</widget>
+
+	</container>
+
+</panel>

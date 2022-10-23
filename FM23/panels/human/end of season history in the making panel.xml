@@ -1,0 +1,156 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+	<container class="main_box">
+		<attachment_group class="vertical_arrange" vertical_alignment="top,extend"/>
+
+		<container height="30">
+			<attachment_group class="horizontal_arrange" horizontal_layout="30,-1" horizontal_gap="10" />
+
+			<widget class="object_portrait_picture" id="clLO" scale_picture="true" image_alignment="left">
+				<record id="object_property" get_property="Ttea" set_property="objt" />
+			</widget>
+
+			<widget class="text" height="30" alignment="left,centre_y">
+				<translation id="text" translation_id="511075" type="use" value="History In The Making[COMMENT: AREA: End of Season Review; SUB-AREA: Accolades; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: title for section of review summarising the records broken from the season]" />
+				<string id="font" value="title" />
+				<string id="size" value="xxlarge" />
+				<string id="colour" value="gold" />
+			</widget>
+		</container>
+
+		<container height="3">
+			<layout class="stick_to_sides_attachment" alignment="vertical, left" id="ttlD" inset="0" apply_to_children="true" />
+			<widget class="horizontal_solid_intro_divider" colour="end of season moments success gold" id="ttlD" width="50" />
+		</container>
+
+		<widget class="manager_text" auto_size="vertical">
+			<translation id="text" translation_id="510397" type="use" value="[%person#1-Your] hard work and effort paid off on the pitch and such a feat didn’t go unrewarded at our end of season awards ceremony.[COMMENT: AREA: End of Season Review; SUB-AREA: Accolades; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: review panel text, person1 here is the human]" />
+			<string id="multiline" value="true" />
+			<string id="colour" value="fg" />
+			<string id="size" value="large" />
+		</widget>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="middle" horizontal_gap="10"/>
+
+			<container id="lefB" class="main_subtle_box" red_replacement="white">
+				<attachment class="test_screen_size_attachment" skip_if_false="true">
+					<list id="properties">
+						<record>
+							<flags id="alignment" value="vertical" />
+							<integer id="min_value" value="0" />
+							<integer id="max_value" value="2000" />
+							<symbol id="set_property" value="height" />
+							<integer id="true_value" value="450" />
+							<integer id="false_value" value="450" />
+						</record>
+						<record min_value="2000" max_value="10000" true_value="900"/>
+						
+						<record>
+							<flags id="alignment" value="horizontal" />
+							<integer id="min_value" value="0" />
+							<integer id="max_value" value="3000" />
+							<symbol id="set_property" value="width" />
+							<integer id="true_value" value="310" />
+							<integer id="false_value" value="310" />
+						</record>
+						<record min_value="3000" max_value="30000" true_value="620"/>
+					</list>
+				</attachment>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_gap="10" vertical_offset="20"/>
+			</container>
+
+			<container class="main_subtle_box" red_replacement="white">
+				<attachment class="test_screen_size_attachment" skip_if_false="true">
+					<list id="properties">
+						<record>
+							<flags id="alignment" value="vertical" />
+							<integer id="min_value" value="0" />
+							<integer id="max_value" value="2000" />
+							<symbol id="set_property" value="height" />
+							<integer id="true_value" value="450" />
+							<integer id="false_value" value="450" />
+						</record>
+						<record min_value="2000" max_value="10000" true_value="900"/>
+
+						<record>
+							<flags id="alignment" value="horizontal" />
+							<integer id="min_value" value="0" />
+							<integer id="max_value" value="3000" />
+							<symbol id="set_property" value="width" />
+							<integer id="true_value" value="310" />
+							<integer id="false_value" value="310" />
+						</record>
+						<record min_value="3000" max_value="30000" true_value="620"/>
+					</list>
+				</attachment>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_gap="16" vertical_offset="20" />
+
+				<container id="trCO">
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle" wrap="true"/>
+    			<layout class="arrange_horizontal_attachment" alignment="middle" wrap="true" gap="6" offset="10" />
+				</container>
+
+				<container height="1">
+					<attachment_group class="horizontal_arrange" horizontal_alignment="middle" />
+					<widget class="horizontal_solid_intro_divider" auto_size="all" colour="end of season moments success gold" />
+				</container>
+
+				<container id="coCO">
+					<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" horizontal_inset="50" gap="10" horizontal_gap="10"/>
+				</container>
+
+				<container height="1">
+					<attachment_group class="horizontal_arrange" horizontal_alignment="middle" />
+					<widget class="horizontal_solid_intro_divider" auto_size="all" colour="end of season moments success gold" />
+				</container>
+
+				<container height="30">
+					<attachment_group class="horizontal_arrange" horizontal_alignment="middle" horizontal_gap="10"/>
+
+					<widget class="object_portrait_picture" id="ClBa" width="30" scale_picture="true" image_alignment="left">
+						<record id="object_property" get_property="Ttea" set_property="objt" />
+					</widget>
+
+					<widget class="team_button" id="ClNm" auto_size="horizontal" alignment="centre_y">
+						<string id="font" value="title" />
+						<string id="size" value="xxlarge" />
+						<string id="text_colour" value="text" />
+					</widget>
+				</container>
+				
+				<container />
+			</container>
+
+			<container id="rigB" class="main_subtle_box" red_replacement="white">
+				<attachment class="test_screen_size_attachment" skip_if_false="true">
+					<list id="properties">
+						<record>
+							<flags id="alignment" value="vertical" />
+							<integer id="min_value" value="0" />
+							<integer id="max_value" value="2000" />
+							<symbol id="set_property" value="height" />
+							<integer id="true_value" value="450" />
+							<integer id="false_value" value="450" />
+						</record>
+						<record min_value="2000" max_value="10000" true_value="900"/>
+
+						<record>
+							<flags id="alignment" value="horizontal" />
+							<integer id="min_value" value="0" />
+							<integer id="max_value" value="3000" />
+							<symbol id="set_property" value="width" />
+							<integer id="true_value" value="310" />
+							<integer id="false_value" value="310" />
+						</record>
+						<record min_value="3000" max_value="30000" true_value="620"/>
+					</list>
+				</attachment>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle"/>
+			</container>
+		</container>
+
+	</container>
+
+</panel>

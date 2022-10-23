@@ -1,0 +1,26 @@
+<panel>
+	<attachment_group class="button_arrangement_right" />
+
+	<widget class="primary_icon_tick_button" id="cnuf" colour="white">
+		<translation id="text" translation_id="229918" type="use" value="Confirm" />
+		<record id="click_event">
+			<flags id="event_id" value="cnuf" />
+			<flags id="event_target" value="Asuf" />
+		</record>
+	</widget>
+	<widget class="icon_button" id="safl" auto_size="all">
+		<translation id="text" translation_id="247116" type="use" value="Select All" />
+		<record id="click_event">
+			<flags id="event_id" value="safl" />
+			<flags id="event_target" value="Asuf" />
+		</record>
+	</widget>
+	<widget class="icon_button" id="clfl" auto_size="all">
+		<translation id="text" translation_id="229717" type="use" value="Clear" />
+		<record id="click_event">
+			<flags id="event_id" value="clfl" />
+			<flags id="event_target" value="Asuf" />
+		</record>
+	</widget>
+
+</panel>

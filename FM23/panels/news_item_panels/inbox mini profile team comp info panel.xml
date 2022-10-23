@@ -1,0 +1,85 @@
+<panel height="112">
+	<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="all" inset="0" />
+
+
+	<container class="inner_subtle_box">
+		<layout class="arrange_vertical_attachment" alignment="top" gap="4" />
+		<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="horizontal" inset="0" />
+
+		<container height="42">
+			<layout class="arrange_horizontal_attachment" alignment="left,extend" gap="10" offset="0" />
+			<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="vertical" inset="0" />
+
+			<widget class="object_portrait_picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="50">
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</widget>
+
+			<container>
+				<layout class="arrange_vertical_attachment" layout="-1, -1" gap="-2" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+				<widget class="client_object_label" alignment="left,bottom" size="normal" style="bold" colour="white">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="valu" />
+					</record>
+				</widget>
+
+				<widget class="client_object_label" id="ctxt" alignment="left,top" size="normal" colour="white" />
+			</container>
+		</container>
+
+		<container height="47">
+			<layout class="grid_layout_attachment" row_layout="24, 20" mode="exact" vertical_gap="-4">
+
+				<list id="column_layout">
+					<record>
+						<string id="column_layout" value="-1, -1" />
+						<integer id="horizontal_offset" value="0" />
+						<integer id="horizontal_gap" value="5" />
+					</record>
+					<record>
+						<string id="column_layout" value="-1, -1" />
+						<integer id="horizontal_offset" value="0" />
+						<integer id="horizontal_gap" value="5" />
+					</record>
+				</list>
+			</layout>
+
+			<widget class="number_label" col="0" row="0" alignment="left,centre_y" colour="white" font="value">
+				<record id="object_property">
+					<integer id="get_property" value="TccW" />
+					<integer id="set_property" value="valu" />
+				</record>
+			</widget>
+
+			<widget class="odds_label" col="1" row="0" alignment="left,centre_y" colour="white" font="value">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="TcsO" />
+							<integer id="set_property" value="Shwn" />
+						</record>
+						<record>
+							<integer id="get_property" value="TccO" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+
+			<widget class="label" id="twtx" font="label" col="0" row="1" />
+
+			<widget class="label" font="label" col="1" row="1">
+				<translation id="text" translation_id="437032" type="use" value="Pre-Season Odds[COMMENT: FR 13665; team wins competition news item; pre-season favourites for competition title]" />
+				<record id="object_property">
+					<integer id="get_property" value="TcsO" />
+					<integer id="set_property" value="Shwn" />
+				</record>			
+			</widget>
+		</container>
+	</container>
+</panel>

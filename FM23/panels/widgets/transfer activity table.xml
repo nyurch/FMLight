@@ -1,0 +1,72 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<widget class="table" id="tran" layout="80,100,100,100,60" mode="fill_rows, stripe_rows" save_session_state="true">
+		<list id="headings">
+			<record alignment="left,centre_y">
+				<translation id="text" translation_id="230120" type="use" value="Date" />
+			</record>
+			<record alignment="left,centre_y">
+				<translation id="text" translation_id="227966" type="use" value="Player" />
+			</record>
+			<record alignment="left,centre_y">
+				<translation id="text" translation_id="242854" type="use" value="From" />
+			</record>
+			<record alignment="left,centre_y">
+				<translation id="text" translation_id="242855" type="use" value="To" />
+			</record>
+			<record alignment="left,centre_y">
+				<translation id="text" translation_id="230121" type="use" value="Fee" />
+			</record>
+		</list>
+
+		<!-- default properties adopted by every item in table -->
+		<record id="default_properties" spec="text" alignment="left,centre_y" multiline="false" colour="black"/>
+
+		<list id="column_table_properties">
+			<!-- Date column -->
+			<record id="datC" index="0" auto_hide_priority="50" sort_ascending="false">
+				<record id="widget_info">
+					<symbol id="class" value="date_cell" />
+					<integer id="navigation_focus_target" value="0"/>
+				</record>
+			</record>
+			<!-- Person column -->
+			<record id="perC" index="1" auto_hide_priority="30">
+				<record id="widget_info">
+					<symbol id="class" value="person_button"/>
+				</record>
+			</record>
+			<!-- Selling team -->
+			<record id="fotC" index="2" auto_hide_priority="20">
+				<record id="widget_info">
+					<symbol id="class" value="team_button"/>
+					<integer id="navigation_focus_target" value="1"/>
+				</record>
+			</record>
+			<!-- Buying team-->
+			<record id="totC" index="3" auto_hide_priority="10">
+				<record id="widget_info">
+					<symbol id="class" value="team_button"/>
+					<integer id="navigation_focus_target" value="1"/>
+				</record>
+			</record>
+			<!-- Fee column -->
+			<record id="feeC" index="4" auto_hide_priority="40" sort_ascending="false" >
+				<record id="widget_info">
+					<symbol id="class" value="text" />
+				</record>
+			</record>
+		</list>
+
+		<list id="default_sort_column">
+			<integer value="datC"/>
+			<integer value="totC"/>
+			<integer value="feeC"/>
+		</list>
+	</widget>
+
+	<widget class="text" id="notr" alignment="centre" hidden="true">
+		<translation id="text" translation_id="315038" type="use" value="No transfers to display[COMMENT - transfer centre; used when there are no impending transfers to display]" />
+	</widget>
+</panel>

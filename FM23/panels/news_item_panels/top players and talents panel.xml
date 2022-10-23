@@ -1,0 +1,53 @@
+﻿<panel>
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+    <container class="scrolling_box" id="scrl">
+        <container id="ctbx">
+            <attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0"/>
+
+            <!-- news item text-->
+            <widget class="inbox_body_text" id="bdtx" auto_size="vertical"/>
+            
+            <!-- tabs -->
+            <container class="tabbed_container" id="Tabb" default_item="Pl01" navigation_container="true">
+                <attachment_group class="vertical_arrange_autosize"/>
+
+                <container id="winT" >
+                    <translation id="title" translation_id="229712" type="use" value="Winner"/>
+                    <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="210, 300" horizontal_gap="8"/>
+
+                    <container class="client_object_viewer_xml_panel" id="winn" file="news_item_panels/top player news panel" height="168" width="128"/>
+
+                    <container class="main_box" appearance="boxes/main/contrast/paper" red_replacement="bg lighter">
+                        <attachment_group class="horizontal_arrange_vertical_autosize" width="300"/>
+                        <layout class="stick_to_sides_attachment" alignment="top" inset="4"/>
+
+                        <widget class="text" id="wbio" auto_size="vertical" width="280"/>
+                    </container>
+                </container>
+
+                <container class="horizontal_arrange_container" id="Pl01" auto_size="vertical" wrap="true" gap="8">
+                    <string id="title" value="1-10"/>
+                </container>
+
+                <container class="horizontal_arrange_container" id="Pl02" auto_size="vertical" wrap="true" gap="8">
+                    <string id="title" value="11-20"/>
+                </container>
+
+                <container class="horizontal_arrange_container" id="Pl03" auto_size="vertical" wrap="true" gap="8">
+                    <string id="title" value="21-30"/>
+                </container>
+
+                <container class="horizontal_arrange_container" id="Pl04" auto_size="vertical" wrap="true" gap="8">
+                    <string id="title" value="31-40"/>
+                </container>
+
+                <container class="horizontal_arrange_container" id="Pl05" auto_size="vertical" wrap="true" gap="8">
+                    <string id="title" value="41-50"/>
+                </container>
+
+                <container class="horizontal_arrange_container" id="PlHu" auto_size="vertical" wrap="true" gap="8"/>
+            </container>
+        </container>
+    </container>
+</panel>

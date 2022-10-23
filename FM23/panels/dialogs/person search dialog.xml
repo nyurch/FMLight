@@ -1,0 +1,365 @@
+<panel width="1000" height="600">
+	<flags id="mbxc" value="search filter active"/>
+	<flags id="ubxc" value="search filter inactive"/>
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+	<container class="inner_box_no_margin" id="main" absorb_click_events="true">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+		<container class="container_with_mouse_events" id="bacb" absorb_click_events="true">
+			<layout class="arrange_vertical_attachment" alignment="top,extend" offset="8" gap="8"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="8"/>
+
+			<container height="32" navigation_container="true">
+				<layout class="arrange_horizontal_attachment" alignment="left" offset="0">
+					<global id="gap" name="ui.split_button_row_gap" />
+				</layout>
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+				<widget class="radio_toggle_switch_left" id="quib" click_event="eqmd" auto_size="horizontal">
+					<translation id="text" translation_id="441056" type="use" value="Quick[COMMENT: FR 21122, person search type]"/>
+				</widget>
+
+				<widget class="radio_toggle_switch_right" id="advb" click_event="eamd" auto_size="horizontal">
+					<translation id="text" translation_id="441057" type="use" value="Advanced[COMMENT: FR 21122, person search type]"/>
+				</widget>
+
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_alignment="right" vertical_inset="0"/>
+
+					<global id="hidden" name="ui.is_fmt_controller_skin"/>
+
+					<widget class="text" alignment="left,centre_y" auto_size="horizontal">
+						<translation id="text" translation_id="466411" type="use" value="Find Similar Player to[COMMENT: FR 22665, scouting comparison option, allows a search to be made compared to an existing player's attributes]"/>
+					</widget>
+
+					<widget class="db_record_search_box" id="srcB" width="250" SRnk="false" file="widgets/search box scout assignment" database_table_type="1" ssro="true" lpfi="widgets/predictive search list scout assignment" lpmw="500"/>
+				</container>
+			</container>
+
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+					<container id="quik">
+						<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0"/>
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+						<container>
+							<layout class="grid_layout_attachment" row_layout="40,230,-1" mode="auto" vertical_gap="6" vertical_offset_start="0" vertical_offset_end="6">
+								<list id="column_layout">
+									<record>
+										<string id="column_layout" value="-1,-1,-1"/>
+										<integer id="horizontal_offset" value="0"/>
+										<integer id="horizontal_gap" value="6"/>
+									</record>
+									<record>
+										<string id="column_layout" value="170,360,-1"/>
+										<integer id="horizontal_offset" value="0"/>
+										<integer id="horizontal_gap" value="6"/>
+									</record>
+									<record>
+										<string id="column_layout" value="-1"/>
+										<integer id="horizontal_offset" value="0"/>
+									</record>
+								</list>
+							</layout>
+
+							<!--first row-->
+
+							<container class="inner_box_no_margin" id="trsb" navigation_container="true" default_focus="true">
+								<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" apply_to_children="true"/>
+								<layout class="arrange_horizontal_attachment" layout="-1,145" offset="6" gap="0"/>
+
+								<widget class="text" auto_size="vertical" alignment="left,centre_y" font="title" colour="accent" wants_mouse_events="false" multiline="true">
+									<translation id="text" translation_id="227953" type="use" value="Transfer Status"/>
+								</widget>
+
+								<widget class="popup_button" id="trst" auto_size="vertical" alignment="left,centre_y" select_event="eTSc"/>
+							</container>
+
+							<container class="inner_box_no_margin" id="losb" navigation_container="true">
+								<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" apply_to_children="true"/>
+								<layout class="arrange_horizontal_attachment" layout="-1,145" offset="6" gap="0"/>
+
+								<widget class="text" auto_size="vertical" alignment="left,centre_y" font="title" colour="accent" wants_mouse_events="false" multiline="true">
+									<translation id="text" translation_id="247489" type="use" value="Loan Status"/>
+								</widget>
+
+								<widget class="popup_button" id="lost" auto_size="vertical" alignment="left,centre_y" select_event="eLSc">
+									<translation id="text" translation_id="247489" type="use" value="Loan Status"/>
+								</widget>
+							</container>
+
+							<container class="inner_box_no_margin" id="cosb" navigation_container="true">
+								<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" apply_to_children="true"/>
+								<layout class="arrange_horizontal_attachment" layout="-1,145" offset="6" gap="0"/>
+
+								<widget class="text" auto_size="vertical" alignment="left,centre_y" font="title" colour="accent" wants_mouse_events="false" multiline="true">
+									<translation id="text" translation_id="227954" type="use" value="Contract Status"/>
+								</widget>
+
+								<widget class="popup_button" id="cost" auto_size="vertical" alignment="left,centre_y" select_event="eCSc">
+									<translation id="text" translation_id="227954" type="use" value="Contract Status"/>
+								</widget>
+							</container>
+
+							<!--second row-->
+							<container class="inner_box" id="posb" colour="bg" navigation_container="true">
+								<translation id="title" translation_id="230082" type="use" value="Positions"/>
+								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+								<container class="inner_box_no_margin">
+									<string id="remove_if" value="ui.is_fmt_controller_skin" />
+									<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="4"/>
+									<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="4"/>
+
+									<widget class="pitch_with_all_positions" id="ppip" vertical="true" pitch_show_names="false" pitch_allow_multiple_select_no_modifiers="true" pitch_draw_grass="true" select_event="esfp" absorb_click_events="true" pitch_line_colour="white" line_width="1" pitch_draw_goals="false" pitch_alignment="centre,can_scale" pitch_touchline_width_percentage="0" pitch_vertical_padding="12" pitch_horizontal_padding="12"/>
+
+									<container>
+										<attachment_group class="horizontal_arrange_vertical_autosize"/>
+
+										<widget class="button" id="sapb" click_event="sapo" appearance="buttons/custom/tactics/pitch switch/left/button" size="xsmall" auto_size="vertical">											
+											<translation id="text" translation_id="247116" type="use" value="Select All"/>
+										</widget>
+
+										<widget class="button" id="clpb" click_event="cpos" appearance="buttons/custom/tactics/pitch switch/right/button" size="xsmall" auto_size="vertical">											
+											<translation id="text" translation_id="229717" type="use" value="Clear"/>
+										</widget>
+									</container>
+								</container>
+
+								<container class="inner_box_no_margin">
+									<string id="create_if" value="ui.is_fmt_controller_skin" />
+									<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+									<widget class="pitch_with_squad_depth" wants_mouse_events="false" vertical="true" pitch_alignment="centre,can_scale"  pitch_draw_grass="false" pitch_draw_goals="false" pitch_draw_markings="true" show_position_strength="false" pitch_show_names="false" pitch_line_colour="faded white" pitch_touchline_width_percentage="1" pitch_perspective="0.0" pitch_override_icon_size="2" line_width="1" pitch_vertical_padding="0" disable_animations="true">
+									</widget>
+
+									<container>
+										<layout class="grid_layout_attachment" row_layout="10,-1,-1,-1,-1,-1,-1" mode="auto" column_layout="-1,-1,-1" vertical_gap="2" horizontal_gap="6" vertical_offset="0" horizontal_offset="10" />
+
+										<set_var name="position_checkbox">
+											<widget class="check_box" icon="switches/custom/position selector/button" focus_appearance="switches/custom/position selector/button_controller" auto_size="horizontal" label_disabled="true" icon_alignment="centre" select_event="esfp"/>
+										</set_var>
+
+										<!--offset row-->
+										<widget class="spacer" />
+										<widget class="spacer" />
+										<widget class="spacer" />
+
+										<!--1st row-->
+										<widget class="spacer" />
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="stc " name="position_checkbox"/>
+										</container>
+										<widget class="spacer" />
+
+										<!--2nd row-->
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="aml " name="position_checkbox"/>
+										</container>
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="amc " name="position_checkbox"/>
+										</container>
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="amr " name="position_checkbox"/>
+										</container>
+
+										<!--3rd row-->
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="ml  " name="position_checkbox"/>
+										</container>
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="mc  " name="position_checkbox"/>
+										</container>
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="mr  " name="position_checkbox"/>
+										</container>
+
+										<!--4th row-->
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="wbl " name="position_checkbox"/>
+										</container>
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="dm  " name="position_checkbox"/>
+										</container>
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="wbr " name="position_checkbox"/>
+										</container>
+									
+										<!--5th row-->
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="dl  " name="position_checkbox"/>
+										</container>
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="dc  " name="position_checkbox"/>
+										</container>
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="dr  " name="position_checkbox"/>
+										</container>
+
+										<!--6th row-->
+										<widget class="spacer" />
+										<container>
+											<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+											<var id="gk  " name="position_checkbox"/>
+										</container>
+										<widget class="spacer" />
+									</container>
+
+								</container>
+
+							</container>
+
+
+							<container>
+								<layout class="arrange_vertical_attachment" layout="-1,-1,-1" offset="0" gap="6"/>
+								<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+								<container class="main_subtle_box" id="rolb" colour="accent" navigation_container="true">
+									<translation id="title" translation_id="298050" type="use" value="Role"/>
+									<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+									<widget class="popup_button" id="role" auto_size="vertical" alignment="left,centre_y" select_event="eROc">
+										<translation id="text" translation_id="298050" type="use" value="Role"/>
+									</widget>
+								</container>
+
+								<container class="main_subtle_box" colour="accent" id="ageb" navigation_container="true">
+									<translation id="title" translation_id="227770" type="use" value="Age[comment - person age]"/>
+									<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" apply_to_children="true"/>
+									<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+									<container>
+										<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle,fill" horizontal_offset="0" vertical_offset="0"/>
+
+										<widget class="selection_list" id="mina" use_menu_for_plus_minus="false" auto_size="vertical" select_event="mias"/>
+
+										<widget class="label" auto_size="all">
+											<translation id="text" translation_id="233089" type="use" value="-"/>
+										</widget>
+
+										<widget class="selection_list" id="maxa" use_menu_for_plus_minus="false" auto_size="vertical" select_event="maas"/>
+									</container>
+
+									<widget class="spacer"/>
+								</container>
+
+								<container class="main_subtle_box" id="scrb" colour="accent" navigation_container="true">
+									<translation id="text" translation_id="252134" type="use" value="Scout Recommendation[COMMENT - person list column heading hint tool tip; scouting section]"/>
+									<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" apply_to_children="true"/>
+									<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+									<container height="30">
+										<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_offset="0" horizontal_gap="2" vertical_offset="0"/>
+
+										<widget class="text" auto_size="all" alignment="left,centre_y">
+											<translation id="text" translation_id="249826" type="use" value="Is At Least[COMMENT - filter rule type]"/>
+										</widget>
+
+										<widget class="popup_button" id="scRE" auto_size="vertical" select_event="eREc"/>
+									</container>
+
+									<widget class="spacer"/>
+								</container>
+							</container>
+
+							<container class="main_subtle_box" id="attb" colour="accent" navigation_container="true">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+								<widget class="person_filter_panel" id="psfp" draw_title="false" file="filter_panels/person search dialog filter panel" wants_mouse_events="false"/>
+							</container>
+
+							<!--third row-->
+							<container class="main_subtle_box" id="conb" colour="accent" navigation_container="true">
+								<translation id="title" translation_id="364209" type="use" value="Additional Conditions[COMMENT: FR 6137, scout assignement dialog text, search conditions]"/>
+
+								<!-- embedded buttons -->
+								<container id="btns" height="34" embed_in_frame="true">
+									<attachment_group class="title_embedded_panel_right" horizontal_gap="1" vertical_offset="0"/>
+
+									<widget class="filter_edit_box" id="adce" appearance="edit boxes/custom/selection/box" alignment="left, centre_y" height="30" width="150" flatten_menu_items="true" clear_text_on_select="true" forward_selection_event="true" embed_in_frame="true">
+										<flags id="changed_event" value="chct"/>
+										<flags id="select_on_focus" value="true"/>
+										<boolean id="validate_string" value="true"/>
+										<layout class="stick_to_sides_attachment" alignment="top" inset="2"/>
+										<string id="remove_if" value="ui.is_fmt_controller_skin" />
+									</widget>
+
+									<widget class="popup_button" id="addc" auto_size="horizontal" height="30" fixed="true" embed_in_frame="true" appearance="buttons/subtle/split/right/button">
+										<event id="menu_layout_notification_event" event_id="adtg" event_target="addc"/>
+										<layout class="stick_to_sides_attachment" alignment="top" inset="2"/>
+										<string id="remove_if" value="ui.is_fmt_controller_skin" />
+									</widget>
+
+									<widget class="popup_button" id="addc" auto_size="horizontal" height="30" fixed="true" embed_in_frame="true">
+										<translation id="text" translation_id="249819" type="use" value="Add Condition[COMMENT - person search filter dialog text]" />
+										<translation id="hint" translation_id="321075" type="use" value="Add a condition to narrow your search by[COMMENT - person search filter dialog text]" />
+										<event id="menu_layout_notification_event" event_id="adtg" event_target="addc"/>
+										<layout class="stick_to_sides_attachment" alignment="top" inset="2"/>
+										<string id="create_if" value="ui.is_fmt_controller_skin" />
+									</widget>
+								</container>
+
+								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="6,0,0,0"/>
+
+								<!-- table containing editable filter rules -->
+								<widget class="filter_table" id="otct" show_compare_rules="true" auto_update_filter="true" mode="fill_rows" row_spacing="2"/>
+							</container>
+						</container>
+					</container>
+
+					<container id="advc" file="person/person search filter advanced"/>
+				</container>
+
+				<container height="30" navigation_container="true">
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend">
+						<global id="horizontal_gap" name="ui.button_row_gap"/>
+					</attachment_group>
+
+					<widget class="subtle_popup_button" auto_size="all" id="seop" fixed="true" icon="icons/16px/settings" >
+					</widget>
+
+					<widget class="icon_button" id="clea" auto_size="all" click_event="clpf" controller_button="x_button" appearance="buttons/subtle/normal/button">
+						<translation id="text" translation_id="229717" type="use" value="Clear"/>
+					</widget>
+
+					<widget class="widget_popup_button" id="plsf" widget_type="person_search_filter_popup_panel" auto_size="horizontal" height="31" appearance="buttons/subtle/normal/button" popup_alignment="right,top">
+						<record id="widget_properties" file="filter_panels/person search filter popup" width="250"/>
+						<translation id="text" translation_id="343652" type="use" value="Exclude[COMMENT: offer to clubs panel title; exclusion options for offer to clubs are contained within]"/>
+					</widget>
+
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right" horizontal_offset="0" horizontal_gap="2" vertical_offset="0"/>
+
+						<widget class="primary_icon_tick_button" id="ok"  default_focus="true">
+							<translation id="text" translation_id="229829" type="use" value="Ok"/>
+							<record id="click_event">
+								<flags id="event_id" value="ok  "/>
+							</record>
+						</widget>
+					</container>
+				</container>
+			</container>
+		</container>
+
+	</container>
+
+</panel>

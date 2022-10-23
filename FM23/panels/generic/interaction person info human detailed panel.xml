@@ -1,0 +1,52 @@
+﻿<panel>
+    <attachment_group class="vertical_arrange_autosize_horizontal_centre" vertical_alignment="top" vertical_gap="4" vertical_inset="0"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+    <boolean id="disable_link" value="true"/>
+
+    <container width="70" height="70">
+        <attachment_group class="horizontal_arrange" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
+        
+        <widget class="picture" id="PoBk" file="icons/custom/quick chat/pitch" scale_picture="true" keep_aspect_ratio="true" width="70" height="70" image_alignment="centre">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+        </widget>
+        
+        <!-- portrait -->
+        <widget class="object_portrait_picture" id="PPor" width="70" height="70" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+            <record id="object_property">
+                <integer id="get_property" value="Pers"/>
+                <boolean id="dont_set_object" value="true"/>
+                <boolean id="dont_set_hint" value="true"/>
+            </record>
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+        </widget>
+
+        <!-- currently speaking box and icon -->
+        <widget class="picture" id="talk" scale_picture="true" keep_aspect_ratio="true" width="70" height="70" image_alignment="centre">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+        </widget>
+    </container>
+
+    <!-- name -->
+    <widget class="person_button" colour="black" id="perb" size="large" style="bold" alignment="left, centre_y" auto_size="all" auto_size_maximum_width="180" info_popup_enabled="true" person_is_human="true" person_is_player="false"/>
+
+    <!-- current team -->
+    <container>
+        <attachment_group class="horizontal_arrange_autosize_all" horizontal_layout="18, -1"/>
+        
+        <widget class="object_portrait_picture" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" width="18" height="18">
+            <record id="object_property" dont_set_hint="true" get_property="Pctx" set_property="objt" />
+        </widget>
+
+        <widget class="team_button" id="TmBt" icon_enabled="false" mode="1" size="medium" colour="faded text" auto_size="all">
+            <translation id="no_object_text" translation_id="351074" type="use" value="Unemployed[COMMENT: person doesn't have a job; translation already exists with a different case on the first character, use top 10 matches]"/>
+            <record id="object_property">
+                <integer id="get_property" value="Pctx"/>
+                <boolean id="dont_set_object" value="true"/>
+            </record>
+        </widget>
+    </container>
+
+    <!-- human description -->
+    <widget class="text" id="Pdes" size="medium" colour="faded text" auto_size="all"/>
+</panel>

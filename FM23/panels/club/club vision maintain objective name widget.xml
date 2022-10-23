@@ -1,0 +1,44 @@
+﻿<panel height="40">
+	<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="left, extend" horizontal_gap="4" horizontal_offset="0" vertical_offset="0" vertical_inset="0"/>
+
+	<!-- objective info icon -->
+	<widget class="button" id="infi" appearance="icons/custom/more/button" width="16" height="16" red_replacement="text" navigation_focus_target="false" />
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right, extend" horizontal_gap="4" horizontal_offset="0" vertical_offset="0" vertical_inset="0"/>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend" horizontal_gap="4" horizontal_offset="0" vertical_offset="0" vertical_inset="0"/>
+
+			<!-- objective name text -->
+			<widget class="text" id="obnm" alignment="left, centre_y" style="bold" colour="text" multiline="true" auto_size="vertical">
+				<record id="auto_size_restrictions">
+					<string id="type" value="property"/>
+					<string id="limit_type" value="maximum"/>
+					<string id="orientation" value="vertical"/>
+					<flags id="target" value="obnm"/>
+					<integer id="value" value="2"/>
+					<flags id="property" value="restrict_to_lines"/>
+				</record>
+			</widget>
+
+			<!-- linked object selection popup -->
+			<container id="clbx">
+				<attachment_group class="horizontal_arrange_autosize_all_centre" horizontal_alignment="left" horizontal_offset="0" vertical_inset="0"/>
+
+				<widget class="subtle_popup_button" id="clst" sele="clst" auto_tick_exclusive="true" fixed="false" auto_size="all" style="bold" colour="text"/>
+			</container>
+		</container>
+		
+
+		<!-- newly added icon -->
+		<container class="main_contrast_box_no_margin" appearance="labels/standard/label" id="ngnt" height="18" red_replacement="icon bg">
+			<attachment_group class="horizontal_arrange_autosize_vertical_centre" horizontal_alignment="left, extend" horizontal_offset="0"/>
+
+			<widget class="text" auto_size="all" alignment="left" font="title" size="small" colour="icon fg">
+				<translation id="text" translation_id="320595" type="use" value="New[COMMENT: only three letters, user clicks button to ask a new 'how to' question]"/>
+			</widget>
+		</container>
+	</container>
+</panel>
+

@@ -1,0 +1,221 @@
+<panel wants_mouse_events="true">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="main_transparent_box_no_margin" red_replacement="black">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="4" />
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_offset="0" vertical_inset="0" />
+
+			<container navigation_container="true" default_focus="true">
+				<attachment_group class="horizontal_arrange_autosize" horizontal_alignment="left" horizontal_gap="-6" horizontal_offset="0" vertical_inset="0,0,0,0" />
+
+				<container>
+
+					<record id="mask" alignment="vertical, left" top="0" bottom="-180" width="180" file="backgrounds/pattern subtle" offset_x="0" offset_y="0" />
+					<attachment_group class="horizontal_arrange_autosize" horizontal_offset="0" horizontal_gap="0" vertical_inset="0" />
+
+					<animation class="slide_in_left_animation" />
+
+					<!-- The bordered box is a separate layer as we don't want to scale the actual widgets because it looks bad-->
+					<container class="main_contrast_box" red_replacement="style_background" embed_in_frame="true">
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="false" inset="0" />
+						<animation class="size_animation" />
+					</container>
+
+						<container id="chSo" width="255" navigation_container="true">
+						<animation class="fade_animation" trigger_id="hidden" trigger_value="false" start_value="0.0" end_value="1.0" duration="0.5" end_mode="hold_end" />
+						<layout class="arrange_vertical_attachment" alignment="top, extend" offset="8" gap="10" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="8" />
+
+						<widget class="text" auto_size="vertical" font="title" alignment="left, centre_y" colour="green a200">
+							<translation id="text" translation_id="466513" type="use" value="Choose a Tactical Style[COMMENT: subsesction title; to select a tactical style as part of creating your own tactics]" />
+						</widget>
+
+						<container class="scrolling_box">
+							<container id="butC">
+								<layout class="arrange_vertical_attachment" alignment="top" offset="4" gap="4" />
+								<layout class="fit_children_attachment" alignment="vertical,fill" offset="4" gap="4" />
+								<layout class="fit_children_attachment" alignment="vertical" offset="0" apply_to_children="true" gap="0" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+								
+
+							</container>
+
+						</container>
+
+					</container>
+
+					<container id="tiPc" width="200" hidden="true" navigation_focus_target="false">
+						<animation class="position_animation" />
+						<animation class="fade_animation" />
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="8,8,8,14" />
+						<container class="team_instructions_panel" file="team/team instructions mini readonly" register_events="false" id="tprn" hidden="true">
+						</container>
+					</container>
+
+					<container id="anPr" width="380" hidden="true">
+						<animation class="fade_animation" trigger_id="hidden" trigger_value="false" start_value="0.0" end_value="1.0" duration="0.5" end_mode="hold_end" />
+						<layout class="arrange_vertical_attachment" alignment="bottom, extend" offset="8" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="8,0,8,8" />
+
+						<container>
+							<layout class="arrange_vertical_attachment" alignment="top" offset="0" />
+
+							<widget class="text" height="34" id="repT" alignment="centre" colour="faded white" size="small">
+								<layout class="stick_to_sides_attachment" alignment="horizontal" />
+							</widget>
+							<container class="animation_player_widget" id="wbPN" height="450">
+								<layout class="stick_to_sides_attachment" alignment="horizontal" />
+							</container>
+
+              <container height="45">
+                <layout class="stick_to_sides_attachment" alignment="horizontal" inset="10" />
+                <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+                <widget class="icon_button" id="recM" icon="icons/16px/thumbs up" icon_colour="white" colour="white" multiline="true" show_button_appearance="false" alignment="top, left" icon_alignment="left, top" navigation_focus_target="false" />
+              </container>
+
+            </container>
+
+						<container>
+							<attachment_group class="button_arrangement_right" />
+
+							<widget class="primary_icon_button" id="CnCb" auto_size="all" click_event="CTcr" controller_button="b_button">
+								<translation id="text" translation_id="297550" type="use" />
+							</widget>
+							<widget class="primary_icon_button" id="nxtB" auto_size="all" click_event="NxTS" icon="icons/16px/right" icon_alignment="right" controller_button="y_button">
+								<translation id="text" translation_id="343389" type="use" value="Choose a Formation[COMMENT: add manager panel; option for the user to select a team from a list]" />
+							</widget>
+						</container>
+					</container>
+
+				</container>       
+
+				<container class="main_contrast_box" appearance="boxes/main/contrast/right/paper" red_replacement="pitch_box_background" id="prSp" width="640" hidden="true">
+					<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="8" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="8" />
+
+					<!-- Only fade in not out or it looks wrong-->
+					<animation class="fade_on_hide_animation" end_mode="stop" />
+
+					<container width="220">
+						<layout class="stick_to_sides_attachment" alignment="top,left" apply_to_children="true" inset="0" />
+
+						<container class="inner_subtle_box" width="220">
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="6" />
+
+							<widget class="text" id="tctx" alignment="centre" colour="white" auto_size="vertical" />
+
+							<widget class="text" id="refT" auto_size="vertical" alignment="left" colour="white" font="title" />
+							<widget class="text" id="refM" auto_size="vertical" alignment="left" colour="faded white" />
+
+							<container>
+								<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="8" />
+
+								<container id="frRc" hidden="true">
+									<animation class="fade_on_hide_animation" end_mode="hold_end" duration="0.5" />
+
+									<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" />
+
+									<!--Recommended formation radio button appearance. will be applied to widgets created in code in container with id frRc-->
+									<string id="Rfba" value="buttons/subtle/normal/buttonn"/>
+									<!--Recommended formation radio button height. will be applied to widgets created in code in container with id frRc-->
+									<integer id="Rfbh" value="30" />
+
+								</container>
+
+								<widget class="horizontal_divider" />
+
+								<widget class="subtle_popup_button" id="otfo" colour="white" secondary_icon_colour="white"  auto_size="vertical">
+									<translation id="text" translation_id="466514" type="use" value="Other Formations[COMMENT: title for dropdown containing formations]" />
+								</widget>
+
+							</container>
+
+						</container>
+
+					</container>
+
+
+					<container>
+
+						<layout class="arrange_vertical_attachment" alignment="bottom, extend" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+						<container>
+							<animation class="fade_animation" trigger_id="hidden" trigger_value="false" start_value="0.0" end_value="1.0" duration="0.5" end_mode="hold_end" />
+
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="20,0,20,0" />
+
+							<widget class="pitch_with_tactics" id="rcFP" pitch_is_read_only="true" vertical="true" icon_flags="dont_colour_names,dont_colour_number,use_player_kits_front,dont_fade_icons" player_icon_file="tactics/tactics icon info panel overview role suitability" pitch_perspective="0.1">
+								<string id="pitch_draw_grass" value="false" />
+								<integer id="pitch_vertical_padding" value="0" />
+								<string id="vertical" value="true" />
+								<string id="pitch_alignment" value="top, can_scale" />
+								<real id="maximum_player_size" value="0.220000" />
+								<string id="pitch_line_colour" value="white" />
+								<string id="3332694384" value="tactics normal run" />
+								<string id="3332694416" value="tactics darkened run" />
+								<string id="3332694448" value="tactics dragged run" />
+								<integer id="pitch_touchline_width_percentage" value="50" />
+								<integer id="line_width" value="1" />
+							</widget>
+						</container>
+
+            <container id="dbCN">
+              <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+              <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0" />
+              <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+            </container>
+
+						<container>
+							<attachment_group class="button_arrangement_right" />
+
+							<widget class="primary_icon_button" auto_size="all" click_event="bIns" controller_button="b_button">
+								<translation id="text" translation_id="297550" type="use" />
+							</widget>
+							<widget class="primary_icon_button" id="conB" auto_size="all" icon="icons/16px/tick" controller_button="y_button">
+								<translation id="text" translation_id="342339" type="use" />
+							</widget>
+
+						</container>
+
+					</container>
+
+				</container>
+
+			</container>
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+				
+				<container id="step">
+					<layout class="arrange_horizontal_attachment" layout="-1,-12,-1" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+					<container />
+
+					<container>
+						<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_gap="15" />
+
+						<animation class="fade_animation" trigger_id="hidden" trigger_value="false" start_value="0.0" end_value="1.0" duration="2.5" end_mode="hold_auto_reverse_hold" />
+
+						<widget class="picture" file="icons/48px/tactics" auto_size="vertical" image_alignment="centre" red_replacement="white" />
+						<widget class="text" id="tctx" alignment="centre" colour="white" auto_size="vertical">
+						</widget>
+
+					</container>
+
+					<container />
+
+				</container>
+
+				<widget class="button" show_button_appearance="false" click_event="mcan" navigation_focus_target="false" />
+				
+			</container>
+
+
+		</container>
+	</container>
+</panel>

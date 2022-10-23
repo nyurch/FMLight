@@ -1,0 +1,42 @@
+<panel >
+    <attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<container class="inner_subtle_box" red_replacement="black" id="titl">
+        <attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+        <!-- some pictures -->
+        <container id="ICdi" height="140" >
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+        </container>
+
+        <!-- person name -->
+		<widget class="person_button" id="pnam" auto_size="vertical" spec="text" style="bold" alignment="centre" size="12" info_popup_alignment="centre_left"  colour="black"/>
+
+        <!--club-->
+        <widget class="team_button" id="Pcte" auto_size="vertical" spec="text" alignment="centre" icon_alignment="centre">
+            <record id="object_property" get_property="Pcte"/>
+        </widget>
+
+        <!--nationality-->
+        <widget class="nation_button" id="Pnat" auto_size="vertical" spec="text" alignment="centre" icon_alignment="centre">
+            <record id="object_property" get_property="Pnat" />
+        </widget>
+
+        <!-- person description -->
+        <widget class="text" id="ppos" auto_size="vertical" colour="faded text" alignment="top" size="10" multiline="true" />
+
+        <widget class="horizontal_divider" />
+
+        <!--Value-->
+        <container>
+            <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle"/>
+
+            <widget class="transfer_value_label" id="val1" auto_size="all" alignment="left, centre_y">
+                <translation id="format" translation_id="383826" type="use" value="Valued at [%cash#1-roundsmall-short][COMMENT: FR 10661; player overview; string diaplyed a player's estimated monetary value]" />
+                <record id="object_property" get_property="Pdva" dont_set_hint="true" />
+            </widget>
+        </container>
+
+        <!--Wage / Expiry date-->
+        <widget class="link_text" id="wgex" section="Pcnr" auto_size="vertical" alignment="centre_x" colour="faded text" />
+    </container>
+</panel>

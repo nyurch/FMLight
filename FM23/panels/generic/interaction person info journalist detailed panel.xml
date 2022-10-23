@@ -1,0 +1,75 @@
+﻿<panel>
+    <attachment_group class="vertical_arrange_autosize_horizontal_centre" vertical_alignment="top" vertical_gap="4" vertical_inset="0"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+
+    <container width="70" height="70">
+        <attachment_group class="horizontal_arrange" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
+
+        <!-- portrait -->
+        <widget class="object_portrait_picture" width="70" height="70" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+            <record id="object_property">
+                <integer id="get_property" value="Pers"/>
+                <boolean id="dont_set_object" value="true"/>
+                <boolean id="dont_set_hint" value="true"/>
+            </record>
+            <layout class="stick_to_sides_attachment" alignment="vertical" inset="0"/>
+        </widget>
+
+        <!-- currently speaking icon? -->
+        <widget class="picture" file="icons/custom/quick chat/quick_chat_speaking_mask_square_remote" scale_picture="true" keep_aspect_ratio="true" width="70" height="70" image_alignment="centre" red_replacement="red 900">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+        </widget>
+    </container>
+
+    <!-- name -->
+    <widget class="person_button" colour="black" id="perb" size="large" style="bold" alignment="left, centre_y" auto_size="all" auto_size_maximum_width="180" info_popup_enabled="false"/>
+
+    <!-- Publication -->
+    <widget class="client_object_label" size="medium" colour="faded text" alignment="centre_x, centre_y" auto_size="all" auto_size_maximum_width="180" height="20">
+        <record id="object_property" get_property="Jmsr" set_property="valu"/>
+    </widget>
+
+    <container>
+        <attachment_group class="vertical_arrange_autosize_all" vertical_alignment="top" vertical_gap="4" vertical_inset="0"/>
+        <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+
+        <widget class="horizontal_divider">
+            <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+        </widget>
+
+        <!-- scope/influence) -->
+        <widget class="text" font="label" alignment="left, centre_y" auto_size="all">
+            <translation id="text" translation_id="306507" type="use" value="Scope"/>
+        </widget>
+        <widget class="journalist_scope_label" spec="text" alignment="left, centre_y" auto_size="all">
+            <record id="object_property">
+                <integer id="get_property" value="JMsc"/>
+            </record>
+        </widget>
+
+        <widget class="horizontal_divider">
+            <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+        </widget>
+
+        <!-- personality -->
+        <widget class="text" font="label" alignment="left, centre_y" auto_size="all">
+            <translation id="text" translation_id="247713" type="use" value="Personality"/>
+        </widget>
+        <widget class="journalist_label" display_format="0" spec="text" alignment="left, centre_y" auto_size="all">
+            <record id="object_property" get_property="JCha" set_property="valu"/>
+        </widget>
+
+        <widget class="horizontal_divider">
+            <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+        </widget>
+
+        <!-- relationship -->
+        <widget class="text" font="label"  alignment="left, centre_y" auto_size="all">
+            <translation id="text" translation_id="308637" type="use" value="Relationship[COMMENT: Relationship towards the human player]"/>
+        </widget>
+        <widget class="journalist_label" display_format="1" spec="text" alignment="left, centre_y" auto_size="all">
+            <record id="object_property" get_property="JRel" set_property="valu"/>
+        </widget>
+    </container>
+</panel>

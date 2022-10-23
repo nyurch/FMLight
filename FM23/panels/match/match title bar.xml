@@ -1,0 +1,124 @@
+<panel colour_team_names="false" colour_team_scores="false">
+
+	<attachment_group class="vertical_arrange" vertical_alignment="middle"/>
+
+	<container height="44">
+		<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_gap="8" horizontal_offset="8"/>
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_gap="8" horizontal_offset="0" vertical_inset="0" />
+
+			<container>
+				<attachment_group class="horizontal_arrange_autosize" horizontal_gap="8" horizontal_offset="0" vertical_inset="0" />
+
+				<!-- Back Button -->
+				<widget class="screen_history_button" id="back" fixed="true" width="44" appearance="boxes/main/transparent/paper" icon="icons/26px/left" icon_alignment="centre" controller_button="b_button">
+					<attachment class="get_global_attachment" get_property="hnpt" set_property="itms" />
+					<record id="primary_icon_properties" red_replacement="text"/>
+					<record id="click_event" event_id="GOTO" event_target="brow" scin="-8" />
+
+					<attachment class="test_global_attachment" get_property="MnuS" mode="not_equal" value="true" set_property="hidn" skip_if_null="true"/>
+				</widget>
+
+				<!-- Match Score Area Panel -->
+				<container class="client_object_viewer_xml_panel" file="match/match score area panel">
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</container>
+
+				<!-- Status Box -->
+				<container class="main_transparent_box_no_margin" id="wfHc" red_replacement="bg">
+					<attachment_group class="horizontal_arrange_autosize_vertical_centre" horizontal_offset="14" vertical_inset="2" />
+
+					<!-- Loading Animation -->
+					<widget class="picture" id="anmG" width="26" height="26" scale_picture="true" keep_aspect_ratio="true" file="progress/circular/spinner_match" frame_duration="100000" frame_width="26" red_replacement="title">
+						<animation class="rotate_animation" end_mode="repeat" start_value="0" end_value="360" tween="linear" apply_to_mouse="false" />
+						<animation class="fade_animation" start_value="0" end_value="1" duration="0.3" delay="0.2" end_mode="hold_end"/>
+					</widget>
+
+					<!-- Waiting For Next Highlight -->
+					<widget class="text" id="Wttx" multiline="false" alignment="centre" font="title" colour="title" auto_size="all" auto_size_maximum_width="210">
+						<translation id="text" translation_id="332286" type="use" value="Waiting for next highlight...[COMMENT: title for a box containing information to look at between highlights]" />
+						<animation class="fade_animation" start_value="0" end_value="1" duration="0.3" delay="0.2" end_mode="hold_end"/>
+					</widget>
+
+				</container>
+
+				<!--replay controls-->
+				<widget class="match_replay_controls_panel" id="mrcp">
+					<record id="object_property" get_property="objt" set_property="objt"/>
+				</widget>
+
+			</container>
+
+			<!-- Match Timeline -->
+			<container id="mtSL">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+				<!-- debug container with old time slider panel created in code-->
+			</container>
+
+		</container>
+
+		<container navigation_container="true">
+			<attachment_group class="horizontal_arrange_autosize" horizontal_gap="8" horizontal_offset="0" vertical_inset="0" />
+
+			<container height="44">
+				<layout class="horizontal_arrange_autosize" horizontal_gap="8"/>
+
+				<container class="main_transparent_box_no_margin" draw_vertical_dividers="true">
+					<layout class="horizontal_arrange_autosize" horizontal_gap="0"/>
+
+					<!--home-->
+					<widget class="widget_popup_button" id="homb" width="44" icon="icons/26px/home" secondary_icon_enabled="false" appearance="" controller_button="select_button" gamepad_icon_alignment="centre_right" icon_alignment="centre">
+						<event id="click_event">
+							<flags id="event_id" value="HOME" />
+							<flags id="event_target" value="scrC" />
+						</event>
+						<record id="primary_icon_properties" red_replacement="text" />
+					</widget>
+
+					<!--fm-->
+					<widget class="popup_button" id="fmst" default_focus="false" fixed="true" appearance="" width="44" icon="icons/26px/fm" disable_wheel="true" secondary_icon_enabled="false" controller_button="select_button" gamepad_icon_alignment="centre_right" icon_alignment="centre">
+						<event id="click_notification_event" event_id="FM" item="NULL" />
+						<event id="menu_layout_notification_event" event_id="mlne" event_target="fmst" />
+						<record id="items" file="menus/game" />
+						<record id="primary_icon_properties" red_replacement="text" />
+						<translation id="hint" translation_id="292829" type="use" value="Options[COMMENT: menubar game options button]" />
+					</widget>
+
+					<!--settings-->
+					<widget class="widget_popup_button" id="Sett" width="44" red_replacement="bg darker" icon="icons/16px/settings" widget_type="match_settings_panel" mpmF="generic/modal popup panel match" secondary_icon_enabled="false" appearance="" controller_button="select_button" gamepad_icon_alignment="centre_right" icon_alignment="centre" icon_always_spaced="true">
+						<record id="modal_popup_properties">
+							<boolean id="darkened" value="false" />
+						</record>
+						<translation id="hint" translation_id="332230" type="use" value="Click to show the match settings.[COMMENT: hint for a button to toggle showing the match settings panel]" />
+						<record id="primary_icon_properties" red_replacement="text" />
+						<record id="secondary_icon_properties" red_replacement="text" />
+					</widget>
+
+				</container>
+
+				<container class="match_playback_control_container" id="TopR" file="">
+					<layout class="horizontal_arrange_autosize"/>
+					<attachment class="hide_empty_container_attachment"/>
+
+					<record id="object_property" get_property="maCo" set_property="maCo" />
+
+					<widget class="icon_button" id="inst" width="44" appearance="boxes/contrast/no margin/paper" red_replacement="bg negative" icon="icons/26px/transfer" label_disabled="true" alignment="centre" icon_alignment="centre" click_event="inst">
+						<translation id="hint" translation_id="383109" type="use" value="Simulate Match[COMMENT: button text to go through the next match leaving the result to the staff, using the full match engine to simulate the match result]" />
+						<record id="primary_icon_properties" red_replacement="white" />
+					</widget>
+
+				</container>
+
+			</container>
+
+			<!-- continue button -->
+			<widget class="match_continue_panel" id="mcnt" auto_size="horizontal">
+				<record id="object_property" get_property="objt" set_property="objt"/>
+			</widget>
+
+		</container>
+
+	</container>
+
+</panel>

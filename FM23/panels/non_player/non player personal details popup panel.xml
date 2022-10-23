@@ -1,0 +1,133 @@
+<panel>
+	<layout class="vertical_arrange_autosize"/>
+
+	<boolean id="should_force_refresh" value="true" />
+
+	<!-- Player Info -->
+	<container class="horizontal_arrange_container" layout="270,-1" gap="8" height="218" id="popu">
+
+		<!-- Player Box -->
+		<container>
+			<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+			<container class="main_subtle_box_no_margin">
+				<layout class="vertical_arrange" vertical_layout="-1,40" vertical_gap="0"/>
+
+				<!-- Player Graphics -->
+				<container>
+
+					<!-- Portrait & Logos -->
+					<container class="horizontal_arrange_container" layout="100,170" offset="10" gap="-8">
+						<layout class="stick_to_sides_attachment"/>
+
+						<!-- Nationality & Club -->
+						<container class="plain_box" appearance="tables/standard/row/alternate/row">
+							<layout class="vertical_arrange" vertical_layout="-3,-4" vertical_gap="0" vertical_offset="10" horizontal_inset="12"/>
+
+							<!-- Nationality -->
+							<widget class="object_portrait_picture" height="47" width="77" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="true">
+								<record id="object_property" get_property="PNat"/>
+							</widget>
+
+							<!-- Club -->
+							<container>
+								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+
+								<record id="default_properties" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true"/>
+
+								<!-- Employed -->
+								<widget class="object_portrait_picture" wants_mouse_events="true">
+									<record id="object_property" get_property="Pclb" set_property="objt" dont_set_hint="true"/>
+								</widget>
+
+								<!-- Unemployed -->
+								<widget class="value_based_picture" file="none">
+									<list id="value_list">
+										<record value="0" file="icons/custom/icon box/unemployed"/>
+									</list>
+
+									<record id="object_property">
+										<list id="get_properties">
+											<record get_property="Pcjo" set_property="valu" dont_set_hint="true"/>
+											<record get_property="ttcl" set_property="rrep" dont_set_object="true" />
+											<record get_property="tbcl" set_property="grep" dont_set_object="true" />
+											<record get_property="ttcl" set_property="brep" dont_set_object="true" />
+										</list>
+									</record>
+
+								</widget>
+
+							</container>
+
+						</container>
+
+						<!-- Player Portrait -->
+						<widget class="object_portrait_picture" id="face" image_alignment="centre_x,bottom" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+							<record id="object_property" get_property="objt"/>
+						</widget>
+
+					</container>
+
+					<!-- Status Indicators -->
+					<widget class="player_status_all_button" id="psAB" maximised="true" auto_size="vertical" alignment="bottom" gap="-2" max_items_per_row_or_column="6">
+						<layout class="stick_to_sides_attachment" alignment="top,right" inset="8"/>
+						<record id="object_property" get_property="Pnfa"/>
+					</widget>
+
+				</container>
+
+				<!-- Player Name -->
+				<container class="plain_box" appearance="boxes/contrast/no margin/bottom/paper">
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+					<record id="object_property" get_property="tbcl" set_property="rrep" dont_set_object="true" />
+
+					<widget class="person_button" font="main menu" size="11" alignment="centre_x,centre_y,can_scale">
+
+						<record id="object_property">
+							<list id="get_properties">
+								<record get_property="Pers"/>
+								<record get_property="ttcl" set_property="colr" dont_set_object="true" />
+							</list>
+						</record>
+
+					</widget>
+
+				</container>
+
+			</container>
+
+		</container>
+
+		<container>
+			<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+			<container class="main_subtle_box">
+				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+				<!-- Player Information Table -->
+				<container file="non_player/FME/non player information table popup">
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</container>
+
+			</container>
+
+		</container>
+
+	</container>
+
+	<container class="icon_box" icon="icons/26px/circle">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+		<record id="icon_properties" red_replacement="primary"/>
+
+		<!-- Get player status flags-->
+		<record id="object_property">
+			<list id="get_properties">
+				<record get_property="Pnfo" dont_set_object="true"/>
+				<record get_property="tbcl" set_property="icRR"/>
+			</list>
+		</record>
+
+	</container>
+
+</panel>

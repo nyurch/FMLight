@@ -1,0 +1,15 @@
+<panel height="34" width="260">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="6,0" apply_to_children="true"/>
+	<container>
+		<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="4" gap="0"/>
+		<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="4" />
+
+		<widget class="text" id="tglB" left="6" right="60" alignment="left,centre_y" size="small" />
+
+		<container class="chalkboard_stat_count" id="csCt" size="small" background_colour="cbe not selected colour" style="bold" appearance="buttons/standard/flex/button" width="60" click_event="fCbE" navigation_focus_target="false">
+		</container>
+	</container>
+	<widget class="check_box" id="selc" click_event="fCbE" show_button_appearance="false" appearance="switches/toggle/normal/button" embed_in_frame="true" icon_enabled="false"  green_replacement="bg cyan" red_replacement="standard_button">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" embed_in_frame="true"/>
+	</widget>
+</panel>

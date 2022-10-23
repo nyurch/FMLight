@@ -1,0 +1,35 @@
+﻿<panel>
+	<layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true" offset="0"/>
+	<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+	<layout class="arrange_horizontal_attachment" layout="40, -1, 55" offset="0"/>
+
+	<widget class="object_portrait_picture" id="mjpf" image_alignment="centre" scale_picture="true" height="60">
+		<record id="object_property">
+			<list id="get_properties">
+				<record>
+					<integer id="get_property" value="objt"/>
+					<integer id="set_property" value="valu"/>
+				</record>
+			</list>
+		</record>
+	</widget>
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="1" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<widget class="person_button" id="psbf" auto_size="vertical" alignment="left,centre_y" style="bold" info_popup_enabled="true" person_is_player="true" colour="black">
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="objt"/>
+						<integer id="set_property" value="valu"/>
+					</record>
+				</list>
+			</record>
+		</widget>
+		<widget class="text" id="trff" auto_size="vertical" alignment="left,centre_y"/>
+	</container>
+
+	<widget class="text" id="tfaf" auto_size="vertical" alignment="left,centre_y" size="large" style="bold"/>
+
+</panel>

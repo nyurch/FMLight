@@ -1,0 +1,224 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="vertical_adaptive_container" draw_horizontal_dividers="true">
+		<global id="gap" name="ui.main_box_gap" />
+
+		<!--top part of the panel-->
+		<container id="top" default_height="390" minimum_height="390">
+			<layout class="arrange_horizontal_attachment" layout="-2,-1">
+				<global id="gap" name="ui.main_contrast_box_gap" />
+			</layout>
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<!--bit for the nation overview-->
+			<container class="main_subtle_box" draw_vertical_dividers="true">
+
+				<translation id="title" translation_id="316601" type="use" value="Nation Profile[COMMENT: nation overview; box title]" />
+				<layout class="arrange_horizontal_attachment" layout="400,-3" offset="0">
+					<global id="gap" name="ui.inner_box_gap" />
+				</layout>
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<!--flag and general info-->
+				<container class="inner_box" navigation_container="true" default_focus="true">
+
+					<layout class="arrange_vertical_attachment" layout="70, -1" gap="0" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+					<container>
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<!-- background shading image -->
+						<widget class="picture" id="pict" file="interface/shadow/bar">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="30,0,0,0" />
+						</widget>
+
+						<!--flag-->
+						<widget class="picture" id="flag" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true">
+							<record id="object_property">
+								<integer id="get_property" value="flag" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</widget>
+					</container>
+
+					<!--general info-->
+					<widget class="client_object_label_value_table" id="fdlv">
+
+						<record id="object_property">
+							<integer id="get_property" value="objt" />
+							<integer id="set_property" value="objt" />
+						</record>
+
+						<!--this record contains any properties you want to pass on to the table-->
+						<record id="table_properties">
+							<flags id="mode" value="fill_rows, stripe_rows" />
+							<boolean id="auto_size_rows" value="true" />
+							<boolean id="fixed_size_rows" value="false" />
+							<flags id="auto_size" value="none" />
+
+							<string id="layout" value="-3,-2" />
+							<list id="column_widget_properties">
+								<record indx="0" auto_size="vertical" alignment="left,centre_y" spec="text" />
+								<record indx="1" spec="text" colour="selection" alignment="left,centre_y" auto_size="vertical" />
+							</list>
+
+							<!-- table isn't sortable -->
+							<list id="column_table_properties">
+								<record indx="0" alignment="left,centre_y" />
+								<record index="1" top="4" bottom="4" />
+							</list>
+						</record>
+
+						<!--this list contains the property ids you want to display in the table - if you omit it, the table will attempt to display all properties in the supplied object-->
+						<list id="viewed_property_ids">
+							<integer value="TCnn" />
+							<!--<integer value="Ncac" />-->
+							<integer value="Npop" />
+							<integer value="Nriv" />
+							<integer value="Nlan" />
+							<integer value="Naag" />
+							<integer value="NnsR" />
+							<integer value="NnsC" />
+							<integer value="Nafy" />
+							<integer value="Nfay" />
+							<integer value="Nfdy" />
+						</list>
+					</widget>
+				</container>
+
+				<container class="horizontal_adaptive_container" inset="0" offset="0" gap="6" navigation_container="true">
+
+					<!--manager profile-->
+					<container class="inner_box" priority="2" default_width="-1" minimum_width="240">
+
+						<translation id="title" translation_id="297314" type="use" value="Manager Profile" />
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+						<container id="ManP" class="client_object_viewer_xml_panel" file="human/manager profile" />
+						<widget id="NMnP" class="label" alignment="left,top">
+							<translation id="text" translation_id="298047" type="use" value="No manager." />
+						</widget>
+					</container>
+
+					<!--key employees-->
+					<container class="title_link_box" id="tstf" priority="1" default_width="-1" minimum_width="240" hide_view_menu="true">
+						<translation id="link_title" translation_id="509699" type="use" value="Key People[COMMENT: AREA: club info screen; SUB-AREA: title for a panel showing the manager, captain and vice captain of a club; FR-BN: n/a; CHARLIMIT: None; REF-ID: n/a; NOTE: title text]" />
+						<string id="section" value="TeSq" />
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						
+						<widget class="club_overview_staff_panel" id="cloS">
+							<record id="object_property">
+								<integer id="get_property" value="objt" />
+								<integer id="set_property" value="objt" />
+							</record>
+						</widget>
+					</container>
+				</container>
+			</container>
+
+			<!--next match and ranking panel-->
+			<container draw_horizontal_dividers="true">
+				<layout class="arrange_vertical_attachment" layout="-4,60" offset="0">
+					<global id="gap" name="ui.main_box_gap" />
+				</layout>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+				<!--next match-->
+				<container class="title_link_box" id="nMat" section="TeFi" hide_view_menu="true" format="date_and_days" navigation_container="true">
+					<translation id="link_title" translation_id="247353" type="use" value="Next Match" />
+					<translation id="hint" translation_id="323322" type="use" value="View Fixtures" />
+
+					<!--upcoming fixtures-->
+					<widget class="team_upcoming_fixture_info_panel" id="tmip" file="nation/team upcoming fixture info nation profile">
+						<record id="object_property">
+							<integer id="get_property" value="NnfP" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</widget>
+
+					<!--no upcoming fixtures-->
+					<widget class="label" id="NoFi" alignment="left,top">
+						<translation id="text" translation_id="298048" type="use" value="No upcoming fixtures." />
+					</widget>
+				</container>
+
+				<!--ranking-->
+				<container class="title_link_box" id="gtwr" hide_view_menu="true" navigation_container="true">
+
+					<translation id="link_title" translation_id="297998" type="use" value="World Ranking[COMMENT: heading; a team's world ranking]" />
+					<translation id="hint" translation_id="297317" type="use" value="World Rankings[COMMENT:label for displaying all nations' world rankings]" />
+					<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+					<!--ranking text-->
+					<container>
+
+						<layout class="arrange_horizontal_attachment" alignment="fill" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+						<!--world-->
+						<container>
+
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+							<widget class="fifa_ranking_label" alignment="centre" size="15" id="wnum" style="semi_bold">
+								<record id="object_property">
+									<integer id="get_property" value="Nffr" />
+								</record>
+							</widget>
+						</container>
+					</container>
+				</container>
+			</container>
+		</container>
+
+		<!--bottom part of the panel-->
+		<container default_height="-1" draw_vertical_dividers="true">
+
+			<layout class="arrange_horizontal_attachment" layout="-2, -1" offset="0">
+				<global id="gap" name="ui.main_box_gap" />
+			</layout>
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<container class="horizontal_adaptive_container" offset="0" inset="0" draw_vertical_dividers="true">
+
+				<widget class="major_clubs_snapshot_panel" id="MCsp" priority="1" default_width="-1" minimum_width="300"  navigation_container="true">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
+
+				<container class="client_object_viewer_xml_panel" file="nation/major players snapshot" id="MPsp" priority="1" default_width="-1" minimum_width="300"  navigation_container="true">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</container>
+
+				<widget class="league_ranking_snapshot_panel" id="LRsp" priority="2" default_width="-1" minimum_width="300" navigation_container="true">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
+			</container>
+
+			<widget class="transfer_snapshot_panel" id="TTsp"  navigation_container="true">
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</widget>
+		</container>
+
+		<container id="fifc" default_height="-1" minimum_height="200">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+			<widget class="team_container_honours_panel" honour_subpanel_filename="nation/trophy info" file="nation/trophies" default_width="-2" priority="4">
+				<record id="object_property" get_property="objt" set_property="objt" /> 
+			</widget> 
+		</container>
+	</container>
+
+</panel>

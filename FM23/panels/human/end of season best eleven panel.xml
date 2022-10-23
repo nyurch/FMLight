@@ -1,0 +1,205 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<container class="main_box" >
+		<attachment_group class="vertical_arrange" vertical_gap="10" vertical_alignment="top,extend"/>
+
+		<container height="30">
+			<attachment_group class="horizontal_arrange_autosize" horizontal_gap="10" />
+
+			<widget class="object_portrait_picture" id="clLO" height="30" width="30" scale_picture="true" image_alignment="left" offset="5">
+				<record id="object_property" get_property="Ttea" set_property="objt" />
+			</widget>
+			<widget class="manager_text" height="30" auto_size="horizontal" alignment="left,centre_y">
+				<translation id="text" translation_id="509707" type="use" value="How [%person#1-you] lined up[COMMENT: AREA: End of Season Review; SUB-AREA: Financial; FR-BN: ?; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: title for summary of the most commonly used starting eleven over the course of the season]" />
+				<string id="font" value="title" />
+				<string id="size" value="xxlarge" />
+				<string id="colour" value="text"/>
+			</widget>
+		</container>
+		
+		<container height="3">
+			<layout class="stick_to_sides_attachment" alignment="vertical, left"  inset="0" apply_to_children="true" />
+			<widget class="horizontal_solid_intro_divider" colour="fg" id="ttlD" width="50"/>
+		</container>
+
+		<widget class="text" height="25" id="lnDS" vertical_gap="10">
+			<string id="multiline" value="true"/>
+			<string id="colour" value="fg"/>
+			<string id="size" value="large"/>
+		</widget>
+
+
+		<container class="main_subtle_box" id="con1" >
+			<layout class="arrange_horizontal_attachment" layout="-4,-6,-2"/>
+			<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" />
+
+			<container class="inner_box">
+				<attachment_group class="vertical_arrange_autosize" />
+				<widget class="text" height="25" id="tiBE">
+					<string id="font" value="title" />
+					<string id="size" value="xlarge" />
+					<string id="colour" value="fg" />
+				</widget>
+
+				<container class="client_object_list_table" always_use_latest_object_list="true" id="tsqP" height="370" save_session_state="true" save_default_state="true" navigation_container="true" default_focus="true">
+
+					<integer id="row_spacing" value="0" />
+
+					<integer id="column_spacing" value="0" />
+
+					<string id="should_force_refresh" value="true" />
+
+					<string id="customisation_context" value="play" />
+
+					<integer id="database_table_type" value="1" />
+
+					<string id="view_setting_name" value="stored_tactics_view" />
+
+					<string id="mode" value="fill_rows, stripe_rows, printable" />
+
+					<string id="popup_menu_class" value="popup_button_table_header" />
+
+					<integer id="row_height" value="30" />
+
+					<boolean id="auto_size_rows" value="false" />
+
+					<boolean id="fixed_size_rows" value="true" />
+
+					<boolean id="dont_restore_selection" value="true" />
+
+					<list id="default_sort_column" />
+
+					<list id="disallowed_view_property_ids" />
+
+					<list id="required_view_property_ids" />
+
+					<string id="default_view" value="sltn" />
+
+					<list id="default_sort_column">
+						<integer value="pCSp" />
+					</list>
+
+					<list id="views">
+
+						<record id="sltn">
+							<translation id="text" translation_id="326989" type="use" value="Selection Info[COMMENT: button in view_menu on squad screens; choose to view club stats]" />
+
+							<record id="view">
+
+								<flags id="Pnms" navigation_focus_target="false" />
+
+								<record id="pCSp" appearance="" draggable="false" navigation_focus_target="false" />
+
+								<!-- overall appearances -->
+								<record id="Poap" navigation_focus_target="false" />
+								<!-- assists -->
+								<record id="Poas" navigation_focus_target="false" />
+								<!-- overall goals -->
+								<record id="Pogl" navigation_focus_target="false" />
+								<!-- Average rating -->
+								<record id="Poav" navigation_focus_target="false" />
+
+							</record>
+
+						</record>
+
+					</list>
+
+					<layout class="stick_to_object_attachment" id="align_top" get_side="bottom" set_side="top" target="at03">
+
+						<global id="offset" name="ui.main_box_gap" />
+
+					</layout>
+
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+
+					<layout class="stick_to_object_attachment" id="align_right" get_side="left" set_side="right" target="at00" />
+
+				</container>
+
+				<container>
+					<global id="hidden" name="ui.is_fmt_controller_skin"/>
+
+					<attachment_group class="vertical_arrange_autosize" />
+
+					<container class="inner_box">
+						<attachment class="hide_medium_horizontal" min_value="1200" />
+						<attachment_group class="vertical_arrange_autosize" />
+
+						<container>
+							<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" />
+
+							<widget class="picture" file="icons/16px/tactics" id='pic2' width="26" height="26" image_alignment="centre">
+								<string id="red_replacement" value="fg purple" />
+							</widget>
+							<widget class="text" alignment="centre_y,left" id="2ctL" height="26" name="title" font="title" colour="fg purple">
+								<string id="size" value="xlarge" />
+								<translation id="text" translation_id="482709" type="use" value="Tactics[COMMENT:AREA: Responsibilities; SUB - AREA: Responsibility Panel; FR : 28191; TONE: Formal; CHARLIMIT: None]" />
+							</widget>
+						</container>
+
+						<widget class="text" alignment="centre_y,left" height="20" name="title" font="title" colour="text">
+							<translation id="text" translation_id="420745" type="use" value="Formation[COMMENT: team report squad depth panel; text leading into a dropdown list of formations]" />
+						</widget>
+						<widget class="text" alignment="centre_y,left" id="frT2" height="16" name="title" font="title" colour="fg purple" size="medium"/>
+
+						<widget class="text" alignment="centre_y,left" height="20" name="title" font="title" colour="text">
+							<translation id="text" translation_id="466531" type="use" value="Tactical Style[COMMENT: FR 23334; tactics panel; title for a button to allow the user to choose a tactical style]" />
+						</widget>
+						<widget class="tactics_tactical_style_popup_button" disabled="true" disabled_colour="fg purple" id="stT2"  appearance="" font="title" size="medium" alignment="centre_y,left" height="16" name="title" colour="fg purple" secondary_icon="" />
+
+					</container>
+
+				</container>
+
+			</container>
+
+			<container class="inner_box" navigation_container="true">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" />
+
+
+				<widget class="picture" id="hpic" default_path="boxes/custom/match/lineup pitch/" file="boxes/custom/match/lineup pitch/circles" image_alignment="centre"  scale_picture="true" keep_aspect_ratio="true" >
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+
+				<widget class="pitch_with_tactics" player_icon_file="tactics/tactics icon info panel end of season" id="tacP" height="1200" icon_flags="show_name,use_player_kits_back,show_number,dont_fade_icons,show_extra_details" pitch_draw_grass="false" pitch_line_colour="transparent" pitch_perspective="0.25" pitch_draw_lines="false" pitch_touchline_width_percentage="40">
+					<boolean id="vertical" value="true" />
+					<boolean id="pitch_is_read_only" value="true" />
+				</widget>
+
+			</container>
+
+			<container class="inner_box">
+				<attachment class="show_medium_horizontal" min_value="1200" />
+				<attachment_group class="vertical_arrange_autosize" />
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" />
+
+					<widget class="picture" file="icons/16px/tactics" id='tpic' width="26" height="26" image_alignment="centre">
+						<string id="red_replacement" value="fg purple" />
+					</widget>
+					<widget class="text" alignment="centre_y,left" height="26" name="title" font="title" colour="fg purple" id="tctL">
+						<string id="size" value="xlarge" />
+						<translation id="text" translation_id="482709" type="use" value="Tactics[COMMENT:AREA: Responsibilities; SUB - AREA: Responsibility Panel; FR : 28191; TONE: Formal; CHARLIMIT: None]" />
+					</widget>
+				</container>
+
+				<widget class="text" alignment="centre_y,left" height="20" name="title" font="title" colour="text" size="large">
+					<translation id="text" translation_id="420745" type="use" value="Formation[COMMENT: team report squad depth panel; text leading into a dropdown list of formations]" />
+				</widget>
+				<widget class="text" alignment="centre_y,left" id="frTX" height="20" name="title" font="title" colour="fg purple" size="large"/>
+
+				<widget class="text" alignment="centre_y,left" height="20" name="title" font="title" colour="text" size="large">
+					<translation id="text" translation_id="466531" type="use" value="Tactical Style[COMMENT: FR 23334; tactics panel; title for a button to allow the user to choose a tactical style]" />
+				</widget>
+				<widget class="tactics_tactical_style_popup_button" disabled="true" disabled_colour="fg purple" appearance="" font="title" size="large" alignment="centre_y,left" height="20" id="stTX" name="title" colour="fg purple" secondary_icon="" />
+
+			</container>
+		</container>
+	</container>
+</panel>

@@ -1,0 +1,171 @@
+<panel>
+    <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+    <!-- Player Information Table -->
+    <widget class="table" mode="fill_rows" layout="-15,-20,1,-15,-20" auto_size_rows="false" fixed_size_rows="true" row_height="33">
+        <record id="object_property" get_property="objt" set_property="objt"/>
+
+        <record id="default_properties" font="text" size="normal"/>
+
+        <list id="row_properties">
+            <record index="0" row_height="39"/>
+            <record index="1">
+                <flags id="appearance" value="tables/standard/row/alternate/row" />
+            </record>
+            <record index="3">
+                <flags id="appearance" value="tables/standard/row/alternate/row" />
+            </record>
+            <record index="5">
+                <flags id="appearance" value="tables/standard/row/alternate/row" />
+            </record>
+        </list>
+
+        <list id="column_table_properties">
+            <record index="0" left="6"/>
+            <record index="1" right="6"/>
+            <record index="2" top="4" bottom="4"/>
+            <record index="3" left="6"/>
+            <record index="4" right="6"/>
+        </list>
+
+        <list id="column_widget_properties">
+            <record index="0" alignment="left,centre_y" colour="faded text"/>
+            <record index="1" alignment="right,centre_y"/>
+            <record index="3" alignment="left,centre_y" colour="faded text"/>
+            <record index="4" alignment="right,centre_y"/>
+        </list>
+
+        <!-- Nationality & Caps -->
+        <container class="vertical_arrange_container" layout="-25,-20" gap="-5" column_span="5" row="0" col="0">
+
+            <!-- Nationality -->
+            <container class="horizontal_arrange_container" alignment="fill" gap="0">
+
+                <widget class="label" colour="faded text">
+                    <translation id="text" translation_id="227841" type="use" value="Nationality" />
+                </widget>
+
+                <widget class="nation_button" format="[%nation#1-nationality]" icon_alignment="right" alignment="right,centre_y">
+                    <record id="object_property" get_property="Pnat"/>
+                </widget>
+
+            </container>
+
+            <!-- Caps -->
+            <widget class="international_appearances_label" alignment="right" size="small">
+                <record id="object_property" dont_set_hint="true" get_property="Pist" />
+            </widget>
+
+        </container>
+
+        <!-- Age -->
+        <widget class="label" column_span="1" row="1" col="0">
+            <translation id="text" translation_id="458477" type="use" value="D.O.B" />
+        </widget>
+
+        <widget class="dob_label" column_span="4" row="1" col="1" display_format="1">
+            <record id="object_property" get_property="Pdob"/>
+        </widget>
+
+        <!-- Wages -->
+        <widget class="label" row="2" col="0">
+            <translation id="text" translation_id="227799" type="use" value="Wage" />
+        </widget>
+
+        <widget class="wage_label" row="2" col="1" format="1">
+            <record id="object_property" get_property="Pcww" />
+        </widget>
+
+        <widget class="vertical_divider" row="2" col="2"/>
+
+        <!-- Player Value -->
+        <container row="2" col="3" column_span="2">
+            <layout class="horizontal_arrange" horizontal_layout="-1,-2" horizontal_gap="0"/>
+
+            <widget class="label" row="2" col="3" colour="faded text">
+                <translation id="text" translation_id="227806" type="use" value="Value" />
+            </widget>
+
+            <container row="2" col="4">
+                <layout class="vertical_arrange" vertical_alignment="middle"/>
+
+                <widget class="transfer_value_label" spec="text" show_button_appearance="false" dont_set_hint="true" allow_link_to_transfer_info="false" info_popup_enabled="false" alignment="right,centre_y" auto_size="none">
+                    <record id="object_property" get_property="Pdva"/>
+                </widget>
+
+            </container>
+
+        </container>
+
+        <!-- Ability -->
+        <widget class="label" row="3" col="0">
+            <translation id="text" translation_id="314426" type="use" value="Ability[COMMENT: player popup info panel - scout current ability rating]" />
+        </widget>
+
+        <widget class="scout_stars_label" row="3" col="1" hint_if_no_value="-">
+            <record id="object_property" get_property="Pcab" />
+        </widget>
+
+        <widget class="vertical_divider" row="3" col="2"/>
+
+        <!-- Potential -->
+        <widget class="label" row="3" col="3">
+            <translation id="text" translation_id="314427" type="use" value="Potential[COMMENT: player popup info panel - scout potential ability rating]" />
+        </widget>
+
+        <widget class="scout_stars_label" row="3" col="4" hint_if_no_value="-">
+            <record id="object_property" get_property="Ppab" />
+        </widget>
+
+        <!-- Morale -->
+        <widget class="label" row="4" col="0">
+            <translation id="text" translation_id="227839" type="use" value="Morale" />
+        </widget>
+
+        <widget class="editable_client_object_property_panel" row="4" col="1">
+            <record id="default_properties"/>
+            <record id="widget_info" class="morale_label" ShTx="false" default_path="icons/custom/morale/normal/default" should_recolour="true"/>
+            <record id="object_property" get_property="Pmor"/>
+        </widget>
+
+        <widget class="vertical_divider" row="4" col="2"/>
+
+        <!-- Average Rating -->
+        <widget class="label" colour="faded text" row="4" col="3">
+            <translation id="text" translation_id="227852" type="use" value="Av Rat[comment - Average rating]" />
+        </widget>
+
+        <widget class="training_rating_label_formatted" row="4" col="4" appearance="boxes/plain/standard/paper" should_recolour="false">
+            <string id="format" value="[%fraction#1-3.2]" />
+            <boolean id="dont_format_numeric_grouping" value="true" />
+            <translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
+            <record id="object_property" get_property="Poav"/>
+        </widget>
+
+        <!-- Condition -->
+        <widget class="label" colour="faded text" row="5" col="0">
+            <translation id="text" translation_id="227793" type="use" value="Condition" />
+        </widget>
+
+        <widget class="editable_client_object_property_panel" row="5" col="1">
+            <record id="widget_info" class="player_condition_icon_widget" appearance="" label_disabled="true" icon_alignment="right"/>
+            <record id="object_property" get_property="PcOI"/>
+            <integer id="editing_property_to_store" value="Pcon" />
+        </widget>
+
+        <widget class="vertical_divider" row="5" col="2"/>
+
+        <!-- Sharpness -->
+        <widget class="label" row="5" col="3">
+            <translation id="text" translation_id="395316" type="use" value="Sharpness" />
+        </widget>
+
+        <widget class="editable_client_object_property_panel" row="5" col="4">
+            <record id="widget_info" class="player_match_sharpness_icon_widget" appearance="" label_disabled="true" icon_alignment="right"/>
+            <record id="object_property" get_property="PftI"/>
+            <integer id="editing_property_to_store" value="Pfit" />
+        </widget>
+
+    </widget>
+
+</panel>
