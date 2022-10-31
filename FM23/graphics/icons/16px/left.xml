@@ -1,6 +1,8 @@
 <!-- image properties -->
 <properties>
 	
-	<colour id="red_replacement" name="black"/>
-	
+	<colour id="red_replacement" name="fg"/>
+	<colour id="blue_replacement" name="fg"/>
+	<colour id="green_replacement" name="fg"/>
+
 </properties>
