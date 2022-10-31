@@ -26,7 +26,7 @@
 
 				<container class="inner_subtle_box" appearance="boxes/custom/speech bubble/left/paper" id="subx" hidden="true">
 					<attachment_group class="vertical_arrange_autosize"/>
-					<widget class="text" id="summ" colour="black" auto_size="vertical" auto_size_minimum_height="40" alignment="left, centre_y"/>
+					<widget class="text" id="summ" colour="white" auto_size="vertical" auto_size_minimum_height="40" alignment="left, centre_y"/>
 				</container>
 			</container>
 		</container>

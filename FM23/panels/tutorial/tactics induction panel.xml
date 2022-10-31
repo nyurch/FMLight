@@ -1,0 +1,129 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="8" vertical_offset="6" />
+	<!--<widget class="text" auto_size="vertical" alignment="centre">
+		<translation id="text" translation_id="469669" type="use" value="Tactics are made up of three main areas: Tactical Style, Formation, and Player Roles.[COMMENT: tactics induction tutorial, Tactical Style is ID 466531, Formation is ID 298104, and Player Roles is ID 332839]" />
+	</widget>-->
+
+	<container draw_vertical_dividers="true">
+
+			<attachment class="test_screen_size_attachment">
+				<list id="properties">
+					<record>
+						<flags id="alignment" value="vertical"/>
+						<integer id="min_value" value="0"/>
+						<integer id="max_value" value="601"/>
+						<!-- This is a very large value as we want our widget to show if > the min_value.  The attachment itself only does values between a range so we set the max arbitrarily high to make this work -->
+						<symbol id="set_property" value="height"/>
+						<integer id="true_value" value="225"/>
+						<integer id="false_value" value="270"/>
+					</record>
+				</list>
+			</attachment>
+
+		<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1,-1" horizontal_gap="12" />
+
+		<!-- Tactical Style Container -->
+		<container class="inner_box">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+			<container>
+				<attachment_group class="vertical_arrange" vertical_layout="25,-1" horizontal_inset="0" vertical_gap="2" />
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_layout="30,-1" horizontal_offset="-5" horizontal_gap="0" />
+					<widget class="picture" file="pictures/kits/2d/numbers/large/1" scale_picture="true" red_replacement="text" green_replacement="tutorial bg" />
+					<widget class="text" alignment="left, centre_y" font="title" colour="text">
+						<layout class="stick_to_sides_attachment" alignment="bottom" inset="2"/>
+						<translation id="text" translation_id="466531" type="use" value="Tactical Style[COMMENT: FR 23334; tactics panel; title for a button to allow the user to choose a tactical style]" />
+					</widget>
+				</container>
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+					<widget class="picture" file="icons/custom/tutorial/tactics/mentality" scale_picture="true" keep_aspect_ratio="true" red_replacement="text" image_alignment="centre" />
+					<container>
+						<attachment_group class="vertical_arrange" vertical_layout="-1,26,-1" vertical_offset="0" vertical_gap="4" />
+						<container>
+							<attachment_group class="vertical_arrange" vertical_alignment="bottom" vertical_gap="0" vertical_offset="0" horizontal_inset="0" />
+							<widget class="text" font="title" alignment="centre" auto_size="vertical" colour="text">
+								<translation id="text" translation_id="348204" type="use" value="Mentality[Comment: prefix used before mentality type text on quick tactical instruction button during match]" />
+							</widget>
+							<widget class="text" auto_size="vertical" alignment="centre">
+								<translation id="text" translation_id="466562" type="use" value="This is the team's core attacking intent, ranging from Very Defensive to Very Attacking.[COMMENT: description of mentality from tactics induction email]" />
+							</widget>
+						</container>
+						<widget class="picture" file="icons/26px/plus" scale_picture="true" image_alignment="centre" red_replacement="text" />
+						<container>
+							<attachment_group class="vertical_arrange" vertical_alignment="top" vertical_gap="0" vertical_offset="0" horizontal_inset="0" />
+							<widget class="text" font="title" alignment="centre" auto_size="vertical" colour="text">
+								<translation id="text" translation_id="247728" type="use" value="Team Instructions" />
+							</widget>
+							<widget class="text" auto_size="vertical" alignment="centre">
+								<translation id="text" translation_id="466563" type="use" value="These are commands issued to the team and are broken down into In Possession, In Transition and Out of Possession.[COMMENT: description of team instructions from tactics induction email]" />
+							</widget>
+						</container>
+					</container>
+				</container>
+			</container>
+		</container>
+
+		<!-- Formation Container -->
+		<container class="inner_box">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange" vertical_layout="25,-1" />
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_layout="30,-1" horizontal_gap="0" horizontal_offset="-5"/>
+					<widget class="picture" file="pictures/kits/2d/numbers/large/2" scale_picture="true" red_replacement="text" green_replacement="tutorial bg" />
+					<widget class="text" alignment="centre_y, left" font="title" colour="text">
+						<layout class="stick_to_sides_attachment" alignment="bottom" inset="2"/>
+						<translation id="text" translation_id="298104" type="use" value="Formation" />
+					</widget>
+				</container>
+				<container>
+					<widget class="picture" file="icons/custom/tutorial/tactics/pitch" scale_picture="true" keep_aspect_ratio="true" red_replacement="text" image_alignment="centre">
+						<layout class="stick_to_sides_attachment" alignment="all" />
+					</widget>
+					<widget class="text" auto_size="none" alignment="centre">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+						<translation id="text" translation_id="466564" type="use" value="This represents the distribution and placing of the players on the pitch itself. The formation initially set represents the team's shape out of possession.[COMMENT: description of formation from tactics induction email]" />
+					</widget>
+				</container>
+			</container>
+		</container>
+
+		<!-- Player Roles Container -->
+		<container class="inner_box">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange" vertical_layout="25,-1" />
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_layout="30,-1" horizontal_offset="-5" horizontal_gap="0" />
+					<widget class="picture" file="pictures/kits/2d/numbers/large/3" scale_picture="true" red_replacement="text" green_replacement="tutorial bg" />
+					<widget class="text" alignment="centre_y, left" font="title" colour="text">
+						<layout class="stick_to_sides_attachment" alignment="bottom" inset="2"/>
+						<translation id="text" translation_id="332839" type="use" value="Player Roles[COMMENT: root menu item for a list of views that correspond to the important attributes for varoius player roles]" />
+					</widget>
+				</container>
+				<container>
+					<widget class="picture" file="icons/custom/tutorial/tactics/shirt" scale_picture="true" keep_aspect_ratio="true" red_replacement="text" image_alignment="centre">
+						<layout class="stick_to_sides_attachment" alignment="all" />
+					</widget>
+					<widget class="text" alignment="centre">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+						<translation id="text" translation_id="466565" type="use" value="Roles and Duties are important; they set instructions for each player and are linked to team mentality and team instructions. Team Fluidity reflects the shape and structure of the team based on these roles and duties.[COMMENT: description of player roles from tactics induction email]" />
+					</widget>
+				</container>
+			</container>
+		</container>
+	</container>
+
+	<container height="60" class="inner_subtle_box_no_margin">
+
+		<string id="remove_if" value="ui.is_fmt_controller_skin" />
+
+		<attachment_group class="horizontal_arrange" horizontal_layout="38,-1" horizontal_offset="8" vertical_inset="6" horizontal_gap="12" />
+		<widget class="picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" file="icons/custom/tutorial/backroom staff" />
+		<widget class="text" id="inte" alignment="left, centre_y" colour="black">
+			<translation id="text" translation_id="516216" type="use" value="Various departments around the club are dependent on having a tactic in place to help them run smoothly and make relevant decisions.[COMMENT: AREA: Inbox; SUB-AREA: tactics tutorial inbox item; BN: 37635; TONE: Formal; CHARLIMIT: None;]" />
+		</widget>
+	</container>
+</panel>

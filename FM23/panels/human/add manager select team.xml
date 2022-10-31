@@ -16,9 +16,9 @@
 			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 			<layout class="centre_in_parent_attachment" alignment="horizontal" />
 
-			<widget class="picture" file="icons/26px/info" scale_picture="false" auto_size="vertical" image_alignment="centre" red_replacement="fg negative" />
+			<widget class="picture" file="icons/26px/info" scale_picture="false" auto_size="vertical" image_alignment="centre" red_replacement="black" />
 
-			<widget class="text" alignment="left,centre_y" auto_size="vertical" multiline="true" colour="fg negative" >
+			<widget class="text" alignment="left,centre_y" auto_size="vertical" multiline="true" colour="black" >
 				<translation id="text" translation_id="395058" type="use" value="You can edit your chosen club's details in the next stage with the exception of its finances, facilities, reputation and continental qualification.[COMMENT: create a club heading message]" />
 			</widget>
 		</container>

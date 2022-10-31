@@ -1,0 +1,19 @@
+﻿<panel>
+	<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="right,extend"/>
+
+	<widget class="person_button" colour="black">
+		<record id="object_property" get_property="Pers" set_property="valu"/>
+	</widget>
+
+	<container class="plain_box" appearance="boxes/custom/body language/paper">
+		<record id="object_property" get_property="red_replacement" set_property="red_replacement"/>
+		<attachment_group class="horizontal_arrange_autosize"/>
+		<widget class="body_language_widget" auto_size="all">
+			<record id="object_property" get_property="Cbod" set_property="valu"/>
+		</widget>
+		<widget class="spacer" width="4"/>
+	</container>
+
+	<widget class="spacer"/>
+
+</panel>

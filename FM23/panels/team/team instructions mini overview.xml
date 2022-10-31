@@ -5,7 +5,7 @@
 
 	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 
-	<container class="main_contrast_box" red_replacement="teal 900">
+	<container class="main_contrast_box" red_replacement="style_background">
 
 	<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="5" vertical_gap="0"/>
 
@@ -15,11 +15,11 @@
       	<container id="styC">
         	<attachment_group class="vertical_arrange_autosize" vertical_gap="0" vertical_offset="5"/>
 
-        	<widget class="text" auto_size="vertical" font="label" colour="faded white" alignment="left" size="large">
+        	<widget class="text" auto_size="vertical" font="label" colour="faded white" alignment="centre" size="large">
          	 	<translation id="text" translation_id="466531" type="use" value="Tactical Style[COMMENT: FR 23334; tactics panel; title for a button to allow the user to choose a tactical style]" />
         	</widget>
 
-       		<widget class="tactics_tactical_style_popup_button" id="TcSt" widget_type="tactics_tactical_style_popup_panel" popup_alignment="left, bottom" auto_size="vertical" appearance="" font="title" size="large" alignment="left" colour="white" disabled_colour="faded white" secondary_icon_alignment="centre_right, centre_y" multiline="true" focus_appearance="buttons/subtle/flex/button_controller">
+       		<widget class="tactics_tactical_style_popup_button" id="TcSt" widget_type="tactics_tactical_style_popup_panel" popup_alignment="left, bottom" auto_size="vertical" appearance="" font="title" size="large" alignment="centre" colour="white" disabled_colour="faded white" secondary_icon_alignment="centre_right, centre_y" multiline="true" focus_appearance="buttons/subtle/flex/button_controller">
        				<record id="secondary_icon_properties" red_replacement="white" />
           		<translation id="text" translation_id="466531" type="use" value="Tactical Style[COMMENT: FR 23334; tactics panel; title for a button to allow the user to choose a tactical style]" />
           		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
@@ -39,7 +39,7 @@
           <flags id="appearance" value="buttons/custom/tactics/style bar/button" />
           <flags id="alignment" value="left,centre" />
           <flags id="icon_alignment" value="left" />
-          <flags id="secondary_icon_colour" value="white" />
+          <flags id="icon_colour" value="red" />
           <flags id="colour" value="white" />
           <flags id="disabled_colour" value="faded white" />
         </widget>
@@ -48,7 +48,7 @@
     </container>
 
 
-    <container class="scrolling_box">
+    <container class="scrolling_box" id="TINS">
 			<container>
 				<attachment_group class="vertical_arrange_autosize" vertical_gap="10"/>
 

@@ -1,0 +1,76 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" />
+
+	<container class="preferences_accessibility_panel" file="">
+		<attachment_group class="vertical_arrange_autosize" />
+
+		<!--Colour Blind Mode colour_blind_mode-->
+		<container class="game_settings_viewer_panel" entity_layout_id="at05" id="cbMD" name="colour blind mode setting" >
+
+			<record id="table_properties">
+				<list id="column_widget_properties">
+					<record index="0" font="title" colour="black" height="30"/>
+					<record index="1" class="subtle_button" />
+				</list>
+				<list id="column_table_properties">
+					<record width="250">
+						<integer id="index" value="1" />
+					</record>
+				</list> 
+			</record>
+
+			<list id="viewed_property_ids">
+				<symbol id="a_button" value="colour_blind_mode" />
+			</list>
+
+		</container>
+
+		<widget class="text" auto_size="vertical" colour="faded text" width="250">
+			<translation id="text" translation_id="553563" type="use" value="Choose a colour blind option to help distinguish different elements within the game[COMMENT: AREA: Preferences; SUB-AREA: Accessibility Preferences; NOTE: Hint to what this option allows the user to do]" />
+		</widget>
+		<!--Intensity Slider-->
+		<widget class="table" id="inCN" mode="fill_rows" auto_size="vertical" auto_size_rows="true" layout="-1, -1" row_spacing="5" sort_disabled="true">
+
+			<record id="table_properties">
+				<list id="column_widget_properties">
+					<record index="0" font="title" colour="black" />
+				</list>
+				<list id="column_table_properties">
+					<record width="250">
+						<integer id="index" value="1" />
+					</record>
+				</list>
+			</record>
+
+			<!--Calibrate clSC-->
+			<widget class="label" row="0" col="0">
+				<translation id="text" translation_id="330128" type="use" value="Intensity"/>
+			</widget>
+			<widget class="slider_horizontal" id="cbIN" height="30" test="icons/16px/down" draw_notches="false" row="0" col="1">
+				<integer id="notch_frequency" value="1" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="2" />
+				<boolean id="draw_middle_notch" value="true" />
+				<event id="final_changed_event">
+					<flags id="event_id" value="ecbI" />
+				</event>
+			</widget>
+
+		</widget>
+
+		<container id="cbPV">
+			<attachment_group class="vertical_arrange_autosize" hidden="true" />
+
+			<string id="remove_if" value="ui.is_fmt_controller_skin" />
+
+			<widget class="horizontal_divider" />
+
+			<container file="game/colour blind preview panel">
+				<attachment_group class="vertical_arrange_autosize" />
+			</container>
+
+		</container>
+
+	</container>
+
+</panel>

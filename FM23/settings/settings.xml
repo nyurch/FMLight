@@ -1541,19 +1541,20 @@
 	<colour name="chemistry_happiness_bad_colour" 			value="bg negative" />
 
 	<!-- Knowledge (descending order)-->
-	<colour name="knowledge colour complete" 				value="green 500" />
-	<colour name="knowledge colour outstanding" 			value="green 500" />
-	<colour name="knowledge colour exceptional" 			value="green 500" />
-	<colour name="knowledge colour extensive" 				value="light green 500" />
-	<colour name="knowledge colour very good" 				value="light green 500" />
-	<colour name="knowledge colour good" 					value="light green 500" />
-	<colour name="knowledge colour average" 				value="grey 400" />
-	<colour name="knowledge colour decent" 					value="grey 400" />
-	<colour name="knowledge colour sporadic" 				value="yellow 700" />
-	<colour name="knowledge colour nominal" 				value="yellow 700" />
-	<colour name="knowledge colour minimal" 				value="deep orange 600" />
+	<!-- Knowledge (descending order)-->
+	<colour name="knowledge colour complete" 				value="teal 900" />
+	<colour name="knowledge colour outstanding" 			value="teal 900" />
+	<colour name="knowledge colour exceptional" 			value="teal 900" />
+	<colour name="knowledge colour extensive" 				value="green 900" />
+	<colour name="knowledge colour very good" 				value="green 900" />
+	<colour name="knowledge colour good" 					value="green 600" />
+	<colour name="knowledge colour average" 				value="green 300" />
+	<colour name="knowledge colour decent" 					value="yellow 900" />
+	<colour name="knowledge colour sporadic" 				value="yellow 900" />
+	<colour name="knowledge colour nominal" 				value="red 300" />
+	<colour name="knowledge colour minimal" 				value="red 600" />
 
-	<colour name="knowledge level" 							value="rgb(63,180,194)"/>
+	<colour name="knowledge level" 							value="rgb(2, 144, 161)"/>
 
 	<colour name="tactical analysis scored low" 			value="rgb(40,119,62)" />
 	<colour name="tactical analysis scored high" 			value="rgb(39,190,62)" />
@@ -1876,6 +1877,11 @@
 	<colour name="xg07"																	value="bg range13"/>
 	<colour name="xg08"																	value="bg range15"/>
 	<colour name="xg09"																	value="bg range17"/>
+
+	<!-- Squad Planner -->
+	<colour name="scouts_opinion"							value="rgb(3, 83, 148)" />
+	<colour name="from_development_squad"					value="fg teal" />
+	<colour name="projection_for_start_of_season" value="rgb(163, 7, 33)" />
 
 
 </properties>

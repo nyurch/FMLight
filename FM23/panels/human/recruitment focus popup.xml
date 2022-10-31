@@ -1,352 +1,771 @@
 ﻿<panel>
 	<list id="draw_order">
-		<record entity_layout_id="at01" />
-		<record entity_layout_id="at0Q" />
-		<record entity_layout_id="at0R" />
-		<record entity_layout_id="at02" />
-		<record entity_layout_id="at04" />
-		<record entity_layout_id="at0@" />
-		<record entity_layout_id="at0A" />
-		<record entity_layout_id="at0N" />
-		<record entity_layout_id="at0&gt;" />
-		<record entity_layout_id="at0F" />
-		<record entity_layout_id="at0C" />
-		<record entity_layout_id="at0B" />
-		<record entity_layout_id="at0G" />
-		<record entity_layout_id="at0O" />
-		<record entity_layout_id="at0E" />
-		<record entity_layout_id="at0D" />
-		<record entity_layout_id="at03" />
-		<record entity_layout_id="at0J" />
-		<record entity_layout_id="at0I" />
-		<record entity_layout_id="at0L" />
-		<record entity_layout_id="at0K" />
-		<record entity_layout_id="at0H" />
-		<record entity_layout_id="at06" />
-		<record entity_layout_id="at05" />
-		<record entity_layout_id="at07" />
-		<record entity_layout_id="at0?" />
-		<record entity_layout_id="at08" />
-		<record entity_layout_id="at00" />
-		<record entity_layout_id="at09" />
-		<record entity_layout_id="at0:" />
-		<record entity_layout_id="at0;" />
-		<record entity_layout_id="at0&lt;" />
-		<record entity_layout_id="at0P" />
-		<record entity_layout_id="at0S" />
-		<record entity_layout_id="at0=" />
+		<record entity_layout_id="at01"/>
+		<record entity_layout_id="at0Q"/>
+		<record entity_layout_id="at0R"/>
+		<record entity_layout_id="at0\"/>
+		<record entity_layout_id="at0]"/>
+		<record entity_layout_id="at02"/>
+		<record entity_layout_id="at04"/>
+		<record entity_layout_id="at0@"/>
+		<record entity_layout_id="at0A"/>
+		<record entity_layout_id="at0N"/>
+		<record entity_layout_id="at0&gt;"/>
+		<record entity_layout_id="at0i"/>
+		<record entity_layout_id="at0F"/>
+		<record entity_layout_id="at0C"/>
+		<record entity_layout_id="at03"/>
+		<record entity_layout_id="at0?"/>
+		<record entity_layout_id="at0D"/>
+		<record entity_layout_id="at0I"/>
+		<record entity_layout_id="at0L"/>
+		<record entity_layout_id="at0M"/>
+		<record entity_layout_id="at0j"/>
+		<record entity_layout_id="at0J"/>
+		<record entity_layout_id="at0O"/>
+		<record entity_layout_id="at0E"/>
+		<record entity_layout_id="at0_"/>
+		<record entity_layout_id="at0`"/>
+		<record entity_layout_id="at0a"/>
+		<record entity_layout_id="at0c"/>
+		<record entity_layout_id="at0h"/>
+		<record entity_layout_id="at0["/>
+		<record entity_layout_id="at0d"/>
+		<record entity_layout_id="at0e"/>
+		<record entity_layout_id="at0f"/>
+		<record entity_layout_id="at0G"/>
+		<record entity_layout_id="at0H"/>
+		<record entity_layout_id="at0k"/>
+		<record entity_layout_id="at0l"/>
+		<record entity_layout_id="at0K"/>
+		<record entity_layout_id="at0b"/>
+		<record entity_layout_id="at0^"/>
+		<record entity_layout_id="at0U"/>
+		<record entity_layout_id="at0g"/>
+		<record entity_layout_id="at0T"/>
+		<record entity_layout_id="at05"/>
+		<record entity_layout_id="at06"/>
+		<record entity_layout_id="at07"/>
+		<record entity_layout_id="at08"/>
+		<record entity_layout_id="at0B"/>
+		<record entity_layout_id="at0="/>
+		<record entity_layout_id="at0V"/>
+		<record entity_layout_id="at0Y"/>
+		<record entity_layout_id="at0X"/>
+		<record entity_layout_id="at0S"/>
+		<record entity_layout_id="at0Z"/>
+		<record entity_layout_id="at0t"/>
+		<record entity_layout_id="at0W"/>
+		<record entity_layout_id="at0w"/>
+		<record entity_layout_id="at0u"/>
+		<record entity_layout_id="at0v"/>
+		<record entity_layout_id="at0s"/>
+		<record entity_layout_id="at0r"/>
+		<record entity_layout_id="at0q"/>
+		<record entity_layout_id="at0m"/>
+		<record entity_layout_id="at0o"/>
+		<record entity_layout_id="at0n"/>
+		<record entity_layout_id="at0p"/>
+		<record entity_layout_id="at00"/>
+		<record entity_layout_id="at09"/>
+		<record entity_layout_id="at0:"/>
+		<record entity_layout_id="at0;"/>
+		<record entity_layout_id="at0&lt;"/>
+		<record entity_layout_id="at0P"/>
 	</list>
 	<list id="properties_to_forward">
 		<record target="tact">
-			<string id="get_property" value="main_contrast_box_red_replacement" />
-			<string id="set_property" value="red_replacement" />
+			<string id="get_property" value="main_contrast_box_red_replacement"/>
+			<string id="set_property" value="red_replacement"/>
 		</record>
 		<record target="tact">
-			<string id="get_property" value="main_contrast_box_appearance" />
-			<string id="set_property" value="appearance" />
+			<string id="get_property" value="main_contrast_box_appearance"/>
+			<string id="set_property" value="appearance"/>
 		</record>
 		<record target="btns">
-			<string id="get_property" value="hide_dialog_buttons" />
-			<string id="set_property" value="hidden" />
+			<string id="get_property" value="hide_dialog_buttons"/>
+			<string id="set_property" value="hidden"/>
 		</record>
 		<record target="focT">
-			<string id="get_property" value="hide_dialog_title" />
-			<string id="set_property" value="hidden" />
+			<string id="get_property" value="hide_dialog_title"/>
+			<string id="set_property" value="hidden"/>
 		</record>
 		<record target="fitT">
-			<string id="get_property" value="hide_dialog_title" />
-			<string id="set_property" value="hidden" />
+			<string id="get_property" value="hide_dialog_title"/>
+			<string id="set_property" value="hidden"/>
 		</record>
 		<record target="fitP">
-			<string id="get_property" value="hide_dialog_title" />
-			<string id="set_property" value="hidden" />
+			<string id="get_property" value="hide_dialog_title"/>
+			<string id="set_property" value="hidden"/>
 		</record>
 		<record target="stTH">
-			<string id="get_property" value="hide_dialog_title" />
-			<string id="set_property" value="hidden" />
+			<string id="get_property" value="hide_dialog_title"/>
+			<string id="set_property" value="hidden"/>
 		</record>
 	</list>
 	<widget class="spacer" id="main">
-		<boolean id="exclude_from_find" value="true" />
-		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		<boolean id="exclude_from_find" value="true"/>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
 	</widget>
 	<widget class="spacer" id="fmin" embed_in_frame="true">
-		<boolean id="exclude_from_find" value="true" />
-		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		<boolean id="exclude_from_find" value="true"/>
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
 	</widget>
-	<container entity_layout_id="at01" id="btns" height="40" name="buttons">
-		<string id="navigation_container" value="true" />
-		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
-		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
-		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+	<container entity_layout_id="at01" id="btns" height="30" name="buttons">
+		<string id="navigation_container" value="true"/>
+		<layout class="stick_to_object_attachment" id="align_bottom" offset="-8" get_side="bottom" set_side="bottom" move_side="true" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
 		<widget class="spacer" id="main">
-			<boolean id="exclude_from_find" value="true" />
-			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			<boolean id="exclude_from_find" value="true"/>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
 		</widget>
 		<widget class="spacer" id="fmin" embed_in_frame="true">
-			<boolean id="exclude_from_find" value="true" />
-			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			<boolean id="exclude_from_find" value="true"/>
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
 		</widget>
 		<widget class="primary_icon_button" entity_layout_id="at0Q" id="ok  " width="100" name="ok">
-			<translation id="text" translation_id="447516" type="use" value="Set Focus[COMMENT: FR 21109, scouting centre option to set the focus for the assignment]" />
 			<record id="click_event">
-				<unsigned id="event_flags" value="0" />
-				<string id="event_id" value="ok  " />
+				<unsigned id="event_flags" value="0"/>
+				<string id="event_id" value="ok  "/>
 			</record>
-			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
-			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
-			<layout class="stick_to_object_attachment" id="align_right" offset="-10" get_side="right" set_side="right" move_side="true" target="main" />
+			<translation id="text" value="Confirm" translation_id="229918" type="use"/>
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_right" offset="-12" get_side="right" set_side="right" move_side="true" target="main"/>
 		</widget>
-		<widget class="button" entity_layout_id="at0R" id="canc" width="100" name="cancel">
-			<translation id="text" value="Cancel" translation_id="229828" type="use" />
+		<widget class="button" entity_layout_id="at0R" id="canc" width="80" name="cancel">
+			<translation id="text" value="Cancel" translation_id="229828" type="use"/>
 			<record id="click_event">
-				<unsigned id="event_flags" value="0" />
-				<string id="event_id" value="canc" />
+				<unsigned id="event_flags" value="0"/>
+				<string id="event_id" value="canc"/>
 			</record>
-			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
-			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
-			<layout class="stick_to_object_attachment" id="align_right" offset="-10" get_side="left" set_side="right" move_side="true" target="at0Q" />
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_right" offset="-10" get_side="left" set_side="right" move_side="true" target="at0Q"/>
 		</widget>
 	</container>
-	<widget class="text" entity_layout_id="at02" id="focT" alignment="centre_x,centre_y" height="20" name="title" size="large">
-		<translation id="text" translation_id="538974" type="use" value="Scouting Focus[COMMENT:AREA: Scouting/Recruitment; SUB-AREA:Recruitment focus dialog; FR-BN: 36087; NOTE: Dialog title; New title for what used to be Recruitment focus]" />
-		<string id="size" value="large" />
-		<string id="font" value="title" />
-		<string id="colour" value="accent" />
-		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
-		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
-		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+	<widget class="icon_button" entity_layout_id="at02" id="focT" alignment="centre_x,centre_y" appearance="" auto_size="horizontal" height="26" name="title" scale_picture="true" keep_aspect_ratio="true">
+		<string id="icon" value="icons/custom/scouting/focus"/>
+		<string id="icon_colour" value="accent"/>
+		<string id="blue_replacement" value="white"/>
+		<string id="size" value="large"/>
+		<translation id="text" translation_id="509169" type="use" value="Recruitment Focus[COMMENT: AREA: Scouting/Recruitment; SUB-AREA:Recruitment focus dialog; FR-BN: 24174; NOTE: Recruitment focus dialog title]" />
+		<string id="font" value="title"/>
+		<string id="colour" value="accent"/>
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+		<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0"/>
 	</widget>
-	<widget class="picture" entity_layout_id="at0S" file="icons/custom/icon box/focus" id="at0S" scale_picture="true" width="40" height="40" name="scout pic">
-		<string id="red_replacement" value="bg accent" />
-		<string id="blue_replacement" value="bg" />
-		<string id="image_alignment" value="centre" />
-		<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" move_side="true" target="at02" />
-		<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="left" set_side="left" move_side="true" target="main" />
+	<widget class="text" entity_layout_id="at0P" alignment="centre_x,centre_y" id="at0P" height="19" name="clarification text">
+		<translation id="text" value="Your Recruitment Team will use the details outlined below to find and suggest players that match" translation_id="553503" type="use"/>
+		<string id="multiline" value="true"/>
+		<string id="colour" value="faded text"/>
+		<layout class="stick_to_object_attachment" id="align_top" get_side="bottom" set_side="top" move_side="true" target="at02" offset="8"/>
+		<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="left" set_side="left" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_right" offset="-10" get_side="right" set_side="right" target="main"/>
 	</widget>
-	<widget class="text" entity_layout_id="at0P" alignment="centre_y,left" id="at0P" height="50" name="clarification text">
-		<translation id="text" translation_id="538975" type="use" value="Scouting Focus informs your recruitment team of the type of players that you are interested in. Scouts and Analysts will be assigned automatically and recommendations will be made via the Recruitment area.[COMMENT:AREA: Scouting/Recruitment; SUB-AREA:Recruitment focus dialog; FR-BN: 36087; NOTE: Recruitment focus dialog clarification text]" />
-		<string id="multiline" value="true" />
-		<string id="colour" value="faded text" />
-		<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at02" />
-		<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="right" set_side="left" target="at0S" />
-		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
-	</widget>
-	<widget class="horizontal_subtle_divider" entity_layout_id="at0=" id="at0=" height="5">
-		<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="bottom" set_side="top" move_side="true" target="at0P" />
-		<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="left" set_side="left" target="main" />
-		<layout class="stick_to_object_attachment" id="align_right" offset="-20" get_side="right" set_side="right" target="main" />
-	</widget>
-	<container class="main_box" entity_layout_id="at04" id="tact" name="tactics section">
-		<string id="navigation_container" value="true" />
-		<layout class="stick_to_object_attachment" id="align_top" offset="2" get_side="bottom" set_side="top" target="at0=" />
-		<layout class="stick_to_object_attachment" id="align_bottom" get_side="top" set_side="bottom" target="at01" />
-		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
-		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+	<container class="main_box_no_margin" entity_layout_id="at04" id="tact" name="tactics section">
+		<string id="navigation_container" value="true"/>
+		<layout class="stick_to_object_attachment" id="align_top" offset="16" get_side="bottom" set_side="top" target="at0P"/>
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="top" set_side="bottom" target="at01"/>
+		<layout class="stick_to_object_attachment" id="align_left" offset="12" get_side="left" set_side="left" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_right" offset="-12" get_side="right" set_side="right" target="main"/>
 		<widget class="spacer" id="main">
-			<boolean id="exclude_from_find" value="true" />
-			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			<boolean id="exclude_from_find" value="true"/>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
 		</widget>
 		<widget class="spacer" id="fmin" embed_in_frame="true">
-			<boolean id="exclude_from_find" value="true" />
-			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			<boolean id="exclude_from_find" value="true"/>
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
 		</widget>
-		<widget class="text" entity_layout_id="at0@" id="fitT" alignment="centre_x,centre_y" width="300" height="15" name="fits tactic title">
-			<translation id="text" translation_id="538976" type="use" value="Find players that suit the tactic:[COMMENT:AREA: Scouting/Recruitment; SUB-AREA:Recruitment focus dialog; FR-BN: 36087; NOTE: Recruitment focus dialog clarification text]" />
-			<string id="font" value="title" />
-			<string id="colour" value="faded text" />
-			<string id="size" value="small" />
-			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
-			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+		<widget class="text" entity_layout_id="at0@" id="fitT" alignment="centre_y,left" auto_size="horizontal" height="20" name="fits tactic title">
+			<translation id="text" translation_id="515710" type="use" value="Choose a position[COMMENT: AREA: press conferences; FR-BN: n/a; NOTE: instructions to the user to select a press conference answer from a dropdown list, playing position]" />
+			<string id="font" value="title"/>
+			<string id="size" value="medium"/>
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
 		</widget>
-		<widget class="tactic_popup_button" entity_layout_id="at0A" id="fitP" appearance="" alignment="centre_x,centre_y" width="300" height="30" name="tactic popup">
-			<string id="font" value="title" />
-			<string id="colour" value="fg" />
-			<string id="size" value="large" />
-			<string id="popup_alignment" value="left, centre_y" />
-			<string id="secondary_icon_colour" value="fg" />
-			<string id="secondary_icon_alignment" value="centre_right, centre_y" />
-			<string id="multiline" value="false" />
-			<boolean id="dada" value="true" />
-			<layout class="stick_to_object_attachment" id="align_top" get_side="bottom" set_side="top" move_side="true" target="at0@" />
-			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+		<widget class="tactic_popup_button" entity_layout_id="at0A" id="fitP" appearance="" alignment="centre_x,centre_y" icon_alignment="centre_x,centre_y" width="240" height="30" name="tactic popup">
+			<string id="icon" value="icons/16px/tactics"/>
+			<string id="icon_colour" value="fg"/>
+			<string id="font" value="text"/>
+			<string id="colour" value="fg"/>
+			<string id="size" value="medium"/>
+			<string id="secondary_icon_colour" value="fg"/>
+			<string id="secondary_icon_alignment" value="centre"/>
+			<string id="multiline" value="false"/>
+			<boolean id="dont_add_reset_text" value="false"/>
+			<layout class="stick_to_object_attachment" id="align_top" offset="8" get_side="bottom" set_side="top" move_side="true" target="at0@"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="190" get_side="left" set_side="left" move_side="true" target="main"/>
 		</widget>
-		<container class="pitch_with_tactics" entity_layout_id="at0N" id="tacP" width="300" name="tactic pitch">
-			<string id="pitch_line_colour" value="faded text" />
-			<string id="navigation_container" value="true" />
-			<string id="player_icon_file" value="tactics/tactics icon basic recruitment meeting" />
-			<boolean id="vertical" value="true" />
-			<boolean id="pitch_draw_grass" value="false" />
-			<boolean id="draw_analysis_overlay" value="false" />
-			<boolean id="pitch_is_read_only" value="true" />
-			<string id="pitch_alignment" value="can_scale" />
-			<string id="icon_flags" value="show_name, use_player_kits_back, drop_initial_if_possible, show_selection_image, show_number, show_role_duty_labels, dont_fade_icons" />
-			<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" target="at0A" />
-			<layout class="stick_to_object_attachment" id="align_bottom" offset="-60" get_side="bottom" set_side="bottom" target="main" />
-			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
-		</container>
-		<widget class="vertical_subtle_divider" entity_layout_id="at0&gt;" id="at0&gt;" width="5">
-			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
-			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
-			<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0N" />
+		<widget class="picture" entity_layout_id="at0N" file="boxes/custom/match/lineup pitch/recruitment focus pitch" id="tacP" scale_picture="true" keep_aspect_ratio="false" width="430" height="352" name="tactic pitch">
+			<string id="default_path" value="boxes/custom/match/lineup pitch/"/>
+			<string id="red_replacement" value="fg"/>
+			<string id="blue_replacement" value="fg"/>
+			<string id="image_alignment" value="centre"/>
+			<string id="pitch_line_colour" value="faded text"/>
+			<string id="navigation_container" value="true"/>
+			<string id="player_icon_file" value="tactics/tactics icon basic recruitment meeting"/>
+			<boolean id="vertical" value="true"/>
+			<boolean id="pitch_draw_grass" value="false"/>
+			<boolean id="draw_analysis_overlay" value="false"/>
+			<boolean id="pitch_is_read_only" value="true"/>
+			<string id="pitch_alignment" value="can_scale"/>
+			<string id="icon_flags" value="show_name, use_player_kits_back, drop_initial_if_possible, show_selection_image, show_number, show_role_duty_labels, dont_fade_icons"/>
+			<float id="pitch_perspective" value="0.200000"/>
+			<layout class="stick_to_object_attachment" id="align_top" offset="56" get_side="top" set_side="top" move_side="true" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="4" get_side="left" set_side="left" move_side="true" target="main"/>
 		</widget>
-		<widget class="radio_toggle_switch_left" entity_layout_id="at0F" id="gnFC" appearance="buttons/standard/flex/button" alignment="centre_x,centre_y" auto_size="horizontal" needs_width="true" height="28">
-			<string id="select_event" value="gnFS" />
-			<string id="selected" value="true" />
-			<string id="colour" value="yellow 700" />
-			<string id="style" value="bold" />
-			<string id="selected_appearance" value="buttons/standard/flex/button_focussed" />
-			<translation id="text" translation_id="442753" type="use" value="General Focus[COMMENT: scouting assignment name string, scout will look for players that match the general focus set by the user]" />
-			<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="top" set_side="top" move_side="true" target="main" />
-			<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0&gt;" />
+		<widget class="vertical_subtle_divider" entity_layout_id="at0&gt;" id="at0&gt;" width="5" red_replacement="fg">
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="right" set_side="left" move_side="true" target="at0N"/>
 		</widget>
-		<container entity_layout_id="at0C" id="ttlB" name="scouts analysts tables">
-			<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" target="at0F" />
-			<layout class="stick_to_object_attachment" id="align_bottom" offset="-9" get_side="bottom" set_side="bottom" target="main" />
-			<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" target="at0&gt;" />
-			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		<container entity_layout_id="at0i" id="at0i" height="85">
+			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="right" set_side="left" target="at0&gt;"/>
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
 			<widget class="spacer" id="main">
-				<boolean id="exclude_from_find" value="true" />
-				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
 			</widget>
 			<widget class="spacer" id="fmin" embed_in_frame="true">
-				<boolean id="exclude_from_find" value="true" />
-				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
 			</widget>
-			<widget class="icon_button" entity_layout_id="at0O" id="ttLT" alignment="centre_y,left" appearance="" height="20" name="position title text">
-				<string id="font" value="title" />
-				<string id="colour" value="title" />
-				<string id="size" value="xlarge" />
-				<string id="icon" value="icons/16px/subscribed" />
-				<string id="icon_colour" value="title" />
-				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
-				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
-				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			<widget class="horizontal_subtle_divider" entity_layout_id="at0m" id="at0m" height="5" red_replacement="fg">
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
 			</widget>
-			<widget class="text" entity_layout_id="at0E" alignment="centre_y,left" id="at0E" height="40" multiline="true">
-				<string id="colour" value="faded text" />
-				<string id="multiline" value="true" />
-				<translation id="text" translation_id="538977" type="use" value="The criteria set for general focus will be used by the recruitment team when looking for players. Creating a priority focus will prioritise the position, and the criteria set, for the duration chosen.[COMMENT:AREA: Scouting/Recruitment; SUB-AREA:Recruitment focus dialog; FR-BN: 36087; NOTE: Clarification subtitle text within the scouting focus dialog]" />
-				<layout class="stick_to_object_attachment" id="align_top" offset="2" get_side="bottom" set_side="top" move_side="true" target="at0O" />
-				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
-				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			<widget class="text" entity_layout_id="at0o" id="at0o" height="20" alignment="left, centre_y">
+				<translation id="text" translation_id="553504" type="use" value="Recruitment focus name[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Title of text box, where the human can set a focus' name]" />
+				<string id="size" value="medium"/>
+				<string id="colour" value="black"/>
+				<string id="font" value="label"/>
+				<layout class="stick_to_object_attachment" id="align_top" offset="0" get_side="top" set_side="top" move_side="true" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
 			</widget>
-			<container entity_layout_id="at0D" id="sclC">
-				<string id="navigation_container" value="true" />
-				<layout class="stick_to_object_attachment" id="align_top" offset="2" get_side="bottom" set_side="top" target="at0E" />
-				<layout class="stick_to_object_attachment" id="align_bottom" offset="-5" get_side="bottom" set_side="bottom" target="main" />
-				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
-				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			<widget class="edit_box" entity_layout_id="at0n" id="ttBX" width="200" height="30">
+				<string id="edit_event" value="fnRT"/>
+				<string id="return_event" value="fnRT"/>
+				<string id="changed_event" value="fnCH"/>
+				<integer id="event_delay" value="200"/>
+				<layout class="stick_to_object_attachment" id="align_top" offset="6" get_side="bottom" set_side="top" move_side="true" target="at0o"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+			</widget>
+			<widget class="text" entity_layout_id="at0p" id="at0p" width="200" height="20">
+				<translation id="text" translation_id="560949" type="use" value="Maximum 25 characters[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Subtitle of text box, where the human can set a focus' name]" />
+				<string id="colour" value="faded text"/>
+				<string id="size" value="medium"/>
+				<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="bottom" set_side="top" move_side="true" target="at0n"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+			</widget>
+		</container>
+		<widget class="tab_strip" entity_layout_id="at0F" id="tabs" appearance="tabs/subsection" auto_size="horizontal" needs_width="true" height="35">
+			<string id="colour" value="bg accent"/>
+			<string id="select_event" value="deSL"/>
+			<list id="items">
+				<record id="a_button" width="200">
+					<translation id="text" translation_id="553505" type="use" value="Main Details[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Title of the tab showing the most commonly set focus settings]" />
+					<string id="font" value="title"/>
+				</record>
+				<record id="b_button" width="200">
+					<string id="icon" value="icons/custom/add manager/colour unpicked"/>
+					<translation id="text" translation_id="553506" type="use" value="Further Details[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Title of the tab showing the rest of the focus settings, not commonly set]" />
+					<string id="font" value="title"/>
+				</record>
+			</list>
+			<string id="selection" value="0"/>
+			<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0i"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="right" set_side="left" move_side="true" target="at0&gt;"/>
+		</widget>
+		<container entity_layout_id="at0C" id="ttlB" name="scouts analysts tables">
+			<layout class="stick_to_object_attachment" id="align_top" offset="6" get_side="bottom" set_side="top" target="at0F"/>
+			<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="right" set_side="left" target="at0&gt;"/>
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+			</widget>
+			<container entity_layout_id="at03" id="at03" height="50">
+				<layout class="stick_to_object_attachment" id="align_top" offset="15" get_side="top" set_side="top" move_side="true" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
 				<widget class="spacer" id="main">
-					<boolean id="exclude_from_find" value="true" />
-					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
 				</widget>
 				<widget class="spacer" id="fmin" embed_in_frame="true">
-					<boolean id="exclude_from_find" value="true" />
-					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
 				</widget>
-				<container class="inner_box" entity_layout_id="at03" hidden="true" id="plSB" height="54" name="prioritize position container">
-					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="top" set_side="top" move_side="true" target="main" />
-					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
-					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
-					<widget class="spacer" id="main">
-						<boolean id="exclude_from_find" value="true" />
-						<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
-					</widget>
-					<widget class="spacer" id="fmin" embed_in_frame="true">
-						<boolean id="exclude_from_find" value="true" />
-						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
-					</widget>
-					<widget class="popup_button" entity_layout_id="at06" id="drnP" icon="icons/16px/time" appearance="buttons/custom/tactics/style bar/button" height="30" font="text">
-						<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
-						<layout class="stick_to_object_attachment" id="align_left" offset="2" get_side="left" set_side="left" move_side="true" target="main" />
-						<layout class="stick_to_sizes_attachment" width="45.000000" />
-					</widget>
-					<widget class="popup_button" entity_layout_id="at05" id="sctP" icon="icons/16px/subscribed" appearance="buttons/custom/tactics/style bar/button" height="30" font="text">
-						<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
-						<layout class="stick_to_object_attachment" id="align_left" offset="35" get_side="right" set_side="left" target="at06" />
-						<layout class="stick_to_object_attachment" id="align_right" offset="-20" get_side="right" set_side="right" target="main" />
-					</widget>
-					<widget class="text" entity_layout_id="at07" id="at07" height="15">
-						<translation id="text" value="Duration" translation_id="230113" type="use" />
-						<string id="font" value="title" />
-						<string id="colour" value="text" />
-						<string id="size" value="small" />
-						<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
-						<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
-						<layout class="stick_to_sizes_attachment" width="45.000000" />
-					</widget>
-					<widget class="text" entity_layout_id="at0?" id="saVT" auto_size="horizontal" width="100" height="15">
-						<string id="font" value="text" />
-						<string id="colour" value="warning" />
-						<string id="size" value="small" />
-						<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
-						<layout class="stick_to_object_attachment" id="align_right" offset="-20" get_side="right" set_side="right" move_side="true" target="main" />
-					</widget>
-					<widget class="text" entity_layout_id="at08" id="at08" auto_size="horizontal" needs_width="true" height="15">
-						<translation id="text" translation_id="336017" type="use" value="Priority[COMMENT: transfers lists; column header, prioritise the importance of a particular deal]" />
-						<string id="font" value="title" />
-						<string id="colour" value="text" />
-						<string id="size" value="small" />
-						<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
-						<layout class="stick_to_object_attachment" id="align_left" offset="35" get_side="right" set_side="left" move_side="true" target="at07" />
-					</widget>
-				</container>
-				<widget class="popup_button" entity_layout_id="at0J" id="adp1" icon="icons/16px/plus" appearance="buttons/custom/tactics/style bar/button" width="80" height="30" name="add popup 1">
-					<translation id="text" translation_id="251402" type="use" value="Add[COMMENT: Add button on dialogs]" />
-					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at03" />
-					<layout class="stick_to_object_attachment" id="align_right" offset="-20" get_side="right" set_side="right" move_side="true" target="main" />
+				<widget class="text" entity_layout_id="at05" id="at05" height="13">
+					<string id="font" value="title"/>
+					<string id="colour" value="black"/>
+					<string id="size" value="small"/>
+					<translation id="text" translation_id="336071" type="use" value="Transfer Type[COMMENT: transfer lists; column header, type of transfer proposed for a player]" />
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
 				</widget>
-				<widget class="icon_button" entity_layout_id="at0I" id="rmvF" auto_size="horizontal" needs_width="true" height="30">
-					<string id="click_event" value="rmSF" />
-					<string id="colour" value="text" />
-					<string id="icon" value="icons/16px/remove from list" />
-					<string id="icon_colour" value="text" />
-					<translation id="text" translation_id="538978" type="use" value="Remove Priority Focus[COMMENT: AREA: Scouting/Recruitment; SUB-AREA:Recruitment focus dialog; FR-BN: 36087; NOTE: Recruitment focus dialog button text]" />
-					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
-					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
+				<widget class="radio_toggle_switch_left" entity_layout_id="at06" id="ttTF" auto_size="horizontal" needs_width="true" height="30">
+					<record id="click_event">
+						<unsigned id="event_flags" value="0"/>
+						<string id="event_id" value="ttUP"/>
+						<integer id="type" value="0"/>
+					</record>
+					<translation id="text" translation_id="319501" type="use" value="Transfer[COMMENT: section header on Views menu to indicate that view will contain information pertaining to the person's transfer status]" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at05"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
 				</widget>
-				<container class="table" entity_layout_id="at0L" id="sctT" mode="fill_rows, stripe_rows" layout="-1" name="scouting focus table">
-					<integer id="row_spacing" value="5" />
-					<layout class="stick_to_object_attachment" id="align_top" offset="40" get_side="bottom" set_side="top" target="at03" />
-					<layout class="stick_to_object_attachment" id="align_bottom" offset="-5" get_side="top" set_side="bottom" target="at0I" />
-					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
-					<layout class="stick_to_object_attachment" id="align_right" offset="-19" get_side="right" set_side="right" target="main" />
-				</container>
-				<widget class="text" entity_layout_id="at0K" id="slTX" alignment="centre_x,centre_y" hidden="true" width="400" height="150" name="select position text">
-					<string id="multiline" value="true" />
-					<string id="colour" value="text" />
-					<string id="size" value="large" />
-					<translation id="text" translation_id="538979" type="use" value="Select a position from pitch to create or adjust a Priority Focus.[COMMENT:AREA: Scouting/Recruitment; SUB-AREA:Recruitment focus dialog; FR-BN: 36087; NOTE: Recruitment focus dialog clarification text]" />
-					<layout class="centre_in_parent_attachment" id="align_centre_horiz" alignment="horizontal" offset="0" />
-					<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="-1" />
+				<widget class="radio_toggle_switch_middle" entity_layout_id="at07" id="ttLO" auto_size="horizontal" needs_width="true" height="30">
+					<record id="click_event">
+						<unsigned id="event_flags" value="0"/>
+						<string id="event_id" value="ttUP"/>
+						<integer id="type" value="1"/>
+					</record>
+					<translation id="text" translation_id="330195" type="use" value="Loan[COMMENT: player transfer panel; indicates which club is interested in the person and what type of deal they're looking for]" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at05"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="2" get_side="right" set_side="left" move_side="true" target="at06"/>
 				</widget>
-				<widget class="text" id="scLF" entity_layout_id="at0H" width="200" height="15">
-					<translation id="text" translation_id="395173" type="use" value="Criteria[COMMENT: FR 3502; contract clause warning news panel; column header]" />
-					<string id="font" value="title" />
-					<string id="colour" value="fg" />
-					<string id="size" value="medium" />
-					<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" move_side="true" target="at03" />
-					<layout class="stick_to_object_attachment" id="align_left" offset="5" get_side="left" set_side="left" move_side="true" target="main" />
+				<widget class="radio_toggle_switch_right" entity_layout_id="at08" id="ttTL" auto_size="horizontal" needs_width="true" height="30">
+					<record id="click_event">
+						<unsigned id="event_flags" value="0"/>
+						<string id="event_id" value="ttUP"/>
+						<integer id="type" value="2"/>
+					</record>
+					<translation id="text" translation_id="553507" type="use" value="Transfer and Loan[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR: FM 3873; TONE: Formal; CHARLIMIT: Shortish; REF-ID: ; NOTE: transfer type for a recritment focus]" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at05"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="2" get_side="right" set_side="left" move_side="true" target="at07"/>
+				</widget>
+			</container>
+			<container entity_layout_id="at0?" id="at0?" height="50">
+				<layout class="stick_to_object_attachment" id="align_top" offset="12" get_side="bottom" set_side="top" move_side="true" target="at03"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+				</widget>
+				<widget class="info_icon_hint_text" entity_layout_id="at0k" id="at0k" height="14">
+					<translation id="text" translation_id="251893" type="use" value="Current Ability[COMMENT: scout report panel box heading]" />
+					<string id="font" value="title"/>
+					<string id="size" value="small"/>
+					<string id="colour" value="text"/>
+					<record id="info_popup_hint">
+						<translation id="title" translation_id="251893" type="use" value="Current Ability[COMMENT: scout report panel box heading]" />
+						<translation id="text" translation_id="553508" type="use" value="Sets the minimum evaluated current ability of a scouted player when compared to players in the current squad.[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Description in hint explaining what the concept of Current Ability is]" />
+					</record>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+					<layout class="stick_to_sizes_attachment" width="30.000000"/>
+				</widget>
+				<widget class="info_icon_hint_text" entity_layout_id="at0l" id="at0l" height="14">
+					<translation id="text" translation_id="251894" type="use" value="Potential Ability[COMMENT: scout report panel box heading]" />
+					<string id="font" value="title"/>
+					<string id="size" value="small"/>
+					<string id="colour" value="text"/>
+					<record id="info_popup_hint">
+						<translation id="title" translation_id="251894" type="use" value="Potential Ability[COMMENT: scout report panel box heading]" />
+						<translation id="text" translation_id="553509" type="use" value="Sets the minimum evaluated potential ability of a scouted a player when compared to players in the current squad.[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Description in hint explaining what the concept of Potential Ability is]" />
+					</record>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0k"/>
+					<layout class="stick_to_sizes_attachment" width="27.000000"/>
+				</widget>
+				<widget class="icon_button" entity_layout_id="at0K" id="at0K" appearance="buttons/custom/tactics/style bar/button" width="30" height="30">
+					<string id="icon" value="icons/16px/left"/>
+					<record id="click_event">
+						<unsigned id="event_flags" value="0"/>
+						<string id="event_id" value="caUP"/>
+						<integer id="type" value="0"/>
+					</record>
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0k"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+				</widget>
+				<widget class="scout_stars_label" entity_layout_id="at0b" id="caSL" width="80" height="30">
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0k"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0K"/>
+				</widget>
+				<widget class="icon_button" entity_layout_id="at0^" appearance="buttons/custom/tactics/style bar/button" id="at0^" width="30" height="30">
+					<string id="icon" value="icons/16px/right"/>
+					<record id="click_event">
+						<unsigned id="event_flags" value="0"/>
+						<string id="event_id" value="caUP"/>
+						<integer id="type" value="1"/>
+					</record>
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0k"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0b"/>
+				</widget>
+				<widget class="icon_button" entity_layout_id="at0U" appearance="buttons/custom/tactics/style bar/button" id="at0U" width="30" height="30">
+					<string id="icon" value="icons/16px/left"/>
+					<record id="click_event">
+						<unsigned id="event_flags" value="0"/>
+						<string id="event_id" value="paUP"/>
+						<integer id="type" value="0"/>
+					</record>
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0l"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="26" get_side="right" set_side="left" move_side="true" target="at0^"/>
+				</widget>
+				<widget class="scout_stars_label" entity_layout_id="at0g" id="paSL" width="80" height="30">
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0l"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0U"/>
+				</widget>
+				<widget class="icon_button" entity_layout_id="at0T" appearance="buttons/custom/tactics/style bar/button" id="at0T" width="30" height="30">
+					<string id="icon" value="icons/16px/right"/>
+					<record id="click_event">
+						<unsigned id="event_flags" value="0"/>
+						<string id="event_id" value="paUP"/>
+						<integer id="type" value="1"/>
+					</record>
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0l"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0g"/>
+				</widget>
+			</container>
+			<container entity_layout_id="at0D" id="at0D" height="50">
+				<layout class="stick_to_object_attachment" id="align_top" offset="12" get_side="bottom" set_side="top" move_side="true" target="at0?"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+				</widget>
+				<widget class="info_icon_hint_text" entity_layout_id="at0I" id="at0I" height="13">
+					<string id="widget_type" value="client_object_viewer_xml_panel"/>
+					<translation id="text" translation_id="553510" type="use" value="Aged Between[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Title of filter, where the human sets the age of the players the scouts should be looking for]" />
+					<string id="font" value="title"/>
+					<string id="size" value="small"/>
+					<string id="colour" value="text"/>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+					<layout class="stick_to_sizes_attachment" width="45.000000"/>
+				</widget>
+				<widget class="popup_button" entity_layout_id="at0L" id="minA" appearance="buttons/custom/tactics/style bar/button" width="80" height="30">
+					<string id="select_event" value="mnUP"/>
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0I"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+				</widget>
+				<widget class="text" entity_layout_id="at0M" alignment="centre_x,centre_y" auto_size="horizontal" id="at0M" needs_width="true" height="30">
+					<translation id="text" translation_id="282538" type="use" value="and[COMMENT: news_item; where_are_they_now_news; used to link two sentences together in a list e.g. person1 and person2]" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0I"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0L"/>
+				</widget>
+				<widget class="popup_button" entity_layout_id="at0j" id="maxA" appearance="buttons/custom/tactics/style bar/button" width="80" height="30">
+					<string id="select_event" value="mxUP"/>
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0I"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0M"/>
+				</widget>
+			</container>
+			<container entity_layout_id="at0J" id="at0J" height="50">
+				<layout class="stick_to_object_attachment" id="align_top" offset="12" get_side="bottom" set_side="top" move_side="true" target="at0D"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+				</widget>
+				<widget class="info_icon_hint_text" entity_layout_id="at0O" id="at0O" height="14">
+					<string id="widget_type" value="client_object_viewer_xml_panel"/>
+					<translation id="text" translation_id="560935" type="use" value="Areas[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-12648; NOTE: Search option for which locations to send a scout]" />
+					<string id="font" value="title"/>
+					<string id="size" value="small"/>
+					<string id="colour" value="text"/>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+					<layout class="stick_to_sizes_attachment" width="30.000000"/>
+				</widget>
+				<widget class="widget_popup_button" entity_layout_id="at0E" id="locP" appearance="buttons/custom/tactics/style bar/button" alignment="centre_y,left" width="200" height="30">
+					<string id="widget_type" value="scout_location_picker_popup"/>
+					<string id="popup_alignment" value="top,left"/>
+					<translation id="text" translation_id="553511" type="use" value="Any[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FN: FM-4459; NOTE: Default string on the location picker popup on the recruitment focus dialog; Signifies there is no specific nation/continent/competition selected, so we are scouting any within scouting range]" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0O"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+				</widget>
+			</container>
+			<container entity_layout_id="at0_" id="at0_" height="77">
+				<layout class="stick_to_object_attachment" id="align_top" offset="12" get_side="bottom" set_side="top" move_side="true" target="at0J"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+				</widget>
+				<widget class="info_icon_hint_text" entity_layout_id="at0`" id="at0`" height="14">
+					<translation id="text" translation_id="336017" type="use" value="Priority[COMMENT: transfers lists; column header, prioritise the importance of a particular deal]" />
+					<string id="font" value="title"/>
+					<string id="size" value="small"/>
+					<string id="colour" value="text"/>
+					<record id="info_popup_hint" file="club/recruitment focus priority tooltip panel"/>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+					<layout class="stick_to_sizes_attachment" width="45.000000"/>
+				</widget>
+				<widget class="radio_button" entity_layout_id="at0a" id="tpPR" alignment="centre_y,left" auto_size="horizontal" appearance="switches/toggle/left/button" needs_width="true" height="30">
+					<translation id="text" translation_id="553512" type="use" value="Top[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Type of recruitment focus priority - at the upmost importance]" />
+					<record id="click_event">
+						<unsigned id="event_flags" value="0"/>
+						<string id="event_id" value="sTpu"/>
+						<integer id="type" value="2"/>
+					</record>
+					<string id="secondary_icon_enabled" value="true"/>
+					<string id="secondary_icon_alignment" value="left, centre_y"/>
+					<string id="secondary_icon" value="icons/custom/icon box/focus"/>
+					<record id="secondary_icon_properties">
+						<string id="red_replacement" value="recruitment focus top priority"/>
+					</record>
+					<record id="secondary_icon_size" width="16" height="16"/>
+					<string id="icon_enabled" value="false"/>
+					<string id="show_button_appearance" value="true"/>
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0`"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+				</widget>
+				<widget class="radio_button" entity_layout_id="at0c" id="stPR" alignment="centre_y,left" auto_size="horizontal" appearance="switches/toggle/middle/button" needs_width="true" height="30">
+					<translation id="text" translation_id="298128" type="use" value="Standard[COMMENT: tactical team instructions; team strategy]" />
+					<record id="click_event">
+						<unsigned id="event_flags" value="0"/>
+						<string id="event_id" value="sTpu"/>
+						<integer id="type" value="1"/>
+					</record>
+					<string id="secondary_icon_enabled" value="true"/>
+					<string id="secondary_icon_alignment" value="left, centre_y"/>
+					<string id="secondary_icon" value="icons/custom/icon box/focus"/>
+					<record id="secondary_icon_properties">
+						<string id="red_replacement" value="recruitment focus standard priority"/>
+					</record>
+					<record id="secondary_icon_size" width="16" height="16"/>
+					<string id="icon_enabled" value="false"/>
+					<string id="show_button_appearance" value="true"/>
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0`"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="2" get_side="right" set_side="left" move_side="true" target="at0a"/>
+				</widget>
+				<widget class="text" entity_layout_id="at0h" id="prHT" auto_size="horizontal" height="20">
+					<string id="size" value="small"/>
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0c"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+				</widget>
+				<widget class="radio_button" entity_layout_id="at0[" alignment="centre_y,left" auto_size="horizontal" appearance="switches/toggle/right/button" id="onPR" needs_width="true" height="30">
+					<translation id="text" translation_id="254535" type="use" value="Ongoing[COMMENT: scout assignments panel]" />
+					<record id="click_event">
+						<unsigned id="event_flags" value="0"/>
+						<string id="event_id" value="sTpu"/>
+						<integer id="type" value="3"/>
+					</record>
+					<string id="secondary_icon_enabled" value="true"/>
+					<string id="secondary_icon_alignment" value="left, centre_y"/>
+					<string id="secondary_icon" value="icons/custom/icon box/focus"/>
+					<record id="secondary_icon_properties">
+						<string id="red_replacement" value="recruitment focus ongoing priority"/>
+					</record>
+					<record id="secondary_icon_size" width="16" height="16"/>
+					<string id="icon_enabled" value="false"/>
+					<string id="show_button_appearance" value="true"/>
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0`"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="2" get_side="right" set_side="left" move_side="true" target="at0c"/>
+				</widget>
+			</container>
+			<container entity_layout_id="at0d" id="at0d" height="50">
+				<layout class="stick_to_object_attachment" id="align_top" offset="12" get_side="bottom" set_side="top" move_side="true" target="at0_"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+				</widget>
+				<widget class="info_icon_hint_text" entity_layout_id="at0e" id="at0e" height="14">
+					<translation id="text" translation_id="553514" type="use" value="Assigned Scout[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Title over popup button, where one can assign scouts to the the recruitment focus]" />
+					<string id="font" value="title"/>
+					<string id="size" value="small"/>
+					<string id="colour" value="text"/>
+					<record id="info_popup_hint">
+						<translation id="title" translation_id="553514" type="use" value="Assigned Scout[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Title over popup button, where one can assign scouts to the the recruitment focus]" />
+						<translation id="text" translation_id="553515" type="use" value="By default, your scouts will be assigned to a specific focus by the Chief Scout, unless specified otherwise. One or multiple scouts can be assigned to a focus. However, a scout assigned to several focuses will take longer to complete their work.[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Hint text explaining how the scout assignment works with recruitment focuses]" />
+					</record>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+					<layout class="stick_to_sizes_attachment" width="38.500000"/>
+				</widget>
+				<widget class="info_icon_hint_text" entity_layout_id="at0f" id="at0f" height="14">
+					<translation id="text" translation_id="553516" type="use" value="Assigned Analyst[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Title over popup button, where one can assign analysts to the the recruitment focus]" />
+					<string id="font" value="title"/>
+					<string id="size" value="small"/>
+					<string id="colour" value="text"/>
+					<record id="info_popup_hint">
+						<translation id="title" translation_id="553516" type="use" value="Assigned Analyst[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Title over popup button, where one can assign analysts to the the recruitment focus]" />
+						<translation id="text" translation_id="553517" type="use" value="By default, analysts will be assigned to a specific focus by the Chief Scout, unless specified otherwise. One or multiple analysts can be assigned to a focus. However, an analyst assigned to several focuses will take longer to complete their work.[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Hint text explaining how the analyst assignment works with recruitment focuses]" />
+					</record>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0e"/>
+					<layout class="stick_to_sizes_attachment" width="45.000000"/>
+				</widget>
+				<widget class="widget_popup_button" entity_layout_id="at0G" id="asSC" appearance="buttons/custom/tactics/style bar/button" height="30">
+					<string id="popup_alignment" value="top,left"/>
+					<string id="widget_type" value="scout_analyst_picker_popup"/>
+					<record id="widget_properties">
+						<integer id="mode" value="0"/>
+					</record>
+					<translation id="text" translation_id="553518" type="use" value="Any[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FN: FM-4459; NOTE: Default string on the scout picker popup on the recruitment focus dialog; Signifies there is no specific scout assigned to the given focus]" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0e"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+					<layout class="stick_to_sizes_attachment" width="40.000000"/>
+				</widget>
+				<widget class="widget_popup_button" entity_layout_id="at0H" id="asAN" appearance="buttons/custom/tactics/style bar/button" height="30">
+					<string id="popup_alignment" value="top,left"/>
+					<string id="widget_type" value="scout_analyst_picker_popup"/>
+					<record id="widget_properties">
+						<integer id="mode" value="1"/>
+					</record>
+					<translation id="text" translation_id="553519" type="use" value="Any[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FN: FM-4459; NOTE: Default string on the analyst picker popup on the recruitment focus dialog; Signifies there is no specific analyst assigned to the given focus]" />
+					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0f"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0G"/>
+					<layout class="stick_to_sizes_attachment" width="40.000000"/>
 				</widget>
 			</container>
 		</container>
 		<widget class="text" entity_layout_id="at0B" id="emTX" auto_size="horizontal" alignment="centre_x,top" hidden="true" width="0" height="20">
 			<translation id="text" translation_id="510685" type="use" value="End Meeting[COMMENT: AREA: Recruitment meeting; FR-BN: 32765; NOTE: Recruitment meeting end meeting dialog popup title]" />
-			<string id="font" value="title" />
-			<string id="colour" value="faded text" />
-			<string id="size" value="small" />
-			<layout class="stick_to_object_attachment" id="align_bottom" offset="10" get_side="bottom" set_side="bottom" move_side="true" target="main" />
-			<layout class="stick_to_object_attachment" id="align_right" offset="-10" get_side="right" set_side="right" move_side="true" target="main" />
+			<string id="font" value="title"/>
+			<string id="colour" value="faded text"/>
+			<string id="size" value="small"/>
+			<layout class="stick_to_object_attachment" id="align_bottom" offset="10" get_side="bottom" set_side="bottom" move_side="true" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_right" offset="-10" get_side="right" set_side="right" move_side="true" target="main"/>
 		</widget>
-		<widget class="radio_toggle_switch_right" entity_layout_id="at0G" id="prFC" appearance="buttons/standard/flex/button" alignment="centre_x,centre_y" auto_size="horizontal" needs_width="true" height="28">
-			<string id="select_event" value="prFS" />
-			<string id="colour" value="yellow 700" />
-			<string id="style" value="bold" />
-			<string id="selected_appearance" value="buttons/standard/flex/button_focussed" />
-			<translation id="text" translation_id="538980" type="use" value="Priority Focus[COMMENT:AREA: Scouting/Recruitment; SUB-AREA:Recruitment focus dialog; FR-BN: 36087; NOTE: New title for the more specific shorter-term scouting focus(used to be called Short-term focus)]" />
-			<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="top" set_side="top" move_side="true" target="main" />
-			<layout class="stick_to_object_attachment" id="align_left" offset="2" get_side="right" set_side="left" move_side="true" target="at0F" />
+		<widget class="check_box" entity_layout_id="at0=" id="apCB" width="180" height="30" name="tactic popup" colour="text">
+			<string id="click_event" value="evAN"/>
+			<translation id="text" type="new" value="Any Position from Tactic[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FN: FM-12287; NOTE: Checkbox title for searching for players irrespective of their position, as long as they match the other filters]"/>			
+			<layout class="stick_to_object_attachment" id="align_top" offset="8" get_side="bottom" set_side="top" move_side="true" target="at0@"/>
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+		</widget>
+		<container entity_layout_id="at0V" file="human/tactic grid container" id="tcGD" width="430" height="350" name="tactic pitch">
+			<layout class="stick_to_object_attachment" id="align_top"  get_side="bottom" set_side="top" move_side="true" target="at0A"/>
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+		</container>
+		<widget class="text" entity_layout_id="at0Y" alignment="centre_y,left" id="at0Y" auto_size="horizontal" height="20" name="fits tactic title">
+			<translation id="text" translation_id="553520" type="use" value="Choose a role[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Title over popup button, where one can set the sought-after player's role within a recruitment focus]" />
+			<string id="font" value="title"/>
+			<string id="size" value="medium"/>
+			<layout class="stick_to_object_attachment" id="align_top" get_side="bottom" set_side="top" offset="32" move_side="true" target="at0N"/>
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+		</widget>
+		<container class="inner_subtle_box" entity_layout_id="at0X" id="at0X" height="70">
+			<layout class="stick_to_object_attachment" id="align_top" offset="6" get_side="bottom" set_side="top" move_side="true" target="at0Y"/>
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_right" offset="-20" get_side="left" set_side="right" target="at0&gt;"/>
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+			</widget>
+			<container class="player_basic_positions_indicator_widget" entity_layout_id="at0s" id="rlPT" width="34">
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+			</container>
+			<widget class="text" entity_layout_id="at0r" id="rlTL" alignment="left,bottom" height="25">
+				<translation id="text" translation_id="553522" type="use" value="Players suited to playing[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Text over popup button, where one can set the sought-after player's role within a recruitment focus]" />
+				<string id="colour" value="faded text"/>
+				<string id="size" value="medium"/>
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" target="at0s"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+			</widget>
+			<widget class="popup_button" entity_layout_id="at0q" id="rlPP" appearance="">
+				<string id="select_event" value="rlUP"/>
+				<string id="font" value="title"/>
+				<string id="colour" value="fg"/>
+				<string id="size" value="xlarge"/>
+				<layout class="stick_to_object_attachment" id="align_top" offset="-5" get_side="bottom" set_side="top" target="at0r"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" target="at0s"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+			</widget>
+		</container>
+		<widget class="text" entity_layout_id="at0S" alignment="centre_y,left" id="at0S" auto_size="horizontal" height="15" name="fits tactic title">
+			<translation id="text" translation_id="553521" type="use" value="Set the minimum proficiency to play the role[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4456; NOTE: Subtitle over popup button, where one can set the sought-after player's role skill within a recruitment focus]" />
+			<string id="colour" value="faded text"/>
+			<string id="size" value="medium"/>
+			<layout class="stick_to_object_attachment" id="align_top" offset="17" get_side="bottom" set_side="top" move_side="true" target="at0X"/>
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+		</widget>
+		<widget class="popup_button" entity_layout_id="at0Z" id="rpPP" appearance="buttons/custom/tactics/style bar/button" alignment="centre_x,centre_y" width="100" height="30" name="tactic popup">
+			<string id="select_event" value="raUP"/>
+			<string id="font" value="text"/>
+			<string id="colour" value="white"/>
+			<string id="popup_alignment" value="left, centre_y"/>
+			<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" move_side="true" target="at0X"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="32" get_side="right" set_side="left" move_side="true" target="at0S"/>
+		</widget>
+		<container entity_layout_id="at0t" id="ttFB" hidden="true">
+			<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" target="at0F"/>
+			<layout class="stick_to_object_attachment" id="align_bottom" offset="-10" get_side="bottom" set_side="bottom" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="right" set_side="left" target="at0&gt;"/>
+			<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true"/>
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+			</widget>
+			<container class="filter_table" entity_layout_id="at0u" id="flTB" file="filter_panels/filter table create focus">
+				<string id="allow_filter_type_change" value="false"/>
+				<layout class="stick_to_object_attachment" id="align_top" offset="42" get_side="top" set_side="top" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+			</container>
+			<widget class="popup_button" entity_layout_id="at0v" id="addc" appearance="buttons/custom/tactics/style bar/button" width="80" height="30">
+				<string id="fixed" value="true"/>
+				<string id="icon" value="icons/16px/plus"/>
+				<translation id="text" translation_id="251402" type="use" value="Add[COMMENT: Add button on dialogs]" />
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" move_side="true" target="main"/>
+			</widget>
+		</container>
+		<widget class="text" entity_layout_id="at0W" alignment="centre_x,centre_y" id="fLTC" width="24" height="24">
+			<string id="font" value="title"/>
+			<string id="colour" value="bg"/>
+			<string id="size" value="large"/>
+			<layout class="stick_to_object_attachment" id="align_top" offset="94" get_side="top" set_side="top" move_side="true" target="main"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="162" get_side="right" set_side="left" move_side="true" target="at0&gt;"/>
+		</widget>
+		<widget class="text" entity_layout_id="at0w" alignment="centre_y,left" id="fpHT" auto_size="horizontal" height="20">
+			<translation id="text" type="new" value="*Find players who can play all selected positions[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FN: FM-12287; NOTE: Hint subtitle explaining how the recruitment focus selected positions work]"/>
+			<string id="colour" value="faded text"/>
+			<string id="size" value="small"/>
+			<layout class="stick_to_object_attachment" id="align_top" offset="8" get_side="bottom" set_side="top" move_side="true" target="at0V"/>
+			<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
 		</widget>
 	</container>
 </panel>

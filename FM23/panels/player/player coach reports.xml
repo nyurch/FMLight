@@ -2,20 +2,19 @@
 
 	<translation id="title" translation_id="247459" type="use" value="Scout Reports" />
 	<flags id="cham" value="tables/custom/league/champions/row" />
-    <boolean id="use_pro_con_long_strings" value="true"/>
+	<boolean id="use_pro_con_long_strings" value="true"/>
 
-	<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0">
-		<global id="gap" name="ui.main_box_gap" />
-	</layout>
+	<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0"/>
+	
 	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 
 	<container class="main_box" navigation_container="true">
-		<string id="remove_if" value="is_fmt" />
+		<string id="remove_if" value="use_simplified_scouting" />
 
-		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_offset="0" vertical_offset="0" />
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend" horizontal_offset="0" vertical_gap="0" vertical_offset="0" />
 
 		<container>
-			<attachment_group class="horizontal_arrange_autosize_all_centre" horizontal_alignment="left" horizontal_offset="0" horizontal_gap="10" vertical_offset="0" />
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="2" vertical_offset="0" />
 
 			<widget class="label" id="perl" size="normal" colour="contrast" auto_size="all" font="title">
 				<translation id="text" translation_id="539024" type="use" value="Overall Report[COMMENT: AREA: Scouting; SUB-AREA: Player overall scouting report; FR-BN: 36082; NOTE: Title of player overall report]" />
@@ -26,17 +25,13 @@
 			</widget>
 		</container>
 
-		<container>
+		<container width="400">
 			<attachment_group class="vertical_arrange_autosize" horizontal_alignment="right" />
 			<layout class="stick_to_sides_attachment" alignment="right" inset="10" />
 
-			<container>
-				<attachment_group class="horizontal_arrange_autosize_all_centre" horizontal_alignment="right" horizontal_inset="0" horizontal_gap="8" />
-				<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+			<widget class="label" font="label" id="khtx" colour="fg" auto_size="all" size="medium" />
+			<widget class="label" id="rdtx" colour="disabled" auto_size="all" size="medium" />
 
-				<container class="label" font="label" id="ktxt" colour="fg" auto_size="all" size="medium" />
-			</container>
-		
 			<container>
 				<attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="right" horizontal_offset="0" vertical_offset="0" vertical_gap="0" />
 				<widget class="button" font="text" colour="faded text" size="medium" appearance="none" id="ytab" auto_size="all" mouse_entered_event="ytin" mouse_exited_event="ytou" />
@@ -180,17 +175,17 @@
 	</container>
 
 	<container id="scou" class="main_subtle_box">
-		<layout class="arrange_horizontal_attachment" layout="-2,-2,-2" offset="0">
+		<layout class="arrange_horizontal_attachment" layout="-11,-9,-9" offset="0">
 			<global id="gap" name="ui.main_contrast_box_gap" />
 		</layout>
 		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 
-		<widget class="player_reports_overview_summary_panel" id="proS" file="player/player reports overview summary vertical" always_recolour_wage_cost_text="true" mode="6" />
+		<widget class="player_reports_overview_summary_panel" id="proS" file="player/player reports overview summary vertical" always_recolour_wage_cost_text="true" mode="6"/>
 
 		<container>
 			<layout class="arrange_horizontal_attachment" layout="-1,2" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
-			
+
 			<container navigation_container="true">
 				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" />
 				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="10" />
@@ -204,10 +199,10 @@
 						<widget class="text" alignment="centre" id="norp" multiline="true" colour="white" font="bold" height="32">
 							<string id="text" value="-" />
 						</widget>
-						
+
 						<widget class="text" id="chRC" alignment="left,centre_y" multiline="true" style="bold" colour="white" auto_size="vertical"/>
 					</container>
-					
+
 					<container>
 						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="6" />
 
@@ -257,7 +252,7 @@
 						<global id="gap" name="ui.main_box_gap" />
 					</layout>
 					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
-					
+
 					<container class="inner_box">
 						<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />
 
@@ -265,7 +260,11 @@
 							<translation id="text" translation_id="361260" type="use" value="Pros[COMMENT: FR 8316 ]" />
 						</widget>
 
-						<widget class="table" id="tpro" layout="-1" inset="0" fixed_size_rows="false" auto_size_rows="true" navigation_focus_target="true" default_sort_column="0"/>
+						<widget class="table" id="tpro" layout="-1" inset="0" fixed_size_rows="false" auto_size_rows="true" navigation_focus_target="true" default_sort_column="0">
+							<list id="column_table_properties">
+								<record index="0" sort_ascending="false"/>
+							</list>
+						</widget>
 						<widget class="text" id="nPro" auto_size="vertical" colour="faded text" multiline="true" hidden="true" />
 					</container>
 
@@ -275,7 +274,11 @@
 							<translation id="text" translation_id="361094" type="use" value="Cons[COMMENT: FR 8316 ]" />
 						</widget>
 
-						<widget class="table" id="tcon" layout="-1" inset="0" fixed_size_rows="false" auto_size_rows="true" navigation_focus_target="true" default_sort_column="0"/>
+						<widget class="table" id="tcon" layout="-1" inset="0" fixed_size_rows="false" auto_size_rows="true" navigation_focus_target="true" default_sort_column="0">
+							<list id="column_table_properties">
+								<record index="0" sort_ascending="false"/>
+							</list>
+						</widget>
 						<widget class="text" id="nCon" auto_size="vertical" colour="faded text" multiline="true" hidden="true" />
 					</container>
 				</container>
@@ -285,61 +288,28 @@
 		</container>
 
 		<!--Stats/Squad Comparison section on RHS-->
-		<container class="bordered_box" id="righ" navigation_container="true" default_focus="true" draw_horizontal_dividers="true">
+		<container class="bordered_box" id="righ" draw_horizontal_dividers="true">
 			<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_offset="0" horizontal_inset="0" vertical_gap="10" />
 
 			<widget class="player_positions_indicator_panel" id="ppos" height="70" file="player/player positions indicator panel selector">
+                <string id="remove_if" value="use_simplified_scouting"/>
 				<record id="object_property" get_property="objt" set_property="objt" />
 			</widget>
 
-			<container>
-				<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_offset="0" horizontal_inset="0" vertical_gap="5" />
+			<container draw_horizontal_dividers="true" navigation_container="true">
+				<attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_offset="0" horizontal_inset="0" vertical_gap="5" />
 
-				<container class="main_box_no_margin" id="pPOS" height="180">
-					<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0" />
-					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
-
-					<widget class="player_positions_indicator_panel" file="player/player positions indicator report overview">
-						<record id="object_property" get_property="objt" set_property="objt" />
-					</widget>
-
-					<container height="35">
-						<attachment_group class="horizontal_arrange_autosize" horizontal_gap="15" />
-
-						<container height="30" width="100">
-							<attachment_group class="vertical_arrange" vertical_gap="0"/>
-							<widget class="text" auto_size="vertical" colour="faded text">
-								<translation id="text" translation_id="230000" type="use" value="Left Foot" />
-							</widget>
-
-							<widget class="footedness_label" id="fotL" alignment="left,centre_y" auto_size="all" format="[%string#1]" col="0" row="1" multiline="false">
-								<record id="object_property" get_property="PlfG" set_property="valu" />
-							</widget>
-						</container>
-
-						<container height="30" width="100">
-							<attachment_group class="vertical_arrange_autosize" vertical_gap="0"/>
-							<widget class="text" auto_size="vertical" colour="faded text">
-								<translation id="text" translation_id="230001" type="use" value="Right Foot" />
-							</widget>
-
-							<widget class="footedness_label" id="fotR" alignment="left,centre_y" auto_size="vertical" format="[%string#1]" col="0" row="1" multiline="false">
-								<record id="object_property" get_property="PrfG" set_property="valu" />
-							</widget>
-						</container>
-					</container>
-				</container>
-				
 				<!--Data hub widgets-->
-				<container height="450">
+				<container id="dhbW">
+					 <string id="remove_if" value="ui.is_fmt_controller_skin"/>
 					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
 					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 
 					<widget class="player_additional_stats_panel" id="staP" file="player/player additional stats mini report">
 						<record id="object_property" get_property="objt" set_property="objt" />
 					</widget>
-					
-					<widget class="data_analyst_visualisation_widget" id="visU" hidden="true" visualisation_type="polygon" data_type="player" category="defensive_wide_midfielder" file="widgets/data analyst visualisation mini">
+
+					<widget class="data_analyst_visualisation_widget" id="visU" hidden="true" visualisation_type="polygon" data_type="player" category="defensive_wide_midfielder" file="widgets/data analyst visualisation mini" show_mini_visualisation_text="false">
 						<record id="object_property" get_property="objt" set_property="objt" />
 						<record id="object_property" get_property="PclC" set_property="comp" />
 					</widget>
@@ -348,33 +318,19 @@
 				<!--Squad comparison table-->
 				<container id="sqdC">
 					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0"/>
-
-					<attachment class="test_screen_size_attachment" skip_if_false="true">
-						<list id="properties">
-							<record>
-								<flags id="alignment" value="vertical" />
-								<integer id="min_value" value="0" />
-								<integer id="max_value" value="1000" />
-								<symbol id="set_property" value="hidden" />
-								<integer id="true_value" value="true" />
-							</record>
-							<record>
-								<flags id="alignment" value="vertical" />
-								<integer id="min_value" value="1000" />
-								<integer id="max_value" value="30000" />
-								<symbol id="set_property" value="hidden" />
-								<integer id="true_value" value="false" />
-							</record>
-						</list>
-					</attachment>
-
-					<widget class="text" id="sqcw" font="title" size="medium" auto_size="vertical" />
+					
+					<widget class="link_button_title" id="sqcw" size="medium" alignment="left, centre_y">
+						<string id="remove_if" value="is_fmt"/>
+					</widget>
+					<widget class="text" id="sqcw" font="title" size="medium" auto_size="vertical">
+						<string id="create_if" value="is_fmt"/>
+					</widget>
 
 					<!-- Ability list table -->
-					<widget class="table" id="calL" mode="fill_rows,stripe_rows" layout="26,-5,-3,-3">
+					<widget class="table" id="calL" mode="fill_rows,stripe_rows" layout="26,-5,-3,-3" sort_disabled="true">
 						<list id="column_widget_properties">
 							<record indx="0" alignment="left,centre_y" colour="faded text" />
-							<record indx="1" alignment="left,centre_y" colour="text" />
+							<record indx="1" alignment="left,centre_y" />
 							<record indx="2" alignment="left,centre_y" navigation_focus_target="false" />
 							<record indx="3" alignment="left,centre_y" navigation_focus_target="false" />
 						</list>
@@ -404,6 +360,44 @@
 						</list>
 					</widget>
 				</container>
+
+				<!--FMT Position abilty widget-->
+				<container class="main_box_no_margin">
+                    <string id="create_if" value="use_simplified_scouting"/>
+                    <layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+					<widget class="player_positions_indicator_panel" id="pPOS" file="player/player positions indicator report overview">
+						<record id="object_property" get_property="objt" set_property="objt" />
+					</widget>
+
+					<container height="20">
+						<attachment_group class="horizontal_arrange" horizontal_alignment="fill" />
+
+						<container height="20" width="100">
+							<attachment_group class="horizontal_arrange_autosize" horizontal_gap="8"/>
+							<widget class="text" auto_size="all" colour="faded text">
+								<translation id="text" translation_id="230000" type="use" value="Left Foot" />
+							</widget>
+
+							<widget class="footedness_label" id="fotL" alignment="left" auto_size="all" format="[%string#1]" multiline="false">
+								<record id="object_property" get_property="PlfG" set_property="valu" />
+							</widget>
+						</container>
+
+						<container height="20" width="100">
+							<attachment_group class="horizontal_arrange_autosize" horizontal_gap="8"/>
+							<widget class="text" auto_size="all" colour="faded text">
+								<translation id="text" translation_id="230001" type="use" value="Right Foot" />
+							</widget>
+
+							<widget class="footedness_label" id="fotR" alignment="left" auto_size="all" format="[%string#1]" multiline="false">
+								<record id="object_property" get_property="PrfG" set_property="valu" />
+							</widget>
+						</container>
+					</container>
+				</container>
+
 			</container>
 		</container>
 	</container>
