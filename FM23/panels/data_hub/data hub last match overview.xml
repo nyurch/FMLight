@@ -1,7 +1,7 @@
 ﻿<panel>
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 
-	<widget class="data_hub_splashscreen">
+	<widget class="data_hub_splashscreen" is_last_match_analysis="true">
 		<record id="object_property" get_property="Ttea" dont_set_hint="true"/>
 		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 
