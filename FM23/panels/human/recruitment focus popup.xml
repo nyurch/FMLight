@@ -1,4 +1,5 @@
 ﻿<panel>
+<string id="skin_style" value="edit_box" />
 	<list id="draw_order">
 		<record entity_layout_id="at01"/>
 		<record entity_layout_id="at0Q"/>
@@ -147,8 +148,6 @@
 	</container>
 	<widget class="icon_button" entity_layout_id="at02" id="focT" alignment="centre_x,centre_y" appearance="" auto_size="horizontal" height="26" name="title" scale_picture="true" keep_aspect_ratio="true">
 		<string id="icon" value="icons/custom/scouting/focus"/>
-		<string id="icon_colour" value="accent"/>
-		<string id="blue_replacement" value="white"/>
 		<string id="size" value="large"/>
 		<translation id="text" translation_id="509169" type="use" value="Recruitment Focus[COMMENT: AREA: Scouting/Recruitment; SUB-AREA:Recruitment focus dialog; FR-BN: 24174; NOTE: Recruitment focus dialog title]" />
 		<string id="font" value="title"/>
@@ -386,6 +385,9 @@
 				</widget>
 				<widget class="icon_button" entity_layout_id="at0K" id="at0K" appearance="buttons/custom/tactics/style bar/button" width="30" height="30">
 					<string id="icon" value="icons/16px/left"/>
+					<record id="primary_icon_properties">
+						<string id="red_replacement" value="black"/>
+					</record>
 					<record id="click_event">
 						<unsigned id="event_flags" value="0"/>
 						<string id="event_id" value="caUP"/>
@@ -400,6 +402,9 @@
 				</widget>
 				<widget class="icon_button" entity_layout_id="at0^" appearance="buttons/custom/tactics/style bar/button" id="at0^" width="30" height="30">
 					<string id="icon" value="icons/16px/right"/>
+					<record id="primary_icon_properties">
+						<string id="red_replacement" value="black"/>
+					</record>
 					<record id="click_event">
 						<unsigned id="event_flags" value="0"/>
 						<string id="event_id" value="caUP"/>
@@ -410,6 +415,9 @@
 				</widget>
 				<widget class="icon_button" entity_layout_id="at0U" appearance="buttons/custom/tactics/style bar/button" id="at0U" width="30" height="30">
 					<string id="icon" value="icons/16px/left"/>
+					<record id="primary_icon_properties">
+						<string id="red_replacement" value="black"/>
+					</record>
 					<record id="click_event">
 						<unsigned id="event_flags" value="0"/>
 						<string id="event_id" value="paUP"/>
@@ -424,6 +432,9 @@
 				</widget>
 				<widget class="icon_button" entity_layout_id="at0T" appearance="buttons/custom/tactics/style bar/button" id="at0T" width="30" height="30">
 					<string id="icon" value="icons/16px/right"/>
+					<record id="primary_icon_properties">
+						<string id="red_replacement" value="black"/>
+					</record>
 					<record id="click_event">
 						<unsigned id="event_flags" value="0"/>
 						<string id="event_id" value="paUP"/>
@@ -455,18 +466,24 @@
 					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
 					<layout class="stick_to_sizes_attachment" width="45.000000"/>
 				</widget>
-				<widget class="popup_button" entity_layout_id="at0L" id="minA" appearance="buttons/custom/tactics/style bar/button" width="80" height="30">
+				<widget class="popup_button" colour="black" entity_layout_id="at0L" id="minA" appearance="buttons/custom/tactics/style bar/button" width="80" height="30">
 					<string id="select_event" value="mnUP"/>
+					<record id="secondary_icon_properties">
+						<string id="red_replacement" value="black"/>
+					</record>
 					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0I"/>
 					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
 				</widget>
-				<widget class="text" entity_layout_id="at0M" alignment="centre_x,centre_y" auto_size="horizontal" id="at0M" needs_width="true" height="30">
+				<widget class="text" entity_layout_id="at0M" colour="black" alignment="centre_x,centre_y" auto_size="horizontal" id="at0M" needs_width="true" height="30">
 					<translation id="text" translation_id="282538" type="use" value="and[COMMENT: news_item; where_are_they_now_news; used to link two sentences together in a list e.g. person1 and person2]" />
 					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0I"/>
 					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0L"/>
 				</widget>
-				<widget class="popup_button" entity_layout_id="at0j" id="maxA" appearance="buttons/custom/tactics/style bar/button" width="80" height="30">
+				<widget class="popup_button" colour="black" entity_layout_id="at0j" id="maxA" appearance="buttons/custom/tactics/style bar/button" width="80" height="30">
 					<string id="select_event" value="mxUP"/>
+					<record id="secondary_icon_properties">
+						<string id="red_replacement" value="black"/>
+					</record>
 					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0I"/>
 					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0M"/>
 				</widget>
@@ -493,9 +510,12 @@
 					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
 					<layout class="stick_to_sizes_attachment" width="30.000000"/>
 				</widget>
-				<widget class="widget_popup_button" entity_layout_id="at0E" id="locP" appearance="buttons/custom/tactics/style bar/button" alignment="centre_y,left" width="200" height="30">
+				<widget class="widget_popup_button" colour="black" entity_layout_id="at0E" id="locP" appearance="buttons/custom/tactics/style bar/button" alignment="centre_y,left" width="200" height="30">
 					<string id="widget_type" value="scout_location_picker_popup"/>
 					<string id="popup_alignment" value="top,left"/>
+					<record id="secondary_icon_properties">
+						<string id="red_replacement" value="black"/>
+					</record>
 					<translation id="text" translation_id="553511" type="use" value="Any[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FN: FM-4459; NOTE: Default string on the location picker popup on the recruitment focus dialog; Signifies there is no specific nation/continent/competition selected, so we are scouting any within scouting range]" />
 					<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at0O"/>
 					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
@@ -554,6 +574,7 @@
 					<string id="secondary_icon" value="icons/custom/icon box/focus"/>
 					<record id="secondary_icon_properties">
 						<string id="red_replacement" value="recruitment focus standard priority"/>
+						<string id="blue_replacement" value="white"/>
 					</record>
 					<record id="secondary_icon_size" width="16" height="16"/>
 					<string id="icon_enabled" value="false"/>
@@ -625,7 +646,7 @@
 					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at0e"/>
 					<layout class="stick_to_sizes_attachment" width="45.000000"/>
 				</widget>
-				<widget class="widget_popup_button" entity_layout_id="at0G" id="asSC" appearance="buttons/custom/tactics/style bar/button" height="30">
+				<widget class="widget_popup_button" colour="black" entity_layout_id="at0G" id="asSC" appearance="buttons/custom/tactics/style bar/button" height="30">
 					<string id="popup_alignment" value="top,left"/>
 					<string id="widget_type" value="scout_analyst_picker_popup"/>
 					<record id="widget_properties">
@@ -636,7 +657,7 @@
 					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
 					<layout class="stick_to_sizes_attachment" width="40.000000"/>
 				</widget>
-				<widget class="widget_popup_button" entity_layout_id="at0H" id="asAN" appearance="buttons/custom/tactics/style bar/button" height="30">
+				<widget class="widget_popup_button" colour="black" entity_layout_id="at0H" id="asAN" appearance="buttons/custom/tactics/style bar/button" height="30">
 					<string id="popup_alignment" value="top,left"/>
 					<string id="widget_type" value="scout_analyst_picker_popup"/>
 					<record id="widget_properties">
