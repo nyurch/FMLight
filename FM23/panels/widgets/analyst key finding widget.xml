@@ -4,7 +4,7 @@
 		<record target="titl" get_property="titl" set_property="text" />
 		<record target="desc" get_property="subt" set_property="text" />
 		<record target="icon" get_property="icon" set_property="file" />
-		<record target="datB" get_property="valu" set_property="valu" />
+		<record target="datB" get_property="pvDR" set_property="pvDR" />
 		<record target="datB" get_property="WdgP" set_property="WdgP" />
 	</list>
 	<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="all" inset="4"/>
