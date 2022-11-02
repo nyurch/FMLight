@@ -74,7 +74,7 @@
 				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
 				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" move_side="true" target="main" />
 			</container>
-			<container class="inner_subtle_box" entity_layout_id="at07" appearance="boxes/custom/speech bubble/left/paper" id="at07" red_replacement="bg accent">
+			<container class="inner_subtle_box" entity_layout_id="at07" appearance="boxes/custom/speech bubble/left/paper" id="at07" red_replacement="secondary">
 				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
 				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
 				<layout class="stick_to_object_attachment" id="align_left" get_side="right" set_side="left" target="at04" />
@@ -87,7 +87,7 @@
 					<boolean id="exclude_from_find" value="true" />
 					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 				</widget>
-				<widget class="text" entity_layout_id="at08" id="liSt" alignment="centre_y,left" colour="white">
+				<widget class="text" entity_layout_id="at08" id="liSt" alignment="centre_y,left" colour="primary">
 					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
 					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
 					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
@@ -96,7 +96,7 @@
 			</container>
 		</container>
 	</container>
-		<container class="main_transparent_box" entity_layout_id="at01" id="at01" colour="title" navigation_container="true" red_replacement="bg grey blue">
+		<container class="inner_box" entity_layout_id="at01" id="at01" colour="title" navigation_container="true">
 		<string id="force_title_borders" value="true" />
 		<translation id="title" translation_id="491864" type="use" value="Player Fine List for the season[COMMENT: AREA: Inbox; SUB - AREA: Code of conduct; FR: 9605; TONE: Formal; CHARLIMIT: None; NOTE: Header for player fine list]" />
 		<layout class="stick_to_object_attachment" id="align_top" offset="0" get_side="bottom" set_side="top" target="at00" />
@@ -112,7 +112,8 @@
 			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 		</widget>
 		<container class="table" entity_layout_id="at02" id="finT" mode="fill_rows, stripe_rows" layout="-7,-4,-4,-4,-4" row_height="40" fixed_row_height="20">
-			<integer id="row_spacing" value="4" />
+			<integer id="row_spacing" value="12" />
+			<integer id="column_spacing" value="10" />
 			<string id="sort_disabled" value="true" />
 			<list id="headings">
 				<record>
@@ -131,6 +132,9 @@
 				<record>
 					<translation id="text" translation_id="491868" type="use" value="4th Time &amp; more[COMMENT: AREA: Inbox; SUB - AREA: Code of conduct; FR: 9605; TONE: Formal; CHARLIMIT: None; NOTE:Punishment occurence header]" />
 				</record>
+			</list>
+			<list id="column_widget_properties">
+				<record indx="0" text_colour="fg"/>			
 			</list>
 			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
 			<layout class="stick_to_object_attachment" id="align_bottom" offset="-4" get_side="bottom" set_side="bottom" target="main" />
