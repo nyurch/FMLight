@@ -1,0 +1,57 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<list id="properties_to_forward">
+		<record get_property="obj" set_property="obj" target="prop"/>
+		<record get_property="obj" set_property="obj" target="PnmP"/>
+		<record get_property="disa" set_property="hidn" target="prop"/>
+		<record get_property="disa" set_property="hidn" target="PnmP"/>
+		<record get_property="disa" set_property="hidn" target="strz"/>
+		<record get_property="disa" set_property="Shwn" target="empT"/>
+		<record get_property="valu" set_property="valu" target="strz"/>
+	</list>
+
+	<container>
+		<attachment_group class="horizontal_arrange" vertical_alignment="vertical" horizontal_alignment="left, extend" vertical_inset="0" horizontal_offset="0" vertical_gap="0" horizontal_gap="0"/>
+
+		<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x" height="28" width="28" file="pictures/person/none/male/portrait" >
+			<record id="object_property">
+				<list id="get_properties">
+					<record get_property="fcgn"/>
+					<record get_property="Pfke"/>
+					<record get_property="prpc" set_property="valu"/>
+				</list>
+			</record>
+		</widget>
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="right, extend" vertical_inset="0" horizontal_offset="0" vertical_gap="0" horizontal_gap="4"/>
+
+			<widget class="person_button" height="30" id="PnmP" info_popup_enabled="true">
+				<record id="object_property" get_property="PnmP" set_property="valu"/>
+			</widget>
+
+			<widget class="person_stars_range_strip" width="75" id="strz" alignment="left, centre_y">
+				<attachment class="test_screen_size_attachment">
+					<list id="properties">
+						<record>
+							<flags id="alignment" value="horizontal" />
+							<integer id="min_value" value="1700" />
+							<integer id="max_value" value="100000" />
+							<integer id="set_property" value="hidden" />
+							<integer id="true_value" value="false" />
+							<integer id="false_value" value="true" />
+						</record>
+					</list>
+				</attachment>
+			</widget>
+		</container>
+	</container>
+	
+	<container id="empT" hidden="true">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+		<widget class="label" alignment="centre" text="-">
+		</widget>
+	</container>
+	
+</panel>
