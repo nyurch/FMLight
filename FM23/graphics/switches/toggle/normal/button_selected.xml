@@ -11,15 +11,15 @@
 	<record id="image_slices" left="13" right="13"/>
 	
 	<record id="font_spec">
-		<flags id="font" value="fonts/primary_button"/> 
+		<flags id="font" value="fonts/button"/> 
 		<flags id="colour" value="white"/> 
 	</record>
 	
-	<colour id="red_replacement" name="primary_button"/>
+	<colour id="red_replacement" name="white"/>
 	<colour id="green_replacement" name="primary_button"/>
 	<colour id="blue_replacement" name="bg accent"/>
 
-	<record id="primary_icon_properties" red_replacement="accent button text" green_replacement="primary_button"/>
-	<record id="secondary_icon_properties" red_replacement="accent button text" green_replacement="primary_button"/>
+	<record id="primary_icon_properties" red_replacement="white" green_replacement="red"/>
+	<record id="secondary_icon_properties" red_replacement="white" green_replacement="red"/>
 	
 </properties>
