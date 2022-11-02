@@ -1,0 +1,40 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0,4,4,0" />
+	<boolean id="should_force_refresh" value="true"/>
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="4" />
+
+		<widget class="link_button" id="LnKB" section="TeRM" auto_size="all" colour="black" red_replacement="black" disabled_colour="black" blue_replacement="black">
+			<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+			<translation id="text" translation_id="450754" type="use" value="Recent Matches Analysis[COMMENT: Match Analysis Tab Title - Multiple recent Matches analysis]" />
+		</widget>
+
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="4" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+
+			<container class="inner_box" appearance="boxes/titled/compact/paper" colour="positive" alignment="left,top" >
+				<translation id="title" translation_id="447605" type="use" value="Positives[COMMENT: Match Analysis - Match Positives title]" />
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+				<!--pro item container-->
+				<container class="scrolling_box" navigation_focus_target="true">
+					<container id="pItc" >
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="3" horizontal_alignment="horizontal" horizontal_inset="0" />
+					</container>
+				</container>
+			</container>
+			<container class="inner_box" appearance="boxes/titled/compact/paper" colour="negative" alignment="left,top">
+				<translation id="title" translation_id="447606" type="use" value="Negatives[COMMENT: Match Analysis - Match negatives title]" />
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+				<!--con item container-->
+				<container class="scrolling_box" navigation_focus_target="true">
+					<container id="cItc">
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="3" horizontal_alignment="horizontal" horizontal_inset="0" />
+					</container>
+				</container>
+			</container>
+		</container>
+
+	</container>
+</panel>
