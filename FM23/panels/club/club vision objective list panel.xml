@@ -9,7 +9,7 @@
 		<container row="0" col="0">
 			<attachment_group class="horizontal_arrange" horizontal_gap="2" horizontal_offset="0" />
 			
-			<widget class="text" id="titl" font="title" colour="text" auto_size="horizontal" height="16" alignment="left, centre_y" />
+			<widget class="text" id="titl" font="notable_events" auto_size="horizontal" height="16" alignment="left, centre_y" />
 			<widget class="spacer" width="4" />
 			<widget class="picture" id="expi" file="icons/16px/urgent" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x, top" width="16" height="16" red_replacement="accent" hidden="true" />
 			<widget class="text" id="expt" auto_size="all" alignment="left, centre_y" colour="accent" hidden="true" style="bold">
