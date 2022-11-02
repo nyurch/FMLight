@@ -4,8 +4,8 @@
 	<boolean id="should_force_refresh" value="true" />
 
 	<!--These apply to the player widgets and the key-->
-	<string id="best_player_colour" value="teal 500"/>
-	<string id="best_prospect_colour" value="bg purple darker"/>
+	<string id="best_player_colour" value="teal 100"/>
+	<string id="best_prospect_colour" value="bg purple lighter"/>
 	<integer id="transparency" value="0.8"/>
 
 	<container id="MCon">
