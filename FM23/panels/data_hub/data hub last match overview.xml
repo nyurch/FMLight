@@ -30,7 +30,7 @@
 			<widget class="vertical_divider">
 				<string id="image_alignment" value="centre_x" />
 			</widget>
-			<container class="main_subtle_box" id="prmR" navigation_container="true" navigation_container_allow_empty="true">
+			<container class="main_box" id="prmR" navigation_container="true" navigation_container_allow_empty="true">
 				<translation id="title" translation_id="538897" type="use" value="Previous Match Reports[COMMENT: AREA: Data Hub; SUB-AREA: Match Report Panel; FR: ; TONE: Formal; CHARLIMIT: None NOTES: Header for list of previous match reports to look at]" />
 				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="4" vertical_gap="10" />
 				<container height="320">
@@ -41,7 +41,7 @@
 					</widget>
 				</container>
 
-				<container class="tactics_recent_match_analysis_panel" background_colour="teal 900" id="anLy" navigation_container="true" />
+				<container class="tactics_recent_match_analysis_panel" id="anLy" file="match/tactics recent match analysis darktext" navigation_container="true" />
 			</container>
 		</container>
 	</widget>
