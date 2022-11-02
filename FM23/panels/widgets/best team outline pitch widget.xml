@@ -1,0 +1,47 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+	<list id="properties_to_forward">
+		<record get_property="role" set_property="valu" target="tacl"/>
+	</list>
+
+	<container class="inner_box_no_margin" appearance="">
+		<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle, extend" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+			<!--Header Panel-->
+			<container height="25" class="plain_box" red_replacement="teal 800" appearance="boxes/main/contrast/top/no margin/paper" id="Bthd" >
+				<attachment_group class="horizontal_arrange" horizontal_layout="40,-1" vertical_inset="0" />
+
+				<widget class="tactical_role_label" id="tacl" size="small" alignment="centre_y" font="title" colour="white" shbr="true" appearance="boxes/custom/best eleven/paper" red_replacement="black"/>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right" horizontal_offset="4" horizontal_gap="0" vertical_offset="0" />
+
+					<widget class="stars_range_strip" id="Btsz" height="25" auto_size="horizontal" alignment="centre" >
+						<attachment class="test_screen_size_attachment">
+							<list id="properties">
+								<record>
+									<flags id="alignment" value="horizontal" />
+									<integer id="min_value" value="1700" />
+									<integer id="max_value" value="100000" />
+									<integer id="set_property" value="hidden" />
+									<integer id="true_value" value="true" />
+									<integer id="false_value" value="false" />
+								</record>
+							</list>
+						</attachment>
+					</widget>
+				</container>
+			</container>
+
+			<widget class="table" id="Bttb" mode="fill_rows" layout="-1" auto_size_rows="false" row_height="28" row_spacing="0" auto_size="vertical"/>
+
+
+		</container>
+	</container>
+
+
+</panel>
