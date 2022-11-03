@@ -1,0 +1,201 @@
+﻿<panel>
+	<list id="draw_order">
+		<record entity_layout_id="at00" />
+		<record entity_layout_id="at01" />
+		<record entity_layout_id="at09" />
+		<record entity_layout_id="at0;" />
+		<record entity_layout_id="at0&lt;" />
+		<record entity_layout_id="at0?" />
+		<record entity_layout_id="at0&gt;" />
+		<record entity_layout_id="at0:" />
+		<record entity_layout_id="at02" />
+		<record entity_layout_id="at03" />
+		<record entity_layout_id="at08" />
+		<record entity_layout_id="at04" />
+		<record entity_layout_id="at05" />
+		<record entity_layout_id="at06" />
+		<record entity_layout_id="at07" />
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true" />
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+	</widget>
+	<container entity_layout_id="at00" id="at00" height="380">
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+		<widget class="spacer" id="main">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+		<widget class="spacer" id="fmin" embed_in_frame="true">
+			<boolean id="exclude_from_find" value="true" />
+			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+		</widget>
+		<container class="inner_subtle_box" entity_layout_id="at01" id="at01" height="140" name="non player profile and offer status">
+			<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="top" set_side="top" move_side="true" target="main" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="5" get_side="left" set_side="left" target="main" />
+			<layout class="stick_to_object_attachment" id="align_right" offset="-5" get_side="right" set_side="right" target="main" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<container entity_layout_id="at09" id="at09" name="staff profile">
+				<layout class="stick_to_object_attachment" id="align_top" offset="-1" get_side="top" set_side="top" move_side="true" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" offset="5" get_side="left" set_side="left" move_side="true" target="main" />
+				<layout class="stick_to_sizes_attachment" height="100.000000" width="50.000000" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<container class="client_object_viewer_xml_panel" entity_layout_id="at0;" id="npip" height="100" name="player info panel">
+					<layout class="stick_to_object_attachment" id="align_top" offset="13" get_side="top" set_side="top" move_side="true" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" offset="5" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="align_right" offset="-5" get_side="right" set_side="right" target="main" />
+					<widget class="spacer" id="main">
+						<boolean id="exclude_from_find" value="true" />
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+					</widget>
+					<widget class="spacer" id="fmin" embed_in_frame="true">
+						<boolean id="exclude_from_find" value="true" />
+						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+					</widget>
+					<container class="object_portrait_picture" entity_layout_id="at0&lt;" id="MEEP" auto_size="all" width="80" height="80">
+						<string id="image_alignment" value="centre" />
+						<string id="keep_aspect_ratio" value="true" />
+						<string id="scale_picture" value="true" />
+						<record id="object_property">
+							<string id="get_property" value="objt" />
+						</record>
+						<layout class="stick_to_object_attachment" id="align_top" offset="11" get_side="top" set_side="top" move_side="true" target="main" />
+						<layout class="stick_to_object_attachment" id="align_left" offset="16" get_side="left" set_side="left" move_side="true" target="main" />
+					</container>
+					<container class="person_button_with_job_description" entity_layout_id="at0?" id="pwjd" height="50">
+						<record id="object_property">
+							<string id="get_property" value="objt" />
+						</record>
+						<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="top" set_side="top" move_side="true" target="main" />
+						<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" target="at0&lt;" />
+						<layout class="stick_to_object_attachment" id="align_right" offset="-12" get_side="right" set_side="right" target="main" />
+					</container>
+					<widget class="person_nationality_button" entity_layout_id="at0&gt;" id="PNat" height="35">
+						<record id="object_property">
+							<string id="get_property" value="objt" />
+							<string id="set_property" value="objt" />
+						</record>
+						<layout class="stick_to_object_attachment" id="align_top" offset="-6" get_side="bottom" set_side="top" move_side="true" target="at0?" />
+						<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" target="at0&lt;" />
+						<layout class="stick_to_object_attachment" id="align_right" offset="-12" get_side="right" set_side="right" target="main" />
+					</widget>
+				</container>
+			</container>
+			<widget class="colour_button" entity_layout_id="at0:" id="at0:" height="60" name="offer status button">
+				<string id="icon" value="icons/48px/transfer" />
+				<string id="icon_colour" value="black" />
+				<string id="colour" value="yellow3" />
+				<translation id="text" translation_id="491988" type="use" value="Considering Offer[COMMENT: AREA: Inbox news items; SUB-AREA: Multiple Non-Player Contract Offers; FR: 27644; TONE: Formal; CHARLIMIT: None NOTE: Staff member is considering the contract offer made to them by an AI team]" />
+				<string id="text_colour" value="black" />
+				<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="right" set_side="left" target="at09" />
+				<layout class="stick_to_object_attachment" id="align_right" offset="-24" get_side="right" set_side="right" target="main" />
+				<layout class="centre_in_parent_attachment" id="align_centre_vert" alignment="vertical" offset="0" />
+			</widget>
+		</container>
+		<container class="inner_subtle_box" entity_layout_id="at02" id="at02" height="225" name="availability titled box">
+			<translation id="text" translation_id="447515" type="use" value="Availability[COMMENT FR 21760, set the framework of availability for the scouting assignment, can ignore/exclude players deemed to be unavailable for example]" />
+			<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at01" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="5" get_side="left" set_side="left" move_side="true" target="main" />
+			<layout class="stick_to_sizes_attachment" width="45.000000" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<container class="client_object_viewer_xml_panel" entity_layout_id="at04" id="npap" name="non player availability panel">
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+				<layout class="stick_to_object_attachment" id="align_bottom" offset="-3" get_side="bottom" set_side="bottom" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true" />
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+				</widget>
+				<container class="player_status_all_button" entity_layout_id="at05" id="secw" appearance="buttons/custom/status round" auto_size="all" alignment="bottom" width="50" height="50" embed_in_frame="true">
+					<integer id="offset_x" value="0" />
+					<integer id="offset_y" value="0" />
+					<integer id="gap" value="0" />
+					<string id="maximised" value="false" />
+					<integer id="max_items_per_row_or_column" value="3" />
+					<record id="object_property">
+						<string id="get_property" value="Pnfo" />
+						<string id="dont_set_object" value="true" />
+						<string id="dont_set_hint" value="true" />
+					</record>
+					<layout class="stick_to_object_attachment" id="align_top" embed_in_frame="true" offset="19" get_side="top" set_side="top" move_side="true" target="fmin" />
+					<layout class="stick_to_object_attachment" id="align_left" embed_in_frame="true" offset="15" get_side="left" set_side="left" move_side="true" target="fmin" />
+				</container>
+				<widget class="player_extra_details_text" entity_layout_id="at06" id="plex" height="25" name="extra text">
+					<record id="object_property">
+						<string id="get_property" value="NPxD" />
+					</record>
+					<layout class="stick_to_object_attachment" id="align_top" offset="19" get_side="top" set_side="top" move_side="true" target="main" />
+					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" target="at05" />
+					<layout class="stick_to_object_attachment" id="align_right" offset="-22" get_side="right" set_side="right" target="main" />
+				</widget>
+				<widget class="job_label" entity_layout_id="at07" id="jobl" height="25" name="job">
+					<string id="style" value="semi_bold" />
+					<string id="size" value="large" />
+					<record id="object_property">
+						<string id="get_property" value="Pccj" />
+					</record>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="bottom" set_side="top" move_side="true" target="at06" />
+					<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" target="at05" />
+					<layout class="stick_to_object_attachment" id="align_right" offset="-22" get_side="right" set_side="right" target="main" />
+				</widget>
+			</container>
+		</container>
+		<container class="inner_subtle_box" entity_layout_id="at03" id="at03" height="225" name="interested clubs titled box">
+			<translation id="text" translation_id="330721" type="use" value="Transfer Activity[COMMENT: how to system; help string]" />
+			<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="bottom" set_side="top" move_side="true" target="at01" />
+			<layout class="stick_to_object_attachment" id="align_left" offset="25" get_side="right" set_side="left" target="at02" />
+			<layout class="stick_to_object_attachment" id="align_right" offset="-5" get_side="right" set_side="right" target="main" />
+			<widget class="spacer" id="main">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="spacer" id="fmin" embed_in_frame="true">
+				<boolean id="exclude_from_find" value="true" />
+				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
+			</widget>
+			<container class="client_object_list_table" entity_layout_id="at08" id="iclt" name="interested clubs table">
+				<string id="mode" value="fill_rows, stripe_rows" />
+				<record id="viewed_property_ids">
+					<record id="Ttea" />
+					<record id="Tnat" />
+				</record>
+				<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+				<layout class="stick_to_object_attachment" id="align_bottom" offset="-3" get_side="bottom" set_side="bottom" target="main" />
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
+				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+			</container>
+		</container>
+	</container>
+</panel>
