@@ -1,0 +1,67 @@
+﻿<panel height="250">
+	<attachment_group class="vertical_arrange" vertical_alignment="top,extend" />
+
+	<list id="properties_to_forward">
+		<record get_property="titl" target="titl" set_property="text" />
+		<record get_property="hiAD" target="saCO" set_property="Shwn" />
+		<record get_property="saID" target="sasv" set_property="saID" />
+		<record get_property="widget_properties" target="sasv" set_property="widget_properties" />
+		<record get_property="objt" target="sasv" set_property="objt" />
+		<record get_property="property" target="sasv" set_property="property" />
+		<record get_property="saID" target="doit" set_property="saID" />
+		<record get_property="text" target="doit" set_property="text" />
+		<record get_property="hian" target="anCO" set_property="hidn" />
+		<record get_property="pshi" target="posi" set_property="hidn" />
+		<record get_property="pstx" target="posi" set_property="text" />
+		<record get_property="nghi" target="negi" set_property="hidn" />
+		<record get_property="ngtx" target="negi" set_property="text" />
+		<record get_property="hiAD" target="noAC" set_property="hidn" />
+		<record get_property="text" target="notx" set_property="text" />
+		<record get_property="isSR" target="ReSt" set_property="hidn" />
+	</list>
+
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange" />
+
+		<container id="saCO">
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="8" />
+
+			<widget class="text" id="titl" style="bold" auto_size="vertical" />
+
+			<widget class="icon_button" size="large" font_colour="white" id="ReSt" auto_size="vertical" width="120" icon="icons/16px/subscribed" navigation_focus_target="false" appearance="buttons/custom/dof status/normal/button" wants_mouse_events="false" alignment="centre_y" red_replacement="bg positive">
+				<translation id="text" translation_id="551827" type="use" value="Strongly Recommended[COMMENT: AREA: Staff Meeting; SUB-AREA: Staff Meeting Suggested Actions; FR-BN: 37034; TONE: Formal; NOTE;]" />
+			</widget>
+				<container class="horizontal_arrange_container" auto_size="vertical" wrap="true">
+
+				<widget class="client_object_property_panel" auto_size="all" id="sasv" />
+
+				<widget class="primary_button" id="doit" auto_size="all" auto_size_maximum_width="230" click_event="GTss" />
+
+			</container>
+
+			<container id="anCO">
+				<attachment_group class="vertical_arrange_autosize" />
+					<widget class="text" font="title" colour="faded text" auto_size="vertical">
+					<translation id="text" translation_id="296334" type="use" value="Analysis[COMMENT: match screen; analysis panel]" />
+				</widget>
+		
+				<widget class="icon_button" id="posi" icon="icons/16px/thumbs up" colour="text" multiline="true" icon_colour="fg positive" appearance="" auto_size="vertical" />
+				
+				<widget class="icon_button" id="negi" icon="icons/16px/thumbs down" colour="text" multiline="true" icon_colour="fg negative" appearance="" auto_size="vertical" />
+				
+			</container>
+
+		</container>
+
+		<container id="noAC">
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" vertical_gap="8" />
+
+			<widget class="picture" file="icons/16px/tick" width="20" height="20" />
+
+			<widget class="text" id="notx" auto_size="vertical" style="bold" appearance="" multiline="true" alignment="left,centre_y" />
+			
+		</container>
+
+	</container>
+
+</panel>
