@@ -1,0 +1,62 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="top" horizontal_alignment="horizontal" horizontal_inset="8" vertical_offset="8" />
+
+	<boolean id="should_force_refresh" value="true" />
+	<boolean id="save_immediate_state" value="true" />
+	
+	<container class="inner_contrast_box" red_replacement="bg">
+		<attachment_group class="vertical_arrange" vertical_layout="20, 30, -1, 36" horizontal_alignment="horizontal" horizontal_inset="8" vertical_offset="8" vertical_gap="12" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left, extend" horizontal_gap="8" />
+
+			<widget class="picture" file="icons/custom/icon box/focus" image_alignment="centre" scale_picture="true" height="16" width="16" red_replacement="title" blue_replacement="white" />
+			<widget class="text" font="title" size="large" auto_size="vertical" alignment="left, centre_y">
+				<translation id="text" translation_id="509169" type="use" value="Recruitment Focus[COMMENT: AREA: Scouting/Recruitment; SUB-AREA:Recruitment focus dialog; FR-BN: 24174; NOTE: Recruitment focus dialog title]" />
+			</widget>
+		</container>
+
+		<!--Tab buttons-->
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left" horizontal_inset="0" vertical_offset="" horizontal_gap="8" />
+
+			<widget class="radio_button" id="ssgB" select_event="eNMA" auto_size="horizontal" secondary_icon="icons/16px/staff" show_button_appearance="true" secondary_icon_alignment="left" alignment="centre" appearance="switches/recruitment focus/no normal state/button" icon_enabled="false" secondary_icon_enabled="true">
+				<record id="click_event">
+					<flags id="event_id" value="SeFV" />
+					<flags id="selection" value="FoSL" />
+				</record>
+			</widget>
+
+			<widget class="radio_button" id="rfsB" select_event="eONG" auto_size="horizontal" secondary_icon="icons/16px/recruitment focus" secondary_icon_colour="white" show_button_appearance="true" secondary_icon_alignment="left" alignment="centre" appearance="switches/recruitment focus/no normal state/button" icon_enabled="false" secondary_icon_enabled="true">
+				<record id="click_event">
+					<flags id="event_id" value="SeFV" />
+					<flags id="selection" value="FoAL" />
+				</record>
+			</widget>
+		</container>
+
+		<widget class="recruitment_meeting_recruitment_focus_list_panel" id="FoSL" is_suggestion_list="true" show_apply_column="true" show_discuss_column="true" show_remove_column="false" show_edit_column="false" hidden="true">
+			<record id="object_property" get_property="objt" set_property="objt" />
+		</widget>
+
+		<widget class="recruitment_meeting_recruitment_focus_list_panel" id="FoAL" is_suggestion_list="false" show_apply_column="false" show_discuss_column="true" show_remove_column="true" show_edit_column="true" hidden="true">
+			<record id="object_property" get_property="objt" set_property="objt" />
+		</widget>
+
+		<container id="cNFc" hidden="true">
+			<attachment_group class="vertical_arrange_autosize" vertical_alignment="bottom" horizontal_alignment="horizontal" horizontal_inset="0" vertical_offset="0" />
+			<widget class="horizontal_divider" />
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="bottom" horizontal_alignment="right" horizontal_inset="0" vertical_offset="0" />
+				<widget class="icon_button" icon="icons/16px/plus" auto_size="all">
+					<record id="click_event">
+						<flags id="event_id" value="ceNF" />
+					</record>
+					<translation id="text" translation_id="557793" type="use" value="Create a New Recruitment Focus[COMMENT: AREA: Recruitment Meeting; SUB-AREA: Recruitment Focus Panel; FM: FM-4230; NOTE: String on icon button to allow the user to create a new recruitment focus on the fly]" />
+				</widget>
+			</container>
+		</container>
+	</container>
+</panel>
