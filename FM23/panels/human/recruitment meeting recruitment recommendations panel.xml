@@ -1,0 +1,89 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="bottom, extend" horizontal_inset="0" vertical_offset="0" />
+	<layout class="stick_to_sides_attachment" value="all" inset="0" />
+
+	<boolean id="should_force_refresh" value="true" />
+	<boolean id="is_in_recruitment_meeting" value="true" />
+
+	<container class="inner_box" background_colour="bg">
+		<attachment_group class="vertical_arrange" vertical_alignment="bottom, extend" horizontal_alignment="horizontal" horizontal_inset="6" vertical_offset="6" />
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+		<container id="inrc" draw_vertical_dividers="true">
+			<attachment_group class="horizontal_arrange" horizontal_layout="200, -1" vertical_alignment="vertical" horizontal_inset="0" vertical_offset="0" horizontal_gap="16" />
+
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="top" horizontal_alignment="horizontal" horizontal_inset="0" vertical_offset="0" vertical_gap="12" />
+				
+				<widget class="label" font="title" colour="black" alignment="left, centre_y">
+					<translation id="text" translation_id="557794" type="use" value="Available Budgets[COMMENT: AREA: Recruitment meeting; FR-BN: FM-4270; NOTE: Recruitment meeting recommendations title for available bugets container]" />
+				</widget>
+
+				<container height="40">
+					<attachment_group class="horizontal_arrange" horizontal_layout="-1, -1, 20" horizontal_inset="0" vertical_offset="0" />
+					
+					<container>
+						<attachment_group class="vertical_arrange" vertical_layout="-1, -1" horizontal_alignment="horizontal" horizontal_inset="0" vertical_offset="0" vertical_gap="0" />
+
+						<widget class="text" font="label" colour="faded text" alignment="left, centre_y">
+							<translation id="text" translation_id="335505" type="use" value="Transfer[COMMENT: for all actions to do with transfers etc...]" />
+						</widget>
+
+						<widget class="text" font="label" colour="faded text" alignment="left, centre_y">
+							<translation id="text" translation_id="227799" type="use" value="Wage" />
+						</widget>
+					</container>
+
+					<container>
+						<attachment_group class="vertical_arrange" vertical_layout="-1, -1" horizontal_alignment="horizontal" horizontal_inset="0" vertical_offset="0" vertical_gap="0" />
+						
+						<widget class="cash_cell" id="trbg" alignment="left, centre_y" size="medium" colour="text" />
+						<widget class="wage_label" id="wgbg" alignment="left, centre_y" size="medium" colour="text" />
+					</container>
+
+					<widget class="widget_popup_button" id="shbs" show_button_appearance="false" auto_size="horizontal">
+						<string id="widget_type" value="client_object_viewer_xml_panel" />
+						<record id="widget_properties" file="club/popup budget adjustment panel" width="500" />
+						<record id="modal_popup_properties" file="modal popup panel auto sized" />
+					</widget>
+				</container>
+
+				<widget class="label" auto_size="vertical" font="text" size="medium" colour="faded text" id="trma" multiline="true" />
+			</container>
+
+			<widget class="active_recruitment_focuses_panel" id="arfc" file="club/active recruitment focuses recruitment meeting panel" is_in_recruitment_meeting="true" />
+			<widget class="active_recruitment_focuses_panel" id="hrpc" file="club/active recruitment focuses recruitment meeting highly recommended panel" hidden="true" is_in_recruitment_meeting="true" showing_recommendation_list_only="true" height="500" />
+		</container>
+
+		<widget class="scouting_centre_panel" id="Repp" file="team/scouting centre recruitment meeting panel" navigation_container="true" is_in_recruitment_meeting="true" hidden="true" />
+	</container>
+
+	<container class="inner_contrast_box" id="CatC" red_replacement="bg" height="50">
+		<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="middle" horizontal_inset="10" horizontal_gap="8" />
+
+		<widget class="icon_button" id="GTcp" appearance="buttons/standard/normal/button" icon="icons/16px/view" alignment="left, centre_y" auto_size="all">
+			<translation id="text" translation_id="557795" type="use" value="Show Report Cards[COMMENT: AREA: Recruitment meeting; FR-BN: FM-4270; NOTE: Recruitment meeting recommendations button to show report cards]" />
+			<record id="click_event">
+				<flags id="event_id" value="FVse" />
+				<integer id="valu" value="GTcp" />
+			</record>
+		</widget>
+		<widget class="icon_button" id="GTfl" appearance="buttons/subtle/normal/button" icon="icons/16px/left" alignment="left, centre_y" auto_size="all">
+			<translation id="text" translation_id="557796" type="use" value="Back to Recruitment Focus[COMMENT: AREA: Recruitment meeting; FR-BN: FM-4270; NOTE: Recruitment meeting recommendations button to show recruitment focus reccomendations lists]" />
+			<record id="click_event">
+				<flags id="event_id" value="FVse" />
+				<integer id="valu" value="GTfl" />
+			</record>
+		</widget>
+		<widget class="icon_button" id="GThr" appearance="buttons/primary/normal/button" icon="icons/16px/right" icon_alignment="right" alignment="left, centre_y" auto_size="all">
+			<translation id="text" translation_id="560950" type="use" value="Show Other Recommended Players[COMMENT: AREA: Recruitment meeting; FR-BN: FM-4270; NOTE: Recruitment meeting recommendations button to show other recommended players not listed in the scouting focus lists]" />
+			<record id="click_event">
+				<flags id="event_id" value="FVse" />
+				<integer id="valu" value="GThr" />
+			</record>
+		</widget>
+		<widget class="icon_button" id="GTnt" click_event="GTnt" appearance="buttons/subtle/normal/button" alignment="left, centre_y" auto_size="all">
+			<translation id="text" translation_id="510685" type="use" value="End Meeting[COMMENT: AREA: Recruitment meeting; FR-BN: 32765; NOTE: Recruitment meeting end meeting dialog popup title]" />
+		</widget>
+	</container>
+</panel>
