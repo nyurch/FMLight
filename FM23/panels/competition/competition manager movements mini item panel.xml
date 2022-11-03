@@ -1,5 +1,4 @@
 <!-- A panel showing a single manager movement (in or out) for use in the manager movements mini panel --><!-- Displays the properties set up by PROP_COMP_MANAGER_MOVEMENTS_SPLIT and should be used with a PROPERTY_LIST_VIEWER_XML_PANEL --><panel>
-<!-- use to recolour person_button text -->
 <string id="skin_style" value="person_button" />
 	<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="8" />
 	<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
@@ -38,8 +37,8 @@
 
 				<widget class="person_button" style="bold" alignment="left,bottom" info_popup_enabled="true" auto_size="vertical">
 					<record id="object_property">
-						<!-- PROP_MANAGER -->
-						<integer id="get_property" value="mngr" />
+						<!-- PROP_PERSON -->
+						<integer id="get_property" value="NewM" />
 						<boolean id="dont_set_object" value="true" />
 					</record>
 				</widget>
@@ -87,7 +86,7 @@
 				<widget class="person_button" style="bold" alignment="left,bottom" info_popup_enabled="true" auto_size="vertical">
 					<record id="object_property">
 						<!-- PROP_PERSON -->
-						<integer id="get_property" value="Pers" />
+						<integer id="get_property" value="OldM" />
 						<boolean id="dont_set_object" value="true" />
 					</record>
 				</widget>
