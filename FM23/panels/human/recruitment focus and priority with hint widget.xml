@@ -1,0 +1,13 @@
+﻿<panel>
+	<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="32, -1" horizontal_gap="4"/>
+
+	<widget class="picture" id="fcPC" width="32" height="46" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="false" wants_mouse_events="false" blue_replacement="black"/>
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_layout="-1, -1" vertical_gap="0"/>
+
+		<widget class="info_icon_hint_text" id="fcNM" widget_type="recruitment_focus_widget_tooltip" font="title" colour="text" auto_size="vertical" height="16"/>
+		<widget class="text" id="Fdsc" colour="faded text" font="text" auto_size="vertical" height="16"/>
+	</container>
+
+</panel>
