@@ -1,0 +1,277 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_horizontal_centre" vertical_alignment="bottom,extend" vertical_offset="60"/>
+
+	<!--Alternate UI mode-->
+	<integer id="alSM" value="2" />
+
+	<!--Score Penalty Appearance-->
+	<string id="scAP" value="icons/16px/square"/>
+	<!--Missed Penalty Appearance-->
+	<string id="msAP" value="icons/16px/square"/>
+
+	<!--Score Penalty Red Replacement-->
+	<colour id="scCO" red="34" green="201" blue="30"/>
+	<!--Missed Penalty Red Replacement-->
+	<colour id="msCO" red="201" green="30" blue="30"/>
+
+	<container height="150" width="600">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+		<container height="132">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="middle" horizontal_gap="0" vertical_alignment="bottom"/>
+			<container>
+				<attachment_group class="vertical_arrange_autosize_all" vertical_gap="0" vertical_offset="20"/>
+
+				<container height="22">
+					<attachment_group class="horizontal_arrange_autosize" />
+
+					<container width="539" class="main_box_no_margin" appearance="boxes/custom/uefa/champions league/match/penalty display/solid/paper" >
+						<attachment_group class="horizontal_arrange" horizontal_alignment="middle" vertical_alignment="vertical" />
+						<widget class="text" auto_size="all" size="xlarge" font="champions" colour="ucl cyan" width="539" >
+							<translation id="text" value="Penalties" translation_id="230022" type="use"/>
+						</widget>
+					</container>
+				</container>
+
+				<container height="60">
+					<attachment_group class="horizontal_arrange_autosize" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+
+					<container class="main_box_no_margin" appearance="boxes/custom/uefa/champions league/match/penalty display/solid/paper" >
+						<attachment_group class="horizontal_arrange_autosize" horizontal_inset="5" horizontal_gap="10" />
+
+						<container width="32">
+						</container>
+						<container width="30">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+							<widget class="picture" id="hmA1" scale_picture="true">
+								<string id="image_alignment" value="centre"/>
+							</widget>
+							<widget class="text" alignment="centre" width="30" >
+								<integer id="value" value="1"/>
+								<string id="style" value="regular"/>
+								<integer id="size" value="15"/>
+								<string id="font" value="champions"/>
+								<string id="colour" value="white"/>
+							</widget>
+						</container>
+						<container width="30">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+							<widget class="picture" id="hmA2" scale_picture="true">
+								<string id="image_alignment" value="centre"/>
+							</widget>
+							<widget class="text" alignment="centre" width="30">
+								<integer id="value" value="2"/>
+								<string id="style" value="regular"/>
+								<integer id="size" value="15"/>
+								<string id="font" value="champions"/>
+								<string id="colour" value="white"/>
+							</widget>
+						</container>
+						<container width="30">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+							<widget class="picture" id="hmA3" scale_picture="true">
+								<string id="image_alignment" value="centre"/>
+							</widget>
+							<widget class="text" alignment="centre" width="30">
+								<integer id="value" value="3"/>
+								<string id="style" value="regular"/>
+								<integer id="size" value="15"/>
+								<string id="font" value="champions"/>
+								<string id="colour" value="white"/>
+							</widget>
+						</container>
+						<container width="30">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+							<widget class="picture" id="hmA4" scale_picture="true">
+								<string id="image_alignment" value="centre"/>
+							</widget>
+							<widget class="text" alignment="centre" width="30">
+								<integer id="value" value="4"/>
+								<string id="style" value="regular"/>
+								<integer id="size" value="15"/>
+								<string id="font" value="champions"/>
+								<string id="colour" value="white"/>
+							</widget>
+						</container>
+						<container width="30">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+							<widget class="picture" id="hmA5" scale_picture="true">
+								<string id="image_alignment" value="centre"/>
+							</widget>
+							<widget class="text" alignment="centre" width="30">
+								<integer id="value" value="5"/>
+								<string id="style" value="regular"/>
+								<integer id="size" value="15"/>
+								<string id="font" value="champions"/>
+								<string id="colour" value="white"/>
+							</widget>
+						</container>
+
+						<container width="54">
+						</container>
+					</container>
+					<container class="main_box_no_margin" appearance="boxes/custom/uefa/champions league/match/penalty display/solid/paper" >
+						<attachment_group class="horizontal_arrange_autosize" horizontal_inset="5" horizontal_gap="10" />
+
+						<widget class="spacer"/>
+						<container width="30">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+							<widget class="picture" id="awA1" scale_picture="true">
+								<string id="image_alignment" value="centre"/>
+							</widget>
+							<widget class="text" alignment="centre" width="30">
+								<integer id="value" value="1"/>
+								<string id="style" value="regular"/>
+								<integer id="size" value="15"/>
+								<string id="font" value="champions"/>
+								<string id="colour" value="white"/>
+							</widget>
+						</container>
+						<container width="30">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+							<widget class="picture" id="awA2" scale_picture="true">
+								<string id="image_alignment" value="centre"/>
+							</widget>
+							<widget class="text" alignment="centre" width="30">
+								<integer id="value" value="2"/>
+								<string id="style" value="regular"/>
+								<integer id="size" value="15"/>
+								<string id="font" value="champions"/>
+								<string id="colour" value="white"/>
+							</widget>
+						</container>
+						<container width="30">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+							<widget class="picture" id="awA3" scale_picture="true">
+								<string id="image_alignment" value="centre"/>
+							</widget>
+							<widget class="text" alignment="centre" width="30">
+								<integer id="value" value="3"/>
+								<string id="style" value="regular"/>
+								<integer id="size" value="15"/>
+								<string id="font" value="champions"/>
+								<string id="colour" value="white"/>
+							</widget>
+						</container>
+						<container width="30">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+							<widget class="picture" id="awA4" scale_picture="true">
+								<string id="image_alignment" value="centre"/>
+							</widget>
+							<widget class="text" alignment="centre" width="30">
+								<integer id="value" value="4"/>
+								<string id="style" value="regular"/>
+								<integer id="size" value="15"/>
+								<string id="font" value="champions"/>
+								<string id="colour" value="white"/>
+							</widget>
+						</container>
+						<container width="30">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+							<widget class="picture" id="awA5" scale_picture="true">
+								<string id="image_alignment" value="centre"/>
+							</widget>
+							<widget class="text" alignment="centre" width="30">
+								<integer id="value" value="5"/>
+								<string id="style" value="regular"/>
+								<integer id="size" value="15"/>
+								<string id="font" value="champions"/>
+								<string id="colour" value="white"/>
+							</widget>
+						</container>
+
+						<container width="32">
+						</container>
+					</container>
+				</container>
+
+				<container height="2">
+					<attachment_group class="horizontal_arrange_autosize" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+
+					<container class="main_box_no_margin" appearance="boxes/custom/uefa/champions league/match/penalty display/divider/paper" >
+						<attachment_group class="horizontal_arrange_autosize"/>
+
+						<container width="539">
+						</container>
+
+					</container>
+				</container>
+
+				<container height="40">
+					<attachment_group class="horizontal_arrange_autosize" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+
+					<container class="main_box_no_margin" appearance="boxes/custom/uefa/champions league/match/penalty display/left/paper">
+						<attachment_group class="horizontal_arrange_autosize" />
+						<widget class="team_button" id="hmTb" width="200" alignment="centre" mode="1">
+							<string id="style" value="bold"/>
+							<string id="font" value="champions"/>
+							<integer id="size" value="15"/>
+							<string id="colour" value="white"/>
+							<boolean id="icon_enabled" value="false"/>
+						</widget>
+					</container>
+
+					<container class="main_box_no_margin">
+						<string id="background_colour" value="ucl core blue"/>
+						<attachment_group class="horizontal_arrange_autosize" alignment="centre"/>
+						<widget class="text" id="hmtT" alignment="centre" width="40">
+							<integer id="value" value="1"/>
+							<string id="style" value="regular"/>
+							<integer id="size" value="15"/>
+							<string id="font" value="champions"/>
+							<string id="colour" value="white"/>
+						</widget>
+					</container>
+
+					<widget class="picture" file="boxes/custom/solid/paper" red_replacement="ucl bright blue" width="1"/>
+
+					<container class="main_box_no_margin">
+						<string id="background_colour" value="ucl core blue"/>
+						<attachment_group class="horizontal_arrange_autosize" />
+						<widget class="text" id="hmtT" alignment="centre" width="40">
+							<integer id="value" value="1"/>
+							<string id="style" value="regular"/>
+							<integer id="size" value="15"/>
+							<string id="font" value="champions"/>
+							<string id="colour" value="white"/>
+						</widget>
+					</container>
+
+					<container class="main_box_no_margin" appearance="boxes/custom/uefa/champions league/match/penalty display/right/paper">
+						<attachment_group class="horizontal_arrange_autosize" />
+						<widget class="team_button" id="awTb" width="200" alignment="centre" mode="1">
+							<string id="style" value="bold"/>
+							<string id="font" value="champions"/>
+							<integer id="size" value="15"/>
+							<string id="colour" value="white"/>
+							<boolean id="icon_enabled" value="false"/>
+						</widget>
+					</container>
+				</container>
+			</container>
+		</container>
+
+		<container height="60">
+			<attachment_group class="horizontal_arrange" horizontal_layout="80,-1,80" horizontal_gap="0" vertical_alignment="bottom"/>
+			<container>
+				<attachment_group class="vertical_arrange_autosize_all"/>
+				<widget id="htBA" class="object_portrait_picture" height="80" width="80">
+					<string id="scale_picture" value="true" />
+					<string id="image_alignment" value="left" />
+					<boolean id="keep_aspect_ratio" value="true" />
+					<boolean id="clickable" value="false" />
+				</widget>
+			</container>
+			<widget class="spacer"/>
+			<container>
+				<attachment_group class="vertical_arrange_autosize_all"/>
+				<widget id="atBA" class="object_portrait_picture" height="80" width="80">
+					<string id="scale_picture" value="true" />
+					<string id="image_alignment" value="right" />
+					<boolean id="keep_aspect_ratio" value="true" />
+					<boolean id="clickable" value="false" />
+				</widget>
+			</container>
+		</container>
+	</container>
+</panel>
