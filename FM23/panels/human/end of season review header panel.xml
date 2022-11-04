@@ -41,7 +41,7 @@
 
 					<!-- continue button -->
 					<widget class="icon_button" id="nxbt" appearance="chrome/buttons/continue/button" controller_button="right_trigger" alignment="centre" secondary_icon_enabled="true" secondary_icon="icons/16px/continue" secondary_icon_alignment="centre_right, centre_y" font="title" colour="background" width="210" height="48" default_focus="true" multiline="true">
-						<string id="red_replacement" value="black"/>
+						<string id="red_replacement" value="bg accent"/>
 						<record id="secondary_icon_properties" red_replacement="background" />
 						<record id="click_event" event_id="nxCK" event_target="PesR" />
 						<translation id="text" translation_id="255268" type="use" value="Next[COMMENT: wizard dialog: default next button text]" />
