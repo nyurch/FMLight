@@ -1,0 +1,99 @@
+﻿<panel save_session_state="true">
+	<boolean id="oSTl" value="true" />
+	<string id="LeSF" value="match/match league stage cutscene" />
+
+	<list id="properties_to_forward">
+		<record get_property="Fmtd" set_property="text" target="mdNU" />
+		<record get_property="comC" set_property="objt" target="torP" />
+		<record get_property="coID" set_property="valu" target="buID" />
+	</list>
+
+	<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+
+		<container class="main_box_no_margin" red_replacement="white" appearance="boxes/custom/solid/paper">
+
+			<attachment class="test_screen_size_attachment" skip_if_false="true">
+				<list id="properties">
+					<record>
+						<flags id="alignment" value="vertical" />
+						<integer id="min_value" value="0" />
+						<integer id="max_value" value="900" />
+						<symbol id="set_property" value="height" />
+						<integer id="true_value" value="32" />
+						<integer id="false_value" value="32" />
+					</record>
+					<record min_value="601" max_value="720" true_value="40" />
+					<record min_value="720" max_value="10000" true_value="45" />
+				</list>
+			</attachment>
+
+			<animation class="translate_animation" start_value="-1, 0" end_value="0, 0" duration="1" delay="0" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_screen" trigger_id="hidden" trigger_start="false" trigger_end="true" no_clipping="true" />
+			<animation class="fade_animation" start_value="0" end_value="1" duration="0.8" delay="0.2" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+			<attachment_group class="horizontal_arrange" horizontal_offset="20" horizontal_layout="-1, 300" horizontal_gap="10" />
+
+
+			<container class="client_object_viewer_xml_panel" id="torP" height="24">
+				<layout class="arrange_horizontal_attachment" alignment="left"/>
+
+				<!--bundesliga logo-->
+				<widget class="value_based_picture" id="buID" scale_picture="true" image_alignment="centre" keep_aspect_ratio="true" width="300">
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0"/>
+
+					<animation class="fade_animation" start_value="0" end_value="1" duration="0.5" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+					<list id="value_list">
+						<record value="22" file="pictures/logos/custom/comps/ger/BL full black" />
+						<record value="23" file="pictures/logos/custom/comps/ger/BL2 full black" />
+						<record value="92030194" file="pictures/logos/custom/comps/ger/supercup full white" />
+					</list>
+				</widget>
+			</container>
+
+			<container alignment="right">
+				<attachment_group class="horizontal_arrange" horizontal_alignment="right" horizontal_offset="0" horizontal_gap="5" vertical_alignment="vertical" vertical_inset="0" />
+				<widget class="text" size="18" font="bundesliga-condensed" auto_size="all" colour="black" alignment="right, centre_y">
+					<translation id="text" translation_id="538985" type="use" value="Matchday[COMMENT: AREA: Match UI; SUB-AREA: overlay graphic; NOTE: will be shown as Matchday 20 for example, number appended in graphic form]" />
+				</widget>
+				<widget class="text" id="mdNU" size="18" font="bundesliga-condensed" auto_size="all" colour="black" alignment="right, centre_y" />
+			</container>
+
+		</container>
+
+		<container id="cont">
+
+			<animation class="scale_animation" start_value="1, 0" end_value="1, 1" duration="0.4" delay="1" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" centre_point="top" no_clipping="true" />
+			<animation class="fade_animation" start_value="0" end_value="1" duration="0.4" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		</container>
+
+	</container>
+
+	<container class="contrast_box" appearance="boxes/custom/solid/paper" red_replacement="bg lighter">
+
+		<list id="properties">
+			<record>
+				<flags id="alignment" value="vertical" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="601" />
+				<symbol id="set_property" value="height" />
+				<integer id="true_value" value="25" />
+				<integer id="false_value" value="25" />
+			</record>
+			<record min_value="601" max_value="720" true_value="28" />
+			<record min_value="720" max_value="10000" true_value="32" />
+		</list>
+
+		<animation class="translate_animation" start_value="1, 0" end_value="0, 0" duration="1" delay="0" end_mode="hold_auto_reverse" tween="ease_in_out_4" coord_mode="relative_to_screen" trigger_id="hidden" trigger_start="false" trigger_end="true" no_clipping="true" />
+		<animation class="fade_animation" start_value="0" end_value="1" duration="0.8" delay="0.2" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+
+		<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="middle" />
+
+		<widget class="picture" file="icons/custom/match/logos/si tv full" height="16" auto_size="horizontal" scale_picture="true" red_replacement="white">
+			<animation class="fade_animation" start_value="0" end_value="1" duration="0.5" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+		</widget>
+	</container>
+</panel>
