@@ -1,0 +1,559 @@
+﻿<panel>
+
+	<attachment_group class="vertical_arrange" vertical_alignment="bottom,extend" />
+
+	<boolean id="continue_when_done" value="true" />
+	<boolean id="show_on_timer" value="true" />
+	
+	<!--Alternate UI mode-->
+	<integer id="alSM" value="5" />
+
+	<container>
+
+		<layout class="centre_in_parent_attachment" alignment="all" apply_to_children="true" />
+
+
+		<container width="1000" id="hwIN">
+            <attachment class="test_screen_size_attachment" skip_if_false="true">
+                <list id="properties">
+                    <record>
+                        <flags id="alignment" value="vertical" />
+                        <integer id="min_value" value="0" />
+                        <integer id="max_value" value="601" />
+                        <symbol id="set_property" value="height" />
+                        <integer id="true_value" value="500" />
+                    </record>
+                    <record min_value="601" max_value="720" true_value="540" />
+                    <record min_value="720" max_value="10000" true_value="650" />
+                </list>
+            </attachment>
+
+            <attachment class="test_screen_size_attachment" skip_if_false="true">
+                <list id="properties">
+                    <record>
+                        <flags id="alignment" value="horizontal" />
+                        <integer id="min_value" value="0" />
+                        <integer id="max_value" value="1280" />
+                        <symbol id="set_property" value="width" />
+                        <integer id="true_value" value="1050" />
+                    </record>
+                    <record min_value="1280" max_value="10000" true_value="1180" />
+                </list>
+            </attachment>
+
+			<attachment_group class="vertical_arrange" vertical_alignment="bottom,extend" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<animation class="fade_animation" trigger_id="hidden" trigger_value="false" start_value="0.0" end_value="1.0" duration="0.2">
+				<record id="finished_event">
+					<flags id="event_id" value="hoAn" />
+					<flags id="event_target" value="hwIN" />
+				</record>
+			</animation>
+
+			<animation class="fade_animation" trigger_start="hoAn" trigger_value="false" start_value="1.0" end_value="1.0" duration="6">
+				<record id="finished_event">
+					<flags id="event_id" value="hiAn" />
+					<flags id="event_target" value="hwIN" />
+				</record>
+			</animation>
+
+			<animation class="fade_animation" trigger_start="hiAn" trigger_value="false" start_value="1.0" end_value="0.0" duration="1.5">
+				<record id="finished_event">
+					<flags id="event_id" value="HtAf" />
+				</record>
+			</animation>
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+					<animation class="scale_animation" start_value="1, 0" end_value="1, 1" duration="0.6" delay="1" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" centre_point="top" no_clipping="true" />
+					<animation class="fade_animation" start_value="0" end_value="1" duration="0.6" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+
+					<widget class="spacer" height="20" />
+
+					<container id="htbx" class="contrast_box" appearance="boxes/custom/efl/lineup/bg/paper" red_replacement="white">
+						<attachment_group class="horizontal_arrange" horizontal_layout="-1,-2,-1" horizontal_offset="50" horizontal_gap="12" vertical_alignment="vertical" />
+
+
+						<container class="client_object_viewer_xml_panel">
+							<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" />
+
+
+							<record id="object_property" get_property="home" set_property="objt" />
+
+							<widget class="person_button" auto_size="vertical" alignment="left,centre_y" disable_link="true" colour="efl blue" font="efl combined">
+								<translation id="format" translation_id="557806" type="use" value="|b|MANAGER|/b| [%person#1-bold_surname][COMMENT: AREA: Match; SUB-AREA: Pre match flow; FR: 30889; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: bold_surname is a tag that prints the person's first name and surname, but puts the latter into bold text for presentation]" />
+
+								<record id="object_property">
+									<list id="get_properties">
+										<record id="object_property">
+											<integer id="get_property" value="TMnR" />
+											<integer id="set_property" value="value" />
+										</record>
+									</list>
+								</record>
+							</widget>
+
+							<widget class="match_lineup_table" height="330" id="hMlu" team_index="0" include_starting_subs="false" include_managers="false" include_team_name="false">
+								<record id="widget_properties" colour="efl blue" font="efl combined" format="[%person#1-bold_surname]" />
+							</widget>
+
+
+						</container>
+
+						<!-- Home Team Line Up -->
+						<container>
+							<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="20" />
+
+							<container id="hpco" height="350">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+								<widget class="picture" file="boxes/custom/match/lineup pitch/efl pitch" image_alignment="centre" scale_picture="true" />
+								<widget class="pitch_with_tactics" id="hpwt" vertical="true" icon_flags="disable_name_colour,dont_colour_number, show_name,show_number,colour_names_for_team,show_captain,dont_fade_icons,dont_show_team_names,show_preview_info_popup,drop_initial_if_possible" player_icon_file="tactics/tactics icon preview info panel" pitch_line_colour="black"  pitch_alignment="centre_x, can_scale" pitch_vertical_padding="-20">
+
+									<boolean id="pitch_draw_image" value="false" />
+								</widget>
+
+							</container>
+
+							<widget class="text" id="hsTX" alignment="left" auto_size="vertical" colour="efl blue" font="efl combined"/>
+							
+
+						</container>
+
+						<container>
+							<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<container class="client_object_viewer_xml_panel" height="250">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+								
+								<record id="object_property" get_property="home" set_property="objt" />
+
+								<widget class="picture" id="hmBD" file="boxes/custom/efl/lineup/badge/paper" scale_picture="true" image_alignment="centre" />
+								<container>
+									<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+								<widget class="object_portrait_picture" height="150" scale_picture="true">
+									<animation class="fade_animation" start_value="0" end_value="1" duration="0.5" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+									<boolean id="keep_aspect_ratio" value="true" />
+									<flags id="image_alignment" value="centre" />
+									<record id="object_property">
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="objt" />
+									</record>
+								</widget>
+								</container>
+								
+							</container>
+						</container>
+					</container>
+				</container>
+
+				<container class="client_object_viewer_xml_panel">
+					<attachment_group class="horizontal_arrange" horizontal_alignment="left" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+					
+					<animation class="scale_animation" start_value="1, 0" end_value="1, 1" duration="0.6" delay="1" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" centre_point="top" no_clipping="true" />
+					<animation class="fade_animation" start_value="0" end_value="1" duration="0.6" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+					
+					<record id="object_property" get_property="home" set_property="objt" />
+					
+					<widget class="spacer" width="40" />
+					<container width="500">
+						<attachment_group class="vertical_arrange" vertical_alignment="top" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<container class="contrast_box_no_margin" id="hmTB" appearance="boxes/custom/efl/round/paper" height="40">
+							<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_offset="20" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+
+							<widget class="team_button" id="hmtb" alignment="left,top" font="efl headline" size="xlarge" colour="white">
+								<integer id="mode" value="1" />
+								<boolean id="clickable" value="false" />
+								<boolean id="disable_link" value="true" />
+								<boolean id="icon_enabled" value="false" />
+								<boolean id="multiline" value="true" />
+								<record id="object_property">
+									<list id="get_properties">
+										<record id="object_property">
+											<integer id="get_property" value="objt" />
+											<integer id="set_property" value="value" />
+										</record>
+									</list>
+								</record>
+							</widget>
+
+							<widget class="value_based_picture" id="hCOp" alignment="right" image_alignment="right" scale_picture="true" width="200">
+								<list id="value_list">
+									<record value="12" file="pictures/logos/custom/comps/eng/efl_championship_horizontal_long" />
+									<record value="13" file="pictures/logos/custom/comps/eng/efl_league_one_horizontal_long" />
+									<record value="14" file="pictures/logos/custom/comps/eng/efl_league_two_horizontal_long" />
+									<record value="1301427" file="pictures/logos/custom/comps/eng/efl_cup_horizontal_long" />
+									<record value="1301429" file="pictures/logos/custom/comps/eng/efl_trophy_horizontal_long" />
+								</list>
+							</widget>
+
+						</container>
+
+					</container>
+				</container>
+			</container>
+		</container>
+
+		<container width="1000" id="awIN" hidden="true">
+            <attachment class="test_screen_size_attachment" skip_if_false="true">
+                <list id="properties">
+                    <record>
+                        <flags id="alignment" value="vertical" />
+                        <integer id="min_value" value="0" />
+                        <integer id="max_value" value="601" />
+                        <symbol id="set_property" value="height" />
+                        <integer id="true_value" value="500" />
+                    </record>
+                    <record min_value="601" max_value="720" true_value="540" />
+                    <record min_value="720" max_value="10000" true_value="650" />
+                </list>
+            </attachment>
+
+            <attachment class="test_screen_size_attachment" skip_if_false="true">
+                <list id="properties">
+                    <record>
+                        <flags id="alignment" value="horizontal" />
+                        <integer id="min_value" value="0" />
+                        <integer id="max_value" value="1280" />
+                        <symbol id="set_property" value="width" />
+                        <integer id="true_value" value="1050" />
+                    </record>
+                    <record min_value="1280" max_value="10000" true_value="1180" />
+                </list>
+            </attachment>
+
+			<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<animation class="fade_animation" trigger_id="hidden" trigger_value="false" start_value="0.0" end_value="1.0" duration="0.2">
+				<record id="finished_event">
+					<flags id="event_id" value="hoAn" />
+					<flags id="event_target" value="awIN" />
+				</record>
+			</animation>
+
+			<animation class="fade_animation" trigger_start="hoAn" trigger_value="false" start_value="1.0" end_value="1.0" duration="6">
+				<record id="finished_event">
+					<flags id="event_id" value="hiAn" />
+					<flags id="event_target" value="awIN" />
+				</record>
+			</animation>
+
+			<animation class="fade_animation" trigger_start="hiAn" trigger_value="false" start_value="1.0" end_value="0.0" duration="1.5">
+				<record id="finished_event">
+					<flags id="event_id" value="AtAf" />
+				</record>
+			</animation>
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+					<animation class="scale_animation" start_value="1, 0" end_value="1, 1" duration="0.6" delay="1" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" centre_point="top" no_clipping="true" />
+					<animation class="fade_animation" start_value="0" end_value="1" duration="0.6" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+
+					<widget class="spacer" height="20" />
+
+					<container id="atbx" class="contrast_box" appearance="boxes/custom/efl/lineup/bg/paper" red_replacement="white">
+						<attachment_group class="horizontal_arrange" horizontal_layout="-1,-2,-1" horizontal_offset="50" horizontal_gap="12" vertical_alignment="vertical" />
+
+
+						<container class="client_object_viewer_xml_panel">
+							<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" />
+
+
+							<record id="object_property" get_property="away" set_property="objt" />
+
+							<widget class="person_button" auto_size="vertical" alignment="left,centre_y" disable_link="true" colour="efl blue" font="efl combined">
+								<translation id="format" translation_id="557806" type="use" value="|b|MANAGER|/b| [%person#1-bold_surname][COMMENT: AREA: Match; SUB-AREA: Pre match flow; FR: 30889; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: bold_surname is a tag that prints the person's first name and surname, but puts the latter into bold text for presentation]" />
+
+								<record id="object_property">
+									<list id="get_properties">
+										<record id="object_property">
+											<integer id="get_property" value="TMnR" />
+											<integer id="set_property" value="value" />
+										</record>
+									</list>
+								</record>
+							</widget>
+
+							<widget class="match_lineup_table" height="330" id="aMlu" team_index="1" include_starting_subs="false" include_managers="false" include_team_name="false">
+								<record id="widget_properties" colour="efl blue" font="efl combined" format="[%person#1-bold_surname]" />
+							</widget>
+
+
+						</container>
+
+						<!-- Home Team Line Up -->
+						<container>
+							<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="20" horizontal_alignment="horizontal" />
+
+							<container id="apco" height="350">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+								<widget class="picture" file="boxes/custom/match/lineup pitch/efl pitch" image_alignment="centre" scale_picture="true" />
+								<widget class="pitch_with_tactics" id="apwt" vertical="true" icon_flags="disable_name_colour,dont_colour_number, show_name,show_number,colour_names_for_team,show_captain,dont_fade_icons,dont_show_team_names,show_preview_info_popup,drop_initial_if_possible" player_icon_file="tactics/tactics icon preview info panel" pitch_line_colour="black" pitch_alignment="centre_x, can_scale"  pitch_vertical_padding="-20">
+
+									<boolean id="pitch_draw_image" value="false" />
+								</widget>
+							</container>
+
+							<widget class="text" id="asTX" alignment="centre" auto_size="vertical" colour="efl blue" font="efl combined"/>
+
+						</container>
+
+						<container>
+							<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<container class="client_object_viewer_xml_panel" height="250">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+								<record id="object_property" get_property="away" set_property="objt" />
+
+								<widget class="picture" id="awBD" file="boxes/custom/efl/lineup/badge/paper" scale_picture="true" image_alignment="centre" />
+								<container>
+									<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+									<widget class="object_portrait_picture" height="150" scale_picture="true">
+										<animation class="fade_animation" start_value="0" end_value="1" duration="0.5" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+										<boolean id="keep_aspect_ratio" value="true" />
+										<flags id="image_alignment" value="centre" />
+										<record id="object_property">
+											<integer id="get_property" value="objt" />
+											<integer id="set_property" value="objt" />
+										</record>
+									</widget>
+								</container>
+
+							</container>
+						</container>
+					</container>
+				</container>
+
+				<container class="client_object_viewer_xml_panel">
+					<attachment_group class="horizontal_arrange" horizontal_alignment="left" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+
+					<animation class="scale_animation" start_value="1, 0" end_value="1, 1" duration="0.6" delay="1" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" centre_point="top" no_clipping="true" />
+					<animation class="fade_animation" start_value="0" end_value="1" duration="0.6" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+
+					<record id="object_property" get_property="away" set_property="objt" />
+
+					<widget class="spacer" width="40" />
+					<container width="500">
+						<attachment_group class="vertical_arrange" vertical_alignment="top" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<container class="contrast_box_no_margin" id="awTB" appearance="boxes/custom/efl/round/paper" height="40">
+							<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_offset="20" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+
+							<widget class="team_button" id="awtb" alignment="left,top" font="efl headline" size="xlarge" colour="white">
+									<integer id="mode" value="1" />
+								<boolean id="clickable" value="false" />
+								<boolean id="disable_link" value="true" />
+								<boolean id="icon_enabled" value="false" />
+								<boolean id="multiline" value="true" />
+								<record id="object_property">
+									<list id="get_properties">
+										<record id="object_property">
+											<integer id="get_property" value="objt" />
+											<integer id="set_property" value="value" />
+										</record>
+									</list>
+								</record>
+							</widget>
+
+							<widget class="value_based_picture" id="aCOp" alignment="right" image_alignment="right" scale_picture="true" width="200">
+								<list id="value_list">
+									<record value="12" file="pictures/logos/custom/comps/eng/efl_championship_horizontal_long" />
+									<record value="13" file="pictures/logos/custom/comps/eng/efl_league_one_horizontal_long" />
+									<record value="14" file="pictures/logos/custom/comps/eng/efl_league_two_horizontal_long" />
+									<record value="1301427" file="pictures/logos/custom/comps/eng/efl_cup_horizontal_long" />
+									<record value="1301429" file="pictures/logos/custom/comps/eng/efl_trophy_horizontal_long" />
+								</list>
+							</widget>
+
+						</container>
+
+					</container>
+				</container>
+			</container>
+		</container>
+
+		<container width="1000" id="leCO" hidden="true">
+            <attachment class="test_screen_size_attachment" skip_if_false="true">
+                <list id="properties">
+                    <record>
+                        <flags id="alignment" value="vertical" />
+                        <integer id="min_value" value="0" />
+                        <integer id="max_value" value="601" />
+                        <symbol id="set_property" value="height" />
+                        <integer id="true_value" value="500" />
+                    </record>
+                    <record min_value="601" max_value="720" true_value="540" />
+                    <record min_value="720" max_value="10000" true_value="650" />
+                </list>
+            </attachment>
+
+            <attachment class="test_screen_size_attachment" skip_if_false="true">
+                <list id="properties">
+                    <record>
+                        <flags id="alignment" value="horizontal" />
+                        <integer id="min_value" value="0" />
+                        <integer id="max_value" value="1280" />
+                        <symbol id="set_property" value="width" />
+                        <integer id="true_value" value="1050" />
+                    </record>
+                    <record min_value="1280" max_value="10000" true_value="1180" />
+                </list>
+            </attachment>
+
+			<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<animation class="fade_animation" trigger_id="hidden" trigger_value="false" start_value="1.0" end_value="1.0" duration="0.2">
+				<record id="finished_event">
+					<flags id="event_id" value="ltAn" />
+					<flags id="event_target" value="leCO" />
+				</record>
+			</animation>
+
+			<animation class="fade_animation" trigger_start="ltAn" trigger_value="false" start_value="1.0" end_value="1.0" duration="6">
+				<record id="finished_event">
+					<flags id="event_id" value="liAn" />
+					<flags id="event_target" value="ltAn" />
+				</record>
+			</animation>
+
+			<animation class="fade_animation" trigger_start="liAn" trigger_value="false" start_value="1.0" end_value="0.0" duration="1.5">
+				<record id="finished_event">
+					<flags id="event_id" value="LtAf" />
+				</record>
+			</animation>
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+					<animation class="scale_animation" start_value="1, 0" end_value="1, 1" duration="0.6" delay="1" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" centre_point="top" no_clipping="true" />
+					<animation class="fade_animation" start_value="0" end_value="1" duration="0.6" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+
+					<widget class="spacer" height="20" />
+
+					<container id="ctbx" class="contrast_box" appearance="boxes/custom/solid/paper" red_replacement="white">
+						<attachment_group class="horizontal_arrange" horizontal_layout="-2,-1" horizontal_offset="20" horizontal_gap="20" vertical_alignment="vertical" />
+
+
+						<widget class="match_league_table_panel" auto_size="vertical" width="900" file="match/match league table panel cutscene" id="ltCO" hidden="true" include_live_scores_in_table="false">
+
+							<record id="object_property">
+								<list id="get_properties">
+									<record id="object_property">
+										<integer id="get_property" value="Fmtd" />
+										<integer id="set_property" value="Fmtd" />
+									</record>
+									<record id="object_property">
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="comC" />
+									</record>
+								</list>
+							</record>
+						</widget>
+
+						<container>
+							<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+							<container class="client_object_viewer_xml_panel" height="250">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+								<record id="object_property" get_property="fxCo" set_property="objt" />
+
+								<widget class="picture" file="boxes/custom/efl/lineup/badge/paper" scale_picture="true" image_alignment="centre">
+									<record id="object_property">
+										<integer id="get_property" value="tbcl" />
+										<integer id="set_property" value="red_replacement" />
+									</record>
+								</widget>
+								<container>
+									<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+									<widget class="object_portrait_picture" height="150" scale_picture="true">
+										<animation class="fade_animation" start_value="0" end_value="1" duration="0.5" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+										<boolean id="keep_aspect_ratio" value="true" />
+										<flags id="image_alignment" value="centre" />
+										<record id="object_property">
+											<integer id="get_property" value="objt" />
+											<integer id="set_property" value="objt" />
+										</record>
+									</widget>
+								</container>
+
+							</container>
+						</container>
+					</container>
+				</container>
+
+				<container class="client_object_viewer_xml_panel">
+					<attachment_group class="horizontal_arrange" horizontal_alignment="left" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+
+					<animation class="scale_animation" start_value="1, 0" end_value="1, 1" duration="0.6" delay="1" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" centre_point="top" no_clipping="true" />
+					<animation class="fade_animation" start_value="0" end_value="1" duration="0.6" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+
+					<record id="object_property" get_property="fxCo" set_property="objt" />
+
+					<widget class="spacer" width="40" />
+					<container width="500">
+						<attachment_group class="vertical_arrange" vertical_alignment="top" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+						<container class="contrast_box_no_margin" appearance="boxes/custom/efl/round/paper" height="40" red_replacement="efl blue">
+							<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_offset="20" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+
+							<widget class="comp_button" alignment="left,top" font="efl headline" size="xlarge" colour="fg">
+								<integer id="mode" value="1" />
+								<boolean id="clickable" value="false" />
+								<boolean id="disable_link" value="true" />
+								<boolean id="icon_enabled" value="false" />
+								<boolean id="multiline" value="true" />
+								<record id="object_property">
+									<list id="get_properties">
+										<record id="object_property">
+											<integer id="get_property" value="objt" />
+											<integer id="set_property" value="value" />
+										</record>
+									</list>
+								</record>
+							</widget>
+
+						</container>
+
+					</container>
+				</container>
+			</container>
+		</container>
+	</container>
+	
+
+	<widget class="match_commentary_panel" id="cmif" file="" height="30">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+		<widget class="picture" file="boxes/custom/match/commentary/bar" id="cmbi" rthr="85" colour="neutral commentary background">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+
+		<!-- commentary widget -->
+		<widget class="label" id="cmnt" hidden="true" font="bold">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0,0,2,0" />
+
+			<translation id="text" value="" />
+			<flags id="algn" value="centre" />
+			<colour id="colour" name="text" />
+		</widget>
+
+	</widget>
+
+</panel>
