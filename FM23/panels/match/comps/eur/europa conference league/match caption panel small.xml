@@ -1,0 +1,88 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<!--Alternate UI mode-->
+	<integer id="alSM" value="4" />
+
+	<!--Alternating Colour 1-->
+	<colour id="alt1" red="255" green="255" blue="255" alpha="191" />
+	<!--Alternating Colour 2-->
+	<colour id="alt2" red="222" green="222" blue="222" alpha="191" />
+
+	<container>
+		<attachment_group class="vertical_arrange" vertical_alignment="bottom" vertical_offset="0" vertical_gap="0" horizontal_alignment="right" horizontal_inset="0"/>
+
+		<container id="deLA" class="client_object_viewer_xml_panel" width="350" height="60" >
+			<attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_offset="0" vertical_gap="0"/>
+
+			<container class="contrast_box" id="plCO" appearance="boxes/custom/solid/paper" red_replacement="uel grey">
+				<attachment_group class="horizontal_arrange" horizontal_layout="-1,30" />	
+				
+				<container>				
+					<attachment_group class="horizontal_arrange" horizontal_offset="-30" horizontal_alignment="middle" />					
+				<widget class="text" alignment="centre" auto_size="horizontal" id="PlTn">
+					<string id="size" value="xlarge" />
+					<string id="font" value="europa" />
+					<string id="multiline" value="true" />
+					<string id="colour" value="fg" />
+				</widget>
+				<widget class="text" alignment="centre" id="PlTx" auto_size="horizontal">
+					<string id="size" value="xlarge" />
+					<string id="font" value="europa" />
+					<string id="multiline" value="true" />
+					<string id="colour" value="fg" />
+				</widget>
+			</container>
+			<container>
+				<attachment_group class="horizontal_arrange" horizontal_alignment="middle" horizontal_offset="14" />					
+				
+				<widget class="picture" id="crdP" hidden="true" scale_picture="true" width="18">
+					<string id="image_alignment" value="right" />
+				</widget>
+				<widget class="picture" id="subN" hidden="true" scale_picture="true" width="20" file="icons/26px/up" red_replacement="green">
+					<string id="image_alignment" value="right" />
+				</widget>
+			</container>
+		</container>
+		
+			<container class="main_box" id="inCO" appearance="boxes/custom/uefa/europa conference/match/lower third/paper">
+				<attachment_group class="horizontal_arrange" horizontal_layout="-1,30" />	
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_offset="-30" horizontal_alignment="middle" />				
+				<widget class="text" alignment="centre" auto_size="horizontal" id="AcTx">
+					<string id="size" value="large" />
+					<string id="font" value="europa bold" />
+					<string id="multiline" value="true" />
+				</widget>
+				<widget class="text" alignment="centre" id="AcTs" auto_size="horizontal">
+					<string id="size" value="large" />
+					<string id="font" value="europa" />
+					<string id="multiline" value="true" />
+				</widget>
+			</container>
+			<container>
+				<attachment_group class="horizontal_arrange" horizontal_alignment="middle" horizontal_offset="-14"/>
+				<widget class="picture" id="subF" hidden="true" scale_picture="true" width="20" height="20" file="icons/26px/down" red_replacement="red">
+					<string id="image_alignment" value="right" />
+				</widget>
+			</container>
+		</container>
+
+		</container>
+	</container>
+
+	<container id="TeaC" class="client_object_viewer_xml_panel">
+		<attachment_group class="vertical_arrange_horizontal_autosize" />
+		<widget class="object_portrait_picture" height="70" width="70">
+			<string id="scale_picture" value="true" />
+			<string id="image_alignment" value="centre" />
+			<boolean id="keep_aspect_ratio" value="true" />
+			<boolean id="clickable" value="false" />
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="valu" />
+			</record>
+		</widget>
+	</container>
+
+</panel>
