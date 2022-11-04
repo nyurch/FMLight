@@ -1,0 +1,195 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_horizontal_centre" vertical_alignment="bottom,extend" vertical_offset="60"/>
+	<!--Alternate UI mode-->
+	<integer id="alSM" value="1" />
+
+	<!--Score Penalty Appearance-->
+	<string id="scAP" value="icons/custom/penalty shootout/current"/>
+	<!--Missed Penalty Appearance-->
+	<string id="msAP" value="icons/custom/penalty shootout/current"/>
+
+	<!--Score Penalty Red Replacement-->
+	<colour id="scCO" red="1" green="141" blue="80"/>
+	<!--Missed Penalty Red Replacement-->
+	<colour id="msCO" red="244" green="14" blue="24"/>
+
+	<container/>
+
+	<container id="topP" height="80" class="client_object_viewer_xml_panel">
+		<attachment_group class="horizontal_arrange_autosize" horizontal_alignment="middle" horizontal_offset="0" horizontal_gap="0" vertical_inset="0"/>
+		<container class="client_object_viewer_xml_panel" width="100">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<record id="object_property" get_property="home" set_property="objt" />
+			<container class="contrast_box" appearance="boxes/custom/solid/paper">
+				<attachment_group class="vertical_arrange" vertical_alignment="middle"/>
+				<record id="object_property">
+					<integer id="get_property" value="tbcl" />
+					<integer id="set_property" value="red_replacement" />
+				</record>
+				<widget class="object_portrait_picture" scale_picture="true" height="60" >
+					<boolean id="keep_aspect_ratio" value="true" />
+					<flags id="image_alignment" value="centre" />
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
+			</container>
+		</container>
+
+		<container width="610">
+			<attachment_group class="horizontal_arrange" horizontal_layout="-3,-1,-3" horizontal_offset="0" horizontal_gap="0" vertical_inset="0" />
+			<container class="client_object_viewer_xml_panel">
+				<attachment_group class="vertical_arrange" vertical_offset="0" vertical_gap="0" horizontal_inset="0"/>
+				<record id="object_property" get_property="home" set_property="objt" />
+				<container class="contrast_box" appearance="boxes/custom/bundesliga/solid/paper" height="35" red_replacement="white">
+					<attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="-1.-1.-1.-1.-1" horizontal_offset="5" horizontal_gap="0" vertical_inset="0"/>
+					<widget class="picture" file="icons/custom/penalty shootout/upcoming" id="hmA1" height="30">
+						<string id="image_alignment" value="centre"/>
+					</widget>
+					<widget class="picture" file="icons/custom/penalty shootout/upcoming" id="hmA2" height="30">
+						<string id="image_alignment" value="centre"/>
+					</widget>
+					<widget class="picture" file="icons/custom/penalty shootout/upcoming" id="hmA3" height="30">
+						<string id="image_alignment" value="centre"/>
+					</widget>
+					<widget class="picture" file="icons/custom/penalty shootout/upcoming" id="hmA4" height="30">
+						<string id="image_alignment" value="centre"/>
+					</widget>
+					<widget class="picture" file="icons/custom/penalty shootout/upcoming" id="hmA5" height="30">
+						<string id="image_alignment" value="centre"/>
+					</widget>
+				</container>
+				<container class="contrast_box" appearance="boxes/custom/solid/paper" height="45">
+					<attachment_group class="vertical_arrange" vertical_offset="0" vertical_gap="0" horizontal_inset="5" horizontal_alignment="left" vertical_alignment="middle"/>
+					<record id="object_property">
+						<integer id="get_property" value="tbcl" />
+						<integer id="set_property" value="red_replacement" />
+					</record>
+					<widget class="team_button" auto_size="horizontal">
+						<string id="font" value="bundesliga-condensed"/>
+						<integer id="size" value="15"/>
+						<integer id="mode" value="1"/>
+						<string id="image_alignment" value="centre"/>
+						<boolean id="scale_picture" value="true"/>
+						<boolean id="clickable" value="false"/>
+						<boolean id="disable_link" value="true"/>
+						<boolean id="icon_enabled" value="false"/>
+						<record id="object_property">
+							<list id="get_properties">
+								<record id="object_property">
+									<integer id="get_property" value="ttbw" />
+									<integer id="set_property" value="colour" />
+								</record>
+								<record id="object_property">
+									<integer id="get_property" value="objt" />
+									<integer id="set_property" value="value" />
+								</record>
+							</list>
+						</record>
+					</widget>
+
+				</container>
+			</container>
+			<container>
+				<attachment_group class="vertical_arrange" vertical_offset="0" vertical_gap="0" horizontal_inset="0"/>
+				<container class="contrast_box" appearance="boxes/custom/bundesliga/solid/paper" height="35" red_replacement="white"/>
+				<container class="contrast_box" appearance="boxes/custom/solid/paper" height="45" red_replacement="grey 800">
+					<attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="-1,10,-1" horizontal_offset="0" horizontal_gap="2" vertical_inset="0"/>
+					<widget class="text" id="hmtT" alignment="right" auto_size="vertical">
+						<integer id="value" value="1"/>
+						<integer id="size" value="15"/>
+						<string id="font" value="bundesliga"/>
+						<string id="colour" value="white"/>
+					</widget>
+					<widget class="text" text="-" alignment="centre" auto_size="vertical">
+						<integer id="size" value="15"/>
+						<string id="font" value="bundesliga"/>
+						<string id="colour" value="white"/>
+					</widget>
+					<widget class="text" id="awtT" alignment="left" auto_size="vertical">
+						<integer id="value" value="1"/>
+						<integer id="size" value="15"/>
+						<string id="font" value="bundesliga"/>
+						<string id="colour" value="white"/>
+					</widget>
+				</container>
+
+			</container>
+			<container class="client_object_viewer_xml_panel">
+				<attachment_group class="vertical_arrange" vertical_offset="0" vertical_gap="0" horizontal_inset="0"/>
+
+				<record id="object_property" get_property="away" set_property="objt" />
+				<container class="contrast_box" appearance="boxes/custom/bundesliga/solid/paper" height="35" red_replacement="white">
+					<attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="-1,-1,-1,-1,-1" horizontal_offset="5" horizontal_gap="0" vertical_inset="0"/>
+					<widget class="picture" file="icons/custom/penalty shootout/upcoming" id="awA1" height="30">
+						<string id="image_alignment" value="centre"/>
+					</widget>
+					<widget class="picture" file="icons/custom/penalty shootout/upcoming" id="awA2" height="30">
+						<string id="image_alignment" value="centre"/>
+					</widget>
+					<widget class="picture" file="icons/custom/penalty shootout/upcoming" id="awA3" height="30">
+						<string id="image_alignment" value="centre"/>
+					</widget>
+					<widget class="picture" file="icons/custom/penalty shootout/upcoming" id="awA4" height="30">
+						<string id="image_alignment" value="centre"/>
+					</widget>
+					<widget class="picture" file="icons/custom/penalty shootout/upcoming" id="awA5" height="30">
+						<string id="image_alignment" value="centre"/>
+					</widget>
+				</container>
+				<container class="contrast_box" appearance="boxes/custom/solid/paper" height="45">
+					<attachment_group class="vertical_arrange" vertical_offset="0" vertical_gap="0" horizontal_inset="5" horizontal_alignment="right" vertical_alignment="middle"/>
+					<record id="object_property">
+						<integer id="get_property" value="tbcl" />
+						<integer id="set_property" value="red_replacement" />
+					</record>
+					<widget class="team_button" auto_size="horizontal">
+						<string id="font" value="bundesliga-condensed"/>
+						<integer id="size" value="15"/>
+						<string id="image_alignment" value="centre"/>
+						<boolean id="scale_picture" value="true"/>
+						<integer id="mode" value="1"/>
+						<boolean id="clickable" value="false"/>
+						<boolean id="disable_link" value="true"/>
+						<boolean id="icon_enabled" value="false"/>
+						<record id="object_property">
+							<list id="get_properties">
+								<record id="object_property">
+									<integer id="get_property" value="ttbw" />
+									<integer id="set_property" value="colour" />
+								</record>
+								<record id="object_property">
+									<integer id="get_property" value="objt" />
+									<integer id="set_property" value="value" />
+								</record>
+							</list>
+						</record>
+					</widget>
+
+				</container>
+			</container>
+
+		</container>
+
+		<container class="client_object_viewer_xml_panel" width="100">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<record id="object_property" get_property="away" set_property="objt" />
+			<container class="contrast_box" appearance="boxes/custom/solid/paper">
+				<attachment_group class="vertical_arrange" vertical_offset="0" vertical_gap="0" horizontal_inset="0" vertical_alignment="middle"/>
+				<record id="object_property">
+					<integer id="get_property" value="tbcl" />
+					<integer id="set_property" value="red_replacement" />
+				</record>
+				<widget class="object_portrait_picture" scale_picture="true" height="60">
+					<boolean id="keep_aspect_ratio" value="true" />
+					<flags id="image_alignment" value="centre" />
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
+			</container>
+		</container>
+	</container>
+</panel>
