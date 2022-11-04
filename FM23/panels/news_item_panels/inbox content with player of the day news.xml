@@ -1,0 +1,173 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="pvDR" set_property="pvDR" target="asda" />
+
+		<record get_property="tObj" set_property="objt" target="tamC" />
+		<record get_property="tHid" set_property="hidden" target="tamC" />
+		<record get_property="pObj" set_property="objt" target="pdes" />
+		<record get_property="pObj" set_property="value" target="pnam" />
+		<record get_property="pHid" set_property="hidden" target="plrC" />
+		<record get_property="title" set_property="text" target="titT" />
+		<record get_property="FxRs" set_property="value" target="scrL" />
+		<record get_property="home" set_property="value" target="home" />
+		<record get_property="home" set_property="value" target="homT" />
+		<record get_property="away" set_property="value" target="away" />
+		<record get_property="away" set_property="value" target="awyT" />
+		<record get_property="desc" set_property="text" target="sumD" />
+		<record get_property="auth" set_property="value" target="auth" />
+		<record get_property="pdsi" set_property="disabled" target="asda" />
+	</list>
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	<container class="inner_box">
+		<attachment_group class="horizontal_arrange" horizontal_layout="260,1,-1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+		<!--LHS column-->
+		<container>
+			<attachment_group class="vertical_arrange" vertical_offset="0" vertical_gap="6" vertical_alignment="top, extend" horizontal_inset="0" />
+			<!-- logos -->
+			<container id="ICdi" height="140">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			</container>
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_alignment="top" horizontal_inset="0" />
+
+				<!--player details-->
+				<container id="plrC">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_alignment="top" horizontal_inset="0" />
+					<widget class="person_button" id="pnam" auto_size="vertical" alignment="centre" icon_enabled="false" info_popup_enabled="false" person_is_player="true" style="bold" size="large" colour="black"/>
+					<container class="player_age_and_description_widget" id="pdes" alignment="centre_x, centre_y" auto_size="vertical" file="none" colour="faded text">
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="text" id="mtxt" auto_size="vertical" alignment="left, centre_y">
+							<translation id="text" translation_id="347559" type="use" value="[%number#1] year-old [%player_description#1][COMMENT: inbox person information panel; person description]" />
+						</widget>
+
+					</container>
+
+				</container>
+				<!--team details-->
+				<container class="client_object_viewer_xml_panel" id="tamC">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_alignment="top" horizontal_inset="0" />
+					<widget class="team_button" id="ptem" auto_size="vertical" alignment="centre_x, centre_y" icon_enabled="false" style="bold">
+						<record id="object_property">
+							<integer id="get_property" value="objt" />
+						</record>
+					</widget>
+
+					<!--position-->
+					<widget class="division_position_button" id="Tpos" alignment="centre_x,bottom" display_format="2" size="small" colour="faded text" auto_size="vertical">
+						<record id="object_property">
+							<integer id="get_property" value="Tpos" />
+						</record>
+					</widget>
+				</container>
+			</container>
+
+			<widget class="horizontal_divider" height="1" />
+
+			<!-- match stats for player-->
+			<widget class="text" auto_size="vertical" size="Medium" font="title" colour="faded text">
+				<translation id="text" translation_id="247439" type="use" value="Match Stats" />
+			</widget>
+
+			<widget class="table" id="mchT" layout="-1,-1,-1,50" row_height="22" mode="fill_rows, stripe_rows, printable" auto_size="vertical" database_table_type="1">
+				<list id="headings">
+					<record alignment="centre" column="3">
+						<translation id="hint" translation_id="229619" type="use" value="Rating" />
+						<translation id="text" translation_id="316724" type="use" value="Rat[COMMENT:team report, player rating]" />
+					</record>
+				</list>
+
+				<list id="column_widget_properties">
+					<record index="0" alignment="centre" />
+					<record index="1" alignment="centre" />
+					<record index="2" alignment="centre" />
+					<record index="3" alignment="centre" />
+				</list>
+
+				<list id="column_table_properties">
+					<record index="0" alignment="centre" sort_disabled="true" />
+					<record index="1" alignment="centre" sort_disabled="true" />
+					<record index="2" alignment="centre" sort_disabled="true" />
+					<record index="3" alignment="centre" sort_disabled="true" />
+				</list>
+			</widget>
+
+			<widget class="horizontal_divider" height="1" />
+
+			<!-- match stats in comparison to other players in match-->
+			<container>
+				<attachment_group class="vertical_arrange" vertical_offset="0" vertical_gap="2" vertical_alignment="top, extend" horizontal_inset="0" />
+
+				<!--League and season title-->
+				<widget class="text" id="titT" auto_size="vertical" size="large" style="bold" />
+
+				<widget class="text" auto_size="vertical" colour="faded text">
+					<translation id="text" translation_id="551838" type="use" value="Match Ranking[COMMENT: AREA: Player of Day inbox item; SUB-AREA: Player ranking in match; FR-BN: ; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title for table showing player ranking within steam for some stats during match]" />
+				</widget>
+
+				<!--table for league rankings-->
+				<widget class="table" id="tabl" mode="fill_rows, stripe_rows" layout="-2,-6,45" auto_size_rows="false" row_height="25" default_sort_column="0">
+					<list id="column_widget_properties">
+						<record indx="0" style="semi_bold" alignment="centre" />
+						<record indx="1" alignment="centre_y,left" />
+						<record indx="2" colour="faded text" alignment="left, centre_y" />
+					</list>
+					<list id="column_table_properties">
+						<record indx="0" sort_ascending="true" />
+					</list>
+				</widget>
+			</container>
+		</container>
+
+		<!--mid divider-->
+		<widget class="vertical_divider" />
+
+		<!--RHS column-->
+		<container>
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="5" horizontal_inset="0" />
+
+
+			<container id="cent">
+				<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_offset="0" vertical_inset="0" />
+
+				<!-- Home team name -->
+				<widget class="team_button" id="homT" size="12" icon_enabled="false" auto_size="all" alignment="right,centre_y" style="bold" navigation_focus_target="true" />
+				<!-- Home team logo -->
+				<widget class="object_portrait_picture" id="home" image_alignment="centre" scale_picture="true" height="24" width="24" />
+
+				<!-- scoreline -->
+				<widget class="fixture_button" size="12" id="scrL" alignment="centre" auto_size="all" style="bold" navigation_focus_target="true" />
+
+				<!-- Away team logo -->
+				<widget class="object_portrait_picture" id="away" scale_picture="true" height="24" width="24" image_alignment="centre" />
+
+				<!-- Away team name -->
+				<widget class="team_button" id="awyT" size="12" icon_enabled="false" auto_size="all" alignment="right,centre_y" style="bold" navigation_focus_target="true" />
+			</container>
+
+
+
+			<widget class="horizontal_divider" height="1" />
+
+			<!--Pundit quote-->
+			<container class="main_box">
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" horizontal_inset="0" />
+				<widget class="text" id="sumD" auto_size="vertical" font="title" wrap="true" colour="white" alignment="centre" />
+				<widget class="text" id="auth" auto_size="vertical" colour="faded text" alignment="right" />
+				<widget class="client_object_label" id="auth" font="capitals" colour="faded white" multiline="false" size="8" alignment="right" auto_size="vertical" />
+					
+			</container>
+
+			<widget class="horizontal_divider" height="1" />
+			<container class="main_box">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />
+				<widget class="text" auto_size="vertical" colour="faded text" font="title" alignment="left" value="Player Analysis" />
+				<!--Player visualisation-->
+				<widget class="data_analyst_visualisation_widget" id="asda" file="widgets/data analyst visualisation mini" />
+			</container>
+		</container>
+
+	</container>
+</panel>
