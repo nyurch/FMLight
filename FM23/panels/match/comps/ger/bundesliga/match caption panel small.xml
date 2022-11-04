@@ -1,0 +1,119 @@
+﻿<panel width="500">
+	<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="92,-1" horizontal_gap="0" vertical_alignment="bottom" />
+
+	<!--Alternate UI mode-->
+	<integer id="alSM" value="1" />
+
+	<!--Alternating Colour 1-->
+	<colour id="alt1" red="255" green="255" blue="255" alpha="191" />
+	<!--Alternating Colour 2-->
+	<colour id="alt2" red="222" green="222" blue="222" alpha="191" />
+
+	<container id="TeaC" class="client_object_viewer_xml_panel" height="96">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+		<container class="contrast_box" appearance="boxes/custom/solid/paper" >
+			<attachment_group class="vertical_arrange" vertical_alignment="middle" />
+			<record id="object_property">
+				<integer id="get_property" value="tbcl" />
+				<integer id="set_property" value="red_replacement" />
+			</record>
+			<widget class="object_portrait_picture" height="60">
+				<string id="scale_picture" value="true" />
+				<string id="image_alignment" value="centre" />
+				<boolean id="keep_aspect_ratio" value="true" />
+				<boolean id="clickable" value="false" />
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</widget>
+		</container>
+	</container>
+
+	<container id="deLA" class="client_object_viewer_xml_panel" height="96">
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,120" horizontal_gap="0" vertical_alignment="bottom" />
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+			<container id="sbsC" hidden="true">
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+
+			</container>
+			<container class="client_object_viewer_xml_panel">
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+				<record id="object_property">
+					<integer id="get_property" value="Pcte" />
+					<integer id="set_property" value="objt" />
+				</record>
+
+				<container class="contrast_box" id="cluC" appearance="boxes/custom/solid/paper" red_replacement="white" height="36">
+					<attachment_group class="horizontal_arrange" horizontal_offset="15" horizontal_alignment="left,extend" />
+					<record id="object_property">
+						<integer id="get_property" value="tbcl" />
+						<integer id="set_property" value="red_replacement" />
+					</record>
+					<widget class="team_button" mode="1" alignment="left, centre_y" auto_size="horizontal">
+						<string id="font" value="bundesliga-condensed" />
+						<string id="size" value="xxlarge" />
+						<string id="icon_enabled" value="false" />
+						<record id="object_property">
+							<list id="get_properties">
+								<record id="object_property">
+									<integer id="get_property" value="ttbw" />
+									<integer id="set_property" value="colour" />
+								</record>
+								<record id="object_property">
+									<integer id="get_property" value="objt" />
+									<integer id="set_property" value="valu" />
+								</record>
+							</list>
+						</record>
+					</widget>
+				</container>
+			</container>
+			<container class="contrast_box" id="plCO" appearance="boxes/custom/solid/paper" red_replacement="grey 900" height="30">
+				<attachment_group class="horizontal_arrange" horizontal_offset="15" />
+				<widget class="text" alignment="centre_y,left" auto_size="all" id="PlTn">
+					<string id="size" value="xlarge" />
+					<string id="font" value="bundesliga-condensed" />
+					<string id="multiline" value="true" />
+					<string id="colour" value="fg" />
+				</widget>
+				<widget class="text" alignment="centre_y,left" id="PlTx" auto_size="all">
+					<string id="size" value="xlarge" />
+					<string id="font" value="bundesliga-condensed" />
+					<string id="multiline" value="true" />
+					<string id="colour" value="fg" />
+				</widget>
+			</container>
+			<container class="contrast_box" id="inCO" appearance="boxes/custom/solid/paper" red_replacement="grey" height="30">
+				<attachment_group class="horizontal_arrange" horizontal_offset="15" horizontal_alignment="left,extend" />
+				<widget class="text" alignment="centre_y,left" auto_size="all" id="AcTx">
+					<string id="size" value="large" />
+					<string id="font" value="bundesliga-condensed" />
+					<string id="multiline" value="true" />
+				</widget>
+				<widget class="text" alignment="centre_y,left" id="AcTs" auto_size="all">
+					<string id="size" value="large" />
+					<string id="font" value="bundesliga-condensed" />
+					<string id="multiline" value="true" />
+				</widget>
+				<widget class="picture" id="crdP" hidden="true" scale_picture="true" height="30">
+					<string id="image_alignment" value="right" />
+				</widget>
+			</container>
+		</container>
+		<container class="contrast_box" id="perP" appearance="boxes/custom/solid/paper" red_replacement="grey 800">
+			<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle" />
+			<widget class="object_portrait_picture" height="96">
+				<string id="scale_picture" value="true" />
+				<string id="image_alignment" value="centre" />
+				<boolean id="keep_aspect_ratio" value="true" />
+				<boolean id="clickable" value="false" />
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</widget>
+		</container>
+	</container>
+</panel>
