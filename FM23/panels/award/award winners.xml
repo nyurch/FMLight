@@ -1,0 +1,58 @@
+<!-- Main award 'screen' that is shown in competition, continent sections etc -->
+<panel class="award_winners_panel">
+	<boolean id="should_force_refresh" value="true" />
+	<boolean id="save_session_state" value="true" />
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="main_box" force_title_borders="true" id="titl">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+		<!-- buttons area -->
+		<container embed_in_frame="true" navigation_container="true" default_focus="true">
+			<attachment_group class="title_embedded_panel_left" />
+
+			<widget class="view_menu_label" id="TitL">
+				<translation id="text" translation_id="317292" type="use" value="Award Winners[COMMENT: award winners menu label - panel title preceding a list of award winners]" />
+			</widget>
+			<!-- view button -->
+			<widget class="view_menu_popup" id="awvw" sele="chaw" />
+			<!-- dates of the award label -->
+			<widget class="label" id="dlbl" embed_in_frame="true" size="9" colour="faded text" auto_size="all"/>
+			<translation id="hint" translation_id="356979" type="use" value="These dates represent the time period during which the award will next be appraised.[COMMENT: award winners screen, hint text for dates displayed]" />
+		</container>
+
+		<!-- embedded view menu -->
+		<container id="btns" embed_in_frame="true" navigation_container="true">
+			<attachment_group class="title_embedded_panel_right" />
+
+			<!-- A season selection list sub-panels can access if need be -->
+			<widget class="embedded_season_selection_list" id="sesl" width="200" sele="sels" embed_in_frame="true" hidden="true" save_session_state="true"/>
+
+		</container>
+
+		<!-- Panel to show player awards -->
+		<container class="client_object_viewer_xml_panel" file="award/person award overall" id="pawp" />
+
+		<!-- Panel to show team awards, e.g. 11 players and a pitch -->
+		<container class="team_award_panel" save_session_state="true" id="tawp"/>
+
+		<!-- Panel to show club awards e.g. Most Improved Team/Club/Nation -->
+		<container class="client_object_viewer_xml_panel" file="award/club award overall" id="cawp" />
+
+		<!-- Panel to show goal awards -->
+		<container class="goal_award_panel" id="gawp" />
+
+		<!-- Panel to show no awards given out yet -->
+		<container class="inner_box_no_margin" id="noaw">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+			<widget class="label" size="10" auto_size="vertical" alignment="centre">
+				<translation id="text" translation_id="342078" type="use" value="No awards have been given yet.[COMMENT: Award winners panel; String to be shown in place of winners tables when no awards have been awarded]" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="0" />
+			</widget>
+		</container>
+
+	</container>
+
+</panel>
+<!-- award winners panel -->
