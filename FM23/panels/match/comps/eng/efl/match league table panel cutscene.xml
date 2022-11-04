@@ -1,0 +1,53 @@
+﻿<panel save_session_state="true">
+	<boolean id="oSTl" value="true" />
+	<string id="LeSF" value="match/match league stage cutscene" />
+
+	<list id="properties_to_forward">
+		<record get_property="Fmtd" set_property="text" target="mdNU" />
+		<record get_property="comC" set_property="objt" target="torP" />
+		<record get_property="coID" set_property="valu" target="buID" />
+	</list>
+
+	<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+
+		<container id="cont">
+
+			<animation class="scale_animation" start_value="1, 0" end_value="1, 1" duration="0.4" delay="1" end_mode="hold_auto_reverse" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" centre_point="top" no_clipping="true" />
+			<animation class="fade_animation" start_value="0" end_value="1" duration="0.4" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<widget class="spacer" height="20"/>
+
+		</container>
+
+	</container>
+
+	<container class="contrast_box" appearance="boxes/custom/solid/paper" red_replacement="bg lighter">
+
+		<list id="properties">
+			<record>
+				<flags id="alignment" value="vertical" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="601" />
+				<symbol id="set_property" value="height" />
+				<integer id="true_value" value="25" />
+				<integer id="false_value" value="25" />
+			</record>
+			<record min_value="601" max_value="720" true_value="28" />
+			<record min_value="720" max_value="10000" true_value="32" />
+		</list>
+
+		<animation class="translate_animation" start_value="1, 0" end_value="0, 0" duration="1" delay="0" end_mode="hold_auto_reverse" tween="ease_in_out_4" coord_mode="relative_to_screen" trigger_id="hidden" trigger_start="false" trigger_end="true" no_clipping="true" />
+		<animation class="fade_animation" start_value="0" end_value="1" duration="0.8" delay="0.2" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+
+		<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="middle" />
+
+		<widget class="picture" file="icons/custom/match/logos/si tv full" height="16" auto_size="horizontal" scale_picture="true" red_replacement="white">
+			<animation class="fade_animation" start_value="0" end_value="1" duration="0.5" delay="1" end_mode="hold_auto_reverse" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+		</widget>
+	</container>
+</panel>
