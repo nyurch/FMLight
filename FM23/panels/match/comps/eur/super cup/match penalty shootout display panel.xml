@@ -1,0 +1,209 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_horizontal_centre" vertical_alignment="bottom,extend" vertical_offset="60"/>
+	<!--Alternate UI mode-->
+	<integer id="alSM" value="6" />
+	
+	<!--Score Penalty Appearance-->
+	<string id="scAP" value="icons/26px/uel penalty scored@2x"/>
+	<!--Missed Penalty Appearance-->
+	<string id="msAP" value="icons/26px/uel penalty missed@2x"/>
+
+	<container/>
+
+	<container height="80">
+		<attachment_group class="horizontal_arrange_autosize" horizontal_alignment="middle" horizontal_gap="0"/>
+		<container>
+			<attachment_group class="vertical_arrange_autosize_all" />
+			<container height="34">
+				<attachment_group class="horizontal_arrange_autosize" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+
+				<container height="34" class="main_box_no_margin">
+					<string id="appearance" value="boxes/custom/uefa/super cup/match/penalty display/paper"/>
+					<attachment_group class="horizontal_arrange_autosize" />
+					<widget class="team_button" id="hmTb" width="135" mode="1">
+						<string id="style" value="bold"/>
+						<string id="font" value="supercup bold"/>
+						<integer id="size" value="14"/>
+						<string id="colour" value="white"/>
+						<string id="format" value="[%team#1-six_letter]"/>
+					</widget>
+					<widget class="text" id="hmtT" alignment="centre" width="20">
+						<integer id="value" value="1"/>
+						<string id="style" value="bold"/>
+						<integer id="size" value="14"/>
+						<string id="font" value="supercup bold"/>
+						<string id="colour" value="white"/>
+					</widget>
+				</container>
+				<container class="main_box_no_margin">
+					<string id="background_colour" value="super cup dark"/>
+					<attachment_group class="horizontal_arrange_autosize" horizontal_inset="5" horizontal_gap="10" />
+
+					<widget class="spacer"/>
+					<container width="22">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<widget class="text" alignment="centre" width="20">
+							<integer id="value" value="1"/>
+							<string id="style" value="regular"/>
+							<integer id="size" value="14"/>
+							<string id="font" value="supercup"/>
+							<string id="colour" value="white"/>
+						</widget>
+						<widget class="picture" id="hmA1" scale_picture="true">
+							<string id="image_alignment" value="centre"/>
+						</widget>
+					</container>
+					<container width="22">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<widget class="text" alignment="centre" width="20">
+							<integer id="value" value="2"/>
+							<string id="style" value="regular"/>
+							<integer id="size" value="14"/>
+							<string id="font" value="supercup"/>
+							<string id="colour" value="white"/>
+						</widget>
+						<widget class="picture" id="hmA2" scale_picture="true">
+							<string id="image_alignment" value="centre"/>
+						</widget>
+					</container>
+					<container width="22">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<widget class="text" alignment="centre" width="20">
+							<integer id="value" value="3"/>
+							<string id="style" value="regular"/>
+							<integer id="size" value="14"/>
+							<string id="font" value="supercup"/>
+							<string id="colour" value="white"/>
+						</widget>
+						<widget class="picture" id="hmA3" scale_picture="true">
+							<string id="image_alignment" value="centre"/>
+						</widget>
+					</container>
+					<container width="22">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<widget class="text" alignment="centre" width="20">
+							<integer id="value" value="4"/>
+							<string id="style" value="regular"/>
+							<integer id="size" value="14"/>
+							<string id="font" value="supercup"/>
+							<string id="colour" value="white"/>
+						</widget>
+						<widget class="picture" id="hmA4" scale_picture="true">
+							<string id="image_alignment" value="centre"/>
+						</widget>
+					</container>
+					<container width="22">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<widget class="text" alignment="centre" width="20">
+							<integer id="value" value="5"/>
+							<string id="style" value="regular"/>
+							<integer id="size" value="14"/>
+							<string id="font" value="supercup"/>
+							<string id="colour" value="white"/>
+						</widget>
+						<widget class="picture" id="hmA5" scale_picture="true">
+							<string id="image_alignment" value="centre"/>
+						</widget>
+					</container>
+					<widget class="spacer"/>
+				</container>
+
+			</container>
+			<container height="34">
+				<attachment_group class="horizontal_arrange_autosize" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+
+				<container height="34" class="main_box_no_margin">
+					<string id="appearance" value="boxes/custom/uefa/super cup/match/penalty display/paper"/>
+					<attachment_group class="horizontal_arrange_autosize" />
+					<widget class="team_button" id="awTb" width="135" height="30" mode="1">
+						<string id="style" value="bold"/>
+						<string id="font" value="supercup bold"/>
+						<string id="colour" value="white"/>
+						<integer id="size" value="14"/>
+						<string id="format" value="[%team#1-six_letter]"/>
+					</widget>
+					<widget class="text" id="awtT" alignment="centre" width="20">
+						<integer id="value" value="1"/>
+						<string id="style" value="bold"/>
+						<integer id="size" value="14"/>
+						<string id="font" value="supercup bold"/>
+						<string id="colour" value="white"/>
+					</widget>
+				</container>
+				<container class="main_box_no_margin">
+					<string id="background_colour" value="super cup dark"/>
+					<attachment_group class="horizontal_arrange_autosize" horizontal_inset="5" horizontal_gap="10" />
+
+					<widget class="spacer"/>
+					<container width="22">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<widget class="text" alignment="centre" width="20">
+							<integer id="value" value="1"/>
+							<string id="style" value="regular"/>
+							<integer id="size" value="14"/>
+							<string id="font" value="supercup"/>
+							<string id="colour" value="white"/>
+						</widget>
+						<widget class="picture" id="awA1" scale_picture="true">
+							<string id="image_alignment" value="centre"/>
+						</widget>
+					</container>
+					<container width="22">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<widget class="text" alignment="centre" width="20">
+							<integer id="value" value="2"/>
+							<string id="style" value="regular"/>
+							<integer id="size" value="14"/>
+							<string id="font" value="supercup"/>
+							<string id="colour" value="white"/>
+						</widget>
+						<widget class="picture" id="awA2" scale_picture="true">
+							<string id="image_alignment" value="centre"/>
+						</widget>
+					</container>
+					<container width="22">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<widget class="text" alignment="centre" width="20">
+							<integer id="value" value="3"/>
+							<string id="style" value="regular"/>
+							<integer id="size" value="14"/>
+							<string id="font" value="supercup"/>
+							<string id="colour" value="white"/>
+						</widget>
+						<widget class="picture" id="awA3" scale_picture="true">
+							<string id="image_alignment" value="centre"/>
+						</widget>
+					</container>
+					<container width="22">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<widget class="text" alignment="centre" width="20">
+							<integer id="value" value="4"/>
+							<string id="style" value="regular"/>
+							<integer id="size" value="14"/>
+							<string id="font" value="supercup"/>
+							<string id="colour" value="white"/>
+						</widget>
+						<widget class="picture" id="awA4" scale_picture="true">
+							<string id="image_alignment" value="centre"/>
+						</widget>
+					</container>
+					<container width="22">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<widget class="text" alignment="centre" width="20">
+							<integer id="value" value="5"/>
+							<string id="style" value="regular"/>
+							<integer id="size" value="14"/>
+							<string id="font" value="supercup"/>
+							<string id="colour" value="white"/>
+						</widget>
+						<widget class="picture" id="awA5" scale_picture="true">
+							<string id="image_alignment" value="centre"/>
+						</widget>
+					</container>
+
+					<widget class="spacer"/>
+				</container>
+			</container>
+		</container>
+	</container>
+</panel>
