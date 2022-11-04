@@ -291,30 +291,8 @@
 								<container>
 									<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 
-									<widget class="non_player_knowledge_panel" id="npkn" file="none" height="400">
-										<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+									<widget class="non_player_knowledge_panel" id="npkn" height="400">
 
-										<container class="inner_subtle_box" appearance="boxes/titled/compact/paper">
-											<translation id="title" translation_id="334387" type="use" value="World Knowledge[COMMENT: team scouts; information about range of knowledge]" />
-											<layout class="arrange_vertical_attachment" layout="-5,-4" offset="0" gap="0"/>
-											<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
-
-											<container class="team_scouting_knowledge_map" id="npMp">
-												<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
-											</container>
-
-											<widget class="table" mode="fill_rows, stripe_rows" id="tabl" layout="-1, -1" auto_size_rows="false" row_height="22" save_session_state="true" save_default_state="true">
-												<list id="column_widget_properties">
-													<record indx="0" alignment="left,centre_y" />
-												</list>
-
-												<list id="column_table_properties">
-													<record indx="0" left="4" sort_disabled="true" />
-													<record indx="1" top="6" bottom="6" right="4" sort_disabled="true" />
-												</list>
-											</widget>
-
-										</container>
 									</widget>
 
 									<container class="scrolling_box" id="nptp">
