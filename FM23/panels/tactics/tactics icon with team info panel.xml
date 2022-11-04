@@ -1,0 +1,82 @@
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="-8"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+	<container>
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="-3,-4" offset="0" gap="-20"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+			<widget class="object_portrait_picture" id="team" scale_picture="true"/>
+			<widget class="tactics_kit_picture" id="kitp" number_inset_left="2" number_inset_right="2" number_inset_top="2" number_inset_bottom="2"/>
+		</container>
+
+		<!--containers for the indicators-->
+		<!--injury/red/yellow card-->
+		<container id="inji" width="14" height="14">
+			<layout class="stick_to_sides_attachment" alignment="left" inset="15"/>
+			<layout class="stick_to_sides_attachment" alignment="bottom" inset="2"/>
+		</container>
+		<!--captain icon-->
+		<widget class="picture" id="capi" scale_picture="true" file="icons/16px/captain" width="14" height="14">
+			<layout class="stick_to_sides_attachment" alignment="left" inset="0"/>
+			<layout class="stick_to_sides_attachment" alignment="bottom" inset="9"/>
+		</widget>
+
+	</container>
+
+	<!--name-->
+	<container class="bordered_box"  appearance="heffem/pbg">
+	
+    <record id="object_property" get_property="oPCL" set_property="rrep" />
+		<layout class="arrange_vertical_attachment" alignment="top" offset="1" gap="0"/>
+		<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="1"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="1" apply_to_children="true"/>
+
+    <widget class="person_button" format="[%person#1-initial_surname]" size="10" font="label" alignment="centre" auto_size="vertical" multiline="false">
+
+      <record id="object_property">
+        <list id="get_properties">
+          <record>
+            <integer id="get_property" value="oSCL" />
+            <integer id="set_property" value="colr" />
+          </record>
+          <record>
+            <integer id="get_property" value="objt" />
+            <integer id="set_property" value="valu" />
+          </record>
+        </list>
+      </record>
+		</widget>
+		
+    <widget class="team_button" id="pclb" icon_enabled="false" format="[%team#1-long]" size="7" alignment="centre" auto_size="vertical" multiline="false">
+    <layout class="stick_to_sides_attachment" alignment="horizontal"/>
+      <record id="object_property">
+        <list id="get_properties">
+          <record>
+            <integer id="get_property" value="oSCL" />
+            <integer id="set_property" value="colr" />
+          </record>
+          <record>
+            <integer id="get_property" value="Pcte" />
+            <integer id="set_property" value="valu" />
+          </record>
+        </list>
+      </record>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    </widget>
+	</container>
+
+</panel>
