@@ -1,0 +1,191 @@
+﻿<panel>
+	<layout class="horizontal_arrange_autosize" horizontal_gap="8"/>
+
+	<list id="properties_to_forward">
+		<record get_property="disable_animations" set_property="disable_animations" target="clkc"/>
+		<record get_property="disable_animations" set_property="disable_animations" target="temc"/>
+	</list>
+
+	<!-- Clock -->
+	<container class="main_transparent_box_no_margin" width="100" id="clkc">
+		<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+		<container id="ClkC">
+			<layout class="vertical_arrange" vertical_alignment="middle" vertical_gap="0"/>
+
+			<record id="default_properties" auto_size="vertical" alignment="centre" />
+
+			<container>
+				<layout class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle" horizontal_offset="0,9,0,0"/>
+
+				<record id="default_properties" auto_size="all" alignment="centre" />
+
+				<widget class="text" id="Mclk" size="xlarge" font="title" auto_size="all" />
+
+				<!--injury time indicator-->
+				<container id="MijC" height="16">
+					<layout class="horizontal_arrange_autosize"/>
+
+					<widget class="text" id="Mijt" auto_size="horizontal" alignment="centre" colour="fg positive"/>
+
+				</container>
+
+			</container>
+
+			<widget class="text" id="ClkT" font="title" size="small" multiline="true"/>
+
+		</container>
+
+		<widget class="button" appearance="" navigation_focus_target="false">
+			<layout class="stick_to_sides_attachment"/>
+			<record id="click_event">
+				<flags id="event_id" value="TNeV" />
+				<integer id="evfl" value="7" />
+				<flags id="evtg" value="root" />
+			</record>
+		</widget>
+
+	</container>
+
+	<!-- Competition icon -->
+	<container class="client_object_viewer_xml_panel" width="44">
+		<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+		<record id="object_property" get_property="fxCo" set_property="objt" />
+
+		<container class="main_transparent_box_no_margin">
+			<record id="object_property" get_property="bkcl" set_property="rrep" />
+			<layout class="stick_to_sides_attachment" apply_to_children="true" inset="10,0"/>
+
+			<widget class="object_portrait_picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+				<record id="object_property" get_property="objt" set_property="objt" />
+			</widget>
+		</container>
+
+		<widget class="button" appearance="" navigation_focus_target="false">
+			<layout class="stick_to_sides_attachment"/>
+			<record id="click_event">
+				<flags id="event_id" value="TNeV" />
+				<integer id="evfl" value="7" />
+				<flags id="evtg" value="root" />
+			</record>
+		</widget>
+
+	</container>
+
+	<!-- Teams & Score -->
+	<container id="temc">
+		<layout class="horizontal_arrange_autosize" horizontal_gap="0"/>
+
+		<!-- Home Team -->
+		<container class="home_match_incidents_panel" file="none">
+			<layout class="horizontal_arrange_autosize" horizontal_gap="0"/>
+
+			<record id="object_property" get_property="objt" set_property="objt" />
+
+			<!-- Home Team Colour -->
+			<widget class="picture" id="bkcl" width="10" file="boxes/contrast/no margin/left/paper" scale_picture="true"/>
+
+			<!-- Home Team Name -->
+			<container background_colour="white">
+				<layout class="horizontal_arrange_autosize" horizontal_offset="8" vertical_inset="4"/>
+
+				<widget class="button" appearance="" id="mitn" font="title" size="9.5" alignment="centre" auto_size="horizontal" colour="fg">
+					<record id="click_event">
+						<flags id="event_id" value="TNeV" />
+						<integer id="evfl" value="7" />
+						<flags id="evtg" value="root" />
+					</record>
+				</widget>
+
+				<container class="main_box_no_margin" id="T1rc" red_replacement="red" blue_replacement="red" appearance="boxes/custom/solid/paper" height="10" width="13" embed_in_frame="true">
+					<layout class="stick_to_sides_attachment" alignment="bottom,right" inset="0,0,0,8"/>
+				</container>
+
+			</container>
+
+			<container background_colour="grey 300" width="44">
+				<layout class="stick_to_sides_attachment" apply_to_children="true" inset="3"/>
+
+				<widget class="match_team_logo_picture" id="TeLo"/>				
+
+			</container>
+
+		</container>
+
+		<!-- Score -->
+		<container id="MInf" width="60" class="main_transparent_box" appearance="boxes/main/transparent/square/no margin/paper">
+			<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+			<container>
+				<layout class="vertical_arrange" vertical_alignment="bottom,extend" vertical_gap="-2" vertical_offset="0" horizontal_inset="0" />
+
+				<container navigation_focus_target="false">
+					<layout class="horizontal_arrange" horizontal_alignment="middle" horizontal_gap="2" horizontal_offset="0" vertical_inset="0" />
+
+					<widget class="text" id="T1sc" size="xlarge" font="title" alignment="right,centre_y" colour="fg" auto_size="horizontal"/>
+					<widget class="text" size="xlarge" font="title" alignment="centre" text="-" colour="fg" auto_size="horizontal"/>
+					<widget class="text" id="T2sc" size="xlarge" font="title" alignment="left,centre_y" colour="fg" auto_size="horizontal"/>
+
+				</container>
+
+				<container id="asco">
+					<layout class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_gap="2" horizontal_offset="0" vertical_inset="0" />
+
+					<widget class="text" id="T1as" font="title" alignment="right,centre_y" auto_size="all"/>
+					<widget class="text" font="title" alignment="centre" text="-" auto_size="all"/>
+					<widget class="text" id="T2as" font="title" alignment="left,centre_y" auto_size="all"/>
+
+				</container>
+
+			</container>
+
+			<widget class="button" appearance="" navigation_focus_target="false">
+				<record id="click_event">
+					<flags id="event_id" value="TNeV" />
+					<integer id="evfl" value="7" />
+					<flags id="evtg" value="root" />
+				</record>
+			</widget>
+
+		</container>
+
+		<!-- Away Team -->
+		<container class="away_match_incidents_panel" file="none">
+			<layout class="horizontal_arrange_autosize" horizontal_gap="0"/>
+
+			<record id="object_property" get_property="objt" set_property="objt" />
+
+			<container background_colour="grey 300" width="44">
+				<layout class="stick_to_sides_attachment" apply_to_children="true" inset="3"/>
+
+				<widget class="match_team_logo_picture" id="TeLo"/>		
+
+			</container>
+
+			<!-- Away Team Name -->
+			<container background_colour="white">
+				<layout class="horizontal_arrange_autosize" horizontal_offset="8"/>
+
+				<widget class="button" appearance="" id="mitn" font="title" size="9.5" alignment="centre" auto_size="horizontal" colour="fg">
+					<record id="click_event">
+						<flags id="event_id" value="TNeV" />
+						<integer id="evfl" value="7" />
+						<flags id="evtg" value="root" />
+					</record>
+				</widget>
+
+				<container class="main_box_no_margin" id="T2rc" red_replacement="red" blue_replacement="red" appearance="boxes/custom/solid/paper" height="10" width="13" embed_in_frame="true">
+					<layout class="stick_to_sides_attachment" alignment="bottom,left" inset="0,8,0,0"/>
+				</container>
+
+			</container>
+
+			<!-- Away Team Colour -->
+			<widget class="picture" id="bkcl" width="10" file="boxes/contrast/no margin/right/paper" scale_picture="true"/>
+
+		</container>
+
+	</container>
+
+</panel>
