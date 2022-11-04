@@ -1,0 +1,19 @@
+﻿<panel>
+    <attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="left, extend" horizontal_gap="8"/>
+    
+    <widget class="picture" id="pPic" file="icons/26px/manager respo" width="26" height="26" red_replacement="text" hidden="true">
+        <string id="image_alignment" value="centre"/>
+    </widget>
+
+    <container>
+        <attachment_group class="horizontal_arrange_autosize_all_centre_centered_in_parent" horizontal_alignment="left" horizontal_gap="0" />
+
+  			<widget class="person_button" id="pers" style="bold" colour="black" auto_size="all" navigation_focus_target="false" auto_size_maximum_width="155"/>
+	  
+			  <widget class="spacer" width="6" />
+
+  			<widget class="text" value="(" size="small" colour="faded text" auto_size="all" />
+	  		<widget class="job_label" id="jDES" size="small" colour="faded text" auto_size="all" multiline="false" auto_size_maximum_width="170"/>
+  			<widget class="text" value=")" size="small" colour="faded text" auto_size="all" />
+		</container>
+</panel>
