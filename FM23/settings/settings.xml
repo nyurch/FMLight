@@ -1859,7 +1859,7 @@
 	<!-- And now a little magic ... -->
 	<!-- -->
 	<!-- Use for profile icons - icon in circle, want dark circle light icon -->
-	<colour name="icon bg" 							value="red"/>
+	<colour name="icon bg" 							value="bg accent"/>
 	<colour name="icon fg" 							value="white"/>
 
 	<!-- Card colours - used for places where the colours are inverted in the default skin. Inbox, Report cards, etc -->
