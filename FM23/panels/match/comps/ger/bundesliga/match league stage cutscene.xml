@@ -1,0 +1,58 @@
+﻿<panel background_colour="grey 400">
+	
+    <flags id="cham" value="tables/custom/bundesliga/standings/blue/row" />
+	<flags id="prom" value="tables/custom/bundesliga/standings/dark green/row" />
+	<flags id="tppo" value="tables/custom/bundesliga/standings/grey/row" />
+	<flags id="btpo" value="tables/custom/bundesliga/standings/grey/row" />
+	<flags id="rleg" value="tables/custom/bundesliga/standings/red/row" />
+    <flags id="splt" value="tables/standard/normal" />
+	<flags id="nrml" value="tables/standard/normal" />
+  <!-- main continental cup -->
+  <flags id="mncc" value="tables/custom/bundesliga/standings/blue/row" />
+  <!-- second continental cup -->
+  <flags id="otcc" value="tables/custom/bundesliga/standings/orange/row" />
+  <!-- main continental cup with split-->
+  <flags id="mncs" value="tables/custom/bundesliga/standings/blue/row" />
+  <!-- second continental cup with_split -->
+  <flags id="otcs" value="tables/custom/bundesliga/standings/orange/row" />
+
+	<!-- colour to highlight opponent team name -->
+	<flags id="OTNc" value="grey 900" />
+	
+	
+	<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0" />
+
+	<translation id="title" translation_id="247324" type="use" value="League Stage Panel" />
+
+	<widget class="table" id="list" mode="fill_rows, stripe_rows" auto_size="vertical"
+          customise_view_panel_class="customise_view_advanced_panel"
+          customisation_context="league_table"
+          contextual_handler_column_id="Ttea"
+          auto_size_rows="false"
+          fixed_size_rows="true"
+					row_height="30"
+          heading_class="column_heading_bundesliga"
+          column_spacing="4">
+
+		<flags id="stripe_appearance" value="tables/custom/sitv/alternate/row"/>
+
+		<attachment class="test_screen_size_attachment" skip_if_false="true">
+			<list id="properties">
+				<record>
+					<flags id="alignment" value="vertical" />
+					<integer id="min_value" value="0" />
+					<integer id="max_value" value="720" />
+					<symbol id="set_property" value="row_height" />
+					<integer id="true_value" value="24" />
+					<integer id="false_value" value="24" />
+				</record>
+				<record min_value="720" max_value="10000" true_value="30"/>
+			</list>
+		</attachment>
+
+	</widget>
+
+	<!-- To avoid copy-pasting views into the variation of this panel all of the views are in a aerparate file -->
+	<string id="views_file" value="panels/competition/comps/ger/bundesliga/league stage panel views cutscene"/>
+</panel>
