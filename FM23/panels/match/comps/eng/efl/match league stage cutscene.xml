@@ -1,0 +1,44 @@
+﻿<panel background_colour="fg">
+	
+    <flags id="cham" value="" />
+	<flags id="prom" value="" />
+	<flags id="tppo" value="" />
+	<flags id="btpo" value="" />
+	<flags id="rleg" value="" />
+    <flags id="splt" value="tables/standard/normal" />
+	<flags id="nrml" value="tables/standard/normal" />
+  <!-- main continental cup -->
+  <flags id="mncc" value="" />
+  <!-- second continental cup -->
+  <flags id="otcc" value="" />
+  <!-- main continental cup with split-->
+  <flags id="mncs" value="" />
+  <!-- second continental cup with_split -->
+  <flags id="otcs" value="" />
+
+	<!-- colour to highlight opponent team name -->
+	<flags id="OTNc" value="fg blue darker" />
+	
+	
+	<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal,top" apply_to_children="true" inset="0" />
+
+	<translation id="title" translation_id="247324" type="use" value="League Stage Panel" />
+
+	<widget class="table" id="list" mode="fill_rows, stripe_rows" auto_size="vertical"
+          customise_view_panel_class="customise_view_advanced_panel"
+          customisation_context="league_table"
+          contextual_handler_column_id="Ttea"
+          auto_size_rows="false"
+          fixed_size_rows="true"
+					row_height="18"
+          heading_class="column_heading_efl"
+          column_spacing="4">
+
+		<flags id="stripe_appearance" value="tables/custom/sitv/alternate/row"/>
+
+	</widget>
+
+	<!-- To avoid copy-pasting views into the variation of this panel all of the views are in a aerparate file -->
+	<string id="views_file" value="panels/competition/comps/eng/efl/league stage panel views cutscene"/>
+</panel>
