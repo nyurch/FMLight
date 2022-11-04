@@ -1,0 +1,10 @@
+﻿<panel height="35">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+	<container class="contrast_box" id="subC" appearance="boxes/custom/solid/paper" red_replacement="white">
+		<attachment_group class="horizontal_arrange" horizontal_layout="30,-1,-1,30" horizontal_gap="0" horizontal_offset="5" vertical_alignment="bottom"/>
+		<widget class="picture" id="sbOn" file="icons/26px/sub on_bundesliga" alignment="centre" height="30"/>
+		<widget class="text" id="SBon" alignment="left,centre_y" value="test" size="12" font="bundesliga-condensed" height="35"/>
+		<widget class="text" id="SBof" alignment="right,centre_y" value="test" size="12" font="bundesliga-condensed" height="35"/>
+		<widget class="picture" file="icons/26px/sub off_bundesliga" alignment="centre" height="30"/>
+	</container>
+</panel>
