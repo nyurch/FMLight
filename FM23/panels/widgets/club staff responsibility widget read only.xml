@@ -1,8 +1,0 @@
-﻿<panel>
-	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
-	<container>
-		<attachment_group class="vertical_arrange" vertical_alignment="fill" />
-		<widget class="text" id="RSPn" alignment="bottom, left" font="title"/>
-		<widget class="person_button" colour="black" id="RSPo" />
-	</container>
-</panel>
