@@ -1,0 +1,1924 @@
+<properties version="1.0">
+
+	<!-- Foreground colours - used for text, icon etc -->
+	<colour name="fg lighter" 																value="rgb(30,30,30)"/>
+	<colour name="fg" 																		value="rgb(0,0,0)"/>
+	<colour name="fg darker" 																value="rgb(0,0,0)"/>
+	<colour name="fg alpha" 																value="rgba(0, 0, 0, 0.5)"/>
+	<colour name="fg accent" 																value="rgb(187,38,73)"/>
+	<colour name="fg tertiary" 																value="rgb(197,48,83)"/>
+	<colour name="fg info" 																	value="rgb(255,255,255)"/>
+	<colour name="fg range1" 																value="rgb(183,0,5)" />
+	<colour name="fg range2" 																value="rgb(195,24,0)" />
+	<colour name="fg range3" 																value="rgb(195,30,0)" />
+	<colour name="fg range4" 																value="rgb(203,39,0)" />
+	<colour name="fg range5" 																value="rgb(204,51,0)" />
+	<colour name="fg range6" 																value="rgb(204,70,0)" />
+	<colour name="fg range7" 																value="rgb(196,90,0)" />
+	<colour name="fg range8" 																value="rgb(201,115,0)" />
+	<colour name="fg range9" 																value="rgb(201,141,0)" />
+	<colour name="fg range10" 																value="rgb(208,160,0)" />
+	<colour name="fg range11" 																value="rgb(195,169,0)" />
+	<colour name="fg range12" 																value="rgb(185,174,0)" />
+	<colour name="fg range13" 																value="rgb(171,175,0)" />
+	<colour name="fg range14" 																value="rgb(162,186,0)" />
+	<colour name="fg range15" 																value="rgb(125,174,0)" />
+	<colour name="fg range16" 																value="rgb(87,169,0)" />
+	<colour name="fg range17" 																value="rgb(48,179,0)" />
+	<colour name="fg range18" 																value="rgb(35,184,0)" />
+	<colour name="fg range19" 																value="rgb(0,184,20)" />
+	<colour name="fg range20" 																value="rgb(0,168,63)" />
+	<colour name="fg positive" 																value="fg range20"/>
+	<colour name="fg alert" 																value="fg range1"/>
+	<colour name="fg negative" 																value="fg range1"/>
+	<colour name="fg red lighter" 														    value="red 600" />
+	<colour name="fg red" 																	value="red 700" />
+	<colour name="fg red darker" 															value="red 800" />
+	<colour name="fg pink lighter" 															value="pink 600" />
+	<colour name="fg pink" 																	value="pink 700" />
+	<colour name="fg pink darker" 															value="pink 800" />
+	<colour name="fg purple lighter" 														value="purple 600" />
+	<colour name="fg purple" 																value="purple 700" />
+	<colour name="fg purple darker" 														value="purple 800" />
+	<colour name="fg blue lighter" 															value="blue 600" />
+	<colour name="fg blue" 																	value="blue 700" />
+	<colour name="fg blue darker" 															value="blue 800" />
+	<colour name="fg cyan lighter" 															value="cyan 600" />
+	<colour name="fg cyan" 																	value="cyan 700" />
+	<colour name="fg cyan darker" 															value="cyan 800" />
+	<colour name="fg teal lighter" 															value="teal 600" />
+	<colour name="fg teal" 																	value="teal 700" />
+	<colour name="fg teal darker" 															value="teal 900" />
+	<colour name="fg green lighter" 														value="green 600" />
+	<colour name="fg green" 																value="green 800" />
+	<colour name="fg green darker" 															value="green 900" />
+	<colour name="fg lime lighter" 															value="lime 600" />
+	<colour name="fg lime" 																	value="lime 700" />
+	<colour name="fg lime darker" 															value="lime 800" />
+	<colour name="fg yellow lighter" 														value="yellow 700" />
+	<colour name="fg yellow" 																value="yellow 800" />
+	<colour name="fg yellow darker" 														value="yellow 900" />
+	<colour name="fg orange lighter" 														value="orange 600" />
+	<colour name="fg orange" 																value="orange 700" />
+	<colour name="fg orange darker" 														value="orange 800" />
+	<colour name="fg grey lighter" 															value="grey 600" />
+	<colour name="fg grey" 																	value="grey 700" />
+	<colour name="fg grey darker" 															value="grey 800" />
+
+	<!-- Background colours - used for background, boxes etc -->
+	<colour name="bg lighter" 																value="rgb(247,250,251)"/>
+	<colour name="bg" 																		value="rgb(240,245,248)"/>
+	<colour name="bg darker" 																value="rgb(233,238,241)"/>
+	<colour name="bg alpha" 																value="rgba(244,250,253,0.8)"/>
+	<colour name="bg info" 																	value="rgb(39,103,192)"/>
+	<colour name="bg positive" 																value="rgb(16,165,68)"/>
+	<colour name="bg alert" 																value="rgb(223,126,0)"/>
+	<colour name="bg accent" 																value="rgb(187,38,73)"/>
+	<colour name="bg tertiary" 																value="rgb(205,222,232)"/>
+	<colour name="bg tertiary darker" 														value="rgb(195,212,222)"/>
+	<colour name="bg negative" 																value="rgb(182,40,40)"/>
+	<colour name="bg range1" 																value="rgb(255,84,84)" />
+	<colour name="bg range2" 																value="rgb(255,92,78)" />
+	<colour name="bg range3" 																value="rgb(251,96,72)" />
+	<colour name="bg range4" 																value="rgb(255,108,73)" />
+	<colour name="bg range5" 																value="rgb(255,122,77)" />
+	<colour name="bg range6" 																value="rgb(255,135,71)" />
+	<colour name="bg range7" 																value="rgb(255,159,78)" />
+	<colour name="bg range8" 																value="rgb(255,178,74)" />
+	<colour name="bg range9" 																value="rgb(255,202,76)" />
+	<colour name="bg range10" 																value="rgb(255,214,79)" />
+	<colour name="bg range11" 																value="rgb(247,223,68)" />
+	<colour name="bg range12" 																value="rgb(248,238,76)" />
+	<colour name="bg range13" 																value="rgb(239,243,59)" />
+	<colour name="bg range14" 																value="rgb(196,222,22)" />
+	<colour name="bg range15" 																value="rgb(168,222,29)" />
+	<colour name="bg range16" 																value="rgb(147,221,32)" />
+	<colour name="bg range17" 																value="rgb(86,221,36)" />
+	<colour name="bg range18" 																value="rgb(73,230,35)" />
+	<colour name="bg range19" 																value="rgb(38,242,60)" />
+	<colour name="bg range20" 																value="rgb(10,255,111)" />
+	<colour name="bg red lighter" 															value="red 200" />
+	<colour name="bg red" 																	value="red 300" />
+	<colour name="bg red darker" 															value="red 400" />
+	<colour name="bg pink lighter" 															value="pink 200" />
+	<colour name="bg pink" 																	value="pink 300" />
+	<colour name="bg pink darker" 															value="pink 400" />
+	<colour name="bg purple lighter" 														value="purple 200" />
+	<colour name="bg purple" 																value="purple 300" />
+	<colour name="bg purple darker" 														value="purple 400" />
+	<colour name="bg blue lighter" 															value="blue 200" />
+	<colour name="bg blue" 																	value="blue 300" />
+	<colour name="bg blue darker" 															value="blue 400" />
+	<colour name="bg cyan lighter" 															value="cyan 200" />
+	<colour name="bg cyan" 																	value="cyan 300" />
+	<colour name="bg cyan darker" 															value="cyan 400" />
+	<colour name="bg teal lighter" 															value="teal 200" />
+	<colour name="bg teal" 																	value="teal 300" />
+	<colour name="bg teal darker" 															value="teal 400" />
+	<colour name="bg green lighter" 														value="green 400" />
+	<colour name="bg green" 																value="green 500" />
+	<colour name="bg green darker" 															value="green 700" />
+	<colour name="bg lime lighter" 															value="lime 200" />
+	<colour name="bg lime" 																	value="lime 300" />
+	<colour name="bg lime darker" 															value="lime 400" />
+	<colour name="bg yellow lighter" 														value="yellow 200" />
+	<colour name="bg yellow" 																value="yellow 300" />
+	<colour name="bg yellow darker" 														value="yellow 400" />
+	<colour name="bg orange lighter" 														value="orange 200" />
+	<colour name="bg orange" 																value="orange 300" />
+	<colour name="bg orange darker" 														value="orange 400" />
+	<colour name="bg grey lighter" 															value="grey 200" />
+	<colour name="bg grey" 																	value="grey 300" />
+	<colour name="bg grey darker" 															value="grey 400" />
+
+	<!--The colours only as values for the game to identify they need to be recoloured by the team colours
+  	So they need to be unique and not any other colour defined if set 0 for all the values, it will ignore
+  	all recolouring within the game-->
+	<colour name="accent" 									value="rgba(1,2,3,0)"/>
+	<colour name="dark accent" 								value="rgba(4,5,6,0)"/>
+	<colour name="primary" 									value="rgba(7,8,9,0)"/>
+	<colour name="secondary" 								value="rgba(10,11,12,0)"/>
+
+	<!-- Default accent colours used when no object colours are available -->
+	<colour name="default accent" 							value="fg tertiary" />
+	<colour name="default dark accent" 						value="bg accent" />
+	<colour name="default primary" 							value="rgb(187,38,73)"/>
+	<colour name="default secondary" 						value="rgb(240,245,248)" />
+	<colour name="match accent" 							value="fg tertiary" />
+
+	<!-- Base text colours -->
+	<colour name="text" 									value="fg"/>
+	<colour name="faded text" 								value="fg alpha"/>
+	<colour name="alt text" 								value="fg"/>
+	<colour name="faded alt text" 							value="bg alpha"/>
+	<colour name="darkened text" 							value="fg darker"/>
+	<colour name="selection" 								value="fg accent"/>
+	<colour name="disabled" 								value="fg alpha"/>
+	<colour name="disabled light" 							value="rgba(255,255,255,0.5)"/>
+	<colour name="transparent" 								value="rgba(0,0,0,0.0)" />
+	<colour name="faded white" 								value="rgba(255,255,255,0.5)"/>
+	<colour name="faded black" 								value="rgba(0,0,0,0.5)"/>
+	<colour name="dark text" 								value="rgb(55,64,71)"/>
+	<colour name="hint" 									value="white"/>
+	<colour name="title" 									value="fg tertiary" />
+	<colour name="standard_button_text" 					value="black"/>
+	<colour name="searchbox text" 							value="fg"/>
+	<colour name="continue text" 							value="bg" />
+	<colour name="continue text match" 						value="bg" />
+	<colour name="sidebar text" 							value="fg"/>
+	<colour name="sidebar" 									value="bg"/>
+	<colour name="news ticker" 								value="fg alert" />
+	<colour name="accent button text" 						value="fg" />
+
+	<!-- Base icon colours -->
+	<colour name="normal_icon" 								value="fg"/>
+	<colour name="button_icon" 								value="fg"/>
+	<colour name="match_icon" 								value="fg"/>
+	<colour name="ui_header_icons" 							value="fg"/>
+
+	<!-- Alerts -->
+	<colour name="attention"								value="fg alert"/>
+	<colour name="warning" 									value="fg alert"/>
+	<colour name="neutral" 									value="fg"/>
+	<colour name="positive" 								value="fg positive"/>
+	<colour name="positive dark" 							value="rgb(0,110,58)"/>
+	<!-- Used when white text on top, so needs to be dark(ish) -->
+	<colour name="positive bg" 								value="bg positive"/>
+	<!-- Used for panel recolouring, so text should stand out -->
+	<colour name="positive light" 							value="green 300"/>
+	<colour name="negative" 								value="fg negative"/>
+	<colour name="negative dark" 							value="rgb(171,30,30)"/>
+	<!-- Used when white text on top, so needs to be dark(ish) -->
+	<colour name="negative bg" 								value="bg negative"/>
+	<!-- Used for panel recolouring, so text should stand out -->
+	<colour name="negative light" 							value="red 200"/>
+
+	<!-- Button colours -->
+	<colour name="standard_button" 							value="black"/>
+	<colour name="match_button" 							value="fg"/>
+	<colour name="solid_button" 							value="bg lighter"/>
+	<colour name="toggle_button" 							value="fg"/>
+	<colour name="primary_button" 							value="fg accent"/>
+	<colour name="primary_button_text" 						value="bg"/>
+	<colour name="view_button" 								value="fg"/>
+	<colour name="link_button" 								value="rgb(48,79,254)"/>
+	<colour name="link_button_inbox" 						value="rgb(48,79,254)"/>
+	<colour name="conversation_statement_button" 			value="fg"/>
+	<colour name="conversation_statement_selected_button" 	value="fg cyan"/>
+	<colour name="standard_label" 							value="bg info"/>
+
+	<!-- Box colours -->
+	<colour name="background" 								value="bg"/>
+	<colour name="ui_background" 							value="bg"/>
+	<colour name="dialog_background" 						value="bg darker"/>
+	<colour name="dialog_box_background" 					value="bg"/>
+	<colour name="popup_box_background" 					value="bg"/>
+	<colour name="light_box_background" 					value="bg lighter"/>
+	<colour name="box_background" 							value="bg"/>
+	<colour name="alpha_box_background" 					value="rgb(241,243,250)"/>
+	<colour name="dark_box_background" 						value="bg darker"/>
+	<colour name="contrast_box_background" 					value="white"/> <!-- or dark red?-->
+	<colour name="alt_dark_box_background" 					value="rgb(226,234,238)"/> <!-- or light?-->
+	<colour name="alt_box_background" 						value="rgb(220,221,226)"/> <!-- or light?-->
+	<colour name="match_box_background" 					value="bg"/>
+	<colour name="match_background" 						value="bg"/>
+	<colour name="subtle_box_background" 					value="rgb(55,71,79)"/>
+	<colour name="hint_background" 							value="rgb(177,28,63)"/>
+	<colour name="hint_border" 								value="rgb(177,28,63)"/>
+	<colour name="calendar_cell_border" 					value="fg"/>
+	<colour name="edit_box_background" 						value="fg"/>
+	<colour name="pitch_box_background" 					value="rgb(0,125,63)"/>
+	<colour name="style_background" 						value="teal 900"/>
+
+	<!-- Scrollbar colours -->
+	<colour name="scrollbar" 								value="fg"/>
+	<colour name="inbox_scrollbar" 							value="bg"/>
+	<colour name="scrollbar_border" 						value="shadow"/>
+
+	<!-- Menu -->
+	<colour name="standard_menu" 							value="bg lighter"/>
+	<colour name="standard_menu_border" 					value="shadow"/>
+	<colour name="standard_menu_shadow" 					value="shadow"/>
+	<colour name="menu_highlight" 							value="fg accent"/>
+	<!-- Used for _over appearances and separator -->
+	<colour name="menu selected" 							value="white"/> <!-- or black? -->
+
+	<!-- Slider-->
+	<colour name="slider_body" 								value="fg"/>
+	<colour name="slider_border" 							value="fg"/>
+	<colour name="slider_thumb" 							value="fg accent"/>
+	<colour name="slider_thumb_border" 						value="fg accent"/>
+
+	<!-- Switch -->
+	<colour name="switch_background" 						value="fg"/>
+	<colour name="switch_border" 							value="fg"/>
+	<colour name="switch_on" 								value="fg accent"/>
+	<colour name="switch_off" 								value="fg"/>
+
+	<!-- Table row colours -->
+	<colour name="table_heading" 							value="bg"/>
+	<colour name="table_row_alternate" 						value="fg"/>
+	<colour name="table_row_over" 							value="fg"/>
+	<colour name="table_row_selected" 						value="fg accent"/>
+	<colour name="squad_outside" 							value="bg grey"/>
+	<colour name="squad_substitute" 						value="bg grey darker"/>
+	<colour name="object_explorer_normal" 					value="fg"/>
+	<colour name="object_explorer_selected" 				value="fg accent"/>
+	<colour name="cards_yellow" 							value="fg yellow"/>
+	<colour name="cards_red" 								value="fg red"/>
+	<colour name="league_champion" 							value="fg range20"/>
+	<colour name="league_promotion" 						value="fg range17"/>
+	<colour name="league_top_playoff" 						value="fg blue"/>
+	<colour name="league_bottom_playoff" 					value="fg yellow"/>
+	<colour name="league_relegation" 						value="fg range1"/>
+	<colour name="league_main_continental" 					value="fg teal"/>
+	<colour name="league_other_continental" 				value="fg green"/>
+
+	<!-- Attribute colours -->
+	<colour name="low attribute" 															value="orange"/>
+	<colour name="normal attribute" 														value="green 300"/>
+	<colour name="good attribute" 															value="green 600" />
+	<colour name="excellent attribute" 														value="green 900" />
+	<colour name="unknown attribute background" 											value="grey"/>
+	<colour name="low attribute background" 												value="orange"/>
+	<colour name="normal attribute background" 												value="green 300"/>
+	<colour name="good attribute background" 												value="green 600" />
+	<colour name="excellent attribute background" 											value="green 900" />
+	<colour name="special attribute" 														value="fg blue" />
+	<colour name="attribute label" 															value="fg" />
+	<colour name="special attribute label" 													value="fg" />
+	<colour name="profile extra text" 														value="fg" />
+
+	<!-- Highlight attributes for role -->
+	<colour name="preferred attribute" 						value="fg blue" />
+	<colour name="required attribute" 						value="fg green" />
+
+	<!--Attributes polygon -->
+	<colour name="comparison_colour_greatest" 				value="fg" />
+	<colour name="attribute analyser line" 					value="fg"/>
+	<colour name="inaccurate attribute value" 				value="fg alpha" />
+	<colour name="comparison_inaccurate_attributes_colour" 	value="fg alpha" />
+
+	<colour name="promoted" 								value="bg positive" />
+	<colour name="relegated" 								value="bg negative" />
+
+	<colour name="forward set piece pitch" 					value="bg positive" />
+	<colour name="middle set piece pitch" 					value="bg alert" />
+	<colour name="back set piece pitch" 					value="bg negative" />
+
+	<!-- (additional) stats colours. used on scout, confidence bars -->
+	<colour name="low stat" 								value="fg range4" />
+	<colour name="medium stat" 								value="fg accent" />
+	<colour name="good stat" 								value="fg accent" />
+	<colour name="excellent stat" 							value="fg range20" />
+
+	<colour name="low stat colourblind" 					value="rgb(140,140,140)" />
+	<colour name="medium stat colourblind" 					value="rgb(104,104,156)" />
+	<colour name="good stat colourblind" 					value="rgb(68,68,196)" />
+	<colour name="excellent stat colourblind" 				value="rgb(0,0,240)" />
+
+	<!-- condition -->
+	<colour name="low condition" 							value="fg range1" />
+	<colour name="mid condition" 							value="fg range10" />
+	<colour name="high condition" 							value="fg range20" />
+	<colour name="low condition bar" 						value="fg range1" />
+	<colour name="mid condition bar" 						value="fg range10" />
+	<colour name="high condition bar" 						value="fg range20" />
+	<colour name="low condition match" 						value="fg range1" />
+	<colour name="mid condition match" 						value="fg range10" />
+	<colour name="high condition match" 					value="fg range20" />
+
+	<!-- morale -->
+	<colour name="morale1" 									value="fg range1" />
+	<colour name="morale2" 									value="fg range2" />
+	<colour name="morale3" 									value="fg range3" />
+	<colour name="morale4" 									value="fg range4" />
+	<colour name="morale5" 									value="fg range5" />
+	<colour name="morale6" 									value="fg range6" />
+	<colour name="morale7" 									value="fg range7" />
+	<colour name="morale8" 									value="fg range8" />
+	<colour name="morale9" 									value="fg range9" />
+	<colour name="morale10" 								value="fg range10" />
+	<colour name="morale11" 								value="fg range11" />
+	<colour name="morale12" 								value="fg range12" />
+	<colour name="morale13" 								value="fg range13" />
+	<colour name="morale14" 								value="fg range14" />
+	<colour name="morale15" 								value="fg range15" />
+	<colour name="morale16" 								value="fg range16" />
+	<colour name="morale17" 								value="fg range17" />
+	<colour name="morale18" 								value="fg range18" />
+	<colour name="morale19" 								value="fg range19" />
+	<colour name="morale20" 								value="fg range20" />
+	<colour name="morale default" 							value="fg" />
+	<colour name="morale arrow" 							value="bg" />
+
+	<!-- attribute graph colours -->
+	<colour name="graph line 1" 							value="indigo 300"/>
+	<colour name="graph line 2" 							value="amber 300"/>
+	<colour name="graph line 3" 							value="light green 300"/>
+	<colour name="graph line 4" 							value="red 300"/>
+	<colour name="graph line 5" 							value="purple 300"/>
+	<colour name="graph line 6" 							value="pink 300"/>
+	<colour name="graph line 7" 							value="deep purple 300"/>
+	<colour name="graph line 8" 							value="teal 300"/>
+	<colour name="graph line 9" 							value="green 300"/>
+	<colour name="graph line 10" 							value="lime 300"/>
+	<colour name="graph line 11" 							value="blue 300"/>
+	<colour name="graph line 12" 							value="cyan 300"/>
+	<colour name="graph line 13" 							value="yellow 400"/>
+	<colour name="graph line 14" 							value="orange 300"/>
+	<colour name="graph line 15" 							value="deep orange 300"/>
+	<colour name="graph line 16" 							value="brown 300"/>
+	<colour name="graph line 17" 							value="grey 400"/>
+	<colour name="graph line 18" 							value="blue grey 300"/>
+	<colour name="graph line 19" 							value="indigo 700"/>
+	<colour name="graph line 20" 							value="amber 700"/>
+	<colour name="graph line 21" 							value="light green 700"/>
+	<colour name="graph line 22" 							value="red 700"/>
+	<colour name="graph line 23" 							value="purple 700"/>
+	<colour name="graph line 24" 							value="pink 700"/>
+	<colour name="graph line 25" 							value="deep purple 700"/>
+	<colour name="graph line 26" 							value="teal 700"/>
+	<colour name="graph line 27" 							value="green 700"/>
+	<colour name="graph line 28" 							value="lime 700"/>
+	<colour name="graph line 29" 							value="blue 700"/>
+	<colour name="graph line 30" 							value="cyan 700"/>
+	<colour name="graph line 31" 							value="yellow 700"/>
+	<colour name="graph line 32" 							value="orange 700"/>
+	<colour name="graph line 33" 							value="deep orange 700"/>
+	<colour name="graph line 34" 							value="brown 600"/>
+	<colour name="graph line 35" 							value="grey 700"/>
+	<colour name="graph line 36" 							value="blue grey 600"/>
+
+	<!-- graph shadow -->
+	<colour name="graph shadow" 							value="rgba(0,0,0,0.2)" />
+	<colour name="graph row" 								value="rgba(170,170,170,0.3)" />
+	<colour name="graph line colour" 						value="fg accent"/>
+
+	<!-- appearance goal history graph colours -->
+	<colour name="career history graph apps" 				value="rgb(74,134,232)"/>
+	<colour name="career history graph goals" 				value="rgb(180,167,214)"/>
+
+	<!-- filter button colours-->
+	<colour name="filter text" 								value="fg" />
+	<colour name="filtered text" 							value="fg alert" />
+
+	<!-- Player motivation feedback colours / Body language-->
+	<colour name="very poor feedback" 						value="red 900"/>
+	<colour name="very poor feedback bg" 					value="red"/>
+	<colour name="poor feedback" 							value="orange 900"/>
+	<colour name="poor feedback bg" 						value="orange"/>
+	<colour name="ok feedback" 								value="green 700"/>
+	<colour name="ok feedback bg" 							value="green"/>
+	<colour name="good feedback" 							value="green 900"/>
+	<colour name="good feedback bg" 						value="green"/>
+	<colour name="very good feedback" 						value="teal 900"/>
+	<colour name="very good feedback bg" 					value="teal"/>
+
+	<!-- used for pitch condition -->
+	<colour name="very poor" 									value="fg range1" />
+
+	<!-- position ability on tactics pitch -->
+	<colour name="poor" 									value="fg range1" />
+	<colour name="poor_indicator" 							value="rgb(0,0,0)" />
+	<!-- used on position pitch indicators only -->
+	<colour name="makeshift"								value="bg range5" />
+	<colour name="awkward" 									value="bg range7" />
+	<colour name="unconvincing" 							value="bg range9" />
+	<colour name="competent" 								value="bg range14" />
+	<colour name="accomplished" 							value="bg range19" />
+	<colour name="natural" 									value="fg range20" />
+
+	<!-- match rating colours -->
+	<colour name="match rating none" 						value="bg lighter" />
+	<colour name="match rating zero to five" 				value="fg range1" />
+	<colour name="match rating five to six" 				value="fg range2" />
+	<colour name="match rating six to seven" 				value="bg lighter" />
+	<colour name="match rating seven to eight" 				value="fg range16" />
+	<colour name="match rating eight to nine" 				value="fg range18" />
+	<colour name="match rating nine to ten" 				value="fg range20" />
+
+	<!-- match rating text colours -->
+	<colour name="match rating text none" 					value="black" />
+	<colour name="match rating text zero to five" 			value="white" />
+	<colour name="match rating text five to six" 			value="white" />
+	<colour name="match rating text six to seven" 			value="black" />
+	<colour name="match rating text seven to eight" 		value="white" />
+	<colour name="match rating text eight to nine" 			value="white" />
+	<colour name="match rating text nine to ten" 			value="white" />
+
+	<!-- match form colours -->
+	<colour name="match form none" 						value="bg lighter" />
+	<colour name="match form zero to five" 				value="bg range1" />
+	<colour name="match form five to six" 				value="bg range2" />
+	<colour name="match form six to seven" 				value="bg range10" />
+	<colour name="match form seven to eight" 			value="bg range16" />
+	<colour name="match form eight to nine" 			value="bg range18" />
+	<colour name="match form nine to ten" 				value="bg range20" />
+
+	<!-- training rating colours -->
+	<colour name="training rating none" 					value="fg" />
+	<colour name="training rating zero to five" 			value="fg range1" />
+	<colour name="training rating five to six" 				value="fg range2" />
+	<colour name="training rating six to seven" 			value="fg" />
+	<colour name="training rating seven to eight" 			value="fg range16" />
+	<colour name="training rating eight to nine" 			value="fg range18" />
+	<colour name="training rating nine to ten" 				value="fg range20" />
+
+	<!-- Colours for player name on tactics pitch -->
+	<colour name="tactics player name" 						value="white" />
+	<colour name="tactics player name selection" 			value="white" />
+	<colour name="tactics player name match" 				value="white" />
+	<colour name="tactics player name injured" 				value="white" />
+	<colour name="tactics player name yellow card" 			value="yellow 500" />
+
+	<!-- Colours for the position lines on the tactics pitch and widgets -->
+	<colour name="goalkeeper_line" 							value="rgb(150,0,0)" />
+	<colour name="defender_line" 							value="rgb(150,100,0)" />
+	<colour name="defensive_midfielder_line" 				value="rgb(150,150,150)" />
+	<colour name="midfielder_line" 							value="rgb(0,135,200)" />
+	<colour name="attacking_midfielder_line" 				value="rgb(0,150,150)" />
+	<colour name="attacker_line" 							value="rgb(0,150,0)" />
+	<colour name="substitutes_line" 						value="rgb(125,125,125)"/>
+	<colour name="sweeper_line" 							value="rgb(141,198,63)" />
+
+	<!-- Player/Object colours -->
+	<colour name="virtual player" 							value="grey 600"/>
+	<colour name="loan out" 								value="purple 900"/>
+	<colour name="loan out background" 						value="blue 900"/>
+	<colour name="loan in" 									value="blue 900"/>
+	<colour name="co own in" 								value="lime 900"/>
+	<colour name="co own out" 								value="lime 900"/>
+	<colour name="trial in" 								value="green 900"/>
+	<colour name="trial out" 								value="green 900"/>
+	<colour name="shortlisted" 								value="dark orange"/>
+	<colour name="golden generation" 						value="gold"/>
+	<colour name="human controlled" 						value="cyan 900" />
+	<colour name="feeder club" 								value="purple 900"/>
+
+	<!-- Status Button Colours -->
+	<colour name="status_advisory" 							value="rgb(103,190,129)"/>
+	<colour name="status_advisory_high" 					value="rgb(68,150,94)"/>
+	<colour name="status_advisory_low" 						value="rgb(163,218,180)"/>
+	<colour name="status_cannot_play" 						value="rgb(209,67,67)"/>
+	<colour name="status_cannot_play_high" 					value="rgb(167,18,18)"/>
+	<colour name="status_cannot_play_low" 					value="rgb(213,100,100)"/>
+	<colour name="status_homegrown_club" 					value="rgb(90,160,209)"/>
+	<colour name="status_homegrown_nation" 					value="rgb(4,119,169)"/>
+	<colour name="status_restricted" 						value="rgb(114,122,134)"/>
+	<colour name="status_shouldnt_play"						value="rgb(220,136,64)"/>
+	<colour name="status_shouldnt_play_high" 				value="rgb(203,95,30)"/>
+	<colour name="status_shouldnt_play_low" 				value="rgb(217,152,25)"/>
+	<colour name="status_warning" 							value="rgb(241,234,37)"/>
+	<colour name="status_promoted" 							value="green 700"/>
+	<colour name="status_relegated" 						value="red 700"/>
+	<colour name="status_continental comp 1" 				value="yellow 500"/>
+	<colour name="status_continental comp 2" 				value="amber 500"/>
+	<colour name="status_continental comp 3" 				value="orange 500"/>
+
+	<!-- Statistic colours -->
+	<colour name="yellow card" 								value="fg yellow"/>
+	<colour name="red card" 								value="fg red"/>
+	<colour name="average rating" 							value="fg"/>
+
+	<!-- Team fixtures panel colours -->
+	<colour name="potential fixture" 						value="fg"/>
+	<!-- row on table showing a possible future fixture date -->
+	<colour name="draw date" 								value="fg orange"/>
+	<!-- row on table showing the draw date of a stage -->
+	<colour name="selected for friendly" 					value="bg accent"/>
+	<!-- row on table showing a selected friendly date -->
+	<colour name="unavailable friendly date" 				value="rgba(40,40,40,0.4)"/>
+	<!-- row on table showing an unavailable friendly date -->
+	<colour name="available friendly date" 					value="fg green"/>
+	<!-- row on table showing an available friendly date -->
+	<colour name="fixture continental row" 					value="fg blue"/>
+	<colour name="fixture cup row" 							value="fg blue lighter"/>
+	<colour name="fixture friendly row" 					value="fg purple"/>
+
+	<!-- Fixture colours -->
+	<colour name="result score" 							value="fg"/>
+	<colour name="result aggregate" 						value="fg alpha" />
+	<colour name="position" 								value="fg"/>
+	<!-- team league position -->
+	<colour name="loser" 									value="fg alpha"/>
+	<!-- colour for losing team -->
+	<colour name="competition" 								value="fg"/>
+	<!-- colour for 3-letter competition name -->
+	<colour name="nation" 									value="fg"/>
+	<!-- colour for 3-letter nation name -->
+	<colour name="fixture score separator" 					value="fg"/>
+	<!-- colour for : or - score separator -->
+	<colour name="fixture outcome" 							value="fg range20"/>
+	<!-- colour for pen/extra time indicator -->
+	<colour name="fixture tv" 								value="fg"/>
+	<!-- 'tv' label for TV matches -->
+	<colour name="fixture tv extra info" 					value="fg"/>
+	<!-- 'tv' label for TV matches with extra info -->
+	<colour name="league position" 							value="fg" />
+	<colour name="league points deducted" 					value="fg range1" />
+	<!-- points deducted label on league tables -->
+	<colour name="goal scorers" 							value="fg" />
+	<!-- goal scorer names and attendance on fixtures panel -->
+
+	<!-- Results -->
+	<colour name="result_background" 						value="bg accent"/>
+	<!-- Background for result on fixtures and results panel -->
+	<colour name="aggregate_result_background" 				value="bg green"/>
+	<!-- Background for aggregate result on fixtures and results panel -->
+	<colour name="result_time_background" 					value="bg blue darker"/>
+
+	<!-- Game status colours -->
+	<colour name="user playing" 							value="fg positive"/>
+	<!-- user is playing the game -->
+	<colour name="user waiting" 							value="fg alert"/>
+	<!-- user is waiting -->
+
+	<colour name="user attention colour 1" 					value="bg yellow" />
+	<colour name="user attention colour 2" 					value="bg orange" />
+
+	<!-- Match text colours -->
+	<colour name="match incident" 							value="fg"/>
+	<colour name="match goal" 								value="fg"/>
+	<colour name="match own goal" 							value="fg alpha"/>
+	<colour name="match penalty" 							value="fg"/>
+	<colour name="match missed penalty" 					value="fg alpha"/>
+	<colour name="match yellow card" 						value="yellow 900"/>
+	<colour name="match red card" 							value="fg red"/>
+	<colour name="match injury" 							value="fg range1"/>
+	<colour name="match man of match" 						value="fg cyan"/>
+	<colour name="match substitute" 						value="fg alpha"/>
+	<colour name="match goal update" 						value="fg accent"/>
+	<!-- colour of scoring team on goal updates -->
+
+	<!-- Match caption -->
+	<colour name="match caption background" 				value="bg accent"/>
+	<!-- used for line dividers throughout the game -->
+	<colour name="match caption border" 					value="fg tertiary"/>
+	<!-- used for line dividers throughout the game -->
+
+	<!-- Match feed colours -->
+	<colour name="match_feed_disallowed" 					value="red 300"/>
+	<colour name="match_feed_goal" 							value="blue grey 900"/>
+	<colour name="match_feed_foul" 							value="blue grey 900"/>
+	<colour name="match_feed_yellow_card" 					value="yellow 500"/>
+	<colour name="match_feed_red_card" 						value="red 700"/>
+	<colour name="match_feed_important_score" 				value="blue 600"/>
+	<colour name="match_feed_event" 						value="green 400"/>
+	<colour name="match_feed_serious_injury" 				value="red 500"/>
+	<colour name="match_feed_slight_injury" 				value="amber 800"/>
+
+	<!-- Match feed secondary colours -->
+	<colour name="match_feed_disallowed_secondary" 			value="red 700"/>
+	<colour name="match_feed_goal_secondary" 				value="blue 400"/>
+	<colour name="match_feed_foul_secondary" 				value="yellow 300"/>
+	<colour name="match_feed_yellow_card_secondary" 		value="yellow 800"/>
+	<colour name="match_feed_red_card_secondary" 			value="red 300"/>
+	<colour name="match_feed_important_score_secondary" 	value="blue 200"/>
+	<colour name="match_feed_event_secondary" 				value="green 300"/>
+	<colour name="match_feed_serious_injury_secondary" 		value="red 900"/>
+	<colour name="match_feed_slight_injury_secondary" 		value="amber 400"/>
+
+	<!-- Misc -->
+	<colour name="hilight_first_teamers" 					value="green 400" />
+	<!-- used for highlighting first team players in a match report -->
+	<colour name="divider" 									value="fg"/>
+	<colour name="hilight" 									value="bg accent"/>
+	<!-- Used for text highlighting in edit boxes -->
+	<colour name="global_focus_colour" 						value="rgb(1,1,1)"/>
+	<colour name="crop_colour" 								value="rgb(251,205,1)" />
+	<colour name="default foreground" 						value="rgb(255,255,255)"/>
+	<!-- default screen foreground colour -->
+	<colour name="default background" 						value="fm purple"/>
+	<!-- default screen background colour -->
+	<colour name="default outline" 							value="rgb(240,240,240)"/>
+	<!-- default screen outline colour -->
+	<colour name="graph team 1" 							value="rgb(200,0,0)"/>
+	<!-- team 1 colour on graph -->
+	<colour name="graph team 2" 							value="rgb(0,200,0)"/>
+	<!-- team 2 colour on graph -->
+	<colour name="neutral commentary foreground" 			value="rgb(255,255,255)"/>
+	<!-- foreground colour for neutral commentary -->
+	<colour name="neutral commentary background" 			value="rgb(21,22,23)"/>
+	<!-- background colour for neutral commentary -->
+	<colour name="match stats" 								value="fg"/>
+	<!-- match stats colour -->
+	<colour name="squad number" 							value="fg"/>
+	<!-- team stats squad number colour -->
+	<colour name="notification text" 						value="fg" />
+	<!-- Text colour for display of number of unread news items -->
+	<colour name="urgent news" 								value="fg" />
+	<!-- Text colour for display of news items requiring urgent attention -->
+	<colour name="draft next team" 							value="rgb(0,130,198)"/>
+	<!-- Background colour for next team to pick in draft panel -->
+	<colour name="draft user team" 							value="rgba(40,40,160,0.3)"/>
+	<!-- Background colour for next team to pick in draft panel -->
+	<colour name="prozone" 									value="rgb(157,32,56)" />
+	<!-- Prozone Background -->
+	<colour name="transfer offer comment" 					value="fg" />
+	<!-- Comment box on transfer offer screen colour -->
+
+	<!-- Linear progress bars -->
+	<colour name="progress_empty" 							value="rgba(0,0,0,0.3)"/>
+	<colour name="progress_full" 							value="accent"/>
+
+	<colour name="bar value" 								value="accent"/>
+	<!-- percentage bar fill colour -->
+	<colour name="bar filler" 								value="tertiary"/>
+	<!-- percentage bar filler colour -->
+
+	<!--For the Team meeting- the overall colour changes-->
+	<colour name="normal bar filler" 						value="bg lighter"/>
+	<!--Normal Bar Colour when doing a horizontal percentage split-->
+	<colour name="positive bar filler" 						value="bg positive"/>
+	<!-- percentage bar filler colour -->
+	<colour name="negative bar filler" 						value="bg negative"/>
+	<!--Negative bar filler colour-->
+
+	<colour name="positive bar increased filler" 			value="rgb(142,255,178)"/>
+	<!-- percentage bar filler colour -->
+	<colour name="positive bar decreased filler" 			value="rgb(50,87,77)"/>
+	<!-- percentage bar filler colour -->
+	<colour name="negative bar increased filler" 			value="rgb(215,84,84)"/>
+	<!--Negative bar filler colour-->
+	<colour name="negative bar decreased filler" 			value="rgb(86,31,32)"/>
+	<!--Negative bar filler colour-->
+
+	<colour name="player comparison left" 					value="rgb(0,32,96)" />
+	<!-- player comparison: left player bar colour -->
+	<colour name="player comparison right" 					value="rgb(180,180,180)" />
+	<!-- player comparison: right player bar colour -->
+
+	<colour name="profile bar value" 						value="rgb(93,130,175)" />
+	<!-- percentage bar fill colour -->
+	<colour name="profile bar filler" 						value="bg darker" />
+	<!-- percentage bar filler colour -->
+
+	<colour name="match time slider" 						value="blue grey 500" />
+	<colour name="match time slider highlight" 				value="blue grey 300" />
+	<colour name="match time slider added time" 			value="blue grey 700" />
+	<colour name="match time slider added time highlight" 	value="blue grey 600" />
+	<colour name="match time slider penalties" 				value="amber 700" />
+
+	<colour name="match timeline empty" 					value="grey 400" />
+	<colour name="match timeline filled" 					value="blue grey 600" />
+	<colour name="match timeline current" 					value="amber 600" />
+
+	<!-- picking colours - not implemented yet -->
+	<colour name="player picked" 							value="bg" />
+	<!-- picking button colour -->
+	<colour name="picking player unavailable" 				value="bg negative" />
+	<!-- player unavailable -->
+	<colour name="picking player available" 				value="teal 900" />
+	<!-- player available - only used on the tactics pitch-->
+	<colour name="picking player first team" 					value="bg blue" />
+	<!--  senior player available for no senior team- only used on the tactics pitch-->
+	<!-- Picking Button - Starting-->
+	<colour name="picking_starting_button" 					value="rgb(45,135,52)"/>
+	<colour name="picking_starting_button_border" 			value="rgb(17,76,35)"/>
+
+	<!-- Picking Button - Sub-->
+	<colour name="picking_sub_button" 						value="rgb(104,121,129)"/>
+	<colour name="picking_sub_button_border" 				value="rgb(61,66,70)"/>
+
+	<!-- Picking Button - Empty-->
+	<colour name="empty_picking_button" 					value="bg darker"/>
+	<colour name="empty_picking_button_border" 				value="bg darker"/>
+
+	<colour name="competition schedule fixture" 			value="bg orange"/>
+	<colour name="competition schedule draw date" 			value="bg blue"/>
+	<colour name="competition schedule squad selection" 	value="bg green"/>
+
+	<!--Calendar-->
+	<colour name="calendar fixture" 						value="bg blue"/>
+	<colour name="calendar reserve fixture" 				value="blue grey 400" />
+	<colour name="calendar preseason" 						value="grey 500" />
+	<colour name="calendar schedule date" 					value="grey 500"/>
+	<colour name="calendar transfer window" 				value="bg red"/>
+	<colour name="calendar note reminder" 					value="grey 500"/>
+	<colour name="calendar national selection" 				value="bg grey"/>
+	<colour name="calendar trial day" 						value="grey 500"/>
+	<colour name="calendar future transfer" 				value="grey 500"/>
+	<colour name="calendar today" 							value="rgb(255,255,255)" />
+	<colour name="calendar today background" 				value="bg accent"/>
+	<colour name="calendar today text" 						value="rgb(255,255,255)"/>
+	<colour name="calendar past background" 				value="rgba(40,40,50,0.2)"/>
+	<colour name="calendar past text" 						value="fg alpha"/>
+	<colour name="calendar different month" 				value="rgba(40,40,50,0.2)"/>
+	<colour name="calendar different month text" 			value="rgba(40,40,50,0.3)"/>
+	<colour name="calendar contract expiry" 				value="grey 500"/>
+	<colour name="calendar draft date" 						value="grey 500"/>
+	<colour name="calendar available for friendly" 			value="bg yellow"/>
+	<colour name="calendar viewed fixture" 					value="bg orange lighter"/>
+
+	<!-- Wizard -->
+	<colour name="wizard title" 							value="title"/>
+	<colour name="wizard text" 								value="fg"/>
+	<colour name="wizard step complete" 					value="fg"/>
+	<colour name="wizard step active" 						value="fg accent"/>
+	<colour name="wizard step" 								value="fg"/>
+
+	<!-- match scoreboard colours -->
+	<colour name="match scoreboard clock" 					value="fg"/>
+	<colour name="match scoreboard clock paused" 			value="fg" />
+	<colour name="match scoreboard score" 					value="rgb(255,255,0)"/>
+	<colour name="match scoreboard aggregate score" 		value="rgb(255,200,0)"/>
+	<colour name="match scoreboard added time" 				value="rgb(0,220,0)"/>
+	<colour name="match actions foreground" 				value="fg"/>
+	<colour name="match actions background" 				value="bg"/>
+
+	<!-- preferred moves label text colours -->
+	<colour name="adding ppm" 								value="fg positive"/>
+	<colour name="removing ppm" 							value="fg negative"/>
+
+	<!-- analyser heatmap - 1 lowest 6 highest -->
+	<colour name="heatmap_grid_1" 							value="rgb(10,0,0)"/>
+	<colour name="heatmap_grid_2" 							value="rgb(1,10,0)"/>
+	<colour name="heatmap_grid_3" 							value="rgb(5,10,0)"/>
+	<colour name="heatmap_grid_4" 							value="rgb(255,200,0)"/>
+	<colour name="heatmap_grid_5" 							value="rgb(10,20,0)"/>
+	<colour name="heatmap_grid_6" 							value="rgb(0,0,255)"/>
+
+	<colour name="heatmap colour" 							value="rgba(110,110,110,0.4)" />
+	<!-- We don't want any colour here so set the same as cbe not selected colour-->
+	<colour name="cbe not selected colour" 					value="rgba(110,110,110,0.4)" />
+
+	<!-- inbox colours -->
+	<colour name="unread headline" 							value="fg"/>
+	<colour name="read headline" 							value="fg alpha"/>
+	<colour name="selected headline" 						value="fg"/>
+	<colour name="must respond headline" 					value="fg"/>
+	<colour name="unread category" 							value="fg"/>
+	<colour name="read category" 							value="fg alpha"/>
+	<colour name="selected category" 						value="fg"/>
+	<colour name="inbox_sidebar_background" 				value="bg"/>
+	<!-- Box background colour - red_replacement -->
+	<colour name="inbox_content_background" 				value="card bg"/>
+	<!-- Box background colour - red_replacement -->
+	<colour name="inbox_button_box_background" 				value="card bg darker"/>
+	<!-- Box background colour - red_replacement -->
+	<colour name="inbox_attachment_background" 				value="bg"/>
+	<!-- Box background colour - red_replacement -->
+	<colour name="inbox_icons" 								value="card fg"/>
+	<colour name="inbox_text" 								value="card fg"/>
+	<colour name="link_button_inbox" 						value="card fg"/>
+	<colour name="inbox_must_respond" 						value="bg negative"/>
+	<colour name="inbox_optional" 							value="bg alert"/>
+	<colour name="inbox_selected" 							value="bg accent"/>
+
+	<colour name="contract negotiation restriction" 		value="fg negative"/>
+	<colour name="add manager must fill" 					value="fg negative"/>
+
+	<!-- Transfer Centre -->
+	<colour name="transfer centre extra info" 				value="fg alpha" />
+	<colour name="transfer centre fee" 						value="fg alert" />
+	<colour name="transfer status proposal colour" 			value="blue 700"/>
+	<colour name="transfer status offer made colour" 		value="blue 700"/>
+	<colour name="transfer status offer accepted colour" 	value="cyan 700"/>
+	<colour name="transfer status offer negotiated colour" 	value="deep purple 700"/>
+	<colour name="transfer status offer rejected colour" 	value="negative bg"/>
+	<colour name="transfer status offer withdrawn colour" 	value="negative bg"/>
+	<colour name="transfer status cancelled colour" 		value="negative bg"/>
+	<colour name="transfer status contract offered colour" 	value="cyan 700"/>
+	<colour name="transfer status contract rejected colour" value="pink 700"/>
+	<colour name="transfer status awaiting work permit colour" 	value="teal 700"/>
+	<colour name="transfer status failed work permit colour" 	value="negative"/>
+	<colour name="transfer status awaiting confirmation colour" value="teal 700"/>
+	<colour name="transfer status confirmed colour" 			value="positive bg"/>
+
+	<!-- Work Permit Status-->
+	<colour name="brexit settled status" 				value="rgb(92,210,255)"/>
+
+	<!-- Conversation colours -->
+	<colour name="human speech bubble" 						value="bg lighter"/>
+	<colour name="happy speech bubble"						value="bg positive"/>
+	<colour name="unhappy speech bubble" 					value="bg negative"/>
+	<colour name="negotiation speech bubble" 				value="bg info"/>
+	<colour name="negotiation last chance bubble" 			value="bg alert"/>
+
+	<!-- General Conversation Colours for the team meeting + other players -->
+	<colour name="general speech bubble 1" 					value="bg lighter"/>
+	<colour name="general speech bubble 2" 					value="rgb(68,98,135)"/>
+	<colour name="general speech bubble 3" 					value="rgb(71,119,109)"/>
+	<colour name="general speech bubble 4" 					value="rgb(105,112,118)"/>
+
+	<colour name="injured" 									value="rgb(255,75,75)"/>
+	<colour name="slightly injured" 						value="rgb(245,166,35)"/>
+	<colour name="inbox report injured" 					value="injured"/>
+	<colour name="inbox report slightly injured" 			value="slightly injured"/>
+
+	<!-- injury report match load -->
+	<colour name="match_load_colour_low" 					value="fg positive"/>
+	<colour name="match_load_colour_normal" 				value="fg"/>
+	<colour name="match_load_colour_high" 					value="fg alert"/>
+	<colour name="match_load_colour_very_high" 				value="fg negative"/>
+
+	<!-- injury report training load -->
+	<colour name="training_load_colour_light" 				value="fg positive"/>
+	<colour name="training_load_colour_average" 			value="fg"/>
+	<colour name="training_load_colour_heavy" 				value="fg negative"/>
+
+	<!-- injury report overall risk -->
+	<colour name="overall_risk_box_colour_low" 				value="bg positive"/>
+	<colour name="overall_risk_box_colour_normal" 			value="bg dark"/>
+	<colour name="overall_risk_box_colour_increased" 		value="yellow 500"/>
+	<colour name="overall_risk_box_colour_high" 			value="bg range5"/>
+	<colour name="overall_risk_box_colour_very_high" 		value="bg negative"/>
+
+	<!-- injury report injury proneness -->
+	<colour name="injury_proneness_colour_very_low" 		value="fg range20"/>
+	<colour name="injury_proneness_colour_low" 				value="fg range17"/>
+	<colour name="injury_proneness_colour_below_average" 	value="fg range14"/>
+	<colour name="injury_proneness_colour_average" 			value="text"/>
+	<colour name="injury_proneness_colour_above_average" 	value="fg range7"/>
+	<colour name="injury_proneness_colour_high" 			value="fg range3"/>
+	<colour name="injury_proneness_colour_very_high" 		value="fg range1"/>
+
+	<!-- injury report injury severity -->
+	<colour name="injury_severity_colour_slight" 			value="blue 500"/>
+	<colour name="injury_severity_colour_minor" 			value="amber 600"/>
+	<colour name="injury_severity_colour_moderate" 			value="orange 600"/>
+	<colour name="injury_severity_colour_major" 			value="negative"/>
+
+	<!-- injury report body -->
+	<colour name="injury_body_colour_past_injury" 			value="fg blue"/>
+	<colour name="injury_body_colour_at_risk" 				value="fg range5"/>
+	<colour name="injury_body_colour_injured" 				value="fg range1"/>
+	<colour name="injury_body_colour_recurring" 			value="fg purple lighter"/>
+	<colour name="injury_body_colour_light_training" 		value="fg range10"/>
+
+	<!-- injury report injury proneness -->
+	<colour name="jadedness_colour_lower_limit" 		value="fg range20"/>
+	<colour name="jadedness_colour_not_at_all_jaded" 				value="fg range17"/>
+	<colour name="jadedness_colour_slightly_jaded" 	value="fg range14"/>
+	<colour name="jadedness_colour_very_jaded" 			value="fg range7"/>
+	<colour name="jadedness_colour_extremely_jaded" 	value="fg range4"/>
+	<colour name="jadedness_colour_upper_limit" 			value="fg range1"/>
+
+	<colour name="training rest day colour" 				value="rgba(255,255,255,0.2)"/>
+	<colour name="training season break colour" 			value="rgba(255,255,255,0.5)"/>
+
+	<!-- Training fitness colours -->
+	<colour name="colour_match_fit" 						value="rgb(61,145,67)" />
+	<colour name="colour_tired_after_last_match" 			value="rgb(218,197,24)" />
+	<colour name="colour_lacking_match_fitness" 			value="rgb(222,164,9)" />
+	<colour name="colour_severly_lacking_match_fitness" 	value="rgb(216,80,26)" />
+	<colour name="colour_injured" 							value="rgb(214,14,6)" />
+	<colour name="colour_injured_in_light_training" 		value="rgb(185,78,78)" />
+	<colour name="colour_injured_in_rehab" 					value="rgb(205,98,98)" />
+	<colour name="colour_tired" 							value="rgb(233,113,93)" />
+	<colour name="not fully fit" 							value="rgb(181,90,27)"/>
+
+	<!-- Training happiness colours -->
+	<colour name="colour_happy" 							value="fg positive" />
+	<colour name="colour_content" 							value="fg" />
+	<colour name="colour_unhappy" 							value="fg negative" />
+
+	<!-- Pitch Colours -->
+	<colour name="condition_perfect" 						value="rgb(67,150,65)"/>
+	<colour name="condition_muddy" 							value="rgb(84,110,59)"/>
+	<colour name="condition_damp" 							value="rgb(47,104,37)"/>
+	<colour name="condition_dry" 							value="rgb(121,143,60)"/>
+	<colour name="condition_water_logged" 					value="rgb(40,96,51)"/>
+	<colour name="condition_muddy" 							value="rgb(89,99,55)"/>
+	<colour name="condition_frozen" 						value="rgb(74,103,74)"/>
+	<colour name="condition_snowy" 							value="rgb(156,203,162)"/>
+	<colour name="condition_hard" 							value="rgb(84,113,70)"/>
+
+	<!-- official kit colours (picked from in this order -->
+	<colour name="official colour 1" 						value="rgb(0,0,0)"/>
+	<!-- black -->
+	<colour name="official colour 2" 						value="rgb(228,230,23)"/>
+	<!-- yellow -->
+	<colour name="official colour 3" 						value="rgb(230,23,23)"/>
+	<!-- red -->
+	<colour name="official colour 4" 						value="rgb(179,179,179)"/>
+	<!-- grey -->
+	<colour name="official colour 5" 						value="rgb(20,172,35)"/>
+	<!-- green -->
+	<colour name="official colour 6" 						value="rgb(0,191,255)"/>
+	<!-- light blue -->
+	<colour name="official colour 7" 						value="rgb(177,1,197)"/>
+	<!-- purple -->
+	<colour name="official colour 8" 						value="rgb(231,144,21)"/>
+	<!-- orange -->
+	<colour name="official colour 9" 						value="rgb(24,48,223)"/>
+	<!-- blue -->
+	<colour name="official colour 10" 						value="rgb(235,182,40)"/>
+	<!-- gold -->
+	<colour name="official colour 11" 						value="rgb(250,250,246)"/>
+	<!-- white -->
+
+	<colour name="match outline" 							value="rgb(40,40,40)"/>
+	<colour name="medical main" 							value="rgb(255,255,255)"/>
+	<!-- medical main colour for pitch -->
+	<colour name="medical minor" 							value="rgb(0,180,0)"/>
+	<!-- medical trim colour for pitch -->
+	<colour name="medical text" 							value="rgb(0,180,0)"/>
+	<!-- medical text colour for pitch -->
+
+	<!-- Breaking News -->
+	<colour name="breaking news fg" 						value="rgb(255,222,58)"/>
+	<colour name="breaking news text" 						value="rgb(0,0,0)"/>
+
+	<colour name="comp news sidebar primary" 				value="rgb(115,120,125)"/>
+	<colour name="comp news sidebar secondary" 				value="rgb(45,47,49)"/>
+
+	<colour name="goals_scored_0_colour" 					red="20" green="140" blue="55" alpha="60"/>
+	<colour name="goals_scored_1_10_colour" 				red="20" green="140" blue="55" alpha="75"/>
+	<colour name="goals_scored_11_20_colour" 				red="20" green="140" blue="55" alpha="90"/>
+	<colour name="goals_scored_21_30_colour" 				red="20" green="140" blue="55" alpha="105"/>
+	<colour name="goals_scored_31_40_colour" 				red="20" green="140" blue="55" alpha="120"/>
+	<colour name="goals_scored_41_50_colour" 				red="20" green="140" blue="55" alpha="135"/>
+	<colour name="goals_scored_51_60_colour" 				red="20" green="140" blue="55" alpha="150"/>
+	<colour name="goals_scored_61_70_colour" 				red="20" green="140" blue="55" alpha="165"/>
+	<colour name="goals_scored_71_80_colour" 				red="20" green="140" blue="55" alpha="180"/>
+	<colour name="goals_scored_81_90_colour" 				red="20" green="140" blue="55" alpha="195"/>
+	<colour name="goals_scored_91_100_colour" 				red="20" green="140" blue="55" alpha="210"/>
+	<colour name="goals_scored_76_100_colour" 				red="20" green="140" blue="55" alpha="210"/>
+	<colour name="goals_conceded_0_colour" 					red="150" green="15" blue="15" alpha="60"/>
+	<colour name="goals_conceded_1_10_colour" 				red="150" green="15" blue="15" alpha="75"/>
+	<colour name="goals_conceded_11_20_colour" 				red="150" green="15" blue="15" alpha="90"/>
+	<colour name="goals_conceded_21_30_colour" 				red="150" green="15" blue="15" alpha="105"/>
+	<colour name="goals_conceded_31_40_colour" 				red="150" green="15" blue="15" alpha="120"/>
+	<colour name="goals_conceded_41_50_colour" 				red="150" green="15" blue="15" alpha="135"/>
+	<colour name="goals_conceded_51_60_colour" 				red="150" green="15" blue="15" alpha="150"/>
+	<colour name="goals_conceded_61_70_colour" 				red="150" green="15" blue="15" alpha="165"/>
+	<colour name="goals_conceded_71_80_colour" 				red="150" green="15" blue="15" alpha="180"/>
+	<colour name="goals_conceded_81_90_colour" 				red="150" green="15" blue="15" alpha="195"/>
+	<colour name="goals_conceded_91_100_colour" 			red="150" green="15" blue="15" alpha="210"/>
+
+	<colour name="result_table_0_0_colour" 					red="247" green="247" blue="247" alpha="0"/>
+	<colour name="result_table_0_1_colour" 					red="248" green="248" blue="248" alpha="20"/>
+	<colour name="result_table_0_2_colour" 					red="252" green="222" blue="222" alpha="60"/>
+	<colour name="result_table_0_3_colour" 					red="241" green="198" blue="198" alpha="100"/>
+	<colour name="result_table_0_4_colour" 					red="247" green="178" blue="178" alpha="140"/>
+
+	<colour name="result_table_1_0_colour" 					red="223" green="236" blue="210" alpha="20"/>
+	<colour name="result_table_1_1_colour" 					red="247" green="247" blue="247" alpha="0"/>
+	<colour name="result_table_1_2_colour" 					red="248" green="235" blue="235" alpha="20"/>
+	<colour name="result_table_1_3_colour" 					red="252" green="222" blue="222" alpha="60"/>
+	<colour name="result_table_1_4_colour" 					red="241" green="198" blue="198" alpha="100"/>
+
+	<colour name="result_table_2_0_colour" 					red="205" green="229" blue="181" alpha="60"/>
+	<colour name="result_table_2_1_colour" 					red="223" green="236" blue="210" alpha="20"/>
+	<colour name="result_table_2_2_colour" 					red="247" green="247" blue="247" alpha="0"/>
+	<colour name="result_table_2_3_colour" 					red="248" green="235" blue="235" alpha="20"/>
+	<colour name="result_table_2_4_colour" 					red="252" green="222" blue="222" alpha="60"/>
+
+	<colour name="result_table_3_0_colour" 					red="182" green="219" blue="147" alpha="100"/>
+	<colour name="result_table_3_1_colour" 					red="205" green="229" blue="181" alpha="60"/>
+	<colour name="result_table_3_2_colour" 					red="223" green="236" blue="210" alpha="20"/>
+	<colour name="result_table_3_3_colour" 					red="247" green="247" blue="247" alpha="0"/>
+	<colour name="result_table_3_4_colour" 					red="248" green="235" blue="235" alpha="20"/>
+
+	<colour name="result_table_4_0_colour" 					red="172" green="220" blue="127" alpha="140"/>
+	<colour name="result_table_4_1_colour" 					red="182" green="219" blue="147" alpha="100"/>
+	<colour name="result_table_4_2_colour" 					red="205" green="229" blue="181" alpha="60"/>
+	<colour name="result_table_4_3_colour" 					red="223" green="236" blue="210" alpha="20"/>
+	<colour name="result_table_4_4_colour" 					red="247" green="247" blue="247" alpha="0"/>
+
+	<!-- Stat pack -->
+	<colour name="stat_pack_records_won" 					value="rgb(115,143,93)"/>
+	<colour name="stat_pack_records_drew" 					value="rgb(69,70,72)"/>
+	<colour name="stat_pack_records_lost" 					value="rgb(157,120,121)"/>
+
+	<!-- News category colours -->
+	<colour name="news_category_colour_affiliates" 			value="rgb(189,196,202)"/>
+	<colour name="news_category_colour_agents" 				value="rgb(118,124,130)"/>
+	<colour name="news_category_colour_awards" 				value="rgb(210,119,0)"/>
+	<colour name="news_category_colour_competitions" 		value="rgb(139,199,110)"/>
+	<colour name="news_category_colour_contracts" 			value="rgb(165,165,165)"/>
+	<colour name="news_category_colour_discipline" 			value="amber 700"/>
+	<colour name="news_category_colour_finances" 			value="rgb(77,82,89)"/>
+	<colour name="news_category_colour_injuries" 			value="rgb(205,55,55)"/>
+	<colour name="news_category_colour_jobs" 				value="blue grey 400"/>
+	<colour name="news_category_colour_match" 				value="rgb(84,175,116)"/>
+	<colour name="news_category_colour_media" 				value="rgb(165,131,197)"/>
+	<colour name="news_category_colour_messages" 			value="rgb(112,138,224)"/>
+	<colour name="news_category_colour_records" 			value="rgb(230,178,20)"/>
+	<colour name="news_category_colour_scouting" 			value="rgb(112,183,165)"/>
+	<colour name="news_category_colour_training" 			value="rgb(105,136,79)"/>
+	<colour name="news_category_colour_transfers" 			value="rgb(61,86,144)"/>
+
+	<colour name="team_form_win" 							value="fg range20"/>
+	<colour name="team_form_draw" 							value="fg"/>
+	<colour name="team_form_loss" 							value="fg range1"/>
+
+	<!-- player stats donut chart colour -->
+	<colour name="shots on target colour" 					value="rgb(64,117,59)"/>
+	<colour name="shots goal colour" 						value="rgb(2,194,59)"/>
+	<colour name="shots non goal colour" 					value="rgb(50,50,50)" />
+	<colour name="passes succeeded colour" 					value="rgb(2,100,163)"/>
+	<colour name="key passes colour" 						value="rgb(44,159,232)"/>
+	<colour name="normal passes colour" 					value="rgb(50,50,50)" />
+	<colour name="tackles won colour" 						value="rgb(186,16,17)"/>
+	<colour name="key tackles colour" 						value="rgb(242,46,41)"/>
+	<colour name="normal tackles colour" 					value="rgba(50,50,50)" />
+	<colour name="stats filler colour" 						value="rgb(150,150,150)"/>
+
+	<!-- match shot analysis colours -->
+	<colour name="shot analysis goal" 						value="rgb(65,128,62)"/>
+	<colour name="shot analysis wide" 						value="rgba(65,128,62,0.4)"/>
+	<colour name="shot analysis far wide" 					value="rgba(65,128,62,0.3)"/>
+	<colour name="shot analysis value box" 					value="rgba(0,0,0,0.3)"/>
+
+	<!--instant hint colour-->
+	<colour name="instant hint colour" 						value="rgba(50,50,50,0.8)" />
+
+	<!--adjustable bar colours-->
+	<colour name="adj bar empty" 							value="rgba(200,200,200,0.3)"/>
+	<!--adjustable bar colours-->
+	<colour name="adj bar unavailable" 						value="rgba(200,200,200,0.1)"/>
+
+	<!--scout report pro con colour-->
+	<colour name="pro low" 									value="lime 800" />
+	<colour name="pro mid" 									value="green 600" />
+	<colour name="pro high" 								value="green 900" />
+	<colour name="con low" 									value="orange 800" />
+	<colour name="con mid" 									value="red 600" />
+	<colour name="con high" 								value="red 900" />
+
+	<!--scout assignment priority-->
+	<colour name="very urgent" 								value="fg negative" />
+	<colour name="ongoing" 									value="fg info" />
+
+	<!--choose managerial style-->
+	<colour name="tracksuit 1" 								value="rgb(94,163,121)" />
+	<colour name="tracksuit 2" 								value="rgb(232,247,237)"/>
+	<colour name="tracksuit 3" 								value="rgb(245,255,244)"/>
+
+	<colour name="tactical 1" 								value="rgb(88,157,205)" />
+	<colour name="tactical 2" 								value="rgb(220,235,242)"/>
+	<colour name="tactical 3" 								value="rgb(229,243,249)"/>
+
+	<!--news item style-->
+	<colour name="broadsheet" 								value="rgb(250,250,250)" />
+	<colour name="tabloid" 									value="rgb(217,25,25)"/>
+
+	<!-- managerial style left point -->
+	<colour name="points left colour" 						value="fg alert"/>
+
+	<!-- it's a non-human object - so go this colour for the sidebar background-->
+	<colour name="colour side bar" 							value="rgb(35,35,45)"/>
+	<colour name="human side bar" 							value="rgb(35,35,45)"/>
+
+	<!-- news item - fans player of the year colours-->
+	<colour name="player of the year 1" 					value="rgb(120,150,215)"/>
+	<colour name="player of the year 2" 					value="rgb(120,120,150)"/>
+	<colour name="player of the year 3" 					value="rgb(130,130,150)"/>
+	<colour name="player of the year 4" 					value="rgb(140,140,150)"/>
+
+	<!-- FFP colours-->
+	<colour name="ffp pass" 								value="bg positive"/>
+	<colour name="ffp fail" 								value="bg negative"/>
+
+	<colour name="new game player total good" 				value="fg" />
+	<colour name="new game player total warning" 			value="fg range8" />
+	<colour name="new game player total bad" 				value="fg range1" />
+
+	<colour name="set piece player movement" 				value="rgb(255,0,0)" />
+
+	<!-- Chalkboard colours -->
+	<colour name="shot gone in colour main" 				value="green 500" />
+	<!-- Green -->
+	<colour name="shot missed colour main" 					value="yellow 500" />
+	<!-- Yellow -->
+	<colour name="shot hit woodwork colour main" 			value="blue 500" />
+	<!-- Blue -->
+	<colour name="shot saved colour main" 					value="orange 500" />
+	<!-- Orange -->
+	<colour name="shot blocked colour main" 				value="red 500" />
+	<!-- Maroon -->
+	<colour name="pass completed colour main" 				value="green 900" />
+	<!-- Green -->
+	<colour name="pass assist colour main" 					value="light green 700" />
+	<!-- Green -->
+	<colour name="pass intercepted colour main" 			value="orange 700" />
+	<!-- Orange -->
+	<colour name="pass blocked colour main" value="blue 300" />
+	<!-- Blue -->
+	<colour name="pass unsuccessful colour main" value="yellow 500" />
+	<!-- Yellow -->
+	<colour name="pass out of pitch colour main" 			value="red 700" />
+	<!-- Red -->
+	<colour name="received pass colour main" 				value="light green 300" />
+	<!-- Olive Green -->
+	<colour name="key pass colour main" 					value="yellow 700" />
+	<!-- Gold -->
+	<colour name="chance created colour main" 				value="yellow 700" />
+	<!-- Gold -->
+	<colour name="pass hit woodwork colour main" 			value="indigo 400" />
+	<!-- Blue -->
+	<colour name="cross completed colour main" 				value="green 300" />
+	<!-- Green -->
+	<colour name="cross assist colour main" 				value="lime 300" />
+	<colour name="cross intercepted colour main" 			value="orange 300" />
+	<!-- Orange -->
+	<colour name="cross blocked colour main" value="indigo 400" />
+	<!-- Blue -->
+	<colour name="cross unsuccessful colour main" value="yellow 500" />
+	<!-- Yellow -->
+	<colour name="cross out of pitch colour main" 			value="red 300" />
+	<!-- Red -->
+	<colour name="received cross colour main" 				value="light green 500" />
+	<!-- Olive Green -->
+	<colour name="cross hit woodwork colour main" 			value="blue 300" />
+	<!-- Blue -->
+	<colour name="header won colour main" 					value="green 800" />
+	<!-- Green -->
+	<colour name="header lost colour main" 					value="red 800" />
+	<!-- Red -->
+	<colour name="header missed colour main" 				value="orange 800" />
+	<!-- Orange -->
+	<colour name="key header colour main" 					value="yellow 800" />
+	<!-- Gold -->
+	<colour name="tackle won colour main" 					value="light green 500" />
+	<!-- Green -->
+	<colour name="tackle lost colour main" 					value="red 700" />
+	<!-- Red -->
+	<colour name="key tackle colour main" 					value="yellow 600" />
+	<!-- Gold -->
+	<colour name="foul penalty colour main" 				value="red 500" />
+	<!-- Red -->
+	<colour name="foul called colour main" 					value="orange 500" />
+	<!-- Orange -->
+	<colour name="foul against called colour main" 			value="purple 500" />
+	<!-- Purple -->
+	<colour name="yellow card colour main" 					value="yellow 500" />
+	<!-- Yellow -->
+	<colour name="red card colour main" 					value="red 500" />
+	<!-- Dark Red -->
+	<colour name="interception colour main" 				value="rgb(53,161,100)" />
+	<!-- Green -->
+	<colour name="interception missed colour main" 			value="rgb(217,43,43)" />
+	<!-- Red -->
+	<colour name="shot blocked defending colour main" 		value="rgb(242,118,65)" />
+	<!-- Orange -->
+	<colour name="throw in colour main" 					value="rgb(74,153,232)" />
+	<!-- Light Blue -->
+	<colour name="attacking free kick colour main" 			value="rgb(38,71,139)" />
+	<!-- Dark Blue -->
+	<colour name="defending free kick colour main" 			value="rgb(65,134,203)" />
+	<!-- Blue -->
+	<colour name="corner colour main" 						value="rgb(31,49,136)" />
+	<!-- Darker Blue -->
+	<colour name="clear cut chance colour main" 			value="rgb(48,113,109)" />
+	<!-- Dark Turquise -->
+	<colour name="half chance colour main" 					value="rgb(88,201,164)" />
+	<!-- Turquise -->
+	<colour name="save held colour main" 					value="rgb(53,161,100)" />
+	<!-- Green -->
+	<colour name="save parried colour main" 				value="rgb(124,199,88)" />
+	<!-- Olive Green -->
+	<colour name="save tipped colour main" 					value="rgb(206,224,112)" />
+	<!-- Yellow Green -->
+	<colour name="offside called colour main" 				value="rgb(217,43,43)" />
+	<!-- Red -->
+	<colour name="dribble colour main" 						value="rgb(65,134,203)" />
+	<!-- Blue -->
+	<colour name="overall colour main" 						value="rgb(65,134,203)" />
+	<!-- Blue -->
+	<colour name="with ball colour main" 					value="rgb(53,161,100)" />
+	<!-- Green -->
+	<colour name="without ball colour main" 				value="rgb(242,118,65)" />
+	<!-- Orange -->
+	<colour name="mistake missed interception colour main" 	value="rgb(74,153,232)" />
+	<!-- Light Blue -->
+	<colour name="mistake lost ball colour main" 			value="rgb(242,118,65)" />
+	<!-- Orange -->
+	<colour name="mistake lost challenge colour main" 		value="rgb(206,224,112)" />
+	<!-- Yellow Green -->
+	<colour name="mistake handball colour main" 			value="rgb(217,43,43)" />
+	<!-- Red -->
+	<colour name="mistake conceded penalty colour main" 	value="rgb(166,17,17)" />
+	<!-- Dark Red -->
+	<colour name="mistake dropped ball colour main" 		value="rgb(48,113,109)" />
+	<!-- Dark Turquise -->
+	<colour name="mistake leading to goal colour main" 		value="rgb(53,161,100)" />
+	<!-- Green -->
+	<colour name="mistake caught on ball colour main" 		value="rgb(38,71,139)" />
+	<!-- Dark Blue -->
+	<colour name="gained possession colour main" 			value="rgb(124,199,88)" />
+	<!-- Olive Green -->
+	<colour name="lost possession colour main" 				value="rgb(217,43,43)" />
+	<!-- Red -->
+	<colour name="touch colour main" 						value="rgb(82,49,148)" />
+	<!-- Purple -->
+	<colour name="spaghetti map colour main" 				value="rgba(255,100,0,0.8)"/>
+	<colour name="pass combination colour main" 			value="rgba(255,255,255,0.8)"/>
+	<!-- colour of lines on pitch -->
+	<colour name="pass combination colour selected" 		value="rgba(53,161,100,0.8)"/>
+	<!-- colour of menu if showing any pass combinations  -->
+
+	<colour name="shot gone in colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="shot missed colour text" 					value="rgba(0,0,0,0.8"/>
+	<colour name="shot hit woodwork colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="shot saved colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="shot blocked colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="pass completed colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="pass assist colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="pass intercepted colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="pass blocked colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="pass unsuccessful colour text" 		value="rgba(255,255,255,0.8)"/>
+	<colour name="pass out of pitch colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="received pass colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="key pass colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="chance created colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="pass hit woodwork colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="cross completed colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="cross assist colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="cross intercepted colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="cross blocked colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="cross unsuccessful colour text" 	value="rgba(255,255,255,0.8)"/>
+	<colour name="cross out of pitch colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="received cross colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="cross hit woodwork colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="header won colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="header lost colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="header missed colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="key header colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="tackle won colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="tackle lost colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="key tackle colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="foul called colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="foul penalty colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="foul against called colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="yellow card colour text" 					value="rgba(0,0,0,0.8"/>
+	<colour name="red card colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="interception colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="interception missed colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="shot blocked defending colour text" 		value="rgba(255,255,255,0.8)"/>
+	<colour name="throw in colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="attacking free kick colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="defending free kick colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="clear cut chance colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="corner colour text" 						value="rgba(255,255,255,0.8)"/>
+	<colour name="half chance colour text" 					value="rgba(0,0,0,0.8"/>
+	<colour name="save held colour text" 					value="rgba(255,255,255,0.8)"/>
+	<colour name="save parried colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="save tipped colour text" 					value="rgba(0,0,0,0.8"/>
+	<colour name="mistake missed interception colour text" 	value="rgba(255,255,255,0.8)"/>
+	<colour name="mistake lost ball colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="mistake lost challenge colour text" 		value="rgba(0,0,0,0.8"/>
+	<colour name="mistake handball colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="mistake conceded penalty colour text" 	value="rgba(255,255,255,0.8)"/>
+	<colour name="mistake dropped ball colour text" 		value="rgba(255,255,255,0.8)"/>
+	<colour name="mistake leading to goal colour text" 		value="rgba(255,255,255,0.8)"/>
+	<colour name="mistake caught on ball colour text" 		value="rgba(255,255,255,0.8)"/>
+	<colour name="gained possession colour text" 			value="rgba(255,255,255,0.8)"/>
+	<colour name="lost possession colour text" 				value="rgba(255,255,255,0.8)"/>
+	<colour name="touch colour text" 						value="rgba(255,255,255,0.8)"/>
+	<colour name="spaghetti map colour text" 				value="rgba(0,0,0,0.8"/>
+	<colour name="overall colour text" 						value="rgb(65,0,203)" />
+	<colour name="with ball colour text" 					value="rgb(53,0,100)" />
+	<colour name="without ball colour text" 				value="rgb(242,0,65)" />
+	<colour name="pass combination colour text" 			value="rgb(242,118,65)" />
+
+	<colour name="staff comparison bar normal" 				value="rgb(63,65,71)" />
+
+	<!-- Staff colours -->
+	<colour name="staff overview manager colour" 								value="cyan 900"/>
+	<colour name="staff overview assistant manager colour" 						value="indigo 900"/>
+	<colour name="staff overview general coach colour" 							value="blue 900"/>
+	<colour name="staff overview fitness coach colour" 							value="light blue"/>
+	<colour name="staff overview goalkeeping coach colour"						value="blue 600"/>
+	<colour name="staff overview head of youth dev colour" 						value="purple 900"/>
+	<colour name="staff overview dof colour" 									value="green 900"/>
+	<colour name="staff overview technical director colour"						value="green 700"/>
+	<colour name="staff overview head of player dev colour"						value="green 300"/>
+	<colour name="staff overview chief scout colour" 							value="teal 900"/>
+	<colour name="staff overview scout colour" 									value="teal 600"/>
+	<colour name="staff overview head performance analyst colour" 				value="black"/>
+	<colour name="staff overview performance analyst colour" 					value="orange 900"/>
+	<colour name="staff overview recruitment analyst colour" 					value="brown 400"/>
+	<colour name="staff overview head physio colour" 							value="deep orange 900"/>
+	<colour name="staff overview physio colour" 								value="deep orange 600"/>
+	<colour name="staff overview chief doctor colour" 							value="red 900"/>
+	<colour name="staff overview doctor colour" 								value="red 600"/>
+	<colour name="staff overview head of sports science colour"					value="pink 900"/>
+	<colour name="staff overview sports scientist colour" 						value="pink 600"/>
+	<colour name="staff empty slot colour" 										value="blue grey 300"/>
+
+	<colour name="star rating senior" 						value="rgb(244,0,0)"/>
+	<colour name="star rating youth" 						value="rgb(190,0,190)"/>
+	<colour name="star rating empty" 						value="rgb(50,50,50)"/>
+	<colour name="star rating unknown" 						value="rgb(247,145,145)"/>
+
+	<colour name="eye colour 1" 							value="rgb(0,0,0)"/>
+	<colour name="eye colour 2" 							value="rgb(71,48,32)"/>
+	<colour name="eye colour 3" 							value="rgb(57,70,62)"/>
+	<colour name="eye colour 4" 							value="rgb(82,76,65)"/>
+	<colour name="eye colour 5" 							value="rgb(66,77,82)"/>
+	<colour name="eye colour 6" 							value="rgb(137,97,54)"/>
+	<colour name="eye colour 7" 							value="rgb(55,70,110)"/>
+
+	<!--Award details winner inbox colour-->
+	<colour name="award winner" 							value="rgba(255,220,150,0.8)"/>
+
+	<colour name="scouting pitch icon unselected outer" 	value="rgba(59,133,53,0.8)" />
+	<colour name="scouting pitch icon unselected inner" 	value="rgba(62,138,56,0)" />
+	<colour name="scouting pitch icon selected outer" 		value="rgba(251,251,9,0.8)" />
+	<colour name="scouting pitch icon selected inner" 		value="rgba(51,151,123,0.8)" />
+
+	<colour name="comp person 1" 							value="bg green" />
+	<colour name="comp person 2" 							value="bg blue" />
+	<colour name="comp person bar 1" 						value="fg green"/>
+	<colour name="comp person bar 2" 						value="fg blue"/>
+
+	<colour name="fantasy draft timer"  					value="rgb(0,155,200)" />
+	<colour name="standard_ball_colour" 					value="rgb(255,255,255)"/>
+	<colour name="winter_ball_colour" 						value="rgb(255,240,0)"/>
+
+	<colour name="team_report_tab_selected" 				value="bg accent"/>
+
+	<colour name="subsection tab text" 						value="bg"/>
+
+	<colour name="tactical_familiarity_colour_1" 			value="rgb(83,209,163)"/>
+	<colour name="tactical_familiarity_colour_2" 			value="rgb(24,62,48)"/>
+
+	<colour name="team_report_games_won_colour"  			value="fg range20" />
+	<colour name="team_report_games_drawn_colour" 			value="fg range10"/>
+	<colour name="team_report_games_lost_colour" 			value="fg range1"/>
+
+	<!-- Team Talk Reactions -->
+	<colour name="team_talk_negative" 						value="fg negative"/>
+	<colour name="team_talk_positive" 						value="fg positive"/>
+
+	<!-- Map background colour -->
+	<colour name="map background" 							value="blue grey 300" />
+
+	<colour name="region caribbean map mask colour" 		red="55" green="55" blue="10"/>
+	<colour name="region central america map mask colour"	red="0" green="255" blue="0"/>
+	<colour name="region central europe map mask colour" 	red="0" green="0" blue="255"/>
+	<colour name="region eastern europe map mask colour" 	red="255" green="230" blue="0"/>
+	<colour name="region middle east map mask colour" 		red="50" green="250" blue="0"/>
+	<colour name="region north africa map mask colour" 		red="220" green="0" blue="250"/>
+	<colour name="region north america map mask colour" 	red="250" green="125" blue="0"/>
+	<colour name="region oceania map mask colour" 				red="255" green="0" blue="140"/>
+	<colour name="region scandinavia map mask colour" 		red="0" green="0" blue="0"/>
+	<colour name="region south america map mask colour" 	red="110" green="120" blue="195"/>
+	<colour name="region southern europe map mask colour" 	red="90" green="90" blue="90"/>
+	<colour name="region uk and ireland map mask colour" 	red="225" green="0" blue="0"/>
+	<colour name="region central asia map mask colour" 		red="100" green="50" blue="50"/>
+	<colour name="region east asia map mask colour" 		red="160" green="190" blue="35"/>
+	<colour name="region south asia map mask colour" 		red="110" green="60" blue="170"/>
+	<colour name="region south east asia map mask colour" 	red="35" green="175" blue="130"/>
+	<colour name="region western africa map mask colour" 	red="250" green="220" blue="160"/>
+	<colour name="region central africa map mask colour" 	red="75" green="125" blue="25"/>
+	<colour name="region eastern africa map mask colour" 	red="100" green="160" blue="220"/>
+	<colour name="region southern africa map mask colour"	red="25" green="25" blue="105"/>
+
+	<!-- Feed -->
+	<colour name="news item" 								value="rgb(0,117,121)"/>
+	<colour name="social media" 							value="rgb(11,97,162)"/>
+	<colour name="feed box" 								value="bg lighter"/>
+	<colour name="social media linked box" 					value="bg"/>
+	<colour name="feed background" 							value="bg darker"/>
+	<colour name="follow list background" 					value="bg"/>
+	<colour name="hashtag" 									value="blue 800"/>
+	<colour name="newspaper text" 							value="rgb(100,100,100)"/>
+	<colour name="radio profile" 							value="rgb(0,166,255)"/>
+	<colour name="bookmaker" 								value="rgb(232,175,0)"/>
+
+	<!-- News -->
+	<colour name="website background" 						value="bg"/>
+	<colour name="website top story background" 			value="bg darker"/>
+	<colour name="website secondary story background" 		value="bg"/>
+	<colour name="website sidebar background" 				value="bg"/>
+	<colour name="website item background" 					value="bg lighter"/>
+	<colour name="website headline" 						value="fg"/>
+	<colour name="website text" 							value="fg"/>
+	<colour name="website faded text" 						value="fg alpha"/>
+
+	<!-- Processing -->
+	<colour name="world_news_background" 					value="teal 900"/>
+	<!-- World news background colour - red_replacement -->
+	<colour name="processing_box_background" 				value="rgb(240,242,246)"/>
+	<!-- Processing panel hints background - red_replacement -->
+	<colour name="processing_hints_background" 				value="rgb(44,44,44)"/>
+	<!-- Processing box background colour - red_replacement -->
+	<colour name="processing_box_border" 					value="bg"/>
+	<!-- Processing box border - blue_replacement -->
+	<colour name="processing_box_shadow" 					value="shadow"/>
+	<!-- Processing box shadow colour - green_replacement -->
+	<colour name="processing_box_content_background" 		value="card bg"/>
+	<!-- Processing box background colour - red_replacement -->
+	<colour name="processing_box_content_border" 			value="card bg darker"/>
+	<!-- Processing box background colour - red_replacement -->
+
+	<colour name="processing_date" 							value="card fg"/>
+	<colour name="processing_month" 						value="card fg"/>
+	<colour name="processing_headline" 						value="card fg"/>
+	<colour name="processing_goalscorers" 					value="card fg lighter"/>
+	<colour name="processing_comp" 							value="card fg lighter"/>
+
+	<!-- Analist Reports Colours -->
+	<colour name="team report stat goal colour" 			value="rgb(20, 120, 30)" />
+	<colour name="team report stat on target colour" 		value="rgb(10, 110, 180)" />
+	<colour name="team report stat penalties colour" 		value="rgb(20, 120, 30)" />
+	<colour name="team report stat minutes colour" 			value="rgb(30,150,170)" />
+	<colour name="team report stat passes colour" 			value="rgb(20, 120, 30)" />
+	<colour name="team report stat mistakes colour" 		value="red" />
+	<colour name="team report stat aerial colour" 			value="rgb(20, 120, 30)" />
+	<colour name="team report stat crosses colour" 			value="rgb(20, 120, 30)" />
+	<colour name="team report stat tackles colour" 			value="rgb(20, 120, 30)" />
+	<colour name="team report stat fouls colour" 			value="orange 900" />
+	<colour name="team report stat yellow card colour" 		value="yellow 900" />
+	<colour name="team report stat red card colour" 		value="red" />
+	<colour name="team report stat clean sheet colour" 		value="rgb(20, 120, 30)" />
+	<colour name="team report stat conceded colour" 		value="red" />
+	<colour name="team_report_games_won_colour"  			value="rgb(5,135,65)" />
+	<colour name="team_report_games_drawn_colour" 			value="rgb(130,0,120)"/>
+	<colour name="team_report_games_lost_colour" 			value="rgb(135,35,5)"/>
+
+	<!-- Squad Depth Colours-->
+	<colour name="background_box_great_colour"    			value="bg range20" />
+	<colour name="background_box_good_colour"     			value="bg range15"/>
+	<colour name="background_box_average_colour"  			value="bg lighter"/>
+	<colour name="background_box_poor_colour"     			value="bg range1" />
+	<colour name="squad_depth_box_background" 				value="bg"/>
+	<colour name="squad depth text" 						value="fg" />
+
+	<colour name="number_box_great_colour"      			value="bg range20"/>
+	<colour name="number_box_good_colour"       			value="bg range15"/>
+	<colour name="number_box_average_colour"    			value="fg range10" />
+	<colour name="number_box_poor_colour"       			value="bg range1"/>
+
+	<colour name="position_overview_great_colour"  			value="fg range20" />
+	<colour name="position_overview_good_colour" 			value="fg range18"/>
+	<colour name="position_overview_average_colour" 		value="fg range10"/>
+	<colour name="position_overview_poor_colour"  			value="fg range1" />
+
+	<!-- Transfer Inbox Item Colours-->
+	<colour name="transfer_item_failed" 					value="bg negative" />
+	<colour name="transfer_item_failed_string" 				value="fg" />
+
+	<colour name="transfer_item_pending" 					value="bg range15" />
+	<colour name="transfer_item_pending_string" 			value="fg" />
+
+	<colour name="transfer_item_complete" 					value="bg positive" />
+	<colour name="transfer_item_complete_string" 			value="fg" />
+
+	<!--Scout Report Assist Pitch colours-->
+	<colour name="assist_pitch_top" 						value="bg positive" />
+	<colour name="assist_pitch_bottom" 						value="bg negative" />
+
+	<!-- FM Store-->
+	<colour name="store_colour" 							value="bg"/>
+	<colour name="store_background" 						value="bg darker" />
+	<colour name="store_foreground" 						value="bg lighter" />
+	<colour name="store_dialog_text" 						value="white" />
+	<colour name="store_dialog_faded_text" 					value="faded white" />
+	<colour name="store_button" 							value="rgb(15,15,15)" />
+	<colour name="store_button_border" 						value="black" />
+	<colour name="fmt_downloads_colour" 					value="fg accent" />
+	<colour name="wallet_colour" 							value="rgb(136,120,191)" />
+	<colour name="steam_workshop_colour" 					value="rgb(49,123,180)" />
+
+	<!-- Tree -->
+	<colour name="tree selected" 							value="fg" />
+	<colour name="tree hilight" 							value="bg dark" />
+
+	<colour name="pass_length_pie_first" 					value="blue 500" />
+	<colour name="pass_length_pie_second" 					value="cyan 500" />
+	<colour name="pass_length_pie_third" 					value="indigo 500" />
+	<colour name="pass_direction_pie_first" 				value="green a700" />
+	<colour name="pass_direction_pie_second" 				value="blue grey 400" />
+	<colour name="pass_direction_pie_third" 				value="deep orange 300" />
+	<colour name="pass_pie_text" 							value="white" />
+
+	<!-- Team Chemistry-->
+	<colour name="chemistry_influences_colour" 				value="bg green" />
+	<colour name="chemistry_no_opinion_colour" 				value="bg grey lighter" />
+	<colour name="chemistry_opposes_colour" 				value="bg red" />
+	<colour name="chemistry_pro_item_colour" 				value="fg positive" />
+	<colour name="chemistry_con_item_colour" 				value="fg negative" />
+	<colour name="chemistry_happiness_good_colour" 			value="bg positive" />
+	<colour name="chemistry_happiness_slightly_good_colour" value="bg grey darker" />
+	<colour name="chemistry_happiness_neutral_colour" 		value="bg alert" />
+	<colour name="chemistry_happiness_slightly_bad_colour" 	value="bg grey lighter" />
+	<colour name="chemistry_happiness_bad_colour" 			value="bg negative" />
+
+	<!-- Knowledge (descending order)-->
+	<colour name="knowledge colour complete" 				value="teal 900" />
+	<colour name="knowledge colour outstanding" 			value="teal 900" />
+	<colour name="knowledge colour exceptional" 			value="teal 900" />
+	<colour name="knowledge colour extensive" 				value="green 900" />
+	<colour name="knowledge colour very good" 				value="green 900" />
+	<colour name="knowledge colour good" 					value="green 600" />
+	<colour name="knowledge colour average" 				value="green 300" />
+	<colour name="knowledge colour decent" 					value="yellow 900" />
+	<colour name="knowledge colour sporadic" 				value="yellow 900" />
+	<colour name="knowledge colour nominal" 				value="red 300" />
+	<colour name="knowledge colour minimal" 				value="red 600" />
+
+	<colour name="knowledge level" 							value="rgb(2, 144, 161)"/>
+
+	<colour name="tactical analysis scored low" 			value="rgb(40,119,62)" />
+	<colour name="tactical analysis scored high" 			value="rgb(39,190,62)" />
+	<colour name="tactical analysis conceded low" 			value="rgb(225,143,143)" />
+	<colour name="tactical analysis conceded high" 			value="rgb(167,14,14)" />
+
+	<colour name="diff positive low" 						value="rgb(80,255,80)" />
+	<colour name="diff positive high" 						value="rgb(0,255,0)" />
+
+	<colour name="diff negative low" 						value="rgb(255,80,80)" />
+	<colour name="diff negative high" 						value="rgb(255,0,0)" />
+
+	<colour name="positive partnership" 					value="rgb(21,252,80)" />
+	<colour name="negative partnership" 					value="rgb(211,68,68)" />
+	<colour name="mid partnership" 							value="orange 500" />
+	<colour name="mid partnership highlighted" 				value="orange 100" />
+	<colour name="positive partnership highlighted" 		value="rgb(92,255,134)" />
+	<colour name="negative partnership highlighted" 		value="rgb(232,107,107)" />
+
+	<!-- Tactics Grid -->
+	<colour name="pitch good area" 							value="rgba(0,211,88,0.7)"/>
+	<colour name="pitch no problems" 						value="rgba(158,203,0,0.2)"/>
+	<colour name="pitch serious problems" 					value="rgba(255,0,0,0.7)"/>
+	<colour name="player high positive influence"			value="positive"/>
+	<colour name="player medium positive influence" 		value="fg range17"/>
+	<colour name="player low positive influence" 			value="fg range15"/>
+	<colour name="player low negative influence" 			value="fg range5"/>
+	<colour name="player medium negative influence" 		value="fg range 3"/>
+	<colour name="player high negative influence" 			value="negative"/>
+
+	<colour name="scout card" 								value="card bg" />
+	<colour name="scout card text" 							value="card fg" />
+
+	<colour name="team talk addressing" 					value="cyan 300" />
+
+	<!--dynamics-->
+	<colour name="dynamics team leader" 					value="fg green"/>
+	<colour name="dynamics leading player" 					value="fg yellow" />
+	<colour name="dynamics influential player" 				value="fg orange" />
+	<colour name="dynamics squad player" 					value="fg blue" />
+
+	<colour name="squad highlight" 							value="blue 500" />
+
+	<!--dynamics relationships-->
+	<colour name="very close relationship" 					value="green 900"/>
+	<colour name="close relationship" 						value="green 900" />
+	<colour name="aquaintance relationship" 				value="green 700" />
+	<colour name="contact relationship" 					value="text" />
+	<colour name="rival relationship" 						value="orange 500" />
+	<colour name="adversary relationship" 					value="red 500" />
+	<colour name="distant relationship" 					value="red 900" />
+
+	<!-- Press conference tones -->
+	<colour name="tone none" 								value="fg"/>
+	<colour name="tone assertive" 							value="fg blue"/>
+	<colour name="tone passionate" 							value="fg purple"/>
+	<colour name="tone cautious" 							value="fg yellow"/>
+	<colour name="tone calm" 								value="fg teal"/>
+
+	<!--Training category calendar colours-->
+	<colour name="general training calendar colour" 		value="blue 900"/>
+	<colour name="match training calendar colour" 			value="blue 500"/>
+	<colour name="attacking training calendar colour" 		value="green 800"/>
+	<colour name="defending training calendar colour" 		value="purple 800"/>
+	<colour name="technical training calendar colour" 		value="indigo 400"/>
+	<colour name="tactical training calendar colour"      	value="light green 400"/>
+	<colour name="goalkeeping training calendar colour"   	value="brown 500"/>
+	<colour name="setpiece training calendar colour"		value="pink 800"/>
+	<colour name="physical training calendar colour"      	value="blue grey 800"/>
+	<colour name="extra training calendar colour"			value="teal 800"/>
+	<colour name="match day training calendar colour"     	value="light blue 300"/>
+	<colour name="rest training calendar colour"          	value="blue grey 300"/>
+	<colour name="recovery training calendar colour"      	value="teal 300"/>
+
+	<!-- manager relationship types -->
+	<colour name="manager relationship positive high"     	value="fg range20"/>
+	<colour name="manager relationship positive med"      	value="fg range18"/>
+	<colour name="manager relationship positive low"      	value="fg range15"/>
+	<colour name="manager relationship negative high"     	value="fg range1"/>
+	<colour name="manager relationship negative med"      	value="fg range5"/>
+	<colour name="manager relationship negative low"      	value="fg range10"/>
+	<colour name="manager relationship none"              	value="text"/>
+
+	<!-- Agent/Journalist relationship type colours -->
+	<colour name="agent journo relationship awestruck"      value="teal 900"/>
+	<colour name="agent journo relationship strong respect" value="teal 700"/>
+	<colour name="agent journo relationship respectful"     value="teal 500"/>
+	<colour name="agent journo relationship friendly"       value="teal 300"/>
+	<colour name="agent journo relationship indifferent"    value="black"/>
+	<colour name="agent journo relationship unfriendly"     value="red 300"/>
+	<colour name="agent journo relationship dislike"        value="red 500"/>
+	<colour name="agent journo relationship strong dislike" value="red 700"/>
+	<colour name="agent journo relationship hatred"         value="red 900"/>
+	<colour name="agent journo relationship none"           value="black"/>
+
+	<!-- Training impact -->
+	<colour name="training impact very negative"      		value="red 700"/>
+	<colour name="training impact negative"           		value="red 500"/>
+	<colour name="training impact slightly negative"  		value="red 300"/>
+	<colour name="training impact neutral"            		value="blue grey 800"/>
+	<colour name="training impact slightly positive"  		value="green 300"/>
+	<colour name="training impact positive"           		value="green 500"/>
+	<colour name="training impact very positive"      		value="green 700"/>
+
+	<!-- Tactics -->
+	<!-- General tactics colours -->
+	<colour name="tactic_slot" 								value="teal 700"/>
+	<colour name="pitch hide" 								value="rgb(59,216,131)"/>
+	<colour name="pitch hide secondary" 					value="rgb(0,67,31)"/>
+
+	<colour name="tactic intensity low"     				value="fg positive" />
+	<colour name="tactic intensity medium"  				value="fg blue" />
+	<colour name="tactic intensity high"    				value="fg negative" />
+
+	<!-- team/player instructions dialog key colours -->
+	<colour name="selected instruction" 					value="fg range20"/>
+	<colour name="unselected instruction" 					value="adj bar empty"/>
+	<colour name="conflicting instruction" 					value="fg range1"/>
+	<colour name="conflicting with role instruction" 		value="fg range1"/>
+	<colour name="preselected instruction" 					value="fg range16"/>
+
+	<!-- Player Instructions -->
+	<colour name="positional instructions" 					value="rgb(94,162,255)"/>
+	<colour name="personalised instructions" 				value="rgb(99,245,163)"/>
+	<colour name="personalised instructions pitch" 			value="rgb(99,245,163)"/>
+
+	<!-- Alert colours for player instructions panel -->
+	<colour name="player starting" 							value="bg positive" />
+	<colour name="instructions not used" 					value="bg negative" />
+	<colour name="player not starting" 						value="bg alert" />
+
+	<!-- Duty colours -->
+	<colour name="duty attack"      						value="white"/>
+	<colour name="duty support"     						value="white"/>
+	<colour name="duty defend"      						value="white"/>
+
+
+	<!--fine colours-->
+	<colour name="fine no action" 							value="black" />
+	<colour name="fine warning" 								value="yellow 500" />
+	<colour name="fine 1 day" 									value="orange 100" />
+	<colour name="fine 1/2 week" 								value="orange 500" />
+	<colour name="fine 1 week" 									value="deep orange 500" />
+	<colour name="fine 2 weeks" 								value="red 500" />
+	<colour name="demote player"      					value="red 800"/>
+
+	<!-- Tutorial -->
+	<colour name="manager responsibility" 					value="rgb(20,141,154)" />
+	<colour name="staff responsibility" 					value="rgb(16,165,68)" />
+	<colour name="tutorial highlight" 						value="fg blue" />
+	<colour name="tutorial icon" 							value="fg blue darker" />
+	<colour name="tutorial fg" 								value="fg blue darker" />
+	<colour name="tutorial bg" 								value="bg blue lighter" />
+	<colour name="tutorial header" 							value="bg blue" />
+	<colour name="tutorial darkness" 						value="rgba(0,0,0,0.8)" />
+	<colour name="tutorial interactive highlight"			value="fg yellow" />
+	<colour name="news_category_colour_tutorial" 			value="fg blue" />
+
+	<!--Performance (formerly confidence)-->
+	<colour name="performance board tag" 					value="teal" />
+	<colour name="performance fans tag" 					value="teal" />
+	<colour name="performance A plus grade" 				value="teal 900" />
+	<colour name="performance A grade" 						value="teal 600" />
+	<colour name="performance A minus grade" 				value="teal 500" />
+	<colour name="performance B plus grade" 				value="green 900" />
+	<colour name="performance B grade" 						value="green 600" />
+	<colour name="performance B minus grade" 				value="green 500" />
+	<colour name="performance C plus grade" 				value="orange 500" />
+	<colour name="performance C grade" 						value="orange 600" />
+	<colour name="performance C minus grade" 				value="orange 900" />
+	<colour name="performance D grade" 						value="red 500" />
+	<colour name="performance E grade" 						value="red 500" />
+	<colour name="performance F grade" 						value="red 600" />
+	<colour name="performance G grade" 						value="red 900" />
+	<colour name="performance waiting grade" 				value="faded text" />
+	<colour name="performance highlight positive" 			value="fg positive" />
+	<colour name="performance highlight negative" 			value="fg negative" />
+
+	<!--Reserves availability poup-->
+	<colour name="reserve available 20 minutes" 					value="teal 800" />
+	<colour name="reserve available 45 minutes" 					value="teal 600" />
+	<colour name="reserve available 60 minutes" 					value="green 700" />
+	<colour name="reserve available 90 minutes" 					value="green 400" />
+
+	<!-- Club Vision -->
+	<colour name="required objective"                     value="rgb(130,255,150)" />
+	<colour name="desired objective"                      value="rgb(90,255,150)" />
+	<colour name="preferred objective"                    value="rgb(50,255,150)" />
+	<colour name="favoured objective"                     value="rgb(10,255,150)" />
+
+	<!--Scouting report age colours-->
+	<colour name="report age new" 						value="fg positive" />
+	<colour name="report age mid" 						value="fg alert" />
+	<colour name="report age old" 						value="fg negative" />
+
+	<colour name="club info transfer embargo"			value="fg alert" />
+
+	<!--Comp rule change highlight-->
+	<colour name="news item rules change"				value="rgb(63,180,194)"/>
+
+	<!--Milestones panel icon colours-->
+	<colour name="milestones competitions icon" 		value="fg yellow darker" />
+	<colour name="milestones awards icon" 				value="fg cyan" />
+	<colour name="milestones transfer icon" 			value="fg purple lighter" />
+	<colour name="milestones jobs icon" 				value="fg green" />
+	<colour name="milestones landmarks icon" 			value="fg alert" />
+
+	<colour name="recruitment meeting bubble colour"	value="rgb(240,240,240)" />
+
+	<!-- Press Conference Revamp -->
+	<colour name="avoid talking point subject" 			value="orange 300" />
+
+	<colour name="end of season moments success gold"		value="rgb(212,175,55)" />
+	<colour name="end of season moments scoreline normal"	value="fg accent" />
+	<colour name="end of season positive background"	value="bg positive" />
+	<colour name="end of season negative background"	value="bg negative" />
+	<colour name="end of season container success background"	value="faded black" />
+
+	<!--Controller Focus-->
+	<colour name="navcon"	value="rgb(123,55,197)" />
+	<colour name="focus object"	value="rgb(109,255,230)" />
+
+	<!-- Body language -->
+	<colour name="body language delighted fg" 			value="green 900"/>
+	<colour name="body language delighted bg" 			value="white"/>
+	<colour name="body language v pleased fg" 			value="green 700"/>
+	<colour name="body language v pleased bg" 			value="white"/>
+	<colour name="body language pleased fg" 			value="green 500"/>
+	<colour name="body language pleased bg" 			value="white"/>
+	<colour name="body language content fg" 			value="green 700"/>
+	<colour name="body language content bg" 			value="white"/>
+	<colour name="body language annoyed fg" 			value="orange"/>
+	<colour name="body language annoyed bg" 			value="white"/>
+	<colour name="body language frustrated fg" 			value="orange"/>
+	<colour name="body language frustrated bg" 			value="white"/>
+	<colour name="body language v frustrated fg" 		value="red"/>
+	<colour name="body language v frustrated bg" 		value="white"/>
+	<colour name="body language mixed fg" 				value="fg blue"/>
+	<colour name="body language mixed bg" 				value="white"/>
+
+	<!-- Analysis and Stats revamp-->
+    <colour name="scattergraph quadrant poor" 				value="red 600"/>
+    <colour name="scattergraph quadrant average" 			value="orange 300"/>
+    <colour name="scattergraph quadrant good" 				value="green 300"/>
+
+    <colour name="search filter active" 			value="bg purple darker"/>
+    <colour name="search filter inactive" 				value="rgb(27,26,28)"/>
+
+    <!-- Interaction summary notable highlights -->
+    <colour name="interaction highlight very positive" 		value="positive"/>
+    <colour name="interaction highlight positive" 			value="positive"/>
+    <colour name="interaction highlight slightly positive"	value="positive"/>
+    <colour name="interaction highlight neutral" 			value="text"/>
+    <colour name="interaction highlight mixed" 				value="text"/>
+    <colour name="interaction highlight slightly negative" 	value="negative"/>
+    <colour name="interaction highlight negative" 			value="negative"/>
+    <colour name="interaction highlight very negative" 		value="negative"/>
+
+	<!-- Transfer deadline day colours -->
+	<colour name="deadline day fg" 							value="rgb(7,7,7)"/>
+	<colour name="deadline day bg" 							value="rgb(220,220,220)"/>
+
+	<colour name="deadline day bg lighter" 					value="rgb(250,250,250)"/>
+	<colour name="deadline day bg darker" 					value="rgb(222,222,222)"/>
+	<colour name="deadline day bg colour" 					value="rgb(255,255,255)"/>
+	<colour name="deadline day bg alpha" 					value="rgb(255,255,255)"/>
+	<colour name="deadline day bg tertiary" 				value="rgb(250,250,250)"/>
+	<colour name="deadline day bg accent" 					value="rgb(250,100,30)"/>
+
+	<colour name="deadline day fg lighter" 					value="rgb(145,0,100)"/>
+	<colour name="deadline day fg colour" 					value="rgb(250,160,30)"/>
+	<colour name="deadline day fg darker" 					value="rgb(205,205,205)"/>
+	<colour name="deadline day fg alpha" 					value="rgb(179,179,179)"/>
+	<colour name="deadline day fg accent" 					value="rgb(230,115,0)"/>
+	<colour name="deadline day fg tertiary" 				value="fg tertiary"/>
+	<colour name="deadline day fg titles" 					value="rgb(246,83,29)"/>
+	<colour name="deadline day body text" 					value="rgb(2,2,2)"/>
+
+	<!-- Transfer deadline day transfer offer status -->
+	<colour name="player transfer status rumour" 			value="rgb(160,0,0)"/>
+	<colour name="player transfer status enquiry" 			value="rgb(70,0,170)"/>
+	<colour name="player transfer status offer made" 		value="rgb(0,0,0)"/>
+	<colour name="player transfer status offer rejected"	value="fg negative"/>
+	<colour name="player transfer status offer withdrawn" 	value="rgb(255,28,129)"/>
+	<colour name="player transfer status offer collapsed" 	value="rgb(201,44,160)"/>
+	<colour name="player transfer status offer negotiated"	value="rgb(97,18,143)"/>
+	<colour name="player transfer status offer accepted" 	value="rgb(50,199,60)"/>
+	<colour name="player transfer status contract offer"	value="rgb(40,140,255)"/>
+	<colour name="player transfer status agreed terms"		value="rgb(0,200,225)"/>
+	<colour name="player transfer status work permit"		value="rgb(0,180,180)"/>
+	<colour name="player transfer status done deal"			value="rgb(3,133,3)"/>
+	<colour name="player transfer status future deal"		value="rgb(0,97,0)"/>
+	<colour name="player transfer status released"			value="negative"/>
+	<colour name="player transfer status contract renewed"	value="positive"/>
+
+	<!--FMFC colours-->
+	<colour name="coming soon tag"							value="rgb(255,28,107)"/>
+
+	<!--Scout report neutral grade colour-->
+	<colour name="scouting no grade"						value="rgb(97,18,143)" />
+
+	<!-- And now a little magic ... -->
+	<!-- -->
+	<!-- Use for profile icons - icon in circle, want dark circle light icon -->
+	<colour name="icon bg" 							value="bg accent"/>
+	<colour name="icon fg" 							value="white"/>
+
+	<!-- Card colours - used for places where the colours are inverted in the default skin. Inbox, Report cards, etc -->
+	<colour name="card fg lighter"			 															value="rgb(20,20,20)"/>
+	<colour name="card fg" 																				value="rgb(10,10,10)"/>
+	<colour name="card fg darker" 																		value="rgb(0,0,0)"/>
+	<colour name="card bg lighter" 																		value="rgb(250,252,254)"/>
+	<colour name="card bg" 																				value="rgb(240,242,246)"/>
+	<colour name="card bg darker" 																		value="rgb(230,232,236)"/>
+	<colour name="shadow" 																value="rgb(0,0,0)" />
+	<colour name="xg01"																	value="bg range1" />
+	<colour name="xg02"																	value="bg range3" />
+	<colour name="xg03"																	value="bg range5" />
+	<colour name="xg04"																	value="bg range7" />
+	<colour name="xg05"																	value="bg range9" />
+	<colour name="xg06"																	value="bg range11"/>
+	<colour name="xg07"																	value="bg range13"/>
+	<colour name="xg08"																	value="bg range15"/>
+	<colour name="xg09"																	value="bg range17"/>
+
+	<!-- Squad Planner -->
+	<colour name="scouts_opinion"							value="rgb(3, 83, 148)" />
+	<colour name="from_development_squad"					value="fg teal" />
+	<colour name="projection_for_start_of_season" value="rgb(163, 7, 33)" />
+
+	<!--UEFA Champions League colours-->
+	<colour name="ucl core blue" 							value="rgb(0,0,75)" />
+	<colour name="ucl bright blue" 							value="rgb(5,40,190)" />
+	<colour name="ucl cyan" 								value="rgb(10,190,160)" />
+	<colour name="ucl magenta" 								value="rgb(171,0,171)" />
+
+	<!--UEFA Europa & Europa Conference League colours-->
+	<colour name="uel orange" 								value="rgb(255,105,0)" />
+	<colour name="uel grey" 								value="rgb(43,43,43)" />
+	<colour name="uecl green" 								value="rgb(0,145,20)" />
+
+	<!--Super Cup colours-->
+	<colour name="super cup bg" 							value="rgb(18,37,93)" />
+	<colour name="super cup dark" 							value="rgb(2,9,57)" />
+	<colour name="super cup accent" 						value="rgb(0,150,180)" />
+	<colour name="super cup darkest" 						value="rgb(1,2,3)" />
+
+	<!--EFL colours-->
+	<colour name="efl blue" 								value="rgb(6,22,132)" />
+
+	<!--Bundesliga colours-->
+	<colour name="bundesliga red" 							value="rgb(209,5,20)" />
+
+	<!--Cup Draws colours-->
+	<colour name="groups default"                                 value="rgb(250,250,250)" />
+	<colour name="groups active"                                 value="rgb(237,236,238)" />
+
+	<!--Custom colours-->
+	<colour name="top spenders"                                 value="rgb(0,176,255)" />
+	<colour name="cup draw team slots redrepl"                  value="rgb(0,188,212)"/>
+	<colour name="cup draw team slots bluerepl"                 value="rgb(255,235,39)"/>
+	<colour name="cup draw team slots active redrepl"                 value="rgb(217,27,96)"/>
+	<colour name="cup draw team slots active bluerepl"                 value="rgb(255,255,0)"/>
+	<colour name="cup draw team slots active greenrepl"                 value="rgb(255,214,0)"/>
+	<colour name="cup draw react bgnd"                 value="rgb(0,0,75)"/>
+	<colour name="cup draw react "                 value="rgb(13,58,255)"/>
+
+</properties>

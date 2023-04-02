@@ -1,0 +1,55 @@
+<panel>
+	<layout class="vertical_arrange" vertical_layout="200,500,-1"  />
+	<boolean id="should_force_refresh" value="true"/>
+
+	<!-- HEADER CONTAINER -->
+	<container>
+		<layout class="horizontal_arrange" horizontal_layout="-1,-1,-1" />
+		<!-- 1 -->
+		<container class="horizontal_adaptive_container" vertical_alignment="centre" background_colour="red 100">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+		</container>
+		<!-- 2 -->
+		<container class="horizontal_adaptive_container" vertical_alignment="centre" background_colour="red 500">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+		</container>
+		<!-- 3-->
+		<container class="horizontal_adaptive_container" vertical_alignment="centre" background_colour="red 900">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+		</container>
+	</container>
+
+	<!-- MAIN CONTAINER -->
+	<container>
+		<layout class="horizontal_arrange" horizontal_layout="-1,-1,-1" />
+		<!-- 1 -->
+		<container class="horizontal_adaptive_container" vertical_alignment="centre" background_colour="green 100">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+		</container>
+		<!-- 2 -->
+		<container class="horizontal_adaptive_container" vertical_alignment="centre" background_colour="green 500">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+		</container>
+		<!-- 3-->
+		<container class="horizontal_adaptive_container" vertical_alignment="centre" background_colour="green 900">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+		</container>
+	</container>
+
+	<!-- FOOTER CONTAINER -->
+	<container>
+		<layout class="horizontal_arrange" horizontal_layout="-1,-1,-1" />
+		<!-- 1 -->
+		<container class="horizontal_adaptive_container" vertical_alignment="centre" background_colour="blue 100">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+		</container>
+		<!-- 2 -->
+		<container class="horizontal_adaptive_container" vertical_alignment="centre" background_colour="blue 500">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+		</container>
+		<!-- 3-->
+		<container class="horizontal_adaptive_container" vertical_alignment="centre" background_colour="blue 900">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+		</container>
+	</container>
+</panel>

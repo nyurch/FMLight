@@ -1,0 +1,197 @@
+<panel>
+<layout class="arrange_horizontal_attachment" alignment="centre, extend" offset="0" gap="5" layout="240,450,-1" />
+<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+	<!-- left side -->
+	<container class="main_contrast_box" red_replacement="teal 900" id="tbox">
+		<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="5" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		<container >
+			<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="5" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+			<widget class="text" entity_layout_id="at03" alignment="centre_y,left" id="at03" auto_size="horizontal" needs_width="true" height="30" name="tactic title">
+				<string id="always_hide" value="false"/>
+				<string id="font" value="title"/>
+				<string id="colour" value="white"/>
+				<translation id="text" value="Tactics" translation_id="230056" type="use"/>
+				<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="top" set_side="top" move_side="true" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" offset="4" get_side="right" set_side="left" move_side="true" target="at09"/>
+			</widget>
+			<container class="tactic_slot_tab_container" entity_layout_id="it08" file="tactics/tactic slot tab container picker" id="tacw" auto_size="horizontal" needs_width="true" height="30" name="active tactic">
+				<integer id="slot_popup_maximum_width" value="120"/>
+				<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="top" set_side="top" move_side="true" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" offset="-50" get_side="right" set_side="left" move_side="true" target="at03"/>
+			</container>
+			<!-- familiarity/intensity -->
+			<container class="main_box" height="100" id="infa">
+				<layout class="arrange_vertical_attachment" layout="-1,-1,-1" offset="0" gap="5" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+					<widget class="tactic_slot_tab_container" id="tstf" file="tactics/tactic slot tab container familiarity"/>
+					<widget class="tactic_slot_tab_container" id="tstI" file="tactics/tactic slot tab container intensity"/>
+			</container>
+			<!-- popup with team/player instructions and attributes comparison -->
+			<container class="inner_box_no_margin" entity_layout_id="at02" id="at02" width="175" name="side bar">
+				<layout class="stick_to_object_attachment" id="align_top" offset="30" get_side="top" set_side="top" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+				<widget class="spacer" id="main">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				</widget>
+				<widget class="spacer" id="fmin" embed_in_frame="true">
+					<boolean id="exclude_from_find" value="true"/>
+					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+				</widget>
+				<container class="team_instructions_panel" entity_layout_id="it04" file="team/team instructions mini overview" id="Tein" name="Team instructions">
+					<layout class="stick_to_object_attachment" id="align_top" offset="0" get_side="top" set_side="top" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_bottom" offset="0" get_side="bottom" set_side="bottom" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="0" get_side="left" set_side="left" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_right" offset="0" get_side="right" set_side="right" target="main"/>
+				</container>
+				<widget class="button" entity_layout_id="it18" id="quPb" appearance="buttons/custom/tactics/pitch switch/normal/button" hidden="true" width="0" height="0" name="Quick Pick">
+					<translation id="text" value="Quick Pick" translation_id="462560" type="use"/>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+				</widget>
+			<widget class="check_box" entity_layout_id="it13" id="pinB" appearance="buttons/custom/tactics/pitch show/normal/button" icon_alignment="centre_x,centre_y" hidden="true" width="0" height="0" name="pin button">
+					<string id="show_button_appearance" value="true"/>
+					<string id="select_event" value="piEV"/>
+					<string id="icon" value="switches/pitch pin/button"/>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+				</widget>
+				<container class="tactic_slot_tab_container" entity_layout_id="it05" file="tactics/tactic slot tab container tactics" id="tstc" hidden="true" width="0" height="0" name="tactics">
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+				</container>
+				<container class="tactic_slot_tab_container" entity_layout_id="it07" file="tactics/tactic slot tab container match prep" id="tsmp" hidden="true" width="0" height="0" name="Match prep">
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+				</container>
+				<widget class="button" entity_layout_id="it24" id="inVt" hidden="true" name="mouse controller">
+					<string id="show_button_appearance" value="false"/>
+					<record id="click_event">
+						<unsigned id="event_flags" value="0"/>
+						<string id="event_id" value="mcan"/>
+						<string id="event_target" value="prnt"/>
+					</record>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+				</widget>
+				<container class="tactics_player_instructions_panel" entity_layout_id="it10" file="tactics/tactics player instructions panel overview" wants_mouse_events="true" id="tPli" hidden="true" width="230" name="player instructions">
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="0" get_side="left" set_side="left" move_side="true" target="main"/>
+				</container>
+				<container class="container" entity_layout_id="at06" id="conG" width="753" name="instruction dialog bg">
+					<layout class="stick_to_object_attachment" id="align_top" offset="44" get_side="top" set_side="top" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_bottom" offset="-6" get_side="bottom" set_side="bottom" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="179" get_side="left" set_side="left" move_side="true" target="main"/>
+					<widget class="spacer" id="main">
+						<boolean id="exclude_from_find" value="true"/>
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+					</widget>
+					<widget class="spacer" id="fmin" embed_in_frame="true">
+						<boolean id="exclude_from_find" value="true"/>
+						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+					</widget>
+				</container>
+				<container class="player_attributes_comparison_panel" entity_layout_id="it11" file="player/player attributes comparison panel tactics" id="comP" hidden="true" width="230" name="comparison">
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main"/>
+				</container>
+				<container class="main_contrast_box" entity_layout_id="at0;" wants_mouse_events="true" hidden="true" id="TcAP" appearance="boxes/contrast/no margin/right/paper" width="280" name="tactical analysis overlay">
+					<string id="red_replacement" value="bg"/>
+					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main"/>
+					<layout class="stick_to_object_attachment" id="align_left" offset="670" get_side="left" set_side="left" move_side="true" target="main"/>
+					<widget class="spacer" id="main">
+						<boolean id="exclude_from_find" value="true"/>
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+					</widget>
+					<widget class="spacer" id="fmin" embed_in_frame="true">
+						<boolean id="exclude_from_find" value="true"/>
+						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+					</widget>
+					<container class="main_contrast_box" appearance="boxes/main/contrast/top right/paper" entity_layout_id="at0=" id="TcAH" height="44">
+						<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+						<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+						<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+						<widget class="spacer" id="main">
+							<boolean id="exclude_from_find" value="true"/>
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+						</widget>
+						<widget class="spacer" id="fmin" embed_in_frame="true">
+							<boolean id="exclude_from_find" value="true"/>
+							<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+						</widget>
+						<widget class="text" entity_layout_id="at0&gt;" alignment="centre_y,left" id="AHte" width="194" height="19" font="title" colour="style_background">
+							<string id="value" value="text"/>
+							<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="top" set_side="top" move_side="true" target="main"/>
+							<layout class="stick_to_object_attachment" id="align_left" offset="0" get_side="left" set_side="left" move_side="true" target="main"/>
+						</widget>
+						<widget class="primary_icon_button" alignment="left" id="at0?" entity_layout_id="at0?" width="45" red_replacement="style_background" icon_colour="white" icon_alignment="centre">
+							<string id="click_event" value="close_tactical_analysis"/>
+							<string id="icon" value="icons/16px/clear"/>
+							<layout class="stick_to_object_attachment" id="align_top" offset="0" get_side="top" set_side="top" target="main"/>
+							<layout class="stick_to_object_attachment" id="align_bottom" offset="0" get_side="bottom" set_side="bottom" target="main"/>
+							<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" move_side="true" target="main"/>
+						</widget>
+					</container>
+					<container class="vertical_arrange_container" auto_size="vertical" entity_layout_id="at0&lt;" id="TcAL">
+						<string id="draw_horizontal_dividers" value="true"/>
+						<layout class="stick_to_object_attachment" id="align_top" offset="10" get_side="bottom" set_side="top" target="at0="/>
+						<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="left" set_side="left" target="main"/>
+						<layout class="stick_to_object_attachment" id="align_right" offset="-10" get_side="right" set_side="right" target="main"/>
+					</container>
+				</container>
+			</container>
+		</container>
+	</container>
+
+	<!-- pitch whith tactics -->
+	<container class="main_contrast_box" red_replacement="teal 900">
+		<layout class="arrange_vertical_attachment" layout="700,50,-1" offset="0" gap="2" />
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+			<container class="pitch_with_tactics" id="pitc" name="pitch">
+				<string id="icon_flags" value="show_name,show_extra_details,use_overview_icons,drop_initial_if_possible,show_position_role_duty_suitability,show_selection_image,show_number,show_role_duty_labels,show_familiarity" />
+				<string id="show_extra_details_buttons" value="true" />
+				<string id="pitch_draw_grass" value="true" />
+				<integer id="pitch_vertical_padding" value="0" />
+				<string id="pitch_draw_lines" value="true" />
+				<integer id="partnership_vertical_inset" value="0" />
+				<string id="vertical" value="true" />
+				<string id="pitch_alignment" value="can_scale" />
+				<string id="pitch_line_colour" value="white" />
+				<string id="3958779584" value="tactics normal run" />
+				<string id="3958779616" value="tactics darkened run" />
+				<string id="3958779648" value="tactics dragged run" />
+				<integer id="pitch_touchline_width_percentage" value="20" />
+				<integer id="line_width" value="2" />
+			</container>
+			<container class="team_instructions_panel" entity_layout_id="at07" id="flTM" file="team/team instructions fluidity" name="fluidity">
+				<layout class="stick_to_sides_attachment" alignment="bottom,left" inset="15,15,220,15" />
+			</container>
+			<container class="tactics_recent_match_analysis_panel" entity_layout_id="it22" id="anLy" name="analysis">
+				<layout class="stick_to_sides_attachment" alignment="bottom,left" inset="0,0,40,0" />
+			</container>
+	</container>
+
+	<!-- squad -->
+	<container class="team_squad_tactics_panel" entity_layout_id="it02" id="tesA">
+		<translation id="title" type="use" value="List" />
+		<string id="include_starting_xi" value="true" />
+		<string id="include_starting_subs" value="true" />
+		<string id="include_unpicked" value="true" />
+		<layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="0" offset="0" />
+		<layout class="stick_to_sides_attachment" apply_to_children="true" alignment="horizontal" inset="0" />
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="main" />
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="main" />
+		<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" target="main" />
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
+	</container>
+
+</panel>

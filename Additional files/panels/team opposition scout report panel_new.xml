@@ -1,0 +1,172 @@
+﻿<panel>
+	<layout class="horizontal_arrange" horizontal_layout="550,450,-1"  />
+	<boolean id="should_force_refresh" value="true"/>
+
+	<container>
+		<layout class="vertical_arrange" vertical_layout="-2,-1,-1" />
+		<!-- opposition manager profile -->
+		<container class="main_subtle_box" vertical_alignment="centre" horizontal_gap="61">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+			<translation id="text" type="use" value="Opposition Manager" />
+			<container class="client_object_viewer_xml_panel" entity_layout_id="at44" id="opmi" vertical_alignment="centre">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+				<container class="non_player_profile_panel" entity_layout_id="at43" id="nPpP" file="none">
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+					<record id="dbrp">
+						<string id="get_property" value="TMnR" />
+						<string id="set_property" value="objt" />
+					</record>
+					<container entity_layout_id="at21" id="at21">
+						<layout class="horizontal_arrange" horizontal_layout="80,-1"/>
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+						<widget class="picture" entity_layout_id="at11" id="ppic" info_popup_enabled="false" scale_picture="true" keep_aspect_ratio="true" image_alignment="top">
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="10"/>
+						</widget>
+						<widget class="table" layout="220,-3" mode="fill_rows,stripe_rows" fixed_size_rows="true" row_height="32">
+							<record id="default_properties" alignment="left,centre_y"/>
+							<list id="column_widget_properties">
+								<record index="0" colour="faded text"/>
+								<record index="1" colour="text"/>
+							</list>
+							<!-- name -->
+							<widget class="column_heading" row="0" col="0">
+								<flags id="alignment" value="left,centre_y" />
+								<translation id="text" translation_id="227765" type="use" value="Name[comment - Person Name]" />
+							</widget>
+							<widget class="person_button" row="0" col="1" NumF="0">
+								<string id="font" value="value" />
+								<record id="object_property" get_property="Pnms"/>
+							</widget>
+							<!-- age -->
+							<widget class="column_heading" colour="faded text" row="1" col="0">
+								<flags id="alignment" value="left,centre_y" />
+								<translation id="text" translation_id="227770" type="use" value="Age[comment - person age]" />
+							</widget>
+							<widget class="age_label" row="1" col="1" alignment="left,centre_y">
+								<string id="font" value="value" />
+								<record id="object_property" get_property="Page"/>
+							</widget>
+							<!-- nationality -->
+							<widget class="column_heading" colour="faded text" row="2" col="0">
+								<flags id="alignment" value="left,centre_y" />
+								<translation id="text" translation_id="227841" type="use" value="Nationality" />
+							</widget>
+							<widget class="nation_button" row="2" col="1" alignment="left,centre_y">
+								<string id="font" value="value" />
+								<record id="object_property" get_property="PNat"/>
+							</widget>
+							<!-- place of birth -->
+							<widget class="column_heading" colour="faded text" row="3" col="0">
+								<flags id="alignment" value="left,centre_y" />
+								<translation id="text" translation_id="227960" type="use" value="Place Of Birth" />
+							</widget>
+							<widget class="client_object_label" row="3" col="1" alignment="left,centre_y">
+								<string id="font" value="value" />
+								<record id="object_property" get_property="Pcob"/>
+							</widget>
+							<!-- reputation -->
+							<widget class="column_heading" colour="faded text" row="4" col="0">
+								<translation id="text" value="Reputation" translation_id="227963" type="use" />
+							</widget>
+							<widget class="global_reputation_stars_label" row="4" col="1" alignment="left,centre_y">
+								<record id="object_property" get_property="Prsa"/>
+							</widget>
+							<!-- playing mentality -->
+							<widget class="column_heading" row="5" col="0">
+								<translation id="text" value="Playing Mentality" translation_id="242539" type="use" />
+							</widget>
+							<widget class="playing_mentality_label" row="5" col="1" alignment="left,centre" entity_layout_id="at26" id="plmL" >
+								<string id="font" value="value" />
+							</widget>
+							<!-- playing style -->
+							<widget class="column_heading" row="6" col="0">
+								<translation id="text" value="Playing Style" translation_id="242530" type="use" />
+							</widget>
+							<widget class="playing_style_label" row="6" col="1" entity_layout_id="at29" id="plsL" alignment="left,centre" >
+								<string id="font" value="value" />
+							</widget>
+							<!-- pressing style -->
+							<widget class="column_heading" row="7" col="0">
+								<translation id="text" value="Pressing Style" translation_id="242534" type="use" />
+							</widget>
+							<widget class="pressing_style_label" row="7" col="1" entity_layout_id="at36" id="prSL" alignment="left,centre" >
+								<string id="font" value="value" />
+							</widget>
+							<!-- marking style -->
+							<widget class="column_heading" row="8" col="0">
+								<translation id="text" value="Marking Style" translation_id="242547" type="use" />
+							</widget>
+							<widget class="marking_style_label" row="8" col="1" entity_layout_id="at39" id="mkSL" alignment="left,centre" >
+								<string id="font" value="value" />
+							</widget>
+							<!-- preferred formation -->
+							<widget class="column_heading" row="9" col="0">
+								<translation id="text" translation_id="229988" type="use" value="Preferred Formation" />
+							</widget>
+							<widget class="formation_label" row="9" col="1" id="prfo" alignment="left,centre" >
+								<string id="font" value="value" />
+								<record id="object_property" get_property="Nppf"/>
+							</widget>
+							<!-- coaching qualification -->
+							<widget class="column_heading" row="10" col="0">
+								<translation id="text" translation_id="329843" type="use" value="Coaching Qualifications[COMMENT: non-player profile; coaching qualification]" />
+							</widget>
+							<widget class="label" row="10" col="1" id="coaq" alignment="left,centre" >
+								<string id="font" value="value" />
+							</widget>
+						</widget>
+					</container>
+				</container>
+			</container>
+		</container>
+		<!-- 2 -->
+		<container class="vertical_adaptive_container" horizontal_alignment="centre" background_colour="green 500">
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+		</container>
+		<!-- 3-->
+		<container class="vertical_adaptive_container" horizontal_alignment="centre" background_colour="green 900">
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+		</container>
+	</container>
+
+	<container class="main_subtle_box">
+		<layout class="vertical_arrange" vertical_layout="-1" />
+		<!-- identifying strengths and weaknesses -->
+		<container class="main_box" vertical_alignment="centre">
+			<translation id="title" translation_id="360592" colour="accent" type="use" value="Identifying strengths and weaknesses[COMMENT: FR6596  ASSISTANT_TEAM_REPORT_NEWS_PANEL; bullet point item;]" />
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+				<container class="team_pro_con_summary_panel" id="tpcs">
+					<integer id="num_pro_cons_to_show" value="50" />
+					<layout class="stick_to_object_attachment" id="alPt" get_side="bottom" set_side="top" target="at04" />
+					<layout class="stick_to_object_attachment" id="alPb" get_side="bottom" set_side="bottom" target="main" />
+					<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" target="main" />
+					<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
+				</container>
+		</container>
+	</container>
+
+	<container>
+		<layout class="vertical_arrange" vertical_layout="-2,100,-1" />
+		<!-- squad summary -->
+		<container class="team_opposition_report_squad_summary_panel" entity_layout_id="at07" id="tmin">
+			<layout class="stick_to_object_attachment" id="alPt" get_side="top" set_side="top" target="main" />
+			<layout class="stick_to_object_attachment" id="alPb" get_side="bottom" set_side="bottom" target="main" />
+			<layout class="stick_to_object_attachment" id="alPl" get_side="right" set_side="left" target="at06" />
+			<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
+		</container>
+		<!-- ??? -->
+		<container class="vertical_adaptive_container" horizontal_alignment="centre" background_colour="blue 500">
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+		</container>
+		<!-- squad comparison -->
+		<container class="main_subtle_box">
+			<layout class="horizontal_arrange" horizontal_layout="-1,-1" offset="10"/>
+				<container class="team_squad_comparison_panel" entity_layout_id="at46" id="scmp" navigation_container="true">
+					<layout class="stick_to_object_attachment" id="alPt" get_side="top" set_side="top" target="main" />
+					<layout class="stick_to_object_attachment" id="alPb" get_side="bottom" set_side="bottom" target="main" />
+					<layout class="stick_to_object_attachment" id="alPl" get_side="right" set_side="left" target="at45" />
+					<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
+				</container>
+		</container>
+	</container>
+</panel>
