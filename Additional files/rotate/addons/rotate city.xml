@@ -1,0 +1,45 @@
+<panel>
+
+	<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+	<container default_width="1080">
+		<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+		<widget class="background" file="backgrounds" id="bgnd">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			<record id="object_property">
+				<integer id="get_property" value="bgnd" />
+				<integer id="set_property" value="file" />
+			</record>
+		</widget>
+
+		<!--STADIUM INFORMATION-->
+		<container>
+			<container class="contrast_box" red_replacement="fg" transparency="0.9" height="80" width="500">
+				<layout class="stick_to_sides_attachment" alignment="right" inset="10"/>
+				<layout class="stick_to_sides_attachment" alignment="bottom" inset="10"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="5" apply_to_children="true" />
+
+				<container id="clod">
+					<layout class="stick_to_sides_attachment" alignment="top" inset="0"/>
+					<layout class="vertical_arrange" vertical_layout="40" offset="0" inset="0" gap="0"/>
+
+					<!-- CITY LABEL -->
+					<widget class="city_label" show_nation="true" font="title" size="16" colour="bg" alignment="centre_x,centre_y">
+						<record id="object_property">
+							<integer id="get_property" value="SctI" />
+						</record>
+					</widget>
+
+					<container/>
+
+					<container/>
+
+				</container>
+
+			</container>
+
+		</container>
+	</container>
+</panel>
