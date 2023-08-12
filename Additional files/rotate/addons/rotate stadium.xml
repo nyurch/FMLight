@@ -1,0 +1,142 @@
+<panel>
+
+	<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+	<container default_width="1080">
+		<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+		<widget class="stadium_picture" id="STAp" file="none">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+			<record id="object_property" get_property="objt" set_property="objt"/>
+			<record id="default_properties" image_alignment="centre" scale_picture="false" keep_aspect_ratio="true"/>
+
+			<widget class="picture" file="pictures/stadiums/stadium_bg" />
+			<widget class="picture" id="bkgd" file="pictures/stadiums/none_base" hidden="true"/>
+			<widget class="picture" id="STPC"/>
+		</widget>
+
+		<!--STADIUM INFORMATION-->
+		<container>
+			<container class="contrast_box" red_replacement="fg" transparency="0.9" height="230" width="500">
+				<layout class="stick_to_sides_attachment" alignment="right" inset="10"/>
+				<layout class="stick_to_sides_attachment" alignment="bottom" inset="10"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="5" apply_to_children="true" />
+
+				<container id="clod">
+					<layout class="stick_to_sides_attachment" alignment="top" inset="0"/>
+					<layout class="vertical_arrange" vertical_layout="20,20,30,20,20,20,20,20,5" offset="0" inset="0" gap="0"/>
+
+					<!-- STADIUM NAME -->
+					<widget class="client_object_label" id="namV" font="title" size="16" colour="bg" alignment="centre_x,centre_y">
+						<record id="object_property">
+							<integer id="get_property" value="objt" />
+						</record>
+					</widget>
+
+					<!-- CITY LABEL -->
+					<widget class="city_label" show_nation="true" colour="bg" alignment="centre_x,top">
+						<record id="object_property">
+							<integer id="get_property" value="SctI" />
+						</record>
+					</widget>
+
+					<container/>
+
+					<!--YEAR BUILT-->
+					<container>
+						<layout class="horizontal_arrange" horizontal_layout="-1,-1" offset="0" inset="0" gap="5"/>
+
+						<widget class="label" id="SbdL" font="title" alignment="right,top" colour="bg">
+							<record id="object_property">
+								<integer id="get_property" value="Sbdy" />
+								<boolean id="name" value="true" />
+							</record>
+						</widget>
+
+						<widget class="dashed_number_label" id="SbdV" NumF="0" colour="bg" alignment="left,centre_y">
+							<record id="object_property">
+								<integer id="get_property" value="Sbdy" />
+							</record>
+						</widget>
+					</container>
+
+					<!--CAPACITY-->
+					<container>
+						<layout class="horizontal_arrange" horizontal_layout="-1,-1" offset="0" inset="0" gap="5"/>
+
+						<widget class="label" id="ScpL" font="title" alignment="right,top" colour="bg">
+							<record id="object_property">
+								<integer id="get_property" value="Scpy" />
+								<boolean id="name" value="true" />
+							</record>
+						</widget>
+
+						<widget class="dashed_number_label" id="ScpV" colour="bg" alignment="left,centre_y">
+							<record id="object_property">
+								<integer id="get_property" value="Scpy" />
+							</record>
+						</widget>
+					</container>
+
+					<!--SURFACE-->
+					<container>
+						<layout class="horizontal_arrange" horizontal_layout="-1,-1" offset="0" inset="0" gap="5"/>
+
+						<widget class="label" id="SptL" font="title" alignment="right,top" colour="bg">
+							<translation id="text" translation_id="284339" type="use" value="Surface[COMMENT: heading; team_information_panel; pitch surface type]" />
+						</widget>
+
+						<widget class="pitch_surface_type_label" id="SsfV" colour="bg" alignment="left,centre_y">
+							<record id="object_property">
+								<integer id="get_property" value="SsfT" />
+							</record>
+						</widget>
+					</container>
+
+					<!--CONDITION-->
+					<container>
+						<layout class="horizontal_arrange" horizontal_layout="-1,-1" offset="0" inset="0" gap="5"/>
+
+						<widget class="label" id="SptL" font="title" alignment="right,top" colour="bg">
+							<record id="object_property">
+								<integer id="get_property" value="Sptc" />
+								<boolean id="name" value="true" />
+							</record>
+						</widget>
+
+						<widget class="pitch_condition_label" id="SptV" colour="bg" alignment="left,centre_y">
+							<record id="object_property">
+								<integer id="get_property" value="Sptc" />
+							</record>
+						</widget>
+					</container>
+
+					<!--DIMENSIONS-->
+					<container>
+						<layout class="horizontal_arrange" horizontal_layout="-1,-1" offset="0" inset="0" gap="5"/>
+
+						<widget class="label" id="SdiL" font="title" alignment="right,top" colour="bg">
+							<record id="object_property">
+								<integer id="get_property" value="Sdim" />
+								<boolean id="name" value="true" />
+							</record>
+						</widget>
+
+						<widget class="dimension_label" id="SdiV" colour="bg" alignment="left,centre_y">
+							<record id="object_property">
+								<integer id="get_property" value="Sdim" />
+							</record>
+						</widget>
+					</container>
+
+					<container/>
+
+				</container>
+
+			</container>
+
+		</container>
+	</container>
+</panel>
