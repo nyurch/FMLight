@@ -419,6 +419,11 @@
 									<widget class="backroom_advice_trigger_button" id="BaC1" />
 									<!--Backroom Advice 'popup'-->
 									<widget class="backroom_advice_trigger_button" id="BaC2" file="club/backroom advice trigger button popup panel" disable_layout_attachments_when_embedded="true" hidden="true" />
+									<widget class="menubar_icon_button" appearance="boxes/custom/interface/tab bar/paper" cant_be_toggled="true" fixed="true" icon="icons/custom/paypal/paypal" width="40">
+										<record id="click_event" event_id="OURL" url="https://www.paypal.com/donate/?hosted_button_id=VVC36WMTGAK24" />
+										<integer id="event_id" value="pPsl" />
+										<integer id="selection" value="prMC" />
+									</widget>
 								</container>
 							</container>
 							<container class="inner_box_no_margin">
