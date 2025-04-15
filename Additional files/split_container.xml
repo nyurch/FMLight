@@ -1,0 +1,21 @@
+<panel>
+	<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+	<container class="horizontal_split_container" starting_layout="-2, -1" save_session_state="true" save_default_state="true" min_height_top="200" min_height_bottom="100">
+
+		<container background_colour="red 700">
+		</container>
+
+		<container class="vertical_split_container" starting_layout="-1, -1" save_default_state="true" min_width_left="500" min_width_right="500">
+
+		<container background_colour="green 700">
+		</container>
+		<container background_colour="blue 700">
+		</container>
+
+		</container>
+
+	</container>
+
+</panel>
